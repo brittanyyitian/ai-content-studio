@@ -6,9 +6,9 @@ const baseUrl =
   process.env.CONTENT_WORKBENCH_URL ||
   "https://tide-ai-content-studio.brittanyyitian.chatgpt.site";
 
-function readOperatorToken() {
-  if (process.env.OPERATOR_IMPORT_TOKEN) {
-    return process.env.OPERATOR_IMPORT_TOKEN.trim();
+function readCredential(envKey, keychainService) {
+  if (process.env[envKey]) {
+    return process.env[envKey].trim();
   }
   if (process.platform === "darwin") {
     try {
@@ -19,7 +19,7 @@ function readOperatorToken() {
           "-a",
           process.env.USER || "edy",
           "-s",
-          "tide-ai-content-operator",
+          keychainService,
           "-w",
         ],
         { encoding: "utf8" },
@@ -29,7 +29,7 @@ function readOperatorToken() {
     }
   }
   throw new Error(
-    "Missing operator credential. Configure OPERATOR_IMPORT_TOKEN or the macOS Keychain item tide-ai-content-operator.",
+    `Missing credential. Configure ${envKey} or the macOS Keychain item ${keychainService}.`,
   );
 }
 
@@ -42,7 +42,18 @@ if (
   );
 }
 
-const token = readOperatorToken();
+const token = readCredential(
+  "OPERATOR_IMPORT_TOKEN",
+  "tide-ai-content-operator",
+);
+const siwcToken = readCredential(
+  "OAI_SITES_BYPASS_TOKEN",
+  "tide-ai-content-siwc-bypass",
+);
+const requestHeaders = {
+  authorization: `Bearer ${token}`,
+  "OAI-Sites-Authorization": `Bearer ${siwcToken}`,
+};
 const endpoint = `${baseUrl.replace(/\/$/, "")}/api/operator`;
 
 if (mode === "refresh") {
@@ -51,7 +62,7 @@ if (mode === "refresh") {
     {
       method: "POST",
       headers: {
-        authorization: `Bearer ${token}`,
+        ...requestHeaders,
         "content-type": "application/json",
       },
       body: JSON.stringify({
@@ -68,7 +79,7 @@ if (mode === "refresh") {
   );
 } else if (mode === "pull") {
   const response = await fetch(endpoint, {
-    headers: { authorization: `Bearer ${token}` },
+    headers: requestHeaders,
   });
   const payload = await response.json();
   if (!response.ok) throw new Error(payload.error || "Operator pull failed");
@@ -82,7 +93,7 @@ if (mode === "refresh") {
   const response = await fetch(endpoint, {
     method: "POST",
     headers: {
-      authorization: `Bearer ${token}`,
+      ...requestHeaders,
       "content-type": "application/json",
     },
     body: JSON.stringify({

@@ -40,7 +40,7 @@ type Hotspot = {
   discussionFocus?: string[];
   reuseIdeas?: string[];
   localizedTranslation?: string;
-  analysisState?: "待模型分析" | "规则初判";
+  analysisState?: "待模型分析" | "规则初判" | "已分析";
 };
 
 type Draft = {
@@ -54,6 +54,7 @@ type Draft = {
   updatedBy: string;
   status: HumanStatus;
   reviewNote?: string;
+  videoScript?: string;
 };
 
 type DiscoveryMeta = {
@@ -73,12 +74,12 @@ type WorkspaceState = {
 
 const LOCAL_CACHE_KEY = `tide-content-workbench-v${WORKSPACE_SCHEMA_VERSION}`;
 
-const nav: { id: View; label: string; mark: string }[] = [
-  { id: "today", label: "今日任务", mark: "今" },
-  { id: "library", label: "内容库", mark: "库" },
-  { id: "calendar", label: "发布日历", mark: "历" },
-  { id: "analytics", label: "数据表现", mark: "数" },
-  { id: "accounts", label: "账号设置", mark: "号" },
+const nav: { id: View; label: string }[] = [
+  { id: "today", label: "今日任务" },
+  { id: "library", label: "内容库" },
+  { id: "calendar", label: "发布日历" },
+  { id: "analytics", label: "数据表现" },
+  { id: "accounts", label: "账号设置" },
 ];
 
 const DEFAULT_EDITORIAL_BRIEF =
@@ -720,11 +721,7 @@ export default function Workbench({
     <div className="app-shell">
       <aside className="sidebar">
         <button className="brand" onClick={() => setView("today")} aria-label="返回今日任务">
-          <span className="brand-mark">潮</span>
-          <span>
-            <strong>潮汐内容台</strong>
-            <small>AI Content Desk</small>
-          </span>
+          <strong>潮汐</strong>
         </button>
         <nav aria-label="主导航">
           {nav.map((item) => (
@@ -733,19 +730,11 @@ export default function Workbench({
               className={view === item.id ? "nav-item active" : "nav-item"}
               onClick={() => setView(item.id)}
             >
-              <span className="nav-mark">{item.mark}</span>
               {item.label}
               {item.id === "today" && <em>{recommended.length}</em>}
             </button>
           ))}
         </nav>
-        <div className="sidebar-foot">
-          <span className="pulse" />
-          <div>
-            <strong>今日采集完成</strong>
-            <small>{hotspots.length} 条热点 · {updatedLabel}</small>
-          </div>
-        </div>
       </aside>
 
       <main className="main">
@@ -761,12 +750,9 @@ export default function Workbench({
                 onClick={refreshHotspots}
                 disabled={discovering}
               >
-                {discovering ? "正在采集与去重…" : "采集今日真实热点"}
+                {discovering ? "正在更新…" : "更新数据"}
               </button>
             )}
-            <button className="avatar" title={userEmail || userName}>
-              {userName.slice(0, 1).toUpperCase()}
-            </button>
           </div>
         </header>
 
@@ -776,14 +762,9 @@ export default function Workbench({
           <section className="today-view">
             <div className="daily-brief">
               <div>
-                <span className="section-kicker">TODAY&apos;S SIGNAL</span>
-                <h2>今天值得关注的，不是又一个新模型</h2>
-                <p>
-                  工作台会聚合多个海外来源、按主题去重，再结合国内覆盖情况给出推荐。
-                  覆盖不足会明确提示，不会把“没有搜到”包装成信息差。
-                </p>
+                <h2>今日内容池</h2>
                 <label className="editorial-brief">
-                  <span>今日选题偏好</span>
+                  <span>选题偏好</span>
                   <input
                     value={editorialBrief}
                     onChange={(event) => setEditorialBrief(event.target.value)}
@@ -792,9 +773,9 @@ export default function Workbench({
                 </label>
               </div>
               <div className="daily-numbers">
-                <div><strong>{hotspots.length}</strong><span>有效热点</span></div>
-                <div><strong>{recommended.length}</strong><span>推荐选题</span></div>
-                <div><strong>{drafts.filter((draft) => draft.status === "待审核").length}</strong><span>待你审核</span></div>
+                <div><strong>{hotspots.length}</strong><span>候选</span></div>
+                <div><strong>{recommended.length}</strong><span>推荐</span></div>
+                <div><strong>{drafts.filter((draft) => draft.status === "待审核").length}</strong><span>待审核</span></div>
               </div>
             </div>
 
@@ -811,7 +792,7 @@ export default function Workbench({
                 ))}
               </div>
               <span className="quiet">
-                {discoveryMeta?.coverageLabel || "演示数据 · 点击右上角开始真实采集"}
+                更新于 {updatedLabel}
               </span>
             </div>
 
@@ -827,7 +808,6 @@ export default function Workbench({
                     <div className="hotspot-content">
                       <div className="source-row">
                         <span className="source-badge">{item.sourceType}</span>
-                        {item.live && <span className="live-badge">真实采集</span>}
                         <span>{item.source}</span>
                         <i>·</i>
                         <span>{item.age}</span>
@@ -842,7 +822,7 @@ export default function Workbench({
                         </div>
                       )}
                       <div className="angle">
-                        <span>建议角度</span>
+                        <span>角度</span>
                         {item.angle}
                       </div>
                       <div className="card-foot">
@@ -868,7 +848,7 @@ export default function Workbench({
 
               <aside className="review-panel">
                 <div className="panel-top">
-                  <span className="section-kicker">REVIEW DESK</span>
+                  <span className="section-kicker">审核</span>
                   <StatusPill status={activeDraft.status} />
                 </div>
                 <h2>{activeDraft.title}</h2>
@@ -880,8 +860,8 @@ export default function Workbench({
 
                 <div className="evidence-box">
                   <button onClick={() => setShowSources((value) => !value)}>
-                    <span><b>为什么推荐</b> · {selected.reason}</span>
-                    <strong>{showSources ? "收起" : "查看来源"}</strong>
+                    <span>{selected.reason}</span>
+                    <strong>{showSources ? "收起" : "来源与分析"}</strong>
                   </button>
                   {showSources && (
                     <div className="source-detail">
@@ -913,7 +893,7 @@ export default function Workbench({
                           <p>尚未取得可验证的评论样本。</p>
                         )}
                         {selected.analysisState === "待模型分析" && (
-                          <small>当前展示评论原文样本，中文聚类归纳将在模型接入后生成。</small>
+                          <small>当前评论仍待归纳。</small>
                         )}
                       </div>
                       <div className="evidence-section">
@@ -953,13 +933,18 @@ export default function Workbench({
                 />
 
                 <div className="visual-brief">
-                  <span className="visual-thumb">图</span>
                   <div>
                     <b>配图建议</b>
                     <p>{activeDraft.visual}</p>
                   </div>
                   <button onClick={() => flash("已标记配图修改，等待设计处理")}>标记修改</button>
                 </div>
+                {activeDraft.videoScript && (
+                  <div className="video-brief">
+                    <b>短视频脚本</b>
+                    <p>{activeDraft.videoScript}</p>
+                  </div>
+                )}
 
                 <label className="field-label" htmlFor="ai-brief">提交给 AI 运营任务的修改意见</label>
                 <div className="ai-revise">
@@ -982,7 +967,6 @@ export default function Workbench({
                     审核通过
                   </button>
                 </div>
-                <p className="audit-note">所有修改会记录操作者、时间和版本；审核通过后仍不会自动发布。</p>
               </aside>
             </div>
           </section>

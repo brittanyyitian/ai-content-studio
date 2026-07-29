@@ -20,8 +20,9 @@ test("build contains the AI content workbench and no starter preview", async () 
   assert.match(layout, /潮汐内容台/);
   assert.match(workbench, /今日任务/);
   assert.match(workbench, /审核通过/);
-  assert.match(workbench, /所有修改会记录操作者、时间和版本/);
-  assert.match(workbench, /不会自动发布/);
+  assert.match(workbench, /提交给 AI 运营任务的修改意见/);
+  assert.match(workbench, /短视频脚本/);
+  assert.match(workbench, /status: "待发布"/);
   assert.match(workbench, /api\/discover/);
   assert.match(css, /\.review-panel/);
   assert.match(discoveryRoute, /discoverDaily/);
