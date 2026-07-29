@@ -387,12 +387,6 @@ const accounts = [
   { platform: "X", name: "@buildwithai", owner: "Edy", rhythm: "每天 1 条", focus: "个人项目 · Build in public", state: "正常" },
 ];
 
-function scoreTone(score: number) {
-  if (score >= 90) return "score high";
-  if (score >= 82) return "score mid";
-  return "score";
-}
-
 function StatusPill({ status }: { status: HumanStatus }) {
   return <span className={`status status-${status}`}>{status}</span>;
 }
@@ -441,7 +435,7 @@ export default function Workbench({
   const [selectedId, setSelectedId] = useState(1);
   const [drafts, setDrafts] = useState(seedDrafts);
   const [notice, setNotice] = useState("");
-  const [topicFilter, setTopicFilter] = useState("全部");
+  const [topicFilter, setTopicFilter] = useState("推荐");
   const [brief, setBrief] = useState("");
   const [showSources, setShowSources] = useState(false);
   const [hydrated, setHydrated] = useState(false);
@@ -560,11 +554,20 @@ export default function Workbench({
   );
   const visibleHotspots = useMemo(
     () =>
-      topicFilter === "全部"
+      topicFilter === "推荐"
+        ? hotspots.filter((item) => item.selected)
+        : topicFilter === "全部"
         ? hotspots
         : hotspots.filter((item) => item.category === topicFilter),
     [hotspots, topicFilter],
   );
+  const pendingReviewCount = useMemo(() => {
+    const currentIds = new Set(recommended.map((item) => item.id));
+    return drafts.filter(
+      (draft) =>
+        currentIds.has(draft.hotspotId) && draft.status === "待审核",
+    ).length;
+  }, [drafts, recommended]);
 
   if (!hydrated) {
     return (
@@ -721,6 +724,10 @@ export default function Workbench({
     <div className="app-shell">
       <aside className="sidebar">
         <button className="brand" onClick={() => setView("today")} aria-label="返回今日任务">
+          <span className="brand-mark" aria-hidden="true">
+            <i />
+            <i />
+          </span>
           <strong>潮汐</strong>
         </button>
         <nav aria-label="主导航">
@@ -775,13 +782,13 @@ export default function Workbench({
               <div className="daily-numbers">
                 <div><strong>{hotspots.length}</strong><span>候选</span></div>
                 <div><strong>{recommended.length}</strong><span>推荐</span></div>
-                <div><strong>{drafts.filter((draft) => draft.status === "待审核").length}</strong><span>待审核</span></div>
+                <div><strong>{pendingReviewCount}</strong><span>待审核</span></div>
               </div>
             </div>
 
             <div className="toolbar">
               <div className="filter-group">
-                {["全部", "AI 技巧", "实操案例", "接单变现", "个人 IP", "产业观察"].map((filter) => (
+                {["推荐", "全部", "AI 技巧", "实操案例", "接单变现", "个人 IP", "产业观察"].map((filter) => (
                   <button
                     key={filter}
                     className={topicFilter === filter ? "filter active" : "filter"}
@@ -826,11 +833,6 @@ export default function Workbench({
                         {item.angle}
                       </div>
                       <div className="card-foot">
-                        <div className="scores">
-                          <span className={scoreTone(item.heat)}>海外热度 {item.heat}</span>
-                          <span className={scoreTone(item.scarcity)}>国内稀缺 {item.scarcity}</span>
-                          <span className={scoreTone(item.fit)}>账号适配 {item.fit}</span>
-                        </div>
                         <button
                           className={item.selected ? "adopt-btn adopted" : "adopt-btn"}
                           onClick={(event) => {
