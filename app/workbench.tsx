@@ -30,6 +30,13 @@ type Hotspot = {
   domesticCoverage?: string;
   humanCheck?: string;
   evidenceId?: string;
+  engagement?: Record<string, number>;
+  engagementLabel?: string;
+  discussionUrl?: string;
+  discussionFocus?: string[];
+  reuseIdeas?: string[];
+  localizedTranslation?: string;
+  analysisState?: "待模型分析" | "规则初判";
 };
 
 type Draft = {
@@ -382,11 +389,13 @@ function makeDraft(item: Hotspot): Draft {
     platform: item.platforms[0] || "小红书",
     title: item.angle,
     body:
-      `这两天，${item.source} 上有一条值得继续追踪的 AI 信号：${item.title}\n\n` +
-      "建议从三个部分展开：\n1. 原始信号到底说了什么\n2. 对目标读者有什么实际影响\n3. 可以立刻验证的一步是什么\n\n" +
-      `发布前核对：${item.humanCheck || "核对原文事实、上下文和国内平台相似内容。"}`,
+      `【尚未生成可发布文案】\n\n` +
+      `已采集原帖：${item.title}\n` +
+      `公开互动：${item.engagementLabel || "未取得公开互动指标"}\n` +
+      `本地化状态：${item.localizedTranslation || "待模型完整翻译与本地化"}\n\n` +
+      "需要先完成讨论归纳、事实核验和中文本地化，再进入人工审核。",
     visual: `首图突出「${item.angle}」；内页用“原始信号—实际影响—行动步骤”三张信息卡。`,
-    version: "V1 · 真实热点框架稿",
+    version: "V1 · 证据已采集，待模型生成",
     updatedBy: "AI Content Operator",
     status: "待审核",
   };
@@ -752,6 +761,12 @@ export default function Workbench({
                       </div>
                       <h3>{item.title}</h3>
                       <p>{item.summary}</p>
+                      {item.engagementLabel && (
+                        <div className="engagement-line">
+                          <b>原帖互动</b>
+                          <span>{item.engagementLabel}</span>
+                        </div>
+                      )}
                       <div className="angle">
                         <span>建议角度</span>
                         {item.angle}
@@ -796,9 +811,53 @@ export default function Workbench({
                   </button>
                   {showSources && (
                     <div className="source-detail">
-                      <a href={selected.sourceUrl} target="_blank" rel="noreferrer">
-                        原始来源：{selected.source} ↗
-                      </a>
+                      <div className="source-links">
+                        <a href={selected.sourceUrl} target="_blank" rel="noreferrer">
+                          原始内容：{selected.source} ↗
+                        </a>
+                        {selected.discussionUrl &&
+                          selected.discussionUrl !== selected.sourceUrl && (
+                            <a href={selected.discussionUrl} target="_blank" rel="noreferrer">
+                              原帖讨论页 ↗
+                            </a>
+                          )}
+                      </div>
+                      <div className="evidence-section">
+                        <b>原帖流量</b>
+                        <p>{selected.engagementLabel || "该来源没有公开可验证的点赞、评论或浏览量。"}</p>
+                        <small>只显示来源公开指标；没有浏览量时不会用热度分冒充浏览量。</small>
+                      </div>
+                      <div className="evidence-section">
+                        <b>评论主要围绕什么</b>
+                        {selected.discussionFocus?.length ? (
+                          <ul>
+                            {selected.discussionFocus.map((focus, index) => (
+                              <li key={`${selected.id}-focus-${index}`}>{focus}</li>
+                            ))}
+                          </ul>
+                        ) : (
+                          <p>尚未取得可验证的评论样本。</p>
+                        )}
+                        {selected.analysisState === "待模型分析" && (
+                          <small>当前展示评论原文样本，中文聚类归纳将在模型接入后生成。</small>
+                        )}
+                      </div>
+                      <div className="evidence-section">
+                        <b>本地化翻译</b>
+                        <p>{selected.localizedTranslation || "待模型完整翻译与本地化。"}</p>
+                      </div>
+                      <div className="evidence-section">
+                        <b>怎么复用到国内社媒</b>
+                        {selected.reuseIdeas?.length ? (
+                          <ol>
+                            {selected.reuseIdeas.map((idea, index) => (
+                              <li key={`${selected.id}-reuse-${index}`}>{idea}</li>
+                            ))}
+                          </ol>
+                        ) : (
+                          <p>待完成受众和平台角度分析。</p>
+                        )}
+                      </div>
                       <p>
                         {selected.domesticCoverage ||
                           "演示条目：上线真实采集后会显示国内覆盖与证据置信度。"}

@@ -13,6 +13,8 @@ export type EvidenceItem = {
   publishedAt: string;
   capturedAt: string;
   engagement: Record<string, number>;
+  discussionUrl: string;
+  discussionSamples: string[];
   contentHash: string;
 };
 
@@ -58,6 +60,13 @@ export type DiscoveredHotspot = {
   domesticCoverage: string;
   humanCheck: string;
   evidenceId: string;
+  engagement: Record<string, number>;
+  engagementLabel: string;
+  discussionUrl: string;
+  discussionFocus: string[];
+  reuseIdeas: string[];
+  localizedTranslation: string;
+  analysisState: "待模型分析" | "规则初判";
 };
 
 export type DiscoveredDraft = {
@@ -105,7 +114,17 @@ type GitHubRepo = {
   updated_at?: string;
   stargazers_count?: number;
   forks_count?: number;
+  open_issues_count?: number;
+  watchers_count?: number;
+  topics?: string[];
   owner?: { login?: string };
+};
+
+type HnItem = {
+  kids?: number[];
+  text?: string;
+  deleted?: boolean;
+  dead?: boolean;
 };
 
 const USER_AGENT = "tide-ai-content-studio/0.2 (+private content research)";
@@ -237,7 +256,7 @@ export async function discoverDaily(options: DiscoveryOptions) {
       heat: entry.heat,
       scarcity: entry.scarcity,
       fit: entry.fit,
-      reason: `${entry.item.provider} 的时效与互动信号进入今日前列。${domesticSentence}`,
+      reason: `${entry.item.provider} 的时效与公开互动信号进入今日前列（${formatEngagement(entry.item)}）。${domesticSentence}`,
       angle,
       platforms: platformsFor(entry.category),
       category: entry.category,
@@ -250,6 +269,13 @@ export async function discoverDaily(options: DiscoveryOptions) {
       domesticCoverage: entry.domestic.label,
       humanCheck: "核对原文事实、发布日期和上下文；补做目标平台站内搜索后再批准文案。",
       evidenceId: entry.item.id,
+      engagement: entry.item.engagement,
+      engagementLabel: formatEngagement(entry.item),
+      discussionUrl: entry.item.discussionUrl,
+      discussionFocus: buildDiscussionFocus(entry.item),
+      reuseIdeas: buildReuseIdeas(entry.item, entry.category),
+      localizedTranslation: buildLocalizedTranslation(entry.item),
+      analysisState: "待模型分析",
     };
   });
 
@@ -337,6 +363,8 @@ async function fetchHackerNews(capturedAt: string) {
           hit.url ||
           hit.story_url ||
           `https://news.ycombinator.com/item?id=${encodeURIComponent(id)}`;
+        const discussionUrl = `https://news.ycombinator.com/item?id=${encodeURIComponent(id)}`;
+        const discussionSamples = await fetchHnDiscussion(id);
         return makeEvidence({
           sourceId: `hn-${id}`,
           provider: "Hacker News",
@@ -352,9 +380,34 @@ async function fetchHackerNews(capturedAt: string) {
             points: finite(hit.points),
             comments: finite(hit.num_comments),
           },
+          discussionUrl,
+          discussionSamples,
         });
       }),
   );
+}
+
+async function fetchHnDiscussion(id: string) {
+  try {
+    const story = await fetchJson<HnItem>(
+      `https://hacker-news.firebaseio.com/v0/item/${encodeURIComponent(id)}.json`,
+    );
+    const commentIds = (story.kids ?? []).slice(0, 12);
+    const comments = await Promise.all(
+      commentIds.map((commentId) =>
+        fetchJson<HnItem>(
+          `https://hacker-news.firebaseio.com/v0/item/${commentId}.json`,
+        ).catch(() => null),
+      ),
+    );
+    return comments
+      .filter((comment): comment is HnItem => Boolean(comment && !comment.deleted && !comment.dead))
+      .map((comment) => cleanText(comment.text || ""))
+      .filter(Boolean)
+      .slice(0, 8);
+  } catch {
+    return [];
+  }
 }
 
 async function fetchGitHub(capturedAt: string) {
@@ -395,7 +448,11 @@ async function fetchGitHub(capturedAt: string) {
           engagement: {
             stars: finite(repo.stargazers_count),
             forks: finite(repo.forks_count),
+            openIssues: finite(repo.open_issues_count),
+            watchers: finite(repo.watchers_count),
           },
+          discussionUrl: repo.html_url || "",
+          discussionSamples: (repo.topics ?? []).map((topic) => `GitHub topic: ${topic}`),
         }),
       ),
   );
@@ -434,6 +491,8 @@ async function fetchRssProvider(options: {
         publishedAt,
         capturedAt: options.capturedAt,
         engagement: {},
+        discussionUrl: link,
+        discussionSamples: [],
       });
     }),
   );
@@ -460,6 +519,8 @@ async function fetchArxiv(capturedAt: string) {
         publishedAt: toIso(xmlValue(entry, "published")),
         capturedAt,
         engagement: {},
+        discussionUrl: id,
+        discussionSamples: [],
       });
     }),
   );
@@ -512,6 +573,8 @@ async function makeEvidence(input: {
   publishedAt: string;
   capturedAt: string;
   engagement: Record<string, number>;
+  discussionUrl?: string;
+  discussionSamples?: string[];
 }): Promise<EvidenceItem> {
   const canonical = `${input.provider}|${input.url}|${input.title}`;
   const contentHash = await sha256(canonical);
@@ -527,6 +590,8 @@ async function makeEvidence(input: {
     publishedAt: input.publishedAt,
     capturedAt: input.capturedAt,
     engagement: input.engagement,
+    discussionUrl: input.discussionUrl || input.url,
+    discussionSamples: input.discussionSamples ?? [],
     contentHash,
   };
 }
@@ -622,15 +687,65 @@ function buildDraft(hotspot: DiscoveredHotspot, id: number): DiscoveredDraft {
     platform,
     title: hotspot.angle,
     body:
-      `这两天，${hotspot.source} 上有一条值得继续追踪的 AI 信号：${hotspot.title}\n\n` +
-      `它真正值得关注的，不只是又出现了一个新项目或新观点，而是它可能改变普通人和小团队完成任务的方式。\n\n` +
-      `初稿建议从三个部分展开：\n1. 原始信号到底说了什么\n2. 对目标读者有什么实际影响\n3. 可以立刻验证的一步是什么\n\n` +
-      `发布前核对：${hotspot.humanCheck}`,
+      `【尚未生成可发布文案】\n\n` +
+      `已采集原帖：${hotspot.title}\n` +
+      `公开互动：${hotspot.engagementLabel}\n` +
+      `本地化状态：${hotspot.localizedTranslation}\n\n` +
+      `需要先完成评论归纳、事实核验和中文本地化，再进入人工审核。`,
     visual: `首图突出「${hotspot.angle}」；内页用“原始信号—实际影响—行动步骤”三张信息卡，避免使用未经证实的数据。`,
-    version: "V1 · 真实热点框架稿",
+    version: "V1 · 证据已采集，待模型生成",
     updatedBy: "AI Content Operator",
     status: "待审核",
   };
+}
+
+function formatEngagement(item: EvidenceItem) {
+  const value = item.engagement;
+  if (item.provider === "Hacker News") {
+    return `${finite(value.points)} 点赞积分 · ${finite(value.comments)} 条评论`;
+  }
+  if (item.provider === "GitHub") {
+    return `${finite(value.stars)} Stars · ${finite(value.forks)} Forks · ${finite(value.openIssues)} 个开放 Issue`;
+  }
+  return "原平台未公开点赞、评论或浏览量";
+}
+
+function buildDiscussionFocus(item: EvidenceItem) {
+  if (!item.discussionSamples.length) {
+    return ["暂无可验证评论样本；不能推断读者主要在讨论什么。"];
+  }
+  return item.discussionSamples
+    .map((sample) => truncate(sample, 150))
+    .filter(Boolean)
+    .slice(0, 3);
+}
+
+function buildReuseIdeas(item: EvidenceItem, category: string) {
+  const subject = truncate(item.title, 52);
+  if (category === "AI 技巧") {
+    return [
+      `把「${subject}」放进一个真实工作任务，记录输入、过程和结果`,
+      "提炼成 3 步操作卡，并补充不适用场景",
+      "用国内用户熟悉的工具、价格和工作环境替换海外语境",
+    ];
+  }
+  if (category === "实操案例" || category === "接单变现") {
+    return [
+      "拆解交付对象、成本、耗时和验收标准，不转述收入噱头",
+      "补一个国内真实业务案例或亲自复现实验",
+      "改写为清单、报价结构或 30 秒口播",
+    ];
+  }
+  return [
+    `解释「${subject}」对普通用户或小团队的具体影响`,
+    "区分已确认事实、海外观点和作者自己的判断",
+    "加入国内产品、监管、价格或使用习惯的差异",
+  ];
+}
+
+function buildLocalizedTranslation(item: EvidenceItem) {
+  const original = item.excerpt || item.title;
+  return `待模型完整翻译与本地化；已保留原文：${truncate(original, 180)}`;
 }
 
 function deriveCategory(item: EvidenceItem) {
