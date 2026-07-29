@@ -33,16 +33,40 @@ function readOperatorToken() {
   );
 }
 
-if (!["pull", "push"].includes(mode) || !filePath) {
+if (
+  !["refresh", "pull", "push"].includes(mode) ||
+  (mode !== "refresh" && !filePath)
+) {
   throw new Error(
-    "Usage: node scripts/operator-workbench.mjs <pull|push> <json-path>",
+    "Usage: node scripts/operator-workbench.mjs <refresh> | <pull|push> <json-path>",
   );
 }
 
 const token = readOperatorToken();
 const endpoint = `${baseUrl.replace(/\/$/, "")}/api/operator`;
 
-if (mode === "pull") {
+if (mode === "refresh") {
+  const response = await fetch(
+    `${baseUrl.replace(/\/$/, "")}/api/discover`,
+    {
+      method: "POST",
+      headers: {
+        authorization: `Bearer ${token}`,
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({
+        editorialBrief:
+          process.env.EDITORIAL_BRIEF ||
+          "优先可复用的 AI 技巧和真实案例，减少纯产业快讯。",
+      }),
+    },
+  );
+  const payload = await response.json();
+  if (!response.ok) throw new Error(payload.error || "Operator refresh failed");
+  console.log(
+    `Refreshed ${payload.hotspots?.length || 0} hotspots and ${payload.drafts?.length || 0} recommendations`,
+  );
+} else if (mode === "pull") {
   const response = await fetch(endpoint, {
     headers: { authorization: `Bearer ${token}` },
   });

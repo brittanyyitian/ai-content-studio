@@ -17,14 +17,25 @@ const WORKSPACE_ID = "default";
 export async function POST(request: Request) {
   const actor = request.headers.get("oai-authenticated-user-email");
   const hostname = new URL(request.url).hostname;
+  const runtime = env as unknown as {
+    BRAVE_SEARCH_API_KEY?: string;
+    OPERATOR_IMPORT_TOKEN?: string;
+  };
+  const expectedOperatorToken = runtime.OPERATOR_IMPORT_TOKEN?.trim();
+  const isOperator =
+    Boolean(expectedOperatorToken) &&
+    request.headers.get("authorization") ===
+      `Bearer ${expectedOperatorToken}`;
   const isLocal =
     hostname === "localhost" ||
     hostname === "127.0.0.1" ||
     hostname === "::1" ||
     hostname === "[::1]";
-  if (!actor && !isLocal) {
+  if (!actor && !isLocal && !isOperator) {
     return Response.json({ error: "需要登录后才能刷新热点。" }, { status: 401 });
   }
+  const resolvedActor =
+    actor || (isOperator ? "Codex AI Content Operator" : "local-preview");
 
   await ensureDb();
   const payload = (await request.json().catch(() => ({}))) as {
@@ -37,14 +48,13 @@ export async function POST(request: Request) {
 
   await db.insert(discoveryRuns).values({
     id: runId,
-    actor: actor || "local-preview",
+    actor: resolvedActor,
     editorialBrief,
     status: "running",
     startedAt,
   });
 
   try {
-    const runtime = env as unknown as { BRAVE_SEARCH_API_KEY?: string };
     const result = await discoverDaily({
       editorialBrief,
       braveSearchKey: runtime.BRAVE_SEARCH_API_KEY,
@@ -128,20 +138,20 @@ export async function POST(request: Request) {
       .values({
         id: WORKSPACE_ID,
         payload: JSON.stringify(state),
-        updatedBy: actor || "local-preview",
+        updatedBy: resolvedActor,
       })
       .onConflictDoUpdate({
         target: workspaceStates.id,
         set: {
           payload: JSON.stringify(state),
-          updatedBy: actor || "local-preview",
+          updatedBy: resolvedActor,
           updatedAt: new Date().toISOString(),
         },
       });
 
     await db.insert(auditEvents).values({
       workspaceId: WORKSPACE_ID,
-      actor: actor || "local-preview",
+      actor: resolvedActor,
       eventType: "完成今日真实热点采集",
       detail: `${result.hotspots.length} 条候选，${result.drafts.length} 条推荐，${result.gaps.length} 个覆盖缺口`,
     });

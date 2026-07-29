@@ -13,6 +13,7 @@
     "test": "npm run build && node --test tests/rendered-html.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate",
+    "operator:refresh": "node scripts/operator-workbench.mjs refresh",
     "operator:pull": "node scripts/operator-workbench.mjs pull",
     "operator:push": "node scripts/operator-workbench.mjs push"
   },
