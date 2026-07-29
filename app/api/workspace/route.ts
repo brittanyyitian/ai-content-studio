@@ -1,6 +1,10 @@
 import { desc, eq } from "drizzle-orm";
 import { ensureDb, getDb } from "../../../db";
 import { auditEvents, workspaceStates } from "../../../db/schema";
+import {
+  isCurrentWorkspaceState,
+  WORKSPACE_SCHEMA_VERSION,
+} from "../../../lib/workspace-contract";
 
 const WORKSPACE_ID = "default";
 
@@ -49,6 +53,15 @@ export async function PUT(request: Request) {
     };
     if (!payload.state) {
       return Response.json({ error: "state is required" }, { status: 400 });
+    }
+    if (!isCurrentWorkspaceState(payload.state)) {
+      return Response.json(
+        {
+          error: "工作台页面版本过旧，请刷新页面后再保存。",
+          expectedSchemaVersion: WORKSPACE_SCHEMA_VERSION,
+        },
+        { status: 409 },
+      );
     }
 
     const actor =

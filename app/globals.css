@@ -31,6 +31,46 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.loading-screen {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 10px;
+  padding: 32px;
+  color: #234c3d;
+  text-align: center;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(213, 239, 226, .9), transparent 32%),
+    #f7f6ef;
+}
+
+.loading-screen h1 {
+  margin: 0;
+  font-family: Georgia, "Songti SC", serif;
+  font-size: 24px;
+}
+
+.loading-screen p {
+  margin: 0;
+  color: #748079;
+  font-size: 12px;
+}
+
+.loading-screen.error {
+  color: #714536;
+}
+
+.queued-note {
+  margin: 8px 0 0;
+  padding: 9px 11px;
+  border-left: 3px solid var(--yellow);
+  color: #6c5a26;
+  background: #fff9df;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
 button,
 input,
 textarea,

@@ -1,6 +1,10 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import {
+  isCurrentWorkspaceState,
+  WORKSPACE_SCHEMA_VERSION,
+} from "../lib/workspace-contract";
 
 type View = "today" | "library" | "calendar" | "analytics" | "accounts";
 type HumanStatus = "待选题" | "待审核" | "待发布" | "已发布" | "已结束";
@@ -49,6 +53,7 @@ type Draft = {
   version: string;
   updatedBy: string;
   status: HumanStatus;
+  reviewNote?: string;
 };
 
 type DiscoveryMeta = {
@@ -58,6 +63,15 @@ type DiscoveryMeta = {
   gapCount: number;
   editorialBrief: string;
 };
+
+type WorkspaceState = {
+  schemaVersion: number;
+  hotspots: Hotspot[];
+  drafts: Draft[];
+  discoveryMeta: DiscoveryMeta | null;
+};
+
+const LOCAL_CACHE_KEY = `tide-content-workbench-v${WORKSPACE_SCHEMA_VERSION}`;
 
 const nav: { id: View; label: string; mark: string }[] = [
   { id: "today", label: "今日任务", mark: "今" },
@@ -430,31 +444,59 @@ export default function Workbench({
   const [brief, setBrief] = useState("");
   const [showSources, setShowSources] = useState(false);
   const [hydrated, setHydrated] = useState(false);
+  const [loadError, setLoadError] = useState("");
   const [discovering, setDiscovering] = useState(false);
   const [editorialBrief, setEditorialBrief] = useState(DEFAULT_EDITORIAL_BRIEF);
   const [discoveryMeta, setDiscoveryMeta] = useState<DiscoveryMeta | null>(null);
+  const loadedSnapshot = useRef("");
 
   useEffect(() => {
     async function loadWorkspace() {
-      const cached = window.localStorage.getItem("tide-content-workbench");
+      function applyState(state: WorkspaceState) {
+        setHotspots(state.hotspots);
+        setDrafts(state.drafts);
+        setDiscoveryMeta(state.discoveryMeta);
+        setEditorialBrief(
+          state.discoveryMeta?.editorialBrief || DEFAULT_EDITORIAL_BRIEF,
+        );
+        loadedSnapshot.current = JSON.stringify(state);
+        window.localStorage.setItem(LOCAL_CACHE_KEY, loadedSnapshot.current);
+      }
+
+      async function refreshLegacySnapshot() {
+        const response = await fetch("/api/discover", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ editorialBrief: DEFAULT_EDITORIAL_BRIEF }),
+        });
+        const payload = (await response.json()) as {
+          hotspots?: Hotspot[];
+          drafts?: Draft[];
+          meta?: DiscoveryMeta;
+          error?: string;
+        };
+        if (!response.ok || !payload.hotspots?.length || !payload.drafts) {
+          throw new Error(payload.error || "旧数据升级失败");
+        }
+        applyState({
+          schemaVersion: WORKSPACE_SCHEMA_VERSION,
+          hotspots: payload.hotspots,
+          drafts: payload.drafts,
+          discoveryMeta: payload.meta ?? null,
+        });
+      }
+
+      const cached = window.localStorage.getItem(LOCAL_CACHE_KEY);
       try {
         const response = await fetch("/api/workspace", { cache: "no-store" });
         if (response.ok) {
           const payload = (await response.json()) as {
-            state?: {
-              hotspots?: Hotspot[];
-              drafts?: Draft[];
-              discoveryMeta?: DiscoveryMeta;
-            } | null;
+            state?: unknown;
           };
-          if (payload.state?.hotspots) setHotspots(payload.state.hotspots);
-          if (payload.state?.drafts) setDrafts(payload.state.drafts);
-          if (payload.state?.discoveryMeta) {
-            setDiscoveryMeta(payload.state.discoveryMeta);
-            setEditorialBrief(
-              payload.state.discoveryMeta.editorialBrief ||
-                DEFAULT_EDITORIAL_BRIEF,
-            );
+          if (isCurrentWorkspaceState(payload.state)) {
+            applyState(payload.state as WorkspaceState);
+          } else {
+            await refreshLegacySnapshot();
           }
           setHydrated(true);
           return;
@@ -464,12 +506,17 @@ export default function Workbench({
       }
       if (cached) {
         try {
-          const parsed = JSON.parse(cached) as { hotspots?: Hotspot[]; drafts?: Draft[] };
-          if (parsed.hotspots) setHotspots(parsed.hotspots);
-          if (parsed.drafts) setDrafts(parsed.drafts);
+          const parsed = JSON.parse(cached) as unknown;
+          if (isCurrentWorkspaceState(parsed)) {
+            applyState(parsed as WorkspaceState);
+          } else {
+            throw new Error("本地缓存版本过旧");
+          }
         } catch {
-          // Ignore a malformed local draft and keep the safe seed state.
+          setLoadError("工作台数据版本过旧，请刷新页面重新采集。");
         }
+      } else {
+        setLoadError("暂时无法读取工作台数据，请稍后刷新。");
       }
       setHydrated(true);
     }
@@ -478,21 +525,30 @@ export default function Workbench({
 
   useEffect(() => {
     if (!hydrated) return;
-    window.localStorage.setItem(
-      "tide-content-workbench",
-      JSON.stringify({ hotspots, drafts, discoveryMeta }),
-    );
+    const state: WorkspaceState = {
+      schemaVersion: WORKSPACE_SCHEMA_VERSION,
+      hotspots,
+      drafts,
+      discoveryMeta,
+    };
+    const encoded = JSON.stringify(state);
+    if (encoded === loadedSnapshot.current) return;
+    window.localStorage.setItem(LOCAL_CACHE_KEY, encoded);
     const timer = window.setTimeout(() => {
       void fetch("/api/workspace", {
         method: "PUT",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({
-          state: { hotspots, drafts, discoveryMeta },
+          state,
           actor: userEmail || userName,
           eventType: "保存内容版本",
           detail: "选题、审核状态或平台文案发生变化",
         }),
-      }).catch(() => undefined);
+      })
+        .then((response) => {
+          if (response.ok) loadedSnapshot.current = encoded;
+        })
+        .catch(() => undefined);
     }, 800);
     return () => window.clearTimeout(timer);
   }, [hotspots, drafts, discoveryMeta, hydrated, userEmail, userName]);
@@ -508,6 +564,29 @@ export default function Workbench({
         : hotspots.filter((item) => item.category === topicFilter),
     [hotspots, topicFilter],
   );
+
+  if (!hydrated) {
+    return (
+      <main className="loading-screen">
+        <span className="pulse" />
+        <h1>正在读取今天的工作台</h1>
+        <p>会先校验数据版本，再显示可审核内容。</p>
+      </main>
+    );
+  }
+
+  if (loadError || !hotspots.length) {
+    return (
+      <main className="loading-screen error">
+        <h1>工作台暂时没有加载完成</h1>
+        <p>{loadError || "当前没有有效热点。"}</p>
+        <button className="primary-btn" onClick={() => window.location.reload()}>
+          重新加载
+        </button>
+      </main>
+    );
+  }
+
   const selected = hotspots.find((item) => item.id === selectedId) ?? hotspots[0];
   const activeDraft =
     drafts.find((item) => item.hotspotId === selected.id) ?? makeDraft(selected);
@@ -608,25 +687,20 @@ export default function Workbench({
       flash("先写一句修改要求");
       return;
     }
-    const femaleFounder =
-      brief.includes("女性") || brief.includes("创业") || brief.includes("小红书");
     setDrafts((items) =>
       items.map((draft) =>
         draft.id === activeDraft.id
           ? {
               ...draft,
-              title: femaleFounder
-                ? "不会写代码，也能把 AI 变成你的第一个数字员工"
-                : draft.title,
-              body: `${femaleFounder ? "如果你正在一个人做品牌、接客户、盯交付，这件事会很有用。\\n\\n" : ""}${draft.body}`,
-              version: "V3 · 按审核意见修改",
-              updatedBy: "AI 助手",
+              reviewNote: brief.trim(),
+              version: "待 AI 处理 · 已记录审核意见",
+              updatedBy: userName,
             }
           : draft,
       ),
     );
     setBrief("");
-    flash("已按意见生成新版本，旧版本仍可追溯");
+    flash("修改意见已进入 AI 处理队列，旧版本保持不变");
   }
 
   const dateLabel = new Intl.DateTimeFormat("zh-CN", {
@@ -887,7 +961,7 @@ export default function Workbench({
                   <button onClick={() => flash("已标记配图修改，等待设计处理")}>标记修改</button>
                 </div>
 
-                <label className="field-label" htmlFor="ai-brief">让 AI 按意见修改</label>
+                <label className="field-label" htmlFor="ai-brief">提交给 AI 运营任务的修改意见</label>
                 <div className="ai-revise">
                   <textarea
                     id="ai-brief"
@@ -895,8 +969,11 @@ export default function Workbench({
                     onChange={(event) => setBrief(event.target.value)}
                     placeholder="例如：改成更适合小红书女性创业者的角度，少一点技术词。"
                   />
-                  <button onClick={applyBrief}>生成新版本</button>
+                  <button onClick={applyBrief}>加入修改队列</button>
                 </div>
+                {activeDraft.reviewNote && (
+                  <p className="queued-note">待处理意见：{activeDraft.reviewNote}</p>
+                )}
                 <div className="review-actions">
                   <button className="secondary-btn" onClick={() => flash("已保存为待修改，负责人会看到意见")}>
                     退回修改

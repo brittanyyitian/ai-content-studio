@@ -10,13 +10,19 @@ import {
 } from "../../../db/schema";
 import { ensureDb, getDb } from "../../../db";
 import { discoverDaily } from "../../../lib/content-engine";
+import { WORKSPACE_SCHEMA_VERSION } from "../../../lib/workspace-contract";
 
 const WORKSPACE_ID = "default";
 
 export async function POST(request: Request) {
   const actor = request.headers.get("oai-authenticated-user-email");
   const hostname = new URL(request.url).hostname;
-  if (!actor && hostname !== "localhost" && hostname !== "127.0.0.1") {
+  const isLocal =
+    hostname === "localhost" ||
+    hostname === "127.0.0.1" ||
+    hostname === "::1" ||
+    hostname === "[::1]";
+  if (!actor && !isLocal) {
     return Response.json({ error: "需要登录后才能刷新热点。" }, { status: 401 });
   }
 
@@ -105,6 +111,7 @@ export async function POST(request: Request) {
       : {};
     const state = {
       ...previousState,
+      schemaVersion: WORKSPACE_SCHEMA_VERSION,
       hotspots: result.hotspots,
       drafts: result.drafts,
       discoveryMeta: {
