@@ -1,5 +1,5 @@
 import { desc, eq } from "drizzle-orm";
-import { getDb } from "../../../db";
+import { ensureDb, getDb } from "../../../db";
 import { auditEvents, workspaceStates } from "../../../db/schema";
 
 const WORKSPACE_ID = "default";
@@ -14,6 +14,7 @@ function errorMessage(error: unknown) {
 
 export async function GET() {
   try {
+    await ensureDb();
     const db = getDb();
     const [state] = await db
       .select()
@@ -39,6 +40,7 @@ export async function GET() {
 
 export async function PUT(request: Request) {
   try {
+    await ensureDb();
     const payload = (await request.json()) as {
       state?: unknown;
       actor?: string;

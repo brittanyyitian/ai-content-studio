@@ -250,6 +250,11 @@ button {
   border-color: var(--green);
 }
 
+.ghost-btn:disabled {
+  cursor: wait;
+  opacity: .62;
+}
+
 .primary-btn {
   border-color: var(--green);
   color: white;
@@ -329,6 +334,37 @@ button {
   color: var(--muted);
   font-size: 12px;
   line-height: 1.85;
+}
+
+.editorial-brief {
+  max-width: 720px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.editorial-brief span {
+  color: #446154;
+  font-size: 9px;
+  font-weight: 750;
+}
+
+.editorial-brief input {
+  width: 100%;
+  padding: 9px 11px;
+  outline: none;
+  border: 1px solid #bfd2c6;
+  border-radius: 8px;
+  color: #2f443a;
+  background: rgba(255,255,255,.68);
+  font-size: 9px;
+}
+
+.editorial-brief input:focus {
+  border-color: #6c9581;
+  box-shadow: 0 0 0 3px rgba(21,76,61,.07);
 }
 
 .daily-numbers {
@@ -454,6 +490,15 @@ button {
   background: #f6f7f3;
   font-size: 8px;
   font-weight: 750;
+}
+
+.live-badge {
+  padding: 3px 6px;
+  border-radius: 5px;
+  color: #176044;
+  background: #dff2e7;
+  font-size: 7px;
+  font-weight: 800;
 }
 
 .status {
@@ -1351,6 +1396,10 @@ button {
 
   .daily-numbers {
     gap: 10px;
+  }
+
+  .editorial-brief {
+    grid-template-columns: 1fr;
   }
 
   .daily-numbers div {

@@ -8,6 +8,13 @@
       "when": 1785314147158,
       "tag": "0000_keen_harpoon",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1785315823565,
+      "tag": "0001_simple_daredevil",
+      "breakpoints": true
     }
   ]
 }

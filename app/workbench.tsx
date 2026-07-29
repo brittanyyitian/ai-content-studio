@@ -24,6 +24,12 @@ type Hotspot = {
   status: HumanStatus;
   selected: boolean;
   assignee: string;
+  live?: boolean;
+  sourceCapturedAt?: string;
+  evidenceConfidence?: number;
+  domesticCoverage?: string;
+  humanCheck?: string;
+  evidenceId?: string;
 };
 
 type Draft = {
@@ -38,6 +44,14 @@ type Draft = {
   status: HumanStatus;
 };
 
+type DiscoveryMeta = {
+  runId: string;
+  capturedAt: string;
+  coverageLabel: string;
+  gapCount: number;
+  editorialBrief: string;
+};
+
 const nav: { id: View; label: string; mark: string }[] = [
   { id: "today", label: "今日任务", mark: "今" },
   { id: "library", label: "内容库", mark: "库" },
@@ -45,6 +59,9 @@ const nav: { id: View; label: string; mark: string }[] = [
   { id: "analytics", label: "数据表现", mark: "数" },
   { id: "accounts", label: "账号设置", mark: "号" },
 ];
+
+const DEFAULT_EDITORIAL_BRIEF =
+  "今天少选产业快讯，多选可以实际操作的 AI 技巧。";
 
 const seedHotspots: Hotspot[] = [
   {
@@ -358,6 +375,36 @@ function StatusPill({ status }: { status: HumanStatus }) {
   return <span className={`status status-${status}`}>{status}</span>;
 }
 
+function makeDraft(item: Hotspot): Draft {
+  return {
+    id: item.id + 1_000_000,
+    hotspotId: item.id,
+    platform: item.platforms[0] || "小红书",
+    title: item.angle,
+    body:
+      `这两天，${item.source} 上有一条值得继续追踪的 AI 信号：${item.title}\n\n` +
+      "建议从三个部分展开：\n1. 原始信号到底说了什么\n2. 对目标读者有什么实际影响\n3. 可以立刻验证的一步是什么\n\n" +
+      `发布前核对：${item.humanCheck || "核对原文事实、上下文和国内平台相似内容。"}`,
+    visual: `首图突出「${item.angle}」；内页用“原始信号—实际影响—行动步骤”三张信息卡。`,
+    version: "V1 · 真实热点框架稿",
+    updatedBy: "AI Content Operator",
+    status: "待审核",
+  };
+}
+
+function formatCapturedAt(value?: string) {
+  if (!value) return "未知";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "未知";
+  return new Intl.DateTimeFormat("zh-CN", {
+    month: "numeric",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  }).format(date);
+}
+
 export default function Workbench({
   userName,
   userEmail,
@@ -374,6 +421,9 @@ export default function Workbench({
   const [brief, setBrief] = useState("");
   const [showSources, setShowSources] = useState(false);
   const [hydrated, setHydrated] = useState(false);
+  const [discovering, setDiscovering] = useState(false);
+  const [editorialBrief, setEditorialBrief] = useState(DEFAULT_EDITORIAL_BRIEF);
+  const [discoveryMeta, setDiscoveryMeta] = useState<DiscoveryMeta | null>(null);
 
   useEffect(() => {
     async function loadWorkspace() {
@@ -382,10 +432,21 @@ export default function Workbench({
         const response = await fetch("/api/workspace", { cache: "no-store" });
         if (response.ok) {
           const payload = (await response.json()) as {
-            state?: { hotspots?: Hotspot[]; drafts?: Draft[] } | null;
+            state?: {
+              hotspots?: Hotspot[];
+              drafts?: Draft[];
+              discoveryMeta?: DiscoveryMeta;
+            } | null;
           };
           if (payload.state?.hotspots) setHotspots(payload.state.hotspots);
           if (payload.state?.drafts) setDrafts(payload.state.drafts);
+          if (payload.state?.discoveryMeta) {
+            setDiscoveryMeta(payload.state.discoveryMeta);
+            setEditorialBrief(
+              payload.state.discoveryMeta.editorialBrief ||
+                DEFAULT_EDITORIAL_BRIEF,
+            );
+          }
           setHydrated(true);
           return;
         }
@@ -410,14 +471,14 @@ export default function Workbench({
     if (!hydrated) return;
     window.localStorage.setItem(
       "tide-content-workbench",
-      JSON.stringify({ hotspots, drafts }),
+      JSON.stringify({ hotspots, drafts, discoveryMeta }),
     );
     const timer = window.setTimeout(() => {
       void fetch("/api/workspace", {
         method: "PUT",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({
-          state: { hotspots, drafts },
+          state: { hotspots, drafts, discoveryMeta },
           actor: userEmail || userName,
           eventType: "保存内容版本",
           detail: "选题、审核状态或平台文案发生变化",
@@ -425,7 +486,7 @@ export default function Workbench({
       }).catch(() => undefined);
     }, 800);
     return () => window.clearTimeout(timer);
-  }, [hotspots, drafts, hydrated, userEmail, userName]);
+  }, [hotspots, drafts, discoveryMeta, hydrated, userEmail, userName]);
 
   const recommended = useMemo(
     () => hotspots.filter((item) => item.selected),
@@ -440,7 +501,7 @@ export default function Workbench({
   );
   const selected = hotspots.find((item) => item.id === selectedId) ?? hotspots[0];
   const activeDraft =
-    drafts.find((item) => item.hotspotId === selected.id) ?? drafts[0];
+    drafts.find((item) => item.hotspotId === selected.id) ?? makeDraft(selected);
 
   function flash(message: string) {
     setNotice(message);
@@ -448,6 +509,9 @@ export default function Workbench({
   }
 
   function toggleAdopt(item: Hotspot) {
+    if (!item.selected && !drafts.some((draft) => draft.hotspotId === item.id)) {
+      setDrafts((items) => [...items, makeDraft(item)]);
+    }
     setHotspots((items) =>
       items.map((current) =>
         current.id === item.id
@@ -460,6 +524,45 @@ export default function Workbench({
       ),
     );
     flash(item.selected ? "已移回候选池，记录仍然保留" : "已采用，并进入审核队列");
+  }
+
+  function selectHotspot(item: Hotspot) {
+    if (!drafts.some((draft) => draft.hotspotId === item.id)) {
+      setDrafts((items) => [...items, makeDraft(item)]);
+    }
+    setSelectedId(item.id);
+    setShowSources(false);
+  }
+
+  async function refreshHotspots() {
+    setDiscovering(true);
+    setNotice("");
+    try {
+      const response = await fetch("/api/discover", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ editorialBrief }),
+      });
+      const payload = (await response.json()) as {
+        hotspots?: Hotspot[];
+        drafts?: Draft[];
+        meta?: DiscoveryMeta;
+        error?: string;
+      };
+      if (!response.ok || !payload.hotspots?.length || !payload.drafts) {
+        throw new Error(payload.error || "本轮没有取得有效热点");
+      }
+      setHotspots(payload.hotspots);
+      setDrafts(payload.drafts);
+      setDiscoveryMeta(payload.meta ?? null);
+      setSelectedId(payload.hotspots[0].id);
+      setTopicFilter("全部");
+      flash(`已整理 ${payload.hotspots.length} 条真实热点，推荐 ${payload.drafts.length} 条`);
+    } catch (error) {
+      flash(error instanceof Error ? error.message : "本轮整理失败，请稍后重试");
+    } finally {
+      setDiscovering(false);
+    }
   }
 
   function saveDraft(nextBody: string) {
@@ -517,7 +620,18 @@ export default function Workbench({
     flash("已按意见生成新版本，旧版本仍可追溯");
   }
 
-  const dateLabel = "7 月 29 日 · 周三";
+  const dateLabel = new Intl.DateTimeFormat("zh-CN", {
+    month: "long",
+    day: "numeric",
+    weekday: "short",
+  }).format(new Date());
+  const updatedLabel = discoveryMeta
+    ? new Intl.DateTimeFormat("zh-CN", {
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false,
+      }).format(new Date(discoveryMeta.capturedAt))
+    : "演示数据";
 
   return (
     <div className="app-shell">
@@ -546,7 +660,7 @@ export default function Workbench({
           <span className="pulse" />
           <div>
             <strong>今日采集完成</strong>
-            <small>20 条热点 · 08:30 更新</small>
+            <small>{hotspots.length} 条热点 · {updatedLabel}</small>
           </div>
         </div>
       </aside>
@@ -559,8 +673,12 @@ export default function Workbench({
           </div>
           <div className="top-actions">
             {view === "today" && (
-              <button className="ghost-btn" onClick={() => flash("已发起重新整理，完成后会保留本次快照")}>
-                重新整理今日热点
+              <button
+                className="ghost-btn"
+                onClick={refreshHotspots}
+                disabled={discovering}
+              >
+                {discovering ? "正在采集与去重…" : "采集今日真实热点"}
               </button>
             )}
             <button className="avatar" title={userEmail || userName}>
@@ -578,14 +696,22 @@ export default function Workbench({
                 <span className="section-kicker">TODAY&apos;S SIGNAL</span>
                 <h2>今天值得关注的，不是又一个新模型</h2>
                 <p>
-                  海外讨论正在从“AI 能做什么”转向“人如何验收、定价和建立长期工作流”。
-                  建议今天多发可直接执行的 AI 技巧，产业资讯控制在 2 条以内。
+                  工作台会聚合多个海外来源、按主题去重，再结合国内覆盖情况给出推荐。
+                  覆盖不足会明确提示，不会把“没有搜到”包装成信息差。
                 </p>
+                <label className="editorial-brief">
+                  <span>今日选题偏好</span>
+                  <input
+                    value={editorialBrief}
+                    onChange={(event) => setEditorialBrief(event.target.value)}
+                    placeholder="例如：今天不要产业新闻，多选几个实际操作的 AI 技巧"
+                  />
+                </label>
               </div>
               <div className="daily-numbers">
-                <div><strong>20</strong><span>有效热点</span></div>
+                <div><strong>{hotspots.length}</strong><span>有效热点</span></div>
                 <div><strong>{recommended.length}</strong><span>推荐选题</span></div>
-                <div><strong>3</strong><span>待你审核</span></div>
+                <div><strong>{drafts.filter((draft) => draft.status === "待审核").length}</strong><span>待你审核</span></div>
               </div>
             </div>
 
@@ -601,7 +727,9 @@ export default function Workbench({
                   </button>
                 ))}
               </div>
-              <span className="quiet">按综合推荐排序</span>
+              <span className="quiet">
+                {discoveryMeta?.coverageLabel || "演示数据 · 点击右上角开始真实采集"}
+              </span>
             </div>
 
             <div className="split-layout">
@@ -610,12 +738,13 @@ export default function Workbench({
                   <article
                     key={item.id}
                     className={selected.id === item.id ? "hotspot-card selected" : "hotspot-card"}
-                    onClick={() => setSelectedId(item.id)}
+                    onClick={() => selectHotspot(item)}
                   >
                     <div className="rank">{String(item.rank).padStart(2, "0")}</div>
                     <div className="hotspot-content">
                       <div className="source-row">
                         <span className="source-badge">{item.sourceType}</span>
+                        {item.live && <span className="live-badge">真实采集</span>}
                         <span>{item.source}</span>
                         <i>·</i>
                         <span>{item.age}</span>
@@ -670,7 +799,14 @@ export default function Workbench({
                       <a href={selected.sourceUrl} target="_blank" rel="noreferrer">
                         原始来源：{selected.source} ↗
                       </a>
-                      <p>已与近 30 天国内公开内容做语义比对；当前角度未发现高相似表达。发布前仍需人工核对事实与引用。</p>
+                      <p>
+                        {selected.domesticCoverage ||
+                          "演示条目：上线真实采集后会显示国内覆盖与证据置信度。"}
+                      </p>
+                      {selected.evidenceConfidence != null && (
+                        <p>证据置信度：{selected.evidenceConfidence}/100 · 采集时间：{formatCapturedAt(selected.sourceCapturedAt)}</p>
+                      )}
+                      <p>{selected.humanCheck || "发布前仍需人工核对事实、上下文与引用。"}</p>
                     </div>
                   )}
                 </div>
