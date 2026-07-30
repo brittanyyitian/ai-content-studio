@@ -22,6 +22,13 @@
       "when": 1785381756000,
       "tag": "0002_live_social_state",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1785384360000,
+      "tag": "0003_incremental_social_batch",
+      "breakpoints": true
     }
   ]
 }
