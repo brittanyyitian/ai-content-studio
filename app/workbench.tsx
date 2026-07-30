@@ -8,7 +8,6 @@ import {
 
 type View =
   | "today"
-  | "inbox"
   | "library"
   | "calendar"
   | "analytics"
@@ -71,87 +70,21 @@ type DiscoveryMeta = {
   editorialBrief: string;
 };
 
-type ManualSignal = {
-  id: string;
-  platform: string;
-  url: string;
-  author: string;
-  originalText: string;
-  engagement: string;
-  note: string;
-  capturedAt: string;
-  capturedBy: string;
-  status: "待选题" | "已结束";
-};
-
 type WorkspaceState = {
   schemaVersion: number;
   hotspots: Hotspot[];
   drafts: Draft[];
   discoveryMeta: DiscoveryMeta | null;
-  manualSignals?: ManualSignal[];
 };
 
 const LOCAL_CACHE_KEY = `tide-content-workbench-v${WORKSPACE_SCHEMA_VERSION}`;
 
 const nav: { id: View; label: string }[] = [
   { id: "today", label: "今日任务" },
-  { id: "inbox", label: "观察箱" },
   { id: "library", label: "内容库" },
   { id: "calendar", label: "发布日历" },
   { id: "analytics", label: "数据表现" },
   { id: "accounts", label: "账号设置" },
-];
-
-const sourceChannels = [
-  {
-    name: "Hacker News",
-    mode: "免费自动",
-    coverage: "帖子、积分、评论",
-    state: "运行中",
-  },
-  {
-    name: "GitHub",
-    mode: "免费自动",
-    coverage: "项目、Stars、Forks",
-    state: "运行中",
-  },
-  {
-    name: "官网 / RSS",
-    mode: "免费自动",
-    coverage: "官方更新与媒体报道",
-    state: "运行中",
-  },
-  {
-    name: "YouTube",
-    mode: "免费额度",
-    coverage: "播放、点赞、评论",
-    state: "待配置",
-  },
-  {
-    name: "X",
-    mode: "按量付费",
-    coverage: "帖子、浏览、点赞、回复",
-    state: "可选接入",
-  },
-  {
-    name: "Instagram / LinkedIn",
-    mode: "人工观察",
-    coverage: "重点账号与公开互动",
-    state: "可使用",
-  },
-  {
-    name: "TikTok / Dribbble",
-    mode: "人工观察",
-    coverage: "热门视频、作品与评论",
-    state: "可使用",
-  },
-  {
-    name: "Reddit / Product Hunt",
-    mode: "人工观察",
-    coverage: "社区讨论与产品反馈",
-    state: "可使用",
-  },
 ];
 
 const DEFAULT_EDITORIAL_BRIEF =
@@ -514,15 +447,6 @@ export default function Workbench({
   const [loadError, setLoadError] = useState("");
   const [editorialBrief, setEditorialBrief] = useState(DEFAULT_EDITORIAL_BRIEF);
   const [discoveryMeta, setDiscoveryMeta] = useState<DiscoveryMeta | null>(null);
-  const [manualSignals, setManualSignals] = useState<ManualSignal[]>([]);
-  const [signalForm, setSignalForm] = useState({
-    platform: "Instagram",
-    url: "",
-    author: "",
-    originalText: "",
-    engagement: "",
-    note: "",
-  });
   const loadedSnapshot = useRef("");
 
   useEffect(() => {
@@ -531,7 +455,6 @@ export default function Workbench({
         setHotspots(state.hotspots);
         setDrafts(state.drafts);
         setDiscoveryMeta(state.discoveryMeta);
-        setManualSignals(state.manualSignals ?? []);
         setEditorialBrief(
           state.discoveryMeta?.editorialBrief || DEFAULT_EDITORIAL_BRIEF,
         );
@@ -559,7 +482,6 @@ export default function Workbench({
           hotspots: payload.hotspots,
           drafts: payload.drafts,
           discoveryMeta: payload.meta ?? null,
-          manualSignals: [],
         });
       }
 
@@ -607,7 +529,6 @@ export default function Workbench({
       hotspots,
       drafts,
       discoveryMeta,
-      manualSignals,
     };
     const encoded = JSON.stringify(state);
     if (encoded === loadedSnapshot.current) return;
@@ -629,15 +550,7 @@ export default function Workbench({
         .catch(() => undefined);
     }, 800);
     return () => window.clearTimeout(timer);
-  }, [
-    hotspots,
-    drafts,
-    discoveryMeta,
-    manualSignals,
-    hydrated,
-    userEmail,
-    userName,
-  ]);
+  }, [hotspots, drafts, discoveryMeta, hydrated, userEmail, userName]);
 
   const recommended = useMemo(
     () => hotspots.filter((item) => item.selected),
@@ -767,49 +680,6 @@ export default function Workbench({
     flash("修改意见已进入 AI 处理队列，旧版本保持不变");
   }
 
-  function addManualSignal() {
-    const url = signalForm.url.trim();
-    if (!/^https?:\/\//i.test(url)) {
-      flash("请粘贴完整的原帖链接");
-      return;
-    }
-    if (!signalForm.originalText.trim()) {
-      flash("请粘贴原帖正文或写清楚视频内容");
-      return;
-    }
-    const signal: ManualSignal = {
-      id: `manual-${Date.now()}`,
-      platform: signalForm.platform,
-      url,
-      author: signalForm.author.trim() || "未填写",
-      originalText: signalForm.originalText.trim(),
-      engagement: signalForm.engagement.trim() || "未公开 / 待人工核验",
-      note: signalForm.note.trim(),
-      capturedAt: new Date().toISOString(),
-      capturedBy: userName || userEmail || "内容运营",
-      status: "待选题",
-    };
-    setManualSignals((items) => [signal, ...items]);
-    setSignalForm({
-      platform: signalForm.platform,
-      url: "",
-      author: "",
-      originalText: "",
-      engagement: "",
-      note: "",
-    });
-    flash("已保存到观察箱，等待内容运营整理");
-  }
-
-  function closeManualSignal(id: string) {
-    setManualSignals((items) =>
-      items.map((item) =>
-        item.id === id ? { ...item, status: "已结束" } : item,
-      ),
-    );
-    flash("这条线索已结束，记录仍然保留");
-  }
-
   const dateLabel = new Intl.DateTimeFormat("zh-CN", {
     month: "long",
     day: "numeric",
@@ -842,17 +712,6 @@ export default function Workbench({
             >
               {item.label}
               {item.id === "today" && <em>{recommended.length}</em>}
-              {item.id === "inbox" &&
-                manualSignals.filter((signal) => signal.status === "待选题")
-                  .length > 0 && (
-                  <em>
-                    {
-                      manualSignals.filter(
-                        (signal) => signal.status === "待选题",
-                      ).length
-                    }
-                  </em>
-                )}
             </button>
           ))}
         </nav>
@@ -864,16 +723,7 @@ export default function Workbench({
             <span className="eyebrow">{dateLabel}</span>
             <h1>{nav.find((item) => item.id === view)?.label}</h1>
           </div>
-          <div className="top-actions">
-            {view === "today" && (
-              <button
-                className="ghost-btn"
-                onClick={() => setView("inbox")}
-              >
-                补充高赞原帖
-              </button>
-            )}
-          </div>
+          <div className="top-actions" />
         </header>
 
         {notice && <div className="toast">{notice}</div>}
@@ -1083,181 +933,6 @@ export default function Workbench({
                   </button>
                 </div>
               </aside>
-            </div>
-          </section>
-        )}
-
-        {view === "inbox" && (
-          <section className="page-section">
-            <div className="section-heading">
-              <div>
-                <span className="section-kicker">SOURCE INBOX</span>
-                <h2>海外社媒观察箱</h2>
-              </div>
-              <span className="quiet">
-                只保存公开内容，不读取账号 Cookie
-              </span>
-            </div>
-
-            <div className="source-console">
-              <div className="source-registry">
-                <div className="console-title">
-                  <h3>来源状态</h3>
-                  <p>自动源每天采集；受限社媒由运营粘贴高赞原帖。</p>
-                </div>
-                <div className="source-table">
-                  {sourceChannels.map((source) => (
-                    <article key={source.name}>
-                      <strong>{source.name}</strong>
-                      <span>{source.mode}</span>
-                      <span>{source.coverage}</span>
-                      <b>{source.state}</b>
-                    </article>
-                  ))}
-                </div>
-              </div>
-
-              <div className="signal-form">
-                <div className="console-title">
-                  <h3>添加一条高赞原帖</h3>
-                  <p>把页面上能看到的原文和互动数字一起保存。</p>
-                </div>
-                <div className="signal-fields">
-                  <label>
-                    <span>平台</span>
-                    <select
-                      value={signalForm.platform}
-                      onChange={(event) =>
-                        setSignalForm((value) => ({
-                          ...value,
-                          platform: event.target.value,
-                        }))
-                      }
-                    >
-                      {[
-                        "Instagram",
-                        "LinkedIn",
-                        "TikTok",
-                        "Dribbble",
-                        "X",
-                        "Reddit",
-                        "Product Hunt",
-                        "YouTube",
-                        "其他",
-                      ].map((platform) => (
-                        <option key={platform}>{platform}</option>
-                      ))}
-                    </select>
-                  </label>
-                  <label>
-                    <span>作者</span>
-                    <input
-                      value={signalForm.author}
-                      onChange={(event) =>
-                        setSignalForm((value) => ({
-                          ...value,
-                          author: event.target.value,
-                        }))
-                      }
-                      placeholder="@作者或账号名"
-                    />
-                  </label>
-                  <label className="wide">
-                    <span>原帖链接</span>
-                    <input
-                      value={signalForm.url}
-                      onChange={(event) =>
-                        setSignalForm((value) => ({
-                          ...value,
-                          url: event.target.value,
-                        }))
-                      }
-                      placeholder="https://"
-                    />
-                  </label>
-                  <label className="wide">
-                    <span>原帖正文 / 视频内容</span>
-                    <textarea
-                      value={signalForm.originalText}
-                      onChange={(event) =>
-                        setSignalForm((value) => ({
-                          ...value,
-                          originalText: event.target.value,
-                        }))
-                      }
-                      placeholder="粘贴原文；视频可写标题、字幕或主要内容"
-                    />
-                  </label>
-                  <label className="wide">
-                    <span>公开互动</span>
-                    <input
-                      value={signalForm.engagement}
-                      onChange={(event) =>
-                        setSignalForm((value) => ({
-                          ...value,
-                          engagement: event.target.value,
-                        }))
-                      }
-                      placeholder="例如：120万播放 · 8.6万赞 · 2400评论"
-                    />
-                  </label>
-                  <label className="wide">
-                    <span>为什么值得看</span>
-                    <textarea
-                      value={signalForm.note}
-                      onChange={(event) =>
-                        setSignalForm((value) => ({
-                          ...value,
-                          note: event.target.value,
-                        }))
-                      }
-                      placeholder="可选：评论区争议、适合哪个账号、想改成什么角度"
-                    />
-                  </label>
-                </div>
-                <button className="primary-btn" onClick={addManualSignal}>
-                  保存到观察箱
-                </button>
-              </div>
-            </div>
-
-            <div className="signal-list">
-              <div className="console-title">
-                <h3>待整理线索</h3>
-                <p>{manualSignals.length} 条记录，原帖与互动数字都会保留。</p>
-              </div>
-              {manualSignals.length ? (
-                manualSignals.map((signal) => (
-                  <article className="signal-item" key={signal.id}>
-                    <div className="signal-meta">
-                      <span>{signal.platform}</span>
-                      <span>{signal.author}</span>
-                      <span>{formatCapturedAt(signal.capturedAt)}</span>
-                      <StatusPill status={signal.status} />
-                    </div>
-                    <p>{signal.originalText}</p>
-                    <div className="signal-engagement">
-                      <b>公开互动</b>
-                      <span>{signal.engagement}</span>
-                    </div>
-                    {signal.note && <small>{signal.note}</small>}
-                    <div className="signal-actions">
-                      <a href={signal.url} target="_blank" rel="noreferrer">
-                        打开原帖 ↗
-                      </a>
-                      {signal.status === "待选题" && (
-                        <button onClick={() => closeManualSignal(signal.id)}>
-                          结束这条
-                        </button>
-                      )}
-                    </div>
-                  </article>
-                ))
-              ) : (
-                <div className="empty-signals">
-                  暂无人工线索。看到高赞帖子时，粘贴链接和原文即可。
-                </div>
-              )}
             </div>
           </section>
         )}

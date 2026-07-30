@@ -24,9 +24,8 @@ pnpm test
 arXiv。配置 `YOUTUBE_API_KEY` 后会加入 YouTube 视频的播放、点赞和评论；
 配置 `X_BEARER_TOKEN` 后会通过 X 官方按量接口读取高互动帖子。
 
-Instagram、LinkedIn、TikTok、Dribbble、Reddit 和 Product Hunt 不绕过登录
-或平台限制抓取。运营人员在“观察箱”粘贴公开原帖、原文和互动数字，记录会和
-工作台状态一起保存，供每日 AI 内容运营任务翻译、分析和改写。
+Instagram、LinkedIn、TikTok、Dribbble、Reddit 和 Product Hunt 不提供人工
+粘贴入口。后续由登录态浏览器采集任务核对公开内容，并把合格结果直接写入候选池。
 
 可选的 `BRAVE_SEARCH_API_KEY` 用于国内公开网页覆盖检查。没有配置时，系统会把国内稀缺分封顶为 55，并要求人工进行目标平台站内核对。
 

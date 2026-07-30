@@ -232,8 +232,8 @@ export async function discoverDaily(options: DiscoveryOptions) {
       dimension: "source_coverage",
       scope: "Instagram / LinkedIn / TikTok / Dribbble / Reddit",
       reason: "这些平台不提供适合本项目免费抓取全站热门内容的开放接口。",
-      impact: "创作者帖子通过人工观察箱补充，不伪造全站覆盖。",
-      manualTask: "运营登录自己的平台账号，粘贴原帖链接、原文和公开互动。",
+      impact: "需通过已登录浏览器采集公开页面，不伪造全站覆盖。",
+      manualTask: "运行浏览器采集任务并人工处理可能出现的登录或验证码。",
     },
   ];
   if (!options.youtubeApiKey?.trim()) {
@@ -242,7 +242,7 @@ export async function discoverDaily(options: DiscoveryOptions) {
       scope: "YouTube",
       reason: "尚未配置免费的 YouTube Data API 配额。",
       impact: "当前不会自动取得视频播放、点赞和评论。",
-      manualTask: "配置 YouTube API Key，或把重点视频加入人工观察箱。",
+      manualTask: "配置 YouTube API Key，或通过已登录浏览器采集重点视频。",
     });
   }
   if (!options.xBearerToken?.trim()) {
@@ -396,7 +396,7 @@ export async function discoverDaily(options: DiscoveryOptions) {
     gaps,
     coverageLabel: braveKey
       ? `${providers.length} 个自动来源 · 国内公开网页已比对`
-      : `${providers.length} 个自动来源 · 大社媒由人工观察箱补充`,
+      : `${providers.length} 个自动来源 · 大社媒由浏览器任务补充`,
   };
 }
 
