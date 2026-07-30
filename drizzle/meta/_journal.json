@@ -15,6 +15,13 @@
       "when": 1785315823565,
       "tag": "0001_simple_daredevil",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1785381756000,
+      "tag": "0002_live_social_state",
+      "breakpoints": true
     }
   ]
 }
