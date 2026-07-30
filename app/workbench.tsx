@@ -424,16 +424,17 @@ function formatCapturedAt(value?: string) {
   }).format(date);
 }
 
-export default function Workbench(_props: {
+export default function Workbench(props: {
   userName: string;
   userEmail: string;
 }) {
+  void props;
   const [view, setView] = useState<View>("today");
   const [hotspots, setHotspots] = useState(seedHotspots);
   const [selectedId, setSelectedId] = useState(1);
   const [drafts, setDrafts] = useState(seedDrafts);
   const [notice, setNotice] = useState("");
-  const [topicFilter, setTopicFilter] = useState("推荐");
+  const [topicFilter, setTopicFilter] = useState("全部");
   const [showSources, setShowSources] = useState(false);
   const [hydrated, setHydrated] = useState(false);
   const [loadError, setLoadError] = useState("");
@@ -514,15 +515,9 @@ export default function Workbench(_props: {
     void loadWorkspace();
   }, []);
 
-  const recommended = useMemo(
-    () => hotspots.filter((item) => item.selected),
-    [hotspots],
-  );
   const visibleHotspots = useMemo(
     () =>
-      topicFilter === "推荐"
-        ? hotspots.filter((item) => item.selected)
-        : topicFilter === "全部"
+      topicFilter === "全部"
         ? hotspots
         : hotspots.filter((item) => item.category === topicFilter),
     [hotspots, topicFilter],
@@ -531,8 +526,7 @@ export default function Workbench(_props: {
     return (
       <main className="loading-screen">
         <span className="pulse" />
-        <h1>正在读取今天的工作台</h1>
-        <p>会先校验数据版本，再显示可审核内容。</p>
+        <h1>正在读取今天的内容</h1>
       </main>
     );
   }
@@ -712,7 +706,6 @@ export default function Workbench(_props: {
               onClick={() => setView(item.id)}
             >
               {item.label}
-              {item.id === "today" && <em>{recommended.length}</em>}
             </button>
           ))}
         </nav>
@@ -740,14 +733,13 @@ export default function Workbench(_props: {
                 </label>
               </div>
               <div className="daily-numbers">
-                <div><strong>{hotspots.length}</strong><span>候选</span></div>
-                <div><strong>{recommended.length}</strong><span>推荐</span></div>
+                <div><strong>{hotspots.length}</strong><span>条内容</span></div>
               </div>
             </div>
 
             <div className="toolbar">
               <div className="filter-group">
-                {["推荐", "全部", "AI 技巧", "实操案例", "接单变现", "个人 IP", "产业观察"].map((filter) => (
+                {["全部", "AI 技巧", "实操案例", "接单变现", "个人 IP", "产业观察"].map((filter) => (
                   <button
                     key={filter}
                     className={topicFilter === filter ? "filter active" : "filter"}

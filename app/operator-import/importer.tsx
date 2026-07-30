@@ -15,6 +15,7 @@ export default function OperatorImporter() {
       const parsed = JSON.parse(value) as {
         state?: unknown;
         detail?: string;
+        mode?: "merge" | "replace";
       };
       const response = await fetch("/api/operator", {
         method: "POST",
@@ -22,7 +23,7 @@ export default function OperatorImporter() {
         body: JSON.stringify({
           state: parsed.state ?? parsed,
           detail: parsed.detail ?? "已通过私有运营导入页回写每日内容",
-          mode: "merge",
+          mode: parsed.mode ?? "merge",
         }),
       });
       const result = (await response.json()) as {
