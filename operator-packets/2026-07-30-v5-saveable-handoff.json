@@ -1,0 +1,1104 @@
+{
+  "schema_version": 2,
+  "batch_id": "saveable-batch-2026-07-30-v5",
+  "hotspots": [
+    {
+      "id": "2026073001",
+      "title": "让 AI 先问你 5 个问题，再开始干活",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "不是讲模型，而是给读者一段今天就能复制的提示词；原帖公开20,936浏览、255赞。",
+      "angle": "先别写，先问清楚",
+      "human_check": "原帖讨论的是模型外层运行机制；发布稿中的提示词是本地化方法，不宣称适用于所有任务。",
+      "sources": [
+        {
+          "url": "https://x.com/emollick/status/2082616135170555984",
+          "discussion_url": "https://x.com/emollick/status/2082616135170555984",
+          "source_type": "X",
+          "captured_at": "2026-07-30T17:20:00+08:00",
+          "engagement": {
+            "views": 20936,
+            "likes": 255,
+            "replies": 23,
+            "reposts": 13,
+            "bookmarks": 56
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 84,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "evidence_confidence": 82,
+        "final": 83
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "尚未完成小红书、抖音同角度语义检索，国内稀缺度按规则封顶55；发布前需人工搜索标题关键词与核心方法，确认没有高度同质内容。"
+        }
+      ],
+      "localized_translation": "模型只是其中一部分，外层的运行机制同样重要。我们对怎样设计这套机制的理解才刚刚开始。即使模型本身不变，仍有大量潜力没有被挖出来。",
+      "discussion_focus": [
+        "当前已核验原帖正文和互动总数，评论样本尚未逐条采集。",
+        "原帖核心判断是：模型能力之外，连续运行、上下文管理和任务外壳也会显著影响结果。",
+        "引用帖认为跨多个上下文窗口工作和压缩机制影响了基准结果，但仍需核验原实验。"
+      ],
+      "save_object": "可复制提示词",
+      "learning_outcome": "学会让AI先补齐需求，减少一本正经地瞎猜。"
+    },
+    {
+      "id": "2026073002",
+      "title": "3 分钟查完你公开过的 AI 分享链接",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "795赞、134评论，且每个使用AI分享链接的人都能立刻执行。",
+      "angle": "把忘记关闭的公开权限找出来",
+      "human_check": "不同产品权限机制不同；不得声称所有分享链接都会被搜索引擎收录。",
+      "sources": [
+        {
+          "url": "https://www.instagram.com/alliekmiller/p/DbWUys9j_Jm/",
+          "discussion_url": "https://www.instagram.com/alliekmiller/p/DbWUys9j_Jm/",
+          "source_type": "Instagram",
+          "captured_at": "2026-07-30T17:20:00+08:00",
+          "engagement": {
+            "likes": 795,
+            "comments": 134,
+            "reposts": 32
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 88,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "evidence_confidence": 82,
+        "final": 85
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "尚未完成小红书、抖音同角度语义检索，国内稀缺度按规则封顶55；发布前需人工搜索标题关键词与核心方法，确认没有高度同质内容。"
+        }
+      ],
+      "localized_translation": "作者称她在可被索引的Anthropic公开内容中看到了由创建者自行分享的敏感材料，包括家庭投资策略和医疗机构的排班。她建议大家检查AI对话和云盘里仍设置为“知道链接即可访问”的内容。",
+      "discussion_focus": [
+        "可见评论中大量“JOB”是响应作者领取资料的口令，不能当成用户赞同隐私结论的证据。",
+        "目前可核验的非口令评论样本很少，没有足够证据概括评论区共识。",
+        "正文真正有价值的部分是提醒用户检查“知道链接即可访问”的历史内容。"
+      ],
+      "save_object": "3项隐私自查清单",
+      "learning_outcome": "知道哪些分享入口最容易被自己遗忘。"
+    },
+    {
+      "id": "2026073004",
+      "title": "别囤课了：按岗位看完这 3 小时 AI 课程",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "原帖195,813浏览、5,709收藏，收藏量超过点赞，明确是资料型需求。",
+      "angle": "不是从头看到尾，而是只学自己马上能用的部分",
+      "human_check": "发布前补齐原始课程链接与章节时间；不得暗示3小时即可成为AI工程师。",
+      "sources": [
+        {
+          "url": "https://x.com/dkare1009/status/2082141532669333653",
+          "discussion_url": "https://x.com/dkare1009/status/2082141532669333653",
+          "source_type": "X",
+          "captured_at": "2026-07-30T17:20:00+08:00",
+          "engagement": {
+            "views": 195813,
+            "likes": 2704,
+            "replies": 16,
+            "reposts": 594,
+            "bookmarks": 5709
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 95,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "evidence_confidence": 82,
+        "final": 87
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "尚未完成小红书、抖音同角度语义检索，国内稀缺度按规则封顶55；发布前需人工搜索标题关键词与核心方法，确认没有高度同质内容。"
+        }
+      ],
+      "localized_translation": "吴恩达发布了一门约3小时课程，内容依次覆盖智能体系统、AI工程未来、提示方法，以及用AI快速搭应用。",
+      "discussion_focus": [
+        "收藏量高于点赞，说明它更像学习资料而不是情绪热点。",
+        "当前未取得足够可验证的评论样本，不能概括评论区共识。",
+        "原帖价值在时间轴和学习路径，不在“3小时成为AI工程师”的夸张承诺。"
+      ],
+      "save_object": "三类岗位学习路线",
+      "learning_outcome": "知道先学哪一段、学完做什么，不再只收藏不行动。"
+    },
+    {
+      "id": "2026073005",
+      "title": "AI 做长任务总断片？给它留一张交接单",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "原帖489,560浏览、3,307收藏；真正可迁移的不是底层架构，而是“中断后能续上”。",
+      "angle": "每做完一段就更新交接单",
+      "human_check": "原帖技术实现是Cloudflare Durable Object；发布稿只提炼任务交接方法，不冒充原作者方案。",
+      "sources": [
+        {
+          "url": "https://x.com/Vercantez/status/2082138839888589200",
+          "discussion_url": "https://x.com/Vercantez/status/2082138839888589200",
+          "source_type": "X",
+          "captured_at": "2026-07-30T17:20:00+08:00",
+          "engagement": {
+            "views": 489560,
+            "likes": 1535,
+            "replies": 78,
+            "reposts": 218,
+            "bookmarks": 3307
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 91,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "evidence_confidence": 82,
+        "final": 86
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "尚未完成小红书、抖音同角度语义检索，国内稀缺度按规则封顶55；发布前需人工搜索标题关键词与核心方法，确认没有高度同质内容。"
+        }
+      ],
+      "localized_translation": "作者称团队把智能体从传统虚拟机迁到Cloudflare Durable Object，并结合Pi、Agents SDK和Code Mode运行。",
+      "discussion_focus": [
+        "浏览量和收藏都高，说明开发者对长任务基础设施有兴趣。",
+        "原帖附技术文章，但当前没有逐条核验评论。",
+        "Durable Object 是具体工程方案，不代表所有Agent都应使用同一架构。"
+      ],
+      "save_object": "长任务交接模板",
+      "learning_outcome": "让跨天任务换聊天后也能接着做。"
+    },
+    {
+      "id": "2026073006",
+      "title": "想装本地 AI，先看电脑过不过这 4 关",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "原帖1,454,133浏览、8,599赞、4,335收藏；数字热门，但稿件给出普通人的选择清单。",
+      "angle": "别被“本地运行”四个字骗去买错电脑",
+      "human_check": "复核594GB、量化精度与演示硬件；不得写成普通笔记本可运行Kimi K3。",
+      "sources": [
+        {
+          "url": "https://x.com/UnslothAI/status/2082463988953367031",
+          "discussion_url": "https://x.com/UnslothAI/status/2082463988953367031",
+          "source_type": "X",
+          "captured_at": "2026-07-30T17:20:00+08:00",
+          "engagement": {
+            "views": 1454133,
+            "likes": 8599,
+            "replies": 348,
+            "reposts": 1402,
+            "bookmarks": 4335
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 99,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "evidence_confidence": 82,
+        "final": 88
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "尚未完成小红书、抖音同角度语义检索，国内稀缺度按规则封顶55；发布前需人工搜索标题关键词与核心方法，确认没有高度同质内容。"
+        }
+      ],
+      "localized_translation": "团队称1-bit量化把模型从1.56TB缩到594GB，减少约62%，精度约为原版的78.9%，并在高配Mac Studio上演示。",
+      "discussion_focus": [
+        "百万级浏览与348回复说明“能否在个人设备运行”争议很强。",
+        "作者公开数字是594GB和约78.9%精度，不能改写成普通笔记本可跑。",
+        "“最强开源模型”属于作者判断，不应当成独立结论。"
+      ],
+      "save_object": "本地AI选择清单",
+      "learning_outcome": "分清能下载、能加载、能流畅用和适合日常用。"
+    },
+    {
+      "id": "2026073007",
+      "title": "看到“AI 降本 20%”，先问这 4 个问题",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "官方帖120,707浏览、1,761赞；从新闻搬运升级为一张能反复用的判断卡。",
+      "angle": "公司成本下降，不等于你的价格马上下降",
+      "human_check": "20%和15%只限定于OpenAI帖中描述的两个基础设施案例。",
+      "sources": [
+        {
+          "url": "https://x.com/OpenAIDevs/status/2082580211552457102",
+          "discussion_url": "https://x.com/OpenAIDevs/status/2082580211552457102",
+          "source_type": "X",
+          "captured_at": "2026-07-30T17:20:00+08:00",
+          "engagement": {
+            "views": 120707,
+            "likes": 1761,
+            "replies": 82,
+            "reposts": 87,
+            "bookmarks": 138
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 88,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "evidence_confidence": 82,
+        "final": 85
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "尚未完成小红书、抖音同角度语义检索，国内稀缺度按规则封顶55；发布前需人工搜索标题关键词与核心方法，确认没有高度同质内容。"
+        }
+      ],
+      "localized_translation": "OpenAI称其开发团队用GPT-5.6 Sol优化服务基础设施，一项GPU内核改进降低约20%服务成本，另一项推测解码改进提升15%以上生成效率。",
+      "discussion_focus": [
+        "互动集中在点赞和回复，属于当天技术产业讨论。",
+        "20%和15%来自官方帖的具体场景，不代表所有AI应用都能同比降本。",
+        "需要区分服务成本和用户看到的价格。"
+      ],
+      "save_object": "AI降本新闻四问卡",
+      "learning_outcome": "不再把单项优化误读成全业务普遍降价。"
+    },
+    {
+      "id": "2026073008",
+      "title": "用 AI 找本地商家客户，先免费做这张诊断单",
+      "category": "接单变现",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "原帖76,898浏览、632回复、1,321收藏，接单意图很强；本地化后可直接练习。",
+      "angle": "不群发，先证明你真的看过这家店",
+      "human_check": "不宣传确定收益；不得自动群发、抓取私人数据或伪造商家问题。",
+      "sources": [
+        {
+          "url": "https://x.com/everestchris6/status/2082151716225769858",
+          "discussion_url": "https://x.com/everestchris6/status/2082151716225769858",
+          "source_type": "X",
+          "captured_at": "2026-07-30T17:20:00+08:00",
+          "engagement": {
+            "views": 76898,
+            "likes": 767,
+            "replies": 632,
+            "reposts": 321,
+            "bookmarks": 1321
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 94,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "evidence_confidence": 82,
+        "final": 86
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "尚未完成小红书、抖音同角度语义检索，国内稀缺度按规则封顶55；发布前需人工搜索标题关键词与核心方法，确认没有高度同质内容。"
+        }
+      ],
+      "localized_translation": "作者称他用Claude Opus 5运行六个销售智能体：选择城市和Google Maps行业，识别商家在网站、社媒和广告上的问题，再形成外联线索。",
+      "discussion_focus": [
+        "回复数接近点赞数，说明话题争议和询问都很强。",
+        "当前未逐条采集评论，不能声称这套方法已被大量人验证。",
+        "演示覆盖找客户和诊断，不等于能成交或交付。"
+      ],
+      "save_object": "本地商家一页诊断模板",
+      "learning_outcome": "学会用公开信息做低风险获客前置工作。"
+    },
+    {
+      "id": "2026073009",
+      "title": "我用 World Monitor 找 AI 选题，只看这 3 层",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "原帖130,356浏览、1,240收藏；收藏高于点赞，读者明显把它当工具入口。",
+      "angle": "地图负责发现，原始来源负责判断",
+      "human_check": "发布前亲测项目可访问性、数据源和更新时间；不照搬“价值数百万美元”的宣传。",
+      "sources": [
+        {
+          "url": "https://x.com/irisneural/status/2082128164143387049",
+          "discussion_url": "https://x.com/irisneural/status/2082128164143387049",
+          "source_type": "X",
+          "captured_at": "2026-07-30T17:20:00+08:00",
+          "engagement": {
+            "views": 130356,
+            "likes": 1012,
+            "replies": 35,
+            "reposts": 191,
+            "bookmarks": 1240
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 87,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "evidence_confidence": 82,
+        "final": 84
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "尚未完成小红书、抖音同角度语义检索，国内稀缺度按规则封顶55；发布前需人工搜索标题关键词与核心方法，确认没有高度同质内容。"
+        }
+      ],
+      "localized_translation": "作者称World Monitor是一个开源全球情报界面，以实时3D地球呈现500多个新闻源。",
+      "discussion_focus": [
+        "收藏高于点赞，说明用户主要把它当工具入口。",
+        "没有足够评论样本证明用户长期使用效果。",
+        "与Palantir等商业系统的价格或能力比较未核验。"
+      ],
+      "save_object": "15分钟趋势研究流程",
+      "learning_outcome": "把可视化新闻工具变成选题雷达，而不是信息壁纸。"
+    },
+    {
+      "id": "2026073010",
+      "title": "970 万浏览的 AI 热帖，我只用这 5 步判断真假",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "原帖9,718,636浏览、47,439赞、11,012收藏，是当天最大热点；输出的是可复用核验方法。",
+      "angle": "越让人生气的AI新闻，越要先把主语找清楚",
+      "human_check": "必须把已证实的破坏性扫描做法与未完整证实的买家身份、规模分开写。",
+      "sources": [
+        {
+          "url": "https://x.com/heyshrutimishra/status/2082322773838291450",
+          "discussion_url": "https://x.com/heyshrutimishra/status/2082322773838291450",
+          "source_type": "X",
+          "captured_at": "2026-07-30T17:20:00+08:00",
+          "engagement": {
+            "views": 9718636,
+            "likes": 47439,
+            "replies": 3943,
+            "reposts": 19881,
+            "bookmarks": 11012
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 100,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "evidence_confidence": 82,
+        "final": 88
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "尚未完成小红书、抖音同角度语义检索，国内稀缺度按规则封顶55；发布前需人工搜索标题关键词与核心方法，确认没有高度同质内容。"
+        }
+      ],
+      "localized_translation": "原帖称一些买家批量购买二手和稀有书籍，切除书脊后扫描并将纸张制浆，用于AI训练。现有报道能支持破坏性扫描做法，但不能完整证实买家身份和规模。",
+      "discussion_focus": [
+        "这是本批互动最高内容，情绪点是“数字化是否以毁掉原件为代价”。",
+        "可核验报道支持破坏性扫描存在，但不能证明所有匿名批量买家都是AI公司。",
+        "“稀有书正在消失”需要逐项证据，不能沿用热帖结论。"
+      ],
+      "save_object": "热点事实核验五步卡",
+      "learning_outcome": "学会区分已证实做法、未证实身份和传播中的规模夸大。"
+    },
+    {
+      "id": "2026073012",
+      "title": "别再问哪个 AI 最强：用同一道题做这张对比表",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "原帖69,610浏览、1,028赞、358收藏；争议高，但比结论更值得保存的是测试方法。",
+      "angle": "模型没有总冠军，只有你的任务适不适合",
+      "human_check": "原帖完整线程与测试条件未采齐；不得转述作者对Grok 4.5的个人结论为普遍排名。",
+      "sources": [
+        {
+          "url": "https://x.com/kunchenguid/status/2082525751606419830",
+          "discussion_url": "https://x.com/kunchenguid/status/2082525751606419830",
+          "source_type": "X",
+          "captured_at": "2026-07-30T17:20:00+08:00",
+          "engagement": {
+            "views": 69610,
+            "likes": 1028,
+            "replies": 112,
+            "reposts": 92,
+            "bookmarks": 358
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 84,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "evidence_confidence": 82,
+        "final": 83
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "尚未完成小红书、抖音同角度语义检索，国内稀缺度按规则封顶55；发布前需人工搜索标题关键词与核心方法，确认没有高度同质内容。"
+        }
+      ],
+      "localized_translation": "作者表示他在比较近期发布的模型，并认为Grok 4.5带来的实际提升最明显，但主帖尚未给出完整测试条件。",
+      "discussion_focus": [
+        "回复数较高，模型横评天然有争议。",
+        "只看到主帖结论，缺少完整任务、提示词和失败案例。",
+        "个人体验不能代表普遍排名。"
+      ],
+      "save_object": "五维模型对比表",
+      "learning_outcome": "用自己的真实任务选模型，不被排行榜牵着走。"
+    },
+    {
+      "id": "2026073015",
+      "title": "机器人每小时 1 美元？先把漏掉的成本补回去",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "原帖270,107浏览、809收藏；热门数字适合做一张普通人看得懂的成本计算卡。",
+      "angle": "报价只有1美元，账单不一定只有1美元",
+      "human_check": "节目中的1美元/小时是讨论设想，不是已普遍实现的市场价格。",
+      "sources": [
+        {
+          "url": "https://x.com/theallinpod/status/2082449550883668021",
+          "discussion_url": "https://x.com/theallinpod/status/2082449550883668021",
+          "source_type": "X",
+          "captured_at": "2026-07-30T17:20:00+08:00",
+          "engagement": {
+            "views": 270107,
+            "likes": 1087,
+            "replies": 50,
+            "reposts": 108,
+            "bookmarks": 809
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 89,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "evidence_confidence": 82,
+        "final": 85
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "尚未完成小红书、抖音同角度语义检索，国内稀缺度按规则封顶55；发布前需人工搜索标题关键词与核心方法，确认没有高度同质内容。"
+        }
+      ],
+      "localized_translation": "节目讨论如果机器人劳动成本降到每小时1美元会发生什么，并比较中国、机器人狗和人形机器人的路径。",
+      "discussion_focus": [
+        "27万浏览说明低成本机器人是热门话题。",
+        "节目标题里的1美元/小时需要定义折旧、维护、能耗和人工监督。",
+        "机器人狗与人形机器人适用场景不同。"
+      ],
+      "save_object": "机器人小时成本公式",
+      "learning_outcome": "知道怎样识别“只报运行费、不报全成本”的标题。"
+    },
+    {
+      "id": "2026073017",
+      "title": "Claude 总忘记项目？把这份背景文件放进去",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "原帖140,171浏览、1,454收藏，收藏远高于点赞，说明模板需求强。",
+      "angle": "不要每次重新讲背景，把稳定信息写成一页文件",
+      "human_check": "不得复述未核验的开发者人数或借Karpathy背书；模板为本地化整理。",
+      "sources": [
+        {
+          "url": "https://x.com/0xkkai/status/2082496647951491295",
+          "discussion_url": "https://x.com/0xkkai/status/2082496647951491295",
+          "source_type": "X",
+          "captured_at": "2026-07-30T17:20:00+08:00",
+          "engagement": {
+            "views": 140171,
+            "likes": 626,
+            "replies": 27,
+            "reposts": 32,
+            "bookmarks": 1454
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 86,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "evidence_confidence": 82,
+        "final": 84
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "尚未完成小红书、抖音同角度语义检索，国内稀缺度按规则封顶55；发布前需人工搜索标题关键词与核心方法，确认没有高度同质内容。"
+        }
+      ],
+      "localized_translation": "作者称可用持久化文件解决Claude重启后丢失上下文，并用一组开发者使用率数字说明问题，但这些数字尚未核验。",
+      "discussion_focus": [
+        "收藏远高于点赞，用户想保存方法。",
+        "标题中的人物归因和41000名开发者数据尚无独立证据。",
+        "核心方法可能只是把进度、决定和下一步写入持久文件。"
+      ],
+      "save_object": "项目背景文件模板",
+      "learning_outcome": "减少重复解释和不同聊天之间的口径漂移。"
+    },
+    {
+      "id": "2026073019",
+      "title": "发 AI 内容前，我会删掉这 6 种“机器味”",
+      "category": "个人 IP",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "TikTok相关报道没有公开互动量，但与账号内容质量直接相关，且清单可马上使用。",
+      "angle": "平台不是讨厌AI，用户是讨厌没信息量的批量稿",
+      "human_check": "需追到TikTok官方说明；不能把媒体评论写成平台算法规则。",
+      "sources": [
+        {
+          "url": "https://www.techradar.com/tech/tiktok-says-ai-generated-spam-crowds-out-original-creators-so-its-teaching-users-how-to-spot-ai",
+          "discussion_url": "https://www.techradar.com/tech/tiktok-says-ai-generated-spam-crowds-out-original-creators-so-its-teaching-users-how-to-spot-ai",
+          "source_type": "Media",
+          "captured_at": "2026-07-30T17:20:00+08:00",
+          "engagement": {}
+        }
+      ],
+      "scores": {
+        "foreign_heat": 74,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "evidence_confidence": 82,
+        "final": 80
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "尚未完成小红书、抖音同角度语义检索，国内稀缺度按规则封顶55；发布前需人工搜索标题关键词与核心方法，确认没有高度同质内容。"
+        }
+      ],
+      "localized_translation": "报道表示TikTok正在改进对批量AI生成垃圾内容的检测，并计划推出应用内教育入口，帮助用户识别和负责任地使用AI内容。",
+      "discussion_focus": [
+        "报道引用TikTok称AI垃圾内容会挤压原创创作者。",
+        "没有公开社媒互动数据，不能列入“高赞榜”。",
+        "检测范围、误判率和上线地区仍需看TikTok官方说明。"
+      ],
+      "save_object": "AI文案发布前六项检查",
+      "learning_outcome": "把“像AI”拆成可具体修改的六个问题。"
+    },
+    {
+      "id": "2026073021",
+      "title": "别只让 AI 帮你提速：列出这张“跨岗位任务表”",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "最新官方研究给出真实使用数据，稿件转成普通人能填写的一页任务扩展表。",
+      "angle": "AI最先改变的可能不是职位，而是谁来做旁边那件事",
+      "human_check": "明确43.5%口径为排除通用消息后的职业相关消息；不写成43.5%的工作岗位被替代。",
+      "sources": [
+        {
+          "url": "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work/",
+          "discussion_url": "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work/",
+          "source_type": "官方研究",
+          "captured_at": "2026-07-30T17:20:00+08:00",
+          "engagement": {}
+        }
+      ],
+      "scores": {
+        "foreign_heat": 76,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "evidence_confidence": 88,
+        "final": 82
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "尚未完成小红书、抖音同角度语义检索，国内稀缺度按规则封顶55；发布前需人工搜索标题关键词与核心方法，确认没有高度同质内容。"
+        }
+      ],
+      "localized_translation": "OpenAI分析了80多万条美国ChatGPT用户消息。排除通用任务后，43.5%的职业相关消息涉及用户本职工作之外的任务；小型组织中的跨岗位任务更明显。",
+      "discussion_focus": [
+        "研究讨论的是任务跨界，不等于一个人能完全替代另一个职业。",
+        "数据来自美国ChatGPT用户消息，不能直接外推到所有地区和公司。",
+        "官方页面没有公开评论样本。"
+      ],
+      "save_object": "跨岗位任务盘点表",
+      "learning_outcome": "找到3件过去要等别人、现在可以先做初版的工作。"
+    },
+    {
+      "id": "2026073022",
+      "title": "ChatGPT、Gemini、Claude，我现在按任务分工",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "有11.7万浏览和3,100赞，且能整理成一张人人看得懂的模型分工卡。",
+      "angle": "不要三个都问一遍，先按任务类型分工",
+      "human_check": "这是Jeff Su的个人用法；发布前核对各产品当前功能和地区可用性。",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=sfwax2dVPvI",
+          "discussion_url": "https://www.youtube.com/watch?v=sfwax2dVPvI",
+          "source_type": "YouTube",
+          "captured_at": "2026-07-30T17:20:00+08:00",
+          "engagement": {
+            "views": 117764,
+            "likes": 3100
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 76,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "evidence_confidence": 88,
+        "final": 82
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "尚未完成小红书、抖音同角度语义检索，国内稀缺度按规则封顶55；发布前需人工搜索标题关键词与核心方法，确认没有高度同质内容。"
+        }
+      ],
+      "localized_translation": "Jeff Su表示三款工具并不等价：他用ChatGPT和Gemini做构思与研究，用Claude完成最后的文字润色；同时强调各模型在复杂指令、多模态和写作上的不同长处。",
+      "discussion_focus": [
+        "视频公开117,764次观看和3,100赞。",
+        "这是创作者个人工作流，不是独立实验室排名。",
+        "评论数和可验证评论样本未公开。"
+      ],
+      "save_object": "三模型任务分工卡",
+      "learning_outcome": "用任务选工具，而不是每天追着新模型换。"
+    },
+    {
+      "id": "2026073023",
+      "title": "表格里 100 条评论，不用公式也能批量分类",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "功能具体、场景广，读者能直接照着处理评论、商品信息和客户反馈。",
+      "angle": "让AI填表可以，最后一定抽查",
+      "human_check": "核对账号是否有功能入口和当前用量限制；9倍只按官方特定测试口径表述。",
+      "sources": [
+        {
+          "url": "https://workspaceupdates.googleblog.com/2026/04/effortlessly-automate-data-entry-in-Google-Sheets-using-Fill-with-Gemini.html",
+          "discussion_url": "https://workspaceupdates.googleblog.com/2026/04/effortlessly-automate-data-entry-in-Google-Sheets-using-Fill-with-Gemini.html",
+          "source_type": "官方产品更新",
+          "captured_at": "2026-07-30T17:20:00+08:00",
+          "engagement": {}
+        }
+      ],
+      "scores": {
+        "foreign_heat": 76,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "evidence_confidence": 88,
+        "final": 82
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "尚未完成小红书、抖音同角度语义检索，国内稀缺度按规则封顶55；发布前需人工搜索标题关键词与核心方法，确认没有高度同质内容。"
+        }
+      ],
+      "localized_translation": "Google在Sheets中推出Fill with Gemini，可根据已有单元格或自定义提示词批量生成、提取和分类内容；官方称在100个单元格任务的95人研究中，比手工录入快9倍。",
+      "discussion_focus": [
+        "官方给出100单元格、95名参与者的特定测试结果。",
+        "功能需要符合条件的Google Workspace或Google AI方案，并开启智能功能。",
+        "官方页面没有公开评论样本。"
+      ],
+      "save_object": "评论分类提示词+抽查流程",
+      "learning_outcome": "不写公式也能批量做文本分类，同时保留人工校验。"
+    },
+    {
+      "id": "2026073024",
+      "title": "别把 20 个链接直接丢给 AI：先做一张研究说明书",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "官方新能力叠加3万浏览实操视频，适合做可复制的研究说明书。",
+      "angle": "研究质量先由问题边界决定，不是链接越多越好",
+      "human_check": "发布前确认当前账号功能；不得把AI生成的图表和结论当成无需核验的事实。",
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/products/notebooklm/better-research-notebooklm/",
+          "discussion_url": "https://www.youtube.com/watch?v=Sx230itCjE4",
+          "source_type": "官方更新 + YouTube实操",
+          "captured_at": "2026-07-30T17:20:00+08:00",
+          "engagement": {
+            "views": 30188,
+            "likes": 899
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 76,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "evidence_confidence": 88,
+        "final": 82
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "尚未完成小红书、抖音同角度语义检索，国内稀缺度按规则封顶55；发布前需人工搜索标题关键词与核心方法，确认没有高度同质内容。"
+        }
+      ],
+      "localized_translation": "Google升级NotebookLM的研究能力，可做网页研究、代码分析、图表和PDF报告。Universe of AI的实操视频还演示了研究、幻灯片修改和PPTX导出的完整流程。",
+      "discussion_focus": [
+        "官方说明产品具备研究、代码分析、图表和报告能力。",
+        "实操视频公开30,188次观看和899赞。",
+        "功能可能分批上线，结果仍需回到引用来源核验。"
+      ],
+      "save_object": "NotebookLM研究说明书模板",
+      "learning_outcome": "把零散链接变成有边界、有引用、能复查的资料包。"
+    },
+    {
+      "id": "2026073025",
+      "title": "Chrome 里这 3 个 AI 指令，建议存成固定按钮",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "不是介绍功能列表，而是给三条可直接保存的浏览器指令。",
+      "angle": "真正省时间的是不再重复写同一句提示词",
+      "human_check": "核对用户地区与套餐；明确自动浏览能力的可用范围。",
+      "sources": [
+        {
+          "url": "https://help.youtube.com/chrome/ai-innovations/",
+          "discussion_url": "https://help.youtube.com/chrome/ai-innovations/",
+          "source_type": "官方帮助",
+          "captured_at": "2026-07-30T17:20:00+08:00",
+          "engagement": {}
+        }
+      ],
+      "scores": {
+        "foreign_heat": 76,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "evidence_confidence": 88,
+        "final": 82
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "尚未完成小红书、抖音同角度语义检索，国内稀缺度按规则封顶55；发布前需人工搜索标题关键词与核心方法，确认没有高度同质内容。"
+        }
+      ],
+      "localized_translation": "Gemini in Chrome支持把常用提示保存为Skills，选择页面上下文，总结标签页和视频；部分自动浏览能力仅在美国的Pro/Ultra方案开放。",
+      "discussion_focus": [
+        "Skills的价值是保存并重复使用提示词，而不是每次从零输入。",
+        "功能和地区、方案有关，自动浏览并非所有用户可用。",
+        "官方页面没有公开评论样本。"
+      ],
+      "save_object": "3条浏览器固定指令",
+      "learning_outcome": "把网页阅读中最重复的动作变成一键复用。"
+    },
+    {
+      "id": "2026073026",
+      "title": "用了半年 AI，到底省没省事？用这 4 个问题复盘",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "新功能背后的4D框架能脱离Claude独立使用，适合做月度复盘卡。",
+      "angle": "别统计问了多少次，统计哪些事情真的变好了",
+      "human_check": "注明功能仍在测试且需开启Memory；涉及隐私时先检查数据设置。",
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/reflect-with-claude",
+          "discussion_url": "https://www.anthropic.com/news/reflect-with-claude",
+          "source_type": "官方产品更新",
+          "captured_at": "2026-07-30T17:20:00+08:00",
+          "engagement": {}
+        }
+      ],
+      "scores": {
+        "foreign_heat": 76,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "evidence_confidence": 88,
+        "final": 82
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "尚未完成小红书、抖音同角度语义检索，国内稀缺度按规则封顶55；发布前需人工搜索标题关键词与核心方法，确认没有高度同质内容。"
+        }
+      ],
+      "localized_translation": "Claude推出使用反思功能，可回看1、3、6或12个月的使用主题，并用Delegation、Description、Discernment、Diligence四个维度给出建议；目前面向开启Memory的Free、Pro和Max用户测试。",
+      "discussion_focus": [
+        "功能强调复盘如何使用AI，而不是单纯统计聊天次数。",
+        "需要开启Memory，部分对话类型不会纳入。",
+        "官方页面没有公开评论样本。"
+      ],
+      "save_object": "AI使用4D复盘卡",
+      "learning_outcome": "判断自己是在有效协作，还是只是把时间花在反复改AI稿。"
+    },
+    {
+      "id": "2026073027",
+      "title": "这 5 类事适合让 AI 每周自动跑，别再靠想起来",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "最新官方功能可以落到一张自动化任务设计表，不是抽象介绍AI Agent。",
+      "angle": "自动化的不是判断，是重复收集和整理",
+      "human_check": "核对用户套餐和地区；不得让自动任务未经批准发布、付款或改权限。",
+      "sources": [
+        {
+          "url": "https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex",
+          "discussion_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "source_type": "官方帮助",
+          "captured_at": "2026-07-30T17:20:00+08:00",
+          "engagement": {}
+        }
+      ],
+      "scores": {
+        "foreign_heat": 76,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "evidence_confidence": 88,
+        "final": 82
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "尚未完成小红书、抖音同角度语义检索，国内稀缺度按规则封顶55；发布前需人工搜索标题关键词与核心方法，确认没有高度同质内容。"
+        }
+      ],
+      "localized_translation": "ChatGPT Work可处理较长任务，使用项目中的文件和上下文，并通过Scheduled Tasks一次、定时、重复或按触发条件运行；用户可以查看进度、改方向并批准重要动作。",
+      "discussion_focus": [
+        "适合稳定、重复、有明确交付物的任务，不适合把所有决策都交给自动化。",
+        "功能按方案和地区逐步开放。",
+        "官方页面没有公开评论样本。"
+      ],
+      "save_object": "周期AI任务设计表",
+      "learning_outcome": "知道怎样写清频率、来源、输出和人工确认点。"
+    }
+  ],
+  "drafts": [
+    {
+      "content_id": "4026073001",
+      "hotspot_id": "2026073001",
+      "platform": "小红书",
+      "title": "让 AI 先别写，方案反而更容易一次过",
+      "body": "做方案时最浪费时间的，不是AI写得慢，是它把你没说的背景全猜错了。\n\n我现在会先发这段：\n\n“先不要输出方案。先问我最多5个问题，只问会明显影响结果的问题。优先确认目标人群、预算、渠道、时间和交付形式。等我回答完，再开始写。”\n\n等它问完，再补一句：\n\n“把你准备自行假设的内容单独列出来，不要把猜测写成事实。”\n\n活动方案、拍摄脚本、报价单、内容选题都能这么用。\n\n它不会让一个烂需求瞬间变好，但至少不会拿一堆漂亮废话逼你从头返工。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只放标题和一个核心物件；内页完整呈现本文的可复制模板、清单或公式。字号要大，禁止模型头像、机器人素材、发光渐变和夸张收益数字。",
+      "video_script": "做方案时最浪费时间的，不是AI写得慢，是它把你没说的背景全猜错了。 我现在会先发这段： “先不要输出方案。先问我最多5个问题，只问会明显影响结果的问题。优先确认目标人群、预算、渠道、时间和交付形式。等我回答完，再开始写。” 等它问完，再补一句： “把你准备自行假设的内容单独列出来，不要把猜测写成事实。” 活动方案、拍摄脚本、报价单、内容选题都能这么用。 它不会让一个烂需求瞬间变好，但至少不会拿一堆漂亮废话逼你从头返工。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "4026073002",
+      "hotspot_id": "2026073002",
+      "platform": "小红书",
+      "title": "现在查一下，你以前发过的 AI 分享链接",
+      "body": "很多AI隐私问题，不是“黑客偷走了”，是我们自己开过分享，后来忘了关。\n\n花3分钟查这三处：\n\n① AI产品里的历史分享链接  \n② 网盘里“知道链接即可查看”的文件  \n③ 曾经发给客户或同事的公开页面\n\n合同、身份证明、客户名单、排班、财务内容，只要已经不用分享，就把权限收回来。\n\n这不代表你的链接一定被搜索到了，不同产品设置也不一样。真正该警惕的是：权限一直开着，而你已经忘了它存在。\n\n我建议把这条存一下，每个月顺手清一次。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只放标题和一个核心物件；内页完整呈现本文的可复制模板、清单或公式。字号要大，禁止模型头像、机器人素材、发光渐变和夸张收益数字。",
+      "video_script": "很多AI隐私问题，不是“黑客偷走了”，是我们自己开过分享，后来忘了关。 花3分钟查这三处： ① AI产品里的历史分享链接，② 网盘里“知道链接即可查看”的文件，③ 曾经发给客户或同事的公开页面 合同、身份证明、客户名单、排班、财务内容，只要已经不用分享，就把权限收回来。 这不代表你的链接一定被搜索到了，不同产品设置也不一样。真正该警惕的是：权限一直开着，而你已经忘了它存在。 我建议把这条存一下，每个月顺手清一次。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "4026073003",
+      "hotspot_id": "2026073004",
+      "platform": "小红书",
+      "title": "别再囤 AI 课了，这 3 小时按岗位看就够",
+      "body": "一门3小时的AI工程课，没必要所有人从头硬啃到尾。\n\n如果你做运营：先看提示方法和应用搭建，目标是做出一个“选题→初稿→核对”的小流程。\n\n如果你做产品：先看Agent怎么拆任务，再把自己手上的一个需求拆成输入、步骤、验收。\n\n如果你做开发：从系统设计和应用搭建开始，最后做一个能真实调用数据的小工具。\n\n看完别继续找下一门课。给自己留30分钟，把刚学的东西做成一个能跑的小项目。\n\n能留下来的从来不是“看完了”，而是你多了一个以后还能反复用的东西。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只放标题和一个核心物件；内页完整呈现本文的可复制模板、清单或公式。字号要大，禁止模型头像、机器人素材、发光渐变和夸张收益数字。",
+      "video_script": "一门3小时的AI工程课，没必要所有人从头硬啃到尾。 如果你做运营：先看提示方法和应用搭建，目标是做出一个“选题→初稿→核对”的小流程。 如果你做产品：先看Agent怎么拆任务，再把自己手上的一个需求拆成输入、步骤、验收。 如果你做开发：从系统设计和应用搭建开始，最后做一个能真实调用数据的小工具。 看完别继续找下一门课。给自己留30分钟，把刚学的东西做成一个能跑的小项目。 能留下来的从来不是“看完了”，而是你多了一个以后还能反复用的东西。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "4026073004",
+      "hotspot_id": "2026073005",
+      "platform": "小红书",
+      "title": "AI 做长任务总断片？给它留这张交接单",
+      "body": "跨天做方案、研究或代码时，别指望AI自动记住所有细节。\n\n建一个 TASK_STATE.md，每做完一段就让它更新：\n\n目标：最后要交什么  \n已完成：已经确认了什么  \n关键决定：为什么这样选  \n当前卡点：还缺什么  \n下一步：接下来只做哪件事  \n禁止改动：哪些内容已经定了\n\n第二天换聊天，把原始资料和这张交接单一起给它。\n\n这不是什么神奇记忆术，本质上就是给AI写工作交接。好处是你不用再凭记忆复述一遍，它也不容易把已经否掉的方案重新捡回来。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只放标题和一个核心物件；内页完整呈现本文的可复制模板、清单或公式。字号要大，禁止模型头像、机器人素材、发光渐变和夸张收益数字。",
+      "video_script": "跨天做方案、研究或代码时，别指望AI自动记住所有细节。 建一个 TASK_STATE.md，每做完一段就让它更新： 目标：最后要交什么，已完成：已经确认了什么，关键决定：为什么这样选，当前卡点：还缺什么，下一步：接下来只做哪件事，禁止改动：哪些内容已经定了 第二天换聊天，把原始资料和这张交接单一起给它。 这不是什么神奇记忆术，本质上就是给AI写工作交接。好处是你不用再凭记忆复述一遍，它也不容易把已经否掉的方案重新捡回来。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "4026073005",
+      "hotspot_id": "2026073006",
+      "platform": "小红书",
+      "title": "想装本地 AI，先看电脑过不过这 4 关",
+      "body": "“可以本地运行”不等于“你的电脑能舒服地用”。\n\n看到本地模型，先查四件事：\n\n模型文件多大：硬盘能不能放下。  \n运行需要多少内存：不是只看显存名字。  \n实际速度多少：能打开不等于能干活。  \n你为什么要本地：隐私、离线，还是只是不想付订阅费。\n\n这次很火的Kimi K3量化演示，文件仍有594GB，跑在高配Mac Studio上。它证明的是超大模型可以被压缩，不是普通笔记本突然都能跑。\n\n大多数人先用云端模型，本地只放隐私任务或小模型，反而更省钱。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只放标题和一个核心物件；内页完整呈现本文的可复制模板、清单或公式。字号要大，禁止模型头像、机器人素材、发光渐变和夸张收益数字。",
+      "video_script": "“可以本地运行”不等于“你的电脑能舒服地用”。 看到本地模型，先查四件事： 模型文件多大：硬盘能不能放下。，运行需要多少内存：不是只看显存名字。，实际速度多少：能打开不等于能干活。，你为什么要本地：隐私、离线，还是只是不想付订阅费。 这次很火的Kimi K3量化演示，文件仍有594GB，跑在高配Mac Studio上。它证明的是超大模型可以被压缩，不是普通笔记本突然都能跑。 大多数人先用云端模型，本地只放隐私任务或小模型，反而更省钱。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "4026073006",
+      "hotspot_id": "2026073007",
+      "platform": "小红书",
+      "title": "看到“AI 降本 20%”，先别急着理解成降价",
+      "body": "AI公司公布“成本下降20%”，我会先问四句：\n\n降的是哪一段成本？  \n跟什么基准比？  \n是一次优化，还是所有请求都有效？  \n省下的钱会降价，还是继续买更多算力？\n\nOpenAI这次说的20%，对应一项GPU内核优化；另一个15%以上，对应推测解码效率。都是具体基础设施案例。\n\n它很有价值，但不等于所有AI服务成本都降20%，更不等于用户明天就能少付20%。\n\n以后看AI降本新闻，把“范围”和“基准”找出来，标题里的大数字就没那么容易带跑你。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只放标题和一个核心物件；内页完整呈现本文的可复制模板、清单或公式。字号要大，禁止模型头像、机器人素材、发光渐变和夸张收益数字。",
+      "video_script": "AI公司公布“成本下降20%”，我会先问四句： 降的是哪一段成本？，跟什么基准比？，是一次优化，还是所有请求都有效？，省下的钱会降价，还是继续买更多算力？ OpenAI这次说的20%，对应一项GPU内核优化；另一个15%以上，对应推测解码效率。都是具体基础设施案例。 它很有价值，但不等于所有AI服务成本都降20%，更不等于用户明天就能少付20%。 以后看AI降本新闻，把“范围”和“基准”找出来，标题里的大数字就没那么容易带跑你。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "4026073007",
+      "hotspot_id": "2026073008",
+      "platform": "小红书",
+      "title": "想用 AI 接单，先给一家店免费做这张诊断单",
+      "body": "别让AI先写100封开发信。先选一家你真的了解的店，做一页诊断。\n\n只看公开信息：\n\n官网：手机打开后，3秒内知道卖什么吗？  \n社媒：最近30天在发什么，评论有人回吗？  \n评价：差评集中在哪个问题？  \n预约：从看到内容到下单，要点几次？\n\n然后让AI把证据整理成“发现的问题—可能影响—一个可执行建议”。你自己逐条核对，再发给店主。\n\n这不能保证成交，但比“老板你好，我能帮你增长”可信得多。真正值钱的不是六个Agent，是你指出了一个对方今天就能修的问题。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只放标题和一个核心物件；内页完整呈现本文的可复制模板、清单或公式。字号要大，禁止模型头像、机器人素材、发光渐变和夸张收益数字。",
+      "video_script": "别让AI先写100封开发信。先选一家你真的了解的店，做一页诊断。 只看公开信息： 官网：手机打开后，3秒内知道卖什么吗？，社媒：最近30天在发什么，评论有人回吗？，评价：差评集中在哪个问题？，预约：从看到内容到下单，要点几次？ 然后让AI把证据整理成“发现的问题—可能影响—一个可执行建议”。你自己逐条核对，再发给店主。 这不能保证成交，但比“老板你好，我能帮你增长”可信得多。真正值钱的不是六个Agent，是你指出了一个对方今天就能修的问题。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "4026073008",
+      "hotspot_id": "2026073009",
+      "platform": "小红书",
+      "title": "我用 World Monitor 找选题，只看这 3 层",
+      "body": "World Monitor把很多新闻源放到3D地球上，第一眼很酷，但别一直转地球。\n\n我会这样用：\n\n先看哪里突然集中出现事件；  \n再点开同一件事的不同来源，看说法有没有冲突；  \n最后只保存能追到原始发布、官方文件或当事人原话的链接。\n\n15分钟到点就停，留下“发生了什么、证据在哪、国内读者为什么要知道”三句话。\n\n地图只负责帮你发现异常，不负责替你判断真假。拿它找AI产业选题、出海市场变化和地区政策，比把它当新闻屏保有用得多。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只放标题和一个核心物件；内页完整呈现本文的可复制模板、清单或公式。字号要大，禁止模型头像、机器人素材、发光渐变和夸张收益数字。",
+      "video_script": "World Monitor把很多新闻源放到3D地球上，第一眼很酷，但别一直转地球。 我会这样用： 先看哪里突然集中出现事件；，再点开同一件事的不同来源，看说法有没有冲突；，最后只保存能追到原始发布、官方文件或当事人原话的链接。 15分钟到点就停，留下“发生了什么、证据在哪、国内读者为什么要知道”三句话。 地图只负责帮你发现异常，不负责替你判断真假。拿它找AI产业选题、出海市场变化和地区政策，比把它当新闻屏保有用得多。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "4026073009",
+      "hotspot_id": "2026073010",
+      "platform": "小红书",
+      "title": "970 万浏览的 AI 热帖，我只用这 5 步判断真假",
+      "body": "越让人生气的AI新闻，越别急着转。\n\n我会按这5步查：\n\n1. 原始来源是谁，不看截图号。  \n2. 主语是谁，别把“一些买家”写成“所有AI公司”。  \n3. 哪部分已证实，哪部分还是转述。  \n4. 数量和时间有没有出处。  \n5. 主动找一个反证或不同解释。\n\n“买书拆书训练AI”这条有970多万浏览。破坏性扫描这种做法有报道支撑，但具体买家身份和规模，并没有被同等程度证实。\n\n这5步不只查AI新闻。以后看到“某公司都在用”“成本暴降”“马上替代”，先把主语和范围圈出来。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只放标题和一个核心物件；内页完整呈现本文的可复制模板、清单或公式。字号要大，禁止模型头像、机器人素材、发光渐变和夸张收益数字。",
+      "video_script": "越让人生气的AI新闻，越别急着转。 我会按这5步查： 1. 原始来源是谁，不看截图号。，2. 主语是谁，别把“一些买家”写成“所有AI公司”。，3. 哪部分已证实，哪部分还是转述。，4. 数量和时间有没有出处。，5. 主动找一个反证或不同解释。 “买书拆书训练AI”这条有970多万浏览。破坏性扫描这种做法有报道支撑，但具体买家身份和规模，并没有被同等程度证实。 这5步不只查AI新闻。以后看到“某公司都在用”“成本暴降”“马上替代”，先把主语和范围圈出来。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "4026073010",
+      "hotspot_id": "2026073012",
+      "platform": "小红书",
+      "title": "别再问哪个 AI 最强，用同一道题做这张表",
+      "body": "模型横评最容易看的很热闹，最后还是不知道自己该用哪个。\n\n拿你每周真的会做的一件事，比如写一份客户复盘。把同一份材料、同一句要求，分别跑三次，然后只记5项：\n\n准确：事实有没有错  \n可改：指出问题后能不能改对  \n速度：从输入到可用花多久  \n价格：完成一次大概多少钱  \n稳定：三次结果差得大不大\n\n不要问“谁是总冠军”，问“谁最适合这类任务”。\n\n排行榜会天天变，你自己的任务不会。把表存下来，下次新模型出来，补一列就行。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只放标题和一个核心物件；内页完整呈现本文的可复制模板、清单或公式。字号要大，禁止模型头像、机器人素材、发光渐变和夸张收益数字。",
+      "video_script": "模型横评最容易看的很热闹，最后还是不知道自己该用哪个。 拿你每周真的会做的一件事，比如写一份客户复盘。把同一份材料、同一句要求，分别跑三次，然后只记5项： 准确：事实有没有错，可改：指出问题后能不能改对，速度：从输入到可用花多久，价格：完成一次大概多少钱，稳定：三次结果差得大不大 不要问“谁是总冠军”，问“谁最适合这类任务”。 排行榜会天天变，你自己的任务不会。把表存下来，下次新模型出来，补一列就行。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "4026073011",
+      "hotspot_id": "2026073015",
+      "platform": "小红书",
+      "title": "机器人每小时 1 美元？真正的账要这样算",
+      "body": "看到“机器人每小时只要1美元”，别只看电费或租金。\n\n真实小时成本至少要算：\n\n（购买价－残值）÷ 可用小时  \n＋ 能耗  \n＋ 维护耗材  \n＋ 停机损失  \n＋ 场地改造  \n＋ 人工监督\n\n还要问一句：它能独立完成整件事，还是只完成其中20%，剩下仍要人接手？\n\n节目里讨论的1美元/小时是设想，不是市场上已经普遍实现的报价。\n\n以后看到低价机器人、无人店、AI员工，都可以拿这张公式过一遍。技术演示很便宜，不代表稳定交付也一样便宜。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只放标题和一个核心物件；内页完整呈现本文的可复制模板、清单或公式。字号要大，禁止模型头像、机器人素材、发光渐变和夸张收益数字。",
+      "video_script": "看到“机器人每小时只要1美元”，别只看电费或租金。 真实小时成本至少要算： （购买价－残值）÷ 可用小时，＋ 能耗，＋ 维护耗材，＋ 停机损失，＋ 场地改造，＋ 人工监督 还要问一句：它能独立完成整件事，还是只完成其中20%，剩下仍要人接手？ 节目里讨论的1美元/小时是设想，不是市场上已经普遍实现的报价。 以后看到低价机器人、无人店、AI员工，都可以拿这张公式过一遍。技术演示很便宜，不代表稳定交付也一样便宜。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "4026073012",
+      "hotspot_id": "2026073017",
+      "platform": "小红书",
+      "title": "Claude 总忘记项目？把这份背景文件放进去",
+      "body": "同一个项目聊久了，AI口径越来越飘，通常不是“记忆差”，是稳定背景从来没写下来。\n\n建一个 PROJECT_CONTEXT.md：\n\n项目目标：最后要得到什么  \n目标用户：给谁用  \n已有素材：哪些是确定事实  \n表达语气：像谁，不像谁  \n关键决定：已经选了什么  \n边界：不能承诺什么  \n不要做：最常出现的错误\n\n每次开新聊天先附上这份文件。项目方向真的改变时，再更新它。\n\n它不会让AI永远不出错，但能少掉大量“我不是早就说过了吗”。尤其适合长期内容账号、客户项目和反复迭代的产品。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只放标题和一个核心物件；内页完整呈现本文的可复制模板、清单或公式。字号要大，禁止模型头像、机器人素材、发光渐变和夸张收益数字。",
+      "video_script": "同一个项目聊久了，AI口径越来越飘，通常不是“记忆差”，是稳定背景从来没写下来。 建一个 PROJECT_CONTEXT.md： 项目目标：最后要得到什么，目标用户：给谁用，已有素材：哪些是确定事实，表达语气：像谁，不像谁，关键决定：已经选了什么，边界：不能承诺什么，不要做：最常出现的错误 每次开新聊天先附上这份文件。项目方向真的改变时，再更新它。 它不会让AI永远不出错，但能少掉大量“我不是早就说过了吗”。尤其适合长期内容账号、客户项目和反复迭代的产品。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "4026073013",
+      "hotspot_id": "2026073019",
+      "platform": "小红书",
+      "title": "发 AI 文案前，我会手动删掉这 6 种机器味",
+      "body": "AI稿最明显的问题，不是有错别字，是读完不知道作者到底经历了什么。\n\n发布前我会查6项：\n\n删掉没有信息量的背景寒暄  \n删掉没有证据的“亲测有效”  \n打散每篇都一样的1、2、3结构  \n删掉空洞的万能总结  \n每个数字补来源和范围  \n至少补一个真实场景、限制或失败\n\n最后再问一句：这篇里有没有一句话，只有这个账号的人才会这么说？\n\n如果没有，就先别发。用户不反感你用AI，用户反感的是花30秒读完，却什么也没得到。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只放标题和一个核心物件；内页完整呈现本文的可复制模板、清单或公式。字号要大，禁止模型头像、机器人素材、发光渐变和夸张收益数字。",
+      "video_script": "AI稿最明显的问题，不是有错别字，是读完不知道作者到底经历了什么。 发布前我会查6项： 删掉没有信息量的背景寒暄，删掉没有证据的“亲测有效”，打散每篇都一样的1、2、3结构，删掉空洞的万能总结，每个数字补来源和范围，至少补一个真实场景、限制或失败 最后再问一句：这篇里有没有一句话，只有这个账号的人才会这么说？ 如果没有，就先别发。用户不反感你用AI，用户反感的是花30秒读完，却什么也没得到。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "4026073014",
+      "hotspot_id": "2026073021",
+      "platform": "小红书",
+      "title": "别只让 AI 帮你提速，试试这张“跨岗位任务表”",
+      "body": "AI最有用的地方，有时不是把本职工作做快，而是让你先做出隔壁岗位的第一版。\n\n拿张纸写三列：\n\n我经常等谁：设计、数据、法务、开发？  \n我能先做什么：草图、数据初查、合同风险点、网页问题定位？  \n什么时候必须交回专业人员：涉及签字、上线、财务和安全时。\n\nOpenAI最新研究分析了80多万条美国用户消息。排除通用任务后，43.5%的职业相关消息在做本职之外的任务。\n\n这不等于一个人能替代所有岗位。更实用的理解是：以前排队等两天的事，你可以先把问题整理到对方接手就能判断。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只放标题和一个核心物件；内页完整呈现本文的可复制模板、清单或公式。字号要大，禁止模型头像、机器人素材、发光渐变和夸张收益数字。",
+      "video_script": "AI最有用的地方，有时不是把本职工作做快，而是让你先做出隔壁岗位的第一版。 拿张纸写三列： 我经常等谁：设计、数据、法务、开发？，我能先做什么：草图、数据初查、合同风险点、网页问题定位？，什么时候必须交回专业人员：涉及签字、上线、财务和安全时。 OpenAI最新研究分析了80多万条美国用户消息。排除通用任务后，43.5%的职业相关消息在做本职之外的任务。 这不等于一个人能替代所有岗位。更实用的理解是：以前排队等两天的事，你可以先把问题整理到对方接手就能判断。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "4026073015",
+      "hotspot_id": "2026073022",
+      "platform": "小红书",
+      "title": "ChatGPT、Gemini、Claude，我按任务这样分工",
+      "body": "三个AI都订了，最浪费时间的用法是：同一道题三个都问一遍。\n\n我更建议按任务分：\n\n需要严格跟复杂要求走：先试ChatGPT。  \n资料里有视频、音频、图片：先试Gemini。  \n已经有事实和结构，要把长文写顺：先试Claude。\n\n做一篇内容时，可以让ChatGPT或Gemini先整理材料和角度，再把确定的事实交给Claude润色。最后的人话和判断，还是自己补。\n\n这是Jeff Su视频里的个人工作流，不是绝对排名。真正好用的标准很简单：同一类任务，哪个让你改得最少，就留下哪个。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只放标题和一个核心物件；内页完整呈现本文的可复制模板、清单或公式。字号要大，禁止模型头像、机器人素材、发光渐变和夸张收益数字。",
+      "video_script": "三个AI都订了，最浪费时间的用法是：同一道题三个都问一遍。 我更建议按任务分： 需要严格跟复杂要求走：先试ChatGPT。，资料里有视频、音频、图片：先试Gemini。，已经有事实和结构，要把长文写顺：先试Claude。 做一篇内容时，可以让ChatGPT或Gemini先整理材料和角度，再把确定的事实交给Claude润色。最后的人话和判断，还是自己补。 这是Jeff Su视频里的个人工作流，不是绝对排名。真正好用的标准很简单：同一类任务，哪个让你改得最少，就留下哪个。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "4026073016",
+      "hotspot_id": "2026073023",
+      "platform": "小红书",
+      "title": "表格里 100 条评论，不用公式也能批量分类",
+      "body": "有一列客户评论，别再一条条复制给AI。\n\n在Google Sheets里选中空白分类列，用Fill with Gemini输入：\n\n“根据左侧评论，只填以下一种：问题、表扬、功能需求、无效。无法判断时填‘需人工确认’，不要补充原文没有的信息。”\n\n填完别直接交。随机抽10条，再专门检查带金额、否定词和反讽的评论。错得多，就把分类标准写得更具体后重跑。\n\nGoogle官方说，在100个单元格的特定测试里，这个功能比手工录入快9倍。你的账号是否有入口和用量，要看套餐。\n\n真正省下来的不是公式，是重复判断。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只放标题和一个核心物件；内页完整呈现本文的可复制模板、清单或公式。字号要大，禁止模型头像、机器人素材、发光渐变和夸张收益数字。",
+      "video_script": "有一列客户评论，别再一条条复制给AI。 在Google Sheets里选中空白分类列，用Fill with Gemini输入： “根据左侧评论，只填以下一种：问题、表扬、功能需求、无效。无法判断时填‘需人工确认’，不要补充原文没有的信息。” 填完别直接交。随机抽10条，再专门检查带金额、否定词和反讽的评论。错得多，就把分类标准写得更具体后重跑。 Google官方说，在100个单元格的特定测试里，这个功能比手工录入快9倍。你的账号是否有入口和用量，要看套餐。 真正省下来的不是公式，是重复判断。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "4026073017",
+      "hotspot_id": "2026073024",
+      "platform": "小红书",
+      "title": "别把 20 个链接直接丢给 AI，先写这张研究说明书",
+      "body": "用NotebookLM做研究前，先别急着塞链接。\n\n把这段填好：\n\n研究问题：我最后要回答什么  \n范围：只看哪些地区、产品和时间  \n排除：广告稿、未注明来源的数据  \n输出：结论、证据、反例、仍未知  \n引用：每个关键判断必须能点回原文\n\n再把资料放进去，让它先列证据缺口，不要马上写漂亮报告。\n\nGoogle最近给NotebookLM加了更深的研究、代码分析、图表和PDF报告能力。功能越强，越容易让结果看起来像真的。研究说明书的作用，就是先把边界钉住。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只放标题和一个核心物件；内页完整呈现本文的可复制模板、清单或公式。字号要大，禁止模型头像、机器人素材、发光渐变和夸张收益数字。",
+      "video_script": "用NotebookLM做研究前，先别急着塞链接。 把这段填好： 研究问题：我最后要回答什么，范围：只看哪些地区、产品和时间，排除：广告稿、未注明来源的数据，输出：结论、证据、反例、仍未知，引用：每个关键判断必须能点回原文 再把资料放进去，让它先列证据缺口，不要马上写漂亮报告。 Google最近给NotebookLM加了更深的研究、代码分析、图表和PDF报告能力。功能越强，越容易让结果看起来像真的。研究说明书的作用，就是先把边界钉住。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "4026073018",
+      "hotspot_id": "2026073025",
+      "platform": "小红书",
+      "title": "Chrome 里这 3 个 AI 指令，我建议存成固定按钮",
+      "body": "如果你每天都在网页里重复说同一句话，可以直接存成浏览器Skill。\n\n我最常用这三条：\n\n“总结当前页，只保留结论、数字、限制和原始出处。”  \n“对比这两个标签页，列出相同点、冲突点和各自没回答的问题。”  \n“从当前页提取我能执行的行动项，标明负责人和截止条件。”\n\nGemini in Chrome已经支持保存和复用提示词、选择页面上下文、总结标签页和视频。不同地区和套餐开放程度不一样。\n\n先存真正每周会用三次以上的指令，别一口气建二十个，最后自己也找不到。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只放标题和一个核心物件；内页完整呈现本文的可复制模板、清单或公式。字号要大，禁止模型头像、机器人素材、发光渐变和夸张收益数字。",
+      "video_script": "如果你每天都在网页里重复说同一句话，可以直接存成浏览器Skill。 我最常用这三条： “总结当前页，只保留结论、数字、限制和原始出处。”，“对比这两个标签页，列出相同点、冲突点和各自没回答的问题。”，“从当前页提取我能执行的行动项，标明负责人和截止条件。” Gemini in Chrome已经支持保存和复用提示词、选择页面上下文、总结标签页和视频。不同地区和套餐开放程度不一样。 先存真正每周会用三次以上的指令，别一口气建二十个，最后自己也找不到。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "4026073019",
+      "hotspot_id": "2026073026",
+      "platform": "小红书",
+      "title": "用了半年 AI，到底省没省事？用这 4 个问题复盘",
+      "body": "月底别只看自己问了AI多少次，问这四件事：\n\n委派：我交给AI的是重复劳动，还是把该自己决定的也扔了？  \n描述：我有没有给清目标、材料和边界？  \n判断：我能不能识别它写得很顺但事实不对？  \n负责：最后出问题，谁核对、谁签字？\n\nAnthropic把它叫4D：Delegation、Description、Discernment、Diligence。Claude的新反思功能也会按这些维度回看使用情况。\n\n不用Claude也能做。挑过去一个月最常用的三类任务，留下真省时间的，停掉那些“生成5分钟、修改半小时”的。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只放标题和一个核心物件；内页完整呈现本文的可复制模板、清单或公式。字号要大，禁止模型头像、机器人素材、发光渐变和夸张收益数字。",
+      "video_script": "月底别只看自己问了AI多少次，问这四件事： 委派：我交给AI的是重复劳动，还是把该自己决定的也扔了？，描述：我有没有给清目标、材料和边界？，判断：我能不能识别它写得很顺但事实不对？，负责：最后出问题，谁核对、谁签字？ Anthropic把它叫4D：Delegation、Description、Discernment、Diligence。Claude的新反思功能也会按这些维度回看使用情况。 不用Claude也能做。挑过去一个月最常用的三类任务，留下真省时间的，停掉那些“生成5分钟、修改半小时”的。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "4026073020",
+      "hotspot_id": "2026073027",
+      "platform": "小红书",
+      "title": "这 5 类事适合让 AI 每周自动跑，别再靠想起来",
+      "body": "适合自动跑的，不是重要决定，是重复收集和整理。\n\n这5类可以先试：\n\n竞品本周更新了什么  \n客户反馈新增了哪些问题  \n内容数据里收藏和完播哪里变了  \n行业出现了哪些一手公告  \n项目有哪些逾期和风险\n\n每个任务写清四件事：多久跑一次、只看哪些来源、按什么格式输出、哪一步必须等人确认。\n\nChatGPT Work现在支持定时、重复或按触发条件运行任务。千万别把“自动发布、自动付款、自动改权限”混进第一版。\n\n先让它每周一交一张简报，你看两周，稳定以后再加动作。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只放标题和一个核心物件；内页完整呈现本文的可复制模板、清单或公式。字号要大，禁止模型头像、机器人素材、发光渐变和夸张收益数字。",
+      "video_script": "适合自动跑的，不是重要决定，是重复收集和整理。 这5类可以先试： 竞品本周更新了什么，客户反馈新增了哪些问题，内容数据里收藏和完播哪里变了，行业出现了哪些一手公告，项目有哪些逾期和风险 每个任务写清四件事：多久跑一次、只看哪些来源、按什么格式输出、哪一步必须等人确认。 ChatGPT Work现在支持定时、重复或按触发条件运行任务。千万别把“自动发布、自动付款、自动改权限”混进第一版。 先让它每周一交一张简报，你看两周，稳定以后再加动作。",
+      "status": "待审核"
+    }
+  ]
+}
