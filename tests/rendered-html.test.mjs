@@ -5,7 +5,16 @@ import test from "node:test";
 const root = new URL("../", import.meta.url);
 
 test("build contains the AI content workbench and no starter preview", async () => {
-  const [page, layout, workbench, css, discoveryRoute, engine, schema] =
+  const [
+    page,
+    layout,
+    workbench,
+    css,
+    discoveryRoute,
+    engine,
+    schema,
+    workspaceContract,
+  ] =
     await Promise.all([
       readFile(new URL("app/page.tsx", root), "utf8"),
       readFile(new URL("app/layout.tsx", root), "utf8"),
@@ -14,15 +23,15 @@ test("build contains the AI content workbench and no starter preview", async () 
       readFile(new URL("app/api/discover/route.ts", root), "utf8"),
       readFile(new URL("lib/content-engine.ts", root), "utf8"),
       readFile(new URL("db/schema.ts", root), "utf8"),
+      readFile(new URL("lib/workspace-contract.ts", root), "utf8"),
     ]);
 
   assert.match(page, /<Workbench/);
   assert.match(layout, /潮汐内容台/);
   assert.match(workbench, /今日任务/);
-  assert.match(workbench, /审核通过/);
-  assert.match(workbench, /提交给 AI 运营任务的修改意见/);
   assert.match(workbench, /短视频脚本/);
-  assert.match(workbench, /status: "待发布"/);
+  assert.doesNotMatch(workbench, /审核通过|退回修改|采用选题/);
+  assert.doesNotMatch(workbench, /提交给 AI 运营任务的修改意见/);
   assert.match(workbench, /api\/discover/);
   assert.doesNotMatch(workbench, /海外社媒观察箱|保存到观察箱|manualSignals/);
   assert.match(css, /\.review-panel/);
@@ -37,6 +46,8 @@ test("build contains the AI content workbench and no starter preview", async () 
   assert.match(schema, /discovery_runs/);
   assert.match(schema, /evidence_items/);
   assert.match(schema, /coverage_gaps/);
+  assert.match(workspaceContract, /operator-revision/);
+  assert.match(workspaceContract, /draftHistory/);
   assert.doesNotMatch(workbench, /Your site is taking shape|react-loading-skeleton/);
   await access(new URL("dist/server/index.js", root));
   await assert.rejects(access(new URL("app/_sites-preview", root)));

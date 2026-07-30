@@ -4,6 +4,7 @@ export type WorkspaceEnvelope = {
   schemaVersion: number;
   hotspots: unknown[];
   drafts: unknown[];
+  draftHistory?: unknown[];
   discoveryMeta?: unknown;
 };
 
@@ -29,6 +30,12 @@ function draftKey(value: unknown) {
   return `${String(record.hotspotId ?? "")}:${String(record.platform ?? "")}`;
 }
 
+function draftHistoryKey(value: unknown) {
+  const record = asRecord(value);
+  if (!record) return "";
+  return `${draftKey(value)}:${String(record.version ?? "")}`;
+}
+
 const PRESERVED_HOTSPOT_FIELDS = [
   "status",
   "selected",
@@ -44,6 +51,24 @@ const PRESERVED_DRAFT_FIELDS = [
   "videoScript",
 ] as const;
 
+const REVISION_CONTENT_FIELDS = new Set([
+  "body",
+  "title",
+  "visual",
+  "videoScript",
+]);
+
+function isExplicitDraftRevision(
+  currentRecord: WorkspaceRecord,
+  incomingRecord: WorkspaceRecord,
+) {
+  return (
+    incomingRecord.revisionMode === "operator-revision" &&
+    String(incomingRecord.parentVersion ?? "") ===
+      String(currentRecord.version ?? "")
+  );
+}
+
 function mergeRecord(
   current: unknown,
   incoming: unknown,
@@ -55,7 +80,14 @@ function mergeRecord(
   if (!currentRecord) return incomingRecord;
 
   const merged: WorkspaceRecord = { ...currentRecord, ...incomingRecord };
+  const explicitDraftRevision = isExplicitDraftRevision(
+    currentRecord,
+    incomingRecord,
+  );
   for (const field of preservedFields) {
+    if (explicitDraftRevision && REVISION_CONTENT_FIELDS.has(field)) {
+      continue;
+    }
     const value = currentRecord[field];
     if (
       value !== undefined &&
@@ -66,6 +98,41 @@ function mergeRecord(
     }
   }
   return merged;
+}
+
+function collectDraftHistory(
+  currentDrafts: unknown[],
+  incomingDrafts: unknown[],
+) {
+  const currentByKey = new Map(
+    currentDrafts
+      .map((draft) => [draftKey(draft), draft] as const)
+      .filter(([key]) => key),
+  );
+
+  return incomingDrafts.flatMap((incoming) => {
+    const incomingRecord = asRecord(incoming);
+    const current = currentByKey.get(draftKey(incoming));
+    const currentRecord = asRecord(current);
+    if (
+      !incomingRecord ||
+      !currentRecord ||
+      !isExplicitDraftRevision(currentRecord, incomingRecord)
+    ) {
+      return [];
+    }
+    return [
+      {
+        ...currentRecord,
+        archivedAt:
+          incomingRecord.revisedAt ??
+          incomingRecord.updatedAt ??
+          new Date().toISOString(),
+        supersededBy: incomingRecord.version ?? "",
+        revisionReason: incomingRecord.revisionReason ?? "",
+      },
+    ];
+  });
 }
 
 function mergeCollection(
@@ -103,6 +170,16 @@ export function mergeWorkspaceStates(
   incoming: WorkspaceEnvelope,
 ): WorkspaceEnvelope {
   if (!current) return incoming;
+  const archivedDrafts = collectDraftHistory(
+    current.drafts,
+    incoming.drafts,
+  );
+  const currentHistory = Array.isArray(current.draftHistory)
+    ? current.draftHistory
+    : [];
+  const incomingHistory = Array.isArray(incoming.draftHistory)
+    ? incoming.draftHistory
+    : [];
   return {
     ...current,
     ...incoming,
@@ -118,6 +195,12 @@ export function mergeWorkspaceStates(
       incoming.drafts,
       draftKey,
       PRESERVED_DRAFT_FIELDS,
+    ),
+    draftHistory: mergeCollection(
+      currentHistory,
+      [...incomingHistory, ...archivedDrafts],
+      draftHistoryKey,
+      [],
     ),
   };
 }
