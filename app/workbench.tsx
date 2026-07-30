@@ -576,6 +576,124 @@ export default function Workbench(_props: {
       }).format(new Date(discoveryMeta.capturedAt))
     : "演示数据";
 
+  function renderMobileDetail() {
+    return (
+      <aside
+        className="review-panel mobile-review-panel"
+        onClick={(event) => event.stopPropagation()}
+      >
+        <div className="panel-top">
+          <span className="section-kicker">内容初稿</span>
+        </div>
+        <h2>{activeDraft.title}</h2>
+        <div className="meta-line">
+          <span>{activeDraft.platform}</span>
+        </div>
+
+        <div className="evidence-box">
+          <button onClick={() => setShowSources((value) => !value)}>
+            <span>{selected.reason}</span>
+            <strong>{showSources ? "收起" : "来源与分析"}</strong>
+          </button>
+          {showSources && (
+            <div className="source-detail">
+              <div className="source-links">
+                <a href={selected.sourceUrl} target="_blank" rel="noreferrer">
+                  原始内容：{selected.source} ↗
+                </a>
+                {selected.discussionUrl &&
+                  selected.discussionUrl !== selected.sourceUrl && (
+                    <a
+                      href={selected.discussionUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      原帖讨论页 ↗
+                    </a>
+                  )}
+              </div>
+              <div className="evidence-section">
+                <b>原帖流量</b>
+                <p>
+                  {selected.engagementLabel ||
+                    "该来源没有公开可验证的点赞、评论或浏览量。"}
+                </p>
+                <small>
+                  只显示来源公开指标；没有浏览量时不会用热度分冒充浏览量。
+                </small>
+              </div>
+              <div className="evidence-section">
+                <b>评论主要围绕什么</b>
+                {selected.discussionFocus?.length ? (
+                  <ul>
+                    {selected.discussionFocus.map((focus, index) => (
+                      <li key={`${selected.id}-mobile-focus-${index}`}>
+                        {focus}
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p>尚未取得可验证的评论样本。</p>
+                )}
+                {selected.analysisState === "待模型分析" && (
+                  <small>当前评论仍待内容运营归纳。</small>
+                )}
+              </div>
+              <div className="evidence-section">
+                <b>本地化翻译</b>
+                <p>{selected.localizedTranslation || "完整中文翻译待补充。"}</p>
+              </div>
+              <div className="evidence-section">
+                <b>怎么复用到国内社媒</b>
+                {selected.reuseIdeas?.length ? (
+                  <ol>
+                    {selected.reuseIdeas.map((idea, index) => (
+                      <li key={`${selected.id}-mobile-reuse-${index}`}>
+                        {idea}
+                      </li>
+                    ))}
+                  </ol>
+                ) : (
+                  <p>待完成受众和平台角度分析。</p>
+                )}
+              </div>
+              <p>
+                {selected.domesticCoverage ||
+                  "演示条目：上线真实采集后会显示国内覆盖与证据置信度。"}
+              </p>
+              {selected.evidenceConfidence != null && (
+                <p>
+                  证据置信度：{selected.evidenceConfidence}/100 · 采集时间：
+                  {formatCapturedAt(selected.sourceCapturedAt)}
+                </p>
+              )}
+              <p>
+                {selected.humanCheck ||
+                  "发布前仍需人工核对事实、上下文与引用。"}
+              </p>
+            </div>
+          )}
+        </div>
+
+        <div className="field-label">平台文案</div>
+        <div className="draft-editor draft-reader">{activeDraft.body}</div>
+
+        <div className="visual-brief">
+          <div>
+            <b>配图建议</b>
+            <p>{activeDraft.visual}</p>
+          </div>
+        </div>
+        {activeDraft.videoScript && (
+          <div className="video-brief">
+            <b>短视频脚本</b>
+            <p>{activeDraft.videoScript}</p>
+          </div>
+        )}
+      </aside>
+    );
+  }
+
   return (
     <div className="app-shell">
       <aside className="sidebar">
@@ -673,11 +791,12 @@ export default function Workbench(_props: {
                         {item.angle}
                       </div>
                     </div>
+                    {selected.id === item.id && renderMobileDetail()}
                   </article>
                 ))}
               </div>
 
-              <aside className="review-panel">
+              <aside className="review-panel desktop-review-panel">
                 <div className="panel-top">
                   <span className="section-kicker">内容初稿</span>
                 </div>

@@ -646,6 +646,10 @@ button {
   background: var(--paper);
 }
 
+.mobile-review-panel {
+  display: none;
+}
+
 .panel-top {
   display: flex;
   align-items: center;
@@ -1271,11 +1275,18 @@ button {
     grid-template-columns: 1fr;
   }
 
-  .review-panel {
+  .desktop-review-panel {
+    display: none;
+  }
+
+  .mobile-review-panel {
+    grid-column: 1 / -1;
+    display: block;
     position: static;
+    width: 100%;
     max-height: none;
-    margin-top: 24px;
-    padding: 28px 0 0;
+    margin-top: 18px;
+    padding: 24px 0 0;
     border-top: 1px solid var(--line);
     border-left: 0;
   }
@@ -1389,8 +1400,9 @@ button {
     align-items: flex-end;
   }
 
-  .review-panel {
-    padding: 24px 0 0;
+  .mobile-review-panel {
+    margin-top: 16px;
+    padding: 20px 0 0;
   }
 
   .review-panel h2 {
