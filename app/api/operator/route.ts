@@ -2,7 +2,10 @@ import { env } from "cloudflare:workers";
 import { desc, eq } from "drizzle-orm";
 import { ensureDb, getDb } from "../../../db";
 import { auditEvents, workspaceStates } from "../../../db/schema";
-import { isCurrentWorkspaceState } from "../../../lib/workspace-contract";
+import {
+  isCurrentWorkspaceState,
+  mergeWorkspaceStates,
+} from "../../../lib/workspace-contract";
 
 const WORKSPACE_ID = "default";
 
@@ -65,6 +68,7 @@ export async function POST(request: Request) {
   const payload = (await request.json().catch(() => ({}))) as {
     state?: unknown;
     detail?: string;
+    mode?: "merge" | "replace";
   };
   if (!isCurrentWorkspaceState(payload.state)) {
     return Response.json(
@@ -75,7 +79,19 @@ export async function POST(request: Request) {
 
   await ensureDb();
   const db = getDb();
-  const encoded = JSON.stringify(payload.state);
+  const [stored] = await db
+    .select()
+    .from(workspaceStates)
+    .where(eq(workspaceStates.id, WORKSPACE_ID))
+    .limit(1);
+  const currentState = stored
+    ? (JSON.parse(stored.payload) as unknown)
+    : null;
+  const nextState =
+    payload.mode === "replace" || !isCurrentWorkspaceState(currentState)
+      ? payload.state
+      : mergeWorkspaceStates(currentState, payload.state);
+  const encoded = JSON.stringify(nextState);
   await db
     .insert(workspaceStates)
     .values({
@@ -94,13 +110,19 @@ export async function POST(request: Request) {
   await db.insert(auditEvents).values({
     workspaceId: WORKSPACE_ID,
     actor,
-    eventType: "AI 运营任务回写",
-    detail: payload.detail?.trim() || "已回写热点分析与平台初稿",
+    eventType:
+      payload.mode === "replace" ? "AI 运营任务替换" : "AI 运营任务增量回写",
+    detail:
+      payload.detail?.trim() ||
+      (payload.mode === "replace"
+        ? "已替换热点分析与平台初稿"
+        : "已增量合并热点分析与平台初稿"),
   });
 
   return Response.json({
     ok: true,
-    hotspotCount: payload.state.hotspots.length,
-    draftCount: payload.state.drafts.length,
+    mode: payload.mode === "replace" ? "replace" : "merge",
+    hotspotCount: nextState.hotspots.length,
+    draftCount: nextState.drafts.length,
   });
 }

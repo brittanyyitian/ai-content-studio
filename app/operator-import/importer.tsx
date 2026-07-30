@@ -22,6 +22,7 @@ export default function OperatorImporter() {
         body: JSON.stringify({
           state: parsed.state ?? parsed,
           detail: parsed.detail ?? "已通过私有运营导入页回写每日内容",
+          mode: "merge",
         }),
       });
       const result = (await response.json()) as {

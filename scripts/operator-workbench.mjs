@@ -98,6 +98,7 @@ if (mode === "refresh") {
     },
     body: JSON.stringify({
       state,
+      mode: payload.mode || "merge",
       detail:
         payload.detail ||
         `Codex 生成 ${state.hotspots?.length || 0} 条热点与 ${state.drafts?.length || 0} 条草稿`,
