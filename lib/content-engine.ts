@@ -1,4 +1,4 @@
-type Dataset = "posts" | "projects" | "papers" | "news";
+type Dataset = "posts" | "videos" | "projects" | "papers" | "news";
 type AttemptOutcome = "success" | "partial" | "failed" | "rate_limited";
 
 export type EvidenceItem = {
@@ -78,7 +78,7 @@ export type DiscoveredDraft = {
   visual: string;
   version: string;
   updatedBy: string;
-  status: "待审核";
+  status: "待选题";
 };
 
 type ProviderResult = {
@@ -90,6 +90,8 @@ type ProviderResult = {
 type DiscoveryOptions = {
   editorialBrief: string;
   braveSearchKey?: string;
+  youtubeApiKey?: string;
+  xBearerToken?: string;
 };
 
 type HnHit = {
@@ -127,13 +129,66 @@ type HnItem = {
   dead?: boolean;
 };
 
+type YouTubeSearchResponse = {
+  items?: Array<{ id?: { videoId?: string } }>;
+};
+
+type YouTubeVideo = {
+  id?: string;
+  snippet?: {
+    channelTitle?: string;
+    title?: string;
+    description?: string;
+    publishedAt?: string;
+  };
+  statistics?: {
+    viewCount?: string;
+    likeCount?: string;
+    commentCount?: string;
+  };
+};
+
+type YouTubeVideosResponse = {
+  items?: YouTubeVideo[];
+};
+
+type YouTubeCommentsResponse = {
+  items?: Array<{
+    snippet?: {
+      topLevelComment?: {
+        snippet?: { textDisplay?: string };
+      };
+    };
+  }>;
+};
+
+type XRecentResponse = {
+  data?: Array<{
+    id?: string;
+    author_id?: string;
+    created_at?: string;
+    text?: string;
+    public_metrics?: {
+      impression_count?: number;
+      like_count?: number;
+      reply_count?: number;
+      retweet_count?: number;
+      quote_count?: number;
+      bookmark_count?: number;
+    };
+  }>;
+  includes?: {
+    users?: Array<{ id?: string; username?: string; name?: string }>;
+  };
+};
+
 const USER_AGENT = "tide-ai-content-studio/0.2 (+private content research)";
 const AI_TERMS =
   /\b(ai|llm|agent|agents|artificial intelligence|machine learning|gpt|claude|gemini|openai|anthropic|deepmind|inference|multimodal|embedding|transformer|diffusion|computer vision|language model)\b/i;
 
 export async function discoverDaily(options: DiscoveryOptions) {
   const capturedAt = new Date().toISOString();
-  const providers = await Promise.all([
+  const providerJobs: Array<Promise<ProviderResult>> = [
     runProvider("Hacker News", () => fetchHackerNews(capturedAt)),
     runProvider("GitHub", () => fetchGitHub(capturedAt)),
     runProvider("OpenAI News", () =>
@@ -155,24 +210,50 @@ export async function discoverDaily(options: DiscoveryOptions) {
       }),
     ),
     runProvider("arXiv", () => fetchArxiv(capturedAt)),
-  ]);
+  ];
+  if (options.youtubeApiKey?.trim()) {
+    providerJobs.push(
+      runProvider("YouTube", () =>
+        fetchYouTube(capturedAt, options.youtubeApiKey!.trim()),
+      ),
+    );
+  }
+  if (options.xBearerToken?.trim()) {
+    providerJobs.push(
+      runProvider("X", () =>
+        fetchXRecent(capturedAt, options.xBearerToken!.trim()),
+      ),
+    );
+  }
+  const providers = await Promise.all(providerJobs);
 
   const gaps: CoverageGap[] = [
     {
       dimension: "source_coverage",
-      scope: "X / LinkedIn",
-      reason: "未配置官方数据接口，当前不绕过登录或平台限制抓取。",
-      impact: "无法完整覆盖个人创作者帖文热度。",
-      manualTask: "发布前由运营补充核对重点创作者账号。",
-    },
-    {
-      dimension: "source_coverage",
-      scope: "Reddit",
-      reason: "公开端点在当前部署环境连接不稳定。",
-      impact: "海外社区案例覆盖下降。",
-      manualTask: "后续接入合规 Reddit Data API 凭据。",
+      scope: "Instagram / LinkedIn / TikTok / Dribbble / Reddit",
+      reason: "这些平台不提供适合本项目免费抓取全站热门内容的开放接口。",
+      impact: "创作者帖子通过人工观察箱补充，不伪造全站覆盖。",
+      manualTask: "运营登录自己的平台账号，粘贴原帖链接、原文和公开互动。",
     },
   ];
+  if (!options.youtubeApiKey?.trim()) {
+    gaps.push({
+      dimension: "source_coverage",
+      scope: "YouTube",
+      reason: "尚未配置免费的 YouTube Data API 配额。",
+      impact: "当前不会自动取得视频播放、点赞和评论。",
+      manualTask: "配置 YouTube API Key，或把重点视频加入人工观察箱。",
+    });
+  }
+  if (!options.xBearerToken?.trim()) {
+    gaps.push({
+      dimension: "source_coverage",
+      scope: "X",
+      reason: "尚未启用 X 官方按量接口。",
+      impact: "当前不会自动读取 X 帖子及公开互动。",
+      manualTask: "需要时设置月度预算并配置 Bearer Token，或人工补充重点帖子。",
+    });
+  }
 
   for (const result of providers) {
     if (result.attempt.outcome !== "success") {
@@ -225,13 +306,26 @@ export async function discoverDaily(options: DiscoveryOptions) {
       const fit = fitScore(item, category, options.editorialBrief);
       const confidence = evidenceConfidence(item);
       const actionability = actionabilityScore(category);
+      const accessibility = audienceAccessibility(item);
       const final =
-        heat * 0.25 +
-        scarcity * 0.25 +
-        fit * 0.25 +
+        heat * 0.32 +
+        scarcity * 0.1 +
+        fit * 0.18 +
         actionability * 0.15 +
+        accessibility * 0.15 +
         confidence * 0.1;
-      return { item, category, heat, scarcity, fit, confidence, actionability, final, domestic: domesticChecks[index] };
+      return {
+        item,
+        category,
+        heat,
+        scarcity,
+        fit,
+        confidence,
+        actionability,
+        accessibility,
+        final,
+        domestic: domesticChecks[index],
+      };
     })
     .sort((a, b) => b.final - a.final);
 
@@ -275,7 +369,7 @@ export async function discoverDaily(options: DiscoveryOptions) {
       discussionFocus: buildDiscussionFocus(entry.item),
       reuseIdeas: buildReuseIdeas(entry.item, entry.category),
       localizedTranslation: buildLocalizedTranslation(entry.item),
-      analysisState: "待模型分析",
+      analysisState: "规则初判",
     };
   });
 
@@ -301,8 +395,8 @@ export async function discoverDaily(options: DiscoveryOptions) {
     attempts: providers.map((result) => result.attempt),
     gaps,
     coverageLabel: braveKey
-      ? "5 个海外来源 · 国内公开网页已比对"
-      : "5 个海外来源 · 国内查重待接入",
+      ? `${providers.length} 个自动来源 · 国内公开网页已比对`
+      : `${providers.length} 个自动来源 · 大社媒由人工观察箱补充`,
   };
 }
 
@@ -343,19 +437,38 @@ async function runProvider(
 }
 
 async function fetchHackerNews(capturedAt: string) {
-  const since = Math.floor(Date.now() / 1000) - 60 * 60 * 72;
-  const queries = ["AI agent", "LLM", "machine learning", "OpenAI"];
+  const since = Math.floor(Date.now() / 1000) - 60 * 60 * 24 * 7;
+  const queries = [
+    "AI",
+    "ChatGPT",
+    "Claude",
+    "Gemini",
+    "AI jobs",
+    "AI education",
+    "AI productivity",
+    "AI video",
+  ];
   const payloads = await Promise.all(
     queries.map((query) =>
       fetchJson<{ hits?: HnHit[] }>(
-        `https://hn.algolia.com/api/v1/search?query=${encodeURIComponent(query)}&tags=story&numericFilters=created_at_i>${since}&hitsPerPage=25`,
+        `https://hn.algolia.com/api/v1/search?query=${encodeURIComponent(query)}&tags=story&numericFilters=created_at_i>${since},points>50&hitsPerPage=50`,
       ),
     ),
   );
+  const uniqueHits = [
+    ...new Map(
+      payloads
+        .flatMap((payload) => payload.hits ?? [])
+        .filter(
+          (hit) =>
+            Boolean(hit.title || hit.story_title) &&
+            (finite(hit.points) >= 50 || finite(hit.num_comments) >= 30),
+        )
+        .map((hit) => [hit.objectID || `${hit.title}-${hit.created_at}`, hit]),
+    ).values(),
+  ];
   return Promise.all(
-    payloads
-      .flatMap((payload) => payload.hits ?? [])
-      .filter((hit) => Boolean(hit.title || hit.story_title))
+    uniqueHits
       .map(async (hit) => {
         const title = cleanText(hit.title || hit.story_title || "");
         const id = hit.objectID || title;
@@ -431,7 +544,7 @@ async function fetchGitHub(capturedAt: string) {
         (repo) =>
           repo.full_name &&
           repo.html_url &&
-          finite(repo.stargazers_count) >= 5,
+          finite(repo.stargazers_count) >= 100,
       )
       .map((repo) =>
         makeEvidence({
@@ -523,6 +636,121 @@ async function fetchArxiv(capturedAt: string) {
         discussionSamples: [],
       });
     }),
+  );
+}
+
+async function fetchYouTube(capturedAt: string, apiKey: string) {
+  const publishedAfter = new Date(Date.now() - 7 * 86400000).toISOString();
+  const search = await fetchJson<YouTubeSearchResponse>(
+    `https://www.googleapis.com/youtube/v3/search?part=id&type=video&order=viewCount&maxResults=35&relevanceLanguage=en&publishedAfter=${encodeURIComponent(publishedAfter)}&q=${encodeURIComponent("AI|ChatGPT|Claude|Gemini")}&key=${encodeURIComponent(apiKey)}`,
+  );
+  const ids = (search.items ?? [])
+    .map((item) => item.id?.videoId || "")
+    .filter(Boolean);
+  if (!ids.length) return [];
+
+  const videos = await fetchJson<YouTubeVideosResponse>(
+    `https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&id=${encodeURIComponent(ids.join(","))}&key=${encodeURIComponent(apiKey)}`,
+  );
+
+  return Promise.all(
+    (videos.items ?? []).map(async (video) => {
+      const id = video.id || "";
+      const comments = await fetchYouTubeComments(id, apiKey);
+      return makeEvidence({
+        sourceId: `youtube-${id}`,
+        provider: "YouTube",
+        dataset: "videos",
+        sourceType: "视频社区",
+        author: cleanText(video.snippet?.channelTitle || ""),
+        url: `https://www.youtube.com/watch?v=${encodeURIComponent(id)}`,
+        title: cleanText(video.snippet?.title || ""),
+        excerpt: cleanText(video.snippet?.description || ""),
+        publishedAt: toIso(video.snippet?.publishedAt),
+        capturedAt,
+        engagement: {
+          views: finiteString(video.statistics?.viewCount),
+          likes: finiteString(video.statistics?.likeCount),
+          comments: finiteString(video.statistics?.commentCount),
+        },
+        discussionUrl: `https://www.youtube.com/watch?v=${encodeURIComponent(id)}`,
+        discussionSamples: comments,
+      });
+    }),
+  );
+}
+
+async function fetchYouTubeComments(videoId: string, apiKey: string) {
+  try {
+    const payload = await fetchJson<YouTubeCommentsResponse>(
+      `https://www.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId=${encodeURIComponent(videoId)}&order=relevance&maxResults=5&textFormat=plainText&key=${encodeURIComponent(apiKey)}`,
+    );
+    return (payload.items ?? [])
+      .map(
+        (item) =>
+          item.snippet?.topLevelComment?.snippet?.textDisplay || "",
+      )
+      .map(cleanText)
+      .filter(Boolean)
+      .slice(0, 5);
+  } catch {
+    return [];
+  }
+}
+
+async function fetchXRecent(capturedAt: string, bearerToken: string) {
+  const query =
+    "(AI OR ChatGPT OR Claude OR Gemini) -is:retweet lang:en";
+  const payload = await fetchJson<XRecentResponse>(
+    `https://api.x.com/2/tweets/search/recent?query=${encodeURIComponent(query)}&max_results=100&tweet.fields=author_id,created_at,public_metrics,lang,text&expansions=author_id&user.fields=username,name`,
+    { Authorization: `Bearer ${bearerToken}` },
+  );
+  const users = new Map(
+    (payload.includes?.users ?? []).map((user) => [user.id || "", user]),
+  );
+
+  return Promise.all(
+    (payload.data ?? [])
+      .filter((post) => {
+        const metrics = post.public_metrics;
+        return (
+          finite(metrics?.like_count) >= 100 ||
+          finite(metrics?.reply_count) >= 20 ||
+          finite(metrics?.retweet_count) >= 30
+        );
+      })
+      .map((post) => {
+        const author = users.get(post.author_id || "");
+        const username = author?.username || "";
+        const id = post.id || "";
+        const text = cleanText(post.text || "");
+        return makeEvidence({
+          sourceId: `x-${id}`,
+          provider: "X",
+          dataset: "posts",
+          sourceType: "社媒帖子",
+          author: author?.name || username,
+          url: username
+            ? `https://x.com/${encodeURIComponent(username)}/status/${encodeURIComponent(id)}`
+            : `https://x.com/i/web/status/${encodeURIComponent(id)}`,
+          title: truncate(text, 120),
+          excerpt: text,
+          publishedAt: toIso(post.created_at),
+          capturedAt,
+          engagement: {
+            views: finite(post.public_metrics?.impression_count),
+            likes: finite(post.public_metrics?.like_count),
+            comments: finite(post.public_metrics?.reply_count),
+            reposts: finite(post.public_metrics?.retweet_count),
+            quotes: finite(post.public_metrics?.quote_count),
+            bookmarks: finite(post.public_metrics?.bookmark_count),
+          },
+          discussionUrl: username
+            ? `https://x.com/${encodeURIComponent(username)}/status/${encodeURIComponent(id)}`
+            : `https://x.com/i/web/status/${encodeURIComponent(id)}`,
+          discussionSamples: [],
+        });
+      }),
   );
 }
 
@@ -637,7 +865,8 @@ function selectRecommendations<T extends { item: EvidenceItem; category: string;
         candidate.category === category &&
         !selected.has(candidate.item.id) &&
         !isSensitive(candidate.item) &&
-        (providerCounts.get(candidate.item.provider) ?? 0) < 3,
+        (providerCounts.get(candidate.item.provider) ?? 0) <
+          (candidate.item.provider === "Hacker News" ? 5 : 2),
     );
     if (!entry) continue;
     selected.add(entry.item.id);
@@ -657,7 +886,10 @@ function selectRecommendations<T extends { item: EvidenceItem; category: string;
     if (isSensitive(entry.item)) continue;
     if (entry.category === "产业观察" && industryCount >= 2) continue;
     if ((categoryCounts.get(entry.category) ?? 0) >= 3) continue;
-    if ((providerCounts.get(entry.item.provider) ?? 0) >= 3) continue;
+    if (
+      (providerCounts.get(entry.item.provider) ?? 0) >=
+      (entry.item.provider === "Hacker News" ? 5 : 2)
+    ) continue;
     selected.add(entry.item.id);
     if (entry.category === "产业观察") industryCount += 1;
     categoryCounts.set(
@@ -687,15 +919,15 @@ function buildDraft(hotspot: DiscoveredHotspot, id: number): DiscoveredDraft {
     platform,
     title: hotspot.angle,
     body:
-      `【尚未生成可发布文案】\n\n` +
+      `【自动采集线索，不能直接发布】\n\n` +
       `已采集原帖：${hotspot.title}\n` +
       `公开互动：${hotspot.engagementLabel}\n` +
       `本地化状态：${hotspot.localizedTranslation}\n\n` +
-      `需要先完成评论归纳、事实核验和中文本地化，再进入人工审核。`,
-    visual: `首图突出「${hotspot.angle}」；内页用“原始信号—实际影响—行动步骤”三张信息卡，避免使用未经证实的数据。`,
-    version: "V1 · 证据已采集，待模型生成",
-    updatedBy: "AI Content Operator",
-    status: "待审核",
+      `需要由每日内容运营任务完成评论归纳、事实核验和中文本地化。`,
+    visual: "完成选题和事实核验后再确定配图。",
+    version: "V1 · 自动采集，待整理",
+    updatedBy: "采集器",
+    status: "待选题",
   };
 }
 
@@ -706,6 +938,15 @@ function formatEngagement(item: EvidenceItem) {
   }
   if (item.provider === "GitHub") {
     return `${finite(value.stars)} Stars · ${finite(value.forks)} Forks · ${finite(value.openIssues)} 个开放 Issue`;
+  }
+  if (item.provider === "YouTube") {
+    return `${formatCount(value.views)} 次播放 · ${formatCount(value.likes)} 点赞 · ${formatCount(value.comments)} 条评论`;
+  }
+  if (item.provider === "X") {
+    const views = finite(value.views)
+      ? `${formatCount(value.views)} 次浏览 · `
+      : "浏览量未公开 · ";
+    return `${views}${formatCount(value.likes)} 点赞 · ${formatCount(value.comments)} 条回复 · ${formatCount(value.reposts)} 次转发`;
   }
   return "原平台未公开点赞、评论或浏览量";
 }
@@ -745,7 +986,7 @@ function buildReuseIdeas(item: EvidenceItem, category: string) {
 
 function buildLocalizedTranslation(item: EvidenceItem) {
   const original = item.excerpt || item.title;
-  return `待模型完整翻译与本地化；已保留原文：${truncate(original, 180)}`;
+  return `已保留原文，完整中文翻译待内容运营补充：${truncate(original, 180)}`;
 }
 
 function deriveCategory(item: EvidenceItem) {
@@ -762,8 +1003,8 @@ function deriveCategory(item: EvidenceItem) {
     return "产业观察";
   }
   if (/(freelanc|revenue|pricing|client|consult|agency|business)/.test(text)) return "接单变现";
-  if (/(creator|content|marketing|audience|newsletter|social)/.test(text)) return "个人 IP";
-  if (/(workflow|tutorial|how to|prompt|coding|automation|productivity|tool)/.test(text)) return "AI 技巧";
+  if (/(creator|content|marketing|audience|newsletter|social|jobs?|career|focus|burnout)/.test(text)) return "个人 IP";
+  if (/(workflow|tutorial|how to|prompt|coding|automation|productivity|tool|learn|education|study)/.test(text)) return "AI 技巧";
   if (/(launch|open source|github|demo|build|app|product)/.test(text)) return "实操案例";
   return "产业观察";
 }
@@ -794,9 +1035,10 @@ function platformsFor(category: string) {
 function preliminaryScore(item: EvidenceItem, brief: string) {
   const category = deriveCategory(item);
   const score =
-    heatScore(item) * 0.45 +
-    fitScore(item, category, brief) * 0.35 +
-    evidenceConfidence(item) * 0.2;
+    heatScore(item) * 0.42 +
+    fitScore(item, category, brief) * 0.28 +
+    audienceAccessibility(item) * 0.2 +
+    evidenceConfidence(item) * 0.1;
   return score - (isSensitive(item) ? 28 : 0);
 }
 
@@ -809,7 +1051,12 @@ function heatScore(item: EvidenceItem) {
   const raw = rawEngagement(item);
   const engagement = raw ? clamp(42 + Math.log10(raw + 1) * 20, 42, 98) : 58;
   const sourceBoost =
-    item.provider === "Hacker News" || item.provider === "GitHub" ? 6 : 0;
+    item.provider === "Hacker News" ||
+    item.provider === "GitHub" ||
+    item.provider === "YouTube" ||
+    item.provider === "X"
+      ? 6
+      : 0;
   return clamp(Math.round(freshness * 0.46 + engagement * 0.54 + sourceBoost), 30, 98);
 }
 
@@ -832,7 +1079,29 @@ function fitScore(item: EvidenceItem, category: string, brief: string) {
   }
   if (/技巧|实操|操作/.test(brief) && (category === "AI 技巧" || category === "实操案例")) score += 7;
   if (/不要产业|少.*产业/.test(brief) && category === "产业观察") score -= 18;
+  score += Math.round((audienceAccessibility(item) - 65) * 0.35);
   return clamp(score, 35, 98);
+}
+
+function audienceAccessibility(item: EvidenceItem) {
+  const text = `${item.title} ${item.excerpt}`.toLowerCase();
+  let score = 62;
+  if (
+    /(job|career|money|cost|learn|school|student|focus|burnout|creator|video|photo|book|word|document|privacy|work|productivity)/.test(
+      text,
+    )
+  ) {
+    score += 24;
+  }
+  if (
+    /(distillation|inference|embedding|transformer|benchmark|token-level|quantization|linear attention|flow polic|orchestration runtime|typescript)/.test(
+      text,
+    )
+  ) {
+    score -= 28;
+  }
+  if (item.provider === "arXiv") score -= 18;
+  return clamp(score, 25, 98);
 }
 
 function actionabilityScore(category: string) {
@@ -845,6 +1114,7 @@ function actionabilityScore(category: string) {
 
 function evidenceConfidence(item: EvidenceItem) {
   if (item.provider === "OpenAI News") return 96;
+  if (item.provider === "YouTube" || item.provider === "X") return 90;
   if (item.provider === "arXiv") return 88;
   if (item.provider === "GitHub") return 82;
   if (item.provider === "TechCrunch AI") return 79;
@@ -996,11 +1266,11 @@ function isSensitive(item: EvidenceItem) {
 
 function balancedTake(items: EvidenceItem[], limit: number) {
   const caps: Record<string, number> = {
-    "Hacker News": 7,
-    GitHub: 5,
-    "OpenAI News": 3,
-    "TechCrunch AI": 3,
-    arXiv: 3,
+    "Hacker News": 12,
+    GitHub: 2,
+    "OpenAI News": 2,
+    "TechCrunch AI": 2,
+    arXiv: 1,
   };
   const selected: EvidenceItem[] = [];
   const counts = new Map<string, number>();
@@ -1036,6 +1306,18 @@ function toIso(value?: string) {
 
 function finite(value?: number) {
   return Number.isFinite(value) ? Number(value) : 0;
+}
+
+function finiteString(value?: string) {
+  const parsed = Number.parseInt(value || "0", 10);
+  return Number.isFinite(parsed) ? parsed : 0;
+}
+
+function formatCount(value?: number) {
+  return new Intl.NumberFormat("zh-CN", {
+    notation: value && value >= 10_000 ? "compact" : "standard",
+    maximumFractionDigits: 1,
+  }).format(finite(value));
 }
 
 function truncate(value: string, length: number) {

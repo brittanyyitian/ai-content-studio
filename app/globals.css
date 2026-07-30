@@ -1268,6 +1268,185 @@ button {
   cursor: pointer;
 }
 
+.source-console {
+  display: grid;
+  grid-template-columns: minmax(420px, .9fr) minmax(520px, 1.1fr);
+  gap: 34px;
+  align-items: start;
+}
+
+.source-registry,
+.signal-form,
+.signal-list {
+  padding: 22px 0;
+  border-top: 1px solid var(--black);
+}
+
+.console-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+
+.console-title h3,
+.console-title p {
+  margin: 0;
+}
+
+.console-title h3 {
+  font-size: 20px;
+}
+
+.console-title p {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.source-table {
+  display: grid;
+}
+
+.source-table article {
+  display: grid;
+  grid-template-columns: 1.15fr .8fr 1.5fr .7fr;
+  gap: 12px;
+  align-items: center;
+  min-height: 52px;
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+}
+
+.source-table strong {
+  color: var(--black);
+}
+
+.source-table span {
+  color: var(--muted);
+}
+
+.source-table b {
+  justify-self: end;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.signal-fields {
+  display: grid;
+  grid-template-columns: .7fr 1.3fr;
+  gap: 14px;
+}
+
+.signal-fields label {
+  display: grid;
+  gap: 7px;
+}
+
+.signal-fields label.wide {
+  grid-column: 1 / -1;
+}
+
+.signal-fields label > span {
+  color: #555;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.signal-fields input,
+.signal-fields select,
+.signal-fields textarea {
+  width: 100%;
+  padding: 11px 12px;
+  outline: none;
+  border: 1px solid var(--line);
+  border-radius: 11px 8px 12px 9px;
+  color: var(--ink);
+  background: var(--paper);
+  font-size: 14px;
+}
+
+.signal-fields textarea {
+  min-height: 82px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.signal-fields input:focus,
+.signal-fields select:focus,
+.signal-fields textarea:focus {
+  border-color: var(--black);
+}
+
+.signal-form > .primary-btn {
+  margin-top: 16px;
+}
+
+.signal-list {
+  margin-top: 34px;
+}
+
+.signal-item {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.signal-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.signal-item > p {
+  max-width: 960px;
+  margin: 12px 0;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.75;
+  white-space: pre-wrap;
+}
+
+.signal-engagement {
+  display: flex;
+  gap: 10px;
+  color: #555;
+  font-size: 13px;
+}
+
+.signal-item > small {
+  display: block;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.signal-actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.signal-actions a,
+.signal-actions button {
+  padding: 0;
+  border: 0;
+  color: var(--black);
+  background: transparent;
+  font-size: 13px;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.empty-signals {
+  padding: 36px 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
 @media (max-width: 1180px) {
   .split-layout {
     grid-template-columns: 1fr;
@@ -1298,6 +1477,10 @@ button {
   .account-list article > div:nth-of-type(5) {
     display: none;
   }
+
+  .source-console {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 760px) {
@@ -1318,6 +1501,23 @@ button {
   .sidebar nav {
     height: 40px;
     gap: 20px;
+  }
+
+  .source-table article {
+    grid-template-columns: 1fr auto;
+    padding: 11px 0;
+  }
+
+  .source-table article span:last-of-type {
+    grid-column: 1 / -1;
+  }
+
+  .signal-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .signal-fields label.wide {
+    grid-column: auto;
   }
 
   .nav-item {

@@ -19,6 +19,8 @@ export async function POST(request: Request) {
   const hostname = new URL(request.url).hostname;
   const runtime = env as unknown as {
     BRAVE_SEARCH_API_KEY?: string;
+    YOUTUBE_API_KEY?: string;
+    X_BEARER_TOKEN?: string;
     OPERATOR_IMPORT_TOKEN?: string;
   };
   const expectedOperatorToken = runtime.OPERATOR_IMPORT_TOKEN?.trim();
@@ -58,6 +60,8 @@ export async function POST(request: Request) {
     const result = await discoverDaily({
       editorialBrief,
       braveSearchKey: runtime.BRAVE_SEARCH_API_KEY,
+      youtubeApiKey: runtime.YOUTUBE_API_KEY,
+      xBearerToken: runtime.X_BEARER_TOKEN,
     });
 
     for (let index = 0; index < result.evidence.length; index += 5) {
