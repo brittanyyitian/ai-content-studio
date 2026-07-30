@@ -29,6 +29,13 @@
       "when": 1785384360000,
       "tag": "0003_incremental_social_batch",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1785385200000,
+      "tag": "0004_transfer_localized_drafts",
+      "breakpoints": true
     }
   ]
 }

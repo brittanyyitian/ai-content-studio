@@ -1,0 +1,77 @@
+WITH draft_replacements AS (
+  SELECT value FROM json_each('[{"hotspotId":2026073001,"platform":"小红书","title":"别再问 AI 一句话就关掉了","body":"同一个 AI，有人用起来像多了个同事，有人用起来还是搜索框。\n\n差别往往不在模型，而在你有没有让它把事情继续做下去。\n\n比如要写一份活动方案，不要只说“帮我写个方案”。先告诉它活动给谁看、预算多少、最后要交什么，再让它反过来问你还缺哪些信息。\n\n第一版出来也别急着复制。继续让它检查：有没有漏掉执行时间？预算对不对？哪个环节最容易翻车？然后按你的反馈重写。\n\n我现在更推荐这种用法：\n\n先把结果说清楚 → 让 AI 追问 → 出初稿 → 自查遗漏 → 修改到能交付。\n\n先别急着换模型。把“一问一答”换成“把这件事做完”，体验会差很多。","videoScript":"同一个AI，为什么别人用起来像同事，你用起来还是搜索框？因为你问完一句就关掉了。下次先告诉它最后要交付什么，让它追问缺的信息。初稿出来后，继续检查遗漏、核对要求，再按反馈修改。先别急着换模型，把一问一答换成把这件事做完，体验真的会差很多。","version":"V3 · 小红书本地化搬运","updatedBy":"Codex AI Content Operator"},{"hotspotId":2026073002,"platform":"小红书","title":"快去翻一下，你以前发过的 AI 分享链接","body":"这个真的很容易忘。\n\n之前为了给同事看 AI 对话，顺手点了“知道链接的人都能访问”。事情结束了，链接却一直公开着。\n\n现在可以顺手检查三个地方：\n\n· AI 产品里的历史分享链接\n· 网盘里“任何人可查看”的文件\n· 以前公开过、现在已经不用的页面\n\n合同、客户资料、身份证明、财务内容、医疗和排班信息，只要已经不需要分享，就把权限收回来。\n\n先说明一下：公开链接不等于一定会被搜索到，也不代表内容已经泄露。不同产品的公开规则不一样。\n\n真正危险的是——链接长期开放，你自己却已经忘了它的存在。\n\n三分钟能检查完的事，别留到出问题以后再补救。","videoScript":"快去翻一下你以前发过的AI分享链接。很多人为了给同事看，点过知道链接的人都能访问，用完却忘了关。检查AI产品里的历史分享、网盘里任何人可查看的文件，还有以前公开过的页面。公开不代表一定泄露，但长期开放又被自己忘记的链接，真的该现在就关掉。","version":"V3 · 小红书本地化搬运","updatedBy":"Codex AI Content Operator"},{"hotspotId":2026073003,"platform":"小红书","title":"公司一上 AI 就想着裁人，其实有点亏","body":"AI 把一个人的工作速度提上来以后，公司最容易想到的是：那是不是可以少招几个人？\n\n这个账确实好算，但也最没想象力。\n\n省下来的时间，还可以拿去做以前顾不过来的事：多服务一类客户、试一个新产品、把长期没人愿意碰的流程补起来，甚至把原来不赚钱的小业务重新做一遍。\n\n所以真正该问的，不是“AI 能替掉谁”。\n\n而是同样这批人，有了 AI 以后，能不能多做出一种产品、多服务一批客户、多创造一份收入。\n\n如果效率提升最后只变成更多工作量，团队只会更累。只有它真的进了客户、产品和交付，AI 才算进了业务。\n\n省人是一张成本表，增长是另一张业务表。选哪张，结果完全不一样。","videoScript":"公司一上AI就想着裁人，其实有点亏。AI省下来的时间，可以拿去服务更多客户、试新产品、补以前顾不过来的流程。真正该问的不是AI能替掉谁，而是同样这批人有了AI以后，能不能多创造一种收入。省人是一张成本表，增长是另一张业务表，选哪张，结果完全不一样。","version":"V3 · 小红书本地化搬运","updatedBy":"Codex AI Content Operator"},{"hotspotId":2026073004,"platform":"小红书","title":"别再囤 AI 课了，这 3 小时可以挑着看","body":"一套大约 3 小时的 AI 工程课程，没必要从头到尾硬啃。\n\n可以先看自己卡在哪：\n\n不知道怎么把需求说清楚，就先看提示词和上下文；\n\n会和 AI 聊天，但一直做不出能用的东西，直接看应用搭建；\n\n已经能做 Demo，可 AI 每走一步都要你盯着，就去看智能体系统。\n\n整套内容大致会经过这几块：智能体怎么工作、AI 工程接下来会变什么、怎样把目标和限制说清楚，以及怎么快速做出一个小应用。\n\n重点不是“3 小时学完就能转行”。\n\n看完以后，马上选一个小任务跑一遍。比如把一份客户访谈整理成摘要、FAQ 和短视频脚本。\n\n能完整跑通一次，比收藏下一门课有用得多。","videoScript":"别再囤AI课了，这三小时可以挑着看。不会把需求说清楚，就看提示和上下文；会聊天但做不出东西，就看应用搭建；已经能做Demo，可AI每一步都要你盯着，就看智能体系统。重点不是三小时转行，而是看完马上做一个小项目。跑通一次，比再收藏十门课有用。","version":"V3 · 小红书本地化搬运","updatedBy":"Codex AI Content Operator"},{"hotspotId":2026073006,"platform":"小红书","title":"先别激动，Kimi K3“本地运行”要 594GB","body":"Kimi K3 真的可以在本地跑了。\n\n但这个“本地”，和我们想象中的“普通电脑下载就能用”差得有点远。\n\n它的 1-bit 版本从大约 1.56TB 压到了 594GB，体积少了约 62%。听起来已经小很多，但 594GB 差不多能塞满不少人的整块硬盘。\n\n而且公开演示用的是高配 Mac Studio，不是普通办公电脑。\n\n所以这次真正的进步是：超大模型正在被压缩到更小的设备上运行。不是说硬件门槛已经消失。\n\n普通人选本地 AI，先看三件事就够了：电脑内存够不够、数据是不是必须离线、愿不愿意拿速度和效果换隐私。\n\n小模型已经能进普通电脑了。超大模型说的“本地”，目前还是工作站级别。","videoScript":"先别激动，Kimi K3虽然能本地跑，但模型还有594GB。它从1.56TB压下来，体积少了约62%，进步很大，可演示用的还是高配Mac Studio。普通人选本地AI，先看内存、是否必须离线，以及愿不愿意拿速度和效果换隐私。小模型能进普通电脑，超大模型的本地运行，目前还是工作站级别。","version":"V3 · 小红书本地化搬运","updatedBy":"Codex AI Content Operator"},{"hotspotId":2026073008,"platform":"小红书","title":"用 AI 找客户，千万别第一步就群发","body":"一套 6 个 AI Agent 找本地客户的流程，大概是这样：\n\n先选一个城市和具体行业，从地图里整理商家；再分别检查网站、社媒、广告、预约入口和落地页；最后把发现的问题整理成一份联系建议。\n\n听起来很自动化，但真正值得抄的只有一句：先诊断，再联系。\n\n别一上来就抓 1000 个邮箱，群发同一封“我们能帮你增长”。\n\n先挑 10 家，每家只找一个真的问题：预约按钮藏得太深、主页半年没更新、广告和落地页对不上，或者手机打开特别慢。\n\n然后每封邮件只说这个具体问题，再给一个能马上改的小建议。\n\nAI 可以帮你整理资料、做初步检查、写第一版。最后一定要人工确认：问题是不是真的，建议有没有用，信息有没有越界。\n\n自动化能帮你少做重复功课，但成交还是靠“这份建议真的写给我”。","videoScript":"用AI找客户，千万别第一步就群发。一套六个Agent的流程，是先选城市和行业，再检查商家的网站、社媒、广告和预约入口，最后整理联系建议。真正值得抄的是先诊断、再联系。别群发一千封模板，只挑十家，每家找一个真实问题，再给一个具体改法。AI帮你做功课，人负责核验和建立信任。","version":"V3 · 小红书本地化搬运","updatedBy":"Codex AI Content Operator"},{"hotspotId":2026073009,"platform":"小红书","title":"这个开源网站，把 500+ 新闻源塞进一张地球","body":"如果每天要看很多国外信息，这个工具还挺直观。\n\nWorld Monitor 把 500 多个新闻源放进同一个 3D 地球里。可以先按地区看哪里正在发生变化，再点进去看对应报道，不用在十几个网站之间来回切。\n\n它比较适合拿来：\n\n· 找当天正在升温的选题\n· 看同一件事在不同地区怎么报道\n· 做行业研究时快速补全背景\n\n但别把“看起来很全”当成“已经核实”。\n\n新闻源越多，重复报道、错误信息和观点冲突也会越多。更稳妥的用法是：先用地图发现，再打开两个以上原始来源交叉确认。\n\n把它当雷达很好用，把它当最终答案就不太行。","visual":"4:5黑白简笔画工具卡：中央是一只极简地球，周围三个入口“发现事件 / 对照来源 / 交叉确认”；不要写未经核验的价格比较。","videoScript":"这个开源网站，把500多个新闻源塞进一张3D地球。可以先按地区发现正在升温的事件，再打开对应报道，找选题和做研究都很直观。但新闻源多，不等于已经核实。正确用法是先用地图发现，再打开两个以上原始来源交叉确认。把它当雷达很好用，别把它当最终答案。","version":"V2 · 小红书本地化搬运","updatedBy":"Codex AI Content Operator"},{"hotspotId":2026073010,"platform":"小红书","title":"AI 公司在买书拆书？先把能确定的说清楚","body":"为了把实体书快速变成可搜索、可训练的数据，有一种做法很直接：切掉书脊，把书页分开送进高速扫描设备。\n\n扫得快，但书基本也回不来了，最后可能直接进入回收流程。\n\n这件事里，目前能确定的是：批量收书和破坏性扫描确实存在。\n\n还不能直接确定的是：匿名买家是不是都属于 AI 公司，以及被处理的“稀有书”到底有多少。\n\n真正值得关注的，是不同类型的书不能只按“内容有没有被扫描”来判断价值。\n\n普通流通书，扫描可能只是数据处理；但绝版书、带手写批注的版本，或者本身有历史价值的原件，一旦被毁就无法重新生成。\n\nAI 训练需要数据，但效率、版权和原件保存，应该分开算账。","videoScript":"AI公司真的在买书拆书吗？为了快速扫描，有机构会切掉书脊，把书页送进高速设备，原书基本无法恢复。能确定的是，批量收书和破坏性扫描确实存在；还不能确定的是，匿名买家是不是都属于AI公司，以及稀有书被处理的具体数量。AI需要数据，但效率、版权和原件保存，应该分开算账。","version":"V3 · 小红书本地化搬运","updatedBy":"Codex AI Content Operator"}]')
+),
+hotspot_replacements AS (
+  SELECT value FROM json_each('[{"id":2026073009,"selected":true},{"id":2026073014,"selected":false}]')
+),
+current_state AS (
+  SELECT payload FROM workspace_states WHERE id = 'default'
+),
+updated_drafts AS (
+  SELECT json_group_array(json(value)) AS items
+  FROM (
+    SELECT
+      COALESCE(
+        (
+          SELECT json_patch(existing.value, replacement.value)
+          FROM draft_replacements AS replacement
+          WHERE json_extract(replacement.value, '$.hotspotId') =
+            json_extract(existing.value, '$.hotspotId')
+            AND json_extract(replacement.value, '$.platform') =
+              json_extract(existing.value, '$.platform')
+        ),
+        existing.value
+      ) AS value
+    FROM json_each((SELECT payload FROM current_state), '$.drafts') AS existing
+    UNION ALL
+    SELECT replacement.value
+    FROM draft_replacements AS replacement
+    WHERE NOT EXISTS (
+      SELECT 1
+      FROM json_each((SELECT payload FROM current_state), '$.drafts') AS existing
+      WHERE json_extract(existing.value, '$.hotspotId') =
+        json_extract(replacement.value, '$.hotspotId')
+        AND json_extract(existing.value, '$.platform') =
+          json_extract(replacement.value, '$.platform')
+    )
+  )
+),
+updated_hotspots AS (
+  SELECT json_group_array(
+    json(
+      COALESCE(
+        (
+          SELECT json_patch(existing.value, replacement.value)
+          FROM hotspot_replacements AS replacement
+          WHERE json_extract(replacement.value, '$.id') =
+            json_extract(existing.value, '$.id')
+        ),
+        existing.value
+      )
+    )
+  ) AS items
+  FROM json_each((SELECT payload FROM current_state), '$.hotspots') AS existing
+)
+UPDATE workspace_states
+SET
+  payload = json_set(
+    payload,
+    '$.drafts', json((SELECT items FROM updated_drafts)),
+    '$.hotspots', json((SELECT items FROM updated_hotspots))
+  ),
+  updated_by = 'Codex AI Content Operator',
+  updated_at = '2026-07-30T12:26:00+08:00'
+WHERE id = 'default';
+--> statement-breakpoint
+INSERT INTO audit_events (
+  workspace_id,
+  actor,
+  event_type,
+  detail
+)
+VALUES (
+  'default',
+  'Codex AI Content Operator',
+  '小红书本地化搬运改写',
+  '8条推荐稿改为国内社媒原生表达：正文直接讲内容，去掉原帖评论式叙事；来源、互动与核验提示保留在分析区'
+);
