@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-07-30T10:38:36+08:00",
+  "collectionMode": "signed-in-browser-read-only",
+  "items": [
+    {
+      "sourceId": "x-2082616135170555984",
+      "provider": "chrome-signed-in",
+      "platform": "x",
+      "author": "Ethan Mollick (@emollick)",
+      "url": "https://x.com/emollick/status/2082616135170555984",
+      "discussionUrl": "https://x.com/emollick/status/2082616135170555984",
+      "publishedAtLabel": "2 hours ago",
+      "capturedAt": "2026-07-30T10:38:36+08:00",
+      "language": "en",
+      "text": "Model + harness. We have barely begun to understand the best ways to do harness engineering. A huge amount of untapped potential even without models getting better (but models are getting better).",
+      "quoteContext": "Tibo wrote that GPT-5.6 Sol reached state of the art on ARC-AGI-3 after allowing it to reason and work over multiple context windows with canonical compaction.",
+      "engagement": {
+        "views": 20936,
+        "likes": 255,
+        "replies": 23,
+        "reposts": 13,
+        "bookmarks": 56,
+        "capturedAt": "2026-07-30T10:38:36+08:00"
+      },
+      "localizedTitle": "同一个 AI，为什么别人用得像员工，你用得像搜索框？",
+      "faithfulTranslation": "模型只是其中一部分，外层的运行机制同样重要。我们对如何设计这套机制的理解才刚刚开始。即使模型能力不变，仍然有大量潜力没有被挖出来。",
+      "mainDiscussion": "讨论焦点是模型能力与运行方式的区别：是否允许模型持续工作、跨多段上下文推进任务，以及如何压缩和保留关键信息。",
+      "reuseAngle": "不要讲抽象的 harness engineering，改成普通人能理解的对比：一次问答、连续任务、能记住中间结果的工作方式，效果为什么不同。",
+      "humanCheck": "需打开原帖核对引用的 ARC-AGI-3 结果和设置变化，不把单次基准结果写成普遍结论。",
+      "decision": "candidate"
+    },
+    {
+      "sourceId": "x-2082502289898508640",
+      "provider": "chrome-signed-in",
+      "platform": "x",
+      "author": "Ethan Mollick (@emollick)",
+      "url": "https://x.com/emollick/status/2082502289898508640",
+      "discussionUrl": "https://x.com/emollick/status/2082502289898508640",
+      "publishedAtLabel": "10 hours ago",
+      "capturedAt": "2026-07-30T10:38:36+08:00",
+      "language": "en",
+      "text": "That work will change around AI is inevitable, but the way work changes is not. I think firms with a lack of imagination will see AI as an opportunity to cut people, but firms with the vision to expand human roles & make them better with AI will thrive.",
+      "engagement": {
+        "views": 16204,
+        "likes": 198,
+        "replies": 31,
+        "reposts": 27,
+        "bookmarks": 94,
+        "capturedAt": "2026-07-30T10:38:36+08:00"
+      },
+      "localizedTitle": "公司上 AI 后，先裁人还是先把业务做大？差别可能就在老板的想象力",
+      "faithfulTranslation": "AI 必然会改变工作，但工作究竟怎么变并不是注定的。缺乏想象力的公司会把 AI 当成裁员机会；有远见的公司会用 AI 扩大人的职责、让工作做得更好。",
+      "mainDiscussion": "原帖把两条企业路径放在一起比较：把 AI 当成本工具，或把它当作扩张员工能力和业务边界的工具。",
+      "reuseAngle": "适合做老板和打工人都能参与的选择题，再用真实岗位案例说明两种路径，而不是泛讲“AI 改变未来”。",
+      "humanCheck": "观点帖，不应写成已有统计结论；引用文章中的数字需另行核验。",
+      "decision": "candidate"
+    },
+    {
+      "sourceId": "instagram-DbWUys9j_Jm",
+      "provider": "chrome-signed-in",
+      "platform": "instagram",
+      "author": "Allie K. Miller (@alliekmiller)",
+      "url": "https://www.instagram.com/alliekmiller/p/DbWUys9j_Jm/",
+      "discussionUrl": "https://www.instagram.com/alliekmiller/p/DbWUys9j_Jm/",
+      "publishedAtLabel": "1 day ago",
+      "capturedAt": "2026-07-30T10:38:36+08:00",
+      "language": "en",
+      "text": "Let's talk about what I found in the indexed Anthropic public artifacts. Swipe through for the examples (a family's full investment strategy, a medical group's whole year of staff scheduling, all of it shared by the people who made it). Then go look at what's still set to \"anyone with the link\" in your shared chats and your Drive.",
+      "engagement": {
+        "views": "未公开",
+        "likes": 795,
+        "comments": 134,
+        "reposts": 32,
+        "bookmarks": "未公开",
+        "capturedAt": "2026-07-30T10:38:36+08:00"
+      },
+      "commentSamples": [
+        {
+          "text": "Job",
+          "note": "大量评论是在响应作者的资料领取口令，不能据此推断用户赞同隐私结论。"
+        },
+        {
+          "text": "I like you coat, it's got inspector gadget vibes",
+          "likes": 5,
+          "note": "可见的非口令评论与主题无关。"
+        }
+      ],
+      "localizedTitle": "你以为“有链接的人可见”，可能比你想的公开得多",
+      "faithfulTranslation": "作者称她在可被索引的 Anthropic 公共内容中看到了由创建者自行分享的敏感材料，包括家庭投资策略和医疗机构一整年的排班。她建议用户检查 AI 对话和云盘里仍设为“知道链接即可访问”的内容。",
+      "mainDiscussion": "帖子的核心是共享链接和公开索引带来的隐私风险；现有可见评论主要被作者的“评论 JOB 领取资料”引导，缺少足够的实质性讨论样本。",
+      "reuseAngle": "做成一份三分钟自查：AI 对话分享链接、云盘权限、历史公开页面分别去哪里关。先帮助用户检查，再解释风险。",
+      "humanCheck": "发布前必须核验 Anthropic 的公开分享与搜索索引机制、原案例是否仍可访问，并隐去任何个人或医疗敏感信息。",
+      "decision": "candidate"
+    },
+    {
+      "sourceId": "reddit-1va2xcf",
+      "provider": "chrome-signed-in",
+      "platform": "reddit",
+      "author": "u/celiker",
+      "url": "https://www.reddit.com/r/ChatGPT/comments/1va2xcf/please_tell_me_im_not_the_only_one_absolutely/",
+      "discussionUrl": "https://www.reddit.com/r/ChatGPT/comments/1va2xcf/please_tell_me_im_not_the_only_one_absolutely/",
+      "publishedAtLabel": "9 hours ago",
+      "capturedAt": "2026-07-30T10:38:36+08:00",
+      "language": "en",
+      "text": "Please tell me I'm not the only one... Absolutely!",
+      "engagement": {
+        "score": 908,
+        "comments": 49,
+        "reposts": 1,
+        "views": "未公开",
+        "capturedAt": "2026-07-30T10:38:36+08:00"
+      },
+      "localizedTitle": "不采用：只有梗图语境，当前证据不足以形成有用内容",
+      "faithfulTranslation": "请告诉我不只是我一个人这样……当然！",
+      "mainDiscussion": "榜单数字高，但当前页面证据只有标题和图片占位，无法说明用户具体在讨论什么。",
+      "reuseAngle": "无",
+      "humanCheck": "如后续要采用，必须读取图片内容和评论；当前不进入工作台候选。",
+      "decision": "rejected",
+      "rejectionReason": "互动高但信息密度低，缺少可验证的实用 AI 观点。"
+    }
+  ]
+}

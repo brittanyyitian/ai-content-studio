@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-30T10:38:36+08:00",
+  "policy": {
+    "readOnly": true,
+    "autoFollow": false,
+    "autoLike": false,
+    "autoComment": false,
+    "autoPublish": false,
+    "minimumSignals": [
+      "原帖链接",
+      "作者",
+      "采集时间",
+      "公开互动指标",
+      "可验证正文或视频说明"
+    ]
+  },
+  "targets": [
+    {
+      "platform": "x",
+      "name": "Ethan Mollick",
+      "handle": "emollick",
+      "url": "https://x.com/emollick",
+      "priority": 1,
+      "focus": ["AI工作方式", "组织采用", "实用判断"],
+      "verification": "verified",
+      "verifiedAt": "2026-07-30T10:38:36+08:00"
+    },
+    {
+      "platform": "instagram",
+      "name": "Allie K. Miller",
+      "handle": "alliekmiller",
+      "url": "https://www.instagram.com/alliekmiller/",
+      "priority": 1,
+      "focus": ["AI商业", "AI技巧", "短视频表达", "个人IP"],
+      "verification": "verified",
+      "verifiedAt": "2026-07-30T10:38:36+08:00"
+    },
+    {
+      "platform": "x",
+      "name": "Andrej Karpathy",
+      "handle": "karpathy",
+      "url": "https://x.com/karpathy",
+      "priority": 1,
+      "focus": ["模型使用", "编程", "AI教育"],
+      "verification": "pending"
+    },
+    {
+      "platform": "x",
+      "name": "Simon Willison",
+      "handle": "simonw",
+      "url": "https://x.com/simonw",
+      "priority": 1,
+      "focus": ["AI工具", "实测", "安全", "开发者工作流"],
+      "verification": "pending"
+    },
+    {
+      "platform": "x",
+      "name": "Rowan Cheung",
+      "handle": "rowancheung",
+      "url": "https://x.com/rowancheung",
+      "priority": 1,
+      "focus": ["AI热点", "产品更新", "大众化表达"],
+      "verification": "pending"
+    },
+    {
+      "platform": "x",
+      "name": "Matt Wolfe",
+      "handle": "mreflow",
+      "url": "https://x.com/mreflow",
+      "priority": 1,
+      "focus": ["AI工具", "创作者", "视频选题"],
+      "verification": "pending"
+    },
+    {
+      "platform": "x",
+      "name": "Ben Tossell",
+      "handle": "bentossell",
+      "url": "https://x.com/bentossell",
+      "priority": 2,
+      "focus": ["AI工具", "无代码", "创业"],
+      "verification": "pending"
+    },
+    {
+      "platform": "x",
+      "name": "Linus Ekenstam",
+      "handle": "LinusEkenstam",
+      "url": "https://x.com/LinusEkenstam",
+      "priority": 2,
+      "focus": ["AI设计", "产品", "创作者工作流"],
+      "verification": "pending"
+    },
+    {
+      "platform": "x",
+      "name": "OpenAI",
+      "handle": "OpenAI",
+      "url": "https://x.com/OpenAI",
+      "priority": 1,
+      "focus": ["一手发布", "产品更新", "研究"],
+      "verification": "pending"
+    },
+    {
+      "platform": "x",
+      "name": "Anthropic",
+      "handle": "AnthropicAI",
+      "url": "https://x.com/AnthropicAI",
+      "priority": 1,
+      "focus": ["一手发布", "Claude", "研究", "安全"],
+      "verification": "pending"
+    },
+    {
+      "platform": "x",
+      "name": "Google DeepMind",
+      "handle": "GoogleDeepMind",
+      "url": "https://x.com/GoogleDeepMind",
+      "priority": 1,
+      "focus": ["一手发布", "研究", "产品"],
+      "verification": "pending"
+    },
+    {
+      "platform": "x",
+      "name": "Hugging Face",
+      "handle": "huggingface",
+      "url": "https://x.com/huggingface",
+      "priority": 2,
+      "focus": ["开源模型", "AI工具", "开发者"],
+      "verification": "pending"
+    },
+    {
+      "platform": "reddit",
+      "name": "r/ChatGPT",
+      "handle": "r/ChatGPT",
+      "url": "https://www.reddit.com/r/ChatGPT/top/?t=day",
+      "priority": 2,
+      "focus": ["大众用法", "痛点", "高互动讨论"],
+      "verification": "verified",
+      "verifiedAt": "2026-07-30T10:38:36+08:00"
+    },
+    {
+      "platform": "reddit",
+      "name": "r/LocalLLaMA",
+      "handle": "r/LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/top/?t=day",
+      "priority": 1,
+      "focus": ["开源模型", "本地AI", "实测"],
+      "verification": "pending"
+    },
+    {
+      "platform": "reddit",
+      "name": "r/ClaudeAI",
+      "handle": "r/ClaudeAI",
+      "url": "https://www.reddit.com/r/ClaudeAI/top/?t=day",
+      "priority": 1,
+      "focus": ["Claude用法", "真实体验", "问题反馈"],
+      "verification": "pending"
+    },
+    {
+      "platform": "reddit",
+      "name": "r/StableDiffusion",
+      "handle": "r/StableDiffusion",
+      "url": "https://www.reddit.com/r/StableDiffusion/top/?t=day",
+      "priority": 2,
+      "focus": ["AI图片", "工作流", "案例"],
+      "verification": "pending"
+    },
+    {
+      "platform": "reddit",
+      "name": "r/SideProject",
+      "handle": "r/SideProject",
+      "url": "https://www.reddit.com/r/SideProject/top/?t=day",
+      "priority": 2,
+      "focus": ["AI项目", "变现", "增长"],
+      "verification": "pending"
+    },
+    {
+      "platform": "tiktok",
+      "name": "AI creator discovery",
+      "handle": null,
+      "url": "https://www.tiktok.com/search?q=AI%20tools",
+      "priority": 2,
+      "focus": ["AI技巧", "短视频钩子", "高互动视频"],
+      "verification": "login_required"
+    }
+  ]
+}
