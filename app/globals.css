@@ -400,21 +400,15 @@ button {
   font-weight: 600;
 }
 
-.editorial-brief input {
+.editorial-brief p {
   width: 100%;
+  margin: 0;
   padding: 10px 12px;
-  outline: none;
   border: 1px solid var(--line);
   border-radius: 11px 9px 12px 8px;
   color: var(--ink);
   background: var(--paper);
   font-size: 14px;
-}
-
-.editorial-brief input:focus,
-.draft-editor:focus,
-.ai-revise textarea:focus {
-  border-color: var(--black);
 }
 
 .daily-numbers {
@@ -788,6 +782,10 @@ button {
   padding: 16px;
   font-size: 15px;
   line-height: 1.9;
+}
+
+.draft-reader {
+  white-space: pre-wrap;
 }
 
 .visual-brief {

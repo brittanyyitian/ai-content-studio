@@ -80,7 +80,7 @@ type WorkspaceState = {
 const LOCAL_CACHE_KEY = `tide-content-workbench-v${WORKSPACE_SCHEMA_VERSION}`;
 
 const nav: { id: View; label: string }[] = [
-  { id: "today", label: "今日任务" },
+  { id: "today", label: "今日内容" },
   { id: "library", label: "内容库" },
   { id: "calendar", label: "发布日历" },
   { id: "analytics", label: "数据表现" },
@@ -392,10 +392,6 @@ const accounts = [
   { platform: "X", name: "@buildwithai", owner: "Edy", rhythm: "每天 1 条", focus: "个人项目 · Build in public", state: "正常" },
 ];
 
-function StatusPill({ status }: { status: HumanStatus }) {
-  return <span className={`status status-${status}`}>{status}</span>;
-}
-
 function makeDraft(item: Hotspot): Draft {
   return {
     id: item.id + 1_000_000,
@@ -428,10 +424,7 @@ function formatCapturedAt(value?: string) {
   }).format(date);
 }
 
-export default function Workbench({
-  userName,
-  userEmail,
-}: {
+export default function Workbench(_props: {
   userName: string;
   userEmail: string;
 }) {
@@ -441,7 +434,6 @@ export default function Workbench({
   const [drafts, setDrafts] = useState(seedDrafts);
   const [notice, setNotice] = useState("");
   const [topicFilter, setTopicFilter] = useState("推荐");
-  const [brief, setBrief] = useState("");
   const [showSources, setShowSources] = useState(false);
   const [hydrated, setHydrated] = useState(false);
   const [loadError, setLoadError] = useState("");
@@ -522,36 +514,6 @@ export default function Workbench({
     void loadWorkspace();
   }, []);
 
-  useEffect(() => {
-    if (!hydrated) return;
-    const state: WorkspaceState = {
-      schemaVersion: WORKSPACE_SCHEMA_VERSION,
-      hotspots,
-      drafts,
-      discoveryMeta,
-    };
-    const encoded = JSON.stringify(state);
-    if (encoded === loadedSnapshot.current) return;
-    window.localStorage.setItem(LOCAL_CACHE_KEY, encoded);
-    const timer = window.setTimeout(() => {
-      void fetch("/api/workspace", {
-        method: "PUT",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({
-          state,
-          actor: userEmail || userName,
-          eventType: "保存内容版本",
-          detail: "选题、审核状态或平台文案发生变化",
-        }),
-      })
-        .then((response) => {
-          if (response.ok) loadedSnapshot.current = encoded;
-        })
-        .catch(() => undefined);
-    }, 800);
-    return () => window.clearTimeout(timer);
-  }, [hotspots, drafts, discoveryMeta, hydrated, userEmail, userName]);
-
   const recommended = useMemo(
     () => hotspots.filter((item) => item.selected),
     [hotspots],
@@ -565,14 +527,6 @@ export default function Workbench({
         : hotspots.filter((item) => item.category === topicFilter),
     [hotspots, topicFilter],
   );
-  const pendingReviewCount = useMemo(() => {
-    const currentIds = new Set(recommended.map((item) => item.id));
-    return drafts.filter(
-      (draft) =>
-        currentIds.has(draft.hotspotId) && draft.status === "待审核",
-    ).length;
-  }, [drafts, recommended]);
-
   if (!hydrated) {
     return (
       <main className="loading-screen">
@@ -604,80 +558,9 @@ export default function Workbench({
     window.setTimeout(() => setNotice(""), 2600);
   }
 
-  function toggleAdopt(item: Hotspot) {
-    if (!item.selected && !drafts.some((draft) => draft.hotspotId === item.id)) {
-      setDrafts((items) => [...items, makeDraft(item)]);
-    }
-    setHotspots((items) =>
-      items.map((current) =>
-        current.id === item.id
-          ? {
-              ...current,
-              selected: !current.selected,
-              status: !current.selected ? "待审核" : "待选题",
-            }
-          : current,
-      ),
-    );
-    flash(item.selected ? "已移回候选池，记录仍然保留" : "已采用，并进入审核队列");
-  }
-
   function selectHotspot(item: Hotspot) {
-    if (!drafts.some((draft) => draft.hotspotId === item.id)) {
-      setDrafts((items) => [...items, makeDraft(item)]);
-    }
     setSelectedId(item.id);
     setShowSources(false);
-  }
-
-  function saveDraft(nextBody: string) {
-    setDrafts((items) =>
-      items.map((draft) =>
-        draft.id === activeDraft.id
-          ? {
-              ...draft,
-              body: nextBody,
-              version: "V3 · 人工修改",
-              updatedBy: userName,
-            }
-          : draft,
-      ),
-    );
-  }
-
-  function approveDraft() {
-    setDrafts((items) =>
-      items.map((draft) =>
-        draft.id === activeDraft.id ? { ...draft, status: "待发布" } : draft,
-      ),
-    );
-    setHotspots((items) =>
-      items.map((item) =>
-        item.id === selected.id ? { ...item, status: "待发布" } : item,
-      ),
-    );
-    flash("审核通过，已进入待发布");
-  }
-
-  function applyBrief() {
-    if (!brief.trim()) {
-      flash("先写一句修改要求");
-      return;
-    }
-    setDrafts((items) =>
-      items.map((draft) =>
-        draft.id === activeDraft.id
-          ? {
-              ...draft,
-              reviewNote: brief.trim(),
-              version: "待 AI 处理 · 已记录审核意见",
-              updatedBy: userName,
-            }
-          : draft,
-      ),
-    );
-    setBrief("");
-    flash("修改意见已进入 AI 处理队列，旧版本保持不变");
   }
 
   const dateLabel = new Intl.DateTimeFormat("zh-CN", {
@@ -735,17 +618,12 @@ export default function Workbench({
                 <h2>今日内容池</h2>
                 <label className="editorial-brief">
                   <span>选题偏好</span>
-                  <input
-                    value={editorialBrief}
-                    onChange={(event) => setEditorialBrief(event.target.value)}
-                    placeholder="例如：今天不要产业新闻，多选几个实际操作的 AI 技巧"
-                  />
+                  <p>{editorialBrief}</p>
                 </label>
               </div>
               <div className="daily-numbers">
                 <div><strong>{hotspots.length}</strong><span>候选</span></div>
                 <div><strong>{recommended.length}</strong><span>推荐</span></div>
-                <div><strong>{pendingReviewCount}</strong><span>待审核</span></div>
               </div>
             </div>
 
@@ -781,7 +659,6 @@ export default function Workbench({
                         <span>{item.source}</span>
                         <i>·</i>
                         <span>{item.age}</span>
-                        <StatusPill status={item.status} />
                       </div>
                       <h3>{item.title}</h3>
                       <p>{item.summary}</p>
@@ -795,17 +672,6 @@ export default function Workbench({
                         <span>角度</span>
                         {item.angle}
                       </div>
-                      <div className="card-foot">
-                        <button
-                          className={item.selected ? "adopt-btn adopted" : "adopt-btn"}
-                          onClick={(event) => {
-                            event.stopPropagation();
-                            toggleAdopt(item);
-                          }}
-                        >
-                          {item.selected ? "已采用" : "采用选题"}
-                        </button>
-                      </div>
                     </div>
                   </article>
                 ))}
@@ -813,14 +679,11 @@ export default function Workbench({
 
               <aside className="review-panel">
                 <div className="panel-top">
-                  <span className="section-kicker">审核</span>
-                  <StatusPill status={activeDraft.status} />
+                  <span className="section-kicker">内容初稿</span>
                 </div>
                 <h2>{activeDraft.title}</h2>
                 <div className="meta-line">
                   <span>{activeDraft.platform}</span>
-                  <span>负责人：{selected.assignee}</span>
-                  <span>{activeDraft.version}</span>
                 </div>
 
                 <div className="evidence-box">
@@ -889,20 +752,16 @@ export default function Workbench({
                   )}
                 </div>
 
-                <label className="field-label" htmlFor="draft-body">平台文案</label>
-                <textarea
-                  id="draft-body"
-                  className="draft-editor"
-                  value={activeDraft.body}
-                  onChange={(event) => saveDraft(event.target.value)}
-                />
+                <div className="field-label">平台文案</div>
+                <div className="draft-editor draft-reader">
+                  {activeDraft.body}
+                </div>
 
                 <div className="visual-brief">
                   <div>
                     <b>配图建议</b>
                     <p>{activeDraft.visual}</p>
                   </div>
-                  <button onClick={() => flash("已标记配图修改，等待设计处理")}>标记修改</button>
                 </div>
                 {activeDraft.videoScript && (
                   <div className="video-brief">
@@ -911,27 +770,6 @@ export default function Workbench({
                   </div>
                 )}
 
-                <label className="field-label" htmlFor="ai-brief">提交给 AI 运营任务的修改意见</label>
-                <div className="ai-revise">
-                  <textarea
-                    id="ai-brief"
-                    value={brief}
-                    onChange={(event) => setBrief(event.target.value)}
-                    placeholder="例如：改成更适合小红书女性创业者的角度，少一点技术词。"
-                  />
-                  <button onClick={applyBrief}>加入修改队列</button>
-                </div>
-                {activeDraft.reviewNote && (
-                  <p className="queued-note">待处理意见：{activeDraft.reviewNote}</p>
-                )}
-                <div className="review-actions">
-                  <button className="secondary-btn" onClick={() => flash("已保存为待修改，负责人会看到意见")}>
-                    退回修改
-                  </button>
-                  <button className="primary-btn" onClick={approveDraft}>
-                    审核通过
-                  </button>
-                </div>
               </aside>
             </div>
           </section>
@@ -948,7 +786,7 @@ export default function Workbench({
                 <article className="library-card" key={item.title}>
                   <div className="library-index">0{index + 1}</div>
                   <div className="library-main">
-                    <div className="source-row"><span className="source-badge">{item.platform}</span><StatusPill status={item.status} /></div>
+                    <div className="source-row"><span className="source-badge">{item.platform}</span></div>
                     <h3>{item.title}</h3>
                     <p className="lineage"><b>来源链路</b>{item.source}</p>
                     <p className="lineage"><b>人工修改</b>{item.edits}</p>
