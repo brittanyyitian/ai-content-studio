@@ -30,6 +30,8 @@ test("build contains the AI content workbench and no starter preview", async () 
   assert.match(layout, /潮汐内容台/);
   assert.match(workbench, /今日任务/);
   assert.match(workbench, /所有内容都在这里/);
+  assert.match(workbench, /内容详情/);
+  assert.match(workbench, /renderLibraryDetail/);
   assert.match(workbench, /draftHistory/);
   assert.match(workbench, /todayHotspots/);
   assert.match(workbench, /短视频脚本/);

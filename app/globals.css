@@ -964,6 +964,81 @@ button {
   font-size: 13px;
 }
 
+.library-layout {
+  margin-top: 20px;
+}
+
+.library-card-preview {
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: pre-line;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.library-review-panel {
+  min-height: calc(100vh - 150px);
+}
+
+.library-meta-line span {
+  white-space: nowrap;
+}
+
+.library-version-picker {
+  margin: 20px 0;
+  padding: 14px 0 18px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.library-version-picker > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.library-version-picker b {
+  color: #222;
+  font-size: 14px;
+}
+
+.library-version-picker small,
+.library-version-picker p {
+  color: #777;
+  font-size: 12px;
+}
+
+.library-version-picker p {
+  margin: 10px 0 0;
+  line-height: 1.6;
+}
+
+.library-version-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 12px;
+}
+
+.library-version-buttons button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 9px 7px 10px 7px;
+  color: #555;
+  background: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.library-version-buttons button:hover,
+.library-version-buttons button.active {
+  color: #fff;
+  border-color: #111;
+  background: #111;
+}
+
 .library-status {
   color: #777;
   font-size: 12px;

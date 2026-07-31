@@ -451,6 +451,8 @@ export default function Workbench(props: {
   const [drafts, setDrafts] = useState(seedDrafts);
   const [draftHistory, setDraftHistory] = useState<Draft[]>([]);
   const [selectedLibraryKey, setSelectedLibraryKey] = useState("");
+  const [selectedLibraryVersionIndex, setSelectedLibraryVersionIndex] =
+    useState(-1);
   const [notice, setNotice] = useState("");
   const [topicFilter, setTopicFilter] = useState("全部");
   const [showSources, setShowSources] = useState(false);
@@ -580,6 +582,16 @@ export default function Workbench(props: {
   const activeLibraryItem =
     libraryItems.find((item) => item.key === selectedLibraryKey) ??
     libraryItems[0];
+  const activeLibraryVersionIndex = activeLibraryItem
+    ? selectedLibraryKey === activeLibraryItem.key &&
+      selectedLibraryVersionIndex >= 0 &&
+      selectedLibraryVersionIndex < activeLibraryItem.versions.length
+      ? selectedLibraryVersionIndex
+      : activeLibraryItem.versions.length - 1
+    : -1;
+  const activeLibraryDraft =
+    activeLibraryItem?.versions[activeLibraryVersionIndex] ??
+    activeLibraryItem?.latest;
   const libraryVersionCount = draftHistory.length + drafts.length;
   if (!hydrated) {
     return (
@@ -615,6 +627,11 @@ export default function Workbench(props: {
   function selectHotspot(item: Hotspot) {
     setSelectedId(item.id);
     setShowSources(false);
+  }
+
+  function selectLibraryItem(item: LibraryItem) {
+    setSelectedLibraryKey(item.key);
+    setSelectedLibraryVersionIndex(item.versions.length - 1);
   }
 
   const dateLabel = new Intl.DateTimeFormat("zh-CN", {
@@ -742,6 +759,73 @@ export default function Workbench(props: {
           <div className="video-brief">
             <b>短视频脚本</b>
             <p>{activeDraft.videoScript}</p>
+          </div>
+        )}
+      </aside>
+    );
+  }
+
+  function renderLibraryDetail(mobile: boolean) {
+    if (!activeLibraryItem || !activeLibraryDraft) return null;
+    return (
+      <aside
+        className={
+          mobile
+            ? "review-panel mobile-review-panel library-review-panel"
+            : "review-panel desktop-review-panel library-review-panel"
+        }
+        onClick={mobile ? (event) => event.stopPropagation() : undefined}
+      >
+        <div className="panel-top">
+          <span className="section-kicker">内容详情</span>
+        </div>
+        <h2>{activeLibraryDraft.title}</h2>
+        <div className="meta-line library-meta-line">
+          <span>{activeLibraryDraft.platform}</span>
+          <span>{activeLibraryDraft.status}</span>
+          <span>{activeLibraryDraft.version || "版本未命名"}</span>
+        </div>
+
+        <div className="library-version-picker">
+          <div>
+            <b>版本记录</b>
+            <small>{activeLibraryItem.versions.length} 个版本全部保留</small>
+          </div>
+          <div className="library-version-buttons">
+            {activeLibraryItem.versions.map((version, index) => (
+              <button
+                className={
+                  activeLibraryVersionIndex === index ? "active" : ""
+                }
+                key={`${activeLibraryItem.key}-${version.version}-${index}`}
+                type="button"
+                onClick={() => setSelectedLibraryVersionIndex(index)}
+              >
+                {index + 1}
+              </button>
+            ))}
+          </div>
+          <p>
+            {activeLibraryDraft.revisionReason || activeLibraryDraft.status} ·
+            最近记录于 {formatLibraryDate(activeLibraryDraft)}
+          </p>
+        </div>
+
+        <div className="field-label">平台文案</div>
+        <div className="draft-editor draft-reader">
+          {activeLibraryDraft.body}
+        </div>
+
+        <div className="visual-brief">
+          <div>
+            <b>配图建议</b>
+            <p>{activeLibraryDraft.visual || "该版本未记录配图建议。"}</p>
+          </div>
+        </div>
+        {activeLibraryDraft.videoScript && (
+          <div className="video-brief">
+            <b>短视频脚本</b>
+            <p>{activeLibraryDraft.videoScript}</p>
           </div>
         )}
       </aside>
@@ -957,75 +1041,47 @@ export default function Workbench(props: {
                 </p>
               </div>
             </div>
-            <div className="library-grid">
-              {libraryItems.map((item, index) => (
-                <button
-                  className={
-                    activeLibraryItem?.key === item.key
-                      ? "library-card selected"
-                      : "library-card"
-                  }
-                  key={item.key}
-                  type="button"
-                  onClick={() => setSelectedLibraryKey(item.key)}
-                >
-                  <div className="library-index">
-                    {String(index + 1).padStart(2, "0")}
-                  </div>
-                  <div className="library-main">
-                    <div className="source-row">
-                      <span className="source-badge">{item.latest.platform}</span>
-                      <span className="library-status">{item.latest.status}</span>
+            <div className="split-layout library-layout">
+              <div className="hotspot-list library-content-list">
+                {libraryItems.map((item, index) => (
+                  <article
+                    className={
+                      activeLibraryItem?.key === item.key
+                        ? "hotspot-card selected"
+                        : "hotspot-card"
+                    }
+                    key={item.key}
+                    onClick={() => selectLibraryItem(item)}
+                  >
+                    <div className="rank">
+                      {String(index + 1).padStart(2, "0")}
                     </div>
-                    <h3>{item.latest.title}</h3>
-                    <p className="lineage">
-                      <b>当前版本</b>
-                      {item.latest.version || "版本未命名"}
-                    </p>
-                    <p className="lineage">
-                      <b>版本记录</b>
-                      {item.versions.length} 个
-                    </p>
-                    <p className="library-excerpt">{item.latest.body}</p>
-                    <div className="result-strip">
-                      最近更新 · {formatLibraryDate(item.latest)}
-                    </div>
-                  </div>
-                  <div className="library-owner">
-                    <span>{(item.latest.updatedBy || "内容运营").slice(0, 1)}</span>
-                    <small>{item.latest.updatedBy || "内容运营"}</small>
-                  </div>
-                </button>
-              ))}
-            </div>
-            {activeLibraryItem && (
-              <div className="history-panel">
-                <div>
-                  <span className="section-kicker">VERSION HISTORY</span>
-                  <h3>“{activeLibraryItem.latest.title}”的版本记录</h3>
-                  <p className="library-summary">
-                    {activeLibraryItem.versions.length} 个版本全部保留
-                  </p>
-                </div>
-                <ol className="timeline">
-                  {activeLibraryItem.versions.map((version, index) => (
-                    <li
-                      key={`${activeLibraryItem.key}-${version.version}-${index}`}
-                    >
-                      <span>{index + 1}</span>
-                      <div>
-                        <b>{version.version || `版本 ${index + 1}`}</b>
-                        <p>
-                          {version.title} ·{" "}
-                          {version.revisionReason || version.status}
-                        </p>
+                    <div className="hotspot-content">
+                      <div className="source-row">
+                        <span className="source-badge">
+                          {item.latest.platform}
+                        </span>
+                        <span>{item.latest.status}</span>
+                        <i>·</i>
+                        <span>{formatLibraryDate(item.latest)}</span>
                       </div>
-                      <time>{formatLibraryDate(version)}</time>
-                    </li>
-                  ))}
-                </ol>
+                      <h3>{item.latest.title}</h3>
+                      <p className="library-card-preview">
+                        {item.latest.body}
+                      </p>
+                      <div className="angle">
+                        <span>版本</span>
+                        {item.latest.version || "版本未命名"} · 共
+                        {item.versions.length} 个版本
+                      </div>
+                    </div>
+                    {activeLibraryItem?.key === item.key &&
+                      renderLibraryDetail(true)}
+                  </article>
+                ))}
               </div>
-            )}
+              {renderLibraryDetail(false)}
+            </div>
           </section>
         )}
 
