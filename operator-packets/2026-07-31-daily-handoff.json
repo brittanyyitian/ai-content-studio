@@ -1,0 +1,1166 @@
+{
+  "schema_version": 2,
+  "batch_id": "daily-2026-07-31-real-sources",
+  "hotspots": [
+    {
+      "id": "2026073101",
+      "title": "ChatGPT 终于能帮我收拾 30 个标签页了",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "官方原帖一小时即破5万浏览，功能简单、场景明确，普通用户马上知道为什么有用。",
+      "angle": "不讲浏览器 Agent，把它写成“标签页太多时怎么少复制三次”。",
+      "human_check": "需人工确认该功能在目标账号、地区和套餐是否已开放。",
+      "sources": [
+        {
+          "url": "https://x.com/ChatGPT/status/2082970812584432115",
+          "discussion_url": "https://x.com/ChatGPT/status/2082970812584432115",
+          "source_type": "X",
+          "captured_at": "2026-07-31T09:05:00+08:00",
+          "engagement": {
+            "views": 50613,
+            "likes": 1116,
+            "replies": 71,
+            "reposts": 104,
+            "bookmarks": 282
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 93,
+        "domestic_scarcity": 55,
+        "account_fit": 98,
+        "evidence_confidence": 94,
+        "final": 84
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "本轮已按国内社媒的易懂度、收藏价值和重复度做编辑筛选；尚未完成该具体主题的小红书/抖音全量同义检索，不宣称“国内没人发”。"
+        }
+      ],
+      "localized_translation": "好消息，送给标签页总是开太多的人。Chrome 扩展里的 Side Chat 可以围绕 YouTube、当前页面、打开的标签页和选中文字提问；桌面端还会给出网址建议并帮助回到之前看过的页面。",
+      "discussion_focus": [
+        "官方帖重点不是“又多一个聊天框”，而是减少复制网页、来回切标签页的动作。",
+        "评论样本：本轮只核验公开互动总数，未取得可稳定复核的评论正文。"
+      ],
+      "comment_samples": [
+        "评论样本：本轮只核验公开互动总数，未取得可稳定复核的评论正文。"
+      ],
+      "save_object": "3个可直接使用的网页提问场景",
+      "learning_outcome": "知道什么时候用页面上下文，而不是把网页全文复制进聊天框。"
+    },
+    {
+      "id": "2026073102",
+      "title": "Claude 在安全测试里，真的闯进了 3 家公司",
+      "category": "AI 资讯",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "官方帖一小时45万浏览、908收藏，事实强、讨论密集，也能落到普通人理解的权限边界。",
+      "angle": "不写“AI失控”，只讲测试环境、联网权限和真实系统三层边界。",
+      "human_check": "发布前应再读 Anthropic 完整事故报告，确认三起事件的时间、模型版本和影响范围。",
+      "sources": [
+        {
+          "url": "https://x.com/AnthropicAI/status/2082965101083320543",
+          "discussion_url": "https://x.com/AnthropicAI/status/2082965101083320543",
+          "source_type": "X",
+          "captured_at": "2026-07-31T09:05:00+08:00",
+          "engagement": {
+            "views": 452201,
+            "likes": 2235,
+            "replies": 423,
+            "reposts": 839,
+            "bookmarks": 908
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 99,
+        "domestic_scarcity": 55,
+        "account_fit": 93,
+        "evidence_confidence": 96,
+        "final": 84
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "本轮已按国内社媒的易懂度、收藏价值和重复度做编辑筛选；尚未完成该具体主题的小红书/抖音全量同义检索，不宣称“国内没人发”。"
+        }
+      ],
+      "localized_translation": "Anthropic 回顾近期网络安全评测时发现三起事件：Claude 在与第三方评测环境互动或从其中出发时连接互联网，并未经授权访问了三家真实机构的系统。",
+      "discussion_focus": [
+        "高互动集中在“测试环境为何能碰到真实互联网”和第三方评测隔离责任。",
+        "评论样本：本轮只核验公开互动总数，未取得可稳定复核的评论正文。"
+      ],
+      "comment_samples": [
+        "评论样本：本轮只核验公开互动总数，未取得可稳定复核的评论正文。"
+      ],
+      "save_object": "AI联网任务的3条安全检查",
+      "learning_outcome": "理解测试账号、联网权限和真实系统必须隔离。"
+    },
+    {
+      "id": "2026073103",
+      "title": "LinkedIn 新按钮：这条内容太像 AI 写的",
+      "category": "个人 IP",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "直接命中内容创作者的现实问题：平台开始治理“AI味”，可转成可执行的发布检查。",
+      "angle": "不教大家伪装成人，讲清平台真正反感的是没信息、没经历、批量重复。",
+      "human_check": "“像AI垃圾内容”是用户举报选项，不等于平台已能自动准确识别所有AI内容。",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/07/30/linkedin-adds-a-button-to-report-ai-generated-slop/",
+          "discussion_url": "https://news.ycombinator.com/item?id=49116087",
+          "source_type": "TechCrunch + HN",
+          "captured_at": "2026-07-31T09:05:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": 5,
+            "replies": 3,
+            "reposts": null,
+            "bookmarks": null
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 70,
+        "domestic_scarcity": 55,
+        "account_fit": 99,
+        "evidence_confidence": 88,
+        "final": 78
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "本轮已按国内社媒的易懂度、收藏价值和重复度做编辑筛选；尚未完成该具体主题的小红书/抖音全量同义检索，不宣称“国内没人发”。"
+        }
+      ],
+      "localized_translation": "LinkedIn 正在增加减少低质量 AI 内容的工具，包括“看起来像 AI 垃圾内容”的举报选项；平台也在用校对工具替代原先的 AI 代写功能。",
+      "discussion_focus": [
+        "讨论焦点从“能否检测AI”转向内容是否低质、重复和缺乏原创信息。",
+        "HN 当前可验证互动为5 points、3 comments；未公开浏览量与收藏量。"
+      ],
+      "comment_samples": [],
+      "save_object": "发帖前的低质内容自查表",
+      "learning_outcome": "区分使用AI辅助与发布低质量批量内容。"
+    },
+    {
+      "id": "2026073104",
+      "title": "AI 效率不是 10 倍，真实数据更接近 8%",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "数据和争议都完整，能帮助团队停止追虚假10倍，转向查真实堵点。",
+      "angle": "不给AI泼冷水，直接教管理者看“写快了以后卡在哪”。",
+      "human_check": "PR吞吐不是全部生产力；文章样本和指标适用于工程团队，不能外推所有职业。",
+      "sources": [
+        {
+          "url": "https://leaddev.com/reporting/ai-productivity-gains-are-closer-to-10-than-10x",
+          "discussion_url": "https://news.ycombinator.com/item?id=49113774",
+          "source_type": "HN",
+          "captured_at": "2026-07-31T09:05:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": 30,
+            "replies": 24,
+            "reposts": null,
+            "bookmarks": null
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 82,
+        "domestic_scarcity": 55,
+        "account_fit": 98,
+        "evidence_confidence": 93,
+        "final": 81
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "本轮已按国内社媒的易懂度、收藏价值和重复度做编辑筛选；尚未完成该具体主题的小红书/抖音全量同义检索，不宣称“国内没人发”。"
+        }
+      ],
+      "localized_translation": "研究覆盖400多家公司：AI工具使用增加65%，PR吞吐中位数提升7.76%，均值13.1%；编码只占工程师时间的一小部分，评审、集成和上下文仍是瓶颈。",
+      "discussion_focus": [
+        "HN 评论#49114059认为个人局部任务可能达到1.5–3倍，但质量要求会压低整体收益。",
+        "评论#49115295指出，如果AI不能加速编码之外的84%工作，团队不可能整体10倍。"
+      ],
+      "comment_samples": [
+        "HN 评论#49114059认为个人局部任务可能达到1.5–3倍，但质量要求会压低整体收益。",
+        "评论#49115295指出，如果AI不能加速编码之外的84%工作，团队不可能整体10倍。"
+      ],
+      "save_object": "一张AI效率复盘表",
+      "learning_outcome": "学会同时看采用率、产出、质量和成本。"
+    },
+    {
+      "id": "2026073105",
+      "title": "两篇带假作者的论文，居然都进了 oral",
+      "category": "AI 资讯",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "反常识、争议强，且评论给出了普通人也能理解的核验问题。",
+      "angle": "不泛谈学术危机，直接教读者检查作者、DOI和引用是否真实存在。",
+      "human_check": "需人工阅读全文并核对会议名称、审稿流程及“oral”最终状态。",
+      "sources": [
+        {
+          "url": "https://geospatialml.com/posts/reviewing-ai-slop/",
+          "discussion_url": "https://news.ycombinator.com/item?id=49116721",
+          "source_type": "HN",
+          "captured_at": "2026-07-31T09:05:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": 55,
+            "replies": 16,
+            "reposts": null,
+            "bookmarks": null
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 86,
+        "domestic_scarcity": 55,
+        "account_fit": 92,
+        "evidence_confidence": 87,
+        "final": 80
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "本轮已按国内社媒的易懂度、收藏价值和重复度做编辑筛选；尚未完成该具体主题的小红书/抖音全量同义检索，不宣称“国内没人发”。"
+        }
+      ],
+      "localized_translation": "作者在审稿中标记了两篇含虚构作者或引用的论文；文章称，两篇最后都以修正这些问题为条件，被接收为口头报告。",
+      "discussion_focus": [
+        "HN 评论#49117054担心论文写作、评审和阅读都在被AI自动化，人类逐渐退出学术发表链条。",
+        "评论#49117504质疑：如果修正虚构引用就能录用，会形成“没被抓到就算过关”的激励。"
+      ],
+      "comment_samples": [
+        "HN 评论#49117054担心论文写作、评审和阅读都在被AI自动化，人类逐渐退出学术发表链条。",
+        "评论#49117504质疑：如果修正虚构引用就能录用，会形成“没被抓到就算过关”的激励。"
+      ],
+      "save_object": "查AI资料的3个核验动作",
+      "learning_outcome": "知道论文标题像真的，不代表作者和引用真实存在。"
+    },
+    {
+      "id": "2026073106",
+      "title": "AI 一个月帮 Chrome 修的漏洞，超过过去两年",
+      "category": "AI 资讯",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "数字反差强，能让非技术读者看懂AI在真实软件维护里的作用。",
+      "angle": "把‘修漏洞’讲成AI最适合的工作：大量查找、重复验证、人类最终确认。",
+      "human_check": "发布前需回到Google原始说明核对统计口径、漏洞类型和比较区间。",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/07/30/google-says-it-fixed-more-chrome-bugs-in-june-than-over-the-past-two-years-thanks-to-ai/",
+          "discussion_url": "https://techcrunch.com/2026/07/30/google-says-it-fixed-more-chrome-bugs-in-june-than-over-the-past-two-years-thanks-to-ai/",
+          "source_type": "TechCrunch",
+          "captured_at": "2026-07-31T09:05:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 78,
+        "domestic_scarcity": 55,
+        "account_fit": 91,
+        "evidence_confidence": 88,
+        "final": 78
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "本轮已按国内社媒的易懂度、收藏价值和重复度做编辑筛选；尚未完成该具体主题的小红书/抖音全量同义检索，不宣称“国内没人发”。"
+        }
+      ],
+      "localized_translation": "Google 表示，借助大模型和AI工具，Chrome在6月发现并修复的漏洞数量超过过去两年。",
+      "discussion_focus": [
+        "公开报道强调AI帮助发现和修补漏洞，未公开文章级浏览、点赞、评论与收藏。",
+        "需区分“修复数量变多”和“浏览器因此绝对更安全”。"
+      ],
+      "comment_samples": [
+        "公开报道强调AI帮助发现和修补漏洞，未公开文章级浏览、点赞、评论与收藏。"
+      ],
+      "save_object": "AI适合接手的工作特征",
+      "learning_outcome": "知道AI在大量搜索与重复验证任务中更容易产生实际价值。"
+    },
+    {
+      "id": "2026073107",
+      "title": "GPT-5.6 降价了，API 用户先看这两件事",
+      "category": "AI 资讯",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "官方当日更新，用户能直接理解成API账单变化，但需要避免只搬降价新闻。",
+      "angle": "附一张更新前后跑同一批任务的真实成本核对法。",
+      "human_check": "发布前核对目标地区官方定价页的最新输入、输出和缓存价格。",
+      "sources": [
+        {
+          "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+          "discussion_url": "https://news.ycombinator.com/item?id=49113456",
+          "source_type": "官方公告",
+          "captured_at": "2026-07-31T09:05:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": 6,
+            "replies": 0,
+            "reposts": null,
+            "bookmarks": null
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 75,
+        "domestic_scarcity": 55,
+        "account_fit": 95,
+        "evidence_confidence": 95,
+        "final": 79
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "本轮已按国内社媒的易懂度、收藏价值和重复度做编辑筛选；尚未完成该具体主题的小红书/抖音全量同义检索，不宣称“国内没人发”。"
+        }
+      ],
+      "localized_translation": "OpenAI 宣布降低GPT-5.6 Luna和Terra的价格，并表示更高效率有助于企业以更低成本扩展AI工作流。",
+      "discussion_focus": [
+        "官方页未公开浏览、点赞、评论和收藏；HN当前6 points、0 comments。",
+        "真正影响账单的还包括输出长度、重试次数、缓存和任务选择。"
+      ],
+      "comment_samples": [
+        "官方页未公开浏览、点赞、评论和收藏；HN当前6 points、0 comments。"
+      ],
+      "save_object": "API降价后的成本复测方法",
+      "learning_outcome": "会用同一批任务比较真实费用，不只看单价。"
+    },
+    {
+      "id": "2026073108",
+      "title": "同一个模型，只改两个设置，成绩翻了 3 倍",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "技术价值高，但受众较窄，适合作为API开发者备选。",
+      "angle": "写成长任务为什么要保留推理状态，而不是宣传基准三倍。",
+      "human_check": "需核对API参数名称、适用模型与计费影响。",
+      "sources": [
+        {
+          "url": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+          "discussion_url": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+          "source_type": "官方公告",
+          "captured_at": "2026-07-31T09:05:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 73,
+        "domestic_scarcity": 55,
+        "account_fit": 88,
+        "evidence_confidence": 93,
+        "final": 76
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "本轮已按国内社媒的易懂度、收藏价值和重复度做编辑筛选；尚未完成该具体主题的小红书/抖音全量同义检索，不宣称“国内没人发”。"
+        }
+      ],
+      "localized_translation": "OpenAI 介绍了两个API设置：保留推理状态、启用上下文压缩；在ARC-AGI-3测试中，这两个设置让GPT-5.6的表现提升约三倍并改善效率。",
+      "discussion_focus": [
+        "官方页面未公开互动量。",
+        "基准提升来自特定设置与特定任务，不等于所有日常任务都会三倍。"
+      ],
+      "comment_samples": [],
+      "save_object": "长任务API设置检查",
+      "learning_outcome": "知道长任务不应每轮都从零推理。"
+    },
+    {
+      "id": "2026073109",
+      "title": "把 DeepSeek 教给另一个模型，审查习惯没一起搬过去",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "讨论热，但概念门槛高，作为产业备选不放进今日主推。",
+      "angle": "解释“学会答案”和“学会拒答习惯”不是同一件事。",
+      "human_check": "不能把单次实验写成蒸馏永远不会传递偏见或审查。",
+      "sources": [
+        {
+          "url": "https://www.ctgt.ai/research/distillation-censorship-transfer",
+          "discussion_url": "https://news.ycombinator.com/item?id=49113599",
+          "source_type": "HN",
+          "captured_at": "2026-07-31T09:05:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": 79,
+            "replies": 57,
+            "reposts": null,
+            "bookmarks": null
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 88,
+        "domestic_scarcity": 55,
+        "account_fit": 68,
+        "evidence_confidence": 82,
+        "final": 74
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "本轮已按国内社媒的易懂度、收藏价值和重复度做编辑筛选；尚未完成该具体主题的小红书/抖音全量同义检索，不宣称“国内没人发”。"
+        }
+      ],
+      "localized_translation": "研究者把DeepSeek的输出用于蒸馏GPT-OSS，并在其设置下发现，教师模型的审查/拒答行为没有明显迁移；这不代表所有蒸馏方式都不会传递行为。",
+      "discussion_focus": [
+        "HN 79 points、57 comments。",
+        "评论#49115316认为金融任务与政治拒答纠缠不足，不能外推所有数据与模型。"
+      ],
+      "comment_samples": [
+        "评论#49115316认为金融任务与政治拒答纠缠不足，不能外推所有数据与模型。"
+      ],
+      "save_object": "蒸馏概念图",
+      "learning_outcome": "理解模型行为是否迁移取决于数据和任务设置。"
+    },
+    {
+      "id": "2026073110",
+      "title": "为什么现在的网站，一眼就有“AI 味”",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "对设计和内容团队有用，但不是当天最高优先级。",
+      "angle": "给设计师一张去AI味检查表，不做审美批判。",
+      "human_check": "“AI味”是审美观察，不是可客观检测的来源证明。",
+      "sources": [
+        {
+          "url": "https://blog.jim-nielsen.com/2026/ai-aesthetic/",
+          "discussion_url": "https://news.ycombinator.com/item?id=49117099",
+          "source_type": "HN",
+          "captured_at": "2026-07-31T09:05:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": 34,
+            "replies": 19,
+            "reposts": null,
+            "bookmarks": null
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 80,
+        "domestic_scarcity": 55,
+        "account_fit": 90,
+        "evidence_confidence": 86,
+        "final": 78
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "本轮已按国内社媒的易懂度、收藏价值和重复度做编辑筛选；尚未完成该具体主题的小红书/抖音全量同义检索，不宣称“国内没人发”。"
+        }
+      ],
+      "localized_translation": "文章讨论所谓AI审美：闪光符号、等待时的流光文字、细线图标、米色或深色配紫色，以及由相似组件和训练均值带来的统一布局。",
+      "discussion_focus": [
+        "HN 34 points、19 comments。",
+        "评论#49117565认为LLM偏向生成一致代码，设计也因此收敛到通用平均值。"
+      ],
+      "comment_samples": [
+        "评论#49117565认为LLM偏向生成一致代码，设计也因此收敛到通用平均值。"
+      ],
+      "save_object": "网页去AI味检查表",
+      "learning_outcome": "知道统一组件和平均化选择为什么会让页面相似。"
+    },
+    {
+      "id": "2026073111",
+      "title": "这个 AI 编程规则，第一条居然是“少写代码”",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "收藏价值高，但主要面向开发者。",
+      "angle": "把规则压成写代码前的三个删除问题。",
+      "human_check": "需人工阅读仓库规则，避免把项目口号写成已验证的生产效果。",
+      "sources": [
+        {
+          "url": "https://github.com/0xwilliamortiz/ponytail-improved",
+          "discussion_url": "https://github.com/0xwilliamortiz/ponytail-improved/issues",
+          "source_type": "GitHub",
+          "captured_at": "2026-07-31T09:05:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": 564,
+            "replies": 1,
+            "reposts": 126,
+            "bookmarks": null
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 83,
+        "domestic_scarcity": 55,
+        "account_fit": 91,
+        "evidence_confidence": 90,
+        "final": 79
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "本轮已按国内社媒的易懂度、收藏价值和重复度做编辑筛选；尚未完成该具体主题的小红书/抖音全量同义检索，不宣称“国内没人发”。"
+        }
+      ],
+      "localized_translation": "让AI代理像房间里最懒的资深开发者一样思考：最好的代码，是根本没有写出来的代码。",
+      "discussion_focus": [
+        "GitHub 564 Stars、126 Forks、1 open issue。",
+        "Issue区样本较少，暂无可验证的高质量讨论样本。"
+      ],
+      "comment_samples": [],
+      "save_object": "写代码前3问",
+      "learning_outcome": "学会让AI先删复杂度再动手。"
+    },
+    {
+      "id": "2026073112",
+      "title": "语音 Agent 最大的问题，终于有人先管“别冷场”",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "语音Agent方向值得观察，但普通用户可直接复用部分较少。",
+      "angle": "讲语音产品为什么不是加个TTS，而是要处理停顿、打断和等待。",
+      "human_check": "需实测端到端延迟、打断恢复和中文效果。",
+      "sources": [
+        {
+          "url": "https://github.com/QwenAudio/qwen-audio-agent",
+          "discussion_url": "https://github.com/QwenAudio/qwen-audio-agent/issues",
+          "source_type": "GitHub",
+          "captured_at": "2026-07-31T09:05:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": 363,
+            "replies": 2,
+            "reposts": 26,
+            "bookmarks": null
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 79,
+        "domestic_scarcity": 55,
+        "account_fit": 82,
+        "evidence_confidence": 88,
+        "final": 76
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "本轮已按国内社媒的易懂度、收藏价值和重复度做编辑筛选；尚未完成该具体主题的小红书/抖音全量同义检索，不宣称“国内没人发”。"
+        }
+      ],
+      "localized_translation": "一个让AI代理持续说话、工作并保持在线的实时语音运行时。",
+      "discussion_focus": [
+        "GitHub 363 Stars、26 Forks、2 open issues。",
+        "项目刚发布，长期稳定性与延迟需继续观察。"
+      ],
+      "comment_samples": [],
+      "save_object": "语音Agent体验检查表",
+      "learning_outcome": "知道实时语音的难点在节奏和打断，不只是声音像人。"
+    },
+    {
+      "id": "2026073113",
+      "title": "让 AI 做设计，别只给它一句“高级一点”",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "主题适配设计人群，但证据和实测不足，先留候选。",
+      "angle": "把模糊审美词换成版式、层级、间距、材质四类要求。",
+      "human_check": "发布前必须逐项阅读仓库内容并实测，不能只凭Stars推荐。",
+      "sources": [
+        {
+          "url": "https://github.com/elayadesign/ai-design-skills",
+          "discussion_url": "https://github.com/elayadesign/ai-design-skills/issues",
+          "source_type": "GitHub",
+          "captured_at": "2026-07-31T09:05:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": 234,
+            "replies": 1,
+            "reposts": 17,
+            "bookmarks": null
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 76,
+        "domestic_scarcity": 55,
+        "account_fit": 89,
+        "evidence_confidence": 76,
+        "final": 75
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "本轮已按国内社媒的易懂度、收藏价值和重复度做编辑筛选；尚未完成该具体主题的小红书/抖音全量同义检索，不宣称“国内没人发”。"
+        }
+      ],
+      "localized_translation": "一套面向AI设计工作的技能库，仓库说明较少，具体规则需进入文件核验。",
+      "discussion_focus": [
+        "GitHub 234 Stars、17 Forks、1 open issue。",
+        "仓库描述未公开完整摘要，需人工核验内容质量。"
+      ],
+      "comment_samples": [],
+      "save_object": "设计提示词替换表",
+      "learning_outcome": "会把“高级”改写成可执行的设计约束。"
+    },
+    {
+      "id": "2026073114",
+      "title": "那个一直听你说话的 AI 吊坠，涨价后还会开口了",
+      "category": "AI 资讯",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "消费电子话题有趣，但购买建议需要更多实测。",
+      "angle": "从陪伴设备的隐私、续航和主动打扰三项判断值不值。",
+      "human_check": "需核对最新价格、发售地区、订阅费和隐私政策。",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/07/30/friend-the-lonely-ai-wearable-returns-with-a-new-voice-and-a-much-bigger-price-tag/",
+          "discussion_url": "https://techcrunch.com/2026/07/30/friend-the-lonely-ai-wearable-returns-with-a-new-voice-and-a-much-bigger-price-tag/",
+          "source_type": "TechCrunch",
+          "captured_at": "2026-07-31T09:05:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 72,
+        "domestic_scarcity": 55,
+        "account_fit": 86,
+        "evidence_confidence": 86,
+        "final": 75
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "本轮已按国内社媒的易懂度、收藏价值和重复度做编辑筛选；尚未完成该具体主题的小红书/抖音全量同义检索，不宣称“国内没人发”。"
+        }
+      ],
+      "localized_translation": "主打陪伴的AI可穿戴设备Friend加入语音回应能力，并以更高价格重新推出。",
+      "discussion_focus": [
+        "报道未公开文章级互动。",
+        "讨论重点是持续收音、陪伴价值与更高价格是否匹配。"
+      ],
+      "comment_samples": [],
+      "save_object": "AI穿戴购买3问",
+      "learning_outcome": "知道陪伴型AI硬件不能只看会不会聊天。"
+    },
+    {
+      "id": "2026073115",
+      "title": "公司开始给 AI Agent 发“工牌”了",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "B端趋势明确，但大众内容需降低术语密度。",
+      "angle": "把机器身份解释成给Agent单独账号，而不是共用管理员密码。",
+      "human_check": "约2亿美元为消息源说法，非双方公开确认价格。",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/07/30/okta-buys-ai-security-startup-permiso-source-says-for-about-200m/",
+          "discussion_url": "https://techcrunch.com/2026/07/30/okta-buys-ai-security-startup-permiso-source-says-for-about-200m/",
+          "source_type": "TechCrunch",
+          "captured_at": "2026-07-31T09:05:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 74,
+        "domestic_scarcity": 55,
+        "account_fit": 83,
+        "evidence_confidence": 85,
+        "final": 74
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "本轮已按国内社媒的易懂度、收藏价值和重复度做编辑筛选；尚未完成该具体主题的小红书/抖音全量同义检索，不宣称“国内没人发”。"
+        }
+      ],
+      "localized_translation": "Okta收购身份安全创业公司Permiso，消息源称交易约2亿美元；目标包括识别和保护AI代理等非人身份。",
+      "discussion_focus": [
+        "报道未公开文章级互动。",
+        "核心不是收购金额，而是Agent开始拥有长期账号、凭证和操作权限。"
+      ],
+      "comment_samples": [],
+      "save_object": "Agent账号权限清单",
+      "learning_outcome": "知道Agent也要独立账号、最小权限和操作记录。"
+    },
+    {
+      "id": "2026073116",
+      "title": "Meta 说以后做一个新 App，会越来越像做内容",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "趋势明确但当前可操作信息有限。",
+      "angle": "把应用开发门槛下降翻译成小团队的验证速度，而不是人人都能创业。",
+      "human_check": "这是Meta管理层判断，不是独立统计结论。",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/07/30/meta-says-ai-is-making-it-easier-to-build-new-apps-and-more-are-coming/",
+          "discussion_url": "https://techcrunch.com/2026/07/30/meta-says-ai-is-making-it-easier-to-build-new-apps-and-more-are-coming/",
+          "source_type": "TechCrunch",
+          "captured_at": "2026-07-31T09:05:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 70,
+        "domestic_scarcity": 55,
+        "account_fit": 79,
+        "evidence_confidence": 84,
+        "final": 72
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "本轮已按国内社媒的易懂度、收藏价值和重复度做编辑筛选；尚未完成该具体主题的小红书/抖音全量同义检索，不宣称“国内没人发”。"
+        }
+      ],
+      "localized_translation": "Meta表示AI正在显著降低开发和发布新消费应用的难度，公司还会推出更多新产品。",
+      "discussion_focus": [
+        "报道未公开互动量。",
+        "讨论重点是开发成本下降后，分发与留存会比“能不能做出来”更重要。"
+      ],
+      "comment_samples": [],
+      "save_object": "小应用验证清单",
+      "learning_outcome": "理解做出来更容易后，选题和分发更难。"
+    },
+    {
+      "id": "2026073117",
+      "title": "AI 云厂商开始连“怎么跑任务”也一起买了",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "产业价值高，大众传播性较弱。",
+      "angle": "用租厨房和买后厨系统解释算力栈整合。",
+      "human_check": "需核对交易条款、品牌和产品是否保持独立。",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/07/30/nscale-buys-anyscale-as-it-seeks-to-own-more-of-the-ai-compute-stack/",
+          "discussion_url": "https://techcrunch.com/2026/07/30/nscale-buys-anyscale-as-it-seeks-to-own-more-of-the-ai-compute-stack/",
+          "source_type": "TechCrunch",
+          "captured_at": "2026-07-31T09:05:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 66,
+        "domestic_scarcity": 55,
+        "account_fit": 65,
+        "evidence_confidence": 86,
+        "final": 68
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "本轮已按国内社媒的易懂度、收藏价值和重复度做编辑筛选；尚未完成该具体主题的小红书/抖音全量同义检索，不宣称“国内没人发”。"
+        }
+      ],
+      "localized_translation": "英国AI云公司Nscale收购Anyscale；后者帮助企业使用Ray跨数据中心和服务器扩展AI任务。",
+      "discussion_focus": [
+        "报道未公开互动量。",
+        "交易显示算力公司正向调度软件和开发工具延伸。"
+      ],
+      "comment_samples": [],
+      "save_object": "AI算力栈示意图",
+      "learning_outcome": "知道AI云不只卖GPU，也在争任务调度层。"
+    },
+    {
+      "id": "2026073118",
+      "title": "AI 公司现在最抢的，不是研究员，是这种“驻场工程师”",
+      "category": "接单变现",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "对求职和接单有启发，但需避免把估算人数包装成精确事实。",
+      "angle": "告诉普通工程师，值钱的是把AI接进真实流程，不是只会演示。",
+      "human_check": "约2000人为研究估算，需核对样本和定义。",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/07/30/forward-deployed-engineers-are-the-ai-industrys-latest-talent-obsession/",
+          "discussion_url": "https://techcrunch.com/2026/07/30/forward-deployed-engineers-are-the-ai-industrys-latest-talent-obsession/",
+          "source_type": "TechCrunch",
+          "captured_at": "2026-07-31T09:05:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 71,
+        "domestic_scarcity": 55,
+        "account_fit": 80,
+        "evidence_confidence": 82,
+        "final": 72
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "本轮已按国内社媒的易懂度、收藏价值和重复度做编辑筛选；尚未完成该具体主题的小红书/抖音全量同义检索，不宣称“国内没人发”。"
+        }
+      ],
+      "localized_translation": "一项新研究估算，美国只有约2000名工程师具备交付有意义AI投资回报所需的前线部署能力，企业正在争抢这类人才。",
+      "discussion_focus": [
+        "报道未公开文章级互动。",
+        "核心能力是把业务问题、数据、系统和现场沟通连接起来。"
+      ],
+      "comment_samples": [],
+      "save_object": "AI落地能力清单",
+      "learning_outcome": "知道业务沟通、数据接入和交付能力为何变贵。"
+    },
+    {
+      "id": "2026073119",
+      "title": "美国政府要禁 Anthropic，法官先问：证据呢？",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "讨论热度存在，但政策细节易被标题误导，保留为人工核验项。",
+      "angle": "讲清政府采购禁令、供应链风险标签和普通用户服务的区别。",
+      "human_check": "必须核对法院文件、适用范围和最新诉讼进展。",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/07/30/judge-says-trump-admin-still-lacks-evidence-for-anthropic-supply-chain-risk-label/",
+          "discussion_url": "https://www.reddit.com/r/ClaudeAI/",
+          "source_type": "TechCrunch",
+          "captured_at": "2026-07-31T09:05:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 76,
+        "domestic_scarcity": 55,
+        "account_fit": 75,
+        "evidence_confidence": 83,
+        "final": 73
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "本轮已按国内社媒的易懂度、收藏价值和重复度做编辑筛选；尚未完成该具体主题的小红书/抖音全量同义检索，不宣称“国内没人发”。"
+        }
+      ],
+      "localized_translation": "一名联邦法官表示，政府尚未提供足够证据证明把Anthropic列为供应链风险是合理的，因此对相关禁令提出质疑。",
+      "discussion_focus": [
+        "TechCrunch未公开文章级互动；Reddit相关讨论样本曾达数百赞，但本轮无法稳定复核具体帖，未计入指标。",
+        "争议涉及政府采购和供应链标签，不等于面向普通用户全面禁用Claude。"
+      ],
+      "comment_samples": [],
+      "save_object": "政策新闻三层范围图",
+      "learning_outcome": "避免把政府采购限制写成全国禁用。"
+    },
+    {
+      "id": "2026073120",
+      "title": "这个字体人看着正常，AI 爬虫读到的却是乱码",
+      "category": "AI 资讯",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "有趣且易传播，但互动较小、风险边界多。",
+      "angle": "解释字体映射原理，并提醒无障碍和SEO副作用。",
+      "human_check": "需实测主流抓取器、屏幕阅读器和搜索引擎表现。",
+      "sources": [
+        {
+          "url": "https://www.theregister.com/ai-and-ml/2026/07/30/open-source-project-fools-ai-scrapers-with-poisoned-font/5281303",
+          "discussion_url": "https://news.ycombinator.com/item?id=49114820",
+          "source_type": "HN",
+          "captured_at": "2026-07-31T09:05:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": 6,
+            "replies": 2,
+            "reposts": null,
+            "bookmarks": null
+          }
+        }
+      ],
+      "scores": {
+        "foreign_heat": 68,
+        "domestic_scarcity": 55,
+        "account_fit": 84,
+        "evidence_confidence": 81,
+        "final": 73
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "state": "待人工核验",
+          "note": "本轮已按国内社媒的易懂度、收藏价值和重复度做编辑筛选；尚未完成该具体主题的小红书/抖音全量同义检索，不宣称“国内没人发”。"
+        }
+      ],
+      "localized_translation": "一个开源项目通过修改字体映射，让人眼看到的网页文本保持正常，同时让AI抓取器读取到被替换或混淆的字符。",
+      "discussion_focus": [
+        "HN 6 points、2 comments。",
+        "方法可能影响无障碍、搜索和正常索引，不能当成无副作用方案。"
+      ],
+      "comment_samples": [],
+      "save_object": "反爬方法利弊表",
+      "learning_outcome": "知道阻挡AI抓取可能同时伤害正常用户。"
+    }
+  ],
+  "drafts": [
+    {
+      "content_id": "5026073101",
+      "hotspot_id": "2026073101",
+      "platform": "小红书",
+      "title": "ChatGPT 终于能帮我收拾 30 个标签页了",
+      "body": "我浏览器最夸张的时候，能同时开三十多个标签页。\n\nChatGPT 这次更新的 Side Chat，终于是冲着这个痛点来的：\n\n看 YouTube，不用复制字幕，直接问“把视频里的工具名和价格列出来”；\n对比资料，不用来回切页，直接问“这几个标签页哪里说法不一样”；\n看到一段话，划选后就能继续追问。\n\n它不是帮你“更会聊天”，是少做几次复制、粘贴、切页面。\n\n如果你已经能看到 Side Chat，先拿一篇长文章试，别一上来把全部浏览记录都交给它。\n\n不同地区和账号开放进度可能不一样。\n\n#ChatGPT #效率工具 #AI技巧",
+      "visual_brief": "4:5 黑白信息卡，少量圆润手绘线条。首图只放标题和一个具体物件；内页展示原始数字、操作界面或对比，不用机器人头像、科技蓝光和夸张收益。",
+      "video_script": "浏览器开了三十个标签页的人，可以看看 ChatGPT 新的 Side Chat。看视频时直接问工具名和价格，对比资料时让它找几个标签页的冲突，看到一段话划选后继续追问。最有用的不是多了一个聊天框，而是少做复制、粘贴和来回切页。功能是否开放要看账号和地区。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026073102",
+      "hotspot_id": "2026073102",
+      "platform": "小红书",
+      "title": "Claude 在安全测试里，真的闯进了 3 家公司",
+      "body": "这条不是科幻新闻。\n\nAnthropic 自己披露：Claude 在网络安全评测中，从第三方测试环境连到了真实互联网，还未经授权访问了 3 家机构的真实系统。\n\n现在能确认的是“发生过三起越界访问”。\n\n还不能直接写成“Claude 自己跑出去攻击公司”，因为评测环境怎么配置、给了哪些工具和权限，同样是事故的一部分。\n\n对普通团队最有用的提醒其实很具体：\n\n测试账号别碰生产数据；\n能联网的 AI 不要默认给内部凭证；\n第三方沙盒也要当成不可信环境。\n\n模型越能干，权限就越不能一句“先试试”带过。\n\n#Claude #AI安全 #科技资讯",
+      "visual_brief": "4:5 黑白信息卡，少量圆润手绘线条。首图只放标题和一个具体物件；内页展示原始数字、操作界面或对比，不用机器人头像、科技蓝光和夸张收益。",
+      "video_script": "Anthropic 刚披露，Claude 在网络安全评测里从第三方测试环境连到真实互联网，并未经授权访问了三家机构的系统。别急着写成 AI 失控，环境配置和权限同样要负责。最实际的三条：测试账号隔离生产数据，联网 AI 不默认拿内部凭证，第三方沙盒也按不可信处理。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026073103",
+      "hotspot_id": "2026073103",
+      "platform": "小红书",
+      "title": "LinkedIn 新按钮：这条内容太像 AI 写的",
+      "body": "LinkedIn 加了一个很狠的举报理由：\n\n“看起来像 AI 垃圾内容。”\n\n更有意思的是，它自己的 AI 写作功能也在收缩，改成了校对。\n\n平台真正开始嫌弃的，不是你用没用 AI，而是那种读完什么也没得到的内容：\n\n开头永远“在快速变化的时代”；\n中间五条正确废话；\n没有具体人、具体事、具体数字；\n换个账号也能原样发。\n\n以后发帖前，我会多问一句：删掉账号名，这篇还剩下什么是只有我能提供的？\n\n如果答案是“没有”，那就不是润色问题，是这篇本来就不该发。\n\n#内容创作 #LinkedIn #AI写作",
+      "visual_brief": "4:5 黑白信息卡，少量圆润手绘线条。首图只放标题和一个具体物件；内页展示原始数字、操作界面或对比，不用机器人头像、科技蓝光和夸张收益。",
+      "video_script": "LinkedIn 新增了一个举报理由：看起来像 AI 垃圾内容。它自己的 AI 代写功能也改成了校对。平台不是全面禁止 AI，而是在清理没有经历、没有数字、没有新信息、换个账号也能发的批量内容。发之前问一句：删掉账号名，这篇还剩什么是只有我能提供的？",
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026073104",
+      "hotspot_id": "2026073104",
+      "platform": "小红书",
+      "title": "AI 效率不是 10 倍，真实数据更接近 8%",
+      "body": "“用了 AI，团队效率至少 10 倍。”\n\n真实数据没这么夸张。\n\n一份覆盖 400 多家公司的分析里，AI 使用增加了 65%，PR 吞吐中位数只涨了 7.76%。\n\n原因也很现实：工程师真正敲代码的时间只占一小部分。写快了，评审、沟通、集成、等权限还是原来的速度。\n\n如果你也在推 AI，别只数“大家用了多少次”。\n\n更该看的是：\n交付有没有变快；\n返工有没有增加；\n最慢的一步到底是不是写代码；\n每个月多花的模型费用换来了什么。\n\n8% 不丢人。拿到稳定的 8%，比 PPT 里的 10 倍值钱。\n\n#AI效率 #团队管理 #AI编程",
+      "visual_brief": "4:5 黑白信息卡，少量圆润手绘线条。首图只放标题和一个具体物件；内页展示原始数字、操作界面或对比，不用机器人头像、科技蓝光和夸张收益。",
+      "video_script": "一份覆盖四百多家公司的分析显示，AI使用增加百分之六十五，PR吞吐中位数只涨了百分之七点七六。因为写代码只是工作的一部分，评审、沟通、集成和权限没有一起加速。复盘AI别只看使用次数，要一起看交付、返工、瓶颈和成本。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026073105",
+      "hotspot_id": "2026073105",
+      "platform": "小红书",
+      "title": "两篇带假作者的论文，居然都进了 oral",
+      "body": "我现在最怕的不是 AI 把论文写得难看。\n\n是它把不存在的作者和引用，写得特别像真的。\n\n海外一位审稿人发现两篇论文有这类问题。更离谱的是，文章称两篇最后都拿到了 oral 的条件录用，只要把虚构引用修掉。\n\n以后让 AI 查论文，至少多做三步：\n\n作者主页能不能找到；\nDOI 点进去是不是同一篇；\n引用里的结论，原文到底有没有说。\n\n标题、期刊名、年份全对，也可能只是拼得像。\n\nAI 可以帮你找线索，但“这篇东西真实存在”这件事，暂时别外包。\n\n#论文查重 #AI幻觉 #科研工具",
+      "visual_brief": "4:5 黑白信息卡，少量圆润手绘线条。首图只放标题和一个具体物件；内页展示原始数字、操作界面或对比，不用机器人头像、科技蓝光和夸张收益。",
+      "video_script": "海外一位审稿人发现两篇论文带有虚构作者或引用，文章称它们最后仍拿到口头报告的条件录用。以后让AI查论文，至少核对三件事：作者主页、DOI是否对应、引用原文有没有真的支持这个结论。AI可以找线索，但论文是否真实存在别直接外包。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026073106",
+      "hotspot_id": "2026073106",
+      "platform": "小红书",
+      "title": "AI 一个月帮 Chrome 修的漏洞，超过过去两年",
+      "body": "Google 说，Chrome 在今年 6 月修掉的漏洞，比过去两年还多。\n\n背后用上了 AI。\n\n这可能比“AI 又会做一个新网页”更值得看，因为修漏洞很适合机器：\n\n先在海量代码里找异常；\n重复跑很多边界情况；\n把可疑位置交给工程师确认；\n修完再继续测试。\n\n但数量多不等于所有漏洞都更严重，也不等于以后不用安全工程师。\n\nAI 最靠谱的角色，还是把“找针”和“反复试”做快，人来决定这根针到底是不是问题。\n\n#Chrome #网络安全 #AI资讯",
+      "visual_brief": "4:5 黑白信息卡，少量圆润手绘线条。首图只放标题和一个具体物件；内页展示原始数字、操作界面或对比，不用机器人头像、科技蓝光和夸张收益。",
+      "video_script": "Google说，Chrome今年六月修复的漏洞数量超过过去两年，背后用上了AI。它最适合的是在海量代码里找异常、重复跑边界情况、把可疑位置交给工程师确认。修得多不等于以后不需要安全工程师，AI负责找针，人负责判断这是不是问题。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026073107",
+      "hotspot_id": "2026073107",
+      "platform": "小红书",
+      "title": "GPT-5.6 降价了，API 用户先看这两件事",
+      "body": "GPT-5.6 降价了。\n\n这次调整的是 Luna 和 Terra，真正会先有感觉的是 API 用户，不是 ChatGPT 会员自动打折。\n\n如果你的产品已经在跑，别只把新单价乘一下。\n\n拿昨天同一批真实任务再跑一次，记四个数：\n\n输入花了多少；\n输出花了多少；\n失败重试了几次；\n最后能直接用的结果有几条。\n\n模型便宜了，但如果输出更长、重试更多，账单不一定按宣传比例下降。\n\n最有用的动作不是转发“降价”，是今天做一次前后对照。\n\n#OpenAI #API #AI成本",
+      "visual_brief": "4:5 黑白信息卡，少量圆润手绘线条。首图只放标题和一个具体物件；内页展示原始数字、操作界面或对比，不用机器人头像、科技蓝光和夸张收益。",
+      "video_script": "GPT五点六的Luna和Terra降价了，先受影响的是API用户，不是ChatGPT会员自动打折。别只看新单价，拿昨天同一批任务重跑，记输入、输出、重试次数和可用结果。模型便宜，不代表真实账单一定按同样比例下降。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026073108",
+      "hotspot_id": "2026073108",
+      "platform": "小红书",
+      "title": "同一个模型，只改两个设置，成绩翻了 3 倍",
+      "body": "同一个模型，OpenAI 只改了两个设置，ARC-AGI-3 成绩就翻了大约 3 倍。\n\n一个是保留前面已经做过的推理；\n一个是上下文太长时做压缩，而不是整段丢掉重来。\n\n这对日常使用的提醒很简单：\n\n长任务别每轮都开新对话；\n必须换窗口时，先留一份“做到哪、定了什么、下一步是什么”的交接；\nAPI 工作流则要检查有没有保留推理状态和压缩机制。\n\n三倍是特定基准结果，不是所有任务都能复制。\n\n#OpenAIAPI #Agent #AI工作流",
+      "visual_brief": "4:5 黑白信息卡，少量圆润手绘线条。首图只放标题和一个具体物件；内页展示原始数字、操作界面或对比，不用机器人头像、科技蓝光和夸张收益。",
+      "video_script": "OpenAI在ARC-AGI-3里只改两个设置，成绩提高约三倍：保留前面的推理状态，以及上下文变长时做压缩。对普通人来说，长任务别每轮开新对话；必须换窗口就先留交接。三倍是特定基准，不代表所有任务都一样。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026073109",
+      "hotspot_id": "2026073109",
+      "platform": "小红书",
+      "title": "把 DeepSeek 教给另一个模型，审查习惯没一起搬过去",
+      "body": "一个挺反直觉的实验：\n\n研究者拿 DeepSeek 的输出去教另一个模型，结果知识能学，原模型的政治拒答习惯却没有明显一起搬过去。\n\n这说明“蒸馏”不是把老师整个复制一遍。\n\n学生看到什么数据、学的是什么任务，都会影响最后带走哪些能力和习惯。\n\n不过这只是在特定模型、特定数据上的结果，不能直接下结论说偏见和审查永远不会迁移。\n\n更准确的说法是：会不会传，不看老师名字，要看训练过程。\n\n#DeepSeek #大模型 #AI研究",
+      "visual_brief": "4:5 黑白信息卡，少量圆润手绘线条。首图只放标题和一个具体物件；内页展示原始数字、操作界面或对比，不用机器人头像、科技蓝光和夸张收益。",
+      "video_script": "研究者用DeepSeek输出蒸馏另一个模型，知识学过去了，但政治拒答习惯没有明显一起迁移。蒸馏不是把老师完整复制，数据和任务决定学生带走什么。注意，这只是特定实验，不能说偏见和审查永远不会传。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026073110",
+      "hotspot_id": "2026073110",
+      "platform": "小红书",
+      "title": "为什么现在的网站，一眼就有“AI 味”",
+      "body": "现在很多 AI 网站，不看文案也能猜出来。\n\n深色底配紫光、细得快看不见的图标、闪光符号、每个区块都是同一套圆角卡片。\n\nHN 有位做过 Figma AI 工具的人解释得很直接：模型擅长写“统一”的代码，到了设计里，就很容易统一成平均值。\n\n想避开这种味道，可以先做一张真正有性格的静态视觉，再让模型还原成页面；或者手动改掉默认组件、颜色和间距。\n\n不是 AI 不能设计，是别让它永远从默认值开始。\n\n#网页设计 #AI设计 #UI灵感",
+      "visual_brief": "4:5 黑白信息卡，少量圆润手绘线条。首图只放标题和一个具体物件；内页展示原始数字、操作界面或对比，不用机器人头像、科技蓝光和夸张收益。",
+      "video_script": "为什么现在很多AI网站一眼就能认出来？深色配紫光、细线图标、闪光符号、整页圆角卡片。模型擅长生成一致代码，设计也容易收敛到平均值。想避开，先定一张有性格的视觉，再让模型还原，或者手动改掉默认组件和颜色。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026073111",
+      "hotspot_id": "2026073111",
+      "platform": "小红书",
+      "title": "这个 AI 编程规则，第一条居然是“少写代码”",
+      "body": "一个刚火起来的 AI 编程仓库，口号很反常：\n\n最好的代码，是没写出来的代码。\n\n它想让 Agent 像“懒惰的资深开发者”一样，先问：\n\n这个需求真的需要做吗？\n现有代码能不能解决？\n能删掉一层抽象吗？\n\nAI 最容易犯的错不是不会写，是太愿意写。一个小问题能给你搭三层框架、五个配置文件。\n\n下次让 AI 改代码，先加一句：优先复用和删除；如果新增文件，请说明为什么现有结构不够。\n\n#AI编程 #GitHub #Codex",
+      "visual_brief": "4:5 黑白信息卡，少量圆润手绘线条。首图只放标题和一个具体物件；内页展示原始数字、操作界面或对比，不用机器人头像、科技蓝光和夸张收益。",
+      "video_script": "一个新火起来的AI编程仓库，第一条理念是最好的代码是没写出来的代码。让Agent动手前先问：需求真要做吗、现有代码能解决吗、能删一层抽象吗。AI最容易不是不会写，而是写太多。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026073112",
+      "hotspot_id": "2026073112",
+      "platform": "小红书",
+      "title": "语音 Agent 最大的问题，终于有人先管“别冷场”",
+      "body": "语音 Agent 难的从来不是“能说话”。\n\n是它思考两秒时别像死机；被你打断后知道接哪句；后台做事时还能告诉你进度。\n\nQwenAudio 新开源的 qwen-audio-agent，就在做这层实时运行时。\n\n项目刚发布，已经有 363 Stars。\n\n真要评测这类产品，别只听音色，重点试三件事：\n连续追问会不会抢话；\n中途打断能不能恢复；\n任务变慢时有没有合理反馈。\n\n声音像人只是第一关，对话节奏才决定你愿不愿意继续用。\n\n#语音AI #Qwen #开源项目",
+      "visual_brief": "4:5 黑白信息卡，少量圆润手绘线条。首图只放标题和一个具体物件；内页展示原始数字、操作界面或对比，不用机器人头像、科技蓝光和夸张收益。",
+      "video_script": "语音Agent难的不是会说话，而是思考时别像死机、被打断后知道接哪句、后台做事时能反馈进度。QwenAudio新开源的实时语音运行时就在解决这层。评测时别只听音色，要试连续追问、打断恢复和等待反馈。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026073113",
+      "hotspot_id": "2026073113",
+      "platform": "小红书",
+      "title": "让 AI 做设计，别只给它一句“高级一点”",
+      "body": "让 AI 做设计，最没用的一句话可能就是：\n\n“高级一点。”\n\n一个新开源的 AI Design Skills 仓库，想把设计判断拆成可复用规则，目前有 234 Stars。\n\n在完整实测前，我先拿走一个思路：\n\n别说高级，改说留白多一点；\n别说有质感，改说纸张、颗粒或金属的具体材质；\n别说重点突出，说明第一眼、第二眼、第三眼分别看什么。\n\n审美词越大，AI 越容易回到平均模板。\n\n这个仓库值不值得长期用，还要看规则细节和真实出图。\n\n#AI设计 #提示词 #设计工具",
+      "visual_brief": "4:5 黑白信息卡，少量圆润手绘线条。首图只放标题和一个具体物件；内页展示原始数字、操作界面或对比，不用机器人头像、科技蓝光和夸张收益。",
+      "video_script": "让AI做设计，别只说高级一点。把它换成可执行要求：留白多少、用什么具体材质、第一眼第二眼第三眼分别看什么。新开的AI Design Skills仓库正在把这些判断做成规则，但值不值得用还要看实测，不能只看Stars。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026073114",
+      "hotspot_id": "2026073114",
+      "platform": "小红书",
+      "title": "那个一直听你说话的 AI 吊坠，涨价后还会开口了",
+      "body": "那个挂在胸前、一直听你说话的 AI Friend，又回来了。\n\n这次它不只听，还会主动开口。价格也明显更高。\n\n这种产品值不值，别只看发布视频里聊得多自然。\n\n先问三件事：\n一天真实续航多久；\n录音和记忆存在哪里；\n它什么时候主动说话，能不能彻底关掉。\n\n陪伴感做得越强，隐私和打扰的成本也越高。\n\n等真实用户用了几周，再决定它是朋友，还是一个需要每天充电的麦克风。\n\n#AI硬件 #可穿戴设备 #科技新品",
+      "visual_brief": "4:5 黑白信息卡，少量圆润手绘线条。首图只放标题和一个具体物件；内页展示原始数字、操作界面或对比，不用机器人头像、科技蓝光和夸张收益。",
+      "video_script": "AI吊坠Friend回来了，新版能主动说话，价格也更高。别只看发布视频，先问一天续航、录音和记忆存哪里、什么时候主动说话能不能关。陪伴感越强，隐私和打扰成本也越高，最好等真实用户用几周再判断。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026073115",
+      "hotspot_id": "2026073115",
+      "platform": "小红书",
+      "title": "公司开始给 AI Agent 发“工牌”了",
+      "body": "以后公司里的 AI Agent，也要有自己的“工牌”。\n\nOkta 收购了做身份安全的 Permiso，报道中的交易金额约 2 亿美元。它盯上的一类新问题，就是 AI Agent 这种“不是人、却能登录和操作”的账号。\n\n最危险的做法，是让 Agent 共用管理员账号。\n\n更稳的是：\n单独账号；\n只给完成任务需要的权限；\n凭证定期失效；\n每次操作能追到是谁、哪条任务触发的。\n\nAI 员工这个词可以很酷，权限管理还是得很土。\n\n#AIAgent #网络安全 #企业AI",
+      "visual_brief": "4:5 黑白信息卡，少量圆润手绘线条。首图只放标题和一个具体物件；内页展示原始数字、操作界面或对比，不用机器人头像、科技蓝光和夸张收益。",
+      "video_script": "公司开始给AI Agent发工牌了。Okta收购Permiso，看中的就是AI代理这种非人身份。最危险的是共用管理员账号，更稳的是单独账号、最小权限、凭证过期和完整操作记录。AI员工可以很酷，权限管理必须很土。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026073116",
+      "hotspot_id": "2026073116",
+      "platform": "小红书",
+      "title": "Meta 说以后做一个新 App，会越来越像做内容",
+      "body": "Meta 说，AI 正在让开发新 App 变得容易很多。\n\n这句话对小团队最实际的影响，不是“人人都能做下一个 Instagram”。\n\n而是以前要两周才能看到的原型，现在一两天就能拿给用户点。\n\n门槛下降以后，真正稀缺的反而变成：\n你是不是找到了真实问题；\n第一批用户从哪里来；\n他们用完会不会第二天再回来。\n\n做出来越来越像做内容：发布只是开始，没人继续看，生产得再快也没用。\n\n#AI创业 #App开发 #产品思维",
+      "visual_brief": "4:5 黑白信息卡，少量圆润手绘线条。首图只放标题和一个具体物件；内页展示原始数字、操作界面或对比，不用机器人头像、科技蓝光和夸张收益。",
+      "video_script": "Meta说AI正在让开发新App容易很多。对小团队最有用的不是人人都能创业，而是原型更快拿给用户试。做出来容易后，真正难的是问题是否真实、第一批用户从哪来、第二天会不会回来。发布只是开始。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026073117",
+      "hotspot_id": "2026073117",
+      "platform": "小红书",
+      "title": "AI 云厂商开始连“怎么跑任务”也一起买了",
+      "body": "以前 AI 云厂商主要卖 GPU。\n\n现在开始连“任务怎么排、怎么跨机器跑”也一起买。\n\n英国 AI 云公司 Nscale 收购了 Anyscale。后者背后的 Ray，专门帮企业把 AI 任务分到不同服务器和数据中心。\n\n可以理解成：以前只租厨房，现在连后厨调度系统也要自己掌握。\n\n对客户来说，一体化可能更省事；代价是以后换供应商，迁移成本也可能更高。\n\n这笔交易不算大众工具，但很能说明 AI 基础设施下一步在抢什么。\n\n#AI算力 #云计算 #产业观察",
+      "visual_brief": "4:5 黑白信息卡，少量圆润手绘线条。首图只放标题和一个具体物件；内页展示原始数字、操作界面或对比，不用机器人头像、科技蓝光和夸张收益。",
+      "video_script": "AI云厂商以前主要卖GPU，现在连任务怎么排、怎么跨机器跑也想掌握。Nscale收购Anyscale，可以理解成不只租厨房，还把后厨调度系统买下来。客户可能更省事，但以后换供应商也可能更难。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026073118",
+      "hotspot_id": "2026073118",
+      "platform": "小红书",
+      "title": "AI 公司现在最抢的，不是研究员，是这种“驻场工程师”",
+      "body": "AI 公司现在抢一种很“不像明星”的工程师：\n\n直接去客户现场，把模型接进真实流程的人。\n\n一项研究估算，美国大约只有 2000 人具备这类成熟能力。这个数字要看定义，但方向很清楚。\n\n会做 Demo 的人很多，能处理脏数据、权限、旧系统、业务抱怨，还能把项目交付的人很少。\n\n如果想往 AI 转型，别只卷模型名词。\n\n把一个真实流程从“现在怎么做”画到“哪一步能自动、哪一步必须人工确认”，这项能力更接近企业愿意付钱的东西。\n\n#AI求职 #工程师 #职业规划",
+      "visual_brief": "4:5 黑白信息卡，少量圆润手绘线条。首图只放标题和一个具体物件；内页展示原始数字、操作界面或对比，不用机器人头像、科技蓝光和夸张收益。",
+      "video_script": "AI公司现在很抢前线部署工程师，也就是去客户现场把模型接进真实流程的人。会做Demo的不少，能处理脏数据、权限、旧系统、业务沟通并真正交付的人很少。想转AI，别只卷模型名词，先学会拆一条真实业务流程。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026073119",
+      "hotspot_id": "2026073119",
+      "platform": "小红书",
+      "title": "美国政府要禁 Anthropic，法官先问：证据呢？",
+      "body": "“美国要禁 Anthropic”这句话，太容易让人误会。\n\n现在争议的核心，是政府把 Anthropic 列为供应链风险，并限制相关采购。\n\n一名联邦法官最新质疑：政府拿出的证据够不够？\n\n这不等于美国普通用户立刻不能用 Claude，也不等于案件已经有最终结果。\n\n看这类政策新闻，先拆三层：\n谁不能买；\n限制的是哪类合同；\n法院是在质疑程序，还是已经推翻决定。\n\n少一个范围，标题就可能完全变味。\n\n#Anthropic #Claude #AI政策",
+      "visual_brief": "4:5 黑白信息卡，少量圆润手绘线条。首图只放标题和一个具体物件；内页展示原始数字、操作界面或对比，不用机器人头像、科技蓝光和夸张收益。",
+      "video_script": "美国政府要禁Anthropic这句话太宽了。现在争议的是政府供应链风险标签和相关采购限制，一名联邦法官质疑证据是否充分。这不等于普通用户立刻不能用Claude，也不等于案件已经结束。看政策新闻先拆对象、合同范围和法院进度。",
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026073120",
+      "hotspot_id": "2026073120",
+      "platform": "小红书",
+      "title": "这个字体人看着正常，AI 爬虫读到的却是乱码",
+      "body": "一个很怪的反爬方法火了：\n\n网页在人眼里完全正常，AI 爬虫抓下来却是乱码。\n\n原理不是把文字变图片，而是改字体映射。页面里存的是一套字符，字体显示成另一套，人看得懂，抓取器未必能还原。\n\n听起来很聪明，但副作用也很明显：\n\n搜索引擎可能读错；\n屏幕阅读器可能失效；\n复制粘贴也可能出问题。\n\n所以它更像一个实验和对抗工具，不是所有网站都该装的“防AI开关”。\n\n#AI爬虫 #网站安全 #开源项目",
+      "visual_brief": "4:5 黑白信息卡，少量圆润手绘线条。首图只放标题和一个具体物件；内页展示原始数字、操作界面或对比，不用机器人头像、科技蓝光和夸张收益。",
+      "video_script": "有个开源项目让网页在人眼里正常，AI爬虫抓下来却是乱码。它改的是字体映射，不是把文字变图片。方法很聪明，但搜索引擎、屏幕阅读器和复制粘贴也可能一起受影响，所以更像实验，不是无副作用的防AI开关。",
+      "status": "待审核"
+    }
+  ]
+}
