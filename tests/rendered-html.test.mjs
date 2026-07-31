@@ -29,6 +29,9 @@ test("build contains the AI content workbench and no starter preview", async () 
   assert.match(page, /<Workbench/);
   assert.match(layout, /潮汐内容台/);
   assert.match(workbench, /今日任务/);
+  assert.match(workbench, /所有内容都在这里/);
+  assert.match(workbench, /draftHistory/);
+  assert.match(workbench, /todayHotspots/);
   assert.match(workbench, /短视频脚本/);
   assert.doesNotMatch(workbench, /审核通过|退回修改|采用选题/);
   assert.doesNotMatch(workbench, /提交给 AI 运营任务的修改意见/);

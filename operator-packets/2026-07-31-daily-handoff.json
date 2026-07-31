@@ -54,7 +54,7 @@
     {
       "id": "2026073102",
       "title": "Claude 在安全测试里，真的闯进了 3 家公司",
-      "category": "AI 资讯",
+      "category": "产业观察",
       "status": "待审核",
       "recommended": true,
       "reason": "官方帖一小时45万浏览、908收藏，事实强、讨论密集，也能落到普通人理解的权限边界。",
@@ -200,7 +200,7 @@
     {
       "id": "2026073105",
       "title": "两篇带假作者的论文，居然都进了 oral",
-      "category": "AI 资讯",
+      "category": "产业观察",
       "status": "待审核",
       "recommended": true,
       "reason": "反常识、争议强，且评论给出了普通人也能理解的核验问题。",
@@ -250,7 +250,7 @@
     {
       "id": "2026073106",
       "title": "AI 一个月帮 Chrome 修的漏洞，超过过去两年",
-      "category": "AI 资讯",
+      "category": "产业观察",
       "status": "待审核",
       "recommended": true,
       "reason": "数字反差强，能让非技术读者看懂AI在真实软件维护里的作用。",
@@ -299,7 +299,7 @@
     {
       "id": "2026073107",
       "title": "GPT-5.6 降价了，API 用户先看这两件事",
-      "category": "AI 资讯",
+      "category": "产业观察",
       "status": "待审核",
       "recommended": true,
       "reason": "官方当日更新，用户能直接理解成API账单变化，但需要避免只搬降价新闻。",
@@ -634,7 +634,7 @@
     {
       "id": "2026073114",
       "title": "那个一直听你说话的 AI 吊坠，涨价后还会开口了",
-      "category": "AI 资讯",
+      "category": "产业观察",
       "status": "待审核",
       "recommended": false,
       "reason": "消费电子话题有趣，但购买建议需要更多实测。",
@@ -916,7 +916,7 @@
     {
       "id": "2026073120",
       "title": "这个字体人看着正常，AI 爬虫读到的却是乱码",
-      "category": "AI 资讯",
+      "category": "产业观察",
       "status": "待审核",
       "recommended": false,
       "reason": "有趣且易传播，但互动较小、风险边界多。",

@@ -1,6 +1,6 @@
 {
-  "mode": "replace",
-  "detail": "2026-07-31真实来源日更：20条候选、7条推荐、20条完整小红书稿与短视频口播；不自动审核或发布。",
+  "mode": "merge",
+  "detail": "2026-07-31真实来源增量日更：保留历史内容，新增20条候选、7条推荐、20条完整小红书稿与短视频口播；不自动审核或发布。",
   "state": {
     "schemaVersion": 2,
     "hotspots": [
@@ -84,7 +84,7 @@
           "抖音",
           "视频号"
         ],
-        "category": "AI 资讯",
+        "category": "产业观察",
         "status": "待审核",
         "selected": false,
         "assignee": "待分配",
@@ -266,7 +266,7 @@
           "抖音",
           "视频号"
         ],
-        "category": "AI 资讯",
+        "category": "产业观察",
         "status": "待审核",
         "selected": false,
         "assignee": "待分配",
@@ -328,7 +328,7 @@
           "抖音",
           "视频号"
         ],
-        "category": "AI 资讯",
+        "category": "产业观察",
         "status": "待审核",
         "selected": false,
         "assignee": "待分配",
@@ -389,7 +389,7 @@
           "抖音",
           "视频号"
         ],
-        "category": "AI 资讯",
+        "category": "产业观察",
         "status": "待审核",
         "selected": false,
         "assignee": "待分配",
@@ -808,7 +808,7 @@
           "抖音",
           "视频号"
         ],
-        "category": "AI 资讯",
+        "category": "产业观察",
         "status": "待审核",
         "selected": false,
         "assignee": "待分配",
@@ -1162,7 +1162,7 @@
           "抖音",
           "视频号"
         ],
-        "category": "AI 资讯",
+        "category": "产业观察",
         "status": "待审核",
         "selected": false,
         "assignee": "待分配",

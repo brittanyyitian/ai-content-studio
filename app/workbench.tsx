@@ -60,6 +60,11 @@ type Draft = {
   status: HumanStatus;
   reviewNote?: string;
   videoScript?: string;
+  revisedAt?: string;
+  archivedAt?: string;
+  parentVersion?: string;
+  revisionReason?: string;
+  supersededBy?: string;
 };
 
 type DiscoveryMeta = {
@@ -74,7 +79,14 @@ type WorkspaceState = {
   schemaVersion: number;
   hotspots: Hotspot[];
   drafts: Draft[];
+  draftHistory?: Draft[];
   discoveryMeta: DiscoveryMeta | null;
+};
+
+type LibraryItem = {
+  key: string;
+  latest: Draft;
+  versions: Draft[];
 };
 
 const LOCAL_CACHE_KEY = `tide-content-workbench-v${WORKSPACE_SCHEMA_VERSION}`;
@@ -347,36 +359,6 @@ const seedDrafts: Draft[] = [
   },
 ];
 
-const contentHistory = [
-  {
-    title: "AI 接单别按工时报价",
-    status: "已发布" as HumanStatus,
-    platform: "小红书",
-    owner: "小周",
-    source: "Reddit 讨论 → 海外案例拆解",
-    edits: "标题改得更克制；删除收入承诺；加入自己的报价表",
-    metric: "收藏率 8.7% · 高于账号均值 2.1 倍",
-  },
-  {
-    title: "别再囤 AI 工具了，先做这张任务地图",
-    status: "已发布" as HumanStatus,
-    platform: "公众号",
-    owner: "小林",
-    source: "Every 专栏 → 方法论重构",
-    edits: "从工具清单改成任务场景；增加团队真实案例",
-    metric: "读完率 46% · 新增关注 128",
-  },
-  {
-    title: "用 AI 做客户访谈复盘",
-    status: "待发布" as HumanStatus,
-    platform: "视频号",
-    owner: "小林",
-    source: "Indie Hackers 访谈 → 中文口播",
-    edits: "口播缩短 22 秒；开头先给结果",
-    metric: "明天 11:30 发布",
-  },
-];
-
 const calendarItems = [
   { day: "周一", date: "27", time: "10:30", platform: "小红书", title: "AI 接单别按工时报价", color: "orange" },
   { day: "周二", date: "28", time: "20:00", platform: "公众号", title: "Agent 不是聊天机器人", color: "green" },
@@ -424,6 +406,40 @@ function formatCapturedAt(value?: string) {
   }).format(date);
 }
 
+function draftLogicalKey(draft: Draft) {
+  return `${draft.hotspotId}:${draft.platform}`;
+}
+
+function draftTimestamp(draft: Draft) {
+  const value = draft.archivedAt || draft.revisedAt;
+  if (!value) return 0;
+  const timestamp = new Date(value).getTime();
+  return Number.isNaN(timestamp) ? 0 : timestamp;
+}
+
+function formatLibraryDate(draft: Draft) {
+  const value = draft.archivedAt || draft.revisedAt;
+  if (!value) return "时间未记录";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "时间未记录";
+  return new Intl.DateTimeFormat("zh-CN", {
+    month: "numeric",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  }).format(date);
+}
+
+function currentBatchKey(meta: DiscoveryMeta | null) {
+  const capturedAt = meta?.capturedAt?.trim();
+  if (!capturedAt) return "";
+  const datePart = capturedAt.slice(0, 10);
+  return /^\d{4}-\d{2}-\d{2}$/.test(datePart)
+    ? datePart.replaceAll("-", "")
+    : "";
+}
+
 export default function Workbench(props: {
   userName: string;
   userEmail: string;
@@ -433,6 +449,8 @@ export default function Workbench(props: {
   const [hotspots, setHotspots] = useState(seedHotspots);
   const [selectedId, setSelectedId] = useState(1);
   const [drafts, setDrafts] = useState(seedDrafts);
+  const [draftHistory, setDraftHistory] = useState<Draft[]>([]);
+  const [selectedLibraryKey, setSelectedLibraryKey] = useState("");
   const [notice, setNotice] = useState("");
   const [topicFilter, setTopicFilter] = useState("全部");
   const [showSources, setShowSources] = useState(false);
@@ -447,6 +465,7 @@ export default function Workbench(props: {
       function applyState(state: WorkspaceState) {
         setHotspots(state.hotspots);
         setDrafts(state.drafts);
+        setDraftHistory(state.draftHistory ?? []);
         setDiscoveryMeta(state.discoveryMeta);
         setEditorialBrief(
           state.discoveryMeta?.editorialBrief || DEFAULT_EDITORIAL_BRIEF,
@@ -474,6 +493,7 @@ export default function Workbench(props: {
           schemaVersion: WORKSPACE_SCHEMA_VERSION,
           hotspots: payload.hotspots,
           drafts: payload.drafts,
+          draftHistory: [],
           discoveryMeta: payload.meta ?? null,
         });
       }
@@ -515,13 +535,52 @@ export default function Workbench(props: {
     void loadWorkspace();
   }, []);
 
+  const todayHotspots = useMemo(() => {
+    const batchKey = currentBatchKey(discoveryMeta);
+    if (!batchKey) return hotspots;
+    const matching = hotspots.filter((item) =>
+      String(item.id).startsWith(batchKey),
+    );
+    return matching.length ? matching : hotspots;
+  }, [discoveryMeta, hotspots]);
+
   const visibleHotspots = useMemo(
     () =>
       topicFilter === "全部"
-        ? hotspots
-        : hotspots.filter((item) => item.category === topicFilter),
-    [hotspots, topicFilter],
+        ? todayHotspots
+        : todayHotspots.filter((item) => item.category === topicFilter),
+    [todayHotspots, topicFilter],
   );
+
+  const libraryItems = useMemo<LibraryItem[]>(() => {
+    const grouped = new Map<string, Draft[]>();
+    for (const draft of [...draftHistory, ...drafts]) {
+      const key = draftLogicalKey(draft);
+      const versions = grouped.get(key) ?? [];
+      versions.push(draft);
+      grouped.set(key, versions);
+    }
+
+    return Array.from(grouped, ([key, versions]) => {
+      const sortedVersions = [...versions].sort(
+        (left, right) => draftTimestamp(left) - draftTimestamp(right),
+      );
+      return {
+        key,
+        latest: sortedVersions[sortedVersions.length - 1],
+        versions: sortedVersions,
+      };
+    }).sort(
+      (left, right) =>
+        draftTimestamp(right.latest) - draftTimestamp(left.latest) ||
+        right.latest.hotspotId - left.latest.hotspotId,
+    );
+  }, [draftHistory, drafts]);
+
+  const activeLibraryItem =
+    libraryItems.find((item) => item.key === selectedLibraryKey) ??
+    libraryItems[0];
+  const libraryVersionCount = draftHistory.length + drafts.length;
   if (!hydrated) {
     return (
       <main className="loading-screen">
@@ -543,7 +602,8 @@ export default function Workbench(props: {
     );
   }
 
-  const selected = hotspots.find((item) => item.id === selectedId) ?? hotspots[0];
+  const selected =
+    todayHotspots.find((item) => item.id === selectedId) ?? todayHotspots[0];
   const activeDraft =
     drafts.find((item) => item.hotspotId === selected.id) ?? makeDraft(selected);
 
@@ -733,7 +793,7 @@ export default function Workbench(props: {
                 </label>
               </div>
               <div className="daily-numbers">
-                <div><strong>{hotspots.length}</strong><span>条内容</span></div>
+                <div><strong>{todayHotspots.length}</strong><span>条内容</span></div>
               </div>
             </div>
 
@@ -889,36 +949,83 @@ export default function Workbench(props: {
         {view === "library" && (
           <section className="page-section">
             <div className="section-heading">
-              <div><span className="section-kicker">CONTENT LINEAGE</span><h2>每一条内容，都能回到它的起点</h2></div>
-              <button className="ghost-btn">导出内容记录</button>
+              <div>
+                <span className="section-kicker">CONTENT LIBRARY</span>
+                <h2>所有内容都在这里</h2>
+                <p className="library-summary">
+                  共 {libraryItems.length} 条内容 · {libraryVersionCount} 个版本记录
+                </p>
+              </div>
             </div>
             <div className="library-grid">
-              {contentHistory.map((item, index) => (
-                <article className="library-card" key={item.title}>
-                  <div className="library-index">0{index + 1}</div>
-                  <div className="library-main">
-                    <div className="source-row"><span className="source-badge">{item.platform}</span></div>
-                    <h3>{item.title}</h3>
-                    <p className="lineage"><b>来源链路</b>{item.source}</p>
-                    <p className="lineage"><b>人工修改</b>{item.edits}</p>
-                    <div className="result-strip">{item.metric}</div>
+              {libraryItems.map((item, index) => (
+                <button
+                  className={
+                    activeLibraryItem?.key === item.key
+                      ? "library-card selected"
+                      : "library-card"
+                  }
+                  key={item.key}
+                  type="button"
+                  onClick={() => setSelectedLibraryKey(item.key)}
+                >
+                  <div className="library-index">
+                    {String(index + 1).padStart(2, "0")}
                   </div>
-                  <div className="library-owner"><span>{item.owner.slice(0, 1)}</span><small>{item.owner}</small></div>
-                </article>
+                  <div className="library-main">
+                    <div className="source-row">
+                      <span className="source-badge">{item.latest.platform}</span>
+                      <span className="library-status">{item.latest.status}</span>
+                    </div>
+                    <h3>{item.latest.title}</h3>
+                    <p className="lineage">
+                      <b>当前版本</b>
+                      {item.latest.version || "版本未命名"}
+                    </p>
+                    <p className="lineage">
+                      <b>版本记录</b>
+                      {item.versions.length} 个
+                    </p>
+                    <p className="library-excerpt">{item.latest.body}</p>
+                    <div className="result-strip">
+                      最近更新 · {formatLibraryDate(item.latest)}
+                    </div>
+                  </div>
+                  <div className="library-owner">
+                    <span>{(item.latest.updatedBy || "内容运营").slice(0, 1)}</span>
+                    <small>{item.latest.updatedBy || "内容运营"}</small>
+                  </div>
+                </button>
               ))}
             </div>
-            <div className="history-panel">
-              <div>
-                <span className="section-kicker">VERSION HISTORY</span>
-                <h3>“AI 接单别按工时报价”的内容链路</h3>
+            {activeLibraryItem && (
+              <div className="history-panel">
+                <div>
+                  <span className="section-kicker">VERSION HISTORY</span>
+                  <h3>“{activeLibraryItem.latest.title}”的版本记录</h3>
+                  <p className="library-summary">
+                    {activeLibraryItem.versions.length} 个版本全部保留
+                  </p>
+                </div>
+                <ol className="timeline">
+                  {activeLibraryItem.versions.map((version, index) => (
+                    <li
+                      key={`${activeLibraryItem.key}-${version.version}-${index}`}
+                    >
+                      <span>{index + 1}</span>
+                      <div>
+                        <b>{version.version || `版本 ${index + 1}`}</b>
+                        <p>
+                          {version.title} ·{" "}
+                          {version.revisionReason || version.status}
+                        </p>
+                      </div>
+                      <time>{formatLibraryDate(version)}</time>
+                    </li>
+                  ))}
+                </ol>
               </div>
-              <ol className="timeline">
-                <li><span>1</span><div><b>发现热点</b><p>Reddit 高互动讨论，原帖与截图已存档</p></div><time>7/27 08:12</time></li>
-                <li><span>2</span><div><b>确定角度</b><p>从“收入炫耀”改为“报价结构与交付边界”</p></div><time>7/27 09:05</time></li>
-                <li><span>3</span><div><b>AI 初稿 → 人工修改</b><p>小周删除收益承诺，补入自己的报价表示例</p></div><time>7/27 10:40</time></li>
-                <li><span>4</span><div><b>发布并回收数据</b><p>24h 收藏率 8.7%，评论集中询问报价模板</p></div><time>7/28 10:30</time></li>
-              </ol>
-            </div>
+            )}
           </section>
         )}
 
