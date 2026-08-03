@@ -1,0 +1,1416 @@
+{
+  "schema_version": 2,
+  "batch_id": "daily-2026-08-03-real-sources",
+  "batch_date": "2026-08-03",
+  "editorial_brief": "优先高收藏、普通读者看得懂且能马上照做的AI技巧、个人IP案例和平台资讯；不把高赞但证据薄弱、金融或攻击内容列为推荐。",
+  "hotspots": [
+    {
+      "id": "2026080301",
+      "title": "不会写代码的日本艺人，用 AI 独立搭完了 10 小时直播系统",
+      "summary": "日本艺人宫本佳林公开复盘：为了宣传新歌，她用AI参与搭建直播系统并完成约10小时YouTube直播；原帖和技术复盘在日本X形成大规模传播。",
+      "category": "个人 IP",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "这是今天最强的个人IP案例：不是讲AI概念，而是一个非程序员把AI放进真实直播任务并完成交付。",
+      "angle": "完整搬运她做成了什么，再把可复用部分缩成个人创作者的直播前、直播中、直播后三张清单。",
+      "human_check": "发布前核对艺人博客中的具体工具、自动化范围和哪些环节仍由本人完成；不能写成全程无人值守。",
+      "sources": [
+        {
+          "url": "https://x.com/karin__miyamoto/status/2083462264557113524",
+          "author": "宫本佳林 / 川邊健太郎",
+          "discussion_url": "https://x.com/dennotai/status/2083855327683059998",
+          "source_type": "X",
+          "captured_at": "2026-08-03T08:31:39+08:00",
+          "engagement": {
+            "views": 3433996,
+            "likes": 8388,
+            "replies": 34,
+            "reposts": 2560,
+            "bookmarks": 4520
+          },
+          "engagement_label": "3,433,996 浏览 · 8,388 赞 · 34 回复 · 2,560 转发 · 4,520 收藏（8月3日采集）"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 100,
+        "domestic_scarcity": 55,
+        "account_fit": 98,
+        "actionability": 94,
+        "evidence_confidence": 94,
+        "final": 87
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "不会写代码的日本艺人，用 AI 独立搭完了 10 小时直播系统",
+          "finding": "国内平台内全量同义检索不可用；已按产品名、核心主张、目标人群和可执行角度做公开Web相邻搜索，但不能据此宣称小红书或抖音无人发布。国内稀缺度按规则封顶55，发布前需运营人员在平台内复核。"
+        }
+      ],
+      "localized_translation": "一位不会编程的艺人和AI一起做出了整套10小时直播系统，并把艺人视角和技术架构分别写成复盘。",
+      "discussion_focus": [
+        "原帖公开数据为343万浏览、8388赞、4520收藏。",
+        "转发讨论最关注的不是具体模型，而是非技术创作者先做完再复盘。",
+        "评论样本：@miledeploy认为，与其犹豫，不如先开始行动，能完成10小时直播本身就是证据。",
+        "评论样本：@vf_takanisihi提到，除了AI操作，现场补位和意外处理同样值得学习。"
+      ],
+      "comment_samples": [
+        "评论样本：@miledeploy认为，与其犹豫，不如先开始行动，能完成10小时直播本身就是证据。",
+        "评论样本：@vf_takanisihi提到，除了AI操作，现场补位和意外处理同样值得学习。"
+      ],
+      "reuse_ideas": [
+        "直播前：资料、流程、应急话术",
+        "直播中：提示、记录、片段标记",
+        "直播后：切片、复盘、二次分发"
+      ],
+      "save_object": "个人创作者直播的三阶段AI协作清单",
+      "learning_outcome": "学会把AI放进一次真实内容项目，而不是只停留在提问。"
+    },
+    {
+      "id": "2026080302",
+      "title": "AI 做网页总像同一个模板？这个开源 Skill 专门改“审美默认值”",
+      "summary": "开发者分享开源Taste Skill，可接入Claude Code、Codex、Cursor等编码Agent，为界面生成加入设计约束和自检标准，目标是减少千篇一律的AI前端。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "收藏数接近点赞两倍，明显是用户准备回去安装或研究的工具型内容。",
+      "angle": "不吹一键变高级，直接教读者把品牌限制、反例和验收标准交给编码Agent。",
+      "human_check": "核对仓库地址、许可证、安装方式及是否会读取项目文件；用同一页面做安装前后人工对照。",
+      "sources": [
+        {
+          "url": "https://x.com/rammcodes/status/2083899487232368772",
+          "author": "Ram Maheshwari / Taste Skill",
+          "discussion_url": "https://x.com/rammcodes/status/2083899487232368772",
+          "source_type": "X",
+          "captured_at": "2026-08-03T08:31:39+08:00",
+          "engagement": {
+            "views": 48386,
+            "likes": 603,
+            "replies": 18,
+            "reposts": 31,
+            "bookmarks": 1173
+          },
+          "engagement_label": "48,386 浏览 · 603 赞 · 18 回复 · 31 转发 · 1,173 收藏（8月3日采集）"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 88,
+        "domestic_scarcity": 55,
+        "account_fit": 98,
+        "actionability": 98,
+        "evidence_confidence": 90,
+        "final": 84
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI 做网页总像同一个模板？这个开源 Skill 专门改“审美默认值”",
+          "finding": "国内平台内全量同义检索不可用；已按产品名、核心主张、目标人群和可执行角度做公开Web相邻搜索，但不能据此宣称小红书或抖音无人发布。国内稀缺度按规则封顶55，发布前需运营人员在平台内复核。"
+        }
+      ],
+      "localized_translation": "这个开源AI技能为编码Agent补充界面设计标准，让它们少生成一眼就像模板的页面。",
+      "discussion_focus": [
+        "公开帖显示48386浏览、603赞、1173收藏。",
+        "评论样本：@bally_kehal认为真正的价值是给Agent评估标准，而不只是生成能力。",
+        "评论样本：@kachmass质疑审美不能简单外挂，否则所有人安装同一Skill后又会长得一样。",
+        "评论样本：@MoezZhioua认为它更适合底层代码已经干净、提示约束明确的项目。"
+      ],
+      "comment_samples": [
+        "评论样本：@bally_kehal认为真正的价值是给Agent评估标准，而不只是生成能力。",
+        "评论样本：@kachmass质疑审美不能简单外挂，否则所有人安装同一Skill后又会长得一样。",
+        "评论样本：@MoezZhioua认为它更适合底层代码已经干净、提示约束明确的项目。"
+      ],
+      "reuse_ideas": [
+        "首屏：AI 做网页总像同一个模板？这个开源 Skill 专门改“审美默认值”",
+        "本地化角度：不吹一键变高级，直接教读者把品牌限制、反例和验收标准交给编码Agent。",
+        "只搬可验证事实和方法，保留来源与边界。"
+      ],
+      "save_object": "AI网页去模板味的4项输入清单",
+      "learning_outcome": "知道要给AI设计目标、禁用项、参考物和验收标准。"
+    },
+    {
+      "id": "2026080303",
+      "title": "他嫌 CRM 报价太贵，半天做了一个开源版：最值得抄的是这 4 个动作",
+      "summary": "Comp AI公开内部使用的MIT许可Agent CRM；帖子称因小销售团队收到约8万美元年费报价而自建，系统会从邮件和日历补全客户信息、研究客户并安排跟进。",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "收藏数超过点赞两倍，既有开源代码又对应小团队真实痛点。",
+      "angle": "不教读者复制整套CRM，只搬最有价值的客户信息补全、下一步提醒、来源留痕和人工确认。",
+      "human_check": "核对MIT许可证、邮件与日历权限、报价上下文和数据存储方式；不能把作者半天原型写成成熟SaaS。",
+      "sources": [
+        {
+          "url": "https://x.com/lewiscarhart/status/2083610805069611230",
+          "author": "Lewis Carhart / Comp AI",
+          "discussion_url": "https://x.com/lewiscarhart/status/2083610805069611230",
+          "source_type": "X",
+          "captured_at": "2026-08-03T08:31:39+08:00",
+          "engagement": {
+            "views": 760141,
+            "likes": 3787,
+            "replies": 116,
+            "reposts": 321,
+            "bookmarks": 7678
+          },
+          "engagement_label": "760,141 浏览 · 3,787 赞 · 116 回复 · 321 转发 · 7,678 收藏（8月3日采集）"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 99,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "actionability": 95,
+        "evidence_confidence": 91,
+        "final": 86
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "他嫌 CRM 报价太贵，半天做了一个开源版：最值得抄的是这 4 个动作",
+          "finding": "国内平台内全量同义检索不可用；已按产品名、核心主张、目标人群和可执行角度做公开Web相邻搜索，但不能据此宣称小红书或抖音无人发布。国内稀缺度按规则封顶55，发布前需运营人员在平台内复核。"
+        }
+      ],
+      "localized_translation": "一个不到10人的销售团队因为CRM报价过高，自己做了一个以Agent为中心的开源CRM。",
+      "discussion_focus": [
+        "公开帖现为76万浏览、3787赞、7678收藏。",
+        "作者称会从Gmail和日历补全联系人，并提供研究、排队和跟进工具。",
+        "评论样本：@smixshima批评半天vibe coding容易留下大量错误。",
+        "讨论焦点集中在隐私权限、原型稳定性和能否替代成熟CRM。"
+      ],
+      "comment_samples": [
+        "评论样本：@smixshima批评半天vibe coding容易留下大量错误。"
+      ],
+      "reuse_ideas": [
+        "首屏：他嫌 CRM 报价太贵，半天做了一个开源版：最值得抄的是这 4 个动作",
+        "本地化角度：不教读者复制整套CRM，只搬最有价值的客户信息补全、下一步提醒、来源留痕和人工确认。",
+        "只搬可验证事实和方法，保留来源与边界。"
+      ],
+      "save_object": "个人接单客户表的4个自动化字段",
+      "learning_outcome": "学会先自动化跟进动作，而不是先做一套完整CRM。"
+    },
+    {
+      "id": "2026080304",
+      "title": "别把 Claude 当一个万能员工：一个人做业务，先拆这 4 个角色",
+      "summary": "日本创作者分享用Claude Code承担记录、内容、研究和分析等工作，并用一人公司的比喻组织多个AI角色；原文含低成本和零雇员等营销化表达。",
+      "category": "接单变现",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "收藏高于点赞，个人经营和AI角色分工对目标受众直接有用，但需要去掉夸张成本承诺。",
+      "angle": "搬运角色分工方法，不搬零员工、低月费就能开公司的结果承诺。",
+      "human_check": "核对原文费用包含哪些服务；会计、税务、合同和最终对外发送不得交给AI自动决定。",
+      "sources": [
+        {
+          "url": "https://x.com/fukuzawa_afi/status/2083926051944898725",
+          "author": "ゆきち",
+          "discussion_url": "https://x.com/fukuzawa_afi/status/2083926051944898725",
+          "source_type": "X",
+          "captured_at": "2026-08-03T08:31:39+08:00",
+          "engagement": {
+            "views": 105478,
+            "likes": 575,
+            "replies": 7,
+            "reposts": 48,
+            "bookmarks": 845
+          },
+          "engagement_label": "105,478 浏览 · 575 赞 · 7 回复 · 48 转发 · 845 收藏（8月3日采集）"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 89,
+        "domestic_scarcity": 55,
+        "account_fit": 97,
+        "actionability": 96,
+        "evidence_confidence": 78,
+        "final": 82
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "别把 Claude 当一个万能员工：一个人做业务，先拆这 4 个角色",
+          "finding": "国内平台内全量同义检索不可用；已按产品名、核心主张、目标人群和可执行角度做公开Web相邻搜索，但不能据此宣称小红书或抖音无人发布。国内稀缺度按规则封顶55，发布前需运营人员在平台内复核。"
+        }
+      ],
+      "localized_translation": "用Claude Code建立一个没有正式员工的个人公司，让不同AI角色承担秘书、营销、研究和分析工作。",
+      "discussion_focus": [
+        "公开帖为10.5万浏览、575赞、845收藏。",
+        "评论样本：@Restart20241031说过去让一个AI做全部工作，角色拆分的思路最有启发。",
+        "评论样本：@ai28hide认为关键是保留记录和角色分工，让工作第二天能继续。",
+        "评论数量仅7条，不据此推断广泛共识。"
+      ],
+      "comment_samples": [
+        "评论样本：@Restart20241031说过去让一个AI做全部工作，角色拆分的思路最有启发。",
+        "评论样本：@ai28hide认为关键是保留记录和角色分工，让工作第二天能继续。"
+      ],
+      "reuse_ideas": [
+        "首屏：别把 Claude 当一个万能员工：一个人做业务，先拆这 4 个角色",
+        "本地化角度：搬运角色分工方法，不搬零员工、低月费就能开公司的结果承诺。",
+        "只搬可验证事实和方法，保留来源与边界。"
+      ],
+      "save_object": "一人业务的4个AI角色卡",
+      "learning_outcome": "学会按输入、产出和权限拆AI角色。"
+    },
+    {
+      "id": "2026080305",
+      "title": "把长视频丢给 Claude 自动切片：想真能用，先保留这 3 个时间点",
+      "summary": "日本创作者展示一个把长视频交给Claude后自动生成短切片的工具，帖子公开互动较高，但未公开完整准确率和人工修剪耗时。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "切片需求真实，但原帖没有足够结果样本，先进入候选观察。",
+      "angle": "搬运自动切片思路，补上开头结论、情绪变化、独立案例三种时间点和人工复核。",
+      "human_check": "核对工具链接、上传隐私、支持格式、字幕准确率和人工修剪时间。",
+      "sources": [
+        {
+          "url": "https://x.com/katap_yutori/status/2083889713757450638",
+          "author": "ゆとりくん",
+          "discussion_url": "https://x.com/katap_yutori/status/2083889713757450638",
+          "source_type": "X",
+          "captured_at": "2026-08-03T08:31:39+08:00",
+          "engagement": {
+            "views": 60537,
+            "likes": 571,
+            "replies": 2,
+            "reposts": 24,
+            "bookmarks": 325
+          },
+          "engagement_label": "60,537 浏览 · 571 赞 · 2 回复 · 24 转发 · 325 收藏（8月3日采集）"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 82,
+        "domestic_scarcity": 55,
+        "account_fit": 94,
+        "actionability": 90,
+        "evidence_confidence": 72,
+        "final": 78
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "把长视频丢给 Claude 自动切片：想真能用，先保留这 3 个时间点",
+          "finding": "国内平台内全量同义检索不可用；已按产品名、核心主张、目标人群和可执行角度做公开Web相邻搜索，但不能据此宣称小红书或抖音无人发布。国内稀缺度按规则封顶55，发布前需运营人员在平台内复核。"
+        }
+      ],
+      "localized_translation": "我做了一个工具，可以把交给Claude的长视频自动切成短片。",
+      "discussion_focus": [
+        "公开互动为6.05万浏览、571赞、325收藏。",
+        "评论只有2条，无足够可验证样本，不能推断用户满意度。"
+      ],
+      "comment_samples": [],
+      "reuse_ideas": [
+        "首屏：把长视频丢给 Claude 自动切片：想真能用，先保留这 3 个时间点",
+        "本地化角度：搬运自动切片思路，补上开头结论、情绪变化、独立案例三种时间点和人工复核。",
+        "只搬可验证事实和方法，保留来源与边界。"
+      ],
+      "save_object": "长视频切片的3类时间点",
+      "learning_outcome": "知道自动切片后仍需检查上下文、字幕和画面完整性。"
+    },
+    {
+      "id": "2026080306",
+      "title": "一份 AI 学习清单在日本被收藏 1.8 万次，但别照单全收",
+      "summary": "日本创作者用5张YouTube截图组成两小时AI学习清单，帖子获得278万浏览和1.8万收藏；清单主要面向日语受众，具体内容需要逐项核验。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "互动极高，但清单依赖日语视频截图，尚未完成逐条内容和版权核验，因此不直接推荐发布。",
+      "angle": "可借鉴两小时学习路线的包装方式，但需重新选择适合中文用户的5个一手资源。",
+      "human_check": "逐条核对5个视频标题、作者、发布时间、内容质量和是否允许使用封面截图。",
+      "sources": [
+        {
+          "url": "https://x.com/fukuzawa_afi/status/2083387232149528676",
+          "author": "ゆきち",
+          "discussion_url": "https://x.com/fukuzawa_afi/status/2083387232149528676",
+          "source_type": "X",
+          "captured_at": "2026-08-03T08:31:39+08:00",
+          "engagement": {
+            "views": 2785945,
+            "likes": 14373,
+            "replies": 72,
+            "reposts": 898,
+            "bookmarks": 18002
+          },
+          "engagement_label": "2,785,945 浏览 · 14,373 赞 · 72 回复 · 898 转发 · 18,002 收藏（8月3日采集）"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 100,
+        "domestic_scarcity": 55,
+        "account_fit": 90,
+        "actionability": 76,
+        "evidence_confidence": 78,
+        "final": 80
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "一份 AI 学习清单在日本被收藏 1.8 万次，但别照单全收",
+          "finding": "国内平台内全量同义检索不可用；已按产品名、核心主张、目标人群和可执行角度做公开Web相邻搜索，但不能据此宣称小红书或抖音无人发布。国内稀缺度按规则封顶55，发布前需运营人员在平台内复核。"
+        }
+      ],
+      "localized_translation": "今晚少看两小时Netflix，改看下面5个YouTube视频，作者声称能大幅提升AI水平。",
+      "discussion_focus": [
+        "公开互动为278万浏览、1.43万赞、1.8万收藏。",
+        "评论样本：@putrillate认为难点不是找到资源，而是真正坐下来观看。",
+        "评论样本：@joshua91104质疑100倍提升是夸张承诺。"
+      ],
+      "comment_samples": [
+        "评论样本：@putrillate认为难点不是找到资源，而是真正坐下来观看。",
+        "评论样本：@joshua91104质疑100倍提升是夸张承诺。"
+      ],
+      "reuse_ideas": [
+        "首屏：一份 AI 学习清单在日本被收藏 1.8 万次，但别照单全收",
+        "本地化角度：可借鉴两小时学习路线的包装方式，但需重新选择适合中文用户的5个一手资源。",
+        "只搬可验证事实和方法，保留来源与边界。"
+      ],
+      "save_object": "两小时AI学习路线",
+      "learning_outcome": "学会按基础、实操、商业三个层次安排学习，而不是收藏后不看。"
+    },
+    {
+      "id": "2026080307",
+      "title": "Claude Code 的 Skill 开始有“应用商店”了，安全性不能只看热门",
+      "summary": "日本创作者分享一个汇总Claude Code Skills的网站，帖子获得高收藏；原文声称列表基本安全，但没有公开完整审核标准。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "收藏高，但站点和安全审核标准需要人工核验，暂不推荐。",
+      "angle": "借鉴Skill目录的发现方式，同时给出安装前权限、来源、更新记录和卸载路径检查。",
+      "human_check": "确认目录网址、维护者、审核规则及Skill实际代码来源；不得写成官方或保证安全。",
+      "sources": [
+        {
+          "url": "https://x.com/taiga_aii/status/2083855348767887487",
+          "author": "タイガ",
+          "discussion_url": "https://x.com/taiga_aii/status/2083855348767887487",
+          "source_type": "X",
+          "captured_at": "2026-08-03T08:31:39+08:00",
+          "engagement": {
+            "views": 64441,
+            "likes": 672,
+            "replies": 8,
+            "reposts": 45,
+            "bookmarks": 1043
+          },
+          "engagement_label": "64,441 浏览 · 672 赞 · 8 回复 · 45 转发 · 1,043 收藏（8月3日采集）"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 86,
+        "domestic_scarcity": 55,
+        "account_fit": 92,
+        "actionability": 84,
+        "evidence_confidence": 66,
+        "final": 77
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Claude Code 的 Skill 开始有“应用商店”了，安全性不能只看热门",
+          "finding": "国内平台内全量同义检索不可用；已按产品名、核心主张、目标人群和可执行角度做公开Web相邻搜索，但不能据此宣称小红书或抖音无人发布。国内稀缺度按规则封顶55，发布前需运营人员在平台内复核。"
+        }
+      ],
+      "localized_translation": "这是一个收集全球Claude Code Skills的网站，作者称其中多数可以安全使用。",
+      "discussion_focus": [
+        "公开互动为64441浏览、672赞、1043收藏。",
+        "可验证评论仅8条，当前无足够样本证明目录中的Skill安全。"
+      ],
+      "comment_samples": [],
+      "reuse_ideas": [
+        "首屏：Claude Code 的 Skill 开始有“应用商店”了，安全性不能只看热门",
+        "本地化角度：借鉴Skill目录的发现方式，同时给出安装前权限、来源、更新记录和卸载路径检查。",
+        "只搬可验证事实和方法，保留来源与边界。"
+      ],
+      "save_object": "安装AI Skill前的4项安全检查",
+      "learning_outcome": "知道热门目录只是发现入口，不是安全背书。"
+    },
+    {
+      "id": "2026080308",
+      "title": "四台英伟达设备跑本地 AI：这不是普通人的入门配置",
+      "summary": "Alec Fong展示用两台DGX Spark和两台DGX Station分别运行DeepSeek与GLM，并用Brev负责集群网络和编排。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "互动高但配置昂贵且技术门槛高，不适合作为普通用户教程。",
+      "angle": "解释规划模型和执行模型分工，不鼓励照抄硬件。",
+      "human_check": "核对设备型号、内存、量化格式、功耗和实际成本。",
+      "sources": [
+        {
+          "url": "https://x.com/alecqfong/status/2083679692897603838",
+          "author": "Alec Fong",
+          "discussion_url": "https://x.com/alecqfong/status/2083679692897603838",
+          "source_type": "X",
+          "captured_at": "2026-08-03T08:31:39+08:00",
+          "engagement": {
+            "views": 280142,
+            "likes": 1798,
+            "replies": 114,
+            "reposts": 108,
+            "bookmarks": 1018
+          },
+          "engagement_label": "280,142 浏览 · 1,798 赞 · 114 回复 · 108 转发 · 1,018 收藏（8月3日采集）"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 92,
+        "domestic_scarcity": 55,
+        "account_fit": 65,
+        "actionability": 45,
+        "evidence_confidence": 88,
+        "final": 69
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "四台英伟达设备跑本地 AI：这不是普通人的入门配置",
+          "finding": "国内平台内全量同义检索不可用；已按产品名、核心主张、目标人群和可执行角度做公开Web相邻搜索，但不能据此宣称小红书或抖音无人发布。国内稀缺度按规则封顶55，发布前需运营人员在平台内复核。"
+        }
+      ],
+      "localized_translation": "当前本地AI配置：两台DGX Spark负责实现和子Agent，两台DGX Station负责规划与建议。",
+      "discussion_focus": [
+        "公开互动为28万浏览、1798赞、1018收藏。",
+        "114条回复主要围绕成本、速度和是否值得本地部署；需人工抽样核验后才能归纳共识。"
+      ],
+      "comment_samples": [],
+      "reuse_ideas": [
+        "首屏：四台英伟达设备跑本地 AI：这不是普通人的入门配置",
+        "本地化角度：解释规划模型和执行模型分工，不鼓励照抄硬件。",
+        "只搬可验证事实和方法，保留来源与边界。"
+      ],
+      "save_object": "规划模型与执行模型的分工图",
+      "learning_outcome": "知道本地运行可分工，但普通电脑不等于同等体验。"
+    },
+    {
+      "id": "2026080309",
+      "title": "凌晨 2:45 还在和 Claude 改项目：这条梗为什么有人转",
+      "summary": "开发者用一段深夜和Claude协作的视频表达AI编程的沉浸感，内容偏情绪共鸣而非教程。",
+      "category": "个人 IP",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "情绪共鸣强但信息量低，只作为个人IP表现形式候选。",
+      "angle": "借鉴真实使用场景，不鼓励熬夜，也不把视频当效率证明。",
+      "human_check": "核对视频内容是否包含可识别项目或客户信息。",
+      "sources": [
+        {
+          "url": "https://x.com/NovaXCode/status/2083876901676798226",
+          "author": "Nova",
+          "discussion_url": "https://x.com/NovaXCode/status/2083876901676798226",
+          "source_type": "X",
+          "captured_at": "2026-08-03T08:31:39+08:00",
+          "engagement": {
+            "views": 203043,
+            "likes": 3663,
+            "replies": 55,
+            "reposts": 319,
+            "bookmarks": 942
+          },
+          "engagement_label": "203,043 浏览 · 3,663 赞 · 55 回复 · 319 转发 · 942 收藏（8月3日采集）"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 90,
+        "domestic_scarcity": 55,
+        "account_fit": 72,
+        "actionability": 35,
+        "evidence_confidence": 90,
+        "final": 69
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "凌晨 2:45 还在和 Claude 改项目：这条梗为什么有人转",
+          "finding": "国内平台内全量同义检索不可用；已按产品名、核心主张、目标人群和可执行角度做公开Web相邻搜索，但不能据此宣称小红书或抖音无人发布。国内稀缺度按规则封顶55，发布前需运营人员在平台内复核。"
+        }
+      ],
+      "localized_translation": "凌晨2:45的我和Claude。",
+      "discussion_focus": [
+        "公开互动为20.3万浏览、3663赞、319转发。",
+        "原帖仅一句话，不能据此推断工具效果。"
+      ],
+      "comment_samples": [],
+      "reuse_ideas": [
+        "首屏：凌晨 2:45 还在和 Claude 改项目：这条梗为什么有人转",
+        "本地化角度：借鉴真实使用场景，不鼓励熬夜，也不把视频当效率证明。",
+        "只搬可验证事实和方法，保留来源与边界。"
+      ],
+      "save_object": "开发者日常短视频镜头表",
+      "learning_outcome": "知道个人IP内容可以展示真实过程，但要补一个具体收获。"
+    },
+    {
+      "id": "2026080310",
+      "title": "一场 Stanford AI 讲座被收藏 1162 次，但先核对它到底讲什么",
+      "summary": "创作者推荐一段约两小时的Stanford会议视频，称适合解释ChatGPT和Claude的工作方式；帖子没有在正文完整列出课程信息。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "高收藏但课程身份和内容范围未完整核验，先留候选。",
+      "angle": "核验后可做中文观看笔记，而不是只搬链接。",
+      "human_check": "确认视频标题、讲者、时长、发布日期和是否确为Stanford官方会议。",
+      "sources": [
+        {
+          "url": "https://x.com/Krishnasagrawal/status/2083640298123776067",
+          "author": "Krishna Agrawal",
+          "discussion_url": "https://x.com/Krishnasagrawal/status/2083640298123776067",
+          "source_type": "X",
+          "captured_at": "2026-08-03T08:31:39+08:00",
+          "engagement": {
+            "views": 78859,
+            "likes": 510,
+            "replies": 14,
+            "reposts": 124,
+            "bookmarks": 1162
+          },
+          "engagement_label": "78,859 浏览 · 510 赞 · 14 回复 · 124 转发 · 1,162 收藏（8月3日采集）"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 84,
+        "domestic_scarcity": 55,
+        "account_fit": 80,
+        "actionability": 65,
+        "evidence_confidence": 65,
+        "final": 71
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "一场 Stanford AI 讲座被收藏 1162 次，但先核对它到底讲什么",
+          "finding": "国内平台内全量同义检索不可用；已按产品名、核心主张、目标人群和可执行角度做公开Web相邻搜索，但不能据此宣称小红书或抖音无人发布。国内稀缺度按规则封顶55，发布前需运营人员在平台内复核。"
+        }
+      ],
+      "localized_translation": "今晚少看两小时Netflix，改看这场Stanford会议，它能解释ChatGPT和Claude如何工作。",
+      "discussion_focus": [
+        "公开互动为78859浏览、510赞、1162收藏。",
+        "评论仅14条，当前未完成逐条核验。"
+      ],
+      "comment_samples": [],
+      "reuse_ideas": [
+        "首屏：一场 Stanford AI 讲座被收藏 1162 次，但先核对它到底讲什么",
+        "本地化角度：核验后可做中文观看笔记，而不是只搬链接。",
+        "只搬可验证事实和方法，保留来源与边界。"
+      ],
+      "save_object": "一页中文观看笔记",
+      "learning_outcome": "知道看AI原理课时应带着哪些问题。"
+    },
+    {
+      "id": "2026080311",
+      "title": "Claude Code 一条命令接入 1.7 万只股票数据？金融内容先别照抄",
+      "summary": "帖子展示通过MCP把金融数据服务接入Claude Code，并声称覆盖1.7万只股票、加密货币价格和财报；属于高风险金融信息场景。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "收藏很高，但实时性、授权和投资误用风险未核验，按高风险规则降级。",
+      "angle": "只讨论数据接入和来源校验，不提供投资判断。",
+      "human_check": "核对数据供应商、延迟、市场覆盖、授权条款和免责声明；必须由金融合规人员复核。",
+      "sources": [
+        {
+          "url": "https://x.com/cyrilXBT/status/2083762211718394276",
+          "author": "CyrilXBT",
+          "discussion_url": "https://x.com/cyrilXBT/status/2083762211718394276",
+          "source_type": "X",
+          "captured_at": "2026-08-03T08:31:39+08:00",
+          "engagement": {
+            "views": 141866,
+            "likes": 800,
+            "replies": 37,
+            "reposts": 149,
+            "bookmarks": 1809
+          },
+          "engagement_label": "141,866 浏览 · 800 赞 · 37 回复 · 149 转发 · 1,809 收藏（8月3日采集）"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 88,
+        "domestic_scarcity": 55,
+        "account_fit": 64,
+        "actionability": 60,
+        "evidence_confidence": 62,
+        "final": 67
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Claude Code 一条命令接入 1.7 万只股票数据？金融内容先别照抄",
+          "finding": "国内平台内全量同义检索不可用；已按产品名、核心主张、目标人群和可执行角度做公开Web相邻搜索，但不能据此宣称小红书或抖音无人发布。国内稀缺度按规则封顶55，发布前需运营人员在平台内复核。"
+        }
+      ],
+      "localized_translation": "Claude Code可以在一分钟内接入覆盖1.7万只股票、加密货币和财报的实时数据。",
+      "discussion_focus": [
+        "公开互动为14.1万浏览、800赞、1809收藏。",
+        "无足够可验证评论样本证明数据实时或完整。"
+      ],
+      "comment_samples": [
+        "无足够可验证评论样本证明数据实时或完整。"
+      ],
+      "reuse_ideas": [
+        "首屏：Claude Code 一条命令接入 1.7 万只股票数据？金融内容先别照抄",
+        "本地化角度：只讨论数据接入和来源校验，不提供投资判断。",
+        "只搬可验证事实和方法，保留来源与边界。"
+      ],
+      "save_object": "金融数据接入的来源核验表",
+      "learning_outcome": "知道能取到数据不等于能据此做投资决策。"
+    },
+    {
+      "id": "2026080312",
+      "title": "有人称 Claude Code 8 分钟找到钱包漏洞：攻击复现不能当教程发",
+      "summary": "帖子称Claude Code可在8分钟内找到某钱包攻击使用的同类漏洞，但没有在正文提供足够独立复现材料。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "安全攻击内容敏感且证据不足，只保留为风险观察。",
+      "angle": "可讨论开发者要加强依赖与密钥审计，不公开可操作攻击步骤。",
+      "human_check": "安全专家核对漏洞编号、测试环境、授权范围和复现证据。",
+      "sources": [
+        {
+          "url": "https://x.com/AndrewCurran_/status/2083998274906894449",
+          "author": "Andrew Curran",
+          "discussion_url": "https://x.com/AndrewCurran_/status/2083998274906894449",
+          "source_type": "X",
+          "captured_at": "2026-08-03T08:31:39+08:00",
+          "engagement": {
+            "views": 70174,
+            "likes": 630,
+            "replies": 31,
+            "reposts": 62,
+            "bookmarks": 115
+          },
+          "engagement_label": "70,174 浏览 · 630 赞 · 31 回复 · 62 转发 · 115 收藏（8月3日采集）"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 82,
+        "domestic_scarcity": 55,
+        "account_fit": 50,
+        "actionability": 20,
+        "evidence_confidence": 55,
+        "final": 55
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "有人称 Claude Code 8 分钟找到钱包漏洞：攻击复现不能当教程发",
+          "finding": "国内平台内全量同义检索不可用；已按产品名、核心主张、目标人群和可执行角度做公开Web相邻搜索，但不能据此宣称小红书或抖音无人发布。国内稀缺度按规则封顶55，发布前需运营人员在平台内复核。"
+        }
+      ],
+      "localized_translation": "Claude Code可以独立在8分钟内找到这次攻击所利用的同类钱包漏洞。",
+      "discussion_focus": [
+        "公开互动为7万浏览、630赞、31回复。",
+        "当前没有足够独立材料验证8分钟结论。"
+      ],
+      "comment_samples": [],
+      "reuse_ideas": [
+        "首屏：有人称 Claude Code 8 分钟找到钱包漏洞：攻击复现不能当教程发",
+        "本地化角度：可讨论开发者要加强依赖与密钥审计，不公开可操作攻击步骤。",
+        "只搬可验证事实和方法，保留来源与边界。"
+      ],
+      "save_object": "代码安全复核清单",
+      "learning_outcome": "知道AI会降低漏洞发现门槛，但不能传播攻击步骤。"
+    },
+    {
+      "id": "2026080313",
+      "title": "一条“东方仙境”AI视频拿到 6546 赞，审美题材比模型名更重要",
+      "summary": "创作者发布由Qi Guang生成的东方仙境主题AI视频，在X获得高点赞和转发；未公开完整制作流程。",
+      "category": "个人 IP",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "视觉传播强，但缺少制作流程和版权信息，暂不推荐。",
+      "angle": "讨论题材、色彩和运动设计，不假装掌握作者提示词。",
+      "human_check": "确认模型、素材版权、音乐授权和是否允许二次使用画面。",
+      "sources": [
+        {
+          "url": "https://x.com/chunlimulan/status/2083769235432669482",
+          "author": "Mulan Chun-Li / Qi Guang",
+          "discussion_url": "https://x.com/chunlimulan/status/2083769235432669482",
+          "source_type": "X",
+          "captured_at": "2026-08-03T08:31:39+08:00",
+          "engagement": {
+            "views": 323925,
+            "likes": 6546,
+            "replies": 86,
+            "reposts": 759,
+            "bookmarks": 2313
+          },
+          "engagement_label": "323,925 浏览 · 6,546 赞 · 86 回复 · 759 转发 · 2,313 收藏（8月3日采集）"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 94,
+        "domestic_scarcity": 55,
+        "account_fit": 78,
+        "actionability": 55,
+        "evidence_confidence": 82,
+        "final": 73
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "一条“东方仙境”AI视频拿到 6546 赞，审美题材比模型名更重要",
+          "finding": "国内平台内全量同义检索不可用；已按产品名、核心主张、目标人群和可执行角度做公开Web相邻搜索，但不能据此宣称小红书或抖音无人发布。国内稀缺度按规则封顶55，发布前需运营人员在平台内复核。"
+        }
+      ],
+      "localized_translation": "不朽之境：由Qi Guang用AI生成的中国式天堂想象。",
+      "discussion_focus": [
+        "公开互动为32.3万浏览、6546赞、759转发、2313收藏。",
+        "未核验86条回复，不能推断具体审美共识。"
+      ],
+      "comment_samples": [],
+      "reuse_ideas": [
+        "首屏：一条“东方仙境”AI视频拿到 6546 赞，审美题材比模型名更重要",
+        "本地化角度：讨论题材、色彩和运动设计，不假装掌握作者提示词。",
+        "只搬可验证事实和方法，保留来源与边界。"
+      ],
+      "save_object": "东方幻想AI视频的视觉拆解卡",
+      "learning_outcome": "知道视觉内容先确定题材和镜头，再选模型。"
+    },
+    {
+      "id": "2026080314",
+      "title": "别再只看每百万Token多少钱：这次有人开始算整件任务",
+      "summary": "Cline引用Artificial Analysis称DeepSeek V4-Flash在同一基准任务上成本比Fable低105倍；另一实测帖称一次32分钟任务花0.07美元。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "任务成本比Token单价更适合普通用户比较模型，且原帖仍在快速传播。",
+      "angle": "不搬105倍结论，教读者按整件任务比较价格、耗时、重试和可用结果。",
+      "human_check": "发布前核对Artificial Analysis图表、Cline免费期限、DeepSeek API公测状态和当前价格。",
+      "sources": [
+        {
+          "url": "https://x.com/cline/status/2083638204037820734",
+          "author": "Cline / Elshayib",
+          "discussion_url": "https://x.com/cline/status/2083638204037820734",
+          "source_type": "X + Hugging Face",
+          "captured_at": "2026-08-03T08:31:39+08:00",
+          "engagement": {
+            "views": 479476,
+            "likes": 1857,
+            "replies": 106,
+            "reposts": 171,
+            "bookmarks": 566
+          },
+          "engagement_label": "最高可验证样本：479,476 浏览 · 1,857 赞 · 106 回复 · 171 转发 · 566 收藏；Cline讨论帖341,415浏览"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 99,
+        "domestic_scarcity": 45,
+        "account_fit": 94,
+        "actionability": 96,
+        "evidence_confidence": 90,
+        "final": 83
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "别再只看每百万Token多少钱：这次有人开始算整件任务",
+          "finding": "国内平台内全量同义检索不可用；已按产品名、核心主张、目标人群和可执行角度做公开Web相邻搜索，但不能据此宣称小红书或抖音无人发布。国内稀缺度按规则封顶55，发布前需运营人员在平台内复核。"
+        }
+      ],
+      "localized_translation": "DeepSeek V4-Flash的每Token价格明显更低，但如果需要更多轮次，整件任务成本仍可能更高。Cline引用Artificial Analysis称，在其基准中，DeepSeek完成相同任务的成本比Fable低105倍。",
+      "discussion_focus": [
+        "Cline帖341,415浏览、1,970赞；Elshayib实测帖479,476浏览、1,857赞，称32分钟任务花0.07美元。",
+        "评论样本：@keepdeckai追问，如果模型用更多Token和更长时间完成任务，低单价是否仍重要。",
+        "评论样本：用户询问是否免费，Cline回复其集成中已免费提供，并给出安装与选择模型步骤。",
+        "105倍来自特定基准，0.07美元来自单次公开演示，均不能外推所有编码任务。"
+      ],
+      "comment_samples": [
+        "评论样本：@keepdeckai追问，如果模型用更多Token和更长时间完成任务，低单价是否仍重要。",
+        "评论样本：用户询问是否免费，Cline回复其集成中已免费提供，并给出安装与选择模型步骤。"
+      ],
+      "reuse_ideas": [
+        "首屏：别再只看每百万Token多少钱：这次有人开始算整件任务",
+        "本地化角度：不搬105倍结论，教读者按整件任务比较价格、耗时、重试和可用结果。",
+        "只搬可验证事实和方法，保留来源与边界。"
+      ],
+      "save_object": "AI模型成本实测表",
+      "learning_outcome": "会比较单位任务成本，而不是被每Token单价带跑。"
+    },
+    {
+      "id": "2026080315",
+      "title": "YC 把公司内部的 AI 助手开源了，但先别急着装",
+      "summary": "Y Combinator 开源内部使用的多智能体系统 QM，称已用于会计、法务、活动和工程；评论主要追问权限、交接和共享记忆。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "高收藏、官方开源且评论提出了真实落地问题，可转成小团队马上能用的AI权限清单。",
+      "angle": "搬运QM的核心价值，但不把开源当成开箱即用；给小团队一张上Agent前的验收表。",
+      "human_check": "发布前核对QM仓库许可证、安装要求、默认遥测、权限模型及是否适合处理法务/财务数据。",
+      "sources": [
+        {
+          "url": "https://x.com/garrytan/status/2083353760701833546",
+          "author": "Garry Tan / Y Combinator",
+          "discussion_url": "https://x.com/garrytan/status/2083353760701833546",
+          "source_type": "X",
+          "captured_at": "2026-08-03T08:31:39+08:00",
+          "engagement": {
+            "views": 449713,
+            "likes": 2350,
+            "replies": 97,
+            "reposts": 147,
+            "bookmarks": 2988
+          },
+          "engagement_label": "449,713 浏览 · 2,350 赞 · 97 回复 · 147 转发 · 2,988 收藏"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 98,
+        "domestic_scarcity": 55,
+        "account_fit": 98,
+        "actionability": 96,
+        "evidence_confidence": 94,
+        "final": 87
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "YC 把公司内部的 AI 助手开源了，但先别急着装",
+          "finding": "国内平台内全量同义检索不可用；已按产品名、核心主张、目标人群和可执行角度做公开Web相邻搜索，但不能据此宣称小红书或抖音无人发布。国内稀缺度按规则封顶55，发布前需运营人员在平台内复核。"
+        }
+      ],
+      "localized_translation": "你的个人 AI 或公司知识中枢需要一套干净的运行框架；这是我们团队每天使用的版本，免费且开源。YC 称 QM 容易定制，并已跨会计、法务、活动和工程使用。",
+      "discussion_focus": [
+        "公开帖显示449,713浏览、2,350赞、2,988收藏，收藏数高于点赞，说明大量用户把它当待研究工具。",
+        "评论样本：@stas_sorokin_追问，系统在进入会计或法务前，在哪里证明动作通过了验收检查。",
+        "评论样本：@rjabalosiii称公司规模下真正容易出问题的是共享记忆漂移、两个Agent撞进同一流程，以及权限和交接。",
+        "评论样本：@nuvolore追问它与OpenClaw的差异，说明高互动并不等于使用价值已被证明。"
+      ],
+      "comment_samples": [
+        "评论样本：@stas_sorokin_追问，系统在进入会计或法务前，在哪里证明动作通过了验收检查。",
+        "评论样本：@rjabalosiii称公司规模下真正容易出问题的是共享记忆漂移、两个Agent撞进同一流程，以及权限和交接。",
+        "评论样本：@nuvolore追问它与OpenClaw的差异，说明高互动并不等于使用价值已被证明。"
+      ],
+      "reuse_ideas": [
+        "首屏：YC 把公司内部的 AI 助手开源了，但先别急着装",
+        "本地化角度：搬运QM的核心价值，但不把开源当成开箱即用；给小团队一张上Agent前的验收表。",
+        "只搬可验证事实和方法，保留来源与边界。"
+      ],
+      "save_object": "公司AI上线前7项检查表",
+      "learning_outcome": "知道公司AI最先要设计的是权限、验收和交接，不是多装几个Agent。"
+    },
+    {
+      "id": "2026080316",
+      "title": "每天跟AI聊到停不下来，Hank Green先给自己踩了刹车",
+      "summary": "创作者Hank Green公开表示，自己从与LLM互动中获得的多巴胺水平对本人和世界都不健康，并为此前使用方式道歉。",
+      "category": "个人 IP",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "具体人物、真实场景强，能搬成普通用户可执行的AI使用边界。",
+      "angle": "不做成瘾诊断，给经常无限追问的人三个停用触发条件。",
+      "human_check": "不要使用医学诊断措辞；核对Hank Green原始声明上下文。",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/08/01/youtuber-hank-green-says-his-ai-usage-is-not-healthy/",
+          "author": "Hank Green / TechCrunch",
+          "discussion_url": "https://techcrunch.com/2026/08/01/youtuber-hank-green-says-his-ai-usage-is-not-healthy/",
+          "source_type": "TechCrunch + creator statement",
+          "captured_at": "2026-08-03T08:31:39+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "公开互动未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 82,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "actionability": 94,
+        "evidence_confidence": 88,
+        "final": 81
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "每天跟AI聊到停不下来，Hank Green先给自己踩了刹车",
+          "finding": "国内平台内全量同义检索不可用；已按产品名、核心主张、目标人群和可执行角度做公开Web相邻搜索，但不能据此宣称小红书或抖音无人发布。国内稀缺度按规则封顶55，发布前需运营人员在平台内复核。"
+        }
+      ],
+      "localized_translation": "Hank Green表示，他从与大语言模型互动中获得的刺激程度，对自己并不健康，对世界也不是好事。",
+      "discussion_focus": [
+        "TechCrunch未公开文章级浏览、点赞、评论与收藏。",
+        "这是创作者对个人使用状态的描述，不是医学研究，也不能推断所有AI用户成瘾。"
+      ],
+      "comment_samples": [],
+      "reuse_ideas": [
+        "首屏：每天跟AI聊到停不下来，Hank Green先给自己踩了刹车",
+        "本地化角度：不做成瘾诊断，给经常无限追问的人三个停用触发条件。",
+        "只搬可验证事实和方法，保留来源与边界。"
+      ],
+      "save_object": "AI使用三条停手规则",
+      "learning_outcome": "能给开放式AI对话设置任务边界和结束条件。"
+    },
+    {
+      "id": "2026080317",
+      "title": "Snapchat不再奖励纯AI内容：以后要留下这三种“人做的证据”",
+      "summary": "Snapchat调整Spotlight奖励政策，不再奖励完全由AI生成的内容；AI辅助与完全AI生成需要区分。",
+      "category": "个人 IP",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "直接影响内容创作者收入，且能转成马上可执行的素材留档方法。",
+      "angle": "不喊平台封杀AI，教创作者保存选题、实拍和人工编辑过程。",
+      "human_check": "核对Spotlight最新奖励条款、适用地区、AI辅助例外和申诉流程。",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/07/31/snapchat-no-longer-rewards-fully-ai-generated-spotlight-content/",
+          "author": "Snapchat / TechCrunch",
+          "discussion_url": "https://techcrunch.com/2026/07/31/snapchat-no-longer-rewards-fully-ai-generated-spotlight-content/",
+          "source_type": "TechCrunch",
+          "captured_at": "2026-08-03T08:31:39+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "公开互动未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 86,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 98,
+        "evidence_confidence": 93,
+        "final": 84
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Snapchat不再奖励纯AI内容：以后要留下这三种“人做的证据”",
+          "finding": "国内平台内全量同义检索不可用；已按产品名、核心主张、目标人群和可执行角度做公开Web相邻搜索，但不能据此宣称小红书或抖音无人发布。国内稀缺度按规则封顶55，发布前需运营人员在平台内复核。"
+        }
+      ],
+      "localized_translation": "Snapchat不再向完全由AI生成的Spotlight内容提供奖励。政策针对的是全AI成品，并不等于禁止所有AI辅助创作。",
+      "discussion_focus": [
+        "TechCrunch未公开文章级互动。",
+        "关键争议是平台如何区分AI辅助、AI生成和人类创作，以及创作者怎样证明自己的实质贡献。"
+      ],
+      "comment_samples": [],
+      "reuse_ideas": [
+        "首屏：Snapchat不再奖励纯AI内容：以后要留下这三种“人做的证据”",
+        "本地化角度：不喊平台封杀AI，教创作者保存选题、实拍和人工编辑过程。",
+        "只搬可验证事实和方法，保留来源与边界。"
+      ],
+      "save_object": "AI辅助内容留证清单",
+      "learning_outcome": "知道如何保留自己对AI内容的实质创作过程。"
+    },
+    {
+      "id": "2026080318",
+      "title": "Google上线一天就撤掉AI地图功能：做历史图最怕这一件事",
+      "summary": "Google在上线Earth AI图像生成功能一天后撤回，外界担忧生成画面覆盖真实地图会制造历史与地理误导。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "反差强、证据完整，适合搬成普通人判断AI历史/地图图片的实用方法。",
+      "angle": "不只报下架，给读者一套地图类AI图的核验动作。",
+      "human_check": "核对Google官方撤回说明和功能当前状态；不要写成永久关闭。",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-after-launch-amid-criticism-it-would-spread-misinformation/",
+          "author": "Google / TechCrunch / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49134079",
+          "source_type": "官方X + TechCrunch + HN",
+          "captured_at": "2026-08-03T08:31:39+08:00",
+          "engagement": {
+            "views": null,
+            "likes": 60,
+            "replies": 97,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "HN 60 points · 97 comments · 浏览与收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 91,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "actionability": 92,
+        "evidence_confidence": 95,
+        "final": 84
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Google上线一天就撤掉AI地图功能：做历史图最怕这一件事",
+          "finding": "国内平台内全量同义检索不可用；已按产品名、核心主张、目标人群和可执行角度做公开Web相邻搜索，但不能据此宣称小红书或抖音无人发布。国内稀缺度按规则封顶55，发布前需运营人员在平台内复核。"
+        }
+      ],
+      "localized_translation": "Google在发布一项可生成图像并叠加到真实Google Earth地图的功能后一天将其撤下，原因是外界担心它传播错误信息。",
+      "discussion_focus": [
+        "HN 60 points、97 comments；TechCrunch未公开文章互动。",
+        "讨论主要担心生成图像与真实地理底图混合后，截图脱离上下文传播。",
+        "Google撤回功能是事实，但永久取消、重新设计或何时恢复尚未公开。"
+      ],
+      "comment_samples": [],
+      "reuse_ideas": [
+        "首屏：Google上线一天就撤掉AI地图功能：做历史图最怕这一件事",
+        "本地化角度：不只报下架，给读者一套地图类AI图的核验动作。",
+        "只搬可验证事实和方法，保留来源与边界。"
+      ],
+      "save_object": "AI地图图片四步核验法",
+      "learning_outcome": "看到地图截图时会查图层、时间、坐标和原始链接。"
+    },
+    {
+      "id": "2026080319",
+      "title": "今天起，欧盟这4类AI内容要更清楚地告诉用户",
+      "summary": "欧盟AI法案Article 50透明度义务自2026年8月2日起适用，涵盖与AI互动、机器可读标记、深度伪造和部分公共利益文本。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "当天生效的一手信息，直接影响面向欧盟用户的AI产品与内容团队。",
+      "angle": "不把复杂法案全搬过来，只给跨境创作者和产品负责人一张四场景提醒。",
+      "human_check": "涉及法律合规，发布前由专业人员确认Article 50适用对象、例外、过渡期和目标业务所在地。",
+      "sources": [
+        {
+          "url": "https://digital-strategy.ec.europa.eu/en/news/commission-publishes-guidelines-transparency-obligations-providers-and-deployers-certain-ai-systems",
+          "author": "European Commission",
+          "discussion_url": "https://ai-act-service-desk.ec.europa.eu/en/faq",
+          "source_type": "官方政策",
+          "captured_at": "2026-08-03T08:31:39+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "官方公开互动未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 90,
+        "domestic_scarcity": 55,
+        "account_fit": 94,
+        "actionability": 92,
+        "evidence_confidence": 99,
+        "final": 83
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "今天起，欧盟这4类AI内容要更清楚地告诉用户",
+          "finding": "国内平台内全量同义检索不可用；已按产品名、核心主张、目标人群和可执行角度做公开Web相邻搜索，但不能据此宣称小红书或抖音无人发布。国内稀缺度按规则封顶55，发布前需运营人员在平台内复核。"
+        }
+      ],
+      "localized_translation": "从2026年8月2日起，相关AI提供者和部署者须在用户直接与AI互动时告知用户，并为生成或操纵内容加入机器可读标记；深度伪造、未经人工审阅的公共利益AI文本等也有披露义务。",
+      "discussion_focus": [
+        "欧盟官方页面未公开文章级互动。",
+        "官方FAQ明确：Article 50透明度要求自8月2日适用；Annex III高风险系统义务已调整到2027年12月2日，不能混写。",
+        "旧系统的部分标记义务存在过渡期，具体适用范围和例外需看指南。"
+      ],
+      "comment_samples": [],
+      "reuse_ideas": [
+        "首屏：今天起，欧盟这4类AI内容要更清楚地告诉用户",
+        "本地化角度：不把复杂法案全搬过来，只给跨境创作者和产品负责人一张四场景提醒。",
+        "只搬可验证事实和方法，保留来源与边界。"
+      ],
+      "save_object": "欧盟AI透明度四场景卡",
+      "learning_outcome": "知道哪些场景要提示用户正在与AI互动或看到AI生成内容。"
+    },
+    {
+      "id": "2026080320",
+      "title": "7.6PB训练数据里藏着密钥：公开数据集不等于安全数据集",
+      "summary": "Truffle Security称扫描7.6PB Hugging Face训练数据并验证了仍有效的凭据，强调训练集可能包含真实密钥。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "安全价值高但技术门槛较高，进入候选供开发者账号使用。",
+      "angle": "把研究搬成上传数据集前的三条清理动作。",
+      "human_check": "核对研究方法、凭据数量、验证与通知流程；不展示任何真实密钥。",
+      "sources": [
+        {
+          "url": "https://trufflesecurity.com/blog/scanning-7-6-petabytes-of-ai-training-data-for-secrets",
+          "author": "Truffle Security / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49136955",
+          "source_type": "安全研究 + HN",
+          "captured_at": "2026-08-03T08:31:39+08:00",
+          "engagement": {
+            "views": null,
+            "likes": 33,
+            "replies": 9,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "HN 33 points · 9 comments · 浏览与收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 86,
+        "domestic_scarcity": 55,
+        "account_fit": 78,
+        "actionability": 82,
+        "evidence_confidence": 90,
+        "final": 76
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "7.6PB训练数据里藏着密钥：公开数据集不等于安全数据集",
+          "finding": "国内平台内全量同义检索不可用；已按产品名、核心主张、目标人群和可执行角度做公开Web相邻搜索，但不能据此宣称小红书或抖音无人发布。国内稀缺度按规则封顶55，发布前需运营人员在平台内复核。"
+        }
+      ],
+      "localized_translation": "研究团队端到端扫描Hugging Face公开数据集仓库、分支和大文件对象，称在训练数据中发现并验证了具有真实影响范围的密钥。",
+      "discussion_focus": [
+        "HN 33 points、9 comments。",
+        "评论#49138666追问，为何聚焦Hugging Face而不是直接扫描整个互联网。",
+        "评论#49138615认为文章过长且文风像AI生成，但这不否定密钥验证事实，仍需看方法与披露。"
+      ],
+      "comment_samples": [],
+      "reuse_ideas": [
+        "首屏：7.6PB训练数据里藏着密钥：公开数据集不等于安全数据集",
+        "本地化角度：把研究搬成上传数据集前的三条清理动作。",
+        "只搬可验证事实和方法，保留来源与边界。"
+      ],
+      "save_object": "上传训练数据前检查表",
+      "learning_outcome": "知道公开数据集也可能泄露凭据和内部路径。"
+    }
+  ],
+  "drafts": [
+    {
+      "content_id": "5026080301",
+      "hotspot_id": "2026080301",
+      "platform": "小红书",
+      "title": "不会写代码的日本艺人，用 AI 独立搭完了 10 小时直播系统",
+      "body": "一个不会写代码的日本艺人，把10小时直播系统自己搭出来了。\n\n她叫宫本佳林。为了宣传新歌，她没有先去学一整套编程课，而是边做边用AI：把直播要用的页面、提示、流程和技术问题一项项解决，最后真的播完了约10小时。\n\n这条原帖在X上有343万浏览、8388赞、4520收藏。最打动我的不是“AI又能写代码”，而是她选了一个有明确截止时间的真任务。\n\n如果你也在做个人账号，可以直接抄这套分工：\n\n直播前，让AI整理资料、写流程卡、列最可能出错的5件事；\n直播中，让它做提词、时间点记录和待剪片段标记，人负责现场判断；\n直播后，把时间点交给AI生成切片标题、简介和复盘初稿。\n\n别一上来就做10小时。先拿一次30分钟直播试跑，结束后只看三件事：哪里卡住、哪段有人停留、哪些动作必须自己做。\n\n她真正证明的不是“AI能代替团队”，而是一个人也可以先把小团队的工作台搭起来。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只保留标题和一个真实物件；内页呈现可执行清单、流程或核验结果。避免模型头像、机器人、发光渐变、夸张收益数字和未经核实的效果对比。",
+      "video_script": "一个不会写代码的日本艺人，靠AI搭完了整套10小时直播系统。重点不是模型有多强，而是她把任务拆成了直播前准备、直播中记录、直播后切片三段。做个人账号的先别挑战10小时，拿一次30分钟直播试跑：让AI整理资料、列应急问题、标记可剪片段，人只负责现场判断。AI最有用的时候，就是它被塞进一个有截止时间的真任务里。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080302",
+      "hotspot_id": "2026080302",
+      "platform": "小红书",
+      "title": "AI 做网页总像同一个模板？这个开源 Skill 专门改“审美默认值”",
+      "body": "AI做网页最烦的，不是它不会写，是做出来像“同一家模板店”。\n\n大标题、发光渐变、三张圆角卡，再配一个看起来很贵但什么都没说的副标题。\n\n今天看到一个开源的 Taste Skill，专门给 Claude Code、Codex、Cursor 这类编码工具补设计约束。原帖只有4.8万浏览，却有1173次收藏，收藏差不多是点赞的两倍。\n\n我试这类工具时，不会只丢一句“做高级一点”，而是先给四样东西：\n\n品牌里必须保留的颜色和字体；\n三个绝对不要出现的元素；\n一个真实参考页面，并说清楚喜欢哪里；\n验收标准，比如手机首屏只能有一个主按钮，正文最小16px。\n\nSkill的作用不是替你长出审美，而是让AI在交稿前有东西可检查。\n\n如果所有人装同一个Skill，页面还是可能再次撞脸。所以最后一步别省：删掉一个最像模板的区块，再补一个只有你这个业务才需要的细节。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只保留标题和一个真实物件；内页呈现可执行清单、流程或核验结果。避免模型头像、机器人、发光渐变、夸张收益数字和未经核实的效果对比。",
+      "video_script": "AI做网页为什么总像同一个模板？因为你只给了生成任务，没给验收标准。今天这个Taste Skill在X上收藏比点赞还高，它会给Claude Code、Codex、Cursor补设计规则。真正能抄的是四项输入：保留什么、禁止什么、参考哪里、怎么验收。最后再手动删掉一个最像模板的区块，补上你的业务细节。Skill能减少套模板，但不能替你长出审美。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080303",
+      "hotspot_id": "2026080303",
+      "platform": "小红书",
+      "title": "他嫌 CRM 报价太贵，半天做了一个开源版：最值得抄的是这 4 个动作",
+      "body": "不到10人的销售团队，CRM报价一年8万美元。\n\n这家公司没买，花半天做了一个自己的版本，还把代码按MIT许可证开源了。现在这条帖子有76万浏览、7678次收藏。\n\n先别学“半天做SaaS”。真正适合个人接单和小团队抄的，是四个动作：\n\n邮件和日历出现新客户时，自动补进客户表；\n每个客户只保留一个“下一步做什么”；\nAI查到的信息必须带来源，别把猜测写进客户档案；\n所有自动发送先排队，最后由人点确认。\n\n你甚至不需要开发。飞书多维表、Notion或普通表格都能先做：客户、来源、最近联系、下一步、截止时间，五列够了。\n\n先跑两周。如果你真的因为忘记跟进丢单，再考虑换CRM；如果表格都没更新，买更贵的软件也救不了。\n\n这条内容最值得搬的不是“CRM已死”，而是小团队先把最痛的四个动作做顺。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只保留标题和一个真实物件；内页呈现可执行清单、流程或核验结果。避免模型头像、机器人、发光渐变、夸张收益数字和未经核实的效果对比。",
+      "video_script": "一个不到10人的销售团队收到CRM一年8万美元的报价，干脆半天做了一个开源版。别急着学半天做SaaS，个人接单最值得抄的是四件事：新客户自动进表、每人只留一个下一步、AI资料必须带来源、自动发送必须人工确认。先用表格跑两周，真的因为跟进漏单，再考虑上更重的CRM。工具贵不贵不是重点，能不能让你少漏一次跟进才是。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080304",
+      "hotspot_id": "2026080304",
+      "platform": "小红书",
+      "title": "别把 Claude 当一个万能员工：一个人做业务，先拆这 4 个角色",
+      "body": "我以前也会把所有事都扔给同一个AI：\n\n查资料、写文案、回客户、做复盘，最后上下文挤成一团，它也不知道现在到底在扮演谁。\n\n日本有位创作者最近把Claude Code当成“一人公司”来用，帖子10.5万浏览、845次收藏。这个比喻真正有用的地方，不是零员工开公司，而是角色分开。\n\n个人接单可以先拆四个：\n\n前台：收集客户需求，只整理，不承诺；\n研究员：找资料，每条结论带来源；\n内容编辑：按你的口吻出初稿，不直接发布；\n项目助理：更新待办、截止时间和下一步。\n\n每个角色只写清三件事：它能看什么、要交什么、哪些动作必须问你。\n\n合同、报价、税务、最终发送，都不要自动化。\n\n角色分工的价值不是让AI假装有一家公司，而是让你第二天打开电脑，还知道昨天做到了哪里。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只保留标题和一个真实物件；内页呈现可执行清单、流程或核验结果。避免模型头像、机器人、发光渐变、夸张收益数字和未经核实的效果对比。",
+      "video_script": "别把Claude当一个万能员工。个人做业务最容易踩的坑，就是查资料、写文案、回客户、做复盘全部塞进一个对话。可以先拆四个角色：前台只收需求，研究员每条结论带来源，编辑只出初稿，项目助理只管待办。每个角色再写清能看什么、交什么、哪些动作必须问你。合同、报价和最终发送永远保留人工确认。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080305",
+      "hotspot_id": "2026080305",
+      "platform": "小红书",
+      "title": "把长视频丢给 Claude 自动切片：想真能用，先保留这 3 个时间点",
+      "body": "长视频自动切片，真正难的不是“切”，是别把一句话切得没头没尾。\n\n日本创作者展示了一个把长视频交给Claude自动生成短片的工具，6万浏览、571赞。不过原帖没有公开准确率，也没说最后人工修了多久。\n\n如果你自己做，先让AI只找三类时间点：\n\n一句能单独成立的结论；\n情绪明显变化的瞬间；\n有起因和结果的完整小案例。\n\n每条候选都保留前后各15秒，再人工检查字幕、人名、数字和画面有没有断。\n\n能自动找候选，已经能省时间；别把“自动切片”理解成“直接发布”。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只保留标题和一个真实物件；内页呈现可执行清单、流程或核验结果。避免模型头像、机器人、发光渐变、夸张收益数字和未经核实的效果对比。",
+      "video_script": "长视频自动切片最怕什么？不是切得慢，是把一句话切得没头没尾。让AI先只找三类时间点：能独立成立的结论、情绪变化、完整小案例。每条前后多留15秒，再人工检查字幕、人名、数字和画面。自动找候选已经很省时间，但自动发布还差得远。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080306",
+      "hotspot_id": "2026080306",
+      "platform": "小红书",
+      "title": "一份 AI 学习清单在日本被收藏 1.8 万次，但别照单全收",
+      "body": "一份“少看两小时Netflix，改看5个AI视频”的清单，在日本X上被收藏了1.8万次。\n\n这个包装很会抓人，但“看完AI水平提升100倍”显然不能当事实。\n\n如果要做中文版，别直接搬5张截图。更实用的安排是：\n\n20分钟看模型为什么会答错；\n30分钟学一次完整提示和资料整理；\n40分钟跟做一个能交付的小项目；\n20分钟看隐私、版权和核验；\n10分钟写下明天要试的一个动作。\n\n学习清单最大的敌人不是资源少，是收藏以后从没点开。\n\n所以每看完一个，必须留下一个产物：提示词、表格、页面或复盘。没有产物，就不算学完。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只保留标题和一个真实物件；内页呈现可执行清单、流程或核验结果。避免模型头像、机器人、发光渐变、夸张收益数字和未经核实的效果对比。",
+      "video_script": "一份AI学习清单在日本被收藏1.8万次，标题是少看两小时Netflix，改看5个AI视频。100倍提升当然是夸张，但它提醒了一个问题：收藏不等于学会。两小时可以这样分：20分钟懂原理，30分钟学方法，40分钟跟做项目，20分钟补隐私和核验，最后10分钟写明天要试的动作。每看完一个资源，必须留下一个产物。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080307",
+      "hotspot_id": "2026080307",
+      "platform": "小红书",
+      "title": "Claude Code 的 Skill 开始有“应用商店”了，安全性不能只看热门",
+      "body": "Claude Code的Skill开始像插件一样越装越多，也出现了专门收集Skill的网站。\n\n日本一条相关帖子有6.4万浏览、1043次收藏。但原帖一句“基本都安全”不能直接信。\n\n安装前至少看四件事：代码从哪里来；会读取哪些文件；最近一次更新是什么时候；出问题怎么卸载。\n\n热门只说明很多人想试，不说明已经有人审过代码。\n\n目录可以帮你找工具，权限边界还是要自己看。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只保留标题和一个真实物件；内页呈现可执行清单、流程或核验结果。避免模型头像、机器人、发光渐变、夸张收益数字和未经核实的效果对比。",
+      "video_script": "Claude Code的Skill开始像插件一样越装越多，也出现了专门的目录站。相关帖子有1043次收藏，但热门不等于安全。安装前看四件事：代码来源、能读哪些文件、最近更新时间、怎么卸载。目录负责发现，安全边界必须自己确认。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080308",
+      "hotspot_id": "2026080308",
+      "platform": "小红书",
+      "title": "四台英伟达设备跑本地 AI：这不是普通人的入门配置",
+      "body": "有人用两台DGX Spark跑执行模型，再用两台DGX Station跑规划模型。\n\n这个配置在X上有28万浏览，但它不是普通人的本地AI入门教程。\n\n能借鉴的是分工：一个模型负责规划和检查，一个负责真正写代码、跑任务。\n\n不能照搬的是硬件结论。设备、内存、量化方式和功耗都会决定体验。\n\n普通用户先用云端或一台现有电脑验证工作流，再考虑买设备。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只保留标题和一个真实物件；内页呈现可执行清单、流程或核验结果。避免模型头像、机器人、发光渐变、夸张收益数字和未经核实的效果对比。",
+      "video_script": "四台英伟达设备跑本地AI的帖子很火，但别把它当普通电脑教程。真正能抄的是分工：规划模型负责拆任务和检查，执行模型负责写代码和跑动作。先用云端或现有电脑验证工作流，确认隐私、速度或成本真的有问题，再谈买硬件。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080309",
+      "hotspot_id": "2026080309",
+      "platform": "小红书",
+      "title": "凌晨 2:45 还在和 Claude 改项目：这条梗为什么有人转",
+      "body": "“凌晨2:45的我和Claude。”\n\n就这一句配一段视频，20万浏览、3663赞。\n\n它有共鸣，因为很多人真的经历过：本来只想改一个小问题，回过神已经半夜。\n\n如果做自己的版本，别只拍屏幕。加上三个信息：原本要解决什么、AI在哪一步卡住、最后你亲手改了什么。\n\n这样才不是熬夜打卡，而是一段有结论的工作记录。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只保留标题和一个真实物件；内页呈现可执行清单、流程或核验结果。避免模型头像、机器人、发光渐变、夸张收益数字和未经核实的效果对比。",
+      "video_script": "凌晨2:45还在和Claude改项目，这种视频为什么有人看？因为场景是真的。但自己的版本别只拍屏幕，补三句话：原本要解决什么，AI在哪一步卡住，最后你亲手改了什么。真实过程加一个具体结论，才不是单纯熬夜打卡。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080310",
+      "hotspot_id": "2026080310",
+      "platform": "小红书",
+      "title": "一场 Stanford AI 讲座被收藏 1162 次，但先核对它到底讲什么",
+      "body": "一段号称能讲清ChatGPT和Claude原理的Stanford视频，被收藏了1162次。\n\n不过原帖没有把课程标题、讲者和范围写完整，所以现在还不适合直接搬成“必看课”。\n\n真正可用的发布方式，是先把视频看完，整理三件事：模型为什么会编、上下文为什么会丢、什么时候必须查来源。\n\n链接只是入口，中文观看笔记才是这个账号应该补的价值。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只保留标题和一个真实物件；内页呈现可执行清单、流程或核验结果。避免模型头像、机器人、发光渐变、夸张收益数字和未经核实的效果对比。",
+      "video_script": "一场号称讲清ChatGPT和Claude原理的Stanford视频，被收藏1162次。但原帖连课程信息都没写完整，先别急着搬链接。真正值得做的是看完以后整理三件事：模型为什么会编、上下文为什么会丢、什么时候必须查来源。资源只是入口，中文笔记才是价值。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080311",
+      "hotspot_id": "2026080311",
+      "platform": "小红书",
+      "title": "Claude Code 一条命令接入 1.7 万只股票数据？金融内容先别照抄",
+      "body": "一条命令把金融数据接进Claude Code，帖子被收藏了1809次。\n\n看起来很方便，但金融数据最重要的不是“接进来了”，而是来源、延迟、市场覆盖和授权。\n\n如果只是做研究，至少让每个数字带时间和来源；如果涉及交易或给别人建议，不能让AI直接下结论。\n\n能查数据，不等于能替你做投资决策。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只保留标题和一个真实物件；内页呈现可执行清单、流程或核验结果。避免模型头像、机器人、发光渐变、夸张收益数字和未经核实的效果对比。",
+      "video_script": "Claude Code一条命令接入1.7万只股票数据的帖子，被收藏1809次。但金融数据先看四件事：来源、延迟、覆盖、授权。每个数字都要带时间和出处，涉及交易或对外建议时必须人工复核。能查到数据，不等于能替你做投资决策。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080312",
+      "hotspot_id": "2026080312",
+      "platform": "小红书",
+      "title": "有人称 Claude Code 8 分钟找到钱包漏洞：攻击复现不能当教程发",
+      "body": "有人称Claude Code用8分钟找到了钱包攻击里的同类漏洞。\n\n这个数字很抓人，但正文没有给出足够独立复现材料，不能直接写成事实教程。\n\n对普通开发者更有用的提醒是：密钥别进仓库、依赖定期更新、关键交易路径做人工审计。\n\n安全内容可以讲防守，不要把未经授权的攻击复现包装成技巧。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只保留标题和一个真实物件；内页呈现可执行清单、流程或核验结果。避免模型头像、机器人、发光渐变、夸张收益数字和未经核实的效果对比。",
+      "video_script": "有人称Claude Code八分钟找到钱包漏洞，但证据还不够，攻击步骤也不适合拿来做教程。普通开发者真正该做的是三件事：密钥不进仓库、依赖定期更新、关键交易路径人工审计。AI降低了找漏洞的门槛，也让基础安全更不能省。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080313",
+      "hotspot_id": "2026080313",
+      "platform": "小红书",
+      "title": "一条“东方仙境”AI视频拿到 6546 赞，审美题材比模型名更重要",
+      "body": "一条东方仙境AI视频，在X上有6546赞、759次转发。\n\n它火的原因不能简单归给某个模型。题材、色彩、镜头运动和音乐共同决定了效果。\n\n如果做自己的版本，先写清三个视觉词、一个镜头运动和一条禁用项，再去生成。\n\n原帖没有公开完整流程，也没有说明素材授权，所以现在只能做审美拆解，不能照搬画面和提示词。",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只保留标题和一个真实物件；内页呈现可执行清单、流程或核验结果。避免模型头像、机器人、发光渐变、夸张收益数字和未经核实的效果对比。",
+      "video_script": "一条东方仙境AI视频拿到6546赞。别只问它用了什么模型，先看题材、色彩、镜头运动和音乐。自己的版本先写三个视觉词、一个镜头动作和一条禁用项，再去生成。没有完整流程和版权信息时，只做审美拆解，不照搬画面。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080314",
+      "hotspot_id": "2026080314",
+      "platform": "小红书",
+      "title": "别再只看每百万Token多少钱：这次有人开始算整件任务",
+      "body": "今天最热的一组 AI 讨论，不是“谁又第一了”，而是：完成同一件事到底花多少钱。\n\nCline 引用一项基准，称 DeepSeek V4-Flash 完成同类任务的成本比 Fable 低 105 倍。另一位用户晒出一次 32 分钟任务，账单是 0.07 美元。\n\n数字很吸睛，但选模型别只抄结论。\n\n把同一个真实任务分别跑三次，记下：\n\n总费用｜总时间｜重试次数｜最后能不能直接用\n\n如果一个模型单价便宜，却要来回改十轮，它未必更省。\n\nCline 目前还给了免费试用入口，但期限、地区和服务稳定性都要以当天页面为准。\n\n105 倍是特定基准，0.07 美元是单次演示。真正有用的是这张对照表，不是神话一个数字。\n\n#DeepSeek #AI编程 #效率工具",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只保留标题和一个真实物件；内页呈现可执行清单、流程或核验结果。避免模型头像、机器人、发光渐变、夸张收益数字和未经核实的效果对比。",
+      "video_script": "别再只看每百万Token多少钱。Cline引用基准称DeepSeek V4 Flash完成同类任务成本低很多，另一个公开演示三十二分钟花了零点零七美元。数字只能当线索。拿同一个真实任务跑三次，记录总费用、总时间、重试次数和结果能不能直接用。单价便宜但要改十轮，不一定更省。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080315",
+      "hotspot_id": "2026080315",
+      "platform": "小红书",
+      "title": "YC 把公司内部的 AI 助手开源了，但先别急着装",
+      "body": "YC 把自己公司内部用的 AI 系统开源了，名字叫 QM。\n\n他们说，会计、法务、活动和工程团队都在用。原帖已经有 44.9 万浏览，收藏甚至比点赞还多。\n\n但评论区问得比发布帖更有用：\n\n谁能让它碰客户资料？\n两个 Agent 同时改一件事，听谁的？\n它做完以后，谁来验收？\n共享记忆写错了，怎么回滚？\n\n如果你也想给团队装“公司大脑”，先建一张最普通的表：\n\n任务｜能读什么｜能改什么｜必须谁确认｜失败后退回哪里\n\n能把这五列写清楚，再研究多智能体。写不清楚，Agent 越多只是把混乱跑得更快。\n\nQM 免费开源，但法务、财务数据能不能直接放进去，必须先看权限和部署说明。\n\n#AI工具 #小团队管理 #智能体",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只保留标题和一个真实物件；内页呈现可执行清单、流程或核验结果。避免模型头像、机器人、发光渐变、夸张收益数字和未经核实的效果对比。",
+      "video_script": "YC把公司内部的多智能体系统QM开源了，原帖四十四万多浏览、接近三千收藏。但评论区最关心的不是装法，而是权限、共享记忆和交接。小团队上Agent前先写五列：任务、能读什么、能改什么、谁确认、失败退回哪里。写不清这五列，多装几个Agent只会把混乱跑得更快。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080316",
+      "hotspot_id": "2026080316",
+      "platform": "小红书",
+      "title": "每天跟AI聊到停不下来，Hank Green先给自己踩了刹车",
+      "body": "Hank Green 公开说，自己最近用 AI 的状态“不健康”。\n\n不是AI突然变坏，而是这种对话太容易没有结束：再问一个、再改一版、再开一条支线，半小时就没了。\n\n如果你也会聊到停不下来，可以先给任务加三个刹车：\n\n开始前写清这次要拿到什么；\n最多追问三轮，没解决就换方法；\n结果一旦能用，先离开聊天框去做现实动作。\n\n比如写活动方案，目标不是和AI聊出“完美方案”，而是拿到一版能发给同事批注的文档。\n\nHank Green讲的是个人感受，不代表所有人都有同样问题，也不是医学诊断。\n\n#AI效率 #时间管理 #HankGreen",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只保留标题和一个真实物件；内页呈现可执行清单、流程或核验结果。避免模型头像、机器人、发光渐变、夸张收益数字和未经核实的效果对比。",
+      "video_script": "Hank Green公开说，自己最近用AI的状态不健康。开放式对话很容易没有结束，再问一个、再改一版，半小时就没了。可以加三条刹车：开始前写交付物、最多追问三轮、结果能用就离开聊天框去做现实动作。这是个人经验，不是医学诊断。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080317",
+      "hotspot_id": "2026080317",
+      "platform": "小红书",
+      "title": "Snapchat不再奖励纯AI内容：以后要留下这三种“人做的证据”",
+      "body": "Snapchat 刚改了 Spotlight 奖励政策：完全由 AI 生成的内容，不再拿奖励。\n\n重点是“完全生成”，不是用了AI就一刀切。\n\n如果你在做AI图片、视频或口播，建议从今天开始留三类东西：\n\n原始选题和脚本修改记录；\n自己拍的素材、录音或操作录屏；\n成片前后的剪辑对照。\n\n这些不只是申诉时有用，也能逼自己回答：这条内容里，真正属于我的判断和工作是什么？\n\n纯提示词出片越来越难长期吃平台红利。AI可以省步骤，但账号不能只剩生成按钮。\n\n具体适用地区和奖励细则，要以Snapchat最新条款为准。\n\n#AI视频 #内容创作 #创作者变现",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只保留标题和一个真实物件；内页呈现可执行清单、流程或核验结果。避免模型头像、机器人、发光渐变、夸张收益数字和未经核实的效果对比。",
+      "video_script": "Snapchat刚调整Spotlight奖励：完全由AI生成的内容不再拿奖励。不是用了AI就不行，重点是你有没有实质创作。现在开始留三类证据：选题和脚本修改、自己拍的素材或录音、成片前后的剪辑对照。AI可以省步骤，但账号不能只剩生成按钮。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080318",
+      "hotspot_id": "2026080318",
+      "platform": "小红书",
+      "title": "Google上线一天就撤掉AI地图功能：做历史图最怕这一件事",
+      "body": "Google 一个AI地图功能，上线一天就撤了。\n\n它能把生成画面叠到真实的 Google Earth 地图上。效果很直观，问题也很直观：截图一旦离开产品页面，很容易被当成真实历史影像。\n\n以后看到“某地过去/未来长这样”的AI地图，先查四件事：\n\n有没有AI生成标记；\n图层日期是什么；\n坐标能不能在原始地图打开；\n图片来自官方数据还是用户生成。\n\n地图长得像证据，但生成图层仍然只是生成内容。\n\nGoogle目前是撤回功能，不等于已经永久取消。\n\n#GoogleEarth #AI图片 #信息核验",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只保留标题和一个真实物件；内页呈现可执行清单、流程或核验结果。避免模型头像、机器人、发光渐变、夸张收益数字和未经核实的效果对比。",
+      "video_script": "Google一个AI地图功能上线一天就撤了，因为生成画面叠在真实地图上，截图很容易被当成历史影像。以后看AI地图查四件事：有没有生成标记、图层日期、原始坐标、数据来自官方还是用户。地图长得像证据，生成图层仍然只是生成内容。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080319",
+      "hotspot_id": "2026080319",
+      "platform": "小红书",
+      "title": "今天起，欧盟这4类AI内容要更清楚地告诉用户",
+      "body": "今天起，欧盟AI法案里一组很具体的透明度要求开始适用。\n\n做AI产品或跨境内容，先检查四个场景：\n\n用户是不是在和AI聊天；\n生成内容有没有机器可读标记；\n画面或声音是不是深度伪造；\n公共利益信息是不是由AI生成、且没有人工审阅。\n\n这不等于“所有AI内容必须贴同一个大标签”，不同场景有例外和过渡期。\n\n也别把高风险系统的其他期限混进来。欧盟官方FAQ已经把时间线分开列了。\n\n如果账号或产品面向欧盟用户，今天应该让法务和产品一起过一遍Article 50，而不是只改文案末尾。\n\n#欧盟AI法案 #AI合规 #出海",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只保留标题和一个真实物件；内页呈现可执行清单、流程或核验结果。避免模型头像、机器人、发光渐变、夸张收益数字和未经核实的效果对比。",
+      "video_script": "今天起，欧盟AI法案Article 50透明度要求开始适用。做跨境内容和AI产品先查四个场景：用户是否在和AI互动、生成内容有没有机器标记、是否是深度伪造、公共利益文本是否未经人工审阅。不同场景有例外和过渡期，涉及业务要让专业人员确认。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080320",
+      "hotspot_id": "2026080320",
+      "platform": "小红书",
+      "title": "7.6PB训练数据里藏着密钥：公开数据集不等于安全数据集",
+      "body": "安全团队扫描了 7.6PB 的公开AI训练数据，称发现了仍然有效的密钥。\n\n最实用的提醒不是数字有多大，而是：公开数据集里也可能混进配置文件、访问令牌和内部路径。\n\n上传数据前至少做三遍：\n\n搜常见密钥格式；\n删 .env、配置备份和日志；\n对曾经暴露的凭据直接轮换，不要只删文件。\n\n删除仓库里的那一行，不代表历史版本和大文件对象里已经消失。\n\n研究的具体数量和验证流程仍要看原报告，真实密钥不能二次展示。\n\n#数据安全 #HuggingFace #AI训练",
+      "visual_brief": "4:5黑白极简信息卡，少量圆角简笔画。首图只保留标题和一个真实物件；内页呈现可执行清单、流程或核验结果。避免模型头像、机器人、发光渐变、夸张收益数字和未经核实的效果对比。",
+      "video_script": "安全团队扫描七点六PB公开AI训练数据，称发现仍有效的密钥。上传数据前做三遍：搜密钥格式、删环境配置和日志、暴露过的凭据直接轮换。只删当前文件，不代表历史版本和大文件对象里已经消失。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    }
+  ],
+  "gaps": [
+    "Hacker News Algolia、TechCrunch RSS和公开Web在本轮出现TLS/网络错误，未把失败或空结果包装成新内容。",
+    "Instagram、TikTok、LinkedIn未取得同时满足时效、AI相关和公开互动可复核的样本。",
+    "国内平台内全量语义查重不可用；稀缺度封顶55，并保留人工复核任务。"
+  ],
+  "generated_at": "2026-08-03T08:31:39+08:00"
+}
