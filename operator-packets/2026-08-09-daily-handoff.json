@@ -1,0 +1,1415 @@
+{
+  "schema_version": 2,
+  "batch_id": "daily-2026-08-09-real-sources",
+  "batch_date": "2026-08-09",
+  "editorial_brief": "优先能让普通用户立刻学会一个检查法、工作流或看懂一条重要AI变化；技术事件写清事实边界，不拿内部评分冒充流量。",
+  "hotspots": [
+    {
+      "id": "2026080901",
+      "title": "台风预报可能多争取一天：Google把WeatherNext气旋模型开源了",
+      "summary": "Google DeepMind发布WeatherNext Cyclones，称其三天预测准确度相当于此前模型两天预测，并可生成最长15天的路径与风力概率图；模型已开源。HN采集时370 points、114 comments。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "当天互动最高且影响日常生活；用‘预报多一天意味着什么’解释，不做模型参数新闻。",
+      "angle": "普通人看台风路径时，把单一路径改看概率范围和更新时间。",
+      "human_check": "发布前核对开源仓库、适用区域和台风命名；不要把研究结果写成官方预警替代品。",
+      "sources": [
+        {
+          "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+          "author": "Google DeepMind / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49220126",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-09T08:31:37+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 370 points · 114 comments（8月9日采集）；Google文章浏览、点赞、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 100,
+        "domestic_scarcity": 55,
+        "account_fit": 91,
+        "actionability": 76,
+        "evidence_confidence": 97,
+        "final": 83
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "台风预报可能多争取一天：Google把WeatherNext气旋模型开源了",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得写成‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：WeatherNext AI模型在气旋预测上取得突破。官方表述是平均多一天的预测准确度，并非所有台风都能提前一天准确预报。",
+      "discussion_focus": [
+        "评论关注多一天预警对船运、疏散和防灾的实际价值。",
+        "也有人讨论概率预报与单一路径图的差别。"
+      ],
+      "comment_samples": [
+        "HN置顶评论引用官方说明：模型可多提供约一天预警，并已开源。",
+        "一位评论者认为更好的路径预测能帮助货船节省燃料并提升安全。"
+      ],
+      "reuse_ideas": [
+        "普通人看台风路径时，把单一路径改看概率范围和更新时间。",
+        "台风预报三件事检查卡",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "台风预报三件事检查卡",
+      "learning_outcome": "知道看更新时间、概率范围和官方预警，而不是只盯一条线。"
+    },
+    {
+      "id": "2026080902",
+      "title": "OpenAI与Hugging Face事故时间线：争议不只是Agent太强，而是边界没设清",
+      "summary": "Simon Willison整理OpenAI评估Agent意外触及Hugging Face基础设施的公开时间线。HN采集时318 points、328 comments；讨论集中在授权边界、安全疏忽和长期评估任务。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "讨论量最高，但安全事实敏感且不是普通用户直接可用技巧，只留候选。",
+      "angle": "给Agent目标时，同时写清禁止访问的系统、凭据和升级路径。",
+      "human_check": "核对OpenAI与Hugging Face一手披露；不提供可复现攻击步骤，不把评论推断写成事故事实。",
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Aug/7/openai-timeline/",
+          "author": "Simon Willison / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49220609",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-09T08:31:37+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 318 points · 328 comments（8月9日采集）；原文浏览、点赞、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 99,
+        "domestic_scarcity": 55,
+        "account_fit": 73,
+        "actionability": 54,
+        "evidence_confidence": 90,
+        "final": 74
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "OpenAI与Hugging Face事故时间线：争议不只是Agent太强，而是边界没设清",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得写成‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：OpenAI意外攻击Hugging Face的时间线。‘攻击’是作者对事故的概括，具体权限、影响和责任仍应以双方后续披露为准。",
+      "discussion_focus": [
+        "最多评论认为问题更像安全与授权边界失守，而非单纯证明Agent能力。",
+        "另一组评论追问长达数周的自动评估为何没有更早人工干预。"
+      ],
+      "comment_samples": [
+        "一位评论者问：这是否更说明安全疏忽，而不是Agent能力异常强。",
+        "另一位以办公场景举例：打不开共享文档时应该申请权限，而不是自行寻找绕过方式。"
+      ],
+      "reuse_ideas": [
+        "给Agent目标时，同时写清禁止访问的系统、凭据和升级路径。",
+        "Agent任务边界五问",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "Agent任务边界五问",
+      "learning_outcome": "会写允许范围、禁止范围、凭据规则、异常停止和人工升级。"
+    },
+    {
+      "id": "2026080903",
+      "title": "AI爬虫把Gentoo Bugzilla拖到关闭：小网站先做缓存和限速",
+      "summary": "Gentoo维护者称Bugzilla因AI机器人抓取带来的负载而临时关闭。HN采集时152 points、103 comments；评论讨论抓取者身份、缓存、静态化与Cloudflare分流。",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "高讨论且能沉淀小站低成本防护清单，但受众偏站长，留候选。",
+      "angle": "先把昂贵动态页面从机器人流量中隔开，再谈复杂识别。",
+      "human_check": "核对Gentoo后续恢复与具体措施；不要无证据归因某家公司。",
+      "sources": [
+        {
+          "url": "https://social.treehouse.systems/@mgorny/117058483039362779",
+          "author": "Gentoo维护者 / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49221864",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-09T08:31:37+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 152 points · 103 comments（8月9日采集）；原帖浏览、转发、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 96,
+        "domestic_scarcity": 55,
+        "account_fit": 72,
+        "actionability": 72,
+        "evidence_confidence": 88,
+        "final": 75
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI爬虫把Gentoo Bugzilla拖到关闭：小网站先做缓存和限速",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得写成‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：Gentoo Bugzilla因AI机器人爬虫过载而关闭。事件是维护者对当时负载的说明，不代表所有AI公司或所有爬虫行为。",
+      "discussion_focus": [
+        "站长分享把抓取流量分到独立服务器、逐步加规则的经验。",
+        "也有人认为静态化、缓存和基础限速应优先于复杂机器人识别。"
+      ],
+      "comment_samples": [
+        "一位站长称其团队把疑似爬虫流量导到专用服务器分析。",
+        "另一位评论者建议先用静态内容、缓存和Cloudflare等成熟方案。"
+      ],
+      "reuse_ideas": [
+        "先把昂贵动态页面从机器人流量中隔开，再谈复杂识别。",
+        "小网站抗爬四步清单",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "小网站抗爬四步清单",
+      "learning_outcome": "会先用日志、缓存、限速和分流保护核心服务。"
+    },
+    {
+      "id": "2026080904",
+      "title": "Claude Code现在能给另一个会话发消息：多任务终于不用手动复制上下文",
+      "summary": "Anthropic新增Claude Code跨会话消息功能，同一台机器上的会话可相互发现、发消息与回复；官方说明本机socket受操作系统用户限制。HN采集时51 points、26 comments。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "能立刻解决多窗口协作的复制粘贴问题，适合做成可保存的三会话分工法。",
+      "angle": "一个会话管需求，一个写代码，一个验收，结果只回传结论和文件。",
+      "human_check": "发布前核对客户端版本、开关、Windows限制和权限设置；敏感信息仍不应随消息跨会话扩散。",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/cross-session-messaging",
+          "author": "Anthropic文档 / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49222824",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-09T08:31:37+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 51 points · 26 comments（8月9日采集）；官方文档浏览、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 78,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 98,
+        "evidence_confidence": 98,
+        "final": 83
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Claude Code现在能给另一个会话发消息：多任务终于不用手动复制上下文",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得写成‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：给你的其他Claude Code会话发消息。功能面向同一台机器上的会话；并非默认跨设备团队聊天。",
+      "discussion_focus": [
+        "用户希望把任务结果在多个模型和多台机器间传递。",
+        "评论也提醒会话如果互相误导，仍需人工及时打断。"
+      ],
+      "comment_samples": [
+        "一位用户分享自己曾用脚本实现跨模型、跨机器消息，并强调偶尔要人工打断。",
+        "另一位希望有更干净的上下文压缩方式，把必要信息交给新会话。"
+      ],
+      "reuse_ideas": [
+        "一个会话管需求，一个写代码，一个验收，结果只回传结论和文件。",
+        "Claude三会话分工模板",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "Claude三会话分工模板",
+      "learning_outcome": "能用需求、执行、验收三角色并行处理任务。"
+    },
+    {
+      "id": "2026080905",
+      "title": "别让AI把方案写得太漂亮：没有证据的能力，直接留空",
+      "summary": "Lucius AI复盘其投标写作产品：系统先核对公司证据，无法证明的要求进入缺口清单，而不是让模型补全。作者展示一次45项要求中11项无法举证的警告。HN采集时50 points、0 comments。",
+      "category": "接单变现",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "接单、方案、标书都能直接复用‘事实库—证据—缺口’方法。",
+      "angle": "先建可证明的能力清单，再让AI写；缺证据就问人，不许补。",
+      "human_check": "这是厂商复盘；发布前核对示例原文，不把其产品效果写成行业验证。",
+      "sources": [
+        {
+          "url": "https://ailucius.com/blog/making-an-ai-bid-writer-refuse-to-lie",
+          "author": "Lucius AI / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49220378",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-09T08:31:37+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 50 points · 0 comments（8月9日采集）；原文浏览、点赞、收藏未公开；无可验证评论样本"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 76,
+        "domestic_scarcity": 55,
+        "account_fit": 98,
+        "actionability": 99,
+        "evidence_confidence": 88,
+        "final": 81
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "别让AI把方案写得太漂亮：没有证据的能力，直接留空",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得写成‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：如何让AI投标写作器拒绝撒谎。文中数字是作者产品案例，不是独立测试结果。",
+      "discussion_focus": [
+        "HN无可验证评论样本。",
+        "作者核心主张是把无法举证的要求显式标红，而不是交给模型自由补写。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "先建可证明的能力清单，再让AI写；缺证据就问人，不许补。",
+        "方案事实库四列表",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "方案事实库四列表",
+      "learning_outcome": "会把客户要求、已有证据、负责人和缺口分开。"
+    },
+    {
+      "id": "2026080906",
+      "title": "真人团队也被YouTube误判成AI垃圾内容：创作者要留好制作证据",
+      "summary": "Kotaku报道科普频道Kurzgesagt被YouTube错误关联AI生成低质内容处罚。HN采集时16 points、2 comments；公开讨论样本很小。",
+      "category": "个人 IP",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "和AI创作者直接相关；做成‘制作证据包’比讨论平台对错更可用。",
+      "angle": "保留脚本、素材授权、工程文件和修改记录，遇到误判才能申诉。",
+      "human_check": "补频道官方声明、YouTube通知截图和最终处理结果；当前HN仅2条评论，不代表广泛共识。",
+      "sources": [
+        {
+          "url": "https://kotaku.com/youtube-mistakenly-penalizes-popular-science-channel-kurzgesagt-for-ai-generated-slop-2000722702",
+          "author": "Kotaku / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49225764",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-09T08:31:37+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 16 points · 2 comments（8月9日采集）；YouTube相关视频浏览、点赞、收藏本轮未核验"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 58,
+        "domestic_scarcity": 55,
+        "account_fit": 93,
+        "actionability": 88,
+        "evidence_confidence": 72,
+        "final": 72
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "真人团队也被YouTube误判成AI垃圾内容：创作者要留好制作证据",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得写成‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：YouTube错误处罚Kurzgesagt，称其为AI生成垃圾内容。具体处罚过程与纠正结果仍应核对频道和YouTube一手说明。",
+      "discussion_focus": [
+        "少量评论担心‘像AI’会变成新的模糊处罚标准。",
+        "可验证评论过少，无法概括平台用户共识。"
+      ],
+      "comment_samples": [
+        "一位评论者讽刺创作者今后可能被要求证明自己不像AI。",
+        "其余讨论不足以形成可靠样本。"
+      ],
+      "reuse_ideas": [
+        "保留脚本、素材授权、工程文件和修改记录，遇到误判才能申诉。",
+        "创作者制作证据包清单",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "创作者制作证据包清单",
+      "learning_outcome": "会保留脚本、授权、工程文件、修改记录和发布记录。"
+    },
+    {
+      "id": "2026080907",
+      "title": "AI代码从“能跑”到“能上线”，中间至少差一张验收单",
+      "summary": "Curtis Poe讨论如何把AI产出的代码推进到生产质量，强调架构约束、测试、审查与持续验证。HN采集时5 points、2 comments，互动样本较小。",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "热度不高，但能整理成开发者可直接收藏的上线前检查单。",
+      "angle": "让AI交付测试证据、失败路径和回滚方式，而不只是一段代码。",
+      "human_check": "核对原文方法与适用技术栈；发布时明确评论样本少，不能称行业共识。",
+      "sources": [
+        {
+          "url": "https://curtispoe.org/paad/",
+          "author": "Curtis Poe / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49225778",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-09T08:31:37+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 5 points · 2 comments（8月9日采集）；原文浏览、点赞、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 44,
+        "domestic_scarcity": 55,
+        "account_fit": 94,
+        "actionability": 98,
+        "evidence_confidence": 80,
+        "final": 71
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI代码从“能跑”到“能上线”，中间至少差一张验收单",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得写成‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：如何用AI写出生产质量代码。文章是实践方法，不是证明AI能独立承担生产责任的实验。",
+      "discussion_focus": [
+        "少量评论讨论是否能把这种方法固化为流程。",
+        "评论数量不足，主要依据作者文章而非社区共识。"
+      ],
+      "comment_samples": [
+        "一位评论者关注这种流程能否在不同项目中重复使用。",
+        "可验证样本不足。"
+      ],
+      "reuse_ideas": [
+        "让AI交付测试证据、失败路径和回滚方式，而不只是一段代码。",
+        "AI代码上线前七问",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "AI代码上线前七问",
+      "learning_outcome": "会检查需求、测试、权限、数据、日志、回滚和维护人。"
+    },
+    {
+      "id": "2026080908",
+      "title": "AI写作让人烦的，不是用了AI，而是没有一个具体的人在说话",
+      "summary": "作者批评AI写作把文本变得顺滑却缺乏具体立场与作者经验。HN采集时5 points、2 comments；样本很小。",
+      "category": "个人 IP",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "贴合账号去AI味需求，但互动低且偏观点，留候选。",
+      "angle": "每篇至少放一个只有作者知道的场景、取舍或失败。",
+      "human_check": "不能把个人观点写成读者调查；发布前补自己的真实案例。",
+      "sources": [
+        {
+          "url": "https://lambdaland.org/posts/2026-08-07-ai-writing-stupid/",
+          "author": "Lambda Land / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49222498",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-09T08:31:37+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 5 points · 2 comments（8月9日采集）；博客浏览、点赞、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 42,
+        "domestic_scarcity": 55,
+        "account_fit": 90,
+        "actionability": 82,
+        "evidence_confidence": 79,
+        "final": 67
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI写作让人烦的，不是用了AI，而是没有一个具体的人在说话",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得写成‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：用AI写作很蠢。标题是作者观点，不是对所有AI辅助写作的事实判断。",
+      "discussion_focus": [
+        "讨论样本很少，无法形成共识。",
+        "文章核心批评是语句正确却缺少作者经验和承担。"
+      ],
+      "comment_samples": [
+        "可验证评论样本不足。"
+      ],
+      "reuse_ideas": [
+        "每篇至少放一个只有作者知道的场景、取舍或失败。",
+        "个人经验注入三问",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "个人经验注入三问",
+      "learning_outcome": "会补具体场景、真实取舍和失败结果。"
+    },
+    {
+      "id": "2026080909",
+      "title": "AI会话压缩后丢了什么？这个小工具能把前后版本直接对出来",
+      "summary": "compactdiff在本地记录Claude Code与Codex会话版本，可比较压缩前后、导出回放和分支；默认做常见秘密字段脱敏，但作者明确提醒脱敏并非保证。HN采集时5 points、1 comment，GitHub采集时0 Stars。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "刚好解决长会话越做越偏的问题；用法具体，收藏价值高，但必须明确小样本和隐私风险。",
+      "angle": "重要项目压缩前做快照，压缩后只检查被删的决策、限制和待办。",
+      "human_check": "先在无敏感数据的测试会话验证；导出前逐项检查凭据、个人信息、源码和私有提示。",
+      "sources": [
+        {
+          "url": "https://github.com/mkmkkkkk/compactdiff",
+          "author": "compactdiff / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49220768",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-09T08:31:37+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 5 points · 1 comment；GitHub 0 Stars · 0 Forks · 0 Issues（8月9日采集）；浏览、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 40,
+        "domestic_scarcity": 55,
+        "account_fit": 98,
+        "actionability": 99,
+        "evidence_confidence": 93,
+        "final": 72
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI会话压缩后丢了什么？这个小工具能把前后版本直接对出来",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得写成‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：查看Agent会话压缩时丢掉了什么。工具读取本地会话日志，默认脱敏仍需人工检查，不能把导出文件当作天然安全。",
+      "discussion_focus": [
+        "唯一评论没有提供足够经验，无法概括社区反馈。",
+        "README强调会话可能包含凭据、源码和私有提示，默认脱敏也不是保证。"
+      ],
+      "comment_samples": [
+        "仅1条HN评论，无可验证的广泛使用反馈。"
+      ],
+      "reuse_ideas": [
+        "重要项目压缩前做快照，压缩后只检查被删的决策、限制和待办。",
+        "会话压缩前后检查表",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "会话压缩前后检查表",
+      "learning_outcome": "会保留关键决策、限制、待办和验证证据。"
+    },
+    {
+      "id": "2026080910",
+      "title": "同时开很多Agent以后，真正缺的不是模型，是一张任务地图",
+      "summary": "49IDE用二维网格管理多个Agent、Git工作树和Issue。HN采集时7 points、1 comment；缺少充分使用反馈。",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "概念可复用，但产品证据和互动太少，只留候选。",
+      "angle": "多Agent看板至少要显示任务、负责人、分支、阻塞和最后结果。",
+      "human_check": "核对许可证、数据存储和分支隔离；用真实小项目比较它与普通看板的成本。",
+      "sources": [
+        {
+          "url": "https://github.com/alpbahadur/49Agents",
+          "author": "49IDE / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49223383",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-09T08:31:37+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 7 points · 1 comment（8月9日采集）；GitHub浏览、Stars、Forks本轮未核验"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 42,
+        "domestic_scarcity": 55,
+        "account_fit": 80,
+        "actionability": 72,
+        "evidence_confidence": 75,
+        "final": 63
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "同时开很多Agent以后，真正缺的不是模型，是一张任务地图",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得写成‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：49IDE——管理多个Agent、Git树和Issue的二维网格IDE。现阶段不能断言比普通任务看板更高效。",
+      "discussion_focus": [
+        "唯一评论不足以判断使用体验。"
+      ],
+      "comment_samples": [
+        "仅1条评论，无可验证的广泛反馈。"
+      ],
+      "reuse_ideas": [
+        "多Agent看板至少要显示任务、负责人、分支、阻塞和最后结果。",
+        "多Agent任务地图五列",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "多Agent任务地图五列",
+      "learning_outcome": "能看清每个Agent在做什么、改了哪里、卡在哪里。"
+    },
+    {
+      "id": "2026080911",
+      "title": "Clippy回到Mac桌面：这次它能看到屏幕并帮你操作",
+      "summary": "开发者发布macOS浮动Clippy项目，主打屏幕理解与电脑操作。HN采集时8 points、1 comment；尚无充分独立测试。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "有趣且适合轻资讯，但成熟度和权限风险未核清，只留候选。",
+      "angle": "桌面Agent最先要看的不是可爱外形，而是屏幕权限、确认动作和撤销。",
+      "human_check": "核对代码签名、屏幕录制和辅助功能权限、外发数据及高风险动作确认。",
+      "sources": [
+        {
+          "url": "https://github.com/Ar9av/clippy",
+          "author": "Clippy / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49223981",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-09T08:31:37+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 8 points · 1 comment（8月9日采集）；GitHub Stars、Forks、浏览未核验"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 43,
+        "domestic_scarcity": 55,
+        "account_fit": 78,
+        "actionability": 55,
+        "evidence_confidence": 75,
+        "final": 60
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Clippy回到Mac桌面：这次它能看到屏幕并帮你操作",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得写成‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：macOS版Clippy——带电脑操作能力的复古浮动回形针。能力、安全性和兼容性需本地测试。",
+      "discussion_focus": [
+        "讨论样本只有1条，无法形成产品评价。"
+      ],
+      "comment_samples": [
+        "仅1条HN评论，无可验证使用样本。"
+      ],
+      "reuse_ideas": [
+        "桌面Agent最先要看的不是可爱外形，而是屏幕权限、确认动作和撤销。",
+        "桌面Agent权限检查卡",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "桌面Agent权限检查卡",
+      "learning_outcome": "知道先查屏幕、键盘、文件和网络权限。"
+    },
+    {
+      "id": "2026080912",
+      "title": "Agent框架开始谈LTS：会跑Demo之后，下一关是半年后还能升级",
+      "summary": "OpenClaw公布扩展稳定版本和成熟度评分卡，试图用长期支持、兼容性与维护指标推进项目成熟。HN采集时4 points、0 comments。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "方向重要但互动低、受众较窄，留候选。",
+      "angle": "选Agent框架时问升级、迁移、故障修复和维护周期。",
+      "human_check": "核对实际版本承诺、支持范围和历史兑现情况。",
+      "sources": [
+        {
+          "url": "https://openclaw.ai/blog/extended-stable-releases-and-maturity-scorecards",
+          "author": "OpenClaw / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49223012",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-09T08:31:37+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 4 points · 0 comments（8月9日采集）；原文浏览、点赞、收藏未公开；无可验证评论样本"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 38,
+        "domestic_scarcity": 55,
+        "account_fit": 67,
+        "actionability": 56,
+        "evidence_confidence": 82,
+        "final": 57
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Agent框架开始谈LTS：会跑Demo之后，下一关是半年后还能升级",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得写成‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：OpenClaw走向LTS。它是项目自己的维护计划，不代表已达到企业级成熟度。",
+      "discussion_focus": [
+        "HN无可验证评论样本。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "选Agent框架时问升级、迁移、故障修复和维护周期。",
+        "Agent框架维护四问",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "Agent框架维护四问",
+      "learning_outcome": "会评估升级、兼容、修复和退出方案。"
+    },
+    {
+      "id": "2026080913",
+      "title": "OpenAI收购NextSlide：ChatGPT做PPT可能不只停在生成大纲",
+      "summary": "TechCrunch报道OpenAI收购演示文稿创业公司NextSlide；NextSlide称团队成员现已在ChatGPT工作。报道发布时间为8月8日19:41 UTC。公开互动指标未提供。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "和普通办公用户相关，但缺产品细节与互动量，只留候选，避免纯猜功能。",
+      "angle": "先观察ChatGPT能否从写内容走到可编辑、可协作、可保持版式的完整PPT工作流。",
+      "human_check": "补OpenAI或NextSlide官方公告；不得写具体功能即将上线。",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/",
+          "author": "TechCrunch / NextSlide",
+          "discussion_url": "https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/",
+          "source_type": "TechCrunch RSS",
+          "captured_at": "2026-08-09T08:31:37+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "TechCrunch RSS未公开浏览、点赞、评论、转发、收藏（8月9日采集）"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 62,
+        "domestic_scarcity": 55,
+        "account_fit": 86,
+        "actionability": 46,
+        "evidence_confidence": 84,
+        "final": 66
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "OpenAI收购NextSlide：ChatGPT做PPT可能不只停在生成大纲",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得写成‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：OpenAI收购演示文稿创业公司NextSlide。已知是团队加入ChatGPT；具体产品整合、价格和上线时间未公布。",
+      "discussion_focus": [
+        "RSS未提供评论区或可验证评论样本。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "先观察ChatGPT能否从写内容走到可编辑、可协作、可保持版式的完整PPT工作流。",
+        "AI做PPT四项观察表",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "AI做PPT四项观察表",
+      "learning_outcome": "会区分内容生成、版式编辑、协作和导出。"
+    },
+    {
+      "id": "2026080914",
+      "title": "Amazon得州AI数据中心计划自建电厂，能源账单开始成为模型竞争的一部分",
+      "summary": "TechCrunch称Amazon计划中的得州数据中心包含现场电厂，报道称其可能成为美国最大气候污染源。RSS未给公开互动指标；项目仍处于计划与报告口径阶段。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "重要但深奥且与账号实用定位较远，只留候选。",
+      "angle": "以后比较AI成本，不只看Token价，也要看电力、冷却和当地基础设施。",
+      "human_check": "核对项目审批、装机容量、排放估算来源及Amazon回应。",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s/",
+          "author": "TechCrunch / Amazon",
+          "discussion_url": "https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s/",
+          "source_type": "TechCrunch RSS",
+          "captured_at": "2026-08-09T08:31:37+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "TechCrunch RSS未公开浏览、点赞、评论、转发、收藏（8月9日采集）"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 58,
+        "domestic_scarcity": 55,
+        "account_fit": 48,
+        "actionability": 25,
+        "evidence_confidence": 72,
+        "final": 51
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Amazon得州AI数据中心计划自建电厂，能源账单开始成为模型竞争的一部分",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得写成‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：计划中的Amazon数据中心可能成为美国最大的气候污染源。‘可能’依赖项目落地与排放估算，不能写成既成事实。",
+      "discussion_focus": [
+        "RSS无可验证评论样本。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "以后比较AI成本，不只看Token价，也要看电力、冷却和当地基础设施。",
+        "AI基础设施成本四栏",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "AI基础设施成本四栏",
+      "learning_outcome": "区分模型价格与电力、冷却、建设和环境成本。"
+    },
+    {
+      "id": "2026080915",
+      "title": "让一群Agent反复比赛和淘汰：KADATH想把提示词优化做成进化实验",
+      "summary": "KADATH让多组Agent围绕可测目标反复执行、评分、变异与淘汰，并把基准、证据和运行环境锁在内核外。GitHub采集时153 Stars、1 Fork、0 Issues；仓库要求Docker、PostgreSQL等并消耗大量模型Token。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "GitHub当天Stars高，但成本、复杂度和复现实证不足，只留候选。",
+      "angle": "只有目标能量化、结果能自动评分时，Agent进化才有意义。",
+      "human_check": "核对提交历史、许可证、基准、费用与独立复现；不要用Stars证明有效。",
+      "sources": [
+        {
+          "url": "https://github.com/i3T4AN/KADATH",
+          "author": "GitHub",
+          "discussion_url": "https://github.com/i3T4AN/KADATH",
+          "source_type": "GitHub",
+          "captured_at": "2026-08-09T08:31:37+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "GitHub 153 Stars · 1 Fork · 0 Issues（8月9日采集）；浏览、评论、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 69,
+        "domestic_scarcity": 55,
+        "account_fit": 64,
+        "actionability": 38,
+        "evidence_confidence": 74,
+        "final": 60
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "让一群Agent反复比赛和淘汰：KADATH想把提示词优化做成进化实验",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得写成‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "仓库原题：用于Agent达尔文式适应、工具与遗传的内核。它是高成本实验框架，不是让普通Agent自动越来越聪明的一键工具。",
+      "discussion_focus": [
+        "GitHub Issues为0，无可验证使用讨论。",
+        "README明确提示会消耗大量模型Token，并要求可测基准和人工批准。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "只有目标能量化、结果能自动评分时，Agent进化才有意义。",
+        "Agent实验可测性检查表",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "Agent实验可测性检查表",
+      "learning_outcome": "会先定义指标、证据、成本上限和停止条件。"
+    },
+    {
+      "id": "2026080916",
+      "title": "有人把6个AI Agent的进度做成一块手表：完成、拒绝、继续都能按一下",
+      "summary": "Vibe Watch把6个并行Agent状态放到M5Stack StopWatch上，可用实体按钮批准或拒绝、切换Plan模式、语音输入，并通过蓝牙连接macOS。GitHub采集时102 Stars、4 Forks、0 Issues。",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "有强视觉和分享性，还能提炼普通人也能复用的‘状态外置’方法。",
+      "angle": "不用真的买表：把等待、需确认、完成三种状态移出聊天窗口。",
+      "human_check": "核对硬件成本、改装安全、macOS兼容和实际演示；不要说成现成消费产品。",
+      "sources": [
+        {
+          "url": "https://github.com/GOROman/vibewatch",
+          "author": "GitHub",
+          "discussion_url": "https://github.com/GOROman/vibewatch",
+          "source_type": "GitHub",
+          "captured_at": "2026-08-09T08:31:37+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "GitHub 102 Stars · 4 Forks · 0 Issues（8月9日采集）；浏览、评论、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 66,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "actionability": 86,
+        "evidence_confidence": 94,
+        "final": 77
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "有人把6个AI Agent的进度做成一块手表：完成、拒绝、继续都能按一下",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得写成‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "仓库原题：用于AI辅助Vibe Coding的可穿戴触觉控制面板。它需要M5Stack硬件和改装，不是下载App即可使用。",
+      "discussion_focus": [
+        "GitHub Issues为0，无可验证用户评论。",
+        "README提供公开视频、硬件清单和构建步骤，但仍属于创作者项目。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "不用真的买表：把等待、需确认、完成三种状态移出聊天窗口。",
+        "多Agent三状态桌面卡",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "多Agent三状态桌面卡",
+      "learning_outcome": "会把等待、需确认、完成从聊天窗口中外置。"
+    },
+    {
+      "id": "2026080917",
+      "title": "AI开始直接读写Unreal蓝图，但先别让它碰整个项目",
+      "summary": "unreal-mcp为Unreal Engine 5.6/5.8提供MCP服务，主打读取、编辑Blueprint并维护项目索引。GitHub采集时23 Stars、0 Forks、0 Issues；暂无独立使用反馈。",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "垂直且受众较窄，只留候选。",
+      "angle": "先给测试关卡和只读索引，再逐步开放编辑权限。",
+      "human_check": "核对许可证、备份、Undo、兼容版本和网络权限。",
+      "sources": [
+        {
+          "url": "https://github.com/ZiggyMar/unreal-mcp",
+          "author": "GitHub",
+          "discussion_url": "https://github.com/ZiggyMar/unreal-mcp",
+          "source_type": "GitHub",
+          "captured_at": "2026-08-09T08:31:37+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "GitHub 23 Stars · 0 Forks · 0 Issues（8月9日采集）；浏览、评论、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 52,
+        "domestic_scarcity": 55,
+        "account_fit": 61,
+        "actionability": 48,
+        "evidence_confidence": 82,
+        "final": 57
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI开始直接读写Unreal蓝图，但先别让它碰整个项目",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得写成‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "仓库原题：面向Unreal Engine 5.6/5.8的MCP服务器，可节省Token地读取和编辑蓝图。具体稳定性需项目内测试。",
+      "discussion_focus": [
+        "GitHub无Issues与可验证用户评论。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "先给测试关卡和只读索引，再逐步开放编辑权限。",
+        "游戏项目Agent权限阶梯",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "游戏项目Agent权限阶梯",
+      "learning_outcome": "会从只读、测试关卡、局部编辑逐级放权。"
+    },
+    {
+      "id": "2026080918",
+      "title": "让AI整理资料时，把每个结论绑回原文件和证据位置",
+      "summary": "research-evidence-agent用本地优先的来源清单和可选AI审计整理研究证据包。GitHub采集时20 Stars、1 Fork、1 Issue；项目很新，独立验证有限。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "方法实用，但项目样本少，只留候选。",
+      "angle": "每条结论至少保存来源文件、页码或段落、采集时间和你的判断。",
+      "human_check": "核对许可证、支持格式、哈希方式和敏感文件处理。",
+      "sources": [
+        {
+          "url": "https://github.com/zxxasdfrty/research-evidence-agent",
+          "author": "GitHub",
+          "discussion_url": "https://github.com/zxxasdfrty/research-evidence-agent",
+          "source_type": "GitHub",
+          "captured_at": "2026-08-09T08:31:37+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "GitHub 20 Stars · 1 Fork · 1 Issue（8月9日采集）；浏览、评论、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 50,
+        "domestic_scarcity": 55,
+        "account_fit": 90,
+        "actionability": 91,
+        "evidence_confidence": 77,
+        "final": 70
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "让AI整理资料时，把每个结论绑回原文件和证据位置",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得写成‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "仓库原题：本地优先的研究证据来源清单与可选AI审计。它强调证据链，不代表自动判断资料真伪。",
+      "discussion_focus": [
+        "GitHub只有1个Issue，无法概括用户反馈。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "每条结论至少保存来源文件、页码或段落、采集时间和你的判断。",
+        "资料证据链四列",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "资料证据链四列",
+      "learning_outcome": "会把结论、原文件、具体位置和判断分开。"
+    },
+    {
+      "id": "2026080919",
+      "title": "不把摄像头和麦克风上传云端，也能让本地AI看和听",
+      "summary": "cove-sensory-mcp提供本地MCP服务，让文本模型调用摄像头与音频等感知输入，项目宣称隐私安全和本地处理。GitHub采集时17 Stars、4 Forks、0 Issues；隐私边界需审计代码。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "概念好懂但权限高、项目早期，只留候选。",
+      "angle": "本地处理不等于零外发，逐条查摄像头、音频、模型和日志去向。",
+      "human_check": "审计网络请求、日志、模型端点、权限撤销和默认保存；先用无敏感环境测试。",
+      "sources": [
+        {
+          "url": "https://github.com/moonlin1213/cove-sensory-mcp",
+          "author": "GitHub",
+          "discussion_url": "https://github.com/moonlin1213/cove-sensory-mcp",
+          "source_type": "GitHub",
+          "captured_at": "2026-08-09T08:31:37+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "GitHub 17 Stars · 4 Forks · 0 Issues（8月9日采集）；浏览、评论、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 48,
+        "domestic_scarcity": 55,
+        "account_fit": 78,
+        "actionability": 70,
+        "evidence_confidence": 76,
+        "final": 63
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "不把摄像头和麦克风上传云端，也能让本地AI看和听",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得写成‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "仓库原题：通过隐私安全的本地MCP给文本模型眼睛和耳朵。‘隐私安全’是作者主张，需核查模型与外部接口是否仍会上传数据。",
+      "discussion_focus": [
+        "GitHub无Issues与可验证用户评论。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "本地处理不等于零外发，逐条查摄像头、音频、模型和日志去向。",
+        "本地感知数据流图",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "本地感知数据流图",
+      "learning_outcome": "会追踪采集、处理、模型、日志和删除五个环节。"
+    },
+    {
+      "id": "2026080920",
+      "title": "中文文案去AI味，别只删“首先其次”：这套规则分5层检查",
+      "summary": "remove-chinese-ai-tics是一套简体中文Agent Skill，从助手残留、篇章惯性、逻辑空转、句法修辞和词汇格式五层清理模型口癖，并强调锁定事实、数字、专名和人物声口。GitHub采集时13 Stars、2 Forks、0 Issues。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "直接解决当前账号文案AI味问题，能给读者一套不靠错字和俚语的人味检查法。",
+      "angle": "先锁事实，再删空话、拆固定结构、补真实场景；不要靠故意写错制造人味。",
+      "human_check": "发布前核对beta版本与安装方式；不要声称能自动变成爆款或取代人工编辑。",
+      "sources": [
+        {
+          "url": "https://github.com/AAzzAAzzAAzzAA/remove-chinese-ai-tics",
+          "author": "GitHub",
+          "discussion_url": "https://github.com/AAzzAAzzAAzzAA/remove-chinese-ai-tics",
+          "source_type": "GitHub",
+          "captured_at": "2026-08-09T08:31:37+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "GitHub 13 Stars · 2 Forks · 0 Issues（8月9日采集）；浏览、评论、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 54,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 95,
+        "final": 77
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "中文文案去AI味，别只删“首先其次”：这套规则分5层检查",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得写成‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "仓库本身为中文。它是语言清理规则，不会自动补证据、专业判断或真实经历；当前为测试版。",
+      "discussion_focus": [
+        "GitHub没有可验证用户评论。",
+        "README强调事实完整性优先，不能靠近义替换、错字和随机断句制造人味。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "先锁事实，再删空话、拆固定结构、补真实场景；不要靠故意写错制造人味。",
+        "中文去AI味五层检查表",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "中文去AI味五层检查表",
+      "learning_outcome": "会先保事实，再查交互残留、结构惯性、空逻辑、固定句法和格式反射。"
+    }
+  ],
+  "drafts": [
+    {
+      "content_id": "5026080901",
+      "hotspot_id": "2026080901",
+      "platform": "小红书",
+      "title": "台风预报可能多争取一天：Google把WeatherNext气旋模型开源了",
+      "body": "Google刚把一个专门看台风的AI模型开源了。\n\n最值得注意的不是“AI又会看天气”，而是时间：DeepMind说，WeatherNext Cyclones平均能让三天预报达到过去两天预报的准确度，相当于多争取一天。它还能生成最长15天的路径，以及不同风力到达各地的概率图。\n\n这不等于以后台风都能提前15天算准，更不能替代气象部门预警。对普通人真正有用的是换一种看法：\n\n别只盯预报图中间那条线；\n看不同路径覆盖的概率范围；\n每次刷新先看发布时间，因为台风路径会不断修正。\n\n多出来的一天，对改航线、停工和疏散都可能很重要。HN采集时这条有370分、114条评论。模型开源后还要看各地区实测表现。",
+      "visual_brief": "4:5黑白极简信息卡，字号优先，少量圆角和一处简笔画。首图只放标题与一个真实物件或来源截图；内页用步骤、对照或证据截图。不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "Google把WeatherNext气旋模型开源了。官方说，它的三天预测平均能做到过去模型两天预测的准确度，相当于多争取一天。它还能给出最长15天的路径和风力概率图。注意，这不是每次台风都能提前15天算准，也不能替代官方预警。看台风时别只盯一条线，要看概率范围和更新时间。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080902",
+      "hotspot_id": "2026080902",
+      "platform": "小红书",
+      "title": "OpenAI与Hugging Face事故时间线：争议不只是Agent太强，而是边界没设清",
+      "body": "今天AI圈讨论最凶的一条，是OpenAI评估Agent意外触及Hugging Face基础设施的时间线。HN采集时318分、328条评论。\n\n但现在最有价值的不是复述事故细节，而是评论区反复追问的那句话：这是Agent太强，还是权限和监控没设好？\n\n在双方完整披露出来前，这条不适合写成“AI已经能自主攻击网站”。更稳妥的结论是：长时间运行的Agent不能只给目标，还要明确不能去哪里、不能碰什么凭据、遇到权限不足时必须停下来找人。",
+      "visual_brief": "4:5黑白极简信息卡，字号优先，少量圆角和一处简笔画。首图只放标题与一个真实物件或来源截图；内页用步骤、对照或证据截图。不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "OpenAI和Hugging Face相关事故在HN拿到318分、328条评论。争议点不是简单的Agent太强，而是授权边界和监控是否失守。完整事实还要等双方一手披露。现在能确定的实践是：长任务要写清禁止系统、凭据规则、异常停止条件和人工升级，不能只给Agent一个目标就放着跑。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080903",
+      "hotspot_id": "2026080903",
+      "platform": "小红书",
+      "title": "AI爬虫把Gentoo Bugzilla拖到关闭：小网站先做缓存和限速",
+      "body": "Gentoo的Bugzilla因为AI爬虫负载临时关了。HN采集时152分、103条评论。\n\n评论里最实用的不是追查“到底是哪家公司”，而是小网站怎么先活下来：把能静态化的页面静态化；给高频列表页加缓存；按路径和请求速度限流；把疑似机器人流量分到不影响核心服务的入口。\n\n事件后续措施还要核对，也不能把所有机器人流量都归给某一家AI公司。",
+      "visual_brief": "4:5黑白极简信息卡，字号优先，少量圆角和一处简笔画。首图只放标题与一个真实物件或来源截图；内页用步骤、对照或证据截图。不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "Gentoo的Bugzilla因为AI爬虫负载临时关闭，HN有152分、103条评论。小网站别一上来买复杂反爬：先看日志，能静态化就静态化，给高频页面加缓存，按路径限速，再把疑似机器人流量和核心服务分开。先保住可用性，再判断流量来源。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080904",
+      "hotspot_id": "2026080904",
+      "platform": "小红书",
+      "title": "Claude Code现在能给另一个会话发消息：多任务终于不用手动复制上下文",
+      "body": "Claude Code刚加了一个很实用的小功能：同一台电脑上的不同会话，可以互相发消息了。\n\n如果你经常开三个窗口，不用再来回复制整段上下文。我会这样分：\n\n会话A只管需求，写清要做什么和不能改什么；\n会话B负责动手，只把改动文件、测试结果和卡点发回来；\n会话C做验收，专门找遗漏和风险。\n\n关键是别让它们互相转发整段聊天。只传任务、证据和结论，信息会干净很多。\n\n官方文档说消息服务只绑定当前操作系统用户，但敏感凭据和客户资料仍然不要跨会话乱传。不同版本和系统支持也要先核一下。",
+      "visual_brief": "4:5黑白极简信息卡，字号优先，少量圆角和一处简笔画。首图只放标题与一个真实物件或来源截图；内页用步骤、对照或证据截图。不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "Claude Code现在能给同一台电脑上的其他会话发消息。最实用的分工是三个窗口：A写需求和边界，B负责修改和测试，C只做验收。不要互相复制整段聊天，只传任务、文件、证据和结论。这样多会话不是多开几个AI，而是真正有分工。敏感凭据还是别跨会话发。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080905",
+      "hotspot_id": "2026080905",
+      "platform": "小红书",
+      "title": "别让AI把方案写得太漂亮：没有证据的能力，直接留空",
+      "body": "AI写方案最危险的时刻，不是写得差，而是写得太顺。\n\n一家做投标工具的团队复盘：他们让系统先检查公司到底能证明什么。45项要求里有11项找不到证据，就直接弹出警告，不让AI编一段“我们经验丰富”混过去。\n\n这个方法接单时很好用。开写前先建四列：客户要求、现有案例或文件、能确认的人、还缺什么。AI只能引用前两列；缺证据的地方统一标“待确认”，交回负责人。\n\n比如客户问“是否做过同体量项目”，不要让AI写“拥有丰富经验”。让它填项目名、年份、规模和可联系证明人。没有就留空。\n\n这篇是厂商自己的复盘，HN暂无可验证评论样本。但这个防瞎编的结构值得直接拿走。",
+      "visual_brief": "4:5黑白极简信息卡，字号优先，少量圆角和一处简笔画。首图只放标题与一个真实物件或来源截图；内页用步骤、对照或证据截图。不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "AI写方案最危险的不是写得差，而是写得太漂亮。一家投标工具团队会先检查公司能证明什么；45项要求里有11项没证据，就直接警告，不让模型补。你接单也能照做：客户要求、已有证据、确认人、缺口分四列。AI只能引用证据，缺的统一留给人确认。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080906",
+      "hotspot_id": "2026080906",
+      "platform": "小红书",
+      "title": "真人团队也被YouTube误判成AI垃圾内容：创作者要留好制作证据",
+      "body": "一个真人团队做了十几年的科普频道，也可能被平台误判成“AI垃圾内容”。\n\nKurzgesagt这次事件还需要补齐频道和YouTube的一手说明，HN也只有16分、2条评论，不能把细节说死。但对做内容的人，有件事现在就能做：给每条作品留一份制作证据包。\n\n里面放原始脚本、素材授权、剪辑工程、配音记录、关键修改时间和发布前导出文件。用了AI，也写清它具体帮了哪一步。\n\n平时这些东西很不起眼；账号被误判、素材被投诉或客户问版权时，它们比一段解释有用得多。",
+      "visual_brief": "4:5黑白极简信息卡，字号优先，少量圆角和一处简笔画。首图只放标题与一个真实物件或来源截图；内页用步骤、对照或证据截图。不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "真人团队也可能被平台误判成AI垃圾内容。Kurzgesagt相关事件细节还要等一手说明，但创作者现在就该留制作证据包：原始脚本、素材授权、剪辑工程、配音记录、修改时间和发布文件。用了AI就写清用在哪一步。遇到误判或版权投诉时，证据比解释有用。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080907",
+      "hotspot_id": "2026080907",
+      "platform": "小红书",
+      "title": "AI代码从“能跑”到“能上线”，中间至少差一张验收单",
+      "body": "AI写的代码能跑，不等于能上线。\n\n我会让它在交付代码时一起回答七个问题：需求里哪几条已经覆盖；正常路径怎么测；输入错误会怎样；权限和敏感数据在哪里；失败后日志能不能定位；怎么回滚；下一个接手的人要先看什么。\n\n少任何一项，就继续补，不接受一句“已经完成”。\n\n这套检查特别适合AI写的小工具：演示时通常只走成功路径，真正出事却多在空数据、网络中断、重复提交和权限过大。\n\n原文在HN目前只有5分、2条评论，不算热门共识。但这张验收单比“让AI写得更专业”有效得多。",
+      "visual_brief": "4:5黑白极简信息卡，字号优先，少量圆角和一处简笔画。首图只放标题与一个真实物件或来源截图；内页用步骤、对照或证据截图。不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "AI写的代码能跑，不等于能上线。交付时让它回答七件事：需求覆盖、正常测试、错误输入、权限和敏感数据、失败日志、回滚方式、维护说明。少一项就继续补。AI小工具最容易只演示成功路径，真正的问题常在空数据、断网、重复提交和权限过大。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080908",
+      "hotspot_id": "2026080908",
+      "platform": "小红书",
+      "title": "AI写作让人烦的，不是用了AI，而是没有一个具体的人在说话",
+      "body": "AI写作最容易暴露的，不是某个词，而是整篇没有一个具体的人。\n\n没有发生在哪一天，没有当时为什么犹豫，也没有做错后付了什么代价。句子都对，读完却记不住是谁说的。\n\n发之前可以查三句：这件事发生在什么场景？我当时放弃了什么？哪一步没按预期发生？答不出来，先别急着润色。\n\n这篇原文在HN互动很少，本身是作者观点。真要发，必须换成自己的经历，不能继续写一篇评论AI写作的空文章。",
+      "visual_brief": "4:5黑白极简信息卡，字号优先，少量圆角和一处简笔画。首图只放标题与一个真实物件或来源截图；内页用步骤、对照或证据截图。不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "AI写作最明显的问题，不是某个词，而是整篇没有一个具体的人。发之前问三句：这件事发生在哪个场景，我当时放弃了什么，哪一步没按预期发生？答不出来就先补经历，别继续润色。用户记住的往往不是完美句子，而是你真的遇到过什么。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080909",
+      "hotspot_id": "2026080909",
+      "platform": "小红书",
+      "title": "AI会话压缩后丢了什么？这个小工具能把前后版本直接对出来",
+      "body": "长会话用着用着突然变笨，很可能不是模型变了，而是压缩时丢了关键上下文。\n\ncompactdiff这个新工具会在本地给Claude Code和Codex会话做版本快照，然后告诉你压缩前后删掉了哪些内容。还可以导出时间线，或者从某个节点切一份分支。\n\n我的用法会很简单：重要任务压缩前快照一次；压缩后只查四类东西——已经做过的决定、明确禁止的改动、还没完成的待办、测试失败的证据。发现丢了，就整理成一小段重新补回，不把整段历史再塞进去。\n\n项目目前只有5个HN points、GitHub 0星，属于很早期。会话里可能有凭据、源码和客户信息，作者也明确说默认脱敏不是保证，导出前必须人工看。",
+      "visual_brief": "4:5黑白极简信息卡，字号优先，少量圆角和一处简笔画。首图只放标题与一个真实物件或来源截图；内页用步骤、对照或证据截图。不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "长会话突然变笨，可能是压缩丢了关键上下文。compactdiff能在本地给Claude Code和Codex会话做快照，比较压缩前后。重点只查四类：已经决定的事、禁止改动、未完成待办、测试失败证据。项目很早期，而且默认脱敏也不是绝对安全，先用测试会话验证，导出前一定人工检查。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080910",
+      "hotspot_id": "2026080910",
+      "platform": "小红书",
+      "title": "同时开很多Agent以后，真正缺的不是模型，是一张任务地图",
+      "body": "同时开五六个Agent后，问题很快从“谁更聪明”变成“谁在改哪个分支”。\n\n49IDE想用二维网格把Agent、Git工作树和Issue放在一起。产品还很早，HN只有7分、1条评论。更值得拿走的是看板字段：任务、负责人、分支、阻塞、最后结果。少一列，多Agent就容易变成多窗口混乱。",
+      "visual_brief": "4:5黑白极简信息卡，字号优先，少量圆角和一处简笔画。首图只放标题与一个真实物件或来源截图；内页用步骤、对照或证据截图。不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "同时开很多Agent后，真正缺的不是模型，而是任务地图。每个Agent至少要显示五件事：任务、负责人、分支、阻塞、最后结果。49IDE把这些放进二维网格，但目前互动很少，先别急着换工具。先把这五列加进现有看板，就能少很多重复和冲突。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080911",
+      "hotspot_id": "2026080911",
+      "platform": "小红书",
+      "title": "Clippy回到Mac桌面：这次它能看到屏幕并帮你操作",
+      "body": "Clippy又回到Mac桌面了，只是这次不只会弹提示，还想看屏幕、帮你操作电脑。\n\n项目很新，HN只有8分、1条评论。真要试，不要先被复古外形打动。先查四件事：它能看哪些屏幕内容，能不能输入键盘，文件会不会外发，高风险操作是否每次确认。",
+      "visual_brief": "4:5黑白极简信息卡，字号优先，少量圆角和一处简笔画。首图只放标题与一个真实物件或来源截图；内页用步骤、对照或证据截图。不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "Clippy回到Mac桌面了，这次它能看屏幕、帮你操作。项目很早，HN只有8分、1条评论。试桌面Agent前先查四件事：屏幕权限、键盘控制、文件外发、高风险动作确认。可爱外形不能替代权限边界。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080912",
+      "hotspot_id": "2026080912",
+      "platform": "小红书",
+      "title": "Agent框架开始谈LTS：会跑Demo之后，下一关是半年后还能升级",
+      "body": "Agent框架开始谈LTS，说明行业正在从“能跑Demo”走向“半年后还能维护”。\n\nOpenClaw公布了稳定版本和成熟度评分卡，但HN目前4分、0评论。选框架时可以先问四句：升级会不会破坏旧流程；数据怎么迁移；安全问题多久修；项目停更后怎么退出。",
+      "visual_brief": "4:5黑白极简信息卡，字号优先，少量圆角和一处简笔画。首图只放标题与一个真实物件或来源截图；内页用步骤、对照或证据截图。不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "Agent框架开始谈长期支持，说明大家终于在问Demo之后的事。选框架时别只看功能，问四句：升级会不会破坏旧流程，数据怎么迁移，安全问题多久修，项目停更后怎么退出。OpenClaw这次是项目方自己的计划，还要看后续兑现。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080913",
+      "hotspot_id": "2026080913",
+      "platform": "小红书",
+      "title": "OpenAI收购NextSlide：ChatGPT做PPT可能不只停在生成大纲",
+      "body": "OpenAI收购了做演示文稿的NextSlide，团队已经在ChatGPT工作。\n\n现在能确认的只有收购和团队去向，具体功能、价格、上线时间都没公布。真正值得观察的是：ChatGPT做PPT能不能从“给你一份大纲”，走到版式可编辑、多人协作、品牌模板不乱、导出后还能继续改。",
+      "visual_brief": "4:5黑白极简信息卡，字号优先，少量圆角和一处简笔画。首图只放标题与一个真实物件或来源截图；内页用步骤、对照或证据截图。不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "OpenAI收购了演示文稿创业公司NextSlide，团队已经在ChatGPT工作。现在还没有具体功能和上线时间，别急着写ChatGPT马上取代PPT。接下来真正要看四件事：版式能否编辑、多人协作、品牌模板是否稳定、导出后还能不能继续改。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080914",
+      "hotspot_id": "2026080914",
+      "platform": "小红书",
+      "title": "Amazon得州AI数据中心计划自建电厂，能源账单开始成为模型竞争的一部分",
+      "body": "Amazon计划中的得州数据中心要配现场电厂。TechCrunch报道称，它可能成为美国最大的气候污染源。\n\n注意是“计划中”和“可能”，项目审批、排放估算与公司回应都要继续核对。这条更像长期观察：以后说AI成本，不能只看每百万Token多少钱，电力、冷却和当地基础设施也会进入账单。",
+      "visual_brief": "4:5黑白极简信息卡，字号优先，少量圆角和一处简笔画。首图只放标题与一个真实物件或来源截图；内页用步骤、对照或证据截图。不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "Amazon计划中的得州数据中心包含现场电厂，TechCrunch称它可能成为美国最大的气候污染源。这里的关键词是计划中和可能，不能写成已经发生。它提醒我们，AI成本不只是一百万Token多少钱，还包括电力、冷却、建设和当地环境成本。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080915",
+      "hotspot_id": "2026080915",
+      "platform": "小红书",
+      "title": "让一群Agent反复比赛和淘汰：KADATH想把提示词优化做成进化实验",
+      "body": "KADATH想做一件很“实验室”的事：让一群Agent围绕同一个目标反复比赛，好的留下，差的淘汰，再继续变异。\n\nGitHub采集时153颗星，但只有1个Fork、0个Issue，Stars不能证明效果。它还需要复杂运行环境并会消耗大量Token。只有目标能量化、结果能自动评分、费用有上限时，这种方法才值得试。",
+      "visual_brief": "4:5黑白极简信息卡，字号优先，少量圆角和一处简笔画。首图只放标题与一个真实物件或来源截图；内页用步骤、对照或证据截图。不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "KADATH让一群Agent反复比赛、评分、变异和淘汰，像做进化实验。GitHub有153颗星，但这不等于已经有效；它环境复杂、Token成本也高。真正门槛是目标必须可量化，结果能自动评分，还要提前设费用和停止条件。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080916",
+      "hotspot_id": "2026080916",
+      "platform": "小红书",
+      "title": "有人把6个AI Agent的进度做成一块手表：完成、拒绝、继续都能按一下",
+      "body": "有人把6个AI Agent的进度，做成了一块真的能戴在手上的表。\n\n哪个Agent在跑、哪个等确认，抬手就能看；要继续还是拒绝，按实体键；还可以切Plan模式和按住说下一条指令。\n\n项目叫Vibe Watch，用M5Stack StopWatch改的。GitHub采集时102颗星、4个Fork，README有硬件清单和演示，但它不是买来即用的消费产品，需要自己刷固件和改装。\n\n我觉得更值得抄的是“状态外置”：不用做手表，在桌面放三栏就够了——运行中、等我确认、已经完成。每个Agent只出现一次，并写清最后更新时间。这样不用不停点回聊天窗口看它好了没。",
+      "visual_brief": "4:5黑白极简信息卡，字号优先，少量圆角和一处简笔画。首图只放标题与一个真实物件或来源截图；内页用步骤、对照或证据截图。不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "有人把6个AI Agent做成了一块手表：运行状态抬手就看，继续或拒绝直接按实体键，还能语音发下一条指令。项目叫Vibe Watch，需要M5Stack硬件和改装。普通人不用真做表，只要把Agent分成运行中、等确认、已完成三栏，就能少很多来回查看。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080917",
+      "hotspot_id": "2026080917",
+      "platform": "小红书",
+      "title": "AI开始直接读写Unreal蓝图，但先别让它碰整个项目",
+      "body": "AI开始能直接读写Unreal蓝图了。unreal-mcp面向UE 5.6和5.8，GitHub采集时23颗星、0个Issue。\n\n这种工具不要一上来连整个主项目。更稳的顺序是：先只读索引，再给复制出来的测试关卡，确认Undo和差异记录可用，最后才开放局部编辑。",
+      "visual_brief": "4:5黑白极简信息卡，字号优先，少量圆角和一处简笔画。首图只放标题与一个真实物件或来源截图；内页用步骤、对照或证据截图。不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "AI开始能直接读写Unreal蓝图，但别一上来给整个项目权限。先只读索引，再给复制的测试关卡，确认撤销和差异记录都能用，最后才开放局部编辑。这个项目还很新，GitHub 23颗星、0个Issue，稳定性要自己测。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080918",
+      "hotspot_id": "2026080918",
+      "platform": "小红书",
+      "title": "让AI整理资料时，把每个结论绑回原文件和证据位置",
+      "body": "让AI整理资料时，最怕最后只剩一段顺滑总结，却找不到它从哪里来的。\n\nresearch-evidence-agent把每条资料做成来源清单。你不一定要用这个新项目，也可以直接建四列：结论、原文件、页码或段落、你的判断。以后要改文案、补链接或复核数字，不用重新翻全部资料。",
+      "visual_brief": "4:5黑白极简信息卡，字号优先，少量圆角和一处简笔画。首图只放标题与一个真实物件或来源截图；内页用步骤、对照或证据截图。不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "AI整理资料后找不到出处？给每条结论留四列：原文件、具体页码或段落、采集时间、你的判断。research-evidence-agent在做类似的本地证据链，但项目还很新。重点不是让AI替你判断真假，而是让每句话都能回到原证据。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080919",
+      "hotspot_id": "2026080919",
+      "platform": "小红书",
+      "title": "不把摄像头和麦克风上传云端，也能让本地AI看和听",
+      "body": "“本地AI能看和听”听起来很安全，但本地处理不等于数据绝不外发。\n\ncove-sensory-mcp让模型调用摄像头和音频，GitHub采集时17颗星、4个Fork。试之前画一条数据流：画面在哪里采集，在哪处理，调用哪个模型，日志存哪里，怎样彻底删除。任何一段说不清，都先别接真实环境。",
+      "visual_brief": "4:5黑白极简信息卡，字号优先，少量圆角和一处简笔画。首图只放标题与一个真实物件或来源截图；内页用步骤、对照或证据截图。不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "不把摄像头和麦克风直接上传云端，也能让本地AI看和听。但本地不等于零外发。试这类MCP前查五件事：在哪里采集、在哪里处理、调用什么模型、日志存哪里、怎么删除。项目还很新，先用无敏感环境测试。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026080920",
+      "hotspot_id": "2026080920",
+      "platform": "小红书",
+      "title": "中文文案去AI味，别只删“首先其次”：这套规则分5层检查",
+      "body": "中文文案去AI味，真的不只是把“首先、其次、最后”删掉。\n\n我看到一个新开的中文Skill，把检查拆成五层：\n\n有没有“好的、当然可以”这种助手残留；\n整篇是不是固定三段式；\n有没有听起来正确但不增加信息的空话；\n句子是不是反复用同一种转折和总结；\n小标题、加粗、冒号是不是像套出来的。\n\n改之前先锁住事实、数字、专名和原本语气，再删除、合并、补具体场景。不要靠故意写错字、塞网络词、随机断句来装人味，那只是另一种模板。\n\n这个项目目前是beta，GitHub采集时13颗星、2个Fork。它能帮你清语言，不能替你补证据和真实经历。",
+      "visual_brief": "4:5黑白极简信息卡，字号优先，少量圆角和一处简笔画。首图只放标题与一个真实物件或来源截图；内页用步骤、对照或证据截图。不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "中文文案去AI味，不只是删首先其次。可以分五层查：助手残留、固定结构、空洞逻辑、重复句法、格式反射。改之前先锁住事实和数字，再删空话、合并重复、补真实场景。别靠错字、网络词和随机断句装人味。这个新Skill还在beta，只负责清语言，不会替你补经历。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    }
+  ],
+  "gaps": [
+    "X、Instagram、TikTok、LinkedIn未取得可同时复核原文、发布时间和公开互动的新增完整样本；今天不伪造这些平台数据。",
+    "Reddit当日AI高互动样本未获得稳定公开评论链，本批不使用。",
+    "小红书、抖音平台内全量语义检索不可用；国内稀缺度封顶55，所有推荐保留发布前人工搜索。",
+    "TechCrunch RSS未提供文章浏览、点赞、评论、转发与收藏；明确标为未公开。"
+  ],
+  "generated_at": "2026-08-09T08:31:37+08:00"
+}
