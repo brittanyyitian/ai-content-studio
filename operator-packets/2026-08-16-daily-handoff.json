@@ -1,0 +1,1437 @@
+{
+  "schema_version": 2,
+  "batch_id": "daily-2026-08-16-real-sources",
+  "batch_date": "2026-08-16",
+  "editorial_brief": "优先能直接收藏的上下文管理、AI制药事实分层、推荐监控、基础知识、反AI垃圾、检测器复核和学习方法；最多两条纯产业新闻。",
+  "hotspots": [
+    {
+      "id": "2026081601",
+      "title": "AI能同时记住更多东西，就等于比数学家更会思考吗",
+      "original_title": "AI has access to a vastly larger working memory than the human brain",
+      "summary": "作者认为AI相较人脑拥有更大的工作记忆，因此在数学任务上具有结构性优势。HN采集时388 points、346 comments；评论激烈争论工作记忆是否足以解释智能，也批评文章采用夸张二分标题和缺乏严格证据。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "当天断层最高互动，适合把争议转成用户可用的复杂任务拆分方法。",
+      "angle": "把长任务拆成外部记忆、当前焦点和验收证据，避免上下文大却方向混乱。",
+      "human_check": "核作者论据、引用研究、上下文窗口与有效工作记忆定义；不把观点写成科学共识。",
+      "sources": [
+        {
+          "url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
+          "author": "Davide Piffer / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49312845",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-16T08:30:25+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 388 points · 346 comments（8月16日采集）；原文浏览、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 100,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 90,
+        "evidence_confidence": 76,
+        "final": 85
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI能同时记住更多东西，就等于比数学家更会思考吗",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：AI可使用远大于人脑的工作记忆。该说法涉及工作记忆定义、外部上下文与推理能力，不能直接等同于AI已超过数学家。",
+      "discussion_focus": [
+        "有人认为更大工作记忆会产生人类难以跟踪的复杂证明。",
+        "反方认为工作记忆不等于理解、判断和可靠推理。",
+        "评论也质疑帖子异常快速上榜与标题的AI味。"
+      ],
+      "comment_samples": [
+        "d--b认为更大工作记忆可能让AI构造人类难以完整理解的论证。",
+        "a2ff6eeb0担心未来证明复杂到人类无法跟踪。",
+        "bewareofscams批评标题采用常见的‘不是X而是Y’AI腔。"
+      ],
+      "reuse_ideas": [
+        "把长任务拆成外部记忆、当前焦点和验收证据，避免上下文大却方向混乱。",
+        "复杂任务三层记忆卡",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "复杂任务三层记忆卡",
+      "learning_outcome": "会分外部资料、当前焦点和已验证结论。"
+    },
+    {
+      "id": "2026081602",
+      "title": "AI制药到底走到哪一步？先别把“找到候选”写成“药快上市了”",
+      "original_title": "AI in drug discovery – what it is, where we stand and the path forward",
+      "summary": "药物化学作者Derek Lowe梳理AI在靶点、分子设计、筛选和临床前环节的真实作用。HN采集时75 points、39 comments；评论认同不要为了用AI而用AI，真正瓶颈仍包括生物学验证、实验和临床。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "高互动、来源专业，适合做AI科研新闻的事实分层。",
+      "angle": "看AI制药新闻先标注靶点、候选、动物实验、临床和获批五道门。",
+      "human_check": "核原文、论文、公司披露、试验注册、阶段和利益关系；不提供医疗建议。",
+      "sources": [
+        {
+          "url": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
+          "author": "Derek Lowe / Science / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49313367",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-16T08:30:25+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 75 points · 39 comments（8月16日采集）；Science页面浏览、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 86,
+        "domestic_scarcity": 55,
+        "account_fit": 94,
+        "actionability": 78,
+        "evidence_confidence": 96,
+        "final": 80
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI制药到底走到哪一步？先别把“找到候选”写成“药快上市了”",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：药物发现中的AI——它是什么、我们走到哪里以及前进路径。候选分子、临床前验证、临床试验和获批是不同阶段。",
+      "discussion_focus": [
+        "评论赞同先解释为何使用某种AI方法，而不是追热点。",
+        "不少人提醒真正价值要在实验和临床结果中体现。",
+        "也有轻松评论把讨论拉回具体未满足需求。"
+      ],
+      "comment_samples": [
+        "EA-3167引用文章观点：应先想清楚为何用某项技术，而不是因为流行就使用。",
+        "Xenoamorphous开玩笑说希望尽快解决脱发。"
+      ],
+      "reuse_ideas": [
+        "看AI制药新闻先标注靶点、候选、动物实验、临床和获批五道门。",
+        "AI制药五阶段卡",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "AI制药五阶段卡",
+      "learning_outcome": "会区分靶点、候选、临床前、临床和获批。"
+    },
+    {
+      "id": "2026081603",
+      "title": "科技老板为什么爱写AI宣言？评论区认为它更像一场利益叙事",
+      "original_title": "Why tech bosses keep sharing their manifestos about AI",
+      "summary": "BBC分析科技高管频繁发布AI宣言的传播与商业动机。HN采集时19 points、54 comments；评论一方认为核心是商业利益，另一方反对把所有AI应用和人际关系替代混为一谈。",
+      "category": "个人 IP",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "评论密集但偏观点，只留候选。",
+      "angle": "读AI宣言时分开愿景、商业利益、可验证承诺和责任。",
+      "human_check": "核原宣言、引用上下文、公司政策和利益关系。",
+      "sources": [
+        {
+          "url": "https://www.bbc.com/news/articles/cz97ljy91zxo",
+          "author": "BBC / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49313519",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-16T08:30:25+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 19 points · 54 comments（8月16日采集）；BBC浏览、分享未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 58,
+        "domestic_scarcity": 45,
+        "account_fit": 72,
+        "actionability": 44,
+        "evidence_confidence": 86,
+        "final": 59
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "科技老板为什么爱写AI宣言？评论区认为它更像一场利益叙事",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：为什么科技老板不断分享他们关于AI的宣言。文章分析动机，不证明每份宣言都仅为公关。",
+      "discussion_focus": [
+        "有人直接把原因归为赚钱。",
+        "评论反对AI替代朋友的愿景，但认可部分工具用途。",
+        "也有人批评报道过度简化双方。"
+      ],
+      "comment_samples": [
+        "isatty认为答案可能就是钱。",
+        "cryptographical认可AI工具价值，但反对AI替代朋友。",
+        "sublinear认为报道把双方都呈现得过于简单。"
+      ],
+      "reuse_ideas": [
+        "读AI宣言时分开愿景、商业利益、可验证承诺和责任。",
+        "AI宣言四栏批注",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "AI宣言四栏批注",
+      "learning_outcome": "会分愿景、利益、承诺和责任。"
+    },
+    {
+      "id": "2026081604",
+      "title": "Meta被曝用Newsmax内容训练AI，真正要问的是数据怎么被标注和加权",
+      "original_title": "Meta will train its AI on Newsmax, a far-right media outlet",
+      "summary": "报道指Meta将使用Newsmax内容训练AI。HN采集时18 points、12 comments；评论担忧来源偏差，也有人认为模型本就会吸收大量互联网内容，关键在使用方式与权重。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "敏感且信息不完整，只留候选。",
+      "angle": "数据来源不能只看有没有，还要看标注、权重、过滤和评测。",
+      "human_check": "核合同、双方声明、数据范围、训练用途和独立报道；政治内容需人工审核。",
+      "sources": [
+        {
+          "url": "https://popular.info/p/meta-will-train-its-ai-on-far-right",
+          "author": "Popular Information / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49313778",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-16T08:30:25+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 18 points · 12 comments（8月16日采集）；训练规模、权重和数据用途未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 52,
+        "domestic_scarcity": 35,
+        "account_fit": 65,
+        "actionability": 42,
+        "evidence_confidence": 77,
+        "final": 52
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Meta被曝用Newsmax内容训练AI，真正要问的是数据怎么被标注和加权",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：Meta将使用极右翼媒体Newsmax训练其AI。具体协议、训练环节和权重需核Meta与Newsmax声明。",
+      "discussion_focus": [
+        "评论担心偏差信息进入大规模产品。",
+        "有人追问Meta为何需要这类内容。",
+        "也有人认为公开内容本就可能进入通用语料。"
+      ],
+      "comment_samples": [
+        "rileymat2认为报道没有充分解释Meta为何想使用这类内容。",
+        "konart以为模型本来就会尽量抓取所有公开数据。"
+      ],
+      "reuse_ideas": [
+        "数据来源不能只看有没有，还要看标注、权重、过滤和评测。",
+        "训练数据四项检查",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "训练数据四项检查",
+      "learning_outcome": "会查标注、权重、过滤和评测。"
+    },
+    {
+      "id": "2026081605",
+      "title": "AI开始替你推荐之后，最好能查清它到底偏向了谁",
+      "original_title": "Self-hosted monitoring for AI recommendations",
+      "summary": "LetterTrace展示自托管的AI推荐监控工具，用于记录推荐结果和变化。HN采集时7 points、0 comments；项目用户数、支持模型和评测准确性未公开。",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "小样本但直接对应内容推荐、选题和Agent决策追踪。",
+      "angle": "固定测试问题，定期记录推荐对象、顺序、理由和变化。",
+      "human_check": "核许可证、存储、模型支持、隐私、采样和公平指标。",
+      "sources": [
+        {
+          "url": "https://lettertrace.com",
+          "author": "LetterTrace / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49312505",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-16T08:30:25+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 7 points · 0 comments（8月16日采集）；产品用户数、下载量未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 41,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 98,
+        "evidence_confidence": 78,
+        "final": 72
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI开始替你推荐之后，最好能查清它到底偏向了谁",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：用于AI推荐的自托管监控。监控记录不自动证明推荐公平或正确。",
+      "discussion_focus": [
+        "无可验证评论样本。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "固定测试问题，定期记录推荐对象、顺序、理由和变化。",
+        "AI推荐变化观察表",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "AI推荐变化观察表",
+      "learning_outcome": "会记录问题、对象、顺序、理由和时间。"
+    },
+    {
+      "id": "2026081606",
+      "title": "AI越好用，基础知识反而越不能省：因为你得知道它哪里不对",
+      "original_title": "AI makes foundational knowledge more important",
+      "summary": "观点文章认为AI普及让基础知识更重要，因为用户需要提出好问题、识别错误并整合输出。HN采集时7 points、0 comments；无可验证讨论样本。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "热度不高但能直接转成学习方法，适合收藏。",
+      "angle": "让AI讲解前先写自己的初步答案，之后找三处差异并复述。",
+      "human_check": "核作者论据、教育研究和适用人群；不夸大为普遍定律。",
+      "sources": [
+        {
+          "url": "https://www.timeshighereducation.com/opinion/ai-makes-foundational-knowledge-more-important-ever",
+          "author": "Times Higher Education / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49314435",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-16T08:30:25+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 7 points · 0 comments（8月16日采集）；原文浏览、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 40,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 84,
+        "final": 72
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI越好用，基础知识反而越不能省：因为你得知道它哪里不对",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：AI让基础知识比以往更重要。这是教育观点，效果需结合具体学习研究。",
+      "discussion_focus": [
+        "无可验证评论样本。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "让AI讲解前先写自己的初步答案，之后找三处差异并复述。",
+        "AI学习三步对照卡",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "AI学习三步对照卡",
+      "learning_outcome": "会先答、对照差异、离开AI复述。"
+    },
+    {
+      "id": "2026081607",
+      "title": "反AI垃圾内容开始影响平台：不是不用AI，而是别让用户替你验收",
+      "original_title": "The AI Slop Backlash Is Having an Impact",
+      "summary": "Wired报道用户对低质AI内容的反感正在影响平台和创作者策略。HN采集时7 points、1 comment；评论样本极少，无法推断广泛共识。",
+      "category": "个人 IP",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "与账号内容质量直接相关，能转成发布前验收。",
+      "angle": "AI可以参与生产，但发布者必须负责事实、选择、结构和删改。",
+      "human_check": "核平台政策、案例、数据与时间；不把个别反弹写成全面趋势。",
+      "sources": [
+        {
+          "url": "https://www.wired.com/story/the-ai-slop-backlash-is-actually-having-an-impact/",
+          "author": "Wired / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49314494",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-16T08:30:25+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 7 points · 1 comment（8月16日采集）；Wired浏览、分享未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 39,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 88,
+        "final": 72
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "反AI垃圾内容开始影响平台：不是不用AI，而是别让用户替你验收",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：对AI垃圾内容的反弹正在产生影响。报道中的趋势需按具体平台规则和数据核验。",
+      "discussion_focus": [
+        "可验证HN评论只有链接补充，未形成实质讨论。",
+        "报道核心是低质量、批量化和无人负责，而非所有AI参与内容。"
+      ],
+      "comment_samples": [
+        "无足够代表性的可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "AI可以参与生产，但发布者必须负责事实、选择、结构和删改。",
+        "发布前四项人工验收",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "发布前四项人工验收",
+      "learning_outcome": "会核事实、选择、结构和删改。"
+    },
+    {
+      "id": "2026081608",
+      "title": "AI检测器让所有人互相怀疑：一个分数不能直接定责",
+      "original_title": "AI detectors are creating a new era of distrust",
+      "summary": "The Verge评论AI写作检测器可能制造不信任和误伤。HN采集时5 points、0 comments；没有可验证讨论样本，具体误报率需按工具与文本类型核验。",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "与学校、职场和内容审核直接相关，适合发布明确流程。",
+      "angle": "检测分数只能触发复核，需原稿、版本、口头说明和申诉。",
+      "human_check": "核具体检测器、语言、文本长度、误报研究和组织政策。",
+      "sources": [
+        {
+          "url": "https://www.theverge.com/column/976690/ai-writing-detectors-suspicion",
+          "author": "The Verge / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49312810",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-16T08:30:25+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 5 points · 0 comments（8月16日采集）；文章浏览、检测器整体误报率未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 38,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 98,
+        "evidence_confidence": 90,
+        "final": 72
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI检测器让所有人互相怀疑：一个分数不能直接定责",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：AI检测器正在创造一个新的不信任时代。它是评论文章，不证明所有检测器都不可用。",
+      "discussion_focus": [
+        "无可验证评论样本。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "检测分数只能触发复核，需原稿、版本、口头说明和申诉。",
+        "AI检测复核流程",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "AI检测复核流程",
+      "learning_outcome": "会把检测、证据、面谈和申诉分开。"
+    },
+    {
+      "id": "2026081609",
+      "title": "让AI别急着夸你的方案，先用界面把漏洞一个个问出来",
+      "original_title": "An interactive UI for the grill-me skill",
+      "summary": "Plannotator为grill-me技能提供交互界面，用追问方式检查计划中的假设、风险和缺口。HN采集时4 points、0 comments；使用量和效果未公开。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "热度小但精准解决AI一味附和，适合创业与方案审核。",
+      "angle": "让AI分别扮演用户、执行者、财务和反对者，只提问题不改方案。",
+      "human_check": "核产品、许可证、数据保存和问题生成逻辑。",
+      "sources": [
+        {
+          "url": "https://plannotator.ai/blog/an-interactive-ui-for-the-grill-me-skill/",
+          "author": "Plannotator / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49314054",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-16T08:30:25+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 4 points · 0 comments（8月16日采集）；产品用户数、效果未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 36,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 84,
+        "final": 71
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "让AI别急着夸你的方案，先用界面把漏洞一个个问出来",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：为grill-me技能制作的交互界面。工具能帮助追问，不保证发现所有风险。",
+      "discussion_focus": [
+        "无可验证评论样本。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "让AI分别扮演用户、执行者、财务和反对者，只提问题不改方案。",
+        "方案反向质询四角色",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "方案反向质询四角色",
+      "learning_outcome": "会从用户、执行、财务和反方提问。"
+    },
+    {
+      "id": "2026081610",
+      "title": "Agent开发最常见的误区：把“它能做”当成“它能稳定交付”",
+      "original_title": "Agentic Development Fallacies",
+      "summary": "文章总结Agent式开发常见谬误，强调能力演示、生产可靠性和组织流程之间的差距。HN采集时4 points、0 comments；无公开讨论样本。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "互动低但非常适合做Agent项目验收清单。",
+      "angle": "把演示成功、重复成功、失败可恢复和责任可追踪分开。",
+      "human_check": "核文章案例、系统条件、失败率和作者利益关系。",
+      "sources": [
+        {
+          "url": "https://thuva4.com/blog/agentic-development-fallacies/",
+          "author": "Thuva / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49314480",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-16T08:30:25+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 4 points · 0 comments（8月16日采集）；原文浏览、案例样本未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 35,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 82,
+        "final": 71
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Agent开发最常见的误区：把“它能做”当成“它能稳定交付”",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：Agent式开发中的谬误。作者框架需要结合具体系统验证。",
+      "discussion_focus": [
+        "无可验证评论样本。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "把演示成功、重复成功、失败可恢复和责任可追踪分开。",
+        "Agent交付四级门槛",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "Agent交付四级门槛",
+      "learning_outcome": "会区分演示、稳定、恢复和追踪。"
+    },
+    {
+      "id": "2026081611",
+      "title": "他用Claude做了浏览器却被骂，评论说问题不是用了AI，而是没讲自己做了什么",
+      "original_title": "I created a web browser using Claude, everybody hates it",
+      "summary": "开发者称用Claude做浏览器后遭遇负面反馈。HN采集时4 points、4 comments；评论指出作者过度强调使用AI，却没有说明自己的设计判断与质量把关，也有人找到先前正面反馈反驳‘所有人都讨厌’。",
+      "category": "个人 IP",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "与个人IP表达高度相关，但推荐位已满，只留候选。",
+      "angle": "发布AI项目时讲清问题、个人判断、验证和仍未解决部分。",
+      "human_check": "核项目、原反馈、作者贡献、代码和安全；不放大网暴。",
+      "sources": [
+        {
+          "url": "https://news.ycombinator.com/item?id=49314731",
+          "author": "Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49314731",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-16T08:30:25+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 4 points · 4 comments（8月16日采集）；产品用户数、留存未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 34,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 93,
+        "evidence_confidence": 78,
+        "final": 69
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "他用Claude做了浏览器却被骂，评论说问题不是用了AI，而是没讲自己做了什么",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：我用Claude做了一个网页浏览器，所有人都讨厌它。‘所有人’是夸张表述，评论中存在正面反馈。",
+      "discussion_focus": [
+        "评论认为AI社区确实对AI生成项目更苛刻。",
+        "也有人找到正面反馈，反驳所有人都讨厌。",
+        "关键批评是作者没有说明个人贡献和质量门槛。"
+      ],
+      "comment_samples": [
+        "CM30认为许多技术社区会对AI生成项目更负面。",
+        "mtmail找到正面反馈，认为作者夸张。",
+        "dabinat说在AI能写代码后，人类价值更在质量把关。"
+      ],
+      "reuse_ideas": [
+        "发布AI项目时讲清问题、个人判断、验证和仍未解决部分。",
+        "AI项目发布四段式",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "AI项目发布四段式",
+      "learning_outcome": "会讲问题、判断、验证和未解决。"
+    },
+    {
+      "id": "2026081612",
+      "title": "终端里同时跑多个Agent，状态比窗口数量更重要",
+      "original_title": "Bento Term – native tmux client with agent states and voice input",
+      "summary": "Bento Term是原生tmux客户端，显示Agent状态并支持语音输入。HN采集时3 points、0 comments；下载、平台支持和权限未公开。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "小样本，只留候选。",
+      "angle": "Agent状态应至少区分等待、执行、需确认、失败和完成。",
+      "human_check": "核系统支持、权限、语音数据、日志和许可证。",
+      "sources": [
+        {
+          "url": "https://bentoai.dev/term/",
+          "author": "Bento Term / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49312011",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-16T08:30:25+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 3 points · 0 comments（8月16日采集）；下载量、用户数未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 31,
+        "domestic_scarcity": 55,
+        "account_fit": 91,
+        "actionability": 88,
+        "evidence_confidence": 80,
+        "final": 65
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "终端里同时跑多个Agent，状态比窗口数量更重要",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：Bento Term——带Agent状态和语音输入的原生tmux客户端。状态展示不等于任务协调。",
+      "discussion_focus": [
+        "无可验证评论样本。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "Agent状态应至少区分等待、执行、需确认、失败和完成。",
+        "Agent五状态面板",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "Agent五状态面板",
+      "learning_outcome": "会区分等待、执行、确认、失败和完成。"
+    },
+    {
+      "id": "2026081613",
+      "title": "火车上5G满格却打不开网页，他顺手用AI学懂了背后的原因",
+      "original_title": "5G, full bars, nothing loads: how I learned to start learning with LLMs",
+      "summary": "作者在柏林到阿姆斯特丹的火车上遇到5G满格却无法联网，借助LLM追问无线通信、切换和网络负载，形成视觉化学习过程。HN采集时3 points、1 comment；评论样本就是作者式体验，未形成共识。",
+      "category": "个人 IP",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "热度小但叙事自然、场景具体，最接近可发的小红书学习技巧。",
+      "angle": "从眼前异常出发，连续追问机制、反例、图示和可验证资料。",
+      "human_check": "核无线通信解释、引用来源与作者原文；不要照搬叙事句子。",
+      "sources": [
+        {
+          "url": "https://www.dumky.net/posts/5g-full-bars-nothing-loads-learning-with-llms/",
+          "author": "Dumky / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49312424",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-16T08:30:25+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 3 points · 1 comment（8月16日采集）；原文浏览、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 33,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 98,
+        "evidence_confidence": 88,
+        "final": 71
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "火车上5G满格却打不开网页，他顺手用AI学懂了背后的原因",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：5G满格却什么也加载不了——我如何开始用LLM学习。个人学习体验不证明解释完全正确。",
+      "discussion_focus": [
+        "唯一可验证评论强调列车移动网络背后技术复杂。",
+        "作者式学习过程比抽象课程更有动机。"
+      ],
+      "comment_samples": [
+        "dmkii说在列车上实现手机联网涉及大量科学技术，并分享自己沿类似问题深入学习的体验。"
+      ],
+      "reuse_ideas": [
+        "从眼前异常出发，连续追问机制、反例、图示和可验证资料。",
+        "现场问题学习四问",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "现场问题学习四问",
+      "learning_outcome": "会问机制、反例、图示和证据。"
+    },
+    {
+      "id": "2026081614",
+      "title": "给Agent提Bug时，最好把原始会话一起附上",
+      "original_title": "Kimi Work attaches raw agent sessions to feedback reports",
+      "summary": "HN条目称Kimi Work可把原始Agent会话附到反馈报告。采集时3 points、0 comments；缺少外部详情页面和公开讨论。",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "方法实用但证据不足，只留候选。",
+      "angle": "反馈包应含输入、工具调用、错误、环境和最小必要日志。",
+      "human_check": "核官方功能、脱敏、权限、保存时间和删除。",
+      "sources": [
+        {
+          "url": "https://news.ycombinator.com/item?id=49313711",
+          "author": "Kimi Work / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49313711",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-16T08:30:25+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 3 points · 0 comments（8月16日采集）；产品使用量、数据范围未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 29,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 95,
+        "evidence_confidence": 74,
+        "final": 68
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "给Agent提Bug时，最好把原始会话一起附上",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：Kimi Work把原始Agent会话附加到反馈报告。会话可能包含敏感信息，不能默认完整上传。",
+      "discussion_focus": [
+        "无可验证评论样本。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "反馈包应含输入、工具调用、错误、环境和最小必要日志。",
+        "Agent反馈最小证据包",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "Agent反馈最小证据包",
+      "learning_outcome": "会保存输入、调用、错误、环境并先脱敏。"
+    },
+    {
+      "id": "2026081615",
+      "title": "Agent记忆不能只存“相关”，还要知道它当时什么时候成立",
+      "original_title": "TemporalStore: an open-source engine managing your LLM memory",
+      "summary": "TemporalStore提出带时间维度的LLM记忆引擎。HN采集时3 points、1 comment；项目采用量、准确率和删除机制未公开。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "与前几日Agent记忆邻近，只留候选。",
+      "angle": "每条记忆带发生时间、有效期、来源和替代关系。",
+      "human_check": "核许可证、基准、存储、权限、删除和过期策略。",
+      "sources": [
+        {
+          "url": "https://temporalstore.ai/blog-context-management.html",
+          "author": "TemporalStore / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49314204",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-16T08:30:25+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 3 points · 1 comment（8月16日采集）；用户数、准确率未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 30,
+        "domestic_scarcity": 40,
+        "account_fit": 96,
+        "actionability": 92,
+        "evidence_confidence": 76,
+        "final": 63
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Agent记忆不能只存“相关”，还要知道它当时什么时候成立",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：TemporalStore——管理LLM记忆的开源引擎。‘颠覆性’等项目宣传不能当事实。",
+      "discussion_focus": [
+        "样本极少，未形成共识。"
+      ],
+      "comment_samples": [
+        "无足够代表性的可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "每条记忆带发生时间、有效期、来源和替代关系。",
+        "Agent记忆四个时间字段",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "Agent记忆四个时间字段",
+      "learning_outcome": "会记发生、有效期、来源和替代。"
+    },
+    {
+      "id": "2026081616",
+      "title": "AI帮助无法说话的表演者登上歌剧舞台，技术价值在于扩大表达权",
+      "original_title": "How AI helped a nonspeaking performer find his voice",
+      "summary": "Scientific American播客报道AI帮助一名无法口语表达的表演者参与歌剧。HN采集时3 points、0 comments；播放量、技术细节和当事人控制权需核。",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "有社会价值但细节不足，只留候选。",
+      "angle": "辅助技术要看当事人是否控制内容、声音和最终表达。",
+      "human_check": "听原播客，核当事人同意、声音权、技术团队、数据与使用范围。",
+      "sources": [
+        {
+          "url": "https://www.scientificamerican.com/podcast/episode/a-nonspeaking-person-is-the-star-of-this-opera-ai-made-that-possible/",
+          "author": "Scientific American / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49314329",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-16T08:30:25+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 3 points · 0 comments；播客播放、点赞、评论未公开（8月16日采集）"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 31,
+        "domestic_scarcity": 55,
+        "account_fit": 92,
+        "actionability": 66,
+        "evidence_confidence": 92,
+        "final": 64
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI帮助无法说话的表演者登上歌剧舞台，技术价值在于扩大表达权",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：AI如何帮助一名无法说话的表演者找到自己的声音。‘找到声音’含隐喻，具体合成与授权方式需核。",
+      "discussion_focus": [
+        "无可验证评论样本。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "辅助技术要看当事人是否控制内容、声音和最终表达。",
+        "辅助表达三项权利",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "辅助表达三项权利",
+      "learning_outcome": "会检查内容控制、声音授权和撤回。"
+    },
+    {
+      "id": "2026081617",
+      "title": "同一个Agent跑在多个入口，最怕上下文和权限偷偷不一致",
+      "original_title": "One agent, every surface: how we built the Kiro agent harness",
+      "summary": "Kiro介绍同一Agent在多个界面运行的框架。HN采集时2 points、0 comments；真实使用量、同步和权限细节需核。",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "热度低，只留候选。",
+      "angle": "跨端Agent需统一身份、状态、权限和审计。",
+      "human_check": "核架构、身份、数据同步、权限、离线与删除。",
+      "sources": [
+        {
+          "url": "https://kiro.dev/blog/one-agent/",
+          "author": "Kiro / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49311712",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-16T08:30:25+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 2 points · 0 comments（8月16日采集）；产品用户数未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 28,
+        "domestic_scarcity": 55,
+        "account_fit": 95,
+        "actionability": 90,
+        "evidence_confidence": 84,
+        "final": 66
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "同一个Agent跑在多个入口，最怕上下文和权限偷偷不一致",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：一个Agent，覆盖所有界面——Kiro如何构建Agent框架。跨界面一致不等于权限相同。",
+      "discussion_focus": [
+        "无可验证评论样本。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "跨端Agent需统一身份、状态、权限和审计。",
+        "跨端Agent四项一致性",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "跨端Agent四项一致性",
+      "learning_outcome": "会核身份、状态、权限和审计。"
+    },
+    {
+      "id": "2026081618",
+      "title": "评测Agent别只看成功率：失败时会不会停更重要",
+      "original_title": "How well do your agents fail?",
+      "summary": "AgentGauntlet关注Agent失败行为评测。HN采集时2 points、1 comment；项目使用量和基准可靠性未公开。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "方法强但小样本，只留候选。",
+      "angle": "故意断网、撤权限、缺文件和返回脏数据，观察是否安全停止。",
+      "human_check": "核README、测试、权限、模型和许可证。",
+      "sources": [
+        {
+          "url": "https://github.com/Sub2mval/AgentGauntlet",
+          "author": "AgentGauntlet / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49312339",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-16T08:30:25+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 2 points · 1 comment（8月16日采集）；GitHub Stars、用户数未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 30,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 80,
+        "final": 69
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "评测Agent别只看成功率：失败时会不会停更重要",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：你的Agent失败得有多好？关注的是失败检测、停止、恢复和报告。",
+      "discussion_focus": [
+        "样本极少，未形成共识。"
+      ],
+      "comment_samples": [
+        "无足够代表性的可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "故意断网、撤权限、缺文件和返回脏数据，观察是否安全停止。",
+        "Agent四种故障演练",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "Agent四种故障演练",
+      "learning_outcome": "会测断网、撤权、缺文件和脏数据。"
+    },
+    {
+      "id": "2026081619",
+      "title": "让AI交接工作时，别只说“继续”：要留一张真正能接手的单",
+      "original_title": "The /Handoff Skill",
+      "summary": "AI Hero发布/Handoff技能，用于生成可继续工作的交接信息。HN采集时1 point、0 comments；安装量和效果未公开。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "热度极低但方法可复用，只留候选。",
+      "angle": "交接单只留目标、已完成、未完成、证据、风险和下一步。",
+      "human_check": "核技能内容、许可证、敏感数据和版本兼容。",
+      "sources": [
+        {
+          "url": "https://www.aihero.dev/skills-handoff",
+          "author": "AI Hero / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49314166",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-16T08:30:25+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 1 point · 0 comments（8月16日采集）；Skill安装量、使用量未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 27,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 82,
+        "final": 69
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "让AI交接工作时，别只说“继续”：要留一张真正能接手的单",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：/Handoff技能。交接质量仍需人工确认。",
+      "discussion_focus": [
+        "无可验证评论样本。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "交接单只留目标、已完成、未完成、证据、风险和下一步。",
+        "AI交接六字段",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "AI交接六字段",
+      "learning_outcome": "会写目标、完成、未完成、证据、风险和下一步。"
+    },
+    {
+      "id": "2026081620",
+      "title": "编码Agent到底花了多少钱？先按仓库和任务拆账",
+      "original_title": "Find out what your coding agents cost you",
+      "summary": "ace-sidecar尝试追踪编码Agent成本。GitHub与HN采集时公开互动很低；Stars、用户数、账单准确率未核到。",
+      "category": "接单变现",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "实用但样本极小，只留候选。",
+      "angle": "按仓库、任务、模型、重试和人工验收时间拆成本。",
+      "human_check": "核代码、日志权限、价格表、隐私、许可证和账单差异。",
+      "sources": [
+        {
+          "url": "https://github.com/ACE-Engineering/ace-sidecar",
+          "author": "ACE Engineering / GitHub",
+          "discussion_url": "https://github.com/ACE-Engineering/ace-sidecar",
+          "source_type": "GitHub",
+          "captured_at": "2026-08-16T08:30:25+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 1 point · 0 comments（8月16日采集）；GitHub Stars、用户数、准确率未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 26,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 72,
+        "final": 67
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "编码Agent到底花了多少钱？先按仓库和任务拆账",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：弄清你的编码Agent花了多少钱。成本归因取决于日志、价格表和任务边界。",
+      "discussion_focus": [
+        "无可验证评论样本。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "按仓库、任务、模型、重试和人工验收时间拆成本。",
+        "编码Agent五维成本表",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "编码Agent五维成本表",
+      "learning_outcome": "会按仓库、任务、模型、重试和人工时间计费。"
+    }
+  ],
+  "drafts": [
+    {
+      "content_id": "5026081601",
+      "hotspot_id": "2026081601",
+      "platform": "小红书",
+      "title": "AI能同时记住更多东西，就等于比数学家更会思考吗",
+      "body": "AI一次能塞进几十万Token，就等于比数学家更会思考吗？这篇文章在HN采集时388分、346条评论，争议非常大。\n\n支持者认为，模型能同时处理远超人脑工作记忆的信息，可能写出人类很难完整跟踪的证明。反对者提醒：能放进去，不等于能正确取用，更不等于知道哪条路线值得继续。\n\n对普通用户更有用的做法，是别把所有材料一股脑塞进同一个对话。把复杂任务分三层：外部资料库保存原文；当前窗口只留正在解决的问题；已确认结论单独写成带来源的记录。\n\n每轮结束再问：新增了什么证据、哪条假设失败、下一步为什么值得做。上下文越大，越需要管理注意力。\n\n“工作记忆更大所以更聪明”只是作者观点，不是科学共识。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "AI上下文更大，不等于更会思考。做复杂任务分三层：外部资料保存原文，当前窗口只留焦点，已确认结论单独带来源记录。每轮再问新增证据、失败假设和下一步理由。HN有388分、346条评论，但工作记忆是否等于智能仍有巨大争议。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081602",
+      "hotspot_id": "2026081602",
+      "platform": "小红书",
+      "title": "AI制药到底走到哪一步？先别把“找到候选”写成“药快上市了”",
+      "body": "AI制药新闻最容易把五年甚至十年的路，压缩成一句“发现新药”。\n\nDerek Lowe这篇梳理在HN有75分、39条评论。评论最认同的一点是：不要因为AI流行就硬用，先说明它解决了哪一步的问题。\n\n看这类新闻，我会在标题旁标五道门：找到靶点；生成候选分子；完成实验与动物验证；进入人体临床；最终获批。\n\nAI可以帮忙搜索、筛选和设计，但候选出现不等于安全有效，更不等于马上上市。真正有分量的数据仍来自可重复实验、临床终点和监管记录。\n\n这类内容只能做行业科普，不给治疗建议，也不把公司演示当临床证据。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "AI找到候选分子，不等于新药快上市。看AI制药新闻分五道门：靶点、候选、临床前验证、人体临床、最终获批。AI能加速搜索和设计，但安全有效仍要靠实验和临床。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081603",
+      "hotspot_id": "2026081603",
+      "platform": "小红书",
+      "title": "科技老板为什么爱写AI宣言？评论区认为它更像一场利益叙事",
+      "body": "读AI宣言别只摘金句。分四栏：它描绘什么愿景、公司能赚什么、哪些承诺可验证、失败谁负责。HN有54条评论，争议恰恰说明愿景和利益不能混写。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "科技老板的AI宣言怎么读？分四栏：愿景、商业利益、可验证承诺、失败责任。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081604",
+      "hotspot_id": "2026081604",
+      "platform": "小红书",
+      "title": "Meta被曝用Newsmax内容训练AI，真正要问的是数据怎么被标注和加权",
+      "body": "模型用了某家媒体内容，不等于它会原样复述。真正要查的是数据怎么标注、加多大权重、如何过滤、用什么偏差评测。协议细节未公开，先不下结论。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "训练数据来源只是第一问。还要查标注、权重、过滤和偏差评测。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081605",
+      "hotspot_id": "2026081605",
+      "platform": "小红书",
+      "title": "AI开始替你推荐之后，最好能查清它到底偏向了谁",
+      "body": "AI开始替你推荐工具、课程、产品甚至人选之后，不能只看当下答案。\n\nLetterTrace做的是自托管推荐监控。HN只有7分、0评论，项目还很早，但方法值得抄。\n\n固定10个真实问题，每周同一时间、同一模型再问一次，记录推荐了谁、排第几、给了什么理由、引用了哪些来源。\n\n连续记录后才能看出某些品牌是不是总被优先、更新后结果有没有突然变化。监控只能发现变化，不能自动证明歧视或操纵；真正判断仍要结合样本和人工审核。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "AI替你推荐产品和人选后，最好定期复查。固定10个问题，每周记录推荐对象、排序、理由、来源和时间。监控能发现变化，但不能自动证明偏见。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081606",
+      "hotspot_id": "2026081606",
+      "platform": "小红书",
+      "title": "AI越好用，基础知识反而越不能省：因为你得知道它哪里不对",
+      "body": "AI越会解释，越容易让人产生“我已经懂了”的错觉。\n\n这篇观点文章在HN只有7分、0评论，但给学习者的提醒很实用：基础知识不是为了和AI比记忆，而是为了知道它什么时候讲错、漏了什么、偷换了什么前提。\n\n我现在用AI学新东西，会先写下自己的初步答案；看完AI解释后找三处差异；最后关掉对话，用自己的话重新讲一遍，再做一道变式题。\n\n能复述不等于会用，能做变式才算真的掌握。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "AI越好用，基础知识越不能省。学习时先写自己的答案，再找AI解释中的三处差异，最后关掉对话重新复述并做一道变式题。能看懂不等于会用。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081607",
+      "hotspot_id": "2026081607",
+      "platform": "小红书",
+      "title": "反AI垃圾内容开始影响平台：不是不用AI，而是别让用户替你验收",
+      "body": "用户反感的往往不是“你用了AI”，而是你把验收工作也一起交给了用户。\n\nWired报道反AI垃圾内容的压力开始影响平台。HN只有7分、1评论，不能写成全网共识，但问题很清楚：批量、重复、没事实、没人负责的内容正在透支注意力。\n\n发布前我会人工过四项：数字和事实有没有来源；这篇为什么值得今天发；结构是不是为了读者而不是为了凑完整；至少删掉20%没信息量的句子。\n\nAI可以参与生产，最终选择和责任不能外包。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "用户反感的不是你用了AI，而是你让用户替你验收。发布前人工查四项：事实来源、今天为什么发、结构是否有用、删掉20%废话。AI可以参与生产，责任不能外包。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081608",
+      "hotspot_id": "2026081608",
+      "platform": "小红书",
+      "title": "AI检测器让所有人互相怀疑：一个分数不能直接定责",
+      "body": "一个AI检测分数，不能直接判学生作弊，也不能直接判员工造假。\n\nThe Verge这篇评论认为，检测器正在制造新的不信任。HN只有5分、0评论，但现实风险很具体：短文本、非母语写作、反复修改都可能影响结果。\n\n更稳妥的流程是：分数只触发复核；查看草稿和版本历史；让作者解释关键选择；必要时做口头或现场任务；最后提供申诉。\n\n检测工具可以当烟雾报警器，不能当法官。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "AI检测器可以当烟雾报警器，不能当法官。分数只触发复核，再看草稿版本、让作者解释关键选择、必要时现场完成任务，并提供申诉。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081609",
+      "hotspot_id": "2026081609",
+      "platform": "小红书",
+      "title": "让AI别急着夸你的方案，先用界面把漏洞一个个问出来",
+      "body": "方案交给AI后，它最容易先说“很完整”。更有用的是让它暂时别改，只负责挑问题。\n\ngrill-me技能做了一个交互界面。HN只有4分、0评论，工具效果还没公开，但方法可以直接用。\n\n让AI轮流站在四个位置提问：用户会在哪一步放弃；执行者缺什么资源；财务上哪个数字没证据；反对者会用什么案例推翻你。\n\n回答不出来的地方才是下一轮要补的，不需要先让AI重新写一份更漂亮的计划。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "别让AI先夸你的方案。让它扮演四个角色只提问题：用户、执行者、财务、反对者。回答不出来的地方，才是下一轮要补的。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081610",
+      "hotspot_id": "2026081610",
+      "platform": "小红书",
+      "title": "Agent开发最常见的误区：把“它能做”当成“它能稳定交付”",
+      "body": "Agent Demo跑通一次，离真正能交付还差很远。\n\n可以分四级验收：在理想输入下能做；换十组真实输入还能做；失败后能停、重试或回滚；最后能追到是谁、哪条规则和哪个版本做了决定。\n\n这篇文章在HN只有4分、0评论，所以不包装成热门方法。但“能做”和“能稳定交付”确实应该分开。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "Agent能跑通一次，不等于能交付。分四级验收：理想输入成功、真实输入重复成功、失败可恢复、决定可追踪。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081611",
+      "hotspot_id": "2026081611",
+      "platform": "小红书",
+      "title": "他用Claude做了浏览器却被骂，评论说问题不是用了AI，而是没讲自己做了什么",
+      "body": "发布AI项目，别把“我用Claude做的”放在最前面。先讲解决什么问题、你做了哪些判断、怎样验证、还没解决什么。评论并非所有人都讨厌，夸张标题会遮住真实反馈。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "AI项目怎么发才不只剩工具名？讲四段：问题、你的判断、验证证据、仍未解决。人类贡献不是敲了多少代码，而是做了哪些质量决定。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081612",
+      "hotspot_id": "2026081612",
+      "platform": "小红书",
+      "title": "终端里同时跑多个Agent，状态比窗口数量更重要",
+      "body": "同时开多个Agent，最需要的不是更多窗口，而是看清谁在等待、执行、要确认、失败或完成。Bento Term只有3分、0评论，先当界面参考。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "多Agent面板至少显示五种状态：等待、执行、需确认、失败、完成。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081613",
+      "hotspot_id": "2026081613",
+      "platform": "小红书",
+      "title": "火车上5G满格却打不开网页，他顺手用AI学懂了背后的原因",
+      "body": "火车上手机显示5G满格，网页却怎么都打不开。作者没有只抱怨，而是顺着这个问题一路问AI：信号格到底代表什么？高速移动时基站怎么切换？满格为什么仍会拥堵？\n\nHN只有3分、1评论，但这个学习方式很自然：从眼前真正想知道的异常开始，而不是先找一门几十小时的课。\n\n我会连续问四类问题：背后的机制；什么情况会推翻这个解释；能不能画一张图；有没有可靠资料可以核。\n\n最后关掉AI，用自己的话写100字解释。如果写不出来，说明只是看懂了句子，还没学会。\n\n技术事实仍要回通信资料核，个人体验不能替代证据。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "火车上5G满格却打不开网页，正好拿来学东西。对着真实异常问四类问题：机制是什么、什么反例会推翻、能不能画图、有什么可靠资料。最后关掉AI，用100字自己解释；写不出来就还没学会。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081614",
+      "hotspot_id": "2026081614",
+      "platform": "小红书",
+      "title": "给Agent提Bug时，最好把原始会话一起附上",
+      "body": "Agent Bug只写“它做错了”很难复现。反馈包至少含原输入、工具调用、错误、环境版本和必要日志；上传前先删密钥、客户数据和私人信息。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "Agent提Bug要附最小证据包：输入、工具调用、错误、环境版本、必要日志。先脱敏，再上传。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081615",
+      "hotspot_id": "2026081615",
+      "platform": "小红书",
+      "title": "Agent记忆不能只存“相关”，还要知道它当时什么时候成立",
+      "body": "Agent记忆命中相似内容还不够。每条最好带发生时间、有效期、来源、被哪条新信息替代。否则昨天正确的答案今天还会被自信召回。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "Agent记忆至少带四项：发生时间、有效期、来源、替代关系。相关不等于现在仍有效。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081616",
+      "hotspot_id": "2026081616",
+      "platform": "小红书",
+      "title": "AI帮助无法说话的表演者登上歌剧舞台，技术价值在于扩大表达权",
+      "body": "辅助技术真正的价值，不是替用户说话，而是让用户更能决定自己要表达什么。看这类项目要查内容控制、声音授权和撤回权。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "AI辅助表达要看三项：内容由谁决定、声音是否授权、用户能不能撤回。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081617",
+      "hotspot_id": "2026081617",
+      "platform": "小红书",
+      "title": "同一个Agent跑在多个入口，最怕上下文和权限偷偷不一致",
+      "body": "同一Agent在桌面、终端和网页都能用时，先核四项是否一致：身份、状态、权限、审计。入口相同不代表授权相同。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "跨端Agent先查身份、状态、权限、审计四项一致。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081618",
+      "hotspot_id": "2026081618",
+      "platform": "小红书",
+      "title": "评测Agent别只看成功率：失败时会不会停更重要",
+      "body": "Agent评测别只看成功。故意给它四种失败：断网、撤权限、缺文件、返回脏数据。看它能否停下、说明原因、保存进度并请求人工。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "测试Agent时故意制造四种故障：断网、撤权限、缺文件、脏数据。失败得安全，比偶尔成功更重要。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081619",
+      "hotspot_id": "2026081619",
+      "platform": "小红书",
+      "title": "让AI交接工作时，别只说“继续”：要留一张真正能接手的单",
+      "body": "AI交接别只留一句“继续”。一张能接手的单至少有：目标、已完成、未完成、证据、风险、下一步。敏感信息不要整段复制。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "AI交接写六项：目标、已完成、未完成、证据、风险、下一步。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081620",
+      "hotspot_id": "2026081620",
+      "platform": "小红书",
+      "title": "编码Agent到底花了多少钱？先按仓库和任务拆账",
+      "body": "编码Agent成本别只看月账单。按仓库、任务、模型、失败重试和人工验收时间拆开，才知道哪里浪费。项目样本很小，先核日志隐私。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "编码Agent成本分五列：仓库、任务、模型、重试、人工验收时间。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    }
+  ],
+  "gaps": [
+    "生产工作台预读取失败：本机缺少tide-ai-content-operator凭据，无法确认8月15日之后新增的reviewNote。",
+    "X、Instagram、TikTok、LinkedIn未取得可同时复核原文、时间和公开互动的新增完整样本；不伪造社媒数据。",
+    "Reddit与国内平台未取得合规稳定搜索链；国内稀缺度封顶55。",
+    "部分一手页面没有公开互动或独立复现；已降低证据置信度并保留人工复核任务。"
+  ],
+  "generated_at": "2026-08-16T08:30:25+08:00"
+}

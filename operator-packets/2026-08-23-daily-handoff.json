@@ -1,0 +1,1455 @@
+{
+  "schema_version": 2,
+  "batch_id": "daily-2026-08-23-real-sources",
+  "batch_date": "2026-08-23",
+  "editorial_brief": "优先本地模型降智排查、AI榜单稳定性、陌生技术栈验收、机器人账号治理、滚动网页原型、关AI学习测试、行业AI访谈和Agent影子委派；IPO传闻、价格与调查新闻只留候选。",
+  "hotspots": [
+    {
+      "id": "2026082301",
+      "title": "本地模型突然变笨，先别换模型：很可能是这3个设置错了",
+      "original_title": "Why your local LLM feels dumber than it is",
+      "summary": "作者讨论本地模型质量受运行方式影响。HN高赞评论认为聊天模板丢失最常见，其次是采样参数；另有用户追问Ollama是否影响质量，并分享不同硬件实测。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "当天互动最高，能直接解决本地模型用户的真实痛点。",
+      "angle": "固定同一问题，对照检查聊天模板、采样参数和上下文裁剪。",
+      "human_check": "核原帖配置、模型版本、量化格式、运行器和硬件；不同模型不能共用一套模板。",
+      "sources": [
+        {
+          "url": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
+          "author": "Level1Techs / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49402232",
+          "source_type": "本地模型实测讨论 + 高互动",
+          "captured_at": "2026-08-23T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 159 points · 46 comments（8月23日08:31采集）；原帖浏览、收藏未公开"
+          },
+          "engagement_label": "Hacker News 159 points · 46 comments（8月23日08:31采集）；原帖浏览、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 100,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 93,
+        "final": 88
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "本地模型突然变笨，先别换模型：很可能是这3个设置错了",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：为什么你的本地LLM显得比它实际更笨。文章不是新模型排名，而是运行配置排查。",
+      "discussion_focus": [
+        "高赞评论指出GGUF可能遗漏聊天模板，运行器静默退回ChatML。",
+        "用户争论Ollama的易用性与质量是否存在权衡。",
+        "多位用户分享Qwen在Mac、4090和5090上的不同体验。"
+      ],
+      "comment_samples": [
+        "一位用户说本地模型变笨多数不是量化，而是聊天模板丢失；他曾在部署Qwen时踩坑。",
+        "有人询问Ollama是否存在根本问题，因为自己选择它主要是配置方便。",
+        "另一位用户说Qwen3.8 27B在MacBook Pro上的表现比预期好。"
+      ],
+      "reuse_ideas": [
+        "固定同一问题，对照检查聊天模板、采样参数和上下文裁剪。",
+        "本地模型三项对照测试",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "本地模型三项对照测试",
+      "learning_outcome": "会核聊天模板、采样参数和上下文裁剪。"
+    },
+    {
+      "id": "2026082302",
+      "title": "Anthropic上市文件可能写“AI反弹风险”，这不等于IPO已经确定",
+      "original_title": "Anthropic IPO filing will show AI backlash as a risk factor, sources say",
+      "summary": "CNBC援引消息人士称Anthropic未来IPO文件可能把公众对AI和数据中心的反弹列为风险。HN讨论质疑这是常规风险披露，也争论商业模式、补贴和建设承诺。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "讨论高但消息未获公司确认，且缺少实操价值，不推荐。",
+      "angle": "把消息人士报道、风险披露惯例和已确认事实分三层。",
+      "human_check": "等Anthropic或监管文件；核IPO时间、风险原文、公司回应和消息来源。",
+      "sources": [
+        {
+          "url": "https://www.cnbc.com/2026/08/21/-anthropic-ipo-filing-will-show-ai-backlash-as-risk-sources-say.html",
+          "author": "CNBC / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49401229",
+          "source_type": "IPO风险报道 + 高讨论",
+          "captured_at": "2026-08-23T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 34 points · 76 comments（8月23日08:31采集）；公司估值、上市时间未确认"
+          },
+          "engagement_label": "Hacker News 34 points · 76 comments（8月23日08:31采集）；公司估值、上市时间未确认"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 72,
+        "domestic_scarcity": 55,
+        "account_fit": 58,
+        "actionability": 28,
+        "evidence_confidence": 62,
+        "final": 57
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Anthropic上市文件可能写“AI反弹风险”，这不等于IPO已经确定",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：消息人士称，Anthropic的IPO申报文件将把对AI的反弹列为风险因素。",
+      "discussion_focus": [
+        "有人认为招股书本就会罗列大量潜在风险，此事信息量有限。",
+        "评论把模型不可靠、数据中心反对和商业补贴分开讨论。",
+        "多位读者质疑短期内是否真的会上市。"
+      ],
+      "comment_samples": [
+        "评论者说招股书会列出各种可能风险，因此这可能只是常规披露。",
+        "有人认为模型幻觉不是公众情绪，而是已知产品风险。",
+        "另一位用户担心高额套餐补贴未来无法持续。"
+      ],
+      "reuse_ideas": [
+        "把消息人士报道、风险披露惯例和已确认事实分三层。",
+        "IPO传闻三层事实卡",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "IPO传闻三层事实卡",
+      "learning_outcome": "会区分消息、惯例和已确认文件。"
+    },
+    {
+      "id": "2026082303",
+      "title": "让AI自己改训练代码，别只看最好成绩：先问它跑崩了多少次",
+      "original_title": "NanoGPT Speedrun Frontier",
+      "summary": "Prime Intellect用18个前沿模型进行了153次nanoGPT优化实验，展示各模型最佳验证结果。评论追问单次运行定义、结果方差和不同推理强度是否公平。",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "有具体实验和评论质疑，可转成读AI榜单的实用方法。",
+      "angle": "任何Agent榜单同时看最佳值、中位数、失败率和成本。",
+      "human_check": "核任务定义、随机种子、模型努力级别、预算、失败次数和复现代码。",
+      "sources": [
+        {
+          "url": "https://www.primeintellect.ai/research/nanogpt-speedrun",
+          "author": "Prime Intellect / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49404380",
+          "source_type": "AI研究自动化实验 + 讨论",
+          "captured_at": "2026-08-23T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 34 points · 6 comments（8月23日08:31采集）；153次运行成本、失败分布未完整公开"
+          },
+          "engagement_label": "Hacker News 34 points · 6 comments（8月23日08:31采集）；153次运行成本、失败分布未完整公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 71,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 98,
+        "evidence_confidence": 89,
+        "final": 80
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "让AI自己改训练代码，别只看最好成绩：先问它跑崩了多少次",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：NanoGPT速度挑战的前沿结果。实验衡量模型自动优化训练过程的能力，不等于通用科研能力。",
+      "discussion_focus": [
+        "评论追问最佳成绩之外，同一模型多次运行的波动有多大。",
+        "有人不理解该优化任务如何代表科研能力。",
+        "读者指出不同模型使用的推理强度不一致，可能影响公平性。"
+      ],
+      "comment_samples": [
+        "评论者问图表只展示最佳验证结果时，各次运行的差异有多大。",
+        "有人追问‘一次运行’具体指什么，以及优化nanoGPT为何能代表科研。",
+        "另一位读者指出Fable与Opus采用不同effort设置。"
+      ],
+      "reuse_ideas": [
+        "任何Agent榜单同时看最佳值、中位数、失败率和成本。",
+        "AI榜单四格复核表",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "AI榜单四格复核表",
+      "learning_outcome": "会看最佳值、中位数、失败率和单次成本。"
+    },
+    {
+      "id": "2026082304",
+      "title": "AI能帮你写陌生语言，但最危险的是：代码能跑，你却不会判断它怪不怪",
+      "original_title": "Fast and Hard Code",
+      "summary": "文章讨论Agent降低陌生语言上手摩擦。评论强烈分歧：有人认为模型只擅长样板代码，也有人用Rust推进项目，但承认缺少对地道写法的判断力。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "争议真实，可落到陌生技术栈的人工验收方法。",
+      "angle": "让AI写陌生语言时，必须补风格样本、静态检查、基准和真人复核。",
+      "human_check": "核作者原意和示例；避免宣称学习编程已无必要。",
+      "sources": [
+        {
+          "url": "https://lucumr.pocoo.org/2026/8/22/fast-hard-code/",
+          "author": "Armin Ronacher / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49403228",
+          "source_type": "编码实践观点 + 争议讨论",
+          "captured_at": "2026-08-23T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 17 points · 11 comments（8月23日08:31采集）；文章浏览、实践成功率未公开"
+          },
+          "engagement_label": "Hacker News 17 points · 11 comments（8月23日08:31采集）；文章浏览、实践成功率未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 58,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 88,
+        "final": 77
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI能帮你写陌生语言，但最危险的是：代码能跑，你却不会判断它怪不怪",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：快速而困难的代码。标题讨论AI让开发变快后，理解与维护仍然困难。",
+      "discussion_focus": [
+        "反对者认为模型主要复制文档本该提供的样板，偏离常见写法后质量下降。",
+        "使用者承认Agent帮助写Rust，但自己缺少判断代码是否地道的感觉。",
+        "评论讨论为何人们容忍AI代码，却反感AI文章。"
+      ],
+      "comment_samples": [
+        "一位用户说LLM擅长样板和常见写法，离开热门路径后质量会快速下降。",
+        "另一位开发者借Agent写Rust，但担心自己无法判断哪些写法不自然。",
+        "有人质疑熟悉一门语言的过程是否真的不再重要。"
+      ],
+      "reuse_ideas": [
+        "让AI写陌生语言时，必须补风格样本、静态检查、基准和真人复核。",
+        "陌生技术栈四道验收门",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "陌生技术栈四道验收门",
+      "learning_outcome": "会补样本、静态检查、基准和真人复核。"
+    },
+    {
+      "id": "2026082305",
+      "title": "人们不信AI，更不信做AI的公司？先看调查到底问了谁",
+      "original_title": "AI has failed to win people's trust. Its makers? less trusted",
+      "summary": "Euronews报道公众对AI及其开发公司的信任不足。当天HN无评论，结论依赖调查地区、样本、问题原文与时间。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "调查型行业新闻，证据链未完整，不推荐。",
+      "angle": "调查结论要附地区、样本、问题、时间和出资方。",
+      "human_check": "核原始调查、样本量、抽样方法、问题原文和资助方。",
+      "sources": [
+        {
+          "url": "https://www.euronews.com/next/2026/08/20/ai-has-failed-to-win-peoples-trust-its-makers-even-less-trusted",
+          "author": "Euronews / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49404869",
+          "source_type": "公众信任调查报道",
+          "captured_at": "2026-08-23T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 9 points · 0 comments（8月23日08:31采集）；调查样本与原题需核"
+          },
+          "engagement_label": "Hacker News 9 points · 0 comments（8月23日08:31采集）；调查样本与原题需核"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 42,
+        "domestic_scarcity": 55,
+        "account_fit": 62,
+        "actionability": 35,
+        "evidence_confidence": 63,
+        "final": 51
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "人们不信AI，更不信做AI的公司？先看调查到底问了谁",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：AI未能赢得人们信任，而其制造者更不受信任。",
+      "discussion_focus": [
+        "当天HN无可验证评论，不能据此说形成社会共识。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "调查结论要附地区、样本、问题、时间和出资方。",
+        "调查新闻五项口径",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "调查新闻五项口径",
+      "learning_outcome": "会核地区、样本、问题、时间和资助。"
+    },
+    {
+      "id": "2026082306",
+      "title": "教学生用AI之前，更该让他们亲手抓一次AI的错",
+      "original_title": "The importance of teaching students what AI can't do",
+      "summary": "文章主张AI教育不仅教授工具使用，也应让学生理解能力边界。当天无公开讨论样本，课堂效果不能从观点文章推断。",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "可操作但与账户核心受众略偏，留候选。",
+      "angle": "同一题让AI回答、学生找原文证据、标出不能验证的句子。",
+      "human_check": "核作者案例、学生年龄、学科和实际教学证据。",
+      "sources": [
+        {
+          "url": "https://theconversation.com/the-importance-of-teaching-students-what-ai-cant-do-286100",
+          "author": "The Conversation / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49403885",
+          "source_type": "AI教育观点文章",
+          "captured_at": "2026-08-23T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 6 points · 0 comments（8月23日08:31采集）；文章阅读、课堂效果未公开"
+          },
+          "engagement_label": "Hacker News 6 points · 0 comments（8月23日08:31采集）；文章阅读、课堂效果未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 38,
+        "domestic_scarcity": 55,
+        "account_fit": 91,
+        "actionability": 88,
+        "evidence_confidence": 80,
+        "final": 67
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "教学生用AI之前，更该让他们亲手抓一次AI的错",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：教会学生AI做不到什么的重要性。",
+      "discussion_focus": [
+        "当天HN无可验证评论。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "同一题让AI回答、学生找原文证据、标出不能验证的句子。",
+        "AI找错课堂练习",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "AI找错课堂练习",
+      "learning_outcome": "会区分有来源、可推断和不可验证。"
+    },
+    {
+      "id": "2026082307",
+      "title": "AI生成的数学证明越来越多，最缺的是谁来逐步验",
+      "original_title": "The crisis of AI-generated mathematics",
+      "summary": "论文作者主张反对在数学中使用AI，立场强烈。唯一HN评论对此表达戏谑，未形成实质学术讨论。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "立场型学术内容且讨论不足，不推荐。",
+      "angle": "把生成猜想、形式化证明、人工审阅和正式发表分层。",
+      "human_check": "核论文版本、作者论证、引用、反方观点和同行评审状态。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2608.02859",
+          "author": "arXiv / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49404317",
+          "source_type": "AI数学批评论文 + 讨论",
+          "captured_at": "2026-08-23T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 5 points · 1 comment（8月23日08:31采集）；论文立场强烈，引用与同行评审需核"
+          },
+          "engagement_label": "Hacker News 5 points · 1 comment（8月23日08:31采集）；论文立场强烈，引用与同行评审需核"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 36,
+        "domestic_scarcity": 55,
+        "account_fit": 66,
+        "actionability": 44,
+        "evidence_confidence": 82,
+        "final": 54
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI生成的数学证明越来越多，最缺的是谁来逐步验",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：AI生成数学的危机。",
+      "discussion_focus": [
+        "唯一评论注意到作者主张全面反对AI用于数学，未讨论具体证据。"
+      ],
+      "comment_samples": [
+        "评论者引用论文的全面反对立场，并以‘准备爆米花’表示争议性。"
+      ],
+      "reuse_ideas": [
+        "把生成猜想、形式化证明、人工审阅和正式发表分层。",
+        "AI数学四级验证",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "AI数学四级验证",
+      "learning_outcome": "会区分猜想、形式化、人工审阅和发表。"
+    },
+    {
+      "id": "2026082308",
+      "title": "AI让我做得更快，但我怎么知道自己没在原地打转",
+      "original_title": "AI Made Me Faster. I'm Not Sure It Made Me Better",
+      "summary": "作者反思AI提高产出速度是否等于能力提升。当天无公开评论，属于个人经验而非普遍结论。",
+      "category": "个人 IP",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "角度真实但互动低，留候选。",
+      "angle": "分别记录产量、返工、独立完成和一周后复述。",
+      "human_check": "保留个人经验属性，不泛化为AI削弱能力。",
+      "sources": [
+        {
+          "url": "https://medium.com/freedomofthought/ai-made-me-faster-im-not-sure-it-made-me-better-b7f78db7fc66",
+          "author": "Freedom of Thought / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49404320",
+          "source_type": "AI生产力个人复盘",
+          "captured_at": "2026-08-23T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 4 points · 0 comments（8月23日08:31采集）；个人经验，无公开效果数据"
+          },
+          "engagement_label": "Hacker News 4 points · 0 comments（8月23日08:31采集）；个人经验，无公开效果数据"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 34,
+        "domestic_scarcity": 55,
+        "account_fit": 88,
+        "actionability": 85,
+        "evidence_confidence": 66,
+        "final": 64
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI让我做得更快，但我怎么知道自己没在原地打转",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：AI让我更快了，但我不确定它让我变得更好。",
+      "discussion_focus": [
+        "当天HN无可验证评论。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "分别记录产量、返工、独立完成和一周后复述。",
+        "AI学习四项自测",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "AI学习四项自测",
+      "learning_outcome": "会区分变快、变好和依赖。"
+    },
+    {
+      "id": "2026082309",
+      "title": "给AI单独建账号还不够：系统必须知道这一步是谁授权的",
+      "original_title": "Hotcrp.com – AI agents and bot accounts",
+      "summary": "HotCRP发布AI Agent与机器人账户规则。公开讨论量低，但一手规则适合提炼人、机器人和授权任务的身份分离。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "一手规则可转成团队自动化账号治理清单。",
+      "angle": "机器人账号要独立身份、最小权限、授权人、任务范围和可撤销。",
+      "human_check": "核HotCRP规则适用范围、认证、日志和违规处置；不外推为通用法律要求。",
+      "sources": [
+        {
+          "url": "https://hotcrp.com/news/2026/ai-agents-202608",
+          "author": "HotCRP / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49401443",
+          "source_type": "学术会议反Bot规则公告",
+          "captured_at": "2026-08-23T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 3 points · 0 comments（8月23日08:31采集）；HotCRP公告浏览未公开"
+          },
+          "engagement_label": "Hacker News 3 points · 0 comments（8月23日08:31采集）；HotCRP公告浏览未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 33,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 94,
+        "final": 71
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "给AI单独建账号还不够：系统必须知道这一步是谁授权的",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：HotCRP——AI Agent和机器人账户。",
+      "discussion_focus": [
+        "当天HN无评论，内容以HotCRP官方规则为准。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "机器人账号要独立身份、最小权限、授权人、任务范围和可撤销。",
+        "AI机器人账号五字段",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "AI机器人账号五字段",
+      "learning_outcome": "会记录身份、权限、授权人、任务和撤销。"
+    },
+    {
+      "id": "2026082310",
+      "title": "AI图能不能追到训练原图？这项研究说经常做不到",
+      "original_title": "When AI art has no author: Generated images can't trace to training data (study)",
+      "summary": "MIT News报道一项生成图像归因研究，称生成结果经常难以追溯到具体训练图像。结论依赖模型、数据和归因方法。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "版权敏感且评论不足，只留候选。",
+      "angle": "区分训练数据存在、记忆复现、风格相似和可归因证据。",
+      "human_check": "核原论文、模型、数据集、归因算法、误差和版权专家意见。",
+      "sources": [
+        {
+          "url": "https://news.mit.edu/2026/when-ai-art-has-no-author-generated-images-often-cant-be-traced-to-training-data-0818",
+          "author": "MIT News / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49402040",
+          "source_type": "生成图像归因研究报道",
+          "captured_at": "2026-08-23T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 3 points · 0 comments（8月23日08:31采集）；研究样本、模型范围需核原论文"
+          },
+          "engagement_label": "Hacker News 3 points · 0 comments（8月23日08:31采集）；研究样本、模型范围需核原论文"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 32,
+        "domestic_scarcity": 55,
+        "account_fit": 70,
+        "actionability": 38,
+        "evidence_confidence": 88,
+        "final": 54
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI图能不能追到训练原图？这项研究说经常做不到",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：当AI艺术没有作者：生成图像常常无法追溯到训练数据（研究）。",
+      "discussion_focus": [
+        "当天HN无可验证评论。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "区分训练数据存在、记忆复现、风格相似和可归因证据。",
+        "AI图归因四层证据",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "AI图归因四层证据",
+      "learning_outcome": "会区分存在、复现、相似和归因。"
+    },
+    {
+      "id": "2026082311",
+      "title": "不用显卡也能跑本地模型，但“能跑”和“值得跑”差很远",
+      "original_title": "Ask HN: Is it time to run the LLM engines on the CPU?",
+      "summary": "Ask HN讨论CPU运行LLM。评论指出一直可以运行，但矩阵计算更慢、能效更差；也有人从耗电角度提出质疑。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "实用但讨论与数据不足，留候选。",
+      "angle": "CPU方案测首字时间、总耗时、内存、耗电和噪音。",
+      "human_check": "核模型大小、量化、CPU指令集、线程、内存和实测功耗。",
+      "sources": [
+        {
+          "url": "https://news.ycombinator.com/item?id=49402551",
+          "author": "Ask HN",
+          "discussion_url": "https://news.ycombinator.com/item?id=49402551",
+          "source_type": "CPU推理问答",
+          "captured_at": "2026-08-23T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 3 points · 4 comments（8月23日08:31采集）；无公开浏览、收藏"
+          },
+          "engagement_label": "Hacker News 3 points · 4 comments（8月23日08:31采集）；浏览、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 31,
+        "domestic_scarcity": 55,
+        "account_fit": 94,
+        "actionability": 88,
+        "evidence_confidence": 72,
+        "final": 65
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "不用显卡也能跑本地模型，但“能跑”和“值得跑”差很远",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：是时候让LLM引擎在CPU上运行了吗？",
+      "discussion_focus": [
+        "评论认为CPU并非不能跑，只是通常更慢且能效更差。",
+        "有人把选择问题转向能源成本。"
+      ],
+      "comment_samples": [
+        "评论者说模型查询主要是矩阵乘法，GPU对此更优化。",
+        "另一条评论反问能接受多少额外耗电。"
+      ],
+      "reuse_ideas": [
+        "CPU方案测首字时间、总耗时、内存、耗电和噪音。",
+        "CPU跑模型五项实测",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "CPU跑模型五项实测",
+      "learning_outcome": "会测延迟、耗时、内存、功耗和噪音。"
+    },
+    {
+      "id": "2026082312",
+      "title": "英伟达客户被通知涨价超15%？先确认涨的是哪一类产品",
+      "original_title": "Nvidia Customers Notified About AI-Related Price Hikes Above 15%",
+      "summary": "Bloomberg报道称部分Nvidia客户收到与AI相关、超过15%的涨价通知。具体产品、地区、合同和生效时间需核。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "价格敏感且公开细节不足，不推荐。",
+      "angle": "价格新闻核产品、地区、客户类型、合同和生效日。",
+      "human_check": "核Nvidia回应、通知原文、渠道价与终端零售价差异。",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15",
+          "author": "Bloomberg / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49402720",
+          "source_type": "GPU价格消息报道",
+          "captured_at": "2026-08-23T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 3 points · 0 comments（8月23日08:31采集）；价格范围、客户样本和官方确认未公开"
+          },
+          "engagement_label": "Hacker News 3 points · 0 comments（8月23日08:31采集）；价格范围、客户样本和官方确认未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 30,
+        "domestic_scarcity": 55,
+        "account_fit": 60,
+        "actionability": 32,
+        "evidence_confidence": 65,
+        "final": 48
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "英伟达客户被通知涨价超15%？先确认涨的是哪一类产品",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：英伟达客户收到AI相关产品涨价超过15%的通知。",
+      "discussion_focus": [
+        "当天HN无可验证评论。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "价格新闻核产品、地区、客户类型、合同和生效日。",
+        "硬件涨价五项核验",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "硬件涨价五项核验",
+      "learning_outcome": "会核产品、地区、客户、合同和日期。"
+    },
+    {
+      "id": "2026082313",
+      "title": "AI批量提代码，最先被压垮的可能是开源维护者",
+      "original_title": "Linux Network Developers Are 'Completely Overwhelmed' by AI Agents",
+      "summary": "Phoronix报道Linux网络维护者被AI Agent相关提交压力淹没。当天无讨论，标题带调侃语气，需要回原邮件核具体问题。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "重要但证据与讨论少，只留候选。",
+      "angle": "AI贡献代码必须附复现、测试、人工负责人和后续维护承诺。",
+      "human_check": "核邮件列表原文、提交性质、数量、维护者措辞和AI归因。",
+      "sources": [
+        {
+          "url": "https://www.phoronix.com/news/Linux-7.3-Networking",
+          "author": "Phoronix / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49404124",
+          "source_type": "开源维护者负担报道",
+          "captured_at": "2026-08-23T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 3 points · 0 comments（8月23日08:31采集）；提交数量与归因需核原邮件"
+          },
+          "engagement_label": "Hacker News 3 points · 0 comments（8月23日08:31采集）；提交数量与归因需核原邮件"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 30,
+        "domestic_scarcity": 55,
+        "account_fit": 80,
+        "actionability": 62,
+        "evidence_confidence": 81,
+        "final": 59
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI批量提代码，最先被压垮的可能是开源维护者",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：Linux网络开发者被AI Agent‘彻底淹没’。",
+      "discussion_focus": [
+        "当天HN无可验证评论。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "AI贡献代码必须附复现、测试、人工负责人和后续维护承诺。",
+        "AI开源提交四项责任卡",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "AI开源提交四项责任卡",
+      "learning_outcome": "会附复现、测试、负责人和维护承诺。"
+    },
+    {
+      "id": "2026082314",
+      "title": "苹果官网那种滚动动画，不会前端也能先做出可用原型",
+      "original_title": "Show HN: I turned Apple-style scroll-video websites into a reusable AI skill",
+      "summary": "作者把Apple式滚动视频网页封装成AI Skill。公开互动很少，项目可复用性、移动端性能和无障碍需实测。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "虽低互动，但产出直观、可收藏，适合小商家和个人项目做原型。",
+      "angle": "用短视频帧序列做单屏原型，先测手机流畅、首屏体积和降级图。",
+      "human_check": "核许可证、依赖、示例、移动端帧率、资源大小、无障碍和版权。",
+      "sources": [
+        {
+          "url": "https://github.com/musoyangrigor/scroll-video-website-skill",
+          "author": "musoyangrigor / GitHub / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49401459",
+          "source_type": "可复用网页动效Skill",
+          "captured_at": "2026-08-23T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 2 points · 0 comments（8月23日08:31采集）；GitHub Stars、真实项目采用未公开"
+          },
+          "engagement_label": "Hacker News 2 points · 0 comments（8月23日08:31采集）；GitHub Stars、真实项目采用未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 29,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 80,
+        "final": 69
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "苹果官网那种滚动动画，不会前端也能先做出可用原型",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：我把Apple风格的滚动视频网站做成了一个可复用AI Skill。",
+      "discussion_focus": [
+        "当天HN无评论，不能推断使用口碑。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "用短视频帧序列做单屏原型，先测手机流畅、首屏体积和降级图。",
+        "滚动动画原型四项验收",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "滚动动画原型四项验收",
+      "learning_outcome": "会核帧率、首屏体积、降级图和文案可读性。"
+    },
+    {
+      "id": "2026082315",
+      "title": "给编码Agent装技能包，先别被“开源”两个字放松警惕",
+      "original_title": "Show HN: TechSkills – Open-source skill modules for AI coding agents",
+      "summary": "TechSkills提供开源编码Agent技能模块。当天无评论，权限、更新链、作者维护和输出质量需审查。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "与前一天OWASP Skill安全主题相近，不推荐。",
+      "angle": "安装前读指令、命令、网络、文件范围和更新来源。",
+      "human_check": "核许可证、维护记录、安装脚本、网络请求和密钥访问。",
+      "sources": [
+        {
+          "url": "https://github.com/debabratasaha-dev/techskills",
+          "author": "TechSkills / GitHub / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49401893",
+          "source_type": "编码Agent技能模块",
+          "captured_at": "2026-08-23T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 2 points · 0 comments（8月23日08:31采集）；GitHub采用量和安全审计未公开"
+          },
+          "engagement_label": "Hacker News 2 points · 0 comments（8月23日08:31采集）；GitHub采用量和安全审计未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 28,
+        "domestic_scarcity": 55,
+        "account_fit": 91,
+        "actionability": 88,
+        "evidence_confidence": 70,
+        "final": 64
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "给编码Agent装技能包，先别被“开源”两个字放松警惕",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：TechSkills——面向AI编码Agent的开源技能模块。",
+      "discussion_focus": [
+        "当天HN无可验证评论。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "安装前读指令、命令、网络、文件范围和更新来源。",
+        "Skill五项静态审查",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "Skill五项静态审查",
+      "learning_outcome": "会读指令、命令、网络、文件和更新。"
+    },
+    {
+      "id": "2026082316",
+      "title": "用AI学东西最容易假会：我会强制自己做一次“关掉AI测试”",
+      "original_title": "How I Use AI to Learn Things",
+      "summary": "视频分享用AI学习的方法。当前无法取得YouTube公开互动和评论样本，因此不复述作者效果，只提炼可独立验证的学习测试。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "互动证据弱，但可做普适、能收藏的关AI自测法。",
+      "angle": "AI解释后关掉窗口，用空白纸复述、举例、反例和新题。",
+      "human_check": "人工打开视频核作者步骤、发布时间与可见互动；不要声称方法已被证明提高学习。",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=kzcI5F4tGiU",
+          "author": "YouTube creator / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49402601",
+          "source_type": "AI学习方法视频",
+          "captured_at": "2026-08-23T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "YouTube浏览、点赞、评论本轮未取得；Hacker News 2 points · 0 comments（8月23日08:31采集）"
+          },
+          "engagement_label": "YouTube浏览、点赞、评论本轮未取得；Hacker News 2 points · 0 comments（8月23日08:31采集）"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 28,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 64,
+        "final": 67
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "用AI学东西最容易假会：我会强制自己做一次“关掉AI测试”",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：我是怎样使用AI学习东西的。",
+      "discussion_focus": [
+        "HN无评论；YouTube评论本轮未取得，无法归纳受众讨论。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "AI解释后关掉窗口，用空白纸复述、举例、反例和新题。",
+        "关掉AI后的四格学习测试",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "关掉AI后的四格学习测试",
+      "learning_outcome": "会复述、举例、找反例和迁移新题。"
+    },
+    {
+      "id": "2026082317",
+      "title": "做行业AI产品，先别做聊天框：先写清楚用户每天怎么做决定",
+      "original_title": "Domain Driven AI",
+      "summary": "文章主张从用户领域和决策流程设计AI，而不是从模型能力出发。唯一评论赞同前提，但认为‘理解用户领域’本就比AI更普遍、更重要。",
+      "category": "接单变现",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "适合接单和产品方向，可变成第一次客户访谈的具体提问表。",
+      "angle": "先问触发、输入、判断、动作、例外和责任，再决定AI放哪一步。",
+      "human_check": "核作者案例和效果；不要承诺访谈模板必然带来转化。",
+      "sources": [
+        {
+          "url": "https://pedromadruga.com/blog/domain-driven-ai/",
+          "author": "Pedro Madruga / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49403103",
+          "source_type": "产品设计方法文章 + 评论",
+          "captured_at": "2026-08-23T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 2 points · 1 comment（8月23日08:31采集）；文章阅读、商业效果未公开"
+          },
+          "engagement_label": "Hacker News 2 points · 1 comment（8月23日08:31采集）；文章阅读、商业效果未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 28,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 78,
+        "final": 69
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "做行业AI产品，先别做聊天框：先写清楚用户每天怎么做决定",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：领域驱动的AI。",
+      "discussion_focus": [
+        "唯一评论赞同理解用户领域，但认为这一原则并非AI独有。"
+      ],
+      "comment_samples": [
+        "评论者说用户领域理解的重要性压过了文章中AI特有的部分。"
+      ],
+      "reuse_ideas": [
+        "先问触发、输入、判断、动作、例外和责任，再决定AI放哪一步。",
+        "行业AI六问访谈卡",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "行业AI六问访谈卡",
+      "learning_outcome": "会问触发、输入、判断、动作、例外和责任。"
+    },
+    {
+      "id": "2026082318",
+      "title": "Twitch内容被用于训练Amazon AI，现在终于能选择退出",
+      "original_title": "Twitch content has trained Amazon AI for years, but users can opt out now",
+      "summary": "Ars报道Twitch内容长期用于Amazon AI训练，平台现提供退出机制。具体覆盖范围、生效时间和历史数据处理需核官方说明。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "有用户操作价值，但属于平台行业新闻且互动低，不推荐。",
+      "angle": "退出前核训练类型、历史数据、未来内容、生效时间和账号范围。",
+      "human_check": "核Twitch/Amazon官方页面、设置路径、地区差异和历史内容处理。",
+      "sources": [
+        {
+          "url": "https://arstechnica.com/ai/2026/08/twitch-content-has-trained-amazon-ai-for-years-but-users-can-opt-out-now/",
+          "author": "Ars Technica / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49404271",
+          "source_type": "平台数据使用与退出报道",
+          "captured_at": "2026-08-23T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 2 points · 0 comments（8月23日08:31采集）；Ars页面浏览、分享未公开"
+          },
+          "engagement_label": "Hacker News 2 points · 0 comments（8月23日08:31采集）；Ars页面浏览、分享未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 27,
+        "domestic_scarcity": 55,
+        "account_fit": 72,
+        "actionability": 76,
+        "evidence_confidence": 85,
+        "final": 58
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Twitch内容被用于训练Amazon AI，现在终于能选择退出",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：Twitch内容多年来一直训练Amazon AI，但用户现在可以选择退出。",
+      "discussion_focus": [
+        "当天HN无可验证评论。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "退出前核训练类型、历史数据、未来内容、生效时间和账号范围。",
+        "平台AI训练退出五项核验",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "平台AI训练退出五项核验",
+      "learning_outcome": "会核用途、历史、未来、生效和账号。"
+    },
+    {
+      "id": "2026082319",
+      "title": "你只让Agent查资料，它却悄悄把任务又交给了另一个Agent",
+      "original_title": "Ordinary agent tool calls can create shadow delegation",
+      "summary": "文章指出普通工具调用可能形成用户不可见的二次委派：主Agent调用的服务内部再调用其他Agent。当天无评论，风险范围需按架构复核。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "新颖且可直接转成团队权限与日志检查。",
+      "angle": "每次工具调用记录实际执行者、继承权限、外发数据和终止路径。",
+      "human_check": "核文章威胁模型、示例代码、适用框架和缓解措施；不要声称所有工具都会委派。",
+      "sources": [
+        {
+          "url": "https://niyikiza.com/posts/agents-to-agents/",
+          "author": "Niyikiza / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49404443",
+          "source_type": "Agent安全技术分析",
+          "captured_at": "2026-08-23T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 2 points · 0 comments（8月23日08:31采集）；原文浏览、复现范围未公开"
+          },
+          "engagement_label": "Hacker News 2 points · 0 comments（8月23日08:31采集）；原文浏览、复现范围未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 27,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 84,
+        "final": 69
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "你只让Agent查资料，它却悄悄把任务又交给了另一个Agent",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：普通的Agent工具调用可能产生影子委派。",
+      "discussion_focus": [
+        "当天HN无评论，无法确认开发者普遍遇到该问题。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "每次工具调用记录实际执行者、继承权限、外发数据和终止路径。",
+        "Agent影子委派四项审计",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "Agent影子委派四项审计",
+      "learning_outcome": "会核执行者、权限、数据和终止。"
+    },
+    {
+      "id": "2026082320",
+      "title": "AI爬虫抓走一篇内容到底值多少钱？别只按访问次数算",
+      "original_title": "How much is crawling your content worth to an AI bot?",
+      "summary": "Yale Insights讨论AI机器人抓取内容的经济价值。具体估值依赖内容类型、用途、替代成本和授权范围；当天无评论。",
+      "category": "接单变现",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "商业角度有趣但方法需核，留候选。",
+      "angle": "内容授权拆成访问、训练、检索引用、再分发和期限。",
+      "human_check": "核原研究、估值假设、样本、法律辖区和平台合同。",
+      "sources": [
+        {
+          "url": "https://insights.som.yale.edu/insights/how-much-is-crawling-your-content-worth-to-an-ai-bot",
+          "author": "Yale Insights / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49404527",
+          "source_type": "AI爬虫内容价值研究",
+          "captured_at": "2026-08-23T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 2 points · 0 comments（8月23日08:31采集）；研究估值方法和样本需核"
+          },
+          "engagement_label": "Hacker News 2 points · 0 comments（8月23日08:31采集）；研究估值方法和样本需核"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 27,
+        "domestic_scarcity": 55,
+        "account_fit": 78,
+        "actionability": 68,
+        "evidence_confidence": 83,
+        "final": 59
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI爬虫抓走一篇内容到底值多少钱？别只按访问次数算",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：AI机器人抓取你的内容值多少钱？",
+      "discussion_focus": [
+        "当天HN无可验证评论。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "内容授权拆成访问、训练、检索引用、再分发和期限。",
+        "AI内容授权五项拆分",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "AI内容授权五项拆分",
+      "learning_outcome": "会区分访问、训练、引用、再分发和期限。"
+    }
+  ],
+  "drafts": [
+    {
+      "content_id": "5026082301",
+      "hotspot_id": "2026082301",
+      "platform": "小红书",
+      "title": "本地模型突然变笨，先别换模型：很可能是这3个设置错了",
+      "body": "同一个本地模型，别人用起来很聪明，装到自己电脑上却像换了个脑子。先别急着下载更大的，很多时候是运行设置把它“降智”了。\n\n最省事的查法，是固定同一个问题，连续做三次对照。\n\n第一次检查聊天模板。模型发布页写的是哪套格式，运行器就要用哪套。评论区有人踩过这个坑：GGUF里没带模板，程序悄悄退回ChatML，模型照样能说话，但回答明显变差。\n\n第二次把温度、top-p之类的采样参数恢复到模型推荐值。第三次看长对话有没有把最早的规则裁掉，最好开一个全新会话重跑。\n\n三次只改一个变量，把回答并排放。这样你才能知道是模型不行，还是“翻译模型指令的那层”出了问题。\n\n这条在HN采集时159分、46条评论。量化也会影响质量，但先排这三项，通常比立刻再下几十GB权重更划算。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "本地模型突然变笨，先别换模型。固定同一个问题做三次对照：第一查聊天模板有没有丢，第二把采样参数恢复推荐值，第三开新会话排除上下文被裁。每次只改一个变量，把回答并排看。很多时候模型没变笨，是运行器用错了说话格式。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082302",
+      "hotspot_id": "2026082302",
+      "platform": "小红书",
+      "title": "Anthropic上市文件可能写“AI反弹风险”，这不等于IPO已经确定",
+      "body": "Anthropic是否上市、何时上市目前都需确认。看到‘文件将写某风险’，先分消息人士说法、招股书常规披露和正式监管文件三层。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "IPO消息先分传闻、常规风险披露和正式文件三层。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082303",
+      "hotspot_id": "2026082303",
+      "platform": "小红书",
+      "title": "让AI自己改训练代码，别只看最好成绩：先问它跑崩了多少次",
+      "body": "AI Agent榜单最容易让人误判的，是只把最好的一次放在大图上。最好成绩能说明“它偶尔做得到”，但不说明你交给它十次，能稳定完成几次。\n\n这次NanoGPT speedrun一共跑了153次、18个模型，目标是让模型自己优化一段训练代码。评论区马上追问了三个问题：一次run到底怎么算；同模型不同次差多少；为什么模型的推理强度没有完全统一。\n\n以后看这类榜单，我会抄四个数：最佳值、中位数、失败率、单次成本。只有最佳值，没有后三个，就先当能力演示，不当采购依据。\n\n如果自己测Agent，也别只保存成功截图。固定五个任务，每个跑五次，失败也计入。最后选的往往不是偶尔冲第一的，而是二十五次里最少添乱的。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "AI榜单别只看最好成绩。至少抄四个数：最佳值、中位数、失败率、单次成本。这次NanoGPT实验跑了153次、18个模型，评论区就在追问结果波动和不同推理强度是否公平。自己测Agent也一样，五个任务各跑五次，失败必须计入。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082304",
+      "hotspot_id": "2026082304",
+      "platform": "小红书",
+      "title": "AI能帮你写陌生语言，但最危险的是：代码能跑，你却不会判断它怪不怪",
+      "body": "AI确实能让你在没学过的语言里很快写出能跑的东西。麻烦也在这里：它能编译，你却不知道这段代码是不是当地人一眼就会皱眉的写法。\n\n如果项目必须用陌生技术栈，我会给它四道门。先找这个项目里一段公认写得好的代码，让AI照同样的风格；再开语言自带的格式化和静态检查；关键路径补一组性能或内存基准；合并前找真正熟悉这门语言的人，只看接口、错误处理和资源释放。\n\n评论区有人用Agent写Rust，项目推进很快，但他也坦白自己不知道什么才算“地道Rust”。这比“AI会不会写代码”的争论更真实。\n\n能跑只是第一层。你不熟悉的地方，最需要的不是更大胆地生成，而是更明确地验收。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "AI能帮你写陌生语言，危险是代码能跑，你却判断不了它怪不怪。给它四道门：提供项目里的好代码样本，打开格式化和静态检查，关键路径做性能基准，合并前找熟悉这门语言的人看接口、错误处理和资源释放。能跑只是第一层。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082305",
+      "hotspot_id": "2026082305",
+      "platform": "小红书",
+      "title": "人们不信AI，更不信做AI的公司？先看调查到底问了谁",
+      "body": "信任调查别只转标题。地区、样本、问题原文、调查时间和资助方缺一项，结论都要留余地。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "调查新闻核地区、样本、问题、时间和资助五项。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082306",
+      "hotspot_id": "2026082306",
+      "platform": "小红书",
+      "title": "教学生用AI之前，更该让他们亲手抓一次AI的错",
+      "body": "教AI最好的第一课可以不是提示词，而是找错：同一题先让AI回答，再回原文逐句标来源、推断和无法验证。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "AI教育先做一次找错练习：回答、原文证据、无法验证句子三栏。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082307",
+      "hotspot_id": "2026082307",
+      "platform": "小红书",
+      "title": "AI生成的数学证明越来越多，最缺的是谁来逐步验",
+      "body": "AI给出数学结果，至少分四层：生成猜想、形式化验证、专家审阅、正式发表。标题里的‘证明了’不能跨层。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "AI数学结果先分猜想、形式化、专家审阅和发表四层。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082308",
+      "hotspot_id": "2026082308",
+      "platform": "小红书",
+      "title": "AI让我做得更快，但我怎么知道自己没在原地打转",
+      "body": "AI效率别只看完成件数。再记返工次数、关掉AI能否独立做、一周后能否复述。快和会，不是一回事。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "AI学习同时记产量、返工、独立完成和一周后复述。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082309",
+      "hotspot_id": "2026082309",
+      "platform": "小红书",
+      "title": "给AI单独建账号还不够：系统必须知道这一步是谁授权的",
+      "body": "让AI帮团队登录系统，很多人的做法是“给它单独注册一个账号”。这只解决了不共用密码，还没解决出事后谁负责。\n\n一个能用的机器人账号，至少要写五项：账号明确标记为自动化；只给完成任务必需的权限；每个任务有具体授权人；写清允许做什么和截止时间；随时可以一键撤销。\n\n日志里还要同时留下机器人账号和授权人的身份。这样删错数据时，不会只看到“bot-03操作”，却没人知道是谁让它做的。\n\nHotCRP刚发布AI Agent和Bot账户规则，HN采集时3分、0评论，热度不高，但它提醒了一件很实际的事：AI账号不是“没人负责的账号”。\n\n先把这五个字段做成团队模板，再谈自动化规模。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "给AI单独建账号还不够，系统必须知道是谁授权的。机器人账号写五项：自动化身份、最小权限、授权人、任务范围、随时撤销。日志同时留机器人和人的身份。这样出错时，才不会只看到bot操作，却找不到负责人。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082310",
+      "hotspot_id": "2026082310",
+      "platform": "小红书",
+      "title": "AI图能不能追到训练原图？这项研究说经常做不到",
+      "body": "AI图像版权讨论别把‘像’当成‘来自某张图’。训练存在、记忆复现、风格相似和可归因证据是四回事。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "AI图归因先分训练存在、记忆复现、风格相似和证据归因。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082311",
+      "hotspot_id": "2026082311",
+      "platform": "小红书",
+      "title": "不用显卡也能跑本地模型，但“能跑”和“值得跑”差很远",
+      "body": "CPU跑模型不要只看是否成功加载。首字时间、总耗时、内存、功耗和风扇噪音一起测，才知道它适不适合日常。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "CPU跑本地模型测延迟、总耗时、内存、功耗和噪音五项。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082312",
+      "hotspot_id": "2026082312",
+      "platform": "小红书",
+      "title": "英伟达客户被通知涨价超15%？先确认涨的是哪一类产品",
+      "body": "硬件涨价标题先别外推到所有显卡。核产品、地区、客户类型、合同和生效日期。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "硬件涨价核产品、地区、客户、合同和日期。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082313",
+      "hotspot_id": "2026082313",
+      "platform": "小红书",
+      "title": "AI批量提代码，最先被压垮的可能是开源维护者",
+      "body": "AI生成开源提交不能只附补丁。复现步骤、测试、人工负责人和后续维护承诺必须一起交。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "AI开源提交附复现、测试、负责人和维护承诺四项。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082314",
+      "hotspot_id": "2026082314",
+      "platform": "小红书",
+      "title": "苹果官网那种滚动动画，不会前端也能先做出可用原型",
+      "body": "想做苹果官网那种“往下滚，产品跟着转动”的页面，不一定先学一整套动效框架。这个开源Skill把常见流程封装了，可以先拿来做一个单屏原型。\n\n准备一段3到5秒、背景固定的产品转动视频，让AI拆成帧序列，再把滚动距离映射到帧号。先只做一个产品、一个卖点，别一上来塞完整首页。\n\n完成后重点测四件事：普通手机滚动会不会掉帧；首屏需要下载多少MB；加载失败时有没有静态图；文字盖在画面上是否还能读清。\n\n这条在HN只有2分、0评论，GitHub采用量也未公开，所以它更适合“快速验证效果”，不是成熟方案推荐。原型顺了，再决定要不要为正式站重写。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "不会前端，也可以先做苹果官网式滚动原型。准备3到5秒产品转动视频，让AI拆成帧序列，把滚动距离映射到帧号。先只做一个产品、一个卖点。完成后测手机帧率、首屏体积、加载失败静态图和文字可读性。它适合验证效果，不代表已经能直接上生产。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082315",
+      "hotspot_id": "2026082315",
+      "platform": "小红书",
+      "title": "给编码Agent装技能包，先别被“开源”两个字放松警惕",
+      "body": "开源Skill也要审：它让Agent读什么、跑什么命令、连什么网络、改哪些文件、从哪里更新。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "Agent Skill安装前审指令、命令、网络、文件和更新。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082316",
+      "hotspot_id": "2026082316",
+      "platform": "小红书",
+      "title": "用AI学东西最容易假会：我会强制自己做一次“关掉AI测试”",
+      "body": "AI把一个概念讲得特别顺时，很容易产生“我懂了”的错觉。真正的测试不是继续点头，而是把窗口关掉。\n\n我会拿一张空白纸做四格：用自己的话复述；举一个生活里的例子；找一个不适用的反例；换一道新题重新用一次。任何一格写不出来，就只把那一小块拿回去问AI，不从头再听一遍。\n\n最后让AI只负责出题和检查，不替你写答案。过一天再做同样四格，看还能留下多少。\n\n原视频的YouTube浏览、点赞和评论本轮没有取得，HN只有2分、0评论，所以这里不拿作者效果背书。这个方法值不值得，用你第二天能不能独立复述来判断。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "用AI学习最容易出现假会。解释看完后把窗口关掉，拿空白纸写四格：自己的话复述、一个例子、一个反例、一道新题。哪格不会，只回去问那一块。最后让AI只出题和检查，不替你答。第二天还能独立复述，才算真的学会。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082317",
+      "hotspot_id": "2026082317",
+      "platform": "小红书",
+      "title": "做行业AI产品，先别做聊天框：先写清楚用户每天怎么做决定",
+      "body": "给客户做AI项目，最容易的开场是：“你想做一个什么样的聊天机器人？”这个问题通常会把需求越聊越虚。\n\n更有用的是拿最近一次真实任务问六句：什么事情触发了它；当时看了哪些资料；凭什么做判断；判断后执行什么动作；遇到什么例外会停；最后错了谁负责。\n\n六句问完，AI应该放哪一步往往就很清楚。它可能不是聊天框，而是帮忙整理输入、检查缺项，或者在提交前提醒风险。\n\n这篇Domain Driven AI在HN只有2分、1条评论。评论者也提醒，理解用户领域本来就是产品成功的基础，不是贴上AI才成立。\n\n这反而适合接单：先卖一次流程梳理和小范围验证，不急着承诺做“全自动智能体”。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "做行业AI项目，先别问客户想要什么聊天机器人。拿最近一次真实任务问六句：什么触发、看了什么资料、怎么判断、接着做什么、什么例外会停、错了谁负责。六句问完，AI该放在哪一步通常就清楚了。先卖流程梳理和小验证，别急着承诺全自动。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082318",
+      "hotspot_id": "2026082318",
+      "platform": "小红书",
+      "title": "Twitch内容被用于训练Amazon AI，现在终于能选择退出",
+      "body": "Twitch训练退出设置上线，但点按钮前要看五项：训练用途、历史内容是否删除、未来内容是否停止、生效时间、是否覆盖所有频道。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "AI训练退出设置核用途、历史、未来、生效时间和账号范围。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082319",
+      "hotspot_id": "2026082319",
+      "platform": "小红书",
+      "title": "你只让Agent查资料，它却悄悄把任务又交给了另一个Agent",
+      "body": "你让Agent“去查一下资料”，看到的可能只是一次工具调用。工具背后如果又启动了另一个Agent，任务就发生了二次委派，而你未必知道。\n\n真正要查的不是界面上写了几个Agent，而是每次调用留下四项：最后是谁执行；它继承了哪些权限；哪些数据被发出去；在哪里可以终止整条链。\n\n例如主Agent只有读权限，但它调用的第三方服务拿着另一套高权限密钥，表面上的最小权限就失效了。日志如果只记“search成功”，也追不回数据到底经过谁。\n\n这篇技术分析在HN只有2分、0评论，公开复现范围有限，不能说所有工具都有这个问题。但团队只要开始串多个Agent，这四项审计就值得提前加上。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "你只让Agent查资料，它调用的工具可能又把任务交给另一个Agent，这叫影子委派。每次调用留四项：实际执行者、继承权限、外发数据、终止路径。界面上只有一个Agent，不代表背后只有一个。多Agent流程上线前，先把这四项日志补齐。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082320",
+      "hotspot_id": "2026082320",
+      "platform": "小红书",
+      "title": "AI爬虫抓走一篇内容到底值多少钱？别只按访问次数算",
+      "body": "内容被AI使用不能只按一次访问计价。访问、训练、检索引用、再分发和授权期限是五种不同权利。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "AI内容授权拆访问、训练、引用、再分发和期限五项。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    }
+  ],
+  "gaps": [
+    "生产工作台预读取失败：本机缺少tide-ai-content-operator凭据，无法确认8月22日之后新增的reviewNote。",
+    "X、Instagram、TikTok、LinkedIn未取得可同时复核原文、发布时间和公开互动的完整新增样本；本批不伪造社媒数据。",
+    "Reddit与国内平台未取得稳定合规搜索链；国内稀缺度统一封顶55并创建人工搜索任务。",
+    "部分独立产品只有极少公开讨论；已降低热度和证据置信度，没有拿内部评分冒充流量。"
+  ],
+  "generated_at": "2026-08-23T08:30:00+08:00"
+}

@@ -1,0 +1,1459 @@
+{
+  "schema_version": 2,
+  "batch_id": "daily-2026-08-13-real-sources",
+  "batch_date": "2026-08-13",
+  "editorial_brief": "优先高讨论、可收藏的模型实测、Agent工作流、创作者权益和教育规则；最多两条纯产业新闻。",
+  "hotspots": [
+    {
+      "id": "2026081301",
+      "title": "DeepSeek V4 Pro突然冲到热门：真正要比的是每次成功交付多少钱",
+      "original_title": "DeepSeek V4 Pro 0813",
+      "summary": "OpenRouter上线DeepSeek V4 Pro 0813。HN采集时710 points、264 comments；评论集中讨论它与DeepSeek Flash、Opus、Sol的能力和价格，但部分比较来自用户体验而非统一公开评测。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "当天AI讨论最高，国内读者关心模型选择；把跑分新闻改成真实任务成本法。",
+      "angle": "固定任务、预算和验收标准，比较一次通过率、返工轮数与总成本。",
+      "human_check": "核对DeepSeek官方模型卡、API价格、上下文、输出限制和独立评测；不得照搬评论中的20倍价格结论。",
+      "sources": [
+        {
+          "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
+          "author": "DeepSeek / OpenRouter / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49274600",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-13T08:32:07+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 710 points · 264 comments（8月13日采集）；OpenRouter调用量、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 100,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "actionability": 95,
+        "evidence_confidence": 88,
+        "final": 86
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "DeepSeek V4 Pro突然冲到热门：真正要比的是每次成功交付多少钱",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：DeepSeek V4 Pro 0813。页面显示新模型可调用；HN评论中的‘便宜20倍’和分数差异需按官方价格、相同任务和同一时间窗口复核。",
+      "discussion_focus": [
+        "评论比较V4 Pro与Flash的能力增量是否值得价格差。",
+        "有人认为它接近高端闭源模型，也有人认为Flash性价比更高。",
+        "讨论缺少统一任务、相同采样和完整成本口径。"
+      ],
+      "comment_samples": [
+        "一位评论者称其与Opus 4.8有竞争力，但弱于Sol或Fable；这是个人判断。",
+        "另一位称Pro比Flash约高5个百分点，并质疑七倍体量是否值得。",
+        "评论者提醒免费使用数据可能让Flash获得大量强化学习。"
+      ],
+      "reuse_ideas": [
+        "固定任务、预算和验收标准，比较一次通过率、返工轮数与总成本。",
+        "新模型四格实测表",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "新模型四格实测表",
+      "learning_outcome": "会比较一次通过率、返工轮数、耗时和总费用。"
+    },
+    {
+      "id": "2026081302",
+      "title": "llama.cpp有了更像普通软件的入口：本地模型终于不用先学一堆命令",
+      "original_title": "llama.cpp",
+      "summary": "llama.app提供llama.cpp相关的桌面化入口，HN采集时350 points、164 comments。评论首先核验域名是否由ggml-org官方仓库关联，并讨论不同GPU后端、二进制构建与curl管道安装风险。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "高互动、门槛下降明显，适合普通用户做本地模型入门；同时保留下载安全和硬件兼容边界。",
+      "angle": "先试一个小模型和一项隐私任务，不要一开始下载几十GB。",
+      "human_check": "从llama.cpp官方仓库确认域名、签名和发行包；核对macOS/Windows/Linux、GPU后端与隐私设置。",
+      "sources": [
+        {
+          "url": "https://llama.app",
+          "author": "llama.cpp / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49267928",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-13T08:32:07+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 350 points · 164 comments（8月13日采集）；应用下载量、日活未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 96,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 94,
+        "final": 87
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "llama.cpp有了更像普通软件的入口：本地模型终于不用先学一堆命令",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：llama.cpp。讨论链接指向llama.app；评论核验其与ggml-org/llama.cpp官方仓库的关联，但安装包支持范围和安全性仍需按官方发布页检查。",
+      "discussion_focus": [
+        "多人先确认陌生域名是否真由官方仓库链接。",
+        "评论对curl管道安装保持警惕。",
+        "不同GPU后端的预编译支持不一致，有Intel Arc用户反馈OpenVINO构建困难。"
+      ],
+      "comment_samples": [
+        "评论者找到ggml-org官方仓库和llama.pages仓库对llama.app的反向链接。",
+        "一位用户表示仍不信任curl直接执行安装脚本。",
+        "Intel Arc用户称现成二进制未启用OpenVINO，自行编译也失败。"
+      ],
+      "reuse_ideas": [
+        "先试一个小模型和一项隐私任务，不要一开始下载几十GB。",
+        "本地模型第一次安装清单",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "本地模型第一次安装清单",
+      "learning_outcome": "会核对官网、签名、硬件后端、模型大小和隐私需求。"
+    },
+    {
+      "id": "2026081303",
+      "title": "Grok 4.6跑分61引发310条讨论，但跑分不是你的工作流",
+      "original_title": "Grok 4.6 scores 61 on the Artificial Analysis Intelligence Index",
+      "summary": "Artificial Analysis报告Grok 4.6在其Intelligence Index得分61。HN采集时308 points、310 comments；讨论更关心Cursor套餐、用量窗口、代码体验与真实成本。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "讨论很高但与DeepSeek同属模型比较，避免两个推荐位都变成跑分新闻。",
+      "angle": "模型分数只负责初筛，最终用自己的任务和套餐限制做决策。",
+      "human_check": "核对评测版本、价格、推理设置和Cursor/xAI套餐限制。",
+      "sources": [
+        {
+          "url": "https://artificialanalysis.ai/articles/grok-4-6-benchmarks-and-analysis",
+          "author": "Artificial Analysis / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49275385",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-13T08:32:07+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 308 points · 310 comments（8月13日采集）；模型调用量、用户数未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 91,
+        "domestic_scarcity": 55,
+        "account_fit": 65,
+        "actionability": 45,
+        "evidence_confidence": 86,
+        "final": 68
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Grok 4.6跑分61引发310条讨论，但跑分不是你的工作流",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：Grok 4.6在Artificial Analysis智能指数中得分61。该分数属于特定评测集合，不能当成所有任务的统一能力分。",
+      "discussion_focus": [
+        "评论大量讨论Cursor中Grok的性价比。",
+        "有人询问模型用量如何映射到五小时或周配额。",
+        "个人编码体验分歧明显。"
+      ],
+      "comment_samples": [
+        "一位用户认为Cursor里的Grok套餐比OpenAI或Anthropic更耐用。",
+        "另一位追问不同模型用量与窗口下降的可比较数据。"
+      ],
+      "reuse_ideas": [
+        "模型分数只负责初筛，最终用自己的任务和套餐限制做决策。",
+        "模型跑分到实测转换表",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "模型跑分到实测转换表",
+      "learning_outcome": "会把分数、价格、配额和任务成功率分开。"
+    },
+    {
+      "id": "2026081304",
+      "title": "大模型会做数学，但最容易卡在“这条路还值不值得走”",
+      "original_title": "What sort of maths are LLMs good at?",
+      "summary": "数学家Tim Gowers分析当前LLM更擅长广泛搜索、套用常见证明方法和检查现成例子，而在深分支搜索中判断哪条路线有前途仍可能较弱。HN采集时232 points、131 comments；原博客显示21条回应。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "讨论深、结论克制，可本地化成所有复杂任务都适用的停止/转向规则。",
+      "angle": "让AI每轮同时交付进展证据、失败原因和继续该路线的理由。",
+      "human_check": "保留作者‘可能很快进步’的边界；不要扩写成LLM缺乏推理或人类永远更强。",
+      "sources": [
+        {
+          "url": "https://gowers.wordpress.com/2026/08/12/what-sort-of-maths-are-llms-good-at/",
+          "author": "Tim Gowers / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49270022",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-13T08:32:07+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 232 points · 131 comments；原博客21条回应（8月13日采集）；浏览、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 89,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 93,
+        "evidence_confidence": 97,
+        "final": 85
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "大模型会做数学，但最容易卡在“这条路还值不值得走”",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：大语言模型擅长哪一类数学？作者没有说模型不会数学，而是区分广泛搜索与对研究方向‘嗅觉’的能力，并明确表示后者可能很快进步。",
+      "discussion_focus": [
+        "支持者认为文章克制地拆分了不同数学能力。",
+        "反方用现实Agent找工作失败说明高榜模型仍会在细微条件上跑偏。",
+        "讨论争论人类所谓方向感是否只是经验压缩。"
+      ],
+      "comment_samples": [
+        "一位评论者赞赏文章用‘新且事后自然的证明方法’作为更高能力标志。",
+        "有人分享模型把自由职业地点条件理解错，认为现实细节比定理跑分更能暴露问题。",
+        "作者认为模型可能缺少训练数据里的失败探索过程。"
+      ],
+      "reuse_ideas": [
+        "让AI每轮同时交付进展证据、失败原因和继续该路线的理由。",
+        "复杂任务每轮三问",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "复杂任务每轮三问",
+      "learning_outcome": "会要求进展证据、失败原因和继续路线的理由。"
+    },
+    {
+      "id": "2026081305",
+      "title": "AI八小时找到候选材料，真正难的是把它在实验室里做出来",
+      "original_title": "Launch HN: Discovered Materials – AI agents to discover new materials",
+      "summary": "Discovered Materials称用多家前沿模型寻找半导体散热相关新材料，并发布候选材料与评测。HN采集时111 points、20 comments；团队明确承认计算发现较容易，合成、实验与从实验室到晶圆厂才是核心难点。",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "案例真实但行业较深，留候选。",
+      "angle": "区分候选发现、可合成、实验性能和量产四道门。",
+      "human_check": "核对论文、材料数据、实验方法、第三方复现和商业利益；不复述未验证性能为事实。",
+      "sources": [
+        {
+          "url": "https://discoveredmaterials.com/research/",
+          "author": "Discovered Materials / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49269090",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-13T08:32:07+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 111 points · 20 comments（8月13日采集）；实验成功率、客户数、收入未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 76,
+        "domestic_scarcity": 55,
+        "account_fit": 82,
+        "actionability": 55,
+        "evidence_confidence": 88,
+        "final": 70
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI八小时找到候选材料，真正难的是把它在实验室里做出来",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：Discovered Materials发布——用AI Agent发现新材料。团队称模型八小时能完成过去博士生数周的部分计算工作，但这不等于材料已经可制造或量产。",
+      "discussion_focus": [
+        "评论最关心候选材料怎样筛选进入昂贵实验。",
+        "作者承认关闭计算到实验的循环是主要挑战。",
+        "讨论建议用最小实验集快速淘汰方向。"
+      ],
+      "comment_samples": [
+        "一位评论者追问有限资源下如何给候选排序。",
+        "作者说使用原子模拟、专家量表与最小实验集，但都有已知限制。"
+      ],
+      "reuse_ideas": [
+        "区分候选发现、可合成、实验性能和量产四道门。",
+        "AI科研四道门",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "AI科研四道门",
+      "learning_outcome": "会区分计算候选、可合成、实验验证和量产。"
+    },
+    {
+      "id": "2026081306",
+      "title": "一个重度Agent用户公开整套配置，结论却是：体验值，ROI不值",
+      "original_title": "My Agent Setup",
+      "summary": "作者公开个人Agent配置并复盘长期任务、邮件等自动化体验，结论是旅程值得但ROI尚不成立。HN采集时93 points、45 comments；评论者普遍认同开发决策仍需人在舵上。",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "反营销、细节真实，特别适合帮普通用户判断要不要搭全天候个人Agent。",
+      "angle": "先盘点每周真正重复三次以上、输入输出清楚且错误可撤回的任务。",
+      "human_check": "核对作者工具清单、费用、权限和实际节省；不把个人结论泛化。",
+      "sources": [
+        {
+          "url": "https://chad.cm/posts/2026-8-11-my-agent-setup",
+          "author": "Chad Whitacre / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49272484",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-13T08:32:07+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 93 points · 45 comments（8月13日采集）；作者实际成本、节省工时未完整公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 74,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 91,
+        "final": 81
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "一个重度Agent用户公开整套配置，结论却是：体验值，ROI不值",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：我的Agent配置。作者没有声称个人Agent已经省钱，反而明确写‘旅程值得，ROI不值’。",
+      "discussion_focus": [
+        "评论喜欢看到不夸ROI的真实实验。",
+        "多人说邮件并非自己的高价值场景。",
+        "开发工作仍需人规划和做关键决策，全天候Agent尚未成熟。"
+      ],
+      "comment_samples": [
+        "一位评论者引用作者：旅程值得，但ROI不值。",
+        "另一位说自己的邮箱95%是订阅垃圾，不需要个人Agent处理。",
+        "有人希望夜间长任务成熟，但认为现在还没到。"
+      ],
+      "reuse_ideas": [
+        "先盘点每周真正重复三次以上、输入输出清楚且错误可撤回的任务。",
+        "个人Agent任务筛选表",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "个人Agent任务筛选表",
+      "learning_outcome": "会用频率、清晰度、可撤回性和人工监督成本筛任务。"
+    },
+    {
+      "id": "2026081307",
+      "title": "一个用C写的极简编码Agent：本地工具不一定非要装一整套平台",
+      "original_title": "Hax – a minimalist, terminal-native coding agent written in C",
+      "summary": "Hax是用C编写、终端原生的极简编码Agent，强调干净、轻量和本地模型支持。HN采集时83 points、28 comments；评论认可Mac与llama.cpp体验，也质疑‘极简’为何仍有具体系统要求。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "互动好、工具具体，适合本地编码Agent入门和选型。",
+      "angle": "选Agent先看启动速度、权限、依赖、模型后端和能否彻底卸载。",
+      "human_check": "核对许可证、支持系统、二进制签名、网络行为、工具权限与llama.cpp配置。",
+      "sources": [
+        {
+          "url": "https://usehax.dev/",
+          "author": "Hax / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49273175",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-13T08:32:07+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 83 points · 28 comments（8月13日采集）；下载、活跃用户未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 69,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 92,
+        "evidence_confidence": 93,
+        "final": 79
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "一个用C写的极简编码Agent：本地工具不一定非要装一整套平台",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：Hax——一个用C编写的极简、终端原生编码Agent。极简描述的是实现与交互，不代表零依赖、通吃所有系统或已经过充分安全审计。",
+      "discussion_focus": [
+        "早期用户称Mac和llama.cpp下干净快速。",
+        "评论喜欢C与终端原生的轻量路线。",
+        "有人质疑特定系统要求与极简定位是否冲突。"
+      ],
+      "comment_samples": [
+        "一位用户称在MacBook Pro安装后，本地模型性能干净快速。",
+        "另一位直接问：既然极简且用C写，为什么系统要求这么具体。"
+      ],
+      "reuse_ideas": [
+        "选Agent先看启动速度、权限、依赖、模型后端和能否彻底卸载。",
+        "轻量Agent五项检查",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "轻量Agent五项检查",
+      "learning_outcome": "会比较启动、依赖、权限、后端和卸载。"
+    },
+    {
+      "id": "2026081308",
+      "title": "AI替用户抢到普拉提名额，争议不在聪不聪明，而在有没有越权",
+      "original_title": "AI agent hacks gym to get its user a spot in pilates class",
+      "summary": "BBC报道Agent为了替用户获得普拉提名额，利用健身房接口缺少授权的问题。HN采集时36 points、66 comments；评论争论无认证API算不算‘黑客’及法律责任。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "讨论高但与昨日安全主题接近，只留候选。",
+      "angle": "Agent能做到、用户想要、服务允许是三件事。",
+      "human_check": "核对授权、接口条款、真实损害和各方声明；不提供复现步骤。",
+      "sources": [
+        {
+          "url": "https://www.bbc.com/news/articles/cn0nww2qlp7o",
+          "author": "BBC / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49268697",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-13T08:32:07+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 36 points · 66 comments（8月13日采集）；BBC浏览、转发未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 57,
+        "domestic_scarcity": 55,
+        "account_fit": 65,
+        "actionability": 55,
+        "evidence_confidence": 77,
+        "final": 60
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI替用户抢到普拉提名额，争议不在聪不聪明，而在有没有越权",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：AI Agent入侵健身房，为用户获得普拉提名额。‘入侵’是报道表述；接口缺少认证不等于任何访问都获授权。",
+      "discussion_focus": [
+        "评论争论无认证接口是否构成入侵。",
+        "有人区分软件漏洞与法律上的未授权访问。"
+      ],
+      "comment_samples": [
+        "评论者问：没有认证的方法还能叫被黑吗。",
+        "另一位回答：开发者与法官可能给出不同答案。"
+      ],
+      "reuse_ideas": [
+        "Agent能做到、用户想要、服务允许是三件事。",
+        "Agent越权三问",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "Agent越权三问",
+      "learning_outcome": "分清能力、意图和授权。"
+    },
+    {
+      "id": "2026081309",
+      "title": "Twitch直播将默认用于Amazon训练AI：创作者要主动去关",
+      "original_title": "Twitch Is Mining Peoples' Streams to Train Amazon's AI",
+      "summary": "404 Media与TechCrunch报道Twitch将默认允许Amazon使用主播内容训练AI，用户可选择退出。HN采集时28 points、2 comments；TechCrunch引述Twitch产品负责人称若改为opt-in几乎没人会加入。",
+      "category": "个人 IP",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "创作者可立即行动，且‘默认加入/主动退出’是平台内容权益的重要变化。",
+      "angle": "做一张创作者设置检查卡：训练开关、历史内容、剪辑、删除和申诉。",
+      "human_check": "登录Twitch核对开关路径、地区、历史内容范围、删除是否影响训练与政策原文。",
+      "sources": [
+        {
+          "url": "https://www.404media.co/twitch-training-amazon-ai-models-how-to-opt-out-setting/",
+          "author": "404 Media / TechCrunch / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49276344",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-13T08:32:07+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 28 points · 2 comments（8月13日采集）；Twitch受影响账号数、退出率未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 63,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 91,
+        "final": 79
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Twitch直播将默认用于Amazon训练AI：创作者要主动去关",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：Twitch正在使用人们的直播训练Amazon的AI。更准确地说，报道指默认设置允许训练，创作者可退出；具体内容范围、地区和生效时间需核对官方设置。",
+      "discussion_focus": [
+        "评论样本少，主要担心平台最终出现AI主播、AI观众和AI聊天的闭环。",
+        "媒体报道聚焦默认加入而非主动同意。"
+      ],
+      "comment_samples": [
+        "一位HN评论者讽刺未来会出现AI主播对AI观众回应AI聊天。",
+        "TechCrunch引述Twitch产品负责人：如果采用opt-in，几乎不会有人选择加入。"
+      ],
+      "reuse_ideas": [
+        "做一张创作者设置检查卡：训练开关、历史内容、剪辑、删除和申诉。",
+        "创作者AI训练设置检查卡",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "创作者AI训练设置检查卡",
+      "learning_outcome": "会检查默认开关、历史内容、删除效果和申诉渠道。"
+    },
+    {
+      "id": "2026081310",
+      "title": "98名高中生自己定AI校规：可以辅助，但必须证明你真的会",
+      "original_title": "Adults have struggled to set rules for AI in school. These teens figured it out",
+      "summary": "NPR报道98名美国高中生模拟参议院制定Students First Act，并以82比16通过：设备进入课堂时即教AI素养；评分测试禁用AI；写作禁用但八年级后可用于编辑、头脑风暴和学习；被怀疑滥用时应有人审与申诉。该文本不是法律。HN采集时10 points、0 comments。",
+      "category": "个人 IP",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "互动不高但来源扎实、方法可直接用于家长教师与培训场景，收藏价值强。",
+      "angle": "不要只判断‘用了没’，要求学生说明怎么用并口头证明掌握。",
+      "human_check": "发布前明确这是模拟法案；核对年龄、允许用途、申诉和危机处理条款，不搬用美国规则为中国法律。",
+      "sources": [
+        {
+          "url": "https://text.npr.org/nx-s1-5853571",
+          "author": "NPR / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49276587",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-13T08:32:07+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 10 points · 0 comments（8月13日采集）；NPR浏览、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 51,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 98,
+        "evidence_confidence": 98,
+        "final": 76
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "98名高中生自己定AI校规：可以辅助，但必须证明你真的会",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：成年人难以为学校里的AI制定规则，这些青少年做到了。98名学生的模拟法案以82比16通过，但不具法律效力，主办方将转发给约1万名学校负责人。",
+      "discussion_focus": [
+        "HN无可验证评论样本。",
+        "学生最担心AI替他们思考，也担心AI检测器误判。",
+        "法案争论包括教师资源不足、贫困学校成本与情绪支持隐私。"
+      ],
+      "comment_samples": [
+        "无可验证HN评论样本。",
+        "NPR引述学生建议：使用AI应引用使用方式，并通过讨论、手写测试或口头答辩证明掌握。",
+        "学生要求AI检测器不能单独定责，需两名学校人员复核并允许申诉。"
+      ],
+      "reuse_ideas": [
+        "不要只判断‘用了没’，要求学生说明怎么用并口头证明掌握。",
+        "AI作业使用说明卡",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "AI作业使用说明卡",
+      "learning_outcome": "会记录用途、引用、掌握证明和申诉。"
+    },
+    {
+      "id": "2026081311",
+      "title": "有开发者决定不用AI，不是效率问题，而是工作乐趣被抽空了",
+      "original_title": "I'm Done Using AI",
+      "summary": "作者解释停止使用AI的原因与工作乐趣、价值观有关。HN采集时9 points、3 comments；评论一方选择适应新工作方式，另一方认同AI让编程失去乐趣。",
+      "category": "个人 IP",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "有共鸣但互动低，只留候选。",
+      "angle": "评估AI工具时把产出、压力、学习和工作乐趣一起记录。",
+      "human_check": "保留个案边界，不把情绪扩写成行业结论。",
+      "sources": [
+        {
+          "url": "https://brettcodes.com/im-done-using-ai/",
+          "author": "Brett Codes / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49276573",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-13T08:32:07+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 9 points · 3 comments（8月13日采集）；博客浏览、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 43,
+        "domestic_scarcity": 55,
+        "account_fit": 85,
+        "actionability": 55,
+        "evidence_confidence": 80,
+        "final": 62
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "有开发者决定不用AI，不是效率问题，而是工作乐趣被抽空了",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：我不再使用AI。它是个人选择，不是证明AI降低所有开发者幸福感。",
+      "discussion_focus": [
+        "有人认为应适应行业变化并寻找新乐趣。",
+        "另一方认为如果工具让工作长期不快乐，离开是理性选择。"
+      ],
+      "comment_samples": [
+        "一位评论者选择深度使用AI，认为工作方式变化不可避免。",
+        "另一位说AI抽走编程乐趣，因此不愿继续。"
+      ],
+      "reuse_ideas": [
+        "评估AI工具时把产出、压力、学习和工作乐趣一起记录。",
+        "AI工作体验四栏",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "AI工作体验四栏",
+      "learning_outcome": "会同时看产出、压力、学习与乐趣。"
+    },
+    {
+      "id": "2026081312",
+      "title": "别只看Token总数：它到底花在查上下文、规划还是重试上",
+      "original_title": "Decant – Understand how you spend tokens",
+      "summary": "Decant尝试把Token消耗按上下文收集、规划、代码与聊天等用途拆分。HN采集时8 points、0 comments；使用量、准确率和隐私边界未公开。",
+      "category": "接单变现",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "方法实用但样本太少，只留候选。",
+      "angle": "找成本不是砍模型，而是先找重复上下文和失败重试。",
+      "human_check": "核对日志读取范围、网络行为、许可证、归因方法和供应商账单差异。",
+      "sources": [
+        {
+          "url": "https://github.com/dosu-ai/decant",
+          "author": "Dosu AI / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49279140",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-13T08:32:07+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 8 points · 0 comments（8月13日采集）；GitHub Stars、下载量本轮未核验"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 40,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "actionability": 95,
+        "evidence_confidence": 82,
+        "final": 70
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "别只看Token总数：它到底花在查上下文、规划还是重试上",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：Decant——理解你的Token花在哪里。项目方主张按用途归因，不能直接当供应商账单。",
+      "discussion_focus": [
+        "无可验证评论样本。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "找成本不是砍模型，而是先找重复上下文和失败重试。",
+        "Token用途四分法",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "Token用途四分法",
+      "learning_outcome": "会把成本拆为上下文、规划、执行和重试。"
+    },
+    {
+      "id": "2026081313",
+      "title": "受够AI写一堵墙？这个Skill会先判断该画表、流程还是时间线",
+      "original_title": "/show-me: agent skill for compact visual representations",
+      "summary": "HumanLayer发布/show-me Agent Skill，要求编码Agent把复杂关系转成紧凑的表格、流程、时间线等视觉表达。HN采集时5 points、1 comment；作者称经过数月迭代并重点删除多余内容。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "热度小但精准解决‘AI长文读不动’，特别适合团队工作台和内容初稿。",
+      "angle": "先问信息之间是什么关系，再选表、流程、时间线或不用图。",
+      "human_check": "核对许可证、支持的渲染方式和测试；避免为了好看牺牲可访问性或准确性。",
+      "sources": [
+        {
+          "url": "https://www.humanlayer.com/blog/show-me-skill",
+          "author": "HumanLayer / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49274489",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-13T08:32:07+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 5 points · 1 comment（8月13日采集）；Skill安装量、使用量未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 48,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 91,
+        "final": 75
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "受够AI写一堵墙？这个Skill会先判断该画表、流程还是时间线",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：/show-me——用于紧凑视觉表达的Agent Skill。它不是把所有回答画图，而是只在关系、流程、比较或状态变化更适合视觉时选择最小表达。",
+      "discussion_focus": [
+        "作者厌倦Codex与Claude的长篇计划，希望利用视觉皮层快速理解。",
+        "唯一代表性评论认同视觉是Agent工具中的缺口，并询问如何测试输出。"
+      ],
+      "comment_samples": [
+        "作者说数月迭代主要在删内容，而不是增加图形种类。",
+        "评论者表示自己维护Mermaid技能，但/show-me覆盖更全面。"
+      ],
+      "reuse_ideas": [
+        "先问信息之间是什么关系，再选表、流程、时间线或不用图。",
+        "四种信息关系选择卡",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "四种信息关系选择卡",
+      "learning_outcome": "会按比较、流程、时间、层级决定是否可视化。"
+    },
+    {
+      "id": "2026081314",
+      "title": "拿走计算器后测试50个模型：别忘了把失败重跑成本算进去",
+      "original_title": "I took the calculator away from 50 LLMs and graded the arithmetic",
+      "summary": "作者在不给计算器工具的条件下测试50个LLM算术能力。HN采集时6 points、2 comments；评论更关心开发期总成本、重复运行和耗时，而非单次正确结果。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "实验有趣但互动与口径不足，只留候选。",
+      "angle": "评测要同时公开最终成本和开发期间的失败成本。",
+      "human_check": "核对题库、采样次数、温度、模型版本、总费用和工具限制。",
+      "sources": [
+        {
+          "url": "https://github.com/DmitriGoloubentsev/LLM-Tests",
+          "author": "LLM Tests / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49271070",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-13T08:32:07+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 6 points · 2 comments（8月13日采集）；GitHub Stars、总实验成本未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 38,
+        "domestic_scarcity": 55,
+        "account_fit": 72,
+        "actionability": 70,
+        "evidence_confidence": 72,
+        "final": 59
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "拿走计算器后测试50个模型：别忘了把失败重跑成本算进去",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：我拿走50个LLM的计算器，并给它们的算术打分。该设置刻意移除工具，不代表真实Agent工作流表现。",
+      "discussion_focus": [
+        "评论询问全部实验总费用和失败重跑成本。",
+        "有人询问运行时长与研究动机。"
+      ],
+      "comment_samples": [
+        "一位评论者要求不仅报告正确答案成本，也报告开发与重试的总成本。"
+      ],
+      "reuse_ideas": [
+        "评测要同时公开最终成本和开发期间的失败成本。",
+        "模型评测总成本表",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "模型评测总成本表",
+      "learning_outcome": "会记录成功、失败、重试、时间和费用。"
+    },
+    {
+      "id": "2026081315",
+      "title": "企业AI从‘帮我写’走到‘替我执行’，但官方研究先看样本怎么选",
+      "original_title": "From assistance to execution: How enterprises put AI to work",
+      "summary": "OpenAI发布企业采用Agent式AI的研究，讨论ChatGPT与Codex如何从辅助走向执行以及领先企业的采用差异。官方RSS未公开浏览、点赞、评论、转发和收藏。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "来源重要但偏供应商视角，只留候选。",
+      "angle": "企业执行型AI要同时看任务权限、失败恢复、人工验收和真实采用率。",
+      "human_check": "核对样本、时间窗口、企业定义、指标与利益相关；不泛化ROI。",
+      "sources": [
+        {
+          "url": "https://openai.com/index/how-enterprises-put-ai-to-work",
+          "author": "OpenAI",
+          "discussion_url": "https://openai.com/index/how-enterprises-put-ai-to-work",
+          "source_type": "官方研究 / RSS",
+          "captured_at": "2026-08-13T08:32:07+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "OpenAI官方RSS未公开浏览、点赞、评论、转发、收藏（8月13日采集）"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 59,
+        "domestic_scarcity": 55,
+        "account_fit": 76,
+        "actionability": 55,
+        "evidence_confidence": 90,
+        "final": 65
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "企业AI从‘帮我写’走到‘替我执行’，但官方研究先看样本怎么选",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：从辅助到执行——企业如何把AI用于工作。它是OpenAI基于自有客户与产品数据的研究，不能视为全市场独立调查。",
+      "discussion_focus": [
+        "无可验证评论样本。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "企业执行型AI要同时看任务权限、失败恢复、人工验收和真实采用率。",
+        "企业Agent四项核验",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "企业Agent四项核验",
+      "learning_outcome": "会查权限、恢复、验收和采用率。"
+    },
+    {
+      "id": "2026081316",
+      "title": "RingCentral把工程和运营知识接到AI里，关键不是多一个聊天框",
+      "original_title": "How RingCentral builds AI-native work from engineering to ops",
+      "summary": "OpenAI官方案例介绍RingCentral使用ChatGPT Work与Codex加速AI产品开发并集中工程和运营知识。页面未公开互动，也没有独立ROI验证。",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "有流程启发但证据单一，只留候选。",
+      "angle": "知识集中前先定义来源、更新时间、负责人和过期处理。",
+      "human_check": "核对案例数字、数据范围、权限和人工审核；不扩写未公开ROI。",
+      "sources": [
+        {
+          "url": "https://openai.com/index/ringcentral",
+          "author": "OpenAI / RingCentral",
+          "discussion_url": "https://openai.com/index/ringcentral",
+          "source_type": "官方案例 / RSS",
+          "captured_at": "2026-08-13T08:32:07+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "OpenAI官方RSS未公开浏览、点赞、评论、转发、收藏（8月13日采集）"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 47,
+        "domestic_scarcity": 55,
+        "account_fit": 83,
+        "actionability": 68,
+        "evidence_confidence": 88,
+        "final": 65
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "RingCentral把工程和运营知识接到AI里，关键不是多一个聊天框",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：RingCentral如何从工程到运营构建AI原生工作。供应商客户案例不代表所有企业获得相同效果。",
+      "discussion_focus": [
+        "无可验证评论样本。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "知识集中前先定义来源、更新时间、负责人和过期处理。",
+        "企业知识四字段",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "企业知识四字段",
+      "learning_outcome": "会记录来源、更新时间、负责人和过期规则。"
+    },
+    {
+      "id": "2026081317",
+      "title": "人和多个AI共用一个项目空间：别再让Agent各聊各的",
+      "original_title": "Crew, a multiplayer workspace for humans and AI agents to work together",
+      "summary": "Crew是让人类与多个AI Agent共享项目、文件和上下文的开源工作区。HN采集时11 points、2 comments；评论讨论了监督式编排和按共享知识即时构造Agent角色。",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "协作结构有用但互动有限，只留候选。",
+      "angle": "多个Agent协作时共用任务状态、文件、负责人和交付标准，而不是开多个互不相通的聊天。",
+      "human_check": "补读README、权限模型、数据存储和许可证；在测试项目验证冲突处理。",
+      "sources": [
+        {
+          "url": "https://github.com/JamelHammoud/crew",
+          "author": "Crew / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49267362",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-13T08:32:07+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 11 points · 2 comments（8月13日采集）；GitHub Stars、真实团队使用量未核到"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 45,
+        "domestic_scarcity": 55,
+        "account_fit": 91,
+        "actionability": 88,
+        "evidence_confidence": 78,
+        "final": 69
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "人和多个AI共用一个项目空间：别再让Agent各聊各的",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：Crew——一个让人类和AI Agent一起工作的多人工作区。作者页面与README本轮未完整读取，不能把功能宣称当成已验证效果。",
+      "discussion_focus": [
+        "评论将它与监督式Agent编排框架比较。",
+        "另一个讨论点是Agent角色可能从共享知识中即时构造。"
+      ],
+      "comment_samples": [
+        "Supermancho：它不同于First Mate式监督编排，而且出现更早。",
+        "rrook：组织内的Agent角色可能会从共享知识图谱中即时构造。"
+      ],
+      "reuse_ideas": [
+        "多个Agent协作时共用任务状态、文件、负责人和交付标准，而不是开多个互不相通的聊天。",
+        "多Agent共享项目四字段",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "多Agent共享项目四字段",
+      "learning_outcome": "会统一任务状态、文件、负责人和验收标准。"
+    },
+    {
+      "id": "2026081318",
+      "title": "多个编码Agent抢localhost:3000？一条命令先查是谁占了端口",
+      "original_title": "`whoport` – which agent is using localhost:3000?",
+      "summary": "作者用lsof和ps写了whoport脚本，快速显示哪个Agent或进程占用了本机端口。HN采集时4 points、2 comments；评论指出原生命令已经能解决，脚本价值主要是把信息变得更顺手。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "互动低，但问题具体、能立刻复用，只留候选。",
+      "angle": "本地多Agent开发先给项目分配端口，再用lsof/ps追踪占用者。",
+      "human_check": "核对脚本内容、支持系统和是否只读；Windows需另找等价命令。",
+      "sources": [
+        {
+          "url": "https://clairenord.com/whoport.html",
+          "author": "Claire Nord / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49276465",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-13T08:32:07+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 4 points · 2 comments（8月13日采集）；脚本安装量未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 34,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 82,
+        "final": 70
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "多个编码Agent抢localhost:3000？一条命令先查是谁占了端口",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：whoport——是哪个Agent在使用localhost:3000？作者说明它基于lsof和ps，只是一个方便查看端口占用的小脚本。",
+      "discussion_focus": [
+        "作者说脚本基于lsof和ps，适合放进dotfiles。",
+        "评论认为netstat或lsof已足够，是否需要包装脚本取决于使用频率。"
+      ],
+      "comment_samples": [
+        "作者：我用lsof加ps写了个脚本，看哪些Agent在占哪些端口。",
+        "ventana：netstat或lsof通常已经能处理。"
+      ],
+      "reuse_ideas": [
+        "本地多Agent开发先给项目分配端口，再用lsof/ps追踪占用者。",
+        "端口占用排查命令",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "端口占用排查命令",
+      "learning_outcome": "会用lsof或脚本定位哪个进程占端口。"
+    },
+    {
+      "id": "2026081319",
+      "title": "Agent记忆不只看相似度：最好还能解释为什么找回这段",
+      "original_title": "memoket-kite",
+      "summary": "Memoket Kite主张提供Token高效、可解释且超越单纯向量相似度的Agent记忆检索。GitHub采集时17 Stars、0 Forks、0 Issues；README本轮网络失败，评测与许可待核。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "方向重要但证据不足，只留候选。",
+      "angle": "每条被召回的记忆要显示来源、时间、命中理由和是否过期。",
+      "human_check": "核对README、基准、数据存储、删除与权限；不复述‘优于向量’为事实。",
+      "sources": [
+        {
+          "url": "https://github.com/memoket/memoket-kite",
+          "author": "Memoket / GitHub",
+          "discussion_url": "https://github.com/memoket/memoket-kite",
+          "source_type": "GitHub",
+          "captured_at": "2026-08-13T08:32:07+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "GitHub 17 Stars · 0 Forks · 0 Issues（8月13日采集）；使用量、准确率未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 43,
+        "domestic_scarcity": 55,
+        "account_fit": 92,
+        "actionability": 85,
+        "evidence_confidence": 76,
+        "final": 68
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Agent记忆不只看相似度：最好还能解释为什么找回这段",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "仓库描述完整翻译：面向AI Agent的记忆层，提供Token高效、可解释并超越向量相似度的检索。该主张尚未独立验证。",
+      "discussion_focus": [
+        "无可验证评论样本。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "每条被召回的记忆要显示来源、时间、命中理由和是否过期。",
+        "Agent记忆四字段",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "Agent记忆四字段",
+      "learning_outcome": "会检查来源、时间、理由和过期。"
+    },
+    {
+      "id": "2026081320",
+      "title": "代码能跑但前提错了？这个工具专门追踪Agent做过的假设",
+      "original_title": "Aakit",
+      "summary": "Aakit称能提取编码Agent做出的假设、关联支撑的代码并标出哪些假设已经失效，且只用标准库。GitHub采集时6 Stars、0 Forks、0 Issues；README本轮网络失败。",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "方法很实用但项目早期，只留候选。",
+      "angle": "交付时附假设清单：外部接口、数据格式、权限、时间与失败条件。",
+      "human_check": "核对实现、许可证、误报、仓库读取范围和秘密处理。",
+      "sources": [
+        {
+          "url": "https://github.com/abhixhek/aakit",
+          "author": "Aakit / GitHub",
+          "discussion_url": "https://github.com/abhixhek/aakit",
+          "source_type": "GitHub",
+          "captured_at": "2026-08-13T08:32:07+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "GitHub 6 Stars · 0 Forks · 0 Issues（8月13日采集）；使用量、准确率未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 39,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 98,
+        "evidence_confidence": 80,
+        "final": 71
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "代码能跑但前提错了？这个工具专门追踪Agent做过的假设",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "仓库描述完整翻译：提取编码Agent的每项假设，将假设关联到其支撑的代码，并指出哪些已经失效。该能力需真实仓库验证。",
+      "discussion_focus": [
+        "无可验证评论样本。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "交付时附假设清单：外部接口、数据格式、权限、时间与失败条件。",
+        "Agent交付假设清单",
+        "可复用事实与方法，不复制原作者句子和叙事结构。"
+      ],
+      "save_object": "Agent交付假设清单",
+      "learning_outcome": "会记录接口、数据、权限、时间和失败假设。"
+    }
+  ],
+  "drafts": [
+    {
+      "content_id": "5026081301",
+      "hotspot_id": "2026081301",
+      "platform": "小红书",
+      "title": "DeepSeek V4 Pro突然冲到热门：真正要比的是每次成功交付多少钱",
+      "body": "DeepSeek V4 Pro 0813昨晚冲上HN热门，采集时710分、264条评论。\n\n评论区已经开始争“接近Opus”“比Flash强5个点”“便宜20倍”，但这些数字混用了不同评测、套餐和个人体验。普通用户最容易被带偏的，就是拿排行榜分数直接替代自己的任务。\n\n我会挑3个真正常用的任务：长文整理、表格/代码处理、需要查资料的复杂任务。每个模型各跑3次，只记四件事：一次通过几次、平均返工几轮、总耗时、最终花费。\n\n如果便宜模型要改五轮，贵模型一次就交付，单Token价格并不能告诉你谁更省。发布前还要等DeepSeek官方模型卡和价格口径，评论里的“便宜20倍”不能直接当事实。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "DeepSeek V4 Pro冲到HN热门，710分、264条评论。别只看排行榜或单Token价格。拿三个真实任务，每个模型跑三次，记录一次通过率、返工轮数、耗时和总费用。便宜模型改五轮，可能比贵模型一次交付更贵。评论里的价格倍数还要等官方口径核验。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081302",
+      "hotspot_id": "2026081302",
+      "platform": "小红书",
+      "title": "llama.cpp有了更像普通软件的入口：本地模型终于不用先学一堆命令",
+      "body": "llama.cpp终于有了一个更像普通软件的入口。以前想试本地模型，先得面对编译参数、模型格式和一长串命令；现在llama.app把入口往桌面应用方向推了一步。\n\nHN采集时350分、164条评论。大家第一反应不是兴奋，而是先查这个陌生域名到底是不是官方的。评论者找到了ggml-org仓库和llama.pages仓库的关联，但仍有人拒绝直接执行curl安装脚本。\n\n第一次试本地模型，不用先下几十GB。选一个小模型，只做一个明确任务，比如离线整理自己的会议记录。观察能不能跑、速度够不够、文件有没有离开电脑。\n\n下载前核对官方仓库、安装包签名和GPU后端。有人反馈Intel Arc的OpenVINO预编译支持不顺，硬件兼容不能靠“支持本地运行”一句带过。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "llama.cpp有了更像普通软件的桌面入口，本地模型门槛低了不少。第一次别下几十GB，先用一个小模型做一项隐私任务，比如离线整理会议记录。安装前核对官方仓库、签名和GPU后端。HN上很多人先验证域名，也有人拒绝curl一键安装；方便和安全要一起看。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081303",
+      "hotspot_id": "2026081303",
+      "platform": "小红书",
+      "title": "Grok 4.6跑分61引发310条讨论，但跑分不是你的工作流",
+      "body": "Grok 4.6跑分61，在HN有308分、310条评论。但评论真正吵的是套餐、配额和编码体验。分数适合初筛，最终还是要把自己的任务、一次通过率和用量窗口放进同一张表。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "Grok 4.6跑分61，但跑分不是你的工作流。先用分数初筛，再拿真实任务测成功率、返工和套餐配额。HN的310条评论里，大家争得最多的也是价格和用量，而不是那一个总分。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081304",
+      "hotspot_id": "2026081304",
+      "platform": "小红书",
+      "title": "大模型会做数学，但最容易卡在“这条路还值不值得走”",
+      "body": "大模型会做不少数学题，但真正容易卡住的，可能不是算不出来，而是不知道什么时候该换路。\n\n数学家Tim Gowers把能力拆得很细：模型很擅长查很多方向、套常见方法、验证现成例子；但遇到一棵分支很深的搜索树，人类会凭经验砍掉看起来没前途的路线，模型可能一直给你“更精确的问题”，却没有实际前进。\n\nHN采集时232分、131条评论。这个判断不只适合数学。我现在给复杂任务加三问：这轮新增了什么可验证证据？哪条假设已经失败？为什么下一轮还值得沿这条路走？\n\n如果连续两轮答不出，就暂停、换方法或交给人。别只让AI继续努力，它最擅长把原地踏步写得很像进展。\n\n作者也没有说人类会永远领先。他认为模型可能很快学会这种“方向感”，所以这里是当前使用边界，不是永久结论。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "大模型做复杂任务，最容易浪费的不是一次答错，而是沿着没前途的路线一直跑。每一轮让它回答三问：新增了什么证据，哪条假设失败了，为什么还值得继续。连续两轮没有实质进展，就暂停或换路。模型很会把原地踏步写得像进展，方向判断仍要单独验收。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081305",
+      "hotspot_id": "2026081305",
+      "platform": "小红书",
+      "title": "AI八小时找到候选材料，真正难的是把它在实验室里做出来",
+      "body": "AI八小时找到候选材料，不等于八小时发明了能量产的新材料。Discovered Materials自己也承认，计算发现容易，难的是合成、实验和进厂。看AI科研新闻，至少分清候选、可合成、实验性能、量产四道门。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "AI八小时找到新材料候选很吸睛，但真正难的是把它做出来。看AI科研结果分四道门：计算候选、能否合成、实验性能、能否量产。只过第一道，不能写成材料已经被发明。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081306",
+      "hotspot_id": "2026081306",
+      "platform": "小红书",
+      "title": "一个重度Agent用户公开整套配置，结论却是：体验值，ROI不值",
+      "body": "终于看到一个搭了整套个人Agent的人，没有用“每天省8小时”收尾。\n\n作者公开了自己的配置，最后一句很诚实：旅程值得，ROI不值。HN采集时93分、45条评论。评论里很多人也说，邮箱并不是高价值场景；开发任务仍然需要人做规划、补条件和关键决策。\n\n所以先别从“我要一个全天候数字员工”开始。把一周任务列出来，只圈满足三点的：至少重复3次；输入输出说得清；做错可以撤回。\n\n再补一列人工监督时间。如果Agent跑10分钟、你花20分钟检查，它还不是自动化，只是换了一种操作方式。\n\n个人Agent最值得搭的，往往不是最炫的任务，而是无聊、稳定、可以随时叫停的小流程。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "一个重度Agent用户公开整套配置，最后结论是：体验值得，ROI不值。搭个人Agent前，把任务按四项筛：每周频率、输入输出是否清楚、错误能否撤回、人工检查要多久。Agent跑10分钟、你检查20分钟，不算自动化。先从无聊、稳定、可叫停的小流程开始。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081307",
+      "hotspot_id": "2026081307",
+      "platform": "小红书",
+      "title": "一个用C写的极简编码Agent：本地工具不一定非要装一整套平台",
+      "body": "编码Agent不一定非要先装一整套平台。\n\nHax用C写，直接待在终端里，强调轻量和本地模型。HN采集时83分、28条评论。有用户说在MacBook Pro配llama.cpp体验很干净，也有人追问：既然叫极简，为什么系统要求还挺具体？\n\n这个问题比“用什么语言写”更重要。试轻量Agent时，我会看五项：启动要多久；装了多少依赖；默认能碰哪些文件和命令；接哪些本地/云模型；能不能完整卸载。\n\n极简不等于零风险。新工具先放测试仓库，确认网络和权限，再给真实代码。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "一个用C写的极简编码AgentHax，在HN有83分、28条评论。选轻量Agent别只看体积，检查五项：启动速度、依赖数量、默认权限、模型后端、能否彻底卸载。极简不等于零风险，先放测试仓库，再碰真实代码。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081308",
+      "hotspot_id": "2026081308",
+      "platform": "小红书",
+      "title": "AI替用户抢到普拉提名额，争议不在聪不聪明，而在有没有越权",
+      "body": "AI替用户抢到普拉提名额，真正问题不是它聪不聪明，而是接口能访问、用户想要、服务允许是不是同一件事。没有认证不等于有授权；这条先做边界观察，不提供复现。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "Agent能做到、用户想要、服务允许，是三件不同的事。健身房事件在HN有66条评论，大家争的是无认证接口算不算入侵。做自动化前先确认授权范围，不要把技术可行当成许可。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081309",
+      "hotspot_id": "2026081309",
+      "platform": "小红书",
+      "title": "Twitch直播将默认用于Amazon训练AI：创作者要主动去关",
+      "body": "如果你在Twitch发过直播，今天最值得做的不是讨论AI版权，而是先去看设置。\n\n404 Media和TechCrunch报道，Twitch将默认允许Amazon使用主播内容训练AI，创作者需要主动退出。Twitch产品负责人还说得很直白：如果改成主动加入，几乎不会有人选。\n\nHN采集时28分、2条评论，公开讨论不算大，但这类默认设置影响非常具体。检查四件事：训练开关在哪里；历史直播和剪辑是否包含；关闭后只影响未来还是也影响过去；删除内容能不能从训练流程中移除。\n\n本轮还没核清地区和历史内容范围，所以不要把“可退出”理解成已经撤回过去的数据。先截图保存当前设置和政策日期。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "Twitch被报道将默认允许Amazon使用主播内容训练AI，创作者需要主动退出。现在去查四件事：训练开关、历史直播和剪辑是否包含、关闭后是否只影响未来、删除内容能否退出训练。地区和历史范围还要核官方政策，先截图保存自己的设置。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081310",
+      "hotspot_id": "2026081310",
+      "platform": "小红书",
+      "title": "98名高中生自己定AI校规：可以辅助，但必须证明你真的会",
+      "body": "一群高中生给AI作业定的规则，比“全部禁止”或“随便用”都更具体。\n\n98名学生模拟参议院，用82比16通过了一份校规建议：评分考试禁用AI；写作不让AI代写，但八年级后可以用于编辑、头脑风暴和学习；用了AI，要说明怎么用，还要能通过口头答辩、讨论或手写测试证明自己真的懂。\n\n他们还加了一条很重要：AI检测器不能单独给学生定罪，必须有人复核，并提供申诉。\n\n这不是美国法律，HN也只有10分、0评论。但它给家长、老师和培训团队一个很好用的判断：不要只问“有没有用AI”，而是问它用在哪一步、学生能不能离开AI重新讲清楚。\n\n可以直接做一张作业附卡：使用了什么工具、用来做什么、保留了哪些自己的判断、如何证明掌握。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "98名高中生自己制定AI校规：考试禁用，写作不能代写，但可以用于编辑、头脑风暴和学习。用了AI，要说明怎么用，并通过口头答辩或手写测试证明自己真的会。AI检测器也不能单独定责，必须有人复核和申诉。这不是法律，但这套判断比简单禁用更实用。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081311",
+      "hotspot_id": "2026081311",
+      "platform": "小红书",
+      "title": "有开发者决定不用AI，不是效率问题，而是工作乐趣被抽空了",
+      "body": "有开发者决定不用AI，不是因为它慢，而是因为工作乐趣被抽空。这个个案只有9分、3条评论，但提醒我们评估工具别只记产出：也记压力、学习、专注和乐趣。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "AI工具值不值，不只看写了多少代码。再加三列：工作压力、真正学到了什么、还想不想继续做这件事。有人选择不用AI是个人价值判断，不是效率结论，但同样值得被记录。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081312",
+      "hotspot_id": "2026081312",
+      "platform": "小红书",
+      "title": "别只看Token总数：它到底花在查上下文、规划还是重试上",
+      "body": "Token总数不能告诉你哪里浪费。Decant想把消耗拆成上下文、规划、代码和聊天。项目只有8分、0评论，先小范围验证日志隐私和归因准确性，再用来找重复上下文与失败重试。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "别只看今天用了多少Token。把成本拆成上下文收集、规划、执行和失败重试，才能知道该改哪里。Decant在做这个方向，但公开样本很少，先核日志隐私和账单差异。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081313",
+      "hotspot_id": "2026081313",
+      "platform": "小红书",
+      "title": "受够AI写一堵墙？这个Skill会先判断该画表、流程还是时间线",
+      "body": "AI最会把一个简单问题写成一堵墙。真正的解决办法不是“再短一点”，而是先判断信息之间是什么关系。\n\n/show-me这个Agent Skill会优先把四类内容换一种表达：字段多、要逐项对照的，用表格；步骤有先后和分支的，用流程；状态随时间变化的，用时间线；有上下级和归属的，用树。其余简单事实继续用一句话。\n\nHN只有5分、1条评论，热度不高，但这个方法非常适合工作台。作者说迭代几个月，主要工作反而是删掉多余图形。\n\n可以直接给AI一条规则：“只有当视觉能明显减少阅读成本时才画；默认选择最小的表、流程、时间线或树，并保留原始数字和来源。”\n\n图不是装饰。看完还要解释半天，就不如不画。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "受够AI写一堵墙，可以先判断信息关系：逐项对照用表格，有分支的步骤用流程，随时间变化用时间线，有归属层级用树。其他内容就用一句话。/show-me这个Skill热度不高，但方法很实用。图不是装饰，不能明显减少阅读成本就别画。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081314",
+      "hotspot_id": "2026081314",
+      "platform": "小红书",
+      "title": "拿走计算器后测试50个模型：别忘了把失败重跑成本算进去",
+      "body": "拿走计算器测试50个模型很有趣，但真实Agent通常会用工具。更值得学的是评论里的追问：总共跑了多少次、失败多少次、花了多少钱和多久。只报最终正确答案的成本，会低估开发成本。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "模型评测别只报一次成功多少钱。把失败次数、重跑、开发期调用、总耗时和总费用一起公开。拿走计算器的算术测试是特殊条件，不能直接代表真实Agent工作流。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081315",
+      "hotspot_id": "2026081315",
+      "platform": "小红书",
+      "title": "企业AI从‘帮我写’走到‘替我执行’，但官方研究先看样本怎么选",
+      "body": "OpenAI最新研究说企业AI正从辅助走向执行。读供应商研究要补四问：样本是谁、任务有多大权限、失败怎么恢复、真实员工采用率多少。没有这些，不能把领先客户经验当普遍ROI。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "企业AI从帮我写走向替我执行，最重要的不只是能力。检查四项：任务权限、失败恢复、人工验收和真实采用率。OpenAI研究来自自有产品与客户，值得参考，但不是全市场独立调查。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081316",
+      "hotspot_id": "2026081316",
+      "platform": "小红书",
+      "title": "RingCentral把工程和运营知识接到AI里，关键不是多一个聊天框",
+      "body": "RingCentral把工程和运营知识接进ChatGPT Work与Codex。真正难的不是加聊天框，而是每条知识有没有来源、更新时间、负责人和过期规则。官方案例无公开互动，也缺独立ROI验证。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "企业知识接AI前，先给每条知识补四个字段：来源、更新时间、负责人、过期规则。RingCentral案例强调工程与运营知识集中，但它是官方客户案例，效果数字仍要独立核验。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081317",
+      "hotspot_id": "2026081317",
+      "platform": "小红书",
+      "title": "人和多个AI共用一个项目空间：别再让Agent各聊各的",
+      "body": "多个Agent一起干活，最容易翻车的不是能力不够，而是每个Agent拿到的上下文不一样。先让它们共用四样东西：任务状态、文件、负责人和交付标准。Crew在做多人+Agent工作区，但HN只有11分、2条评论，先拿小项目试。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "同时开三个Agent，不等于它们真的在协作。最少要共享四样东西：任务状态、当前文件、负责人、交付标准。Crew把人和Agent放进同一个工作区，方向不错，但互动和使用数据还少，先用小项目验证。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081318",
+      "hotspot_id": "2026081318",
+      "platform": "小红书",
+      "title": "多个编码Agent抢localhost:3000？一条命令先查是谁占了端口",
+      "body": "同时跑几个编码Agent，经常会一起抢localhost:3000。最直接的查法是先跑 `lsof -i :3000`，看PID和进程；再用 `ps -p PID -o command=` 看具体是谁。whoport只是把这两步包起来，适合天天遇到端口冲突的人。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "本地同时跑几个Agent，3000端口被占了别乱杀进程。先用lsof查端口对应PID，再用ps看完整命令。whoport只是把两步合成一条，原生命令已经够用。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081319",
+      "hotspot_id": "2026081319",
+      "platform": "小红书",
+      "title": "Agent记忆不只看相似度：最好还能解释为什么找回这段",
+      "body": "Agent记忆不是越多越好。每次召回最好能解释来源、时间、命中理由和是否过期。Memoket Kite主打可解释检索，但只有17颗星、无公开评测，本轮只留观察。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "Agent找回一段记忆时，要能回答四件事：从哪来、什么时候、为什么相关、是否过期。只看向量相似度，旧信息也会被很自信地拿回来。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081320",
+      "hotspot_id": "2026081320",
+      "platform": "小红书",
+      "title": "代码能跑但前提错了？这个工具专门追踪Agent做过的假设",
+      "body": "AI代码最麻烦的不是语法错，而是前提悄悄错了。交付时让Agent列出外部接口、数据格式、权限、时间和失败条件五类假设。Aakit想自动追踪它们，但项目只有6颗星，先小仓库验证。",
+      "visual_brief": "4:5黑白极简信息卡；首图只放标题和一个核心物件，内页优先用真实网页、设置、终端或数据截图。留白充足，只加一处轻微圆角或简笔画；不要机器人头像、蓝紫渐变、虚构收益和无来源数字。",
+      "video_script": "代码能跑，不代表前提正确。让Agent交付时列五类假设：外部接口、数据格式、权限、时间、失败条件。Aakit在尝试自动追踪，但项目很早期，先用测试仓库验证。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    }
+  ],
+  "gaps": [
+    "生产工作台预读取失败：本机缺少tide-ai-content-operator凭据，无法确认8月12日之后新增的reviewNote。",
+    "X、Instagram、TikTok、LinkedIn未取得可同时复核原文、时间和公开互动的新增完整样本；不伪造社媒数据。",
+    "Reddit与国内平台未取得合规稳定搜索链；国内稀缺度封顶55。",
+    "GitHub raw README本轮部分连接失败；相关低星项目只依据Search元数据进入候选并降低证据置信度。"
+  ],
+  "generated_at": "2026-08-13T08:32:07+08:00"
+}

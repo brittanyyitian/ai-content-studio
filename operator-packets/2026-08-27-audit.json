@@ -1,0 +1,72 @@
+{
+  "generatedAt": "2026-08-27T01:14:22.871Z",
+  "counts": {
+    "discovered": 361,
+    "candidates": 20,
+    "recommended": 8,
+    "drafts": 20,
+    "videoScripts": 8,
+    "verifiedCommentSamples": 40
+  },
+  "templateScan": {
+    "hits": []
+  },
+  "prior7DayExactUrlDuplicates": 0,
+  "top3": [
+    {
+      "title": "GLM-5.3-Flash：价格低，不等于人人该换",
+      "points": 869,
+      "comments": 438,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49449507",
+      "capturedAt": "2026-08-27T01:01:46.396Z"
+    },
+    {
+      "title": "Qwen3.8 新模型，普通电脑先看这两个数",
+      "points": 611,
+      "comments": 197,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49448210",
+      "capturedAt": "2026-08-27T01:01:46.396Z"
+    },
+    {
+      "title": "AI时代要不要征“机器人税”",
+      "points": 180,
+      "comments": 236,
+      "discussionUrl": "https://news.ycombinator.com/item?id=49448137",
+      "capturedAt": "2026-08-27T01:01:46.396Z"
+    }
+  ],
+  "reviewNotes": {
+    "productionRead": "失败：返回HTML拦截页",
+    "handled": 0,
+    "unprocessed": null,
+    "action": "本批使用全新ID增量添加，不修改线上旧稿；线上人工意见待恢复访问后处理。"
+  },
+  "productionWrite": {
+    "verified": false,
+    "attemptDate": "2026-08-27",
+    "mode": "merge",
+    "commandLine": "operator:push returned an HTML document instead of JSON",
+    "browserFallback": "Private operator-import navigation timed out before the form was available",
+    "formSubmitted": false,
+    "productionReadBack": false,
+    "credentialsChanged": false,
+    "status": "未取得成功写入证据，生产站尚未确认更新"
+  },
+  "localMergeTest": {
+    "passed": true,
+    "oldDraftsPreserved": 20,
+    "newDraftsAdded": 20,
+    "reviewNoteFixturePreserved": true,
+    "scope": "基于8月26日本地包；线上状态未读取"
+  },
+  "gaps": [
+    "arXiv Atom采集超时；OpenAI与TechCrunch RSS成功，但本批20条最终候选均以讨论证据更完整的HN来源为主。",
+    "X、Instagram、TikTok、LinkedIn及Reddit未取得本次可验证新增样本，不能称为多平台高赞样本。",
+    "国内小红书/抖音语义查重未完成，稀缺度封顶55。",
+    "生产operator接口返回HTML拦截页，未能读取线上reviewNote；不能声称线上无修改意见。",
+    "3个原文HTTP 403、1个原文抓取失败；相应条目仅保留讨论证据或标记补读。",
+    "20条均有中文标题、事实摘要、讨论、角度、人工核验和初稿；8条推荐含30–60秒估算口播。",
+    "原创长文未做全文逐字翻译；保留原标题完整译名和事实级中文释义，避免把他人长文搬成原创。",
+    "配图为逐条制作说明，未生成或伪造实测截图。"
+  ]
+}

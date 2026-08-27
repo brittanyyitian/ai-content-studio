@@ -1,0 +1,450 @@
+[
+  {
+    "id": "49454764",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49454764",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49454764",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:37.626Z",
+        "contentHash": "902ff57c8236bdf274c9415e6c4cf31ad818a19d4f2f78a446de07d1d0913cd3",
+        "rawSnapshotRef": "evidence/2026-08-27/49454764-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://acceptmarkdown.com/",
+        "finalUrl": "https://acceptmarkdown.com/",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:39.126Z",
+        "contentHash": "cdb1517c6ea7e2dad3f59cd4a7e9d5c86e612ec9158b809d204284d929331794",
+        "rawSnapshotRef": "evidence/2026-08-27/49454764-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49448210",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49448210",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49448210",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:37.625Z",
+        "contentHash": "1330b56e5579c044884e193ec3d7c8c2f2bb9e614240326368d0599dac3dc441",
+        "rawSnapshotRef": "evidence/2026-08-27/49448210-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+        "finalUrl": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:40.077Z",
+        "contentHash": "f889fab1969e1164831e5d58c2a38cdc08a47dd44ab8175bc08f7874fcc1766b",
+        "rawSnapshotRef": "evidence/2026-08-27/49448210-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49449507",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49449507",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49449507",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:37.604Z",
+        "contentHash": "5aa6772255ee432975169f1d853e62abd28fd9d2798db234441cac864adc1c8a",
+        "rawSnapshotRef": "evidence/2026-08-27/49449507-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://z.ai/blog/glm-5.3-flash",
+        "finalUrl": "https://z.ai/blog/glm-5.3-flash",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:40.446Z",
+        "contentHash": "cc0004aa6f3773f44bd8c04eaa1a4b6d8f1fefd8c2233588066f391c1b41352f",
+        "rawSnapshotRef": "evidence/2026-08-27/49449507-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49450898",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49450898",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49450898",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:37.626Z",
+        "contentHash": "49ce8259438ef1017e2c5348ec1213c8784dea0765d0bbe4fd144c64000762e8",
+        "rawSnapshotRef": "evidence/2026-08-27/49450898-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://www.ssp.sh/brain/using-obsidian-with-ai/",
+        "finalUrl": "https://www.ssp.sh/brain/using-obsidian-with-ai/",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:39.860Z",
+        "contentHash": "f7479ba6c60692817a1d7a8dc6b219f2d50f2e91f5ec56dcc4e560208f3cf3b2",
+        "rawSnapshotRef": "evidence/2026-08-27/49450898-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49443523",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49443523",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49443523",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:41.278Z",
+        "contentHash": "5a81eaf5b4651a020d60fe1925649d67f9e0c7480b276ac1a21333797ef4566d",
+        "rawSnapshotRef": "evidence/2026-08-27/49443523-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://arxiv.org/abs/2607.21503",
+        "finalUrl": "https://arxiv.org/abs/2607.21503",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:41.912Z",
+        "contentHash": "616bed173b8bd85c3c2fcc7b622b609d490a334f67628f5478a2ccfb186ce890",
+        "rawSnapshotRef": "evidence/2026-08-27/49443523-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49444863",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49444863",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49444863",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:41.279Z",
+        "contentHash": "461218738e6da5186768563c1d549e7a55fbe20d74f38f6daf06ca9397226a8b",
+        "rawSnapshotRef": "evidence/2026-08-27/49444863-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://alexkras.com/focus-is-the-main-feature-why-i-miss-the-old-claude-code/",
+        "finalUrl": "https://alexkras.com/focus-is-the-main-feature-why-i-miss-the-old-claude-code/",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:41.864Z",
+        "contentHash": "e498085302100d03e8450d83ae03b754bbb820feef37f0ae4f64a1cf8fb0a11c",
+        "rawSnapshotRef": "evidence/2026-08-27/49444863-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49449648",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49449648",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49449648",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:41.278Z",
+        "contentHash": "100e29a831b6dcee74838545a47b592d1512a724eb6c59623fe8124912fef717",
+        "rawSnapshotRef": "evidence/2026-08-27/49449648-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://hnstats.com",
+        "finalUrl": "https://hnstats.com/",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:42.209Z",
+        "contentHash": "78f11c94ecebe05f3f25e6f9155c687ef3d751a0a40359982532393467486ac1",
+        "rawSnapshotRef": "evidence/2026-08-27/49449648-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49450417",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49450417",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49450417",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:41.279Z",
+        "contentHash": "371f5a7613e99599898df1a92e9dffe55601236fdb854b709f65d49afc3afb59",
+        "rawSnapshotRef": "evidence/2026-08-27/49450417-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://sreenathmenon.com/blog/2026-08-04-webmcp-teaching-websites-to-talk-to-ai-agents/",
+        "finalUrl": "https://sreenathmenon.com/blog/2026-08-04-webmcp-teaching-websites-to-talk-to-ai-agents/",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:42.136Z",
+        "contentHash": "fb78c3bb7dd42fdb25affa123413b70e8ced986d3c4417ced907f6adbab2e7d0",
+        "rawSnapshotRef": "evidence/2026-08-27/49450417-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49443820",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49443820",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49443820",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:43.591Z",
+        "contentHash": "108c26ff1802059c555e777c0b9b8cf2a7bc98fa6f7a70a652bf86f4d976a801",
+        "rawSnapshotRef": "evidence/2026-08-27/49443820-discussion.json"
+      }
+    ]
+  },
+  {
+    "id": "49452037",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49452037",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49452037",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:43.591Z",
+        "contentHash": "5a773bb4ebbd28dd00f701adc9abf0c9ce1395199f86ccae435d3c2d49904809",
+        "rawSnapshotRef": "evidence/2026-08-27/49452037-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://www.magicpatterns.com/theme-park",
+        "finalUrl": "https://www.magicpatterns.com/theme-park",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:44.125Z",
+        "contentHash": "8d48f30377489b88cd001b0d9cddbf8c150e7ec789eae71149431dd1cbf42ba0",
+        "rawSnapshotRef": "evidence/2026-08-27/49452037-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49446653",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49446653",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49446653",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:43.591Z",
+        "contentHash": "1227e7f209f9bc1336b3590c00e6e0b34124bce5dd06a371505b54ff41f97b85",
+        "rawSnapshotRef": "evidence/2026-08-27/49446653-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://www.theregister.com/ai-and-ml/2026/08/26/debian-polls-its-developers-on-whether-to-burn-the-bots-tame-the-bots-or-let-em-loose/5292270",
+        "finalUrl": "https://www.theregister.com/ai-and-ml/2026/08/26/debian-polls-its-developers-on-whether-to-burn-the-bots-tame-the-bots-or-let-em-loose/5292270",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:44.756Z",
+        "contentHash": "c3d7122917ed85075db8b4420e7338b02668950beb80f5cda6861d4be0ee6878",
+        "rawSnapshotRef": "evidence/2026-08-27/49446653-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49443871",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49443871",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49443871",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:43.591Z",
+        "contentHash": "a67b92518f407025bcfbb4df6c8a9341b7932addce27b3862cb67f8717cff012",
+        "rawSnapshotRef": "evidence/2026-08-27/49443871-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://studyarena.com/blog/chatgpt-vs-claude-vs-gemini-college-essays-2026",
+        "finalUrl": "https://studyarena.com/blog/chatgpt-vs-claude-vs-gemini-college-essays-2026",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:44.517Z",
+        "contentHash": "51e893b0c2297fc2d1d291c1f6a0b4f2a51962e2e1e5d886700536faeb7777bf",
+        "rawSnapshotRef": "evidence/2026-08-27/49443871-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49449082",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49449082",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49449082",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:48.051Z",
+        "contentHash": "595fa15e8d4f3a62994e671ce422131a5d59d98eb25cb38ffe5774435a488a60",
+        "rawSnapshotRef": "evidence/2026-08-27/49449082-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://cacm.acm.org/opinion/ai-is-a-harsh-mistress-on-anima-machina-herd-acceptance-and-the-politics-of-conscious-machines/",
+        "finalUrl": "https://cacm.acm.org/opinion/ai-is-a-harsh-mistress-on-anima-machina-herd-acceptance-and-the-politics-of-conscious-machines/",
+        "status": 403,
+        "capturedAt": "2026-08-27T01:02:48.951Z",
+        "contentHash": "36afa9dc769d26408e71395359a0da92f43e670f5c27692d079783e0034bf57e",
+        "rawSnapshotRef": "evidence/2026-08-27/49449082-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49451495",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49451495",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49451495",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:48.052Z",
+        "contentHash": "a31079c9a9fea5ebb5516146f9adf7650c1bc1599bb84b19ee6edc6b42b95bbd",
+        "rawSnapshotRef": "evidence/2026-08-27/49451495-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://www.risklytics.ai/",
+        "finalUrl": "https://www.risklytics.ai/",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:48.674Z",
+        "contentHash": "db77175a4996a90cfb35f61214b2b2a9b155ea3a917bf19665946ed4a44e2f76",
+        "rawSnapshotRef": "evidence/2026-08-27/49451495-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49450188",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49450188",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49450188",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:48.051Z",
+        "contentHash": "258c07cae8fc070ce05fe25caae19a17c31f2b49cedb98d272a7e8a358ef3322",
+        "rawSnapshotRef": "evidence/2026-08-27/49450188-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/",
+        "finalUrl": "https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:49.144Z",
+        "contentHash": "cdd4de8bccee3ea42d80f7946884d8d48319a2ac207ba0845e11e99fea52282d",
+        "rawSnapshotRef": "evidence/2026-08-27/49450188-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49451493",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49451493",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49451493",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:48.052Z",
+        "contentHash": "058bf4baef828677e4372b2e4f1e270f74ef4000ba9c35ec7759b932b8e9eb40",
+        "rawSnapshotRef": "evidence/2026-08-27/49451493-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://www.formal.ai/blog/dont-use-fork-macos/",
+        "finalUrl": "https://www.formal.ai/blog/dont-use-fork-macos/",
+        "status": 403,
+        "capturedAt": "2026-08-27T01:02:49.702Z",
+        "contentHash": "513c516e2d789b9db5c880af51ce5178d98f6a88c369c7ada61046b45bb725e7",
+        "rawSnapshotRef": "evidence/2026-08-27/49451493-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49445252",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49445252",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49445252",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:52.099Z",
+        "contentHash": "d6bfb20459d4d2a455fc4fb73eff6edb8a1b948a92f714c285633ab25d8489e9",
+        "rawSnapshotRef": "evidence/2026-08-27/49445252-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia/",
+        "finalUrl": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia/",
+        "status": 403,
+        "capturedAt": "2026-08-27T01:02:52.841Z",
+        "contentHash": "95110cba824bd90c028344899a19fab89c44642a1b6a086dbdf9627b77e9e8bb",
+        "rawSnapshotRef": "evidence/2026-08-27/49445252-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49447878",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49447878",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49447878",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:52.099Z",
+        "contentHash": "681914419753c75f340ea8aa32ad67c67eba99d77a85a7b356c295443c51121f",
+        "rawSnapshotRef": "evidence/2026-08-27/49447878-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://www.sascha-steffen.de/updates/nvidia-500bn-ai-financing-credit-risk",
+        "finalUrl": "https://www.sascha-steffen.de/updates/nvidia-500bn-ai-financing-credit-risk",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:52.930Z",
+        "contentHash": "022c6eb917724664d18e7e63090204b87f5c38a4640ccbbe88d65e53b4ce7c76",
+        "rawSnapshotRef": "evidence/2026-08-27/49447878-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49448137",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49448137",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49448137",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:52.099Z",
+        "contentHash": "df20f01b20aac0f01d1a6f6e698bb1eed9d11dbae0b8d3dfe85daedd60972e4f",
+        "rawSnapshotRef": "evidence/2026-08-27/49448137-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/a-turbulent-ai-era-and-critical-choices-to-make",
+        "finalUrl": "https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/a-turbulent-ai-era-and-critical-choices-to-make",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:53.985Z",
+        "contentHash": "854e7a04a2866cc50f94aa3b80a56ba53b5fdd50ef7ed79a19fc62acc67115c0",
+        "rawSnapshotRef": "evidence/2026-08-27/49448137-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49446722",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49446722",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49446722",
+        "status": 200,
+        "capturedAt": "2026-08-27T01:02:52.099Z",
+        "contentHash": "910befa8a475a050e7eee89d1eb7d0a05d288c60db9f84d0be3eacb4b9456e04",
+        "rawSnapshotRef": "evidence/2026-08-27/49446722-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://www.reuters.com/investigations/mark-zuckerberg-had-bold-plan-replace-meta-staff-with-ai-heres-how-it-imploded-2026-08-26/",
+        "capturedAt": "2026-08-27T01:02:52.786Z",
+        "error": "fetch failed"
+      }
+    ]
+  }
+]

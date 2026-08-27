@@ -1,0 +1,2631 @@
+{
+  "schemaVersion": 2,
+  "mode": "merge",
+  "detail": "8月27日增量：20条候选、8条推荐；保留线上旧内容和人工审核，不自动审核或发布。",
+  "state": {
+    "schemaVersion": 2,
+    "hotspots": [
+      {
+        "id": 2026082701,
+        "rank": 1,
+        "source": "Philpax",
+        "sourceType": "原文与社区讨论",
+        "sourceUrl": "https://z.ai/blog/glm-5.3-flash",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49449507",
+        "originalTitle": "GLM-5.3-Flash",
+        "title": "GLM-5.3-Flash：价格低，不等于人人该换",
+        "fullChineseTranslation": "GLM-5.3-Flash",
+        "translationScope": "原标题完整翻译；正文为事实级中文释义，非受版权保护长文的全文逐字翻译",
+        "summary": "智谱发布GLM-5.3-Flash，官方主打Agent与编码场景；HN在采集时869积分、438评论。价格与速度来自官方或评论快照，不是本次实测。",
+        "localizedTranslation": "智谱发布GLM-5.3-Flash，官方主打Agent与编码场景；HN在采集时869积分、438评论。价格与速度来自官方或评论快照，不是本次实测。",
+        "discussionFocus": [
+          "讨论集中在API价格、与Qwen等模型的比较，以及“Flash”是否牺牲质量；评论报价需回到官方价格页复核。"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49449677",
+            "author": "rahimnathwani",
+            "url": "https://news.ycombinator.com/item?id=49449677",
+            "publishedAt": "2026-08-26T14:17:49.000Z",
+            "capturedAt": "2026-08-27T01:02:37.604Z",
+            "quote": "Related: https://news.ycombinator.com/item?id=49446422 (281 points, 118 comments)",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          },
+          {
+            "id": "49449682",
+            "author": "iamsyr",
+            "url": "https://news.ycombinator.com/item?id=49449682",
+            "publishedAt": "2026-08-26T14:18:15.000Z",
+            "capturedAt": "2026-08-27T01:02:37.604Z",
+            "quote": "Standard API Pricing for GLM-5.3-Flash (per 1M tokens) - Input: $0.15 - Output: $0.50 - Cached input: $0.03",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          }
+        ],
+        "commentSamples": [
+          "rahimnathwani：“Related: https://news.ycombinator.com/item?id=49446422 (281 points, 118 comments)…”（节选；评论点赞未公开）",
+          "iamsyr：“Standard API Pricing for GLM-5.3-Flash (per 1M tokens) - Input: $0.15 - Output: $0.50 - Cached input: $0.03…”（节选；评论点赞未公开）"
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 438,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 869,
+          "capturedAt": "2026-08-27T01:01:46.396Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49449507",
+          "metricKind": "HN积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "未公开",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 869积分 · 438评论 · 原文浏览/点赞未公开 · 采集于2026-08-27T01:01:46.396Z",
+        "heat": 84,
+        "scarcity": 55,
+        "fit": 88,
+        "actionability": 80,
+        "evidenceConfidence": 85,
+        "finalScore": 77,
+        "scoreDisclaimer": "内部排序分，不是公开流量",
+        "category": "产业观察",
+        "reason": "具备具体信息、可用方法或明确讨论证据，进入人工推荐池。",
+        "angle": "把新模型整理成三种“值得换/先别换”的使用场景，不做跑分搬运。",
+        "humanCheck": "核对中国区API、隐私条款和官方价格；不把单一基准写成全面领先。",
+        "domesticCoverage": "国内平台语义检索未取得可验证结果；稀缺度按55上限保守记录，不代表国内无人发布。发布前人工搜索产品名、核心主张、中文角度与目标人群。",
+        "reuseIdeas": [
+          "把新模型整理成三种“值得换/先别换”的使用场景，不做跑分搬运。"
+        ],
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "status": "待选题",
+        "selected": false,
+        "recommended": true,
+        "assignee": "待分配",
+        "sourcePublishedAt": "2026-08-26T14:08:50Z",
+        "sourceCapturedAt": "2026-08-27T01:01:46.396Z",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49449507",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49449507",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:37.604Z",
+            "contentHash": "5aa6772255ee432975169f1d853e62abd28fd9d2798db234441cac864adc1c8a",
+            "rawSnapshotRef": "evidence/2026-08-27/49449507-discussion.json",
+            "provider": "HN Algolia"
+          },
+          {
+            "type": "primary",
+            "url": "https://z.ai/blog/glm-5.3-flash",
+            "finalUrl": "https://z.ai/blog/glm-5.3-flash",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:40.446Z",
+            "contentHash": "cc0004aa6f3773f44bd8c04eaa1a4b6d8f1fefd8c2233588066f391c1b41352f",
+            "rawSnapshotRef": "evidence/2026-08-27/49449507-primary.html",
+            "provider": "原文页面"
+          }
+        ],
+        "analysisState": "已分析"
+      },
+      {
+        "id": 2026082702,
+        "rank": 2,
+        "source": "tosh",
+        "sourceType": "原文与社区讨论",
+        "sourceUrl": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49448210",
+        "originalTitle": "Qwen3.8-Flash-Next",
+        "title": "Qwen3.8 新模型，普通电脑先看这两个数",
+        "fullChineseTranslation": "Qwen3.8-Flash-Next",
+        "translationScope": "原标题完整翻译；正文为事实级中文释义，非受版权保护长文的全文逐字翻译",
+        "summary": "Qwen团队8月26日发布开放权重的多模态MoE模型：主模型125B参数，另有51B N-gram嵌入，每个token激活6B；原生262,144上下文，可用YaRN扩到100万。",
+        "localizedTranslation": "Qwen团队8月26日发布开放权重的多模态MoE模型：主模型125B参数，另有51B N-gram嵌入，每个token激活6B；原生262,144上下文，可用YaRN扩到100万。",
+        "discussionFocus": [
+          "HN讨论主要比较它与其他Flash模型的效果、硬件门槛和架构意义；少量“更强”判断没有独立评测支撑。"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49448426",
+            "author": "whwhyb",
+            "url": "https://news.ycombinator.com/item?id=49448426",
+            "publishedAt": "2026-08-26T13:04:41.000Z",
+            "capturedAt": "2026-08-27T01:02:37.625Z",
+            "quote": "looks like it's better than deepseek v4 flash",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          },
+          {
+            "id": "49450658",
+            "author": "xvdvlinux",
+            "url": "https://news.ycombinator.com/item?id=49450658",
+            "publishedAt": "2026-08-26T15:16:39.000Z",
+            "capturedAt": "2026-08-27T01:02:37.625Z",
+            "quote": "I agreed",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          }
+        ],
+        "commentSamples": [
+          "whwhyb：“looks like it's better than deepseek v4 flash…”（节选；评论点赞未公开）",
+          "xvdvlinux：“I agreed…”（节选；评论点赞未公开）"
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 197,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 611,
+          "capturedAt": "2026-08-27T01:01:46.396Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49448210",
+          "metricKind": "HN积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "未公开",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 611积分 · 197评论 · 原文浏览/点赞未公开 · 采集于2026-08-27T01:01:46.396Z",
+        "heat": 79,
+        "scarcity": 55,
+        "fit": 92,
+        "actionability": 83,
+        "evidenceConfidence": 85,
+        "finalScore": 77,
+        "scoreDisclaimer": "内部排序分，不是公开流量",
+        "category": "AI 技巧",
+        "reason": "具备具体信息、可用方法或明确讨论证据，进入人工推荐池。",
+        "angle": "把大参数、低激活和本地运行门槛拆开，避免读者把“每token激活6B”误解成只需装6B模型。",
+        "humanCheck": "下载前核对模型文件量、量化版本、许可证与内存；官方8.6倍吞吐来自特定90%前缀缓存实验。",
+        "domesticCoverage": "国内平台语义检索未取得可验证结果；稀缺度按55上限保守记录，不代表国内无人发布。发布前人工搜索产品名、核心主张、中文角度与目标人群。",
+        "reuseIdeas": [
+          "把大参数、低激活和本地运行门槛拆开，避免读者把“每token激活6B”误解成只需装6B模型。"
+        ],
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "status": "待选题",
+        "selected": false,
+        "recommended": true,
+        "assignee": "待分配",
+        "sourcePublishedAt": "2026-08-26T12:52:12Z",
+        "sourceCapturedAt": "2026-08-27T01:01:46.396Z",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49448210",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49448210",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:37.625Z",
+            "contentHash": "1330b56e5579c044884e193ec3d7c8c2f2bb9e614240326368d0599dac3dc441",
+            "rawSnapshotRef": "evidence/2026-08-27/49448210-discussion.json",
+            "provider": "HN Algolia"
+          },
+          {
+            "type": "primary",
+            "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+            "finalUrl": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:40.077Z",
+            "contentHash": "f889fab1969e1164831e5d58c2a38cdc08a47dd44ab8175bc08f7874fcc1766b",
+            "rawSnapshotRef": "evidence/2026-08-27/49448210-primary.html",
+            "provider": "原文页面"
+          }
+        ],
+        "analysisState": "已分析"
+      },
+      {
+        "id": 2026082703,
+        "rank": 3,
+        "source": "zazuke",
+        "sourceType": "原文与社区讨论",
+        "sourceUrl": "https://www.ssp.sh/brain/using-obsidian-with-ai/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49450898",
+        "originalTitle": "It’s so hard to finish an idea that is not yours and is just suggested by AI",
+        "title": "AI 给的选题，为什么总写不完",
+        "fullChineseTranslation": "一个不是你自己的、只是AI建议的想法，真的很难写完",
+        "translationScope": "原标题完整翻译；正文为事实级中文释义，非受版权保护长文的全文逐字翻译",
+        "summary": "Simon Späti主张不要让AI批量生成个人知识库内容：自己的笔记与AI文字混在一起，久后难辨来源，也削弱主动连接想法的过程。文章4月首发、8月更新，今日因HN讨论升温。",
+        "localizedTranslation": "Simon Späti主张不要让AI批量生成个人知识库内容：自己的笔记与AI文字混在一起，久后难辨来源，也削弱主动连接想法的过程。文章4月首发、8月更新，今日因HN讨论升温。",
+        "discussionFocus": [
+          "评论有人认同写作与记笔记不该外包，也有人提醒“自己的想法同样可能写不完”；争议点是AI该参与检索还是参与观点生成。"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49450899",
+            "author": "zazuke",
+            "url": "https://news.ycombinator.com/item?id=49450899",
+            "publishedAt": "2026-08-26T15:30:05.000Z",
+            "capturedAt": "2026-08-27T01:02:37.626Z",
+            "quote": "While I use Claude a lot for my Omarchy plugins and Linux optimization/failure detection, I don’t use it for writing",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          },
+          {
+            "id": "49451937",
+            "author": "lupire",
+            "url": "https://news.ycombinator.com/item?id=49451937",
+            "publishedAt": "2026-08-26T16:34:29.000Z",
+            "capturedAt": "2026-08-27T01:02:37.626Z",
+            "quote": "It's also hard to finish an idea that is mine.",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          }
+        ],
+        "commentSamples": [
+          "zazuke：“While I use Claude a lot for my Omarchy plugins and Linux optimization/failure detection, I don’t use it for writing…”（节选；评论点赞未公开）",
+          "lupire：“It's also hard to finish an idea that is mine.…”（节选；评论点赞未公开）"
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 92,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 169,
+          "capturedAt": "2026-08-27T01:01:46.396Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49450898",
+          "metricKind": "HN积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "未公开",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 169积分 · 92评论 · 原文浏览/点赞未公开 · 采集于2026-08-27T01:01:46.396Z",
+        "heat": 68,
+        "scarcity": 55,
+        "fit": 98,
+        "actionability": 96,
+        "evidenceConfidence": 85,
+        "finalScore": 78,
+        "scoreDisclaimer": "内部排序分，不是公开流量",
+        "category": "个人 IP",
+        "reason": "具备具体信息、可用方法或明确讨论证据，进入人工推荐池。",
+        "angle": "给内容创作者一条可执行边界：AI负责找漏点与反例，核心判断先由人写一句。",
+        "humanCheck": "不把作者观点说成研究结论；敏感笔记不要上传未批准的云服务。",
+        "domesticCoverage": "国内平台语义检索未取得可验证结果；稀缺度按55上限保守记录，不代表国内无人发布。发布前人工搜索产品名、核心主张、中文角度与目标人群。",
+        "reuseIdeas": [
+          "给内容创作者一条可执行边界：AI负责找漏点与反例，核心判断先由人写一句。"
+        ],
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "status": "待选题",
+        "selected": false,
+        "recommended": true,
+        "assignee": "待分配",
+        "sourcePublishedAt": "2026-08-26T15:30:05Z",
+        "sourceCapturedAt": "2026-08-27T01:01:46.396Z",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49450898",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49450898",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:37.626Z",
+            "contentHash": "49ce8259438ef1017e2c5348ec1213c8784dea0765d0bbe4fd144c64000762e8",
+            "rawSnapshotRef": "evidence/2026-08-27/49450898-discussion.json",
+            "provider": "HN Algolia"
+          },
+          {
+            "type": "primary",
+            "url": "https://www.ssp.sh/brain/using-obsidian-with-ai/",
+            "finalUrl": "https://www.ssp.sh/brain/using-obsidian-with-ai/",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:39.860Z",
+            "contentHash": "f7479ba6c60692817a1d7a8dc6b219f2d50f2e91f5ec56dcc4e560208f3cf3b2",
+            "rawSnapshotRef": "evidence/2026-08-27/49450898-primary.html",
+            "provider": "原文页面"
+          }
+        ],
+        "analysisState": "已分析"
+      },
+      {
+        "id": 2026082704,
+        "rank": 4,
+        "source": "tilt",
+        "sourceType": "原文与社区讨论",
+        "sourceUrl": "https://acceptmarkdown.com/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49454764",
+        "originalTitle": "Serve Markdown to AI Agents with Accept Headers",
+        "title": "网站给 AI 读，可以少喂一堆菜单代码",
+        "fullChineseTranslation": "通过Accept请求头向AI Agent提供Markdown",
+        "translationScope": "原标题完整翻译；正文为事实级中文释义，非受版权保护长文的全文逐字翻译",
+        "summary": "AcceptMarkdown介绍HTTP内容协商：同一URL对浏览器返回HTML，对请求text/markdown的客户端返回Markdown，并正确设置Vary: Accept、q值和406。",
+        "localizedTranslation": "AcceptMarkdown介绍HTTP内容协商：同一URL对浏览器返回HTML，对请求text/markdown的客户端返回Markdown，并正确设置Vary: Accept、q值和406。",
+        "discussionFocus": [
+          "评论一边期待无广告、无脚本的干净页面，一边质疑内容方为何愿意提供；真正争点是兼容性、缓存与商业页面的取舍。"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49455503",
+            "author": "kaangiray26",
+            "url": "https://news.ycombinator.com/item?id=49455503",
+            "publishedAt": "2026-08-26T20:35:31.000Z",
+            "capturedAt": "2026-08-27T01:02:37.626Z",
+            "quote": "hoping for this to get mainstream so that I can just view the pages without any ads, js and bloat",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          },
+          {
+            "id": "49455585",
+            "author": "qznc",
+            "url": "https://news.ycombinator.com/item?id=49455585",
+            "publishedAt": "2026-08-26T20:40:21.000Z",
+            "capturedAt": "2026-08-27T01:02:37.626Z",
+            "quote": "Yeah, that is why this will not get popular.",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          }
+        ],
+        "commentSamples": [
+          "kaangiray26：“hoping for this to get mainstream so that I can just view the pages without any ads, js and bloat…”（节选；评论点赞未公开）",
+          "qznc：“Yeah, that is why this will not get popular.…”（节选；评论点赞未公开）"
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 43,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 80,
+          "capturedAt": "2026-08-27T01:01:46.396Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49454764",
+          "metricKind": "HN积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "未公开",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 80积分 · 43评论 · 原文浏览/点赞未公开 · 采集于2026-08-27T01:01:46.396Z",
+        "heat": 61,
+        "scarcity": 55,
+        "fit": 90,
+        "actionability": 91,
+        "evidenceConfidence": 85,
+        "finalScore": 73,
+        "scoreDisclaimer": "内部排序分，不是公开流量",
+        "category": "AI 技巧",
+        "reason": "具备具体信息、可用方法或明确讨论证据，进入人工推荐池。",
+        "angle": "面向有官网的独立开发者，教先检测响应头，不宣传“这样就一定被AI推荐”。",
+        "humanCheck": "先用测试环境；确认缓存键包含Accept；不能把更省token说成GEO排名保证。",
+        "domesticCoverage": "国内平台语义检索未取得可验证结果；稀缺度按55上限保守记录，不代表国内无人发布。发布前人工搜索产品名、核心主张、中文角度与目标人群。",
+        "reuseIdeas": [
+          "面向有官网的独立开发者，教先检测响应头，不宣传“这样就一定被AI推荐”。"
+        ],
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "status": "待选题",
+        "selected": false,
+        "recommended": true,
+        "assignee": "待分配",
+        "sourcePublishedAt": "2026-08-26T19:45:59Z",
+        "sourceCapturedAt": "2026-08-27T01:01:46.396Z",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49454764",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49454764",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:37.626Z",
+            "contentHash": "902ff57c8236bdf274c9415e6c4cf31ad818a19d4f2f78a446de07d1d0913cd3",
+            "rawSnapshotRef": "evidence/2026-08-27/49454764-discussion.json",
+            "provider": "HN Algolia"
+          },
+          {
+            "type": "primary",
+            "url": "https://acceptmarkdown.com/",
+            "finalUrl": "https://acceptmarkdown.com/",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:39.126Z",
+            "contentHash": "cdb1517c6ea7e2dad3f59cd4a7e9d5c86e612ec9158b809d204284d929331794",
+            "rawSnapshotRef": "evidence/2026-08-27/49454764-primary.html",
+            "provider": "原文页面"
+          }
+        ],
+        "analysisState": "已分析"
+      },
+      {
+        "id": 2026082705,
+        "rank": 5,
+        "source": "beekthos",
+        "sourceType": "作者发布与社区讨论",
+        "sourceUrl": "https://hnstats.com",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49449648",
+        "originalTitle": "Show HN: How much of Hacker News is about AI?",
+        "title": "AI 话题很多，但别只看标题里有没有 AI",
+        "fullChineseTranslation": "Hacker News里有多少内容在讨论AI？",
+        "translationScope": "原标题完整翻译；正文为事实级中文释义，非受版权保护长文的全文逐字翻译",
+        "summary": "HNStats作者统计标题中独立出现“AI”的帖子，并提供更宽词表开关；作者明确OpenAI不计入严格口径、AI-powered计入。采集时68积分、45评论。",
+        "localizedTranslation": "HNStats作者统计标题中独立出现“AI”的帖子，并提供更宽词表开关；作者明确OpenAI不计入严格口径、AI-powered计入。采集时68积分、45评论。",
+        "discussionFocus": [
+          "评论建议用嵌入做更多主题分类，也有人指出标题关键词无法衡量一篇讨论究竟有多少内容与AI有关。"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49449800",
+            "author": "regexman1",
+            "url": "https://news.ycombinator.com/item?id=49449800",
+            "publishedAt": "2026-08-26T14:24:13.000Z",
+            "capturedAt": "2026-08-27T01:02:41.278Z",
+            "quote": "Brilliant",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          },
+          {
+            "id": "49449905",
+            "author": "sharemywin",
+            "url": "https://news.ycombinator.com/item?id=49449905",
+            "publishedAt": "2026-08-26T14:29:49.000Z",
+            "capturedAt": "2026-08-27T01:02:41.278Z",
+            "quote": "it would be cool to use embeddings to categorize into like 10-20 categories and get a giant pie chart",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          }
+        ],
+        "commentSamples": [
+          "regexman1：“Brilliant…”（节选；评论点赞未公开）",
+          "sharemywin：“it would be cool to use embeddings to categorize into like 10-20 categories and get a giant pie chart…”（节选；评论点赞未公开）"
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 45,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 68,
+          "capturedAt": "2026-08-27T01:01:46.396Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49449648",
+          "metricKind": "HN积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "未公开",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 68积分 · 45评论 · 原文浏览/点赞未公开 · 采集于2026-08-27T01:01:46.396Z",
+        "heat": 60,
+        "scarcity": 55,
+        "fit": 95,
+        "actionability": 93,
+        "evidenceConfidence": 85,
+        "finalScore": 74,
+        "scoreDisclaimer": "内部排序分，不是公开流量",
+        "category": "个人 IP",
+        "reason": "具备具体信息、可用方法或明确讨论证据，进入人工推荐池。",
+        "angle": "给运营一个选题池清理方法：关键词初筛后，人工判断是否真的有可复用信息。",
+        "humanCheck": "比例取决于口径和时间窗口；不能从标题统计推断用户都爱看AI。",
+        "domesticCoverage": "国内平台语义检索未取得可验证结果；稀缺度按55上限保守记录，不代表国内无人发布。发布前人工搜索产品名、核心主张、中文角度与目标人群。",
+        "reuseIdeas": [
+          "给运营一个选题池清理方法：关键词初筛后，人工判断是否真的有可复用信息。"
+        ],
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "status": "待选题",
+        "selected": false,
+        "recommended": true,
+        "assignee": "待分配",
+        "sourcePublishedAt": "2026-08-26T14:16:05Z",
+        "sourceCapturedAt": "2026-08-27T01:01:46.396Z",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49449648",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49449648",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:41.278Z",
+            "contentHash": "100e29a831b6dcee74838545a47b592d1512a724eb6c59623fe8124912fef717",
+            "rawSnapshotRef": "evidence/2026-08-27/49449648-discussion.json",
+            "provider": "HN Algolia"
+          },
+          {
+            "type": "primary",
+            "url": "https://hnstats.com",
+            "finalUrl": "https://hnstats.com/",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:42.209Z",
+            "contentHash": "78f11c94ecebe05f3f25e6f9155c687ef3d751a0a40359982532393467486ac1",
+            "rawSnapshotRef": "evidence/2026-08-27/49449648-primary.html",
+            "provider": "原文页面"
+          }
+        ],
+        "analysisState": "已分析"
+      },
+      {
+        "id": 2026082706,
+        "rank": 6,
+        "source": "akras14",
+        "sourceType": "原文与社区讨论",
+        "sourceUrl": "https://alexkras.com/focus-is-the-main-feature-why-i-miss-the-old-claude-code/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49444863",
+        "originalTitle": "I miss the old Claude Code",
+        "title": "AI 写代码变慢？先把“想太久”切掉",
+        "fullChineseTranslation": "我怀念以前的Claude Code",
+        "translationScope": "原标题完整翻译；正文为事实级中文释义，非受版权保护长文的全文逐字翻译",
+        "summary": "作者认为Claude Code从直接执行变得更爱规划、提问和解释，降低了短任务的爽快感；HN评论也提出速度下降可能部分来自token生成速度变化。",
+        "localizedTranslation": "作者认为Claude Code从直接执行变得更爱规划、提问和解释，降低了短任务的爽快感；HN评论也提出速度下降可能部分来自token生成速度变化。",
+        "discussionFocus": [
+          "有人认同旧版本更快进入编码，也有人认为复杂任务需要规划；讨论没有证明所有模型版本都持续退化。"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49445643",
+            "author": "Dathuil",
+            "url": "https://news.ycombinator.com/item?id=49445643",
+            "publishedAt": "2026-08-26T08:27:04.000Z",
+            "capturedAt": "2026-08-27T01:02:41.279Z",
+            "quote": "My first deep dive with Claude Code was in Jan of this year. I was working on rebuilding an old",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          },
+          {
+            "id": "49445706",
+            "author": "Flavius",
+            "url": "https://news.ycombinator.com/item?id=49445706",
+            "publishedAt": "2026-08-26T08:35:28.000Z",
+            "capturedAt": "2026-08-27T01:02:41.279Z",
+            "quote": "> I have tried to do the same recently with the newer models and we're still not writing code by",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          }
+        ],
+        "commentSamples": [
+          "Dathuil：“My first deep dive with Claude Code was in Jan of this year. I was working on rebuilding an old…”（节选；评论点赞未公开）",
+          "Flavius：“> I have tried to do the same recently with the newer models and we're still not writing code by…”（节选；评论点赞未公开）"
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 21,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 36,
+          "capturedAt": "2026-08-27T01:01:46.396Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49444863",
+          "metricKind": "HN积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "未公开",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 36积分 · 21评论 · 原文浏览/点赞未公开 · 采集于2026-08-27T01:01:46.396Z",
+        "heat": 54,
+        "scarcity": 55,
+        "fit": 96,
+        "actionability": 95,
+        "evidenceConfidence": 85,
+        "finalScore": 74,
+        "scoreDisclaimer": "内部排序分，不是公开流量",
+        "category": "AI 技巧",
+        "reason": "具备具体信息、可用方法或明确讨论证据，进入人工推荐池。",
+        "angle": "给短小改动一条明确指令，把“先做再解释”的边界写清，不鼓励跳过测试。",
+        "humanCheck": "用自己任务对照；复杂迁移、安全修改不能禁用计划；不把主观体验说成官方降级。",
+        "domesticCoverage": "国内平台语义检索未取得可验证结果；稀缺度按55上限保守记录，不代表国内无人发布。发布前人工搜索产品名、核心主张、中文角度与目标人群。",
+        "reuseIdeas": [
+          "给短小改动一条明确指令，把“先做再解释”的边界写清，不鼓励跳过测试。"
+        ],
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "status": "待选题",
+        "selected": false,
+        "recommended": true,
+        "assignee": "待分配",
+        "sourcePublishedAt": "2026-08-26T06:34:35Z",
+        "sourceCapturedAt": "2026-08-27T01:01:46.396Z",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49444863",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49444863",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:41.279Z",
+            "contentHash": "461218738e6da5186768563c1d549e7a55fbe20d74f38f6daf06ca9397226a8b",
+            "rawSnapshotRef": "evidence/2026-08-27/49444863-discussion.json",
+            "provider": "HN Algolia"
+          },
+          {
+            "type": "primary",
+            "url": "https://alexkras.com/focus-is-the-main-feature-why-i-miss-the-old-claude-code/",
+            "finalUrl": "https://alexkras.com/focus-is-the-main-feature-why-i-miss-the-old-claude-code/",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:41.864Z",
+            "contentHash": "e498085302100d03e8450d83ae03b754bbb820feef37f0ae4f64a1cf8fb0a11c",
+            "rawSnapshotRef": "evidence/2026-08-27/49444863-primary.html",
+            "provider": "原文页面"
+          }
+        ],
+        "analysisState": "已分析"
+      },
+      {
+        "id": 2026082707,
+        "rank": 7,
+        "source": "davidest",
+        "sourceType": "原文与社区讨论",
+        "sourceUrl": "https://news.ycombinator.com/item?id=49443820",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49443820",
+        "originalTitle": "Ask HN: What is one simple thing LLMs are insanely bad at?",
+        "title": "同一个问题每次答不一样，先固定这四项",
+        "fullChineseTranslation": "问HN：大模型特别不擅长的简单事情是什么？",
+        "translationScope": "原标题完整翻译；正文为事实级中文释义，非受版权保护长文的全文逐字翻译",
+        "summary": "Ask HN征集LLM反复做错的简单任务，采集时32积分、82评论；代表回答提到一致性、空间推理和自然表达。它是开放讨论，不是模型能力排行榜。",
+        "localizedTranslation": "Ask HN征集LLM反复做错的简单任务，采集时32积分、82评论；代表回答提到一致性、空间推理和自然表达。它是开放讨论，不是模型能力排行榜。",
+        "discussionFocus": [
+          "评论给出许多互不相同的失败类型；“同问不同答”最适合转成普通用户可验证的检查方法。"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49443901",
+            "author": "blinkbat",
+            "url": "https://news.ycombinator.com/item?id=49443901",
+            "publishedAt": "2026-08-26T03:27:42.000Z",
+            "capturedAt": "2026-08-27T01:02:43.591Z",
+            "quote": "Spatial reasoning and 3d rigging and animation. Oh, you said simple. Speaking like a human",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          },
+          {
+            "id": "49443931",
+            "author": "maxsavin",
+            "url": "https://news.ycombinator.com/item?id=49443931",
+            "publishedAt": "2026-08-26T03:33:39.000Z",
+            "capturedAt": "2026-08-27T01:02:43.591Z",
+            "quote": "being consistent when being asked the same question multiple times",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          }
+        ],
+        "commentSamples": [
+          "blinkbat：“Spatial reasoning and 3d rigging and animation. Oh, you said simple. Speaking like a human…”（节选；评论点赞未公开）",
+          "maxsavin：“being consistent when being asked the same question multiple times…”（节选；评论点赞未公开）"
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 82,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 32,
+          "capturedAt": "2026-08-27T01:01:46.396Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49443820",
+          "metricKind": "HN积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "未公开",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 32积分 · 82评论 · 原文浏览/点赞未公开 · 采集于2026-08-27T01:01:46.396Z",
+        "heat": 60,
+        "scarcity": 55,
+        "fit": 97,
+        "actionability": 98,
+        "evidenceConfidence": 62,
+        "finalScore": 76,
+        "scoreDisclaimer": "内部排序分，不是公开流量",
+        "category": "AI 技巧",
+        "reason": "具备具体信息、可用方法或明确讨论证据，进入人工推荐池。",
+        "angle": "给需要稳定格式的用户一份约束清单：输入、规则、输出样例、验收条件。",
+        "humanCheck": "相同问题的差异可能来自模型版本、随机性与上下文；不要承诺完全一致。",
+        "domesticCoverage": "国内平台语义检索未取得可验证结果；稀缺度按55上限保守记录，不代表国内无人发布。发布前人工搜索产品名、核心主张、中文角度与目标人群。",
+        "reuseIdeas": [
+          "给需要稳定格式的用户一份约束清单：输入、规则、输出样例、验收条件。"
+        ],
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "status": "待选题",
+        "selected": false,
+        "recommended": true,
+        "assignee": "待分配",
+        "sourcePublishedAt": "2026-08-26T03:17:51Z",
+        "sourceCapturedAt": "2026-08-27T01:01:46.396Z",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49443820",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49443820",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:43.591Z",
+            "contentHash": "108c26ff1802059c555e777c0b9b8cf2a7bc98fa6f7a70a652bf86f4d976a801",
+            "rawSnapshotRef": "evidence/2026-08-27/49443820-discussion.json",
+            "provider": "HN Algolia"
+          }
+        ],
+        "analysisState": "已分析"
+      },
+      {
+        "id": 2026082708,
+        "rank": 8,
+        "source": "thealexanderlee",
+        "sourceType": "作者发布与社区讨论",
+        "sourceUrl": "https://www.magicpatterns.com/theme-park",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49452037",
+        "originalTitle": "Show HN: Build your own theme park",
+        "title": "一句话生成乐园，为什么总长得差不多",
+        "fullChineseTranslation": "Show HN：建造你自己的主题乐园",
+        "translationScope": "原标题完整翻译；正文为事实级中文释义，非受版权保护长文的全文逐字翻译",
+        "summary": "Magic Patterns展示用一句话生成可浏览的主题乐园。作者称Agent会生成多区域、路径和游乐设施；评论实测“太空”“其他主题”却得到相似默认乐园。",
+        "localizedTranslation": "Magic Patterns展示用一句话生成可浏览的主题乐园。作者称Agent会生成多区域、路径和游乐设施；评论实测“太空”“其他主题”却得到相似默认乐园。",
+        "discussionFocus": [
+          "评论焦点不是画面精美，而是提示词是否真正影响生成结果；两位用户报告不同提示得到近似默认输出。"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49456446",
+            "author": "addandsubtract",
+            "url": "https://news.ycombinator.com/item?id=49456446",
+            "publishedAt": "2026-08-26T21:55:50.000Z",
+            "capturedAt": "2026-08-27T01:02:43.591Z",
+            "quote": "I asked for a theme park in space with aliens, but it just loaded a generic(?) park, with 5 different",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          },
+          {
+            "id": "49456506",
+            "author": "elicash",
+            "url": "https://news.ycombinator.com/item?id=49456506",
+            "publishedAt": "2026-08-26T22:01:02.000Z",
+            "capturedAt": "2026-08-27T01:02:43.591Z",
+            "quote": "Same happened to me (with my very different prompt).",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          }
+        ],
+        "commentSamples": [
+          "addandsubtract：“I asked for a theme park in space with aliens, but it just loaded a generic(?) park, with 5 different…”（节选；评论点赞未公开）",
+          "elicash：“Same happened to me (with my very different prompt).…”（节选；评论点赞未公开）"
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 17,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 28,
+          "capturedAt": "2026-08-27T01:01:46.396Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49452037",
+          "metricKind": "HN积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "未公开",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 28积分 · 17评论 · 原文浏览/点赞未公开 · 采集于2026-08-27T01:01:46.396Z",
+        "heat": 52,
+        "scarcity": 55,
+        "fit": 91,
+        "actionability": 90,
+        "evidenceConfidence": 85,
+        "finalScore": 71,
+        "scoreDisclaimer": "内部排序分，不是公开流量",
+        "category": "实操案例",
+        "reason": "具备具体信息、可用方法或明确讨论证据，进入人工推荐池。",
+        "angle": "用它解释生成式产品的最小验收：改一个强特征，看输出是否真的响应。",
+        "humanCheck": "正式发前亲测并录屏；不把作者描述当成功结果；确认生成内容和素材授权。",
+        "domesticCoverage": "国内平台语义检索未取得可验证结果；稀缺度按55上限保守记录，不代表国内无人发布。发布前人工搜索产品名、核心主张、中文角度与目标人群。",
+        "reuseIdeas": [
+          "用它解释生成式产品的最小验收：改一个强特征，看输出是否真的响应。"
+        ],
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "status": "待选题",
+        "selected": false,
+        "recommended": true,
+        "assignee": "待分配",
+        "sourcePublishedAt": "2026-08-26T16:40:01Z",
+        "sourceCapturedAt": "2026-08-27T01:01:46.396Z",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49452037",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49452037",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:43.591Z",
+            "contentHash": "5a773bb4ebbd28dd00f701adc9abf0c9ce1395199f86ccae435d3c2d49904809",
+            "rawSnapshotRef": "evidence/2026-08-27/49452037-discussion.json",
+            "provider": "HN Algolia"
+          },
+          {
+            "type": "primary",
+            "url": "https://www.magicpatterns.com/theme-park",
+            "finalUrl": "https://www.magicpatterns.com/theme-park",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:44.125Z",
+            "contentHash": "8d48f30377489b88cd001b0d9cddbf8c150e7ec789eae71149431dd1cbf42ba0",
+            "rawSnapshotRef": "evidence/2026-08-27/49452037-primary.html",
+            "provider": "原文页面"
+          }
+        ],
+        "analysisState": "已分析"
+      },
+      {
+        "id": 2026082709,
+        "rank": 9,
+        "source": "gdad",
+        "sourceType": "原文与社区讨论",
+        "sourceUrl": "https://arxiv.org/abs/2607.21503",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49443523",
+        "originalTitle": "Agentic Context Management: Memory and Cost as Architecture Problems",
+        "title": "Agent越跑越贵，问题可能在上下文",
+        "fullChineseTranslation": "Agent上下文管理：把记忆与成本当作架构问题",
+        "translationScope": "原标题完整翻译；正文为事实级中文释义，非受版权保护长文的全文逐字翻译",
+        "summary": "论文把Agent的记忆选择、上下文增长和成本放在系统架构层讨论；HN采集时78积分、27评论。原文偏研究，不直接提供普通用户配置。",
+        "localizedTranslation": "论文把Agent的记忆选择、上下文增长和成本放在系统架构层讨论；HN采集时78积分、27评论。原文偏研究，不直接提供普通用户配置。",
+        "discussionFocus": [
+          "讨论包括论文预览页故障以及如何压缩、选择和刷新上下文；没有足够用户实测。"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49443549",
+            "author": "gdad",
+            "url": "https://news.ycombinator.com/item?id=49443549",
+            "publishedAt": "2026-08-26T02:38:18.000Z",
+            "capturedAt": "2026-08-27T01:02:41.278Z",
+            "quote": "I also wrote a shorter preview here: https://www.maximem.ai/blog/agentic-context-management-paper",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          },
+          {
+            "id": "49444388",
+            "author": "oliver236",
+            "url": "https://news.ycombinator.com/item?id=49444388",
+            "publishedAt": "2026-08-26T05:31:48.000Z",
+            "capturedAt": "2026-08-27T01:02:41.278Z",
+            "quote": "your website isnt working",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          }
+        ],
+        "commentSamples": [
+          "gdad：“I also wrote a shorter preview here: https://www.maximem.ai/blog/agentic-context-management-paper…”（节选；评论点赞未公开）",
+          "oliver236：“your website isnt working…”（节选；评论点赞未公开）"
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 27,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 78,
+          "capturedAt": "2026-08-27T01:01:46.396Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49443523",
+          "metricKind": "HN积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "未公开",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 78积分 · 27评论 · 原文浏览/点赞未公开 · 采集于2026-08-27T01:01:46.396Z",
+        "heat": 60,
+        "scarcity": 55,
+        "fit": 77,
+        "actionability": 58,
+        "evidenceConfidence": 85,
+        "finalScore": 65,
+        "scoreDisclaimer": "内部排序分，不是公开流量",
+        "category": "AI 技巧",
+        "reason": "保留为候选，但实用性、证据完整性、敏感度或平台适配不足。",
+        "angle": "候选角度是“长任务定期交接”，但需先找可复现例子。",
+        "humanCheck": "阅读全文并核对实验；不能把架构建议写成通用省钱百分比。",
+        "domesticCoverage": "国内平台语义检索未取得可验证结果；稀缺度按55上限保守记录，不代表国内无人发布。发布前人工搜索产品名、核心主张、中文角度与目标人群。",
+        "reuseIdeas": [
+          "候选角度是“长任务定期交接”，但需先找可复现例子。"
+        ],
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "status": "待选题",
+        "selected": false,
+        "recommended": false,
+        "assignee": "待分配",
+        "sourcePublishedAt": "2026-08-26T02:35:25Z",
+        "sourceCapturedAt": "2026-08-27T01:01:46.396Z",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49443523",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49443523",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:41.278Z",
+            "contentHash": "5a81eaf5b4651a020d60fe1925649d67f9e0c7480b276ac1a21333797ef4566d",
+            "rawSnapshotRef": "evidence/2026-08-27/49443523-discussion.json",
+            "provider": "HN Algolia"
+          },
+          {
+            "type": "primary",
+            "url": "https://arxiv.org/abs/2607.21503",
+            "finalUrl": "https://arxiv.org/abs/2607.21503",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:41.912Z",
+            "contentHash": "616bed173b8bd85c3c2fcc7b622b609d490a334f67628f5478a2ccfb186ce890",
+            "rawSnapshotRef": "evidence/2026-08-27/49443523-primary.html",
+            "provider": "原文页面"
+          }
+        ],
+        "analysisState": "已分析"
+      },
+      {
+        "id": 2026082710,
+        "rank": 10,
+        "source": "sreenathmenon",
+        "sourceType": "原文与社区讨论",
+        "sourceUrl": "https://sreenathmenon.com/blog/2026-08-04-webmcp-teaching-websites-to-talk-to-ai-agents/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49450417",
+        "originalTitle": "WebMCP: Teaching Your Website to Talk to AI Agents",
+        "title": "网站开始给Agent提供“可操作按钮”",
+        "fullChineseTranslation": "WebMCP：教你的网站与AI Agent对话",
+        "translationScope": "原标题完整翻译；正文为事实级中文释义，非受版权保护长文的全文逐字翻译",
+        "summary": "文章讨论WebMCP让网页向Agent暴露结构化操作，示例包括表单与预订；采集时55积分、55评论。",
+        "localizedTranslation": "文章讨论WebMCP让网页向Agent暴露结构化操作，示例包括表单与预订；采集时55积分、55评论。",
+        "discussionFocus": [
+          "争议很直接：普通页面是否真的需要Agent代填，以及对障碍用户可能带来的辅助价值。"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49450567",
+            "author": "LetsGetTechnicl",
+            "url": "https://news.ycombinator.com/item?id=49450567",
+            "publishedAt": "2026-08-26T15:12:04.000Z",
+            "capturedAt": "2026-08-27T01:02:41.279Z",
+            "quote": "Jesus fucking Christ you're on a restaurant booking page looking at a date picker and you need an agent to",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          },
+          {
+            "id": "49450615",
+            "author": "_doctor_love",
+            "url": "https://news.ycombinator.com/item?id=49450615",
+            "publishedAt": "2026-08-26T15:14:34.000Z",
+            "capturedAt": "2026-08-27T01:02:41.279Z",
+            "quote": "If I have an injury or I am disabled, then yes, an agent helping me fill out forms might be",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          }
+        ],
+        "commentSamples": [
+          "LetsGetTechnicl：“Jesus fucking Christ you're on a restaurant booking page looking at a date picker and you need an agent to…”（节选；评论点赞未公开）",
+          "_doctor_love：“If I have an injury or I am disabled, then yes, an agent helping me fill out forms might be…”（节选；评论点赞未公开）"
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 55,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 55,
+          "capturedAt": "2026-08-27T01:01:46.396Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49450417",
+          "metricKind": "HN积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "未公开",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 55积分 · 55评论 · 原文浏览/点赞未公开 · 采集于2026-08-27T01:01:46.396Z",
+        "heat": 60,
+        "scarcity": 55,
+        "fit": 75,
+        "actionability": 55,
+        "evidenceConfidence": 85,
+        "finalScore": 64,
+        "scoreDisclaimer": "内部排序分，不是公开流量",
+        "category": "产业观察",
+        "reason": "保留为候选，但实用性、证据完整性、敏感度或平台适配不足。",
+        "angle": "从无障碍和高频重复表单切入，避免“所有网站都该Agent化”。",
+        "humanCheck": "核标准状态、安全确认和权限边界；涉及付款必须人工确认。",
+        "domesticCoverage": "国内平台语义检索未取得可验证结果；稀缺度按55上限保守记录，不代表国内无人发布。发布前人工搜索产品名、核心主张、中文角度与目标人群。",
+        "reuseIdeas": [
+          "从无障碍和高频重复表单切入，避免“所有网站都该Agent化”。"
+        ],
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "status": "待选题",
+        "selected": false,
+        "recommended": false,
+        "assignee": "待分配",
+        "sourcePublishedAt": "2026-08-26T15:02:15Z",
+        "sourceCapturedAt": "2026-08-27T01:01:46.396Z",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49450417",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49450417",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:41.279Z",
+            "contentHash": "371f5a7613e99599898df1a92e9dffe55601236fdb854b709f65d49afc3afb59",
+            "rawSnapshotRef": "evidence/2026-08-27/49450417-discussion.json",
+            "provider": "HN Algolia"
+          },
+          {
+            "type": "primary",
+            "url": "https://sreenathmenon.com/blog/2026-08-04-webmcp-teaching-websites-to-talk-to-ai-agents/",
+            "finalUrl": "https://sreenathmenon.com/blog/2026-08-04-webmcp-teaching-websites-to-talk-to-ai-agents/",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:42.136Z",
+            "contentHash": "fb78c3bb7dd42fdb25affa123413b70e8ced986d3c4417ced907f6adbab2e7d0",
+            "rawSnapshotRef": "evidence/2026-08-27/49450417-primary.html",
+            "provider": "原文页面"
+          }
+        ],
+        "analysisState": "已分析"
+      },
+      {
+        "id": 2026082711,
+        "rank": 11,
+        "source": "pasharayan",
+        "sourceType": "原文与社区讨论",
+        "sourceUrl": "https://studyarena.com/blog/chatgpt-vs-claude-vs-gemini-college-essays-2026",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49443871",
+        "originalTitle": "Analyzing student votes across AI models for college essay help",
+        "title": "谁更会改申请文书？这份投票不能直接抄结论",
+        "fullChineseTranslation": "分析学生对不同AI模型提供大学申请文书帮助的投票",
+        "translationScope": "原标题完整翻译；正文为事实级中文释义，非受版权保护长文的全文逐字翻译",
+        "summary": "StudyArena汇总学生对不同模型文书建议的选择；HN为43积分、85评论。样本设计、评审人群和任务分布决定结论边界。",
+        "localizedTranslation": "StudyArena汇总学生对不同模型文书建议的选择；HN为43积分、85评论。样本设计、评审人群和任务分布决定结论边界。",
+        "discussionFocus": [
+          "有人凭经验评价模型写作风格，也有人反驳关于训练数据的猜测；评论意见不是数据证明。"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49444016",
+            "author": "ShawWang",
+            "url": "https://news.ycombinator.com/item?id=49444016",
+            "publishedAt": "2026-08-26T03:49:45.000Z",
+            "capturedAt": "2026-08-27T01:02:43.591Z",
+            "quote": "Gemini is bad at coding, but good at writing. More human like",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          },
+          {
+            "id": "49444438",
+            "author": "madhatter999",
+            "url": "https://news.ycombinator.com/item?id=49444438",
+            "publishedAt": "2026-08-26T05:39:15.000Z",
+            "capturedAt": "2026-08-27T01:02:43.591Z",
+            "quote": "Makes sense when you consider what type of data Google had available in abundance. Natural written language (e.g., Docs, Gmail,",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          }
+        ],
+        "commentSamples": [
+          "ShawWang：“Gemini is bad at coding, but good at writing. More human like…”（节选；评论点赞未公开）",
+          "madhatter999：“Makes sense when you consider what type of data Google had available in abundance. Natural written language (e.g., Docs, Gmail,…”（节选；评论点赞未公开）"
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 85,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 43,
+          "capturedAt": "2026-08-27T01:01:46.396Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49443871",
+          "metricKind": "HN积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "未公开",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 43积分 · 85评论 · 原文浏览/点赞未公开 · 采集于2026-08-27T01:01:46.396Z",
+        "heat": 61,
+        "scarcity": 55,
+        "fit": 78,
+        "actionability": 72,
+        "evidenceConfidence": 85,
+        "finalScore": 67,
+        "scoreDisclaimer": "内部排序分，不是公开流量",
+        "category": "实操案例",
+        "reason": "保留为候选，但实用性、证据完整性、敏感度或平台适配不足。",
+        "angle": "教读者看AI横评先问盲测、样本和任务。",
+        "humanCheck": "阅读全文核样本量、盲测和利益关系；不用于代写申请材料。",
+        "domesticCoverage": "国内平台语义检索未取得可验证结果；稀缺度按55上限保守记录，不代表国内无人发布。发布前人工搜索产品名、核心主张、中文角度与目标人群。",
+        "reuseIdeas": [
+          "教读者看AI横评先问盲测、样本和任务。"
+        ],
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "status": "待选题",
+        "selected": false,
+        "recommended": false,
+        "assignee": "待分配",
+        "sourcePublishedAt": "2026-08-26T03:23:50Z",
+        "sourceCapturedAt": "2026-08-27T01:01:46.396Z",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49443871",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49443871",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:43.591Z",
+            "contentHash": "a67b92518f407025bcfbb4df6c8a9341b7932addce27b3862cb67f8717cff012",
+            "rawSnapshotRef": "evidence/2026-08-27/49443871-discussion.json",
+            "provider": "HN Algolia"
+          },
+          {
+            "type": "primary",
+            "url": "https://studyarena.com/blog/chatgpt-vs-claude-vs-gemini-college-essays-2026",
+            "finalUrl": "https://studyarena.com/blog/chatgpt-vs-claude-vs-gemini-college-essays-2026",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:44.517Z",
+            "contentHash": "51e893b0c2297fc2d1d291c1f6a0b4f2a51962e2e1e5d886700536faeb7777bf",
+            "rawSnapshotRef": "evidence/2026-08-27/49443871-primary.html",
+            "provider": "原文页面"
+          }
+        ],
+        "analysisState": "已分析"
+      },
+      {
+        "id": 2026082712,
+        "rank": 12,
+        "source": "lproven",
+        "sourceType": "原文与社区讨论",
+        "sourceUrl": "https://www.theregister.com/ai-and-ml/2026/08/26/debian-polls-its-developers-on-whether-to-burn-the-bots-tame-the-bots-or-let-em-loose/5292270",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49446653",
+        "originalTitle": "Debian polls its developers on AI: permit or ban?",
+        "title": "Debian在讨论：AI代码该禁、该标还是照常收",
+        "fullChineseTranslation": "Debian向开发者投票：允许还是禁止AI？",
+        "translationScope": "原标题完整翻译；正文为事实级中文释义，非受版权保护长文的全文逐字翻译",
+        "summary": "报道介绍Debian开发者对AI生成贡献政策进行投票；HN37积分、57评论。候选方案与最终结果必须区分。",
+        "localizedTranslation": "报道介绍Debian开发者对AI生成贡献政策进行投票；HN37积分、57评论。候选方案与最终结果必须区分。",
+        "discussionFocus": [
+          "有人支持全面禁用，也有人担心禁用会削弱安全应对；讨论反映立场，不等于投票结果。"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49446656",
+            "author": "lproven",
+            "url": "https://news.ycombinator.com/item?id=49446656",
+            "publishedAt": "2026-08-26T10:32:06.000Z",
+            "capturedAt": "2026-08-27T01:02:43.591Z",
+            "quote": "Posting this because I want people to vote -- and ideally vote for a total ban.",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          },
+          {
+            "id": "49446911",
+            "author": "colesantiago",
+            "url": "https://news.ycombinator.com/item?id=49446911",
+            "publishedAt": "2026-08-26T11:06:35.000Z",
+            "capturedAt": "2026-08-27T01:02:43.591Z",
+            "quote": "> and ideally vote for a total ban. If a total ban were to happen, wouldn't that make Debian a",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          }
+        ],
+        "commentSamples": [
+          "lproven：“Posting this because I want people to vote -- and ideally vote for a total ban.…”（节选；评论点赞未公开）",
+          "colesantiago：“> and ideally vote for a total ban. If a total ban were to happen, wouldn't that make Debian a…”（节选；评论点赞未公开）"
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 57,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 37,
+          "capturedAt": "2026-08-27T01:01:46.396Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49446653",
+          "metricKind": "HN积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "未公开",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 37积分 · 57评论 · 原文浏览/点赞未公开 · 采集于2026-08-27T01:01:46.396Z",
+        "heat": 59,
+        "scarcity": 55,
+        "fit": 68,
+        "actionability": 45,
+        "evidenceConfidence": 85,
+        "finalScore": 60,
+        "scoreDisclaimer": "内部排序分，不是公开流量",
+        "category": "产业观察",
+        "reason": "保留为候选，但实用性、证据完整性、敏感度或平台适配不足。",
+        "angle": "解释开源项目真正难点是可追责与审查，不做阵营喊话。",
+        "humanCheck": "等待官方投票结果；核对具体决议文本。",
+        "domesticCoverage": "国内平台语义检索未取得可验证结果；稀缺度按55上限保守记录，不代表国内无人发布。发布前人工搜索产品名、核心主张、中文角度与目标人群。",
+        "reuseIdeas": [
+          "解释开源项目真正难点是可追责与审查，不做阵营喊话。"
+        ],
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "status": "待选题",
+        "selected": false,
+        "recommended": false,
+        "assignee": "待分配",
+        "sourcePublishedAt": "2026-08-26T10:31:37Z",
+        "sourceCapturedAt": "2026-08-27T01:01:46.396Z",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49446653",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49446653",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:43.591Z",
+            "contentHash": "1227e7f209f9bc1336b3590c00e6e0b34124bce5dd06a371505b54ff41f97b85",
+            "rawSnapshotRef": "evidence/2026-08-27/49446653-discussion.json",
+            "provider": "HN Algolia"
+          },
+          {
+            "type": "primary",
+            "url": "https://www.theregister.com/ai-and-ml/2026/08/26/debian-polls-its-developers-on-whether-to-burn-the-bots-tame-the-bots-or-let-em-loose/5292270",
+            "finalUrl": "https://www.theregister.com/ai-and-ml/2026/08/26/debian-polls-its-developers-on-whether-to-burn-the-bots-tame-the-bots-or-let-em-loose/5292270",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:44.756Z",
+            "contentHash": "c3d7122917ed85075db8b4420e7338b02668950beb80f5cda6861d4be0ee6878",
+            "rawSnapshotRef": "evidence/2026-08-27/49446653-primary.html",
+            "provider": "原文页面"
+          }
+        ],
+        "analysisState": "已分析"
+      },
+      {
+        "id": 2026082713,
+        "rank": 13,
+        "source": "polyrand",
+        "sourceType": "原文与社区讨论",
+        "sourceUrl": "https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49450188",
+        "originalTitle": "VMs won't contain cyber-capable agents",
+        "title": "把高权限Agent关进虚拟机，也不是终点",
+        "fullChineseTranslation": "虚拟机无法完全遏制具备网络攻击能力的Agent",
+        "translationScope": "原标题完整翻译；正文为事实级中文释义，非受版权保护长文的全文逐字翻译",
+        "summary": "Trail of Bits文章讨论具备网络能力的Agent如何利用虚拟化层与外部接口；HN139积分、113评论。属于高风险安全主题。",
+        "localizedTranslation": "Trail of Bits文章讨论具备网络能力的Agent如何利用虚拟化层与外部接口；HN139积分、113评论。属于高风险安全主题。",
+        "discussionFocus": [
+          "评论有人重新评估仅靠VM的安全假设，也有人指出很多团队连VM都没使用。"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49452274",
+            "author": "kodoman",
+            "url": "https://news.ycombinator.com/item?id=49452274",
+            "publishedAt": "2026-08-26T16:54:33.000Z",
+            "capturedAt": "2026-08-27T01:02:48.051Z",
+            "quote": "Damn this is scary, I did not realize the extent of agent escape potential. I think I have to re-evaluate",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          },
+          {
+            "id": "49452307",
+            "author": "coyfiber",
+            "url": "https://news.ycombinator.com/item?id=49452307",
+            "publishedAt": "2026-08-26T16:57:10.000Z",
+            "capturedAt": "2026-08-27T01:02:48.051Z",
+            "quote": "\"I am old and I like stability and consistency\" relatable",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          }
+        ],
+        "commentSamples": [
+          "kodoman：“Damn this is scary, I did not realize the extent of agent escape potential. I think I have to re-evaluate…”（节选；评论点赞未公开）",
+          "coyfiber：“\"I am old and I like stability and consistency\" relatable…”（节选；评论点赞未公开）"
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 113,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 139,
+          "capturedAt": "2026-08-27T01:01:46.396Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49450188",
+          "metricKind": "HN积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "未公开",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 139积分 · 113评论 · 原文浏览/点赞未公开 · 采集于2026-08-27T01:01:46.396Z",
+        "heat": 68,
+        "scarcity": 55,
+        "fit": 64,
+        "actionability": 50,
+        "evidenceConfidence": 85,
+        "finalScore": 62,
+        "scoreDisclaimer": "内部排序分，不是公开流量",
+        "category": "产业观察",
+        "reason": "保留为候选，但实用性、证据完整性、敏感度或平台适配不足。",
+        "angle": "只给原则：最小权限、无秘密、可销毁环境、网络限制；不提供逃逸步骤。",
+        "humanCheck": "安全专家审阅；不复述可操作攻击链。",
+        "domesticCoverage": "国内平台语义检索未取得可验证结果；稀缺度按55上限保守记录，不代表国内无人发布。发布前人工搜索产品名、核心主张、中文角度与目标人群。",
+        "reuseIdeas": [
+          "只给原则：最小权限、无秘密、可销毁环境、网络限制；不提供逃逸步骤。"
+        ],
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "status": "待选题",
+        "selected": false,
+        "recommended": false,
+        "assignee": "待分配",
+        "sourcePublishedAt": "2026-08-26T14:49:30Z",
+        "sourceCapturedAt": "2026-08-27T01:01:46.396Z",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49450188",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49450188",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:48.051Z",
+            "contentHash": "258c07cae8fc070ce05fe25caae19a17c31f2b49cedb98d272a7e8a358ef3322",
+            "rawSnapshotRef": "evidence/2026-08-27/49450188-discussion.json",
+            "provider": "HN Algolia"
+          },
+          {
+            "type": "primary",
+            "url": "https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/",
+            "finalUrl": "https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:49.144Z",
+            "contentHash": "cdd4de8bccee3ea42d80f7946884d8d48319a2ac207ba0845e11e99fea52282d",
+            "rawSnapshotRef": "evidence/2026-08-27/49450188-primary.html",
+            "provider": "原文页面"
+          }
+        ],
+        "analysisState": "已分析"
+      },
+      {
+        "id": 2026082714,
+        "rank": 14,
+        "source": "fscaramuzza",
+        "sourceType": "原文与社区讨论",
+        "sourceUrl": "https://cacm.acm.org/opinion/ai-is-a-harsh-mistress-on-anima-machina-herd-acceptance-and-the-politics-of-conscious-machines/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49449082",
+        "originalTitle": "AI Is a Harsh Mistress",
+        "title": "把AI当“有意识伙伴”，讨论为什么会失真",
+        "fullChineseTranslation": "AI是一位严苛的女主人",
+        "translationScope": "原标题完整翻译；正文为事实级中文释义，非受版权保护长文的全文逐字翻译",
+        "summary": "CACM观点文章讨论人们如何把意识、人格和政治期待投射到机器上；原页本次403，HN55积分、51评论。",
+        "localizedTranslation": "CACM观点文章讨论人们如何把意识、人格和政治期待投射到机器上；原页本次403，HN55积分、51评论。",
+        "discussionFocus": [
+          "评论转向科幻作品中的AI社会，缺少对文章主张的系统核验。"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49450357",
+            "author": "sebmellen",
+            "url": "https://news.ycombinator.com/item?id=49450357",
+            "publishedAt": "2026-08-26T14:59:07.000Z",
+            "capturedAt": "2026-08-27T01:02:48.051Z",
+            "quote": "I’ve been reading The Moon Is a Harsh Mistress lately and I’ve been shocked at how prescient it is. I’m",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          },
+          {
+            "id": "49450471",
+            "author": "datakan",
+            "url": "https://news.ycombinator.com/item?id=49450471",
+            "publishedAt": "2026-08-26T15:05:43.000Z",
+            "capturedAt": "2026-08-27T01:02:48.051Z",
+            "quote": "Have you read Ian Banks Culture series? It's kind of a best case scenario of AI in the far future.",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          }
+        ],
+        "commentSamples": [
+          "sebmellen：“I’ve been reading The Moon Is a Harsh Mistress lately and I’ve been shocked at how prescient it is. I’m…”（节选；评论点赞未公开）",
+          "datakan：“Have you read Ian Banks Culture series? It's kind of a best case scenario of AI in the far future.…”（节选；评论点赞未公开）"
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 51,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 55,
+          "capturedAt": "2026-08-27T01:01:46.396Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49449082",
+          "metricKind": "HN积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "未公开",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 55积分 · 51评论 · 原文浏览/点赞未公开 · 采集于2026-08-27T01:01:46.396Z",
+        "heat": 60,
+        "scarcity": 55,
+        "fit": 52,
+        "actionability": 30,
+        "evidenceConfidence": 62,
+        "finalScore": 54,
+        "scoreDisclaimer": "内部排序分，不是公开流量",
+        "category": "产业观察",
+        "reason": "保留为候选，但实用性、证据完整性、敏感度或平台适配不足。",
+        "angle": "候选为媒体识读，不适合作为当天实用推荐。",
+        "humanCheck": "原文未读取成功，必须补读再写。",
+        "domesticCoverage": "国内平台语义检索未取得可验证结果；稀缺度按55上限保守记录，不代表国内无人发布。发布前人工搜索产品名、核心主张、中文角度与目标人群。",
+        "reuseIdeas": [
+          "候选为媒体识读，不适合作为当天实用推荐。"
+        ],
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "status": "待选题",
+        "selected": false,
+        "recommended": false,
+        "assignee": "待分配",
+        "sourcePublishedAt": "2026-08-26T13:45:21Z",
+        "sourceCapturedAt": "2026-08-27T01:01:46.396Z",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49449082",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49449082",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:48.051Z",
+            "contentHash": "595fa15e8d4f3a62994e671ce422131a5d59d98eb25cb38ffe5774435a488a60",
+            "rawSnapshotRef": "evidence/2026-08-27/49449082-discussion.json",
+            "provider": "HN Algolia"
+          }
+        ],
+        "analysisState": "已分析"
+      },
+      {
+        "id": 2026082715,
+        "rank": 15,
+        "source": "AlexRisio",
+        "sourceType": "原文与社区讨论",
+        "sourceUrl": "https://www.risklytics.ai/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49451495",
+        "originalTitle": "Launch HN: Risklytics (YC S26) – Insurance brokerage for frontier tech companies",
+        "title": "做机器人项目，客户可能先问保险",
+        "fullChineseTranslation": "Launch HN：面向前沿科技公司的保险经纪Risklytics",
+        "translationScope": "原标题完整翻译；正文为事实级中文释义，非受版权保护长文的全文逐字翻译",
+        "summary": "创业团队为机器人、无人机和自动系统公司提供保险经纪；HN43积分、17评论。",
+        "localizedTranslation": "创业团队为机器人、无人机和自动系统公司提供保险经纪；HN43积分、17评论。",
+        "discussionFocus": [
+          "评论指出很多创始人在首个客户要求保险时才着急处理，也出现无内容的负面评价。"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49452245",
+            "author": "petetheguy",
+            "url": "https://news.ycombinator.com/item?id=49452245",
+            "publishedAt": "2026-08-26T16:53:06.000Z",
+            "capturedAt": "2026-08-27T01:02:48.052Z",
+            "quote": "The first-customer-requires-coverage thing is the whole sale. Founders treat insurance like they treat security questionnaires: ignore it until a pilot",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          },
+          {
+            "id": "49455724",
+            "author": "jvwww",
+            "url": "https://news.ycombinator.com/item?id=49455724",
+            "publishedAt": "2026-08-26T20:50:40.000Z",
+            "capturedAt": "2026-08-27T01:02:48.052Z",
+            "quote": "AI slop.",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          }
+        ],
+        "commentSamples": [
+          "petetheguy：“The first-customer-requires-coverage thing is the whole sale. Founders treat insurance like they treat security questionnaires: ignore it until a pilot…”（节选；评论点赞未公开）",
+          "jvwww：“AI slop.…”（节选；评论点赞未公开）"
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 17,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 43,
+          "capturedAt": "2026-08-27T01:01:46.396Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49451495",
+          "metricKind": "HN积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "未公开",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 43积分 · 17评论 · 原文浏览/点赞未公开 · 采集于2026-08-27T01:01:46.396Z",
+        "heat": 54,
+        "scarcity": 55,
+        "fit": 76,
+        "actionability": 68,
+        "evidenceConfidence": 85,
+        "finalScore": 64,
+        "scoreDisclaimer": "内部排序分，不是公开流量",
+        "category": "接单变现",
+        "reason": "保留为候选，但实用性、证据完整性、敏感度或平台适配不足。",
+        "angle": "提醒接硬件/自动化项目的团队把责任范围提前列入报价。",
+        "humanCheck": "不同地区保险要求差异大，需专业经纪或律师确认；不提供保险建议。",
+        "domesticCoverage": "国内平台语义检索未取得可验证结果；稀缺度按55上限保守记录，不代表国内无人发布。发布前人工搜索产品名、核心主张、中文角度与目标人群。",
+        "reuseIdeas": [
+          "提醒接硬件/自动化项目的团队把责任范围提前列入报价。"
+        ],
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "status": "待选题",
+        "selected": false,
+        "recommended": false,
+        "assignee": "待分配",
+        "sourcePublishedAt": "2026-08-26T16:06:01Z",
+        "sourceCapturedAt": "2026-08-27T01:01:46.396Z",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49451495",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49451495",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:48.052Z",
+            "contentHash": "a31079c9a9fea5ebb5516146f9adf7650c1bc1599bb84b19ee6edc6b42b95bbd",
+            "rawSnapshotRef": "evidence/2026-08-27/49451495-discussion.json",
+            "provider": "HN Algolia"
+          },
+          {
+            "type": "primary",
+            "url": "https://www.risklytics.ai/",
+            "finalUrl": "https://www.risklytics.ai/",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:48.674Z",
+            "contentHash": "db77175a4996a90cfb35f61214b2b2a9b155ea3a917bf19665946ed4a44e2f76",
+            "rawSnapshotRef": "evidence/2026-08-27/49451495-primary.html",
+            "provider": "原文页面"
+          }
+        ],
+        "analysisState": "已分析"
+      },
+      {
+        "id": 2026082716,
+        "rank": 16,
+        "source": "drewgregory",
+        "sourceType": "原文与社区讨论",
+        "sourceUrl": "https://www.formal.ai/blog/dont-use-fork-macos/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49451493",
+        "originalTitle": "fork() Considered Harmful in macOS",
+        "title": "macOS里复制进程，AI代码也会踩老坑",
+        "fullChineseTranslation": "macOS中fork()被认为有害",
+        "translationScope": "原标题完整翻译；正文为事实级中文释义，非受版权保护长文的全文逐字翻译",
+        "summary": "Formal文章讨论macOS多线程程序使用fork的限制；原页403，HN27积分、9评论。并非普通AI技巧。",
+        "localizedTranslation": "Formal文章讨论macOS多线程程序使用fork的限制；原页403，HN27积分、9评论。并非普通AI技巧。",
+        "discussionFocus": [
+          "评论强调fork长期存在限制，也追问写时复制的替代模式。"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49452702",
+            "author": "dmitrygr",
+            "url": "https://news.ycombinator.com/item?id=49452702",
+            "publishedAt": "2026-08-26T17:21:50.000Z",
+            "capturedAt": "2026-08-27T01:02:48.052Z",
+            "quote": "fork() was always very restricted in when it could be used and really dangerous even then. It was made for",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          },
+          {
+            "id": "49452969",
+            "author": "edelbitter",
+            "url": "https://news.ycombinator.com/item?id=49452969",
+            "publishedAt": "2026-08-26T17:40:52.000Z",
+            "capturedAt": "2026-08-27T01:02:48.052Z",
+            "quote": "But what would the equivalent \"do the expensive preparation 1 time, then re-use copy-on-write memory N times\" pattern look like,",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          }
+        ],
+        "commentSamples": [
+          "dmitrygr：“fork() was always very restricted in when it could be used and really dangerous even then. It was made for…”（节选；评论点赞未公开）",
+          "edelbitter：“But what would the equivalent \"do the expensive preparation 1 time, then re-use copy-on-write memory N times\" pattern look like,…”（节选；评论点赞未公开）"
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 9,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 27,
+          "capturedAt": "2026-08-27T01:01:46.396Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49451493",
+          "metricKind": "HN积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "未公开",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 27积分 · 9评论 · 原文浏览/点赞未公开 · 采集于2026-08-27T01:01:46.396Z",
+        "heat": 50,
+        "scarcity": 55,
+        "fit": 55,
+        "actionability": 48,
+        "evidenceConfidence": 62,
+        "finalScore": 55,
+        "scoreDisclaimer": "内部排序分，不是公开流量",
+        "category": "实操案例",
+        "reason": "保留为候选，但实用性、证据完整性、敏感度或平台适配不足。",
+        "angle": "开发者候选，避免让AI照搬Linux进程代码。",
+        "humanCheck": "原文补读；由macOS开发者验证spawn等替代方案。",
+        "domesticCoverage": "国内平台语义检索未取得可验证结果；稀缺度按55上限保守记录，不代表国内无人发布。发布前人工搜索产品名、核心主张、中文角度与目标人群。",
+        "reuseIdeas": [
+          "开发者候选，避免让AI照搬Linux进程代码。"
+        ],
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "status": "待选题",
+        "selected": false,
+        "recommended": false,
+        "assignee": "待分配",
+        "sourcePublishedAt": "2026-08-26T16:05:57Z",
+        "sourceCapturedAt": "2026-08-27T01:01:46.396Z",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49451493",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49451493",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:48.052Z",
+            "contentHash": "058bf4baef828677e4372b2e4f1e270f74ef4000ba9c35ec7759b932b8e9eb40",
+            "rawSnapshotRef": "evidence/2026-08-27/49451493-discussion.json",
+            "provider": "HN Algolia"
+          }
+        ],
+        "analysisState": "已分析"
+      },
+      {
+        "id": 2026082717,
+        "rank": 17,
+        "source": "rwmj",
+        "sourceType": "原文与社区讨论",
+        "sourceUrl": "https://www.sascha-steffen.de/updates/nvidia-500bn-ai-financing-credit-risk",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49447878",
+        "originalTitle": "Who bears the risk in Nvidia's $500B financing platform?",
+        "title": "5000亿美元AI融资，风险最后在谁手里",
+        "fullChineseTranslation": "英伟达5000亿美元融资平台的风险由谁承担？",
+        "translationScope": "原标题完整翻译；正文为事实级中文释义，非受版权保护长文的全文逐字翻译",
+        "summary": "作者讨论AI基础设施融资、设备折旧与信用风险；HN26积分、7评论。属于金融敏感候选。",
+        "localizedTranslation": "作者讨论AI基础设施融资、设备折旧与信用风险；HN26积分、7评论。属于金融敏感候选。",
+        "discussionFocus": [
+          "评论争论GPU折旧、转售价值与纳税人是否最终承担风险。"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49449136",
+            "author": "k310",
+            "url": "https://news.ycombinator.com/item?id=49449136",
+            "publishedAt": "2026-08-26T13:48:45.000Z",
+            "capturedAt": "2026-08-27T01:02:52.099Z",
+            "quote": "SURPRISE! Joe and Jane taxpayer. [2] When the AI Bubble Bursts, Who Will Be Left Holding the Bag?[0] > A",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          },
+          {
+            "id": "49452375",
+            "author": "DarmokJalad1701",
+            "url": "https://news.ycombinator.com/item?id=49452375",
+            "publishedAt": "2026-08-26T17:01:34.000Z",
+            "capturedAt": "2026-08-27T01:02:52.099Z",
+            "quote": "> Nvidia ships a new architecture roughly every year, and the competitive life of a given generation is plausibly two",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          }
+        ],
+        "commentSamples": [
+          "k310：“SURPRISE! Joe and Jane taxpayer. [2] When the AI Bubble Bursts, Who Will Be Left Holding the Bag?[0] > A…”（节选；评论点赞未公开）",
+          "DarmokJalad1701：“> Nvidia ships a new architecture roughly every year, and the competitive life of a given generation is plausibly two…”（节选；评论点赞未公开）"
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 7,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 26,
+          "capturedAt": "2026-08-27T01:01:46.396Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49447878",
+          "metricKind": "HN积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "未公开",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 26积分 · 7评论 · 原文浏览/点赞未公开 · 采集于2026-08-27T01:01:46.396Z",
+        "heat": 49,
+        "scarcity": 55,
+        "fit": 54,
+        "actionability": 25,
+        "evidenceConfidence": 85,
+        "finalScore": 51,
+        "scoreDisclaimer": "内部排序分，不是公开流量",
+        "category": "产业观察",
+        "reason": "保留为候选，但实用性、证据完整性、敏感度或平台适配不足。",
+        "angle": "只做风险链路图，不给投资结论。",
+        "humanCheck": "金融专家核对原文、合同结构与数字；不得给投资建议。",
+        "domesticCoverage": "国内平台语义检索未取得可验证结果；稀缺度按55上限保守记录，不代表国内无人发布。发布前人工搜索产品名、核心主张、中文角度与目标人群。",
+        "reuseIdeas": [
+          "只做风险链路图，不给投资结论。"
+        ],
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "status": "待选题",
+        "selected": false,
+        "recommended": false,
+        "assignee": "待分配",
+        "sourcePublishedAt": "2026-08-26T12:32:31Z",
+        "sourceCapturedAt": "2026-08-27T01:01:46.396Z",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49447878",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49447878",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:52.099Z",
+            "contentHash": "681914419753c75f340ea8aa32ad67c67eba99d77a85a7b356c295443c51121f",
+            "rawSnapshotRef": "evidence/2026-08-27/49447878-discussion.json",
+            "provider": "HN Algolia"
+          },
+          {
+            "type": "primary",
+            "url": "https://www.sascha-steffen.de/updates/nvidia-500bn-ai-financing-credit-risk",
+            "finalUrl": "https://www.sascha-steffen.de/updates/nvidia-500bn-ai-financing-credit-risk",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:52.930Z",
+            "contentHash": "022c6eb917724664d18e7e63090204b87f5c38a4640ccbbe88d65e53b4ce7c76",
+            "rawSnapshotRef": "evidence/2026-08-27/49447878-primary.html",
+            "provider": "原文页面"
+          }
+        ],
+        "analysisState": "已分析"
+      },
+      {
+        "id": 2026082718,
+        "rank": 18,
+        "source": "T-zex",
+        "sourceType": "原文与社区讨论",
+        "sourceUrl": "https://www.reuters.com/investigations/mark-zuckerberg-had-bold-plan-replace-meta-staff-with-ai-heres-how-it-imploded-2026-08-26/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49446722",
+        "originalTitle": "Mark Zuckerberg had a bold plan to replace Meta staff with AI",
+        "title": "用AI替员工的计划，为什么会在组织里失灵",
+        "fullChineseTranslation": "扎克伯格曾计划用AI替代Meta员工，后来为何失败",
+        "translationScope": "原标题完整翻译；正文为事实级中文释义，非受版权保护长文的全文逐字翻译",
+        "summary": "Reuters调查报道Meta内部AI替代计划与执行问题；原文抓取失败，HN49积分、17评论。",
+        "localizedTranslation": "Reuters调查报道Meta内部AI替代计划与执行问题；原文抓取失败，HN49积分、17评论。",
+        "discussionFocus": [
+          "评论多为就业与商业模式推断，不能替代报道事实。"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49447200",
+            "author": "q8zd3",
+            "url": "https://news.ycombinator.com/item?id=49447200",
+            "publishedAt": "2026-08-26T11:35:21.000Z",
+            "capturedAt": "2026-08-27T01:02:52.099Z",
+            "quote": "It's coming for us all.. sooner or later.",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          },
+          {
+            "id": "49447670",
+            "author": "skrellm",
+            "url": "https://news.ycombinator.com/item?id=49447670",
+            "publishedAt": "2026-08-26T12:16:49.000Z",
+            "capturedAt": "2026-08-27T01:02:52.099Z",
+            "quote": "And who is going to pay the bills for that? No AI companies were able to make profit so far,",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          }
+        ],
+        "commentSamples": [
+          "q8zd3：“It's coming for us all.. sooner or later.…”（节选；评论点赞未公开）",
+          "skrellm：“And who is going to pay the bills for that? No AI companies were able to make profit so far,…”（节选；评论点赞未公开）"
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 17,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 49,
+          "capturedAt": "2026-08-27T01:01:46.396Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49446722",
+          "metricKind": "HN积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "未公开",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 49积分 · 17评论 · 原文浏览/点赞未公开 · 采集于2026-08-27T01:01:46.396Z",
+        "heat": 55,
+        "scarcity": 55,
+        "fit": 70,
+        "actionability": 45,
+        "evidenceConfidence": 62,
+        "finalScore": 60,
+        "scoreDisclaimer": "内部排序分，不是公开流量",
+        "category": "产业观察",
+        "reason": "保留为候选，但实用性、证据完整性、敏感度或平台适配不足。",
+        "angle": "候选角度应聚焦流程、责任和质量门槛，而非裁员标题。",
+        "humanCheck": "必须补读Reuters原文并交叉核验；避免推断具体人员。",
+        "domesticCoverage": "国内平台语义检索未取得可验证结果；稀缺度按55上限保守记录，不代表国内无人发布。发布前人工搜索产品名、核心主张、中文角度与目标人群。",
+        "reuseIdeas": [
+          "候选角度应聚焦流程、责任和质量门槛，而非裁员标题。"
+        ],
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "status": "待选题",
+        "selected": false,
+        "recommended": false,
+        "assignee": "待分配",
+        "sourcePublishedAt": "2026-08-26T10:40:58Z",
+        "sourceCapturedAt": "2026-08-27T01:01:46.396Z",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49446722",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49446722",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:52.099Z",
+            "contentHash": "910befa8a475a050e7eee89d1eb7d0a05d288c60db9f84d0be3eacb4b9456e04",
+            "rawSnapshotRef": "evidence/2026-08-27/49446722-discussion.json",
+            "provider": "HN Algolia"
+          }
+        ],
+        "analysisState": "已分析"
+      },
+      {
+        "id": 2026082719,
+        "rank": 19,
+        "source": "sam_lowry_",
+        "sourceType": "原文与社区讨论",
+        "sourceUrl": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49445252",
+        "originalTitle": "Disrupting a new covert influence campaign from Russia",
+        "title": "影响行动开始专门给聊天机器人喂材料",
+        "fullChineseTranslation": "打击一场来自俄罗斯的新型秘密影响行动",
+        "translationScope": "原标题完整翻译；正文为事实级中文释义，非受版权保护长文的全文逐字翻译",
+        "summary": "OpenAI称封禁一组与俄罗斯影响行动相关的账号，并公布其使用方式；原页本次403，HN95积分、65评论。",
+        "localizedTranslation": "OpenAI称封禁一组与俄罗斯影响行动相关的账号，并公布其使用方式；原页本次403，HN95积分、65评论。",
+        "discussionFocus": [
+          "评论质疑措辞与公司立场，也有人认为披露证据较强；属于政治敏感主题。"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49445521",
+            "author": "metalman",
+            "url": "https://news.ycombinator.com/item?id=49445521",
+            "publishedAt": "2026-08-26T08:06:55.000Z",
+            "capturedAt": "2026-08-27T01:02:52.099Z",
+            "quote": "unfortunatly it appears to me that Russia has gone from doing good service providing a reasonable counter narative to the",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          },
+          {
+            "id": "49445562",
+            "author": "GolfPopper",
+            "url": "https://news.ycombinator.com/item?id=49445562",
+            "publishedAt": "2026-08-26T08:13:56.000Z",
+            "capturedAt": "2026-08-27T01:02:52.099Z",
+            "quote": "> Our mission is to ensure that artificial general intelligence benefits all of humanity. Pull the other one. It's got",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          }
+        ],
+        "commentSamples": [
+          "metalman：“unfortunatly it appears to me that Russia has gone from doing good service providing a reasonable counter narative to the…”（节选；评论点赞未公开）",
+          "GolfPopper：“> Our mission is to ensure that artificial general intelligence benefits all of humanity. Pull the other one. It's got…”（节选；评论点赞未公开）"
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 65,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 95,
+          "capturedAt": "2026-08-27T01:01:46.396Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49445252",
+          "metricKind": "HN积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "未公开",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 95积分 · 65评论 · 原文浏览/点赞未公开 · 采集于2026-08-27T01:01:46.396Z",
+        "heat": 64,
+        "scarcity": 55,
+        "fit": 38,
+        "actionability": 20,
+        "evidenceConfidence": 62,
+        "finalScore": 50,
+        "scoreDisclaimer": "内部排序分，不是公开流量",
+        "category": "产业观察",
+        "reason": "保留为候选，但实用性、证据完整性、敏感度或平台适配不足。",
+        "angle": "仅作为信息安全候选，不作为账号当日内容。",
+        "humanCheck": "补读一手报告并由编辑审核政治表述；不扩散行动素材。",
+        "domesticCoverage": "国内平台语义检索未取得可验证结果；稀缺度按55上限保守记录，不代表国内无人发布。发布前人工搜索产品名、核心主张、中文角度与目标人群。",
+        "reuseIdeas": [
+          "仅作为信息安全候选，不作为账号当日内容。"
+        ],
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "status": "待选题",
+        "selected": false,
+        "recommended": false,
+        "assignee": "待分配",
+        "sourcePublishedAt": "2026-08-26T07:31:31Z",
+        "sourceCapturedAt": "2026-08-27T01:01:46.396Z",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49445252",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49445252",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:52.099Z",
+            "contentHash": "d6bfb20459d4d2a455fc4fb73eff6edb8a1b948a92f714c285633ab25d8489e9",
+            "rawSnapshotRef": "evidence/2026-08-27/49445252-discussion.json",
+            "provider": "HN Algolia"
+          }
+        ],
+        "analysisState": "已分析"
+      },
+      {
+        "id": 2026082720,
+        "rank": 20,
+        "source": "ilamont",
+        "sourceType": "原文与社区讨论",
+        "sourceUrl": "https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/a-turbulent-ai-era-and-critical-choices-to-make",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49448137",
+        "originalTitle": "Bill Gates: The turbulent AI era is here",
+        "title": "AI时代要不要征“机器人税”",
+        "fullChineseTranslation": "比尔·盖茨：动荡的AI时代已经到来",
+        "translationScope": "原标题完整翻译；正文为事实级中文释义，非受版权保护长文的全文逐字翻译",
+        "summary": "Bill Gates长文讨论AI对就业、能源和政策的影响；HN180积分、236评论。",
+        "localizedTranslation": "Bill Gates长文讨论AI对就业、能源和政策的影响；HN180积分、236评论。",
+        "discussionFocus": [
+          "评论集中争论token或机器人税是否可定义、是否应直接对利润和财富征税。"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49448566",
+            "author": "debo_",
+            "url": "https://news.ycombinator.com/item?id=49448566",
+            "publishedAt": "2026-08-26T13:14:11.000Z",
+            "capturedAt": "2026-08-27T01:02:52.099Z",
+            "quote": "> I believe we should tax AI tokens and robots. Right now, if you’re an employer and you hire someone,",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          },
+          {
+            "id": "49448630",
+            "author": "asdf88990",
+            "url": "https://news.ycombinator.com/item?id=49448630",
+            "publishedAt": "2026-08-26T13:18:19.000Z",
+            "capturedAt": "2026-08-27T01:02:52.099Z",
+            "quote": "Taxing AI tokens and Robots is not going to work. We can’t even define a robot, tokens are also too",
+            "score": null,
+            "scoreAvailability": "HN接口未公开评论点赞"
+          }
+        ],
+        "commentSamples": [
+          "debo_：“> I believe we should tax AI tokens and robots. Right now, if you’re an employer and you hire someone,…”（节选；评论点赞未公开）",
+          "asdf88990：“Taxing AI tokens and Robots is not going to work. We can’t even define a robot, tokens are also too…”（节选；评论点赞未公开）"
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 236,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 180,
+          "capturedAt": "2026-08-27T01:01:46.396Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49448137",
+          "metricKind": "HN积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "未公开",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 180积分 · 236评论 · 原文浏览/点赞未公开 · 采集于2026-08-27T01:01:46.396Z",
+        "heat": 73,
+        "scarcity": 55,
+        "fit": 50,
+        "actionability": 20,
+        "evidenceConfidence": 85,
+        "finalScore": 56,
+        "scoreDisclaimer": "内部排序分，不是公开流量",
+        "category": "产业观察",
+        "reason": "保留为候选，但实用性、证据完整性、敏感度或平台适配不足。",
+        "angle": "政策争议候选，不给简单赞成反对。",
+        "humanCheck": "全文核对、区分作者观点与现行政策；涉及税制需专家审核。",
+        "domesticCoverage": "国内平台语义检索未取得可验证结果；稀缺度按55上限保守记录，不代表国内无人发布。发布前人工搜索产品名、核心主张、中文角度与目标人群。",
+        "reuseIdeas": [
+          "政策争议候选，不给简单赞成反对。"
+        ],
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "status": "待选题",
+        "selected": false,
+        "recommended": false,
+        "assignee": "待分配",
+        "sourcePublishedAt": "2026-08-26T12:47:47Z",
+        "sourceCapturedAt": "2026-08-27T01:01:46.396Z",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49448137",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49448137",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:52.099Z",
+            "contentHash": "df20f01b20aac0f01d1a6f6e698bb1eed9d11dbae0b8d3dfe85daedd60972e4f",
+            "rawSnapshotRef": "evidence/2026-08-27/49448137-discussion.json",
+            "provider": "HN Algolia"
+          },
+          {
+            "type": "primary",
+            "url": "https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/a-turbulent-ai-era-and-critical-choices-to-make",
+            "finalUrl": "https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/a-turbulent-ai-era-and-critical-choices-to-make",
+            "status": 200,
+            "capturedAt": "2026-08-27T01:02:53.985Z",
+            "contentHash": "854e7a04a2866cc50f94aa3b80a56ba53b5fdd50ef7ed79a19fc62acc67115c0",
+            "rawSnapshotRef": "evidence/2026-08-27/49448137-primary.html",
+            "provider": "原文页面"
+          }
+        ],
+        "analysisState": "已分析"
+      }
+    ],
+    "drafts": [
+      {
+        "id": 5026082701,
+        "hotspotId": 2026082701,
+        "platform": "小红书",
+        "title": "GLM-5.3-Flash：价格低，不等于人人该换",
+        "body": "今天两个开源模型一起刷屏，先说 GLM-5.3-Flash。\n\n如果你只是偶尔写文案，没必要因为新版本马上迁移。更值得试的是三类任务：长时间跑的代码修改、需要多次调用工具的 Agent、调用量大又在意单次成本的自动化。\n\n最省事的测试方法，是拿一份你已经知道正确答案的旧任务，同时跑现在的模型和新模型。只记四项：结果能不能用、返工几次、总耗时、总费用。\n\nHN 对这次发布讨论很热，但“便宜”和“跑分高”都不是你的真实结果。先小流量对照，再决定换不换。",
+        "visual": "4:5黑白信息卡；首屏仅放“新模型先别急着全量换”；内页是结果、返工、耗时、费用四格表；禁止排行榜皇冠和虚构提升百分比。",
+        "videoScript": "新模型一发布，最容易做错的就是把所有任务立刻切过去。GLM-5.3-Flash 今天讨论很热，但你真正要测的只有四项：结果能不能用、返工几次、总耗时、总费用。拿一个已经做过、答案明确的旧任务，让现用模型和它各跑一次。写文案的人不一定需要换；长期写代码、频繁调用工具、调用量很大的工作流，才更值得优先试。跑分和价格是公开资料，你自己的任务结果才是迁移依据。",
+        "videoPlatforms": [
+          "抖音",
+          "视频号"
+        ],
+        "videoDurationEstimateSeconds": 36,
+        "videoDurationBasis": "按每秒4个汉字估算，待真人试读",
+        "version": "V1 · 2026-08-27来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "基于8月27日原文和讨论重新写作；未审核未发布。",
+        "revisedAt": "2026-08-27T01:14:22.871Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "Philpax",
+        "sourceUrl": "https://z.ai/blog/glm-5.3-flash",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49449507"
+      },
+      {
+        "id": 5026082702,
+        "hotspotId": 2026082702,
+        "platform": "小红书",
+        "title": "Qwen3.8 新模型，普通电脑先看这两个数",
+        "body": "Qwen3.8-Flash-Next 有个数字特别容易看错：每个 token 激活 6B 参数，不等于下载一个 6B 模型。\n\n它的主模型是 125B，另外还有 51B 的 N-gram 嵌入。想放到本地电脑，先看的不是名字里有没有 Flash，而是：模型文件多大、你准备下什么量化、内存能不能装下。\n\n官方还写了原生 26 万上下文，可扩到 100 万。但上下文越长，速度和占用也要单独测。\n\n所以这条最实用的结论不是“普通电脑也能跑”，而是下载前先等真实硬件实测，找到和你内存、量化版本一致的那一组。",
+        "visual": "4:5黑白三层卡；125B主模型、51B嵌入、每token激活6B分三行；底部写“激活参数≠下载体积”；避免电脑冒烟图和“低配畅跑”。",
+        "videoScript": "Qwen3.8-Flash-Next 里有个六 B 的数字，千万别理解成它只是一个六 B 模型。官方写的是主模型一百二十五 B，另外还有五十一 B 的嵌入，每个 token 只激活其中六 B。要不要本地跑，先找与你电脑内存、量化版本一致的实测，再看文件多大和速度。它还支持很长的上下文，但上下文越长不代表免费。先核硬件，再下载，能省掉一次装完才发现跑不动。正式使用前，还要核对许可证和实际任务效果。",
+        "videoPlatforms": [
+          "抖音",
+          "视频号"
+        ],
+        "videoDurationEstimateSeconds": 36,
+        "videoDurationBasis": "按每秒4个汉字估算，待真人试读",
+        "version": "V1 · 2026-08-27来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "基于8月27日原文和讨论重新写作；未审核未发布。",
+        "revisedAt": "2026-08-27T01:14:22.871Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "tosh",
+        "sourceUrl": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49448210"
+      },
+      {
+        "id": 5026082703,
+        "hotspotId": 2026082703,
+        "platform": "小红书",
+        "title": "AI 给的选题，为什么总写不完",
+        "body": "有些选题看着不错，打开文档就是写不下去。问题可能不是拖延，而是那个想法根本不是你的。\n\n我现在更愿意先写一句很笨、但确实是自己相信的话。比如：\n「AI 生成的选题很完整，但我没有经历过，就写不出细节。」\n\n这句话有了，再让 AI 做三件事：找反例、指出哪里说不通、列出还缺的事实。不要先让它写一篇，再逼自己接着演。\n\n原帖作者甚至建议把 AI 生成的笔记单独标出来，免得几年后分不清哪些是自己的判断。对做个人 IP 的人，这条边界很实用：AI 可以帮你查，但第一句立场最好是你自己的。",
+        "visual": "4:5黑白手写感；一页“AI给的完整选题”空心气泡，一页“我真正相信的一句话”实心便签；最后放找反例/挑漏洞/补事实三个小按钮；不画机器人。",
+        "videoScript": "一个选题明明很完整，你却一直写不完，可能因为它不是你的想法，只是 AI 建议你写。试试先关掉生成按钮，自己写一句真正相信的话，哪怕很笨。然后只让 AI 找反例、挑漏洞、补事实。别先让它交一篇成稿，再逼自己接着演。原帖作者还会把 AI 生成的笔记单独标出来。做个人 IP，AI 可以帮你查资料，但第一句立场最好属于你。",
+        "videoPlatforms": [
+          "抖音",
+          "视频号"
+        ],
+        "videoDurationEstimateSeconds": 31,
+        "videoDurationBasis": "按每秒4个汉字估算，待真人试读",
+        "version": "V1 · 2026-08-27来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "基于8月27日原文和讨论重新写作；未审核未发布。",
+        "revisedAt": "2026-08-27T01:14:22.871Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "zazuke",
+        "sourceUrl": "https://www.ssp.sh/brain/using-obsidian-with-ai/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49450898"
+      },
+      {
+        "id": 5026082704,
+        "hotspotId": 2026082704,
+        "platform": "小红书",
+        "title": "网站给 AI 读，可以少喂一堆菜单代码",
+        "body": "如果你经常让 AI 读自己的官网，可以先做个很小的检查：它拿到的是正文，还是菜单、脚本、页脚一起塞进去？\n\nAcceptMarkdown 提供了一个检测页。输入网址，它会看站点收到 `Accept: text/markdown` 时，能不能返回干净的 Markdown。\n\n自己开发时，至少要确认两件事：普通浏览器还能拿到 HTML；缓存会按 `Accept` 区分，不会把 Markdown 错发给真人用户。\n\n这能减少解析杂物，但不等于搜索排名会涨，也不是每个 Agent 都会主动请求 Markdown。先测一篇公开文档，比较返回内容，再决定是否全站改。",
+        "visual": "4:5黑白分流图：同一URL分向浏览器HTML和Agent Markdown；第二页放两个检查框“Vary: Accept / 浏览器仍是HTML”；禁用SEO上涨箭头。",
+        "videoScript": "你的官网给 AI 读时，它可能把菜单、脚本和页脚也一起吃进去。可以用 AcceptMarkdown 检测同一个网址在请求 Markdown 时，会不会返回更干净的正文。真要改站点，先确认两件事：浏览器照常拿到 HTML，缓存必须按 Accept 区分。这样做的价值是少解析杂物，不是保证 AI 搜索排名。先挑一篇公开文档做对照，看看返回内容和 token 差多少，再决定要不要全站上线。",
+        "videoPlatforms": [
+          "抖音",
+          "视频号"
+        ],
+        "videoDurationEstimateSeconds": 31,
+        "videoDurationBasis": "按每秒4个汉字估算，待真人试读",
+        "version": "V1 · 2026-08-27来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "基于8月27日原文和讨论重新写作；未审核未发布。",
+        "revisedAt": "2026-08-27T01:14:22.871Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "tilt",
+        "sourceUrl": "https://acceptmarkdown.com/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49454764"
+      },
+      {
+        "id": 5026082705,
+        "hotspotId": 2026082705,
+        "platform": "小红书",
+        "title": "AI 话题很多，但别只看标题里有没有 AI",
+        "body": "每天搜“AI”，选题池很快就会被三个字占满。可标题带 AI，不代表内容真的有用。\n\nHNStats 做了一个挺诚实的统计：严格模式只认标题里独立出现的 AI，连 OpenAI 都不算；宽松模式才会加入 LLM、GPT 等词。口径一换，结果就会变。\n\n我们自己筛选时也可以照这个思路：第一轮用关键词抓全；第二轮只留下有具体工具、数字、失败经验或可执行步骤的内容；第三轮把同一发布合并。\n\n所以“AI 话题占比”只能告诉你讨论有多拥挤，不能替你决定发什么。真正该留的是读完能多做一件事的内容。",
+        "visual": "4:5黑白漏斗简笔画：关键词抓取→具体证据→可执行内容；旁边小注“标题命中≠内容有用”；不放内部热度分。",
+        "videoScript": "每天只搜 AI，内容池一定越来越大，但标题带 AI 不等于值得发。HNStats 的严格统计甚至不把 OpenAI 算进去，因为它只认独立出现的 AI；换成宽词表，结果马上变化。运营筛选可以分三轮：先用关键词抓全，再只留有工具、数字、失败经验或操作步骤的，最后合并同一事件。关键词负责找，人工判断负责留。真正值得发的，不是标题最像热点，而是读完能多做一件事。",
+        "videoPlatforms": [
+          "抖音",
+          "视频号"
+        ],
+        "videoDurationEstimateSeconds": 34,
+        "videoDurationBasis": "按每秒4个汉字估算，待真人试读",
+        "version": "V1 · 2026-08-27来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "基于8月27日原文和讨论重新写作；未审核未发布。",
+        "revisedAt": "2026-08-27T01:14:22.871Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "beekthos",
+        "sourceUrl": "https://hnstats.com",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49449648"
+      },
+      {
+        "id": 5026082706,
+        "hotspotId": 2026082706,
+        "platform": "小红书",
+        "title": "AI 写代码变慢？先把“想太久”切掉",
+        "body": "改一个按钮文案，AI 先写了半页计划，还没动文件。\n\n这种小改动可以把节奏说死：\n「这是局部修改。先定位对应文件并直接修改，不先写方案。改完运行最小相关检查，再用三句话告诉我：改了哪、检查了什么、还有什么不确定。」\n\n但它只适合范围明确的小任务。数据库迁移、权限、安全相关改动，该计划还是要计划。\n\n今天 HN 有篇文章在怀念更直接的 Claude Code，评论里也有人把体感变慢归因于输出速度。两者都只是使用者观察。最实用的做法，是按任务风险切换工作方式，而不是永久要求 AI “别思考”。",
+        "visual": "4:5黑白双卡：“改按钮→直接改+最小检查”“改权限→先计划”；小铅笔简笔画；禁止“提速300%”。",
+        "videoScript": "AI 改一个按钮文案，却先写半页计划，可以把指令说得更明确：这是局部修改，先定位文件直接改，改完跑最小相关检查，再告诉我改了哪、检查了什么、还有什么不确定。注意，这句话只适合范围清楚的小任务。数据库迁移、权限和安全改动，别为了快把计划删掉。今天有人在讨论 Claude Code 变得更爱规划，但这只是用户体验。真正好用的做法，是按任务风险切换节奏。",
+        "videoPlatforms": [
+          "抖音",
+          "视频号"
+        ],
+        "videoDurationEstimateSeconds": 35,
+        "videoDurationBasis": "按每秒4个汉字估算，待真人试读",
+        "version": "V1 · 2026-08-27来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "基于8月27日原文和讨论重新写作；未审核未发布。",
+        "revisedAt": "2026-08-27T01:14:22.871Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "akras14",
+        "sourceUrl": "https://alexkras.com/focus-is-the-main-feature-why-i-miss-the-old-claude-code/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49444863"
+      },
+      {
+        "id": 5026082707,
+        "hotspotId": 2026082707,
+        "platform": "小红书",
+        "title": "同一个问题每次答不一样，先固定这四项",
+        "body": "同一个问题问三遍，AI 给你三种格式。不是再加一句“请保持一致”就能解决。\n\n需要稳定交付时，把这四样一起给它：\n输入：只允许使用哪份资料。\n规则：哪些内容不能改。\n样例：给一条正确成品。\n验收：列出必须满足的检查项。\n\n例如整理客户名单，不要只说“做成表格”。把列名、日期格式、空值怎么写、重复项怎么处理都放进验收。第一批先做五行，确认后再继续。\n\nHN 今天在收集“大模型连什么简单事都做不好”，一致性是被反复提到的一类。它不能保证完全不漂，但能让你更早看见哪里漂了。",
+        "visual": "4:5黑白清单卡，四行大字：输入/规则/样例/验收；底部“五行试跑”；不出现万能提示词标签。",
+        "videoScript": "同一个问题问三遍，AI 给你三种格式，别只补一句保持一致。稳定交付至少给四样：输入范围、不能改的规则、一条正确样例、最后的验收条件。比如整理客户名单，就把列名、日期格式、空值和重复项处理写清楚。先让它做五行，检查后再跑全部。HN 今天也在讨论大模型不擅长的简单事情，一致性被多人提到。做不到百分之百固定，但你可以让错误更早暴露。",
+        "videoPlatforms": [
+          "抖音",
+          "视频号"
+        ],
+        "videoDurationEstimateSeconds": 35,
+        "videoDurationBasis": "按每秒4个汉字估算，待真人试读",
+        "version": "V1 · 2026-08-27来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "基于8月27日原文和讨论重新写作；未审核未发布。",
+        "revisedAt": "2026-08-27T01:14:22.871Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "davidest",
+        "sourceUrl": "https://news.ycombinator.com/item?id=49443820",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49443820"
+      },
+      {
+        "id": 5026082708,
+        "hotspotId": 2026082708,
+        "platform": "小红书",
+        "title": "一句话生成乐园，为什么总长得差不多",
+        "body": "测试一个“输入一句话就生成”的 AI 产品，我会先故意提一个很难忽略的要求。\n\n比如主题乐园：不要只写“做个太空乐园”，加上「所有建筑都在透明穹顶里，地面没有植物，主路绕着一座红色火山走」。\n\n然后只检查三件事：强特征有没有出现、改掉一个特征会不会跟着变、不同提示是否还是同一套默认结果。\n\n今天一个主题乐园生成器在 HN 展示，评论里已经有人说，写了太空或其他主题，打开的仍像默认乐园。这个案例挺适合提醒我们：能生成，不等于听懂了输入。\n\n真要推荐工具，先留下自己的输入和完整结果录屏。",
+        "visual": "4:5黑白游乐园线稿；首图红色只保留一个小火山作强特征（其余黑白）；第二页三项验收；正式发布前用实测录屏截图替换示意。",
+        "videoScript": "测试一句话生成产品，有个简单办法：故意加一个不能忽略的强特征。比如做太空乐园，要求所有建筑都在透明穹顶里，主路绕着红色火山走。生成后看三件事：强特征出现了吗？改掉它，结果会跟着变吗？换个主题，是不是还是同一套默认画面？今天一个主题乐园生成器的评论区，就有人反馈不同提示得到相似结果。能出图不等于听懂输入，推荐前最好留下完整实测录屏。",
+        "videoPlatforms": [
+          "抖音",
+          "视频号"
+        ],
+        "videoDurationEstimateSeconds": 38,
+        "videoDurationBasis": "按每秒4个汉字估算，待真人试读",
+        "version": "V1 · 2026-08-27来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "基于8月27日原文和讨论重新写作；未审核未发布。",
+        "revisedAt": "2026-08-27T01:14:22.871Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "thealexanderlee",
+        "sourceUrl": "https://www.magicpatterns.com/theme-park",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49452037"
+      },
+      {
+        "id": 5026082709,
+        "hotspotId": 2026082709,
+        "platform": "小红书",
+        "title": "Agent越跑越贵，问题可能在上下文",
+        "body": "Agent 跑得越久，上下文越多，不一定越聪明，也可能只是越来越贵。更实用的设计不是无限塞历史，而是定期留下交接单：当前目标、已确认事实、做过的决定、下一步和待核问题。论文值得继续读，但没有实测前不写成省钱教程。",
+        "visual": "黑白上下文漏斗和一张交接单；标注“候选，待实验”。",
+        "version": "V1 · 2026-08-27来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "基于8月27日原文和讨论重新写作；未审核未发布。",
+        "revisedAt": "2026-08-27T01:14:22.871Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "gdad",
+        "sourceUrl": "https://arxiv.org/abs/2607.21503",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49443523"
+      },
+      {
+        "id": 5026082710,
+        "hotspotId": 2026082710,
+        "platform": "小红书",
+        "title": "网站开始给Agent提供“可操作按钮”",
+        "body": "网页不只给人点，也可以把“搜索、填写、提交”这些动作结构化地告诉 Agent。真正值得观察的是重复表单和无障碍场景，不是让 AI 替人点所有按钮。付款、授权和不可逆操作必须留人工确认。",
+        "visual": "人和Agent共用一个表单的线稿，提交按钮前有人工确认。",
+        "version": "V1 · 2026-08-27来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "基于8月27日原文和讨论重新写作；未审核未发布。",
+        "revisedAt": "2026-08-27T01:14:22.871Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "sreenathmenon",
+        "sourceUrl": "https://sreenathmenon.com/blog/2026-08-04-webmcp-teaching-websites-to-talk-to-ai-agents/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49450417"
+      },
+      {
+        "id": 5026082711,
+        "hotspotId": 2026082711,
+        "platform": "小红书",
+        "title": "谁更会改申请文书？这份投票不能直接抄结论",
+        "body": "AI 横评最容易让人直接找第一名，但文书场景先问三件事：学生知不知道模型名字、比较的是改错还是重写、样本来自什么人。模型能给建议不等于应该替你写申请。保留自己的经历和表达，AI只做结构与可读性反馈。",
+        "visual": "黑白横评检查卡：盲测/任务/样本。",
+        "version": "V1 · 2026-08-27来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "基于8月27日原文和讨论重新写作；未审核未发布。",
+        "revisedAt": "2026-08-27T01:14:22.871Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "pasharayan",
+        "sourceUrl": "https://studyarena.com/blog/chatgpt-vs-claude-vs-gemini-college-essays-2026",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49443871"
+      },
+      {
+        "id": 5026082712,
+        "hotspotId": 2026082712,
+        "platform": "小红书",
+        "title": "Debian在讨论：AI代码该禁、该标还是照常收",
+        "body": "开源项目面对AI代码，难点不是一句允许或禁止，而是谁能解释、谁来维护、出了问题能不能追责。Debian目前讨论的是政策选项，不是已经全面封禁。发布前要等官方结果，别把提案写成结论。",
+        "visual": "黑白三栏：禁止/标记/常规审查，顶部写“投票中”。",
+        "version": "V1 · 2026-08-27来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "基于8月27日原文和讨论重新写作；未审核未发布。",
+        "revisedAt": "2026-08-27T01:14:22.871Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "lproven",
+        "sourceUrl": "https://www.theregister.com/ai-and-ml/2026/08/26/debian-polls-its-developers-on-whether-to-burn-the-bots-tame-the-bots-or-let-em-loose/5292270",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49446653"
+      },
+      {
+        "id": 5026082713,
+        "hotspotId": 2026082713,
+        "platform": "小红书",
+        "title": "把高权限Agent关进虚拟机，也不是终点",
+        "body": "虚拟机是隔离层，不是万能保险箱。高权限 Agent 测试至少做到：不给真实秘密、使用一次性环境、限制网络出口、记录所有调用、随时能销毁。本文涉及安全研究，不做攻击步骤搬运。",
+        "visual": "多层盒子线稿，VM外仍有网络与凭据两条箭头。",
+        "version": "V1 · 2026-08-27来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "基于8月27日原文和讨论重新写作；未审核未发布。",
+        "revisedAt": "2026-08-27T01:14:22.871Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "polyrand",
+        "sourceUrl": "https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49450188"
+      },
+      {
+        "id": 5026082714,
+        "hotspotId": 2026082714,
+        "platform": "小红书",
+        "title": "把AI当“有意识伙伴”，讨论为什么会失真",
+        "body": "当讨论从“模型能做什么”跳到“它想要什么”，很多结论已经混入人的投射。这篇观点文原页未成功读取，目前只保留候选，不据此写成科普结论。",
+        "visual": "空白对话框与人形影子，标“待补读”。",
+        "version": "V1 · 2026-08-27来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "基于8月27日原文和讨论重新写作；未审核未发布。",
+        "revisedAt": "2026-08-27T01:14:22.871Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "fscaramuzza",
+        "sourceUrl": "https://cacm.acm.org/opinion/ai-is-a-harsh-mistress-on-anima-machina-herd-acceptance-and-the-politics-of-conscious-machines/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49449082"
+      },
+      {
+        "id": 5026082715,
+        "hotspotId": 2026082715,
+        "platform": "小红书",
+        "title": "做机器人项目，客户可能先问保险",
+        "body": "做机器人或自动化项目，成交卡点可能不是Demo，而是客户问：出事故谁负责、有没有保险。报价前把运行地点、是否接触公众、谁控制设备、数据责任列出来，再交给专业人士确认。不要等合同最后一页才发现缺材料。",
+        "visual": "黑白项目报价单，增加“责任与保险”一栏。",
+        "version": "V1 · 2026-08-27来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "基于8月27日原文和讨论重新写作；未审核未发布。",
+        "revisedAt": "2026-08-27T01:14:22.871Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "AlexRisio",
+        "sourceUrl": "https://www.risklytics.ai/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49451495"
+      },
+      {
+        "id": 5026082716,
+        "hotspotId": 2026082716,
+        "platform": "小红书",
+        "title": "macOS里复制进程，AI代码也会踩老坑",
+        "body": "让 AI 写跨平台进程代码时，别默认 Linux 能跑，macOS 就一样。尤其涉及 fork、多线程和GUI框架，要让它先列平台限制，再由开发者跑测试。原文未成功读取，这条暂不进推荐。",
+        "visual": "Linux/macOS两列进程线稿，写“待验证”。",
+        "version": "V1 · 2026-08-27来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "基于8月27日原文和讨论重新写作；未审核未发布。",
+        "revisedAt": "2026-08-27T01:14:22.871Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "drewgregory",
+        "sourceUrl": "https://www.formal.ai/blog/dont-use-fork-macos/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49451493"
+      },
+      {
+        "id": 5026082717,
+        "hotspotId": 2026082717,
+        "platform": "小红书",
+        "title": "5000亿美元AI融资，风险最后在谁手里",
+        "body": "AI数据中心的融资数字很大，但“谁出钱、设备贬值后谁承担、收入不及预期谁兜底”要分开看。这条涉及金融判断，未完成专家核验，不做当天推荐。",
+        "visual": "资金→设备→租赁→损失承担方的空白链路图。",
+        "version": "V1 · 2026-08-27来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "基于8月27日原文和讨论重新写作；未审核未发布。",
+        "revisedAt": "2026-08-27T01:14:22.871Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "rwmj",
+        "sourceUrl": "https://www.sascha-steffen.de/updates/nvidia-500bn-ai-financing-credit-risk",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49447878"
+      },
+      {
+        "id": 5026082718,
+        "hotspotId": 2026082718,
+        "platform": "小红书",
+        "title": "用AI替员工的计划，为什么会在组织里失灵",
+        "body": "“AI替掉多少人”很抓眼球，但组织落地更该问：原流程谁负责、质量谁签字、错误怎么回滚。原报道本次未成功读取，不依据二手标题展开。",
+        "visual": "流程责任链断点线稿，标“原文待补”。",
+        "version": "V1 · 2026-08-27来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "基于8月27日原文和讨论重新写作；未审核未发布。",
+        "revisedAt": "2026-08-27T01:14:22.871Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "T-zex",
+        "sourceUrl": "https://www.reuters.com/investigations/mark-zuckerberg-had-bold-plan-replace-meta-staff-with-ai-heres-how-it-imploded-2026-08-26/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49446722"
+      },
+      {
+        "id": 5026082719,
+        "hotspotId": 2026082719,
+        "platform": "小红书",
+        "title": "影响行动开始专门给聊天机器人喂材料",
+        "body": "影响行动不只生成帖子，也会尝试制造可被搜索和聊天机器人引用的材料。这条涉及政治与归因，原页未读取成功，不进入推荐；后续只基于一手报告写防范方法。",
+        "visual": "资料→搜索→聊天回答的风险链，禁止国旗和煽动性符号。",
+        "version": "V1 · 2026-08-27来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "基于8月27日原文和讨论重新写作；未审核未发布。",
+        "revisedAt": "2026-08-27T01:14:22.871Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "sam_lowry_",
+        "sourceUrl": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49445252"
+      },
+      {
+        "id": 5026082720,
+        "hotspotId": 2026082720,
+        "platform": "小红书",
+        "title": "AI时代要不要征“机器人税”",
+        "body": "“机器人税”听起来直观，真正落地先卡在定义：软件算不算、token怎么跨境计量、自动化设备如何区分。评论区也因此转向利润税和财富税。这是政策争议，不是已经实施的制度。",
+        "visual": "机器人/token/利润三个问号卡，标“观点讨论”。",
+        "version": "V1 · 2026-08-27来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "基于8月27日原文和讨论重新写作；未审核未发布。",
+        "revisedAt": "2026-08-27T01:14:22.871Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "ilamont",
+        "sourceUrl": "https://www.gatesnotes.com/work/make-ai-work-for-everyone/reader/a-turbulent-ai-era-and-critical-choices-to-make",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49448137"
+      }
+    ],
+    "discoveryMeta": {
+      "runId": "daily-2026-08-27-real-sources",
+      "batchDate": "2026-08-27",
+      "capturedAt": "2026-08-27T01:14:22.871Z",
+      "coverageLabel": "20条候选、8条推荐；生产写入尚未确认。",
+      "editorialBrief": "优先普通读者能马上理解和保存的AI技巧、个人IP与实操案例；纯行业资讯不超过2条推荐。",
+      "reviewNoteAudit": {
+        "productionRead": "失败：返回HTML拦截页",
+        "handled": 0,
+        "unprocessed": null,
+        "action": "本批使用全新ID增量添加，不修改线上旧稿；线上人工意见待恢复访问后处理。"
+      },
+      "sourceSuccess": [
+        "HN Algolia：361条去重结果，20个候选讨论详情全部成功。",
+        "20个原文中16个成功读取；OpenAI RSS、TechCrunch RSS和GitHub Search成功。"
+      ],
+      "sourceFailure": [
+        "arXiv Atom采集超时；OpenAI与TechCrunch RSS成功，但本批20条最终候选均以讨论证据更完整的HN来源为主。",
+        "X、Instagram、TikTok、LinkedIn及Reddit未取得本次可验证新增样本，不能称为多平台高赞样本。",
+        "国内小红书/抖音语义查重未完成，稀缺度封顶55。",
+        "生产operator接口返回HTML拦截页，未能读取线上reviewNote；不能声称线上无修改意见。",
+        "3个原文HTTP 403、1个原文抓取失败；相应条目仅保留讨论证据或标记补读。",
+        "20条均有中文标题、事实摘要、讨论、角度、人工核验和初稿；8条推荐含30–60秒估算口播。",
+        "原创长文未做全文逐字翻译；保留原标题完整译名和事实级中文释义，避免把他人长文搬成原创。",
+        "配图为逐条制作说明，未生成或伪造实测截图。"
+      ],
+      "recommendationCount": 8,
+      "verification": {
+        "imagesGenerated": false,
+        "toolsTested": false,
+        "onlineReadBack": false
+      }
+    }
+  }
+}

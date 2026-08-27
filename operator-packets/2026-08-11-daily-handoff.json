@@ -1,0 +1,1426 @@
+{
+  "schema_version": 2,
+  "batch_id": "daily-2026-08-11-real-sources",
+  "batch_date": "2026-08-11",
+  "editorial_brief": "优先普通人能看懂、能保存的本地模型、Agent安全、内容写作与流程技巧；融资和宏观事件不占推荐位。",
+  "hotspots": [
+    {
+      "id": "2026081101",
+      "title": "Meta放出30B本地模型：17GB能跑，但‘普通电脑可用’还差得远",
+      "summary": "Meta发布开放权重的Muse Glimmer 30B，官方称量化版约17GB，面向本地常驻工作流，并列出MacBook M4/M5 Max与RTX 5090测试环境。HN采集时1012 points、567 comments。",
+      "category": "AI 资讯",
+      "status": "仅查看",
+      "recommended": true,
+      "reason": "当天互动最高，能讲清模型体积、硬件门槛与普通用户是否值得装。",
+      "angle": "先看17GB只是模型文件，不等于17GB内存电脑就能顺畅运行；按硬盘、内存、速度、离线需求四项判断。",
+      "human_check": "发布前复核官方支持列表、量化文件大小和具体测试硬件；不得写成普通电脑通用结论。",
+      "sources": [
+        {
+          "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+          "author": "Meta / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49241679",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-11T08:30:28+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 1012 points · 567 comments（8月11日采集）；Meta页面浏览、点赞、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 100,
+        "domestic_scarcity": 55,
+        "account_fit": 93,
+        "actionability": 84,
+        "evidence_confidence": 97,
+        "final": 84
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Meta放出30B本地模型：17GB能跑，但‘普通电脑可用’还差得远",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：介绍Muse Glimmer。官方说它可在消费级硬件本地运行，但展示设备属于高端配置，不能扩写成普通笔记本轻松运行。",
+      "discussion_focus": [
+        "评论最关注开放权重、本地隐私与真实硬件门槛。",
+        "不少人要求与同尺寸模型做公平比较，并质疑官方基准是否挑选有利任务。"
+      ],
+      "comment_samples": [
+        "有评论者首先追问需要什么硬件，而不是只看参数量。",
+        "也有人欢迎30B开放权重，认为它更适合本地常驻的小任务。",
+        "另一组评论要求等待llama.cpp、MLX和Ollama等实际适配后再判断速度。"
+      ],
+      "reuse_ideas": [
+        "先看17GB只是模型文件，不等于17GB内存电脑就能顺畅运行；按硬盘、内存、速度、离线需求四项判断。",
+        "本地模型安装前四项检查",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "本地模型安装前四项检查",
+      "learning_outcome": "能区分模型文件大小、运行内存、生成速度和离线价值。"
+    },
+    {
+      "id": "2026081102",
+      "title": "让AI跑命令前先关进“小房间”：Docker的新沙箱到底隔离了什么",
+      "summary": "Docker推出实验性的AI Sandboxes，用microVM隔离编码Agent的文件系统与网络，支持Claude Code、Gemini CLI、Copilot CLI、Codex等。HN采集时623 points、349 comments。",
+      "category": "AI 技巧",
+      "status": "仅查看",
+      "recommended": true,
+      "reason": "高互动且可以直接改善Agent使用安全；评论提供登录要求和隔离边界的现实争议。",
+      "angle": "把陌生仓库、批量脚本和高自主任务放进临时沙箱，真实凭据与生产目录留在外面。",
+      "human_check": "核对系统支持、登录要求、网络权限、挂载目录和实验功能声明；先用无秘密测试仓库。",
+      "sources": [
+        {
+          "url": "https://www.docker.com/products/docker-sandboxes/",
+          "author": "Docker / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49239751",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-11T08:30:28+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 623 points · 349 comments（8月11日采集）；Docker文档浏览、使用量未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 98,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 98,
+        "final": 88
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "让AI跑命令前先关进“小房间”：Docker的新沙箱到底隔离了什么",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：Docker Sandboxes。它仍是实验功能，可能变化或停止；‘沙箱’降低宿主机风险，不等于项目本身绝对安全。",
+      "discussion_focus": [
+        "许多人认可给编码Agent加系统级隔离。",
+        "最强烈的反对是本地工具要求登录Docker账号；也有人追问网络和宿主目录是否真正隔离。"
+      ],
+      "comment_samples": [
+        "一位用户说工具本身好用，但不接受本地功能强制登录。",
+        "有评论认为Agent能执行命令时，microVM隔离比只依赖提示词更可靠。",
+        "也有人提醒挂载宿主目录和注入凭据后，沙箱边界会被主动打穿。"
+      ],
+      "reuse_ideas": [
+        "把陌生仓库、批量脚本和高自主任务放进临时沙箱，真实凭据与生产目录留在外面。",
+        "Agent沙箱使用清单",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "Agent沙箱使用清单",
+      "learning_outcome": "会把陌生代码、凭据、宿主目录和网络权限分开。"
+    },
+    {
+      "id": "2026081103",
+      "title": "这个AI小游戏只能靠说话破案：比‘再做一个聊天机器人’有意思多了",
+      "summary": "WhoDunnit是语音驱动的谋杀谜题游戏，玩家直接询问嫌疑人、识别谎言并指认凶手。HN采集时189 points、81 comments；评论同时提到AI语音反感、强制账号与连接失败。",
+      "category": "实操案例",
+      "status": "仅查看",
+      "recommended": true,
+      "reason": "题材直观，能启发个人开发者把AI变成交互机制，而不是聊天框。",
+      "angle": "先设计玩家必须完成的动作和失败条件，再决定AI负责扮演、追问还是动态线索。",
+      "human_check": "试玩确认注册、麦克风权限、语音数据说明、连接稳定性和游戏完成路径。",
+      "sources": [
+        {
+          "url": "https://www.whodunnitai.com/",
+          "author": "WhoDunnit / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49238851",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-11T08:30:28+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 189 points · 81 comments（8月11日采集）；产品浏览、注册、完成率未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 88,
+        "domestic_scarcity": 55,
+        "account_fit": 95,
+        "actionability": 88,
+        "evidence_confidence": 91,
+        "final": 82
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "这个AI小游戏只能靠说话破案：比‘再做一个聊天机器人’有意思多了",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：用语音和AI嫌疑人对话的谋杀谜题。公开页面没有证明留存、付费或准确率。",
+      "discussion_focus": [
+        "支持者觉得语音审讯很贴合破案题材。",
+        "反对者不喜欢合成语音、强制注册，也有人遇到连接问题。"
+      ],
+      "comment_samples": [
+        "有人认为这是少数让语音交互真正服务玩法的AI产品。",
+        "一位用户明确表示不喜欢AI声音。",
+        "另有评论反馈登录或连接过程阻碍试玩。"
+      ],
+      "reuse_ideas": [
+        "先设计玩家必须完成的动作和失败条件，再决定AI负责扮演、追问还是动态线索。",
+        "AI产品玩法三问",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "AI产品玩法三问",
+      "learning_outcome": "会先定义用户动作、失败条件和AI承担的角色。"
+    },
+    {
+      "id": "2026081104",
+      "title": "AI文案别急着“装人”：先删掉读者根本不需要看的话",
+      "summary": "文章反对把‘humanize’当作统一目标，主张按用途优化输出：内部机器协作应结构清楚，公开内容则要为读者重写。HN采集时143 points、85 comments。",
+      "category": "个人 IP",
+      "status": "仅查看",
+      "recommended": true,
+      "reason": "与当前内容运营痛点直接相关，可转成发布前可执行删改法。",
+      "angle": "先删任务交代、万能总结、过渡句和自我表态，再补具体对象、场景、数字与限制。",
+      "human_check": "发布前对照原文观点与HN反方意见；不要把个人风格写成普遍写作定律。",
+      "sources": [
+        {
+          "url": "https://kuber.studio/blog/Reflections/Humanising-LLM-Outputs-is-Actually-Dumb",
+          "author": "Kuber Studio / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49243474",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-11T08:30:28+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 143 points · 85 comments（8月11日采集）；博客浏览、点赞、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 83,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 88,
+        "final": 83
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI文案别急着“装人”：先删掉读者根本不需要看的话",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：把LLM输出人性化很蠢。这是作者的观点标题，不代表公开内容不需要自然语言，而是反对无目的地模仿人类口癖。",
+      "discussion_focus": [
+        "一派认为内部Agent输出应该更短、更结构化，不必装成人类聊天。",
+        "另一派指出面向公众的文案仍需要清楚、自然和有作者判断。"
+      ],
+      "comment_samples": [
+        "有人建议让模型先回答，再用第二轮要求更短、更简单。",
+        "一位评论者认为机器之间通信应优先可解析，而不是自然口语。",
+        "也有人强调用户看到的最终文字不能因此变成冷冰冰的数据块。"
+      ],
+      "reuse_ideas": [
+        "先删任务交代、万能总结、过渡句和自我表态，再补具体对象、场景、数字与限制。",
+        "去AI味删改顺序",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "去AI味删改顺序",
+      "learning_outcome": "会先删无用话，再补场景、证据、限制和个人判断。"
+    },
+    {
+      "id": "2026081105",
+      "title": "14MB的小模型也能决定调用哪个工具，但这个演示恰好暴露了风险",
+      "summary": "Needle2是约14MB的端侧Agent模型，目标是理解指令并选择工具。HN采集时132 points、65 comments，当前讨论页随后显示134 points；评论指出演示中对查询‘HN’错误调用了锁门工具。",
+      "category": "AI 技巧",
+      "status": "仅查看",
+      "recommended": false,
+      "reason": "技术很新但需要更多准确率和设备测试，只留候选。",
+      "angle": "小模型可负责低风险意图分类，高风险动作必须加白名单、参数校验和人工确认。",
+      "human_check": "复核仓库许可、基准、模型文件和演示错误；不得接门锁、付款等真实高风险工具。",
+      "sources": [
+        {
+          "url": "https://cactuscompute.com/needle",
+          "author": "Needle2 / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49246804",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-11T08:30:28+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 132 points · 65 comments（8月11日采集；页面随后显示134 points）；GitHub使用量未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 80,
+        "domestic_scarcity": 55,
+        "account_fit": 78,
+        "actionability": 63,
+        "evidence_confidence": 88,
+        "final": 72
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "14MB的小模型也能决定调用哪个工具，但这个演示恰好暴露了风险",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：Needle2，14MB的Agent LLM。模型小、能调用工具，不等于决策可靠或适合控制真实设备。",
+      "discussion_focus": [
+        "评论对14MB端侧运行很感兴趣。",
+        "最集中的质疑是演示本身出现了错误工具调用，说明体积小不等于可信。"
+      ],
+      "comment_samples": [
+        "评论者指出输入‘HN’时模型调用了lock_door。",
+        "有人追问是否会集成语音识别和语音合成。"
+      ],
+      "reuse_ideas": [
+        "小模型可负责低风险意图分类，高风险动作必须加白名单、参数校验和人工确认。",
+        "端侧Agent风险分级",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "端侧Agent风险分级",
+      "learning_outcome": "知道小模型只适合低风险路由，高风险动作需额外闸门。"
+    },
+    {
+      "id": "2026081106",
+      "title": "一个15MB离线编码Agent引发争议：工具很小，为什么源码没公开",
+      "summary": "Ante宣称是约15MB、可离线运行的编码Agent二进制，嵌入工具与llama.cpp。HN采集时119 points、72 comments；核心争议是下载物为二进制但缺少可审计源码。",
+      "category": "AI 技巧",
+      "status": "仅查看",
+      "recommended": false,
+      "reason": "互动高但供应链核验不足，不推荐安装。",
+      "angle": "下载开发工具前先查源码、构建复现、签名、网络行为和权限范围。",
+      "human_check": "没有源码与可复现构建前，不在真实仓库或含秘密的机器运行。",
+      "sources": [
+        {
+          "url": "https://github.com/AntigmaLabs/ante",
+          "author": "AntigmaLabs / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49245437",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-11T08:30:28+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 119 points · 72 comments（8月11日采集）；下载量未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 77,
+        "domestic_scarcity": 55,
+        "account_fit": 74,
+        "actionability": 45,
+        "evidence_confidence": 72,
+        "final": 65
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "一个15MB离线编码Agent引发争议：工具很小，为什么源码没公开",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：Ante，一个离线编码Agent。‘离线’与‘体积小’不能替代源码、签名和网络行为审计。",
+      "discussion_focus": [
+        "有人喜欢单文件、离线和小体积。",
+        "更多评论追问为何缺少源码，以及如何相信它不会读取或上传代码。"
+      ],
+      "comment_samples": [
+        "评论者直接问：如果核心卖点是可信的离线工具，源码在哪里。",
+        "也有人对约15MB内嵌工具链的实现方式感兴趣。"
+      ],
+      "reuse_ideas": [
+        "下载开发工具前先查源码、构建复现、签名、网络行为和权限范围。",
+        "二进制Agent安装前五问",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "二进制Agent安装前五问",
+      "learning_outcome": "会核对源码、构建、签名、网络和权限。"
+    },
+    {
+      "id": "2026081107",
+      "title": "Claude开始给AI内容加标记：它能说明什么，不能说明什么",
+      "summary": "Anthropic宣布对2026年8月2日及之后在欧盟上线的Claude模型提供内容标记，并在支持的模型和界面全球启用；文本使用嵌入式水印，文件可带C2PA签名元数据。HN采集时73 points、69 comments。",
+      "category": "AI 资讯",
+      "status": "仅查看",
+      "recommended": true,
+      "reason": "与内容创作者直接相关，重点是避免把标记误解成AI测谎仪。",
+      "angle": "把标记当来源线索，不当作者身份判决；文件转换、截图和元数据移除都会影响检测。",
+      "human_check": "复核支持模型、地区和检测工具；不得声称能准确判定AI作者或学术作弊。",
+      "sources": [
+        {
+          "url": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
+          "author": "Claude Support / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49250109",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-11T08:30:28+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 73 points · 69 comments（8月11日采集）；Anthropic公告浏览、点赞、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 76,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "actionability": 92,
+        "evidence_confidence": 98,
+        "final": 80
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Claude开始给AI内容加标记：它能说明什么，不能说明什么",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：Claude生成内容现在带标记。官方明确说检测到标记只表示内容可能被Claude处理过；没有标记也不能证明完全由人创作。",
+      "discussion_focus": [
+        "评论支持更清楚的AI来源说明。",
+        "反方担心水印可被移除、误报和对正常编辑流程的影响。"
+      ],
+      "comment_samples": [
+        "有人讨论文本水印是否容易被改写去除。",
+        "另一组评论更看重文件的签名元数据，而不是只靠语言统计。",
+        "也有人提醒缺少标记不能当作人工创作证明。"
+      ],
+      "reuse_ideas": [
+        "把标记当来源线索，不当作者身份判决；文件转换、截图和元数据移除都会影响检测。",
+        "AI内容标记解释卡",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "AI内容标记解释卡",
+      "learning_outcome": "能正确解释检测到、未检测到和元数据丢失三种情况。"
+    },
+    {
+      "id": "2026081108",
+      "title": "闲置GPU也能挂出去接AI任务？先算清电费、隐私和交付稳定性",
+      "summary": "Stoa尝试做GPU算力市场，让提供者贡献闲置设备、需求方租用。HN采集时62 points、39 comments；定价、任务隔离、数据保护和稳定性仍是讨论重点。",
+      "category": "AI 技巧",
+      "status": "仅查看",
+      "recommended": false,
+      "reason": "有讨论但涉及设备、网络和收益假设，只留候选。",
+      "angle": "先算电费、显卡折旧、任务利用率、数据隔离与断线赔付。",
+      "human_check": "核对所在地区条款、价格、支付、任务数据、网络端口和硬件保修；不承诺收益。",
+      "sources": [
+        {
+          "url": "https://www.stoaexchange.com",
+          "author": "Stoa Markets / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49246057",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-11T08:30:28+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 62 points · 39 comments（8月11日采集）；平台交易量、收入未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 69,
+        "domestic_scarcity": 55,
+        "account_fit": 58,
+        "actionability": 42,
+        "evidence_confidence": 78,
+        "final": 60
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "闲置GPU也能挂出去接AI任务？先算清电费、隐私和交付稳定性",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：Stoa，GPU算力市场。公开互动不能证明普通用户出租显卡能够稳定赚钱。",
+      "discussion_focus": [
+        "评论追问分布式消费级GPU能否稳定服务模型任务。",
+        "也有人担心陌生任务读取数据或滥用网络。"
+      ],
+      "comment_samples": [
+        "有人要求公开真实利用率与供需数据。",
+        "另一位评论者认为电费和折旧可能吃掉收入。"
+      ],
+      "reuse_ideas": [
+        "先算电费、显卡折旧、任务利用率、数据隔离与断线赔付。",
+        "闲置GPU收益核算表",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "闲置GPU收益核算表",
+      "learning_outcome": "会计算电费、折旧、利用率和风险成本。"
+    },
+    {
+      "id": "2026081109",
+      "title": "一个微型FPGA宣称每秒跑2.1万Token：它做的不是你以为的聊天大模型",
+      "summary": "项目展示在微型FPGA上实现高度专用的语言模型相关推理路径，标题宣称21k tokens/s。HN采集时41 points、12 comments；任务、模型规模和吞吐口径与通用聊天模型不同。",
+      "category": "AI 技巧",
+      "status": "仅查看",
+      "recommended": false,
+      "reason": "数字吸睛但技术口径容易误导，只留候选。",
+      "angle": "看到超高Token速度先问模型多大、算哪一段、精度多少、是否端到端。",
+      "human_check": "核对模型结构、位宽、任务、输入输出和端到端测速。",
+      "sources": [
+        {
+          "url": "https://www.mikeayles.com/blog/on-chip-llm-kv260/",
+          "author": "Mike Ayles / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49242475",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-11T08:30:28+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 41 points · 12 comments（8月11日采集）；项目浏览、使用量未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 62,
+        "domestic_scarcity": 55,
+        "account_fit": 50,
+        "actionability": 30,
+        "evidence_confidence": 73,
+        "final": 54
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "一个微型FPGA宣称每秒跑2.1万Token：它做的不是你以为的聊天大模型",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题强调21k tokens/s；不能与大型聊天模型的完整生成速度直接横比。",
+      "discussion_focus": [
+        "评论欣赏硬件实现。",
+        "也有人提醒吞吐数字不能脱离模型规模与任务比较。"
+      ],
+      "comment_samples": [
+        "评论者询问这是否是完整生成还是专用算子。",
+        "有人要求与相同模型和精度的基线比较。"
+      ],
+      "reuse_ideas": [
+        "看到超高Token速度先问模型多大、算哪一段、精度多少、是否端到端。",
+        "AI性能数字四问",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "AI性能数字四问",
+      "learning_outcome": "会核对模型、任务、精度和端到端口径。"
+    },
+    {
+      "id": "2026081110",
+      "title": "哪种编程语言更适合AI Agent？别只按Token最少来选",
+      "summary": "文章比较不同编程语言对Agent的Token消耗与可用性。HN采集时38 points、16 comments；评论指出语言选择还要看类型系统、库、测试与同等任务正确率。",
+      "category": "AI 技巧",
+      "status": "仅查看",
+      "recommended": false,
+      "reason": "讨论有用但实验可比性仍需核，留候选。",
+      "angle": "用同一任务比较成功率、测试通过率、修复轮数和Token，而非只数字符。",
+      "human_check": "复核实验任务、模型、提示、语言版本和是否等价实现。",
+      "sources": [
+        {
+          "url": "http://danluu.com/pl-tokens/",
+          "author": "Dan Luu / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49245936",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-11T08:30:28+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 38 points · 16 comments（8月11日采集）；文章浏览、点赞、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 60,
+        "domestic_scarcity": 55,
+        "account_fit": 85,
+        "actionability": 78,
+        "evidence_confidence": 82,
+        "final": 70
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "哪种编程语言更适合AI Agent？别只按Token最少来选",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：AI Agent最佳编程语言。Token密度只是成本维度，不能单独证明哪种语言最适合。",
+      "discussion_focus": [
+        "评论认为等价任务和正确率比语法短更重要。",
+        "有人强调类型系统可能减少后续修复。"
+      ],
+      "comment_samples": [
+        "一位评论者要求比较完成同一功能的总Token，而不是语法样例。",
+        "另有人认为编译器反馈对Agent很重要。"
+      ],
+      "reuse_ideas": [
+        "用同一任务比较成功率、测试通过率、修复轮数和Token，而非只数字符。",
+        "Agent语言评测表",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "Agent语言评测表",
+      "learning_outcome": "会同时比较成功率、修复轮数、Token和生态。"
+    },
+    {
+      "id": "2026081111",
+      "title": "Spotify公开内部Agent开发环境Xirp，但目前还看不到外部采用数据",
+      "summary": "Spotify介绍内部构建的Agentic Development Environment Xirp。HN采集时30 points、0 comments；外部可用范围、采用量和效果未公开。",
+      "category": "AI 技巧",
+      "status": "仅查看",
+      "recommended": false,
+      "reason": "品牌来源可信但没有公开讨论与外部采用数据，只留候选。",
+      "angle": "评估Agent开发环境时看任务隔离、工具权限、可观测性和人工接管，而不是只看演示。",
+      "human_check": "核对Xirp是否开源或对外开放、支持范围、权限模型和真实使用数据。",
+      "sources": [
+        {
+          "url": "https://portal.spotify.com/blog/introducing-xirp",
+          "author": "Spotify / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49245118",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-11T08:30:28+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 30 points · 0 comments（8月11日采集）；Spotify文章浏览和产品使用量未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 45,
+        "domestic_scarcity": 55,
+        "account_fit": 45,
+        "actionability": 20,
+        "evidence_confidence": 74,
+        "final": 47
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Spotify公开内部Agent开发环境Xirp，但目前还看不到外部采用数据",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：Xirp，由Spotify构建的Agentic Development Environment。它不是AI歌单产品，也不能由发布文章推断已被外部团队广泛采用。",
+      "discussion_focus": [
+        "Hacker News无可验证评论样本。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "评估Agent开发环境时看任务隔离、工具权限、可观测性和人工接管，而不是只看演示。",
+        "Agent开发环境四项评估",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "Agent开发环境四项评估",
+      "learning_outcome": "会检查隔离、权限、可观测性和人工接管。"
+    },
+    {
+      "id": "2026081112",
+      "title": "旧款16GB Mac跑本地模型：210次测试后，最值钱的不是省钱",
+      "summary": "作者在2021款16GB M1 Pro上测试5个开放模型、21个真实任务，每项两次共210次；最佳结果报告90%通过率，整个本地测试耗时6.4小时。作者认为按当前低API价格，本地并不更便宜，主要价值是离线、隐私和重复任务。HN采集时20 points、1 comment。",
+      "category": "AI 技巧",
+      "status": "仅查看",
+      "recommended": true,
+      "reason": "热度一般但方法和数据很适合普通用户做购买/安装决策。",
+      "angle": "先拿自己的20个任务跑一遍，再按正确率、等待时间、隐私和API成本决定是否本地化。",
+      "human_check": "复核机型、模型版本、任务列表、通过标准、速度和电费；不得泛化90%。",
+      "sources": [
+        {
+          "url": "https://mamonas.dev/posts/local-llms-on-the-laptop-i-already-have/",
+          "author": "Mamonas / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49242175",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-11T08:30:28+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 20 points · 1 comment（8月11日采集）；博客浏览、点赞、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 55,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 98,
+        "evidence_confidence": 95,
+        "final": 77
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "旧款16GB Mac跑本地模型：210次测试后，最值钱的不是省钱",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：在笔记本上评测本地LLM。90%是作者任务集中的最佳结果，不代表所有任务或所有16GB电脑。",
+      "discussion_focus": [
+        "唯一可验证评论认为消费级硬件更接近可用，但仍难与被补贴的API竞争。"
+      ],
+      "comment_samples": [
+        "一位评论者认为本地硬件正在接近实用，但云端API价格仍然很难打。"
+      ],
+      "reuse_ideas": [
+        "先拿自己的20个任务跑一遍，再按正确率、等待时间、隐私和API成本决定是否本地化。",
+        "本地模型21题自测表",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "本地模型21题自测表",
+      "learning_outcome": "会用自己的任务测正确率、速度、隐私与成本。"
+    },
+    {
+      "id": "2026081113",
+      "title": "安全公司称Agent找到Cloudflare漏洞：能力展示不等于可以照着复现",
+      "summary": "Check Point Research介绍Agent参与发现Cloudflare相关安全问题。HN采集时16 points、1 comment；本批不提供攻击步骤，且需核对Cloudflare修复说明与披露时间线。",
+      "category": "产业观察",
+      "status": "仅查看",
+      "recommended": false,
+      "reason": "敏感且互动低，只留候选。",
+      "angle": "区分受控研究、漏洞发现、实际利用和现实损害。",
+      "human_check": "核对CVE、Cloudflare公告、授权范围与修复状态；不要发布利用细节。",
+      "sources": [
+        {
+          "url": "https://research.checkpoint.com/2026/when-agentic-glue-melts/",
+          "author": "Check Point Research / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49243046",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-11T08:30:28+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 16 points · 1 comment（8月11日采集）；研究页面浏览未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 43,
+        "domestic_scarcity": 55,
+        "account_fit": 40,
+        "actionability": 18,
+        "evidence_confidence": 70,
+        "final": 44
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "安全公司称Agent找到Cloudflare漏洞：能力展示不等于可以照着复现",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题涉及Agent发现并利用漏洞；安全研究演示不应被写成AI已可普遍自主攻击。",
+      "discussion_focus": [
+        "仅1条可验证评论，样本不足。"
+      ],
+      "comment_samples": [
+        "评论样本不足，无法归纳主要分歧。"
+      ],
+      "reuse_ideas": [
+        "区分受控研究、漏洞发现、实际利用和现实损害。",
+        "AI安全新闻四格",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "AI安全新闻四格",
+      "learning_outcome": "分清授权、发现、利用和损害。"
+    },
+    {
+      "id": "2026081114",
+      "title": "用了AI反而每周干90小时？个案能提醒你，但不能证明人人都会更忙",
+      "summary": "作者描述引入AI后产出增加但工作时长达到每周约90小时的个人经历。HN采集时14 points、3 comments；这是个案，不是劳动生产率研究。",
+      "category": "AI 技巧",
+      "status": "仅查看",
+      "recommended": false,
+      "reason": "主题容易共鸣但证据弱，只留候选。",
+      "angle": "用交付数量、返工、在制任务和实际工时一起评估AI，而不是只看生成速度。",
+      "human_check": "核对作者时间范围和工作定义；不得泛化为AI必然加班。",
+      "sources": [
+        {
+          "url": "https://www.bbc.com/news/articles/cvgx4yd1gl2o",
+          "author": "BBC / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49248572",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-11T08:30:28+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 14 points · 3 comments（8月11日采集）；博客浏览未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 42,
+        "domestic_scarcity": 55,
+        "account_fit": 78,
+        "actionability": 70,
+        "evidence_confidence": 72,
+        "final": 61
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "用了AI反而每周干90小时？个案能提醒你，但不能证明人人都会更忙",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题强调AI减少部分工作却导致90小时周工时；只能视为作者经历。",
+      "discussion_focus": [
+        "评论讨论效率提升是否反而扩大任务边界。",
+        "样本很少，不足以下结论。"
+      ],
+      "comment_samples": [
+        "有人指出工具让开始更多任务更容易，但完成和验收仍耗时间。"
+      ],
+      "reuse_ideas": [
+        "用交付数量、返工、在制任务和实际工时一起评估AI，而不是只看生成速度。",
+        "AI工时四栏记录",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "AI工时四栏记录",
+      "learning_outcome": "会同时记录产出、返工、在制任务和工时。"
+    },
+    {
+      "id": "2026081115",
+      "title": "换个字体就能让AI识别出错？这更像提醒，不是可靠防护",
+      "summary": "文章讨论特定字体对AI视觉或OCR识别的干扰。HN采集时8 points、3 comments；样本少，不能推广为稳定的反AI识别方案。",
+      "category": "AI 技巧",
+      "status": "仅查看",
+      "recommended": false,
+      "reason": "有趣但证据与互动太少，只留候选。",
+      "angle": "字体干扰可用于鲁棒性测试，不应当作隐私或安全措施。",
+      "human_check": "核对模型、字体版本、图片分辨率、基线和复现实验。",
+      "sources": [
+        {
+          "url": "https://www.fastcompany.com/91585494/this-font-looks-perfectly-normal-to-humans-but-confuses-ai",
+          "author": "Fast Company / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49249687",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-11T08:30:28+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 8 points · 3 comments（8月11日采集）；研究页面浏览未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 35,
+        "domestic_scarcity": 55,
+        "account_fit": 61,
+        "actionability": 48,
+        "evidence_confidence": 68,
+        "final": 52
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "换个字体就能让AI识别出错？这更像提醒，不是可靠防护",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题称某字体会迷惑AI；未证明对不同模型、分辨率和预处理都有效。",
+      "discussion_focus": [
+        "评论质疑不同OCR和视觉模型是否会得到相同结果。"
+      ],
+      "comment_samples": [
+        "评论者要求跨模型和不同渲染条件复现。"
+      ],
+      "reuse_ideas": [
+        "字体干扰可用于鲁棒性测试，不应当作隐私或安全措施。",
+        "AI视觉鲁棒性测试表",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "AI视觉鲁棒性测试表",
+      "learning_outcome": "知道单一字体技巧不能代替安全防护。"
+    },
+    {
+      "id": "2026081116",
+      "title": "自托管模型值不值：省下API费之前，先把运维时间算进去",
+      "summary": "文章讨论自托管推理的成本与控制权。HN采集时8 points、3 comments；公开讨论样本少。",
+      "category": "AI 技巧",
+      "status": "仅查看",
+      "recommended": false,
+      "reason": "方法有用但与本地模型推荐题部分重叠，只留候选。",
+      "angle": "把硬件、部署、监控、升级、停机和工程时间都计入总成本。",
+      "human_check": "按自身调用量与合规要求重算，不复用文章单一价格。",
+      "sources": [
+        {
+          "url": "https://github.com/superlinked/sie",
+          "author": "Superlinked / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49243715",
+          "source_type": "Hacker News",
+          "captured_at": "2026-08-11T08:30:28+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "Hacker News 8 points · 3 comments（8月11日采集）；博客浏览、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 36,
+        "domestic_scarcity": 55,
+        "account_fit": 83,
+        "actionability": 80,
+        "evidence_confidence": 86,
+        "final": 64
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "自托管模型值不值：省下API费之前，先把运维时间算进去",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题讨论自托管推理；不能把硬件单价直接等同于低总成本。",
+      "discussion_focus": [
+        "评论讨论云API低价与自托管控制权的取舍。"
+      ],
+      "comment_samples": [
+        "有评论者认为低调用量很难摊薄GPU与运维成本。"
+      ],
+      "reuse_ideas": [
+        "把硬件、部署、监控、升级、停机和工程时间都计入总成本。",
+        "自托管总成本表",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "自托管总成本表",
+      "learning_outcome": "会计算硬件、工程、运维与停机。"
+    },
+    {
+      "id": "2026081117",
+      "title": "Zapier把营销流程接进ChatGPT Work：先找重复交接，不要先做万能Agent",
+      "summary": "OpenAI官方案例介绍Zapier如何用ChatGPT Work改造核心营销流程。RSS于8月10日更新；官方页面与RSS未公开浏览、点赞、评论、转发和收藏，本轮也无可验证评论样本。",
+      "category": "实操案例",
+      "status": "仅查看",
+      "recommended": true,
+      "reason": "虽然无公开热度，但能转成团队马上使用的流程盘点法，并明确案例偏差。",
+      "angle": "先找资料搬运、状态同步、初稿汇总等重复交接点，再为每一步规定输入、输出和人工确认。",
+      "human_check": "核对案例原文、Zapier角色、量化结果口径；官方自述不得写成独立验证。",
+      "sources": [
+        {
+          "url": "https://openai.com/index/zapier",
+          "author": "OpenAI",
+          "discussion_url": "https://openai.com/index/zapier",
+          "source_type": "官方案例 / RSS",
+          "captured_at": "2026-08-11T08:30:28+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "OpenAI官方RSS与案例页未公开浏览、点赞、评论、转发、收藏（8月11日采集）"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 58,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 95,
+        "evidence_confidence": 92,
+        "final": 77
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Zapier把营销流程接进ChatGPT Work：先找重复交接，不要先做万能Agent",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：Zapier如何用ChatGPT Work改造核心营销流程。它是供应商发布的客户案例，不能当独立ROI研究。",
+      "discussion_focus": [
+        "官方页面未开放可验证评论样本。",
+        "应重点核验哪些数据来自Zapier、哪些是OpenAI叙述。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "先找资料搬运、状态同步、初稿汇总等重复交接点，再为每一步规定输入、输出和人工确认。",
+        "营销重复交接清单",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "营销重复交接清单",
+      "learning_outcome": "能找到高频、规则清楚、可回滚的自动化入口。"
+    },
+    {
+      "id": "2026081118",
+      "title": "别每次都重新教AI做事：把长期规则写成一份可版本管理的“宪法”",
+      "summary": "constitution项目提供一套可版本管理的编码Agent工作原则，强调把长期规则与单次任务分开。GitHub采集时26 Stars、1 Fork、0 Issues；无可验证用户评论样本。",
+      "category": "AI 技巧",
+      "status": "仅查看",
+      "recommended": true,
+      "reason": "公开热度不高，但可以直接解决团队反复提示、规则漂移和复盘无依据的问题。",
+      "angle": "长期不变的权限、测试、证据与交付规则放宪法；本次需求、路径和截止时间留在任务里。",
+      "human_check": "核对许可证、README内容和适配工具；敏感权限与删除规则需团队确认。",
+      "sources": [
+        {
+          "url": "https://github.com/kenn-io/constitution",
+          "author": "kenn-io / GitHub",
+          "discussion_url": "https://github.com/kenn-io/constitution",
+          "source_type": "GitHub",
+          "captured_at": "2026-08-11T08:30:28+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "GitHub 26 Stars · 1 Fork · 0 Issues（8月11日采集）；下载、使用、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 51,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 96,
+        "final": 76
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "别每次都重新教AI做事：把长期规则写成一份可版本管理的“宪法”",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "仓库描述：面向编码Agent的版本化操作原则。它是规则模板，不会自动保证Agent遵守或项目正确。",
+      "discussion_focus": [
+        "GitHub Issues为0，无可验证评论样本。",
+        "仓库重点是让规则可追踪、可审查，而不是继续堆长提示词。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "长期不变的权限、测试、证据与交付规则放宪法；本次需求、路径和截止时间留在任务里。",
+        "Agent规则分层模板",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "Agent规则分层模板",
+      "learning_outcome": "会把长期原则、项目约定与单次任务拆开。"
+    },
+    {
+      "id": "2026081119",
+      "title": "开源项目别只上传代码：这个脚手架一次补齐README、许可和安全说明",
+      "summary": "oss-init可一键生成双语README、LICENSE、CONTRIBUTING、SECURITY与CI/CD工作流，零依赖。GitHub采集时43 Stars、2 Forks、1 open issue。",
+      "category": "实操案例",
+      "status": "仅查看",
+      "recommended": false,
+      "reason": "实用但不是强AI热点，留候选。",
+      "angle": "让AI先生成仓库骨架，再逐项确认许可证、贡献流程、安全联系和发布自动化。",
+      "human_check": "核对模板内容、许可证选择、CI权限和安全邮箱；不要直接发布占位信息。",
+      "sources": [
+        {
+          "url": "https://github.com/kkx94/oss-init",
+          "author": "kkx94 / GitHub",
+          "discussion_url": "https://github.com/kkx94/oss-init",
+          "source_type": "GitHub",
+          "captured_at": "2026-08-11T08:30:28+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "GitHub 43 Stars · 2 Forks · 1 open issue（8月11日采集）；下载、使用量未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 53,
+        "domestic_scarcity": 55,
+        "account_fit": 88,
+        "actionability": 94,
+        "evidence_confidence": 96,
+        "final": 73
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "开源项目别只上传代码：这个脚手架一次补齐README、许可和安全说明",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "仓库描述为生产级开源项目脚手架；生成文件仍需按项目、许可证和安全联系人人工修改。",
+      "discussion_focus": [
+        "GitHub只有1个open issue，评论样本不足。"
+      ],
+      "comment_samples": [
+        "无足够可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "让AI先生成仓库骨架，再逐项确认许可证、贡献流程、安全联系和发布自动化。",
+        "开源发布六件套",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "开源发布六件套",
+      "learning_outcome": "会补齐README、许可、贡献、安全、行为准则和CI。"
+    },
+    {
+      "id": "2026081120",
+      "title": "AI做财务材料不只要‘写得快’：可编辑、可追溯才是真正能交付",
+      "summary": "OpenAI官方案例称Model ML使用GPT-5.6 Sol更高效地完成财务工作，并强调PPT/Excel产物可编辑、可追溯。RSS于8月10日更新；未公开页面互动和独立评论。",
+      "category": "接单变现",
+      "status": "仅查看",
+      "recommended": false,
+      "reason": "交付标准清楚但属于官方案例、无公开讨论，留候选。",
+      "angle": "客户真正要的是能继续改、数字能回源、版本能审计的文件，不是一张漂亮截图。",
+      "human_check": "核对案例数据、模型版本、财务审核流程和是否有人复核；不把效率描述泛化。",
+      "sources": [
+        {
+          "url": "https://openai.com/index/model-ml",
+          "author": "OpenAI",
+          "discussion_url": "https://openai.com/index/model-ml",
+          "source_type": "官方案例 / RSS",
+          "captured_at": "2026-08-11T08:30:28+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null
+          },
+          "engagement_label": "OpenAI官方RSS与案例页未公开浏览、点赞、评论、转发、收藏（8月11日采集）"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 49,
+        "domestic_scarcity": 55,
+        "account_fit": 89,
+        "actionability": 84,
+        "evidence_confidence": 91,
+        "final": 70
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI做财务材料不只要‘写得快’：可编辑、可追溯才是真正能交付",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、作者、核心主张和本文角度，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题：Model ML用GPT-5.6 Sol更高效完成财务工作。供应商案例不能证明所有财务团队获得同等收益。",
+      "discussion_focus": [
+        "官方页面无可验证评论样本。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "客户真正要的是能继续改、数字能回源、版本能审计的文件，不是一张漂亮截图。",
+        "AI交付三项验收",
+        "保留事实边界，不复制原作者句子。"
+      ],
+      "save_object": "AI交付三项验收",
+      "learning_outcome": "会检查可编辑、可追溯、可审计。"
+    }
+  ],
+  "drafts": [
+    {
+      "content_id": "5026081101",
+      "hotspot_id": "2026081101",
+      "platform": "小红书",
+      "title": "Meta放出30B本地模型：17GB能跑，但‘普通电脑可用’还差得远",
+      "body": "Meta刚放出一个30B开放权重模型Muse Glimmer，最容易被转错的数字是17GB。\n\n17GB说的是量化后的模型文件，不是“17GB内存的电脑就能舒服跑”。官方演示用的是高配MacBook M4/M5 Max和RTX 5090，还要等llama.cpp、MLX、Ollama这些工具适配得更成熟。\n\n如果你想试本地模型，先看四件事：硬盘能不能放下；内存能不能装载；生成速度能不能接受；你是不是真的需要离线和隐私。前两项过了，不代表体验就好。\n\n这条在HN采集时1012分、567条评论。它真正值得关注的是30B模型开始更容易落到个人设备，不是普通笔记本突然能塞下所有大模型。",
+      "visual_brief": "4:5黑白极简信息卡，标题大字，留白充足，只加一处轻微圆角或简笔画。优先使用原网页、工具界面、数据或代码截图；不要机器人头像、蓝紫渐变、虚构收益与无来源数字。",
+      "video_script": "Meta新出的Muse Glimmer是30B开放权重模型，量化文件约17GB。但别把17GB理解成普通电脑轻松跑。官方展示的是高配MacBook和RTX 5090。装本地模型前先看硬盘、内存、生成速度和是否真需要离线。它说明个人设备能跑的模型越来越强，不代表任何笔记本都能获得同样体验。",
+      "version": 1,
+      "parent_version": null,
+      "status": "仅查看"
+    },
+    {
+      "content_id": "5026081102",
+      "hotspot_id": "2026081102",
+      "platform": "小红书",
+      "title": "让AI跑命令前先关进“小房间”：Docker的新沙箱到底隔离了什么",
+      "body": "现在很多AI工具不只是写代码，它会直接装依赖、跑脚本、改文件。真正危险的不是它“想搞事”，而是一次误判就可能碰到你电脑里的真实目录和密钥。\n\nDocker新出的AI Sandboxes，会给Claude Code、Codex、Gemini CLI这类工具单独开一个microVM。简单理解：先把它关进一台临时小电脑，再让它折腾。\n\n最适合放进去的是陌生仓库、网上复制的脚本、批量改文件和长时间自主任务。不要顺手把整个主目录、SSH密钥、云端凭据都挂进去，否则房门是你自己拆的。\n\nHN采集时623分、349条评论。大家最不爽的是它目前要求登录Docker账号；而且官方明确写了实验功能，可能改也可能停。先拿无秘密的测试项目试，确认挂载和网络范围，再碰正式代码。",
+      "visual_brief": "4:5黑白极简信息卡，标题大字，留白充足，只加一处轻微圆角或简笔画。优先使用原网页、工具界面、数据或代码截图；不要机器人头像、蓝紫渐变、虚构收益与无来源数字。",
+      "video_script": "AI会直接跑命令以后，光靠一句不要删文件不够。Docker新出的AI Sandboxes会给Claude Code、Codex等工具开一个microVM，像一台临时小电脑。陌生仓库、网上脚本和批量任务可以先放进去，但别把主目录、SSH密钥和云端凭据一起挂载。它还是实验功能，而且登录要求在HN引发很多争议。",
+      "version": 1,
+      "parent_version": null,
+      "status": "仅查看"
+    },
+    {
+      "content_id": "5026081103",
+      "hotspot_id": "2026081103",
+      "platform": "小红书",
+      "title": "这个AI小游戏只能靠说话破案：比‘再做一个聊天机器人’有意思多了",
+      "body": "如果你想做AI小产品，可以先看这个例子。\n\nWhoDunnit不是打开一个聊天框让你随便问。你要对着嫌疑人说话、找出前后矛盾、判断谁在撒谎，最后指认凶手。AI不是卖点贴纸，而是游戏规则的一部分。\n\n这个思路很好抄：先写清用户必须做什么、怎样算失败、AI负责哪一段。比如面试练习里，用户必须追问出缺失条件；口语陪练里，AI只在你表达含糊时打断；销售演练里，AI会改变客户态度，而不是一直配合。\n\nHN采集时189分、81条评论。差评也很具体：有人讨厌AI语音，有人不想注册，还有人连不上。创意能吸引点击，第一次体验的摩擦仍然会把人劝退。",
+      "visual_brief": "4:5黑白极简信息卡，标题大字，留白充足，只加一处轻微圆角或简笔画。优先使用原网页、工具界面、数据或代码截图；不要机器人头像、蓝紫渐变、虚构收益与无来源数字。",
+      "video_script": "这个AI破案游戏有意思的地方，不是用了语音模型，而是玩家必须开口审问嫌疑人、找矛盾、最后指认凶手。做AI产品时先别画聊天框，先写三件事：用户必须完成什么动作，怎样算失败，AI到底负责扮演谁。创意之外，注册、麦克风权限和连接稳定性仍然决定用户会不会留下。",
+      "version": 1,
+      "parent_version": null,
+      "status": "仅查看"
+    },
+    {
+      "content_id": "5026081104",
+      "hotspot_id": "2026081104",
+      "platform": "小红书",
+      "title": "AI文案别急着“装人”：先删掉读者根本不需要看的话",
+      "body": "AI文案最烦人的地方，通常不是“像机器”，而是它说了很多你本来就知道的话。\n\n比如开头先解释这件事为什么重要，中间每段都来一句“这点需要留意”，最后再总结“AI不会替代人，只会帮助人”。这些话很顺，但读完没多拿到一个信息。\n\n我现在的删改顺序是：先删任务交代；删万能开场；删段落总结；删没有证据的态度句。空出来的位置只补四种东西：具体是谁、在什么场景、真实数字或原话、它哪里可能不成立。\n\nHN上这篇讨论有143分、85条评论。有人说内部Agent输出本来就应该更短、更结构化；公开内容则不是故意加错别字、口头禅就会像人，而是要让读者感觉这段话真的经过选择。",
+      "visual_brief": "4:5黑白极简信息卡，标题大字，留白充足，只加一处轻微圆角或简笔画。优先使用原网页、工具界面、数据或代码截图；不要机器人头像、蓝紫渐变、虚构收益与无来源数字。",
+      "video_script": "AI文案去机器味，不是加几个‘说实话’和错别字。先删四样：任务交代、万能开场、每段总结、没有证据的态度句。空出来的位置只补具体对象、真实场景、可核数字和适用限制。读者反感的不是你用了AI，而是花了半分钟，却没得到一个新的信息。",
+      "version": 1,
+      "parent_version": null,
+      "status": "仅查看"
+    },
+    {
+      "content_id": "5026081105",
+      "hotspot_id": "2026081105",
+      "platform": "小红书",
+      "title": "14MB的小模型也能决定调用哪个工具，但这个演示恰好暴露了风险",
+      "body": "14MB模型能在设备上判断该调用哪个工具，确实很有想象力。但HN评论很快发现，演示里输入‘HN’却调用了锁门工具。更稳妥的用法是让小模型做低风险分类；涉及门锁、付款、删除等动作，必须加白名单、参数校验和人工确认。",
+      "visual_brief": "4:5黑白极简信息卡，标题大字，留白充足，只加一处轻微圆角或简笔画。优先使用原网页、工具界面、数据或代码截图；不要机器人头像、蓝紫渐变、虚构收益与无来源数字。",
+      "video_script": "Needle2把Agent模型压到约14MB，但它的演示也出现了错误工具调用。小模型可以做低风险意图分类，不该直接控制门锁、付款或删除。体积小只是部署优势，不是可靠性证明。",
+      "version": 1,
+      "parent_version": null,
+      "status": "仅查看"
+    },
+    {
+      "content_id": "5026081106",
+      "hotspot_id": "2026081106",
+      "platform": "小红书",
+      "title": "一个15MB离线编码Agent引发争议：工具很小，为什么源码没公开",
+      "body": "Ante把离线编码Agent做成约15MB二进制，HN有119分、72条评论。但公开源码与可复现构建不足，让‘离线’无法直接被验证。小工具也能读完整仓库和密钥；在源码、签名、网络行为没有核清前，不要拿真实项目试。",
+      "visual_brief": "4:5黑白极简信息卡，标题大字，留白充足，只加一处轻微圆角或简笔画。优先使用原网页、工具界面、数据或代码截图；不要机器人头像、蓝紫渐变、虚构收益与无来源数字。",
+      "video_script": "一个约15MB的离线编码Agent为什么会被质疑？因为离线是产品承诺，不是可验证证据。下载这类二进制前先查源码、构建能否复现、签名、网络行为和权限范围。小体积不等于小风险。",
+      "version": 1,
+      "parent_version": null,
+      "status": "仅查看"
+    },
+    {
+      "content_id": "5026081107",
+      "hotspot_id": "2026081107",
+      "platform": "小红书",
+      "title": "Claude开始给AI内容加标记：它能说明什么，不能说明什么",
+      "body": "Claude开始给部分AI生成内容加标记了，但它不是“AI测谎仪”。\n\nAnthropic说，文本会加入嵌入式水印，生成的文件还可以带C2PA签名元数据。2026年8月2日以后在欧盟上线的模型会支持，支持的模型和界面也会在全球使用。\n\n最重要的是官方自己写的边界：检测到标记，只能说明内容可能被Claude处理过；没有检测到，也不能证明它完全由人写。旧模型、截图、格式转换、元数据被删除，都可能让标记消失。\n\nHN采集时73分、69条评论。以后核验内容，标记可以当一条来源线索，但不能单独拿来判断作者、作弊或造假。",
+      "visual_brief": "4:5黑白极简信息卡，标题大字，留白充足，只加一处轻微圆角或简笔画。优先使用原网页、工具界面、数据或代码截图；不要机器人头像、蓝紫渐变、虚构收益与无来源数字。",
+      "video_script": "Claude开始给AI内容加标记：文本用水印，文件可以带C2PA签名元数据。但它不是AI测谎仪。检测到，只说明内容可能被Claude处理过；没检测到，也不能证明是纯人工。旧模型、截图、格式转换和元数据删除都会影响结果。把它当来源线索，不要当作者身份判决。",
+      "version": 1,
+      "parent_version": null,
+      "status": "仅查看"
+    },
+    {
+      "content_id": "5026081108",
+      "hotspot_id": "2026081108",
+      "platform": "小红书",
+      "title": "闲置GPU也能挂出去接AI任务？先算清电费、隐私和交付稳定性",
+      "body": "把闲置GPU挂出去接AI任务听起来像被动收入，但Stoa目前更像待验证的算力市场。先算电费、折旧、真实利用率、断线赔付和数据隔离；平台没有公开稳定交易量前，不要拿理论单价当收入。",
+      "visual_brief": "4:5黑白极简信息卡，标题大字，留白充足，只加一处轻微圆角或简笔画。优先使用原网页、工具界面、数据或代码截图；不要机器人头像、蓝紫渐变、虚构收益与无来源数字。",
+      "video_script": "闲置GPU能不能出租赚钱？先别只看每小时报价。把电费、显卡折旧、真实利用率、断线赔付和任务数据风险都算进去。Stoa有62分、39条HN评论，但平台交易量和普通用户收入还未公开。",
+      "version": 1,
+      "parent_version": null,
+      "status": "仅查看"
+    },
+    {
+      "content_id": "5026081109",
+      "hotspot_id": "2026081109",
+      "platform": "小红书",
+      "title": "一个微型FPGA宣称每秒跑2.1万Token：它做的不是你以为的聊天大模型",
+      "body": "‘每秒2.1万Token’很容易被转成手机芯片秒杀大模型，但这个FPGA项目处理的是高度专用的小任务。看到AI性能数字，先问模型多大、跑哪一段、精度多少、是不是端到端；口径不同，数字不能直接横比。",
+      "visual_brief": "4:5黑白极简信息卡，标题大字，留白充足，只加一处轻微圆角或简笔画。优先使用原网页、工具界面、数据或代码截图；不要机器人头像、蓝紫渐变、虚构收益与无来源数字。",
+      "video_script": "AI性能写着每秒两万Token，先问四句：什么模型、多大参数、算哪一段、是不是端到端。微型FPGA的专用任务速度不能直接和聊天大模型比较。数字很大，不代表日常对话更快。",
+      "version": 1,
+      "parent_version": null,
+      "status": "仅查看"
+    },
+    {
+      "content_id": "5026081110",
+      "hotspot_id": "2026081110",
+      "platform": "小红书",
+      "title": "哪种编程语言更适合AI Agent？别只按Token最少来选",
+      "body": "给AI Agent选编程语言，语法短不一定总成本低。更公平的测试是同一个功能跑多次，记录一次通过率、测试结果、修复轮数和总Token。类型系统与库生态可能让代码更长，却少返工。",
+      "visual_brief": "4:5黑白极简信息卡，标题大字，留白充足，只加一处轻微圆角或简笔画。优先使用原网页、工具界面、数据或代码截图；不要机器人头像、蓝紫渐变、虚构收益与无来源数字。",
+      "video_script": "哪种语言最适合AI Agent？别只看谁写得短。用同一个任务比较一次通过率、测试结果、修复轮数和总Token。语法短可能省输入，类型系统也可能省后面的返工。",
+      "version": 1,
+      "parent_version": null,
+      "status": "仅查看"
+    },
+    {
+      "content_id": "5026081111",
+      "hotspot_id": "2026081111",
+      "platform": "小红书",
+      "title": "Spotify公开内部Agent开发环境Xirp，但目前还看不到外部采用数据",
+      "body": "Spotify公开了内部Agent开发环境Xirp，但HN只有30分、0评论，外部可用范围和采用数据也未公开。值得记录的是评估框架：任务是否隔离、工具权限如何收口、过程能否追踪、失败时能否人工接管；不要把一次发布直接写成行业趋势。",
+      "visual_brief": "4:5黑白极简信息卡，标题大字，留白充足，只加一处轻微圆角或简笔画。优先使用原网页、工具界面、数据或代码截图；不要机器人头像、蓝紫渐变、虚构收益与无来源数字。",
+      "video_script": "Spotify公开内部Agent开发环境Xirp，但目前没有外部采用数据。看这类平台先查四件事：任务隔离、工具权限、过程可观测、失败时人工接管。发布文章能证明产品存在，不能证明已经广泛成功。",
+      "version": 1,
+      "parent_version": null,
+      "status": "仅查看"
+    },
+    {
+      "content_id": "5026081112",
+      "hotspot_id": "2026081112",
+      "platform": "小红书",
+      "title": "旧款16GB Mac跑本地模型：210次测试后，最值钱的不是省钱",
+      "body": "一台2021年的16GB M1 Pro，到底能不能把本地模型当日常工具？\n\n这位作者没有只问几个脑筋急转弯。他准备了21个真实任务，用5个开放模型各跑两次，一共210次。最佳模型在这套题里过了90%，另一个小模型大约30 token/s，整个本地测试一共跑了6.4小时。\n\n最后的结论反而很克制：按现在很低的API价格，本地并不更省钱。它真正占优势的场景是离线、隐私、批量重复提取，以及不想把文件发出去。\n\n所以别先下载几十GB。把你自己最常做的20个任务列出来，记录正确率、等待时间、API费用和是否含敏感数据。跑完再决定哪些留本地，哪些继续用云端。90%只属于作者那套题，不是所有16GB电脑的保证。",
+      "visual_brief": "4:5黑白极简信息卡，标题大字，留白充足，只加一处轻微圆角或简笔画。优先使用原网页、工具界面、数据或代码截图；不要机器人头像、蓝紫渐变、虚构收益与无来源数字。",
+      "video_script": "旧款16GB Mac能不能日常跑本地模型？一位作者用5个模型测了21个真实任务，每项两次，共210次，最佳结果90%，本地总测试耗时6.4小时。但他发现按当前API价格，本地并不更省钱。真正的优势是离线、隐私和重复任务。先用自己的20个任务测正确率和时间，再决定要不要装。",
+      "version": 1,
+      "parent_version": null,
+      "status": "仅查看"
+    },
+    {
+      "content_id": "5026081113",
+      "hotspot_id": "2026081113",
+      "platform": "小红书",
+      "title": "安全公司称Agent找到Cloudflare漏洞：能力展示不等于可以照着复现",
+      "body": "Agent参与发现Cloudflare漏洞的研究值得关注，但受控研究、漏洞发现、实际利用和现实损害是四件事。只有16分、1条HN评论，且需补Cloudflare修复说明；这条先留核验，不做攻击教程。",
+      "visual_brief": "4:5黑白极简信息卡，标题大字，留白充足，只加一处轻微圆角或简笔画。优先使用原网页、工具界面、数据或代码截图；不要机器人头像、蓝紫渐变、虚构收益与无来源数字。",
+      "video_script": "看到AI找到漏洞，先分四步：是否授权、发现了什么、有没有实际利用、造成什么损害。缺厂商修复说明和披露时间线，不要把研究演示写成AI已经能普遍自主攻击。",
+      "version": 1,
+      "parent_version": null,
+      "status": "仅查看"
+    },
+    {
+      "content_id": "5026081114",
+      "hotspot_id": "2026081114",
+      "platform": "小红书",
+      "title": "用了AI反而每周干90小时？个案能提醒你，但不能证明人人都会更忙",
+      "body": "AI把单个任务做快了，不等于总工时会下降。一位作者写自己反而做到每周约90小时，但这只是个案。更值得抄的是记录法：交付了多少、返工几轮、同时开了多少任务、实际花了几小时。",
+      "visual_brief": "4:5黑白极简信息卡，标题大字，留白充足，只加一处轻微圆角或简笔画。优先使用原网页、工具界面、数据或代码截图；不要机器人头像、蓝紫渐变、虚构收益与无来源数字。",
+      "video_script": "用了AI为什么还会更忙？可能是工具让你同时开更多任务，验收和返工却没消失。90小时只是作者个案，不能泛化。用产出、返工、在制任务和真实工时四栏记录，才知道AI到底省了什么。",
+      "version": 1,
+      "parent_version": null,
+      "status": "仅查看"
+    },
+    {
+      "content_id": "5026081115",
+      "hotspot_id": "2026081115",
+      "platform": "小红书",
+      "title": "换个字体就能让AI识别出错？这更像提醒，不是可靠防护",
+      "body": "特定字体可能让某些AI识别出错，但只有8分、3条HN评论，也没有跨模型稳定证据。可以把它当OCR鲁棒性测试题，不能拿来保护敏感信息或声称能绕过识别。",
+      "visual_brief": "4:5黑白极简信息卡，标题大字，留白充足，只加一处轻微圆角或简笔画。优先使用原网页、工具界面、数据或代码截图；不要机器人头像、蓝紫渐变、虚构收益与无来源数字。",
+      "video_script": "换个字体让AI认错，听起来像防护技巧，其实最多是鲁棒性测试。不同模型、分辨率和预处理都会改变结果。敏感信息该删除或加密，不要依赖一款字体。",
+      "version": 1,
+      "parent_version": null,
+      "status": "仅查看"
+    },
+    {
+      "content_id": "5026081116",
+      "hotspot_id": "2026081116",
+      "platform": "小红书",
+      "title": "自托管模型值不值：省下API费之前，先把运维时间算进去",
+      "body": "自托管模型不是买一张显卡就结束。部署、监控、升级、故障、闲置和工程时间都要计入。调用量不高时，便宜API往往更省；涉及隐私、离线或稳定批量任务时，自托管才可能值。",
+      "visual_brief": "4:5黑白极简信息卡，标题大字，留白充足，只加一处轻微圆角或简笔画。优先使用原网页、工具界面、数据或代码截图；不要机器人头像、蓝紫渐变、虚构收益与无来源数字。",
+      "video_script": "算自托管模型成本，别只比显卡和API单价。硬件、部署、监控、升级、停机和工程时间都要算。低调用量通常难摊薄成本，隐私、离线和稳定批量任务才是更强理由。",
+      "version": 1,
+      "parent_version": null,
+      "status": "仅查看"
+    },
+    {
+      "content_id": "5026081117",
+      "hotspot_id": "2026081117",
+      "platform": "小红书",
+      "title": "Zapier把营销流程接进ChatGPT Work：先找重复交接，不要先做万能Agent",
+      "body": "团队想用AI改流程，最容易一上来就做“万能营销Agent”。结果是权限很多、上下文很乱，谁也不敢真的用。\n\nOpenAI最新案例讲Zapier把ChatGPT Work接进营销流程。更值得借鉴的不是品牌名，而是先盯重复交接：资料从一个工具搬到另一个工具；会议内容整理成任务；多个版本汇成初稿；状态变化通知相关人。\n\n你可以把一周工作列出来，只圈同时满足三点的步骤：每周至少出现三次；输入和输出说得清；做错了能撤回。先自动化这一小段，最后一步继续让人确认。\n\n这是一篇供应商发布的客户案例，页面没有公开浏览、点赞或评论，也不能把里面的成效当独立研究。发布前还要核对具体数字和口径。",
+      "visual_brief": "4:5黑白极简信息卡，标题大字，留白充足，只加一处轻微圆角或简笔画。优先使用原网页、工具界面、数据或代码截图；不要机器人头像、蓝紫渐变、虚构收益与无来源数字。",
+      "video_script": "团队接AI流程，别先做万能Agent。把一周工作列出来，只找同时满足三点的步骤：每周至少三次，输入输出说得清，做错能撤回。资料搬运、状态同步、初稿汇总通常比最终决策更适合先自动化。Zapier案例来自OpenAI官方，没有公开互动，成效数字仍要单独核验。",
+      "version": 1,
+      "parent_version": null,
+      "status": "仅查看"
+    },
+    {
+      "content_id": "5026081118",
+      "hotspot_id": "2026081118",
+      "platform": "小红书",
+      "title": "别每次都重新教AI做事：把长期规则写成一份可版本管理的“宪法”",
+      "body": "如果你每天都要提醒AI“先看现有代码、别乱删文件、改完跑测试”，问题可能不是提示词不够长，而是长期规则没有单独存。\n\nconstitution这个小项目，把编码Agent的长期工作原则做成可版本管理的文件。现在GitHub只有26颗星、1个Fork，热度不算高，但方法很适合团队。\n\n可以分三层：第一层是长期不变的底线，比如不能动哪些目录、什么时候必须人工确认；第二层是项目约定，比如命令、目录和代码风格；第三层才是今天这次任务。\n\n这样改规则时有记录，任务提示也不会每次塞一大坨。它不会自动保证AI听话，高风险动作仍要靠权限和审核拦住。",
+      "visual_brief": "4:5黑白极简信息卡，标题大字，留白充足，只加一处轻微圆角或简笔画。优先使用原网页、工具界面、数据或代码截图；不要机器人头像、蓝紫渐变、虚构收益与无来源数字。",
+      "video_script": "你是不是每天都在重复提醒AI别乱删文件、改完跑测试？把规则分三层：长期底线、项目约定、单次任务。长期规则单独版本管理，项目里写命令和目录，今天要做什么留在任务里。这样提示更短，规则变化也能追踪。但高风险动作仍然要靠权限和人工审核。",
+      "version": 1,
+      "parent_version": null,
+      "status": "仅查看"
+    },
+    {
+      "content_id": "5026081119",
+      "hotspot_id": "2026081119",
+      "platform": "小红书",
+      "title": "开源项目别只上传代码：这个脚手架一次补齐README、许可和安全说明",
+      "body": "代码能跑不等于项目能开源。oss-init会生成双语README、LICENSE、CONTRIBUTING、SECURITY和CI/CD骨架，GitHub有43颗星。模板只能省搭架子的时间；许可证、安全邮箱和CI权限必须人工核对，别把占位信息直接发布。",
+      "visual_brief": "4:5黑白极简信息卡，标题大字，留白充足，只加一处轻微圆角或简笔画。优先使用原网页、工具界面、数据或代码截图；不要机器人头像、蓝紫渐变、虚构收益与无来源数字。",
+      "video_script": "准备开源项目，别只把代码推上去。至少补README、许可证、贡献说明、安全报告入口和CI。oss-init能一键生成骨架，但许可证、邮箱和权限必须自己确认。模板负责不漏项，不替你做决定。",
+      "version": 1,
+      "parent_version": null,
+      "status": "仅查看"
+    },
+    {
+      "content_id": "5026081120",
+      "hotspot_id": "2026081120",
+      "platform": "小红书",
+      "title": "AI做财务材料不只要‘写得快’：可编辑、可追溯才是真正能交付",
+      "body": "用AI做PPT和Excel，客户能不能继续改、数字能不能回到来源、版本能不能追踪，比生成速度更重要。OpenAI的Model ML案例强调了这三点，但它是供应商自述、没有公开互动，效率数字仍需单独核验。",
+      "visual_brief": "4:5黑白极简信息卡，标题大字，留白充足，只加一处轻微圆角或简笔画。优先使用原网页、工具界面、数据或代码截图；不要机器人头像、蓝紫渐变、虚构收益与无来源数字。",
+      "video_script": "AI做财务材料，漂亮截图不算交付。至少检查三件事：文件能继续编辑，每个数字能回到来源，修改版本能审计。OpenAI最新Model ML案例强调这些，但它是官方客户案例，不能把效率直接套到所有团队。",
+      "version": 1,
+      "parent_version": null,
+      "status": "仅查看"
+    }
+  ],
+  "gaps": [
+    "生产工作台预读取被Cloudflare页面拦截：无法确认8月10日写回后新增的reviewNote；未把未知意见写成‘无意见’。",
+    "arXiv Atom本轮抓取失败；没有补造论文选题。",
+    "X、Instagram、TikTok、LinkedIn未取得可同时复核原文、时间和公开互动的新增完整样本；本批不伪造社媒数据。",
+    "Reddit当日高互动样本未获得稳定公开评论链，本批不使用。",
+    "小红书、抖音平台内全量语义检索不可用；国内稀缺度封顶55。"
+  ],
+  "generated_at": "2026-08-11T08:30:28+08:00"
+}

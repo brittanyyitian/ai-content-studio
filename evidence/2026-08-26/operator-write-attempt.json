@@ -1,0 +1,20 @@
+{
+  "attemptDate": "2026-08-26",
+  "command": "npm run operator:push -- operator-packets/2026-08-26-daily-batch.json",
+  "mode": "merge",
+  "exitCode": 1,
+  "response": "HTML document instead of JSON; response.json failed with Unexpected token '<'",
+  "postHttpStatus": null,
+  "priorReadProbe": {
+    "httpStatus": 403,
+    "contentType": "text/html; charset=UTF-8",
+    "title": "Attention Required! | Cloudflare"
+  },
+  "browserFallback": {
+    "url": "https://tide-ai-content-studio.brittanyyitian.chatgpt.site/operator-import",
+    "result": "Private import navigation timed out in in-app browser and Chrome; form not reachable, no import submitted."
+  },
+  "productionReadBack": false,
+  "credentials": "Existing credentials used; no values logged or changed",
+  "status": "未取得成功写入证据，未确认生产更新"
+}

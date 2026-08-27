@@ -1,0 +1,1485 @@
+{
+  "schema_version": 2,
+  "batch_id": "daily-2026-08-19-real-sources",
+  "batch_date": "2026-08-19",
+  "editorial_brief": "优先能直接执行的额度记录、轻量Agent选型、邮箱权限、GPU总成本、AI客服分工、Agent QA、长任务交接和会议纪要隐私；不让环境与融资新闻挤占推荐位。",
+  "hotspots": [
+    {
+      "id": "2026081901",
+      "title": "数据中心会让周边更热吗？这次有人做了现场测量",
+      "original_title": "Field measurements of neighborhood-scale air temperature impacts of data centers",
+      "summary": "ASME论文对数据中心废热的社区尺度气温影响进行现场测量。HN讨论高度活跃，但评论涉及选址、气候、散热方式和能源政策，不能把单个研究地点直接外推到所有数据中心。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "当天讨论最高但属于环境政策与工程议题，先留候选。",
+      "angle": "看数据中心环境新闻时核地点、基线、季节、散热方式和测量距离。",
+      "human_check": "阅读全文并核地点、样本期、对照点、气象校正、效应量和利益关系；发布需环境或暖通专业复核。",
+      "sources": [
+        {
+          "url": "https://asmedigitalcollection.asme.org/sustainablebuildings/article/7/2/024501/1233035/Data-Center-Waste-Heat-as-an-Emerging-Urban",
+          "author": "ASME Journal / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49349147",
+          "source_type": "研究论文 + 公开讨论",
+          "captured_at": "2026-08-19T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 283 points · 421 comments（8月19日08:30采集）；论文阅读、收藏未公开"
+          },
+          "engagement_label": "Hacker News 283 points · 421 comments（8月19日08:30采集）；论文阅读、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 100,
+        "domestic_scarcity": 55,
+        "account_fit": 68,
+        "actionability": 38,
+        "evidence_confidence": 94,
+        "final": 71
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "数据中心会让周边更热吗？这次有人做了现场测量",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：数据中心对社区尺度空气温度影响的现场测量。研究讨论的是特定测量条件下的局部热影响，不等于所有城市都会升高同样温度。",
+      "discussion_focus": [
+        "评论追问大型数据中心如何分区选址。",
+        "多人讨论炎热地区本已高温，局部增温是否影响居民。",
+        "评论区包含大量玩笑和政策立场，不能替代论文结果。"
+      ],
+      "comment_samples": [
+        "评论者询问大型数据中心的规划分区方式。",
+        "有人用德州高温笑话表达对一度增温的担忧。",
+        "评论样本观点分散，需以论文数据为主。"
+      ],
+      "reuse_ideas": [
+        "看数据中心环境新闻时核地点、基线、季节、散热方式和测量距离。",
+        "数据中心环境研究五项核验",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "数据中心环境研究五项核验",
+      "learning_outcome": "会核地点、基线、季节、散热和距离。"
+    },
+    {
+      "id": "2026081902",
+      "title": "Claude Code临时额度要到期了：先把重度任务的真实消耗记下来",
+      "original_title": "Claude Code May–August 2026 weekly limits promotion",
+      "summary": "Anthropic帮助页说明Claude Code在5月至8月的每周额度促销。HN用户称此前额度显得更宽松，也有人把近期拥堵与集中使用联系起来；具体账户、套餐和结束日期必须以官方页面为准。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "官方信息明确、讨论很高，能直接帮助用户避免活动结束后工作流突然超额。",
+      "angle": "用一周日志记录任务、模型、耗时、重试和额度，提前决定降级或换工具。",
+      "human_check": "核官方页面最新结束日期、适用套餐、地区和例外；不要用个别用户体验推断所有账户。",
+      "sources": [
+        {
+          "url": "https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion",
+          "author": "Anthropic Support / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49348751",
+          "source_type": "官方说明 + 用户讨论",
+          "captured_at": "2026-08-19T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 255 points · 223 comments（8月19日08:30采集）；Anthropic帮助页阅读、收藏未公开"
+          },
+          "engagement_label": "Hacker News 255 points · 223 comments（8月19日08:30采集）；Anthropic帮助页阅读、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 93,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 98,
+        "final": 87
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Claude Code临时额度要到期了：先把重度任务的真实消耗记下来",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：Claude Code 2026年5月至8月每周额度促销。它是阶段性额度活动，不代表永久套餐上调。",
+      "discussion_focus": [
+        "用户发现过去几个月额度异常宽松，活动说明解释了这种体验。",
+        "有人猜测集中使用与服务拥堵相关，但没有官方因果证据。",
+        "评论大量比较不同模型和客户端价值，属于个人体验。"
+      ],
+      "comment_samples": [
+        "一位用户说自己看到过公告却忘了，因此终于理解几个月来额度为何宽松。",
+        "有人猜测用户赶在活动结束前使用可能解释当天拥堵，但这是推断。",
+        "评论者比较Claude与其他模型，观点分歧明显。"
+      ],
+      "reuse_ideas": [
+        "用一周日志记录任务、模型、耗时、重试和额度，提前决定降级或换工具。",
+        "Claude额度结束前一周记录表",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "Claude额度结束前一周记录表",
+      "learning_outcome": "会记录任务、模型、耗时、重试和额度。"
+    },
+    {
+      "id": "2026081903",
+      "title": "一个很小的编码Agent火了：先别装，比较这5件事",
+      "original_title": "fx: Tiny, open, native coding agent",
+      "summary": "Vercel Labs发布fx，定位为轻量、开放、原生的编码Agent。评论关注它与Pi等工具的内存、启动速度、扩展模型差异，也质疑Vercel实验项目的长期维护。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "热度高、工具具体，适合做轻量Agent选型表而不是宣传。",
+      "angle": "比较启动、内存、权限、扩展和维护承诺。",
+      "human_check": "核仓库、许可证、支持系统、网络行为、文件权限、维护状态和卸载。",
+      "sources": [
+        {
+          "url": "https://fx.sh",
+          "author": "Vercel Labs fx / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49353339",
+          "source_type": "开源工具 + 开发者讨论",
+          "captured_at": "2026-08-19T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 71 points · 48 comments（8月19日08:30采集）；GitHub下载、活跃用户未公开"
+          },
+          "engagement_label": "Hacker News 71 points · 48 comments（8月19日08:30采集）；GitHub下载、活跃用户未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 72,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 91,
+        "final": 81
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "一个很小的编码Agent火了：先别装，比较这5件事",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：fx——小巧、开放、原生的编码智能体。‘小巧’和‘原生’需通过安装体积、运行内存与平台支持实测。",
+      "discussion_focus": [
+        "评论想比较fx和Pi的内存占用与启动速度。",
+        "有人追问扩展和贡献机制。",
+        "也有人担心实验项目被快速弃用。"
+      ],
+      "comment_samples": [
+        "评论者说Pi功能很好，但fx宣称更低内存和更快启动，值得实测。",
+        "有人质疑为什么还需要一个编码Agent。",
+        "评论者担心Vercel Labs是否会像其他实验项目一样停止维护。"
+      ],
+      "reuse_ideas": [
+        "比较启动、内存、权限、扩展和维护承诺。",
+        "轻量编码Agent五项比较表",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "轻量编码Agent五项比较表",
+      "learning_outcome": "会比较启动、内存、权限、扩展和维护。"
+    },
+    {
+      "id": "2026081904",
+      "title": "GLM‑5.3跑分不错，但评论最关心的是“值不值得切换”",
+      "original_title": "GLM-5.3 Artificial Analysis Benchmarks",
+      "summary": "Artificial Analysis发布GLM-5.3评测。评论认可体量与得分，但指出Token使用较高会影响性价比，也有人认为已有Claude Code订阅时切换成本可能超过价格收益。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "与昨日Qwen跑分同类，避免连续推荐模型榜单，留候选。",
+      "angle": "模型切换成本要算迁移、提示词重调和人工适应。",
+      "human_check": "核模型卡、价格、Token用量、上下文、评测设置和许可证。",
+      "sources": [
+        {
+          "url": "https://artificialanalysis.ai/models/glm-5-3",
+          "author": "Artificial Analysis / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49353407",
+          "source_type": "模型评测 + 讨论",
+          "captured_at": "2026-08-19T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 69 points · 31 comments（8月19日08:30采集）；模型调用量、国内收藏未公开"
+          },
+          "engagement_label": "Hacker News 69 points · 31 comments（8月19日08:30采集）；模型调用量、国内收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 70,
+        "domestic_scarcity": 55,
+        "account_fit": 92,
+        "actionability": 82,
+        "evidence_confidence": 88,
+        "final": 75
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "GLM‑5.3跑分不错，但评论最关心的是“值不值得切换”",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：GLM-5.3的Artificial Analysis基准结果。基准成绩不能直接代表真实工作流成本。",
+      "discussion_focus": [
+        "评论认可模型规模与成绩。",
+        "有人指出Token消耗更高，价格性能未必领先。",
+        "已有订阅用户担心切换成本。"
+      ],
+      "comment_samples": [
+        "评论者说成绩对模型体量而言很强，但Token使用比K3和闭源模型高。",
+        "有人问已有Claude Code订阅时是否值得切换。",
+        "一条评论用购买四台Spark的成本开玩笑。"
+      ],
+      "reuse_ideas": [
+        "模型切换成本要算迁移、提示词重调和人工适应。",
+        "模型切换成本四栏",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "模型切换成本四栏",
+      "learning_outcome": "会算价格、Token、迁移和适应。"
+    },
+    {
+      "id": "2026081905",
+      "title": "Amazon订单邮件越来越没信息，可能不是为了省字",
+      "original_title": "Why your Amazon order confirmation emails have become so unhelpful",
+      "summary": "The Verge讨论Amazon订单邮件为何不再直接显示完整商品信息，并联系到第三方邮箱扫描、AI Agent和数据控制。HN用户回看多年邮件，发现变化早于当前生成式AI浪潮，说明不能把原因单归于AI。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "高互动、生活场景强，可转成邮箱Agent权限清单；同时保留历史因果边界。",
+      "angle": "给邮箱Agent只开放订单标签、最短保留期和只读权限。",
+      "human_check": "核Amazon官方说明、邮件历史、Gmail与Agent数据权限；不要断言Amazon专为阻止AI才删信息。",
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/977733/amazon-order-emails-google-gmail-ai-agents-data",
+          "author": "The Verge / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49348627",
+          "source_type": "媒体报道 + 用户讨论",
+          "captured_at": "2026-08-19T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 62 points · 29 comments（8月19日08:30采集）；The Verge阅读、收藏未公开"
+          },
+          "engagement_label": "Hacker News 62 points · 29 comments（8月19日08:30采集）；The Verge阅读、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 66,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 96,
+        "evidence_confidence": 82,
+        "final": 78
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Amazon订单邮件越来越没信息，可能不是为了省字",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：为什么你的Amazon订单确认邮件变得如此没用。报道讨论数据访问和Agent生态，但邮件变化可能有多重历史原因。",
+      "discussion_focus": [
+        "用户回看2019年邮件，发现商品信息缺失并非最近才发生。",
+        "有人推测过去是为限制自动索赔服务扫描邮箱。",
+        "不少人抱怨订单邮件过多且信息价值低。"
+      ],
+      "comment_samples": [
+        "评论者检查2019年邮件，确认当时已不列商品，但更早年份曾列出。",
+        "他推测变化可能与自动索赔创业公司扫描邮箱有关。",
+        "另一位说自己几乎从不看Amazon的多封购买相关邮件。"
+      ],
+      "reuse_ideas": [
+        "给邮箱Agent只开放订单标签、最短保留期和只读权限。",
+        "邮箱Agent最小权限清单",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "邮箱Agent最小权限清单",
+      "learning_outcome": "会设标签范围、只读、保留期和撤销。"
+    },
+    {
+      "id": "2026081906",
+      "title": "GPU机器暂停后不收费？先问清“磁盘还在不在”",
+      "original_title": "Launch HN: machine0 – Persistent CPU and GPU VMs from the CLI",
+      "summary": "machine0提供命令行创建可持久化CPU/GPU虚拟机，并宣称暂停计算后可保留环境。评论最关心底层云、暂停期间计费、磁盘保存、备份和退出迁移。",
+      "category": "接单变现",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "接近真实接单和模型实验成本，评论问题可直接变成购买前核验表。",
+      "angle": "租GPU别只看小时价，还要核暂停、存储、快照、出口和迁移。",
+      "human_check": "核官方价格、底层供应商、暂停计费、磁盘、备份、地区、SLA和数据导出。",
+      "sources": [
+        {
+          "url": "https://machine0.io",
+          "author": "machine0 / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49348136",
+          "source_type": "产品发布 + 创业讨论",
+          "captured_at": "2026-08-19T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 59 points · 36 comments（8月19日08:30采集）；客户数、稳定性未公开"
+          },
+          "engagement_label": "Hacker News 59 points · 36 comments（8月19日08:30采集）；客户数、稳定性未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 64,
+        "domestic_scarcity": 55,
+        "account_fit": 98,
+        "actionability": 96,
+        "evidence_confidence": 91,
+        "final": 78
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "GPU机器暂停后不收费？先问清“磁盘还在不在”",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：machine0——通过命令行使用可持久化CPU和GPU虚拟机。‘可暂停’不自动等于所有存储免费或永久保留。",
+      "discussion_focus": [
+        "用户追问底层是否使用AWS或自建。",
+        "讨论最关注暂停后磁盘是否保留、期间是否真正不收费。",
+        "有人要求说明备份、恢复和平台停止服务后的数据迁移。"
+      ],
+      "comment_samples": [
+        "评论者问暂停后能否保留完整环境且不产生计算费用。",
+        "有人追问如何承担长期存储成本。",
+        "评论者把备份、恢复和SSD数据导出视为最重要问题。"
+      ],
+      "reuse_ideas": [
+        "租GPU别只看小时价，还要核暂停、存储、快照、出口和迁移。",
+        "GPU租用六项费用表",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "GPU租用六项费用表",
+      "learning_outcome": "会核计算、暂停、存储、快照、出口和迁移。"
+    },
+    {
+      "id": "2026081907",
+      "title": "Electron应用存密钥，系统钥匙串也要分“谁能读”",
+      "original_title": "Show HN: macOS data protection keychain for Electron apps",
+      "summary": "项目为Electron应用提供macOS数据保护钥匙串。评论指出普通安全CLI可能读取safeStorage条目，而代码签名访问组可提供更强边界；也有人认为macOS专用方案牺牲跨平台。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "安全主题具体但较技术，留候选。",
+      "angle": "密钥存系统钥匙串不够，还要限制签名应用和访问组。",
+      "human_check": "核Apple文档、代码签名、访问组、威胁模型、许可证和跨平台降级。",
+      "sources": [
+        {
+          "url": "https://github.com/biw/keychain-store",
+          "author": "keychain-store / GitHub / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49349159",
+          "source_type": "开源安全工具 + 讨论",
+          "captured_at": "2026-08-19T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 21 points · 3 comments（8月19日08:30采集）；GitHub用户数、审计结果未公开"
+          },
+          "engagement_label": "Hacker News 21 points · 3 comments（8月19日08:30采集）；GitHub用户数、审计结果未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 45,
+        "domestic_scarcity": 55,
+        "account_fit": 95,
+        "actionability": 87,
+        "evidence_confidence": 88,
+        "final": 71
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Electron应用存密钥，系统钥匙串也要分“谁能读”",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：面向Electron应用的macOS数据保护钥匙串。",
+      "discussion_focus": [
+        "评论认为安全CLI可读safeStorage是Agent环境下的现实风险。",
+        "代码签名访问组被认为是更好的边界。",
+        "macOS专用实现削弱Electron跨平台优势。"
+      ],
+      "comment_samples": [
+        "评论者说Agent普及后，security CLI能读取safeStorage是严重问题。",
+        "另一位认为平台专用实现违背Electron的跨平台目的。"
+      ],
+      "reuse_ideas": [
+        "密钥存系统钥匙串不够，还要限制签名应用和访问组。",
+        "桌面应用密钥三层边界",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "桌面应用密钥三层边界",
+      "learning_outcome": "会核存储、访问组和签名。"
+    },
+    {
+      "id": "2026081908",
+      "title": "新闻数据交给AI公司，编辑部为什么反对",
+      "original_title": "Palantir Leads AI Data Deal with USA Today Sparking a Newsroom Revolt",
+      "summary": "Forbes报道称Palantir参与USA Today相关AI数据合作并引发部分新闻人员反对。评论认为争议不仅是AI数据，也与Palantir过往政府项目关联有关。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "涉及政治、劳动和数据权益，证据与专业审查不足，不推荐。",
+      "angle": "媒体AI合作要披露数据范围、用途、编辑控制和退出机制。",
+      "human_check": "核公司协议、工会声明、员工人数、Palantir角色和当地法律；需法律与媒体专业复核。",
+      "sources": [
+        {
+          "url": "https://www.forbes.com/sites/sandycarter/2026/08/15/palantir-leads-ai-data-deal-with-usa-today-sparking-a-newsroom-revolt/",
+          "author": "Forbes / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49351223",
+          "source_type": "媒体报道 + 讨论",
+          "captured_at": "2026-08-19T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 15 points · 2 comments（8月19日08:30采集）；报道浏览、员工支持比例未公开"
+          },
+          "engagement_label": "Hacker News 15 points · 2 comments（8月19日08:30采集）；报道浏览、员工支持比例未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 42,
+        "domestic_scarcity": 55,
+        "account_fit": 70,
+        "actionability": 40,
+        "evidence_confidence": 70,
+        "final": 55
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "新闻数据交给AI公司，编辑部为什么反对",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：Palantir牵头与USA Today的AI数据交易，引发新闻编辑部反抗。‘反抗’范围和参与者需原始声明核验。",
+      "discussion_focus": [
+        "评论链接到Nieman Lab的相关报道。",
+        "有人认为Palantir与政府项目的关联是争议核心之一。"
+      ],
+      "comment_samples": [
+        "评论者补充Nieman Lab来源。",
+        "另一位说争议似乎与Palantir和政府执法项目的关联有关。"
+      ],
+      "reuse_ideas": [
+        "媒体AI合作要披露数据范围、用途、编辑控制和退出机制。",
+        "媒体AI合作四项披露",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "媒体AI合作四项披露",
+      "learning_outcome": "会查范围、用途、控制和退出。"
+    },
+    {
+      "id": "2026081909",
+      "title": "OpenAI放慢训练？一篇报道不足以判断技术见顶",
+      "original_title": "OpenAI Is Slowing Down Its AI Training",
+      "summary": "TIME报道称OpenAI放慢部分训练节奏。HN评论有人解读为收益递减，但样本很少，且公司未公开完整训练计划，不能据此宣布Scaling结束。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "标题大但证据不足，只留候选。",
+      "angle": "判断AI公司训练变化要分算力、数据、研究、安全和产品节奏。",
+      "human_check": "核TIME原文来源、OpenAI正式回应、时间范围和具体项目；不写技术见顶。",
+      "sources": [
+        {
+          "url": "https://time.com/article/2026/08/18/openai-slowing-training/",
+          "author": "TIME / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49351580",
+          "source_type": "媒体报道 + 讨论",
+          "captured_at": "2026-08-19T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 13 points · 3 comments（8月19日08:30采集）；训练预算、官方数据未公开"
+          },
+          "engagement_label": "Hacker News 13 points · 3 comments（8月19日08:30采集）；训练预算、官方数据未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 40,
+        "domestic_scarcity": 55,
+        "account_fit": 74,
+        "actionability": 35,
+        "evidence_confidence": 63,
+        "final": 54
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "OpenAI放慢训练？一篇报道不足以判断技术见顶",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：OpenAI正在放慢AI训练。‘放慢’可能涉及安全、基础设施、策略或项目节奏，不等于停止扩展。",
+      "discussion_focus": [
+        "评论者把放慢解读为收益递减。",
+        "公开评论极少，不能形成可靠共识。"
+      ],
+      "comment_samples": [
+        "一位评论者认为收益递减可能被包装成主动放慢；这只是个人判断。"
+      ],
+      "reuse_ideas": [
+        "判断AI公司训练变化要分算力、数据、研究、安全和产品节奏。",
+        "训练放缓五种可能",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "训练放缓五种可能",
+      "learning_outcome": "会区分算力、数据、研究、安全和产品。"
+    },
+    {
+      "id": "2026081910",
+      "title": "买二手GPU跑AI，先做健康检查再跑模型",
+      "original_title": "Show HN: PantheonGPU – GPU health testing and AI workload benchmarking",
+      "summary": "PantheonGPU提供GPU健康测试与AI工作负载基准。当天无评论，检测覆盖、误报和硬件支持需实测。",
+      "category": "接单变现",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "实用但缺少讨论与独立验证，留候选。",
+      "angle": "验GPU看显存错误、温度、功耗、稳定负载和真实模型任务。",
+      "human_check": "核支持型号、测试方法、隐私、许可证和独立基准。",
+      "sources": [
+        {
+          "url": "https://pantheongpu.com/",
+          "author": "PantheonGPU / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49350637",
+          "source_type": "GPU工具",
+          "captured_at": "2026-08-19T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 12 points · 0 comments（8月19日08:30采集）；用户数、检测准确率未公开"
+          },
+          "engagement_label": "Hacker News 12 points · 0 comments（8月19日08:30采集）；用户数、检测准确率未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 39,
+        "domestic_scarcity": 55,
+        "account_fit": 95,
+        "actionability": 95,
+        "evidence_confidence": 69,
+        "final": 68
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "买二手GPU跑AI，先做健康检查再跑模型",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：PantheonGPU——GPU健康测试和AI工作负载基准工具。",
+      "discussion_focus": [
+        "无可验证评论样本。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "验GPU看显存错误、温度、功耗、稳定负载和真实模型任务。",
+        "二手GPU五项验机",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "二手GPU五项验机",
+      "learning_outcome": "会测显存、温度、功耗、稳定和任务。"
+    },
+    {
+      "id": "2026081911",
+      "title": "Devin里的GPT‑5.6 Sol打三折，不是全网统一价",
+      "original_title": "GPT-5.6 Sol: 70% off in Devin",
+      "summary": "Devin官方博客宣布平台内GPT-5.6 Sol限时70%折扣。当天无评论；这是特定产品和活动价，不代表OpenAI官方API或其他渠道同步降价。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "与昨日OpenRouter渠道降价同主题，避免连续推荐，只留候选。",
+      "angle": "模型促销要记录平台、期限、套餐、额度和恢复原价。",
+      "human_check": "核Devin官方活动日期、适用账户、额度、地区和结束后价格。",
+      "sources": [
+        {
+          "url": "https://devin.ai/blog/gpt-5-6-sol-promo",
+          "author": "Devin / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49353484",
+          "source_type": "官方促销页面",
+          "captured_at": "2026-08-19T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 9 points · 0 comments（8月19日08:30采集）；活动使用量、转化未公开"
+          },
+          "engagement_label": "Hacker News 9 points · 0 comments（8月19日08:30采集）；活动使用量、转化未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 37,
+        "domestic_scarcity": 55,
+        "account_fit": 90,
+        "actionability": 88,
+        "evidence_confidence": 94,
+        "final": 68
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Devin里的GPT‑5.6 Sol打三折，不是全网统一价",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：GPT-5.6 Sol在Devin内优惠70%。",
+      "discussion_focus": [
+        "无可验证评论样本。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "模型促销要记录平台、期限、套餐、额度和恢复原价。",
+        "模型促销五项记录",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "模型促销五项记录",
+      "learning_outcome": "会记平台、期限、套餐、额度和原价。"
+    },
+    {
+      "id": "2026081912",
+      "title": "400多家企业客户，客服却只靠几位工程师：他们没有让AI直接回复",
+      "original_title": "Automating quality support at scale: AI and human in the loop",
+      "summary": "Windmill介绍用AI与人工闭环扩展企业客服，并称400多家企业客户由少量工程师处理支持。作者强调编排器可替换；公开工单量、准确率和满意度不足，不能把人员数量直接写成效率提升。",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "企业案例具体，适合接单和小团队客服；核心是分流与证据包，不是自动回复。",
+      "angle": "AI先分类、找上下文、起草和标风险，人负责确认与高风险升级。",
+      "human_check": "核文章流程、客户数时间点、工单量、SLA、满意度、隐私和失败案例。",
+      "sources": [
+        {
+          "url": "https://www.windmill.dev/blog/support-automation",
+          "author": "Windmill / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49347822",
+          "source_type": "企业实践 + 作者讨论",
+          "captured_at": "2026-08-19T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 8 points · 1 comment（8月19日08:30采集）；工单量、解决率、客户满意度未公开"
+          },
+          "engagement_label": "Hacker News 8 points · 1 comment（8月19日08:30采集）；工单量、解决率、客户满意度未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 36,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 86,
+        "final": 71
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "400多家企业客户，客服却只靠几位工程师：他们没有让AI直接回复",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：规模化自动化高质量客服——AI与人工在闭环中协作。",
+      "discussion_focus": [
+        "作者称400多家企业客户由几位工程师处理支持。",
+        "作者说编排并不依赖Windmill，可换其他工具。",
+        "公开评论样本只有作者补充，缺少客户独立评价。"
+      ],
+      "comment_samples": [
+        "Windmill联合创始人称团队有400多家企业客户，支持由少量工程师处理。",
+        "他强调相同流程可用其他编排器实现。"
+      ],
+      "reuse_ideas": [
+        "AI先分类、找上下文、起草和标风险，人负责确认与高风险升级。",
+        "AI客服四段分工图",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "AI客服四段分工图",
+      "learning_outcome": "会分分类、查证、起草和升级。"
+    },
+    {
+      "id": "2026081913",
+      "title": "代码Agent写得比QA测得快，先别再加一个Agent糊上去",
+      "original_title": "Show HN: Argus, agentic QA for teams whose coding agents move faster than QA",
+      "summary": "Argus面向编码Agent产出过快、人工QA跟不上的团队，主张用Agent做界面测试。评论质疑与普通Playwright E2E的成本差异、是否真正视觉理解，以及行为驱动测试可能重新重要。",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "问题真实且评论提供反方；可转成Agent代码的分层验收。",
+      "angle": "先用确定性测试守核心流程，再让Agent探索边缘场景，最后人工看体验。",
+      "human_check": "核实现是否用视觉模型、Playwright依赖、成本、误报、数据权限和独立效果。",
+      "sources": [
+        {
+          "url": "https://github.com/argus-testing/argus",
+          "author": "Argus / GitHub / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49351020",
+          "source_type": "Agent QA工具 + 讨论",
+          "captured_at": "2026-08-19T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 8 points · 9 comments（8月19日08:30采集）；GitHub用户数、缺陷检出率未公开"
+          },
+          "engagement_label": "Hacker News 8 points · 9 comments（8月19日08:30采集）；GitHub用户数、缺陷检出率未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 36,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 79,
+        "final": 71
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "代码Agent写得比QA测得快，先别再加一个Agent糊上去",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：Argus——面向编码Agent速度超过QA团队的Agent式质量保障。",
+      "discussion_focus": [
+        "评论追问与普通Playwright端到端测试相比的成本。",
+        "有人质疑‘读取屏幕’是否只是基于DOM/Playwright。",
+        "讨论认为行为驱动测试可能因Agent生成大量代码而回归。"
+      ],
+      "comment_samples": [
+        "评论者问Agent QA与常规E2E测试的成本差多少。",
+        "有人指出产品说读取屏幕，但实现看起来仍建立在Playwright上。",
+        "评论者认为大规模生成代码后，测试发现和维护会成为主要问题。"
+      ],
+      "reuse_ideas": [
+        "先用确定性测试守核心流程，再让Agent探索边缘场景，最后人工看体验。",
+        "Agent代码三层验收",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "Agent代码三层验收",
+      "learning_outcome": "会分确定性测试、探索测试和人工体验。"
+    },
+    {
+      "id": "2026081914",
+      "title": "让Agent连续干一个月、烧掉2000亿Token，真正难的不是写代码",
+      "original_title": "200B Tokens Later: A Month of Letting AI Agents Decompile MW2",
+      "summary": "作者复盘让AI Agent持续一个月反编译MW2并消耗约2000亿Token。评论想比较其他模型和harness，说明长期任务表现不仅由模型决定，也受工具编排、系统级问题和升级策略影响。",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "少见的长周期Agent案例；可提炼交接、升级和进展证据，而不是炫Token。",
+      "angle": "长任务每个里程碑保存可运行产物、失败清单、下一步和升级条件。",
+      "human_check": "核Token统计、模型、并发、费用、人工干预、版权与项目完成度；不鼓励复制受版权限制内容。",
+      "sources": [
+        {
+          "url": "https://momo5502.com/posts/2026-08-17-mw2-decompilation/",
+          "author": "momo5502 / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49351299",
+          "source_type": "长周期工程复盘 + 讨论",
+          "captured_at": "2026-08-19T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 8 points · 3 comments（8月19日08:30采集）；完整费用、人工工时和完成比例需核"
+          },
+          "engagement_label": "Hacker News 8 points · 3 comments（8月19日08:30采集）；完整费用、人工工时和完成比例需核"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 35,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 96,
+        "evidence_confidence": 89,
+        "final": 71
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "让Agent连续干一个月、烧掉2000亿Token，真正难的不是写代码",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：消耗2000亿Token之后——让AI Agent反编译MW2一个月。Token数量是作者项目口径，不等于通用成本或成功率。",
+      "discussion_focus": [
+        "评论希望与GPT-5.6 Sol或Qwen3.8比较。",
+        "有人怀疑harness差异比单纯模型差异更重要。",
+        "讨论建议在系统级问题上升级更强模型。"
+      ],
+      "comment_samples": [
+        "评论者想看同一任务在Codex和5.6 Sol上的表现。",
+        "有人希望用Qwen3.8 27B对比。",
+        "另一位建议遇到系统级问题时重新尝试更强模型。"
+      ],
+      "reuse_ideas": [
+        "长任务每个里程碑保存可运行产物、失败清单、下一步和升级条件。",
+        "长任务四字段里程碑",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "长任务四字段里程碑",
+      "learning_outcome": "会保存产物、失败、下一步和升级条件。"
+    },
+    {
+      "id": "2026081915",
+      "title": "Google Meet要默认开AI纪要了：会前先看这4个开关",
+      "original_title": "Google Workspace will enable AI note-taking by default for some customers",
+      "summary": "Google Workspace官方公告将为部分客户调整Meet的Take notes for me默认设置。当天无可验证评论；管理员和用户开关、适用版本、推出节奏应以官方页面为准。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "影响真实办公隐私，官方证据完整；能直接变成会前四项检查。",
+      "angle": "会前检查谁开启、谁能看、保存多久、敏感会议是否禁用。",
+      "human_check": "核适用Workspace版本、默认状态、管理员覆盖、地区、数据保存、训练政策和退出方式。",
+      "sources": [
+        {
+          "url": "https://workspaceupdates.googleblog.com/2026/07/new-google-meet-take-notes-for-me-settings-for-admins-and-end-users.html",
+          "author": "Google Workspace Updates / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49350432",
+          "source_type": "官方产品公告",
+          "captured_at": "2026-08-19T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 6 points · 0 comments（8月19日08:30采集）；功能覆盖用户数、纪要准确率未公开"
+          },
+          "engagement_label": "Hacker News 6 points · 0 comments（8月19日08:30采集）；功能覆盖用户数、纪要准确率未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 33,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 98,
+        "final": 72
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Google Meet要默认开AI纪要了：会前先看这4个开关",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：Google Workspace将为部分客户默认启用AI会议笔记。它不是所有账号立即统一开启。",
+      "discussion_focus": [
+        "无可验证评论样本。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "会前检查谁开启、谁能看、保存多久、敏感会议是否禁用。",
+        "AI会议纪要会前四问",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "AI会议纪要会前四问",
+      "learning_outcome": "会查开启者、可见范围、保留期和禁用场景。"
+    },
+    {
+      "id": "2026081916",
+      "title": "网站放了llms.txt，主流AI平台可能根本没用",
+      "original_title": "llms.txt: a proposed standard no major AI platform has confirmed it uses",
+      "summary": "文章指出llms.txt只是提议标准，尚无主要AI平台确认使用。评论质疑为什么模型不能直接读主页，并用AI;DR回应。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "能纠正SEO式跟风，但互动有限，留候选。",
+      "angle": "新标准先核谁实现、读取日志、带来什么结果和失败成本。",
+      "human_check": "查主要平台官方文档、爬虫日志、规范版本和真实采用。",
+      "sources": [
+        {
+          "url": "https://geojacker.com/llms-txt",
+          "author": "GeoJacker / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49351232",
+          "source_type": "标准分析文章 + 讨论",
+          "captured_at": "2026-08-19T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 6 points · 2 comments（8月19日08:30采集）；采用网站数、平台确认未公开"
+          },
+          "engagement_label": "Hacker News 6 points · 2 comments（8月19日08:30采集）；采用网站数、平台确认未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 33,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "actionability": 90,
+        "evidence_confidence": 86,
+        "final": 68
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "网站放了llms.txt，主流AI平台可能根本没用",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：llms.txt——一个没有主要AI平台确认使用的提议标准。",
+      "discussion_focus": [
+        "评论质疑模型为何不能直接读主页。",
+        "有人用AI;DR讽刺新增文件可能制造更多内容。"
+      ],
+      "comment_samples": [
+        "评论者把问题比喻成先让自己受伤，再发明防弹鞋。",
+        "另一位只回复AI;DR。"
+      ],
+      "reuse_ideas": [
+        "新标准先核谁实现、读取日志、带来什么结果和失败成本。",
+        "新标准四项采用证据",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "新标准四项采用证据",
+      "learning_outcome": "会查实现方、日志、结果和成本。"
+    },
+    {
+      "id": "2026081917",
+      "title": "每月1美元跑Agent，先问满负载和数据搬家",
+      "original_title": "Show HN: Maritime, a platform for running AI agents for $1 a month",
+      "summary": "Maritime宣称每月1美元运行Agent。唯一实质评论追问持续满CPU/RAM如何避免亏损，以及备份、恢复和平台退出时数据导出。",
+      "category": "接单变现",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "价格吸睛但证据小、可持续性未知，留候选。",
+      "angle": "低价托管核CPU、内存、时长、存储、出口和退出。",
+      "human_check": "核价格页、资源限制、公平使用、备份、恢复、出口费和数据导出。",
+      "sources": [
+        {
+          "url": "https://maritime.sh",
+          "author": "Maritime / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49354052",
+          "source_type": "Agent托管产品 + 讨论",
+          "captured_at": "2026-08-19T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 6 points · 1 comment（8月19日08:30采集）；用户数、持续成本未公开"
+          },
+          "engagement_label": "Hacker News 6 points · 1 comment（8月19日08:30采集）；用户数、持续成本未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 32,
+        "domestic_scarcity": 55,
+        "account_fit": 94,
+        "actionability": 94,
+        "evidence_confidence": 68,
+        "final": 66
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "每月1美元跑Agent，先问满负载和数据搬家",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：Maritime——每月1美元运行AI Agent的平台。价格需核资源上限、使用条件和附加费用。",
+      "discussion_focus": [
+        "评论质疑用户24小时跑满资源时商业模式是否可持续。",
+        "备份、恢复和服务关闭后的数据导出被视为关键。"
+      ],
+      "comment_samples": [
+        "评论者认为价格有吸引力，但追问满负载用户、备份和SSD数据搬家。"
+      ],
+      "reuse_ideas": [
+        "低价托管核CPU、内存、时长、存储、出口和退出。",
+        "低价Agent托管六问",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "低价Agent托管六问",
+      "learning_outcome": "会核资源、时长、存储、出口和退出。"
+    },
+    {
+      "id": "2026081918",
+      "title": "Agent交付结果时，最好附一份不能偷偷改的证据记录",
+      "original_title": "Show HN: Sealed evidence record of an AI agent run – broken twice, credited",
+      "summary": "项目尝试为Agent运行生成密封证据记录，并披露曾被两次攻破及归功发现者。当天无评论；威胁模型、加密实现和独立审计需核。",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "透明披露失败值得参考，但安全证据不足，留候选。",
+      "angle": "Agent审计记录至少含输入、工具、输出、时间和不可篡改摘要。",
+      "human_check": "核攻击细节、修复、密码学设计、第三方审计和许可证。",
+      "sources": [
+        {
+          "url": "https://github.com/cjchanh/aaap-challenge",
+          "author": "AAAP Challenge / GitHub / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49350964",
+          "source_type": "Agent证据实验",
+          "captured_at": "2026-08-19T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 5 points · 0 comments（8月19日08:30采集）；GitHub用户数、独立验证未公开"
+          },
+          "engagement_label": "Hacker News 5 points · 0 comments（8月19日08:30采集）；GitHub用户数、独立验证未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 30,
+        "domestic_scarcity": 55,
+        "account_fit": 98,
+        "actionability": 92,
+        "evidence_confidence": 66,
+        "final": 66
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Agent交付结果时，最好附一份不能偷偷改的证据记录",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：AI Agent运行的密封证据记录——两次被攻破，并向发现者致谢。",
+      "discussion_focus": [
+        "无可验证评论样本。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "Agent审计记录至少含输入、工具、输出、时间和不可篡改摘要。",
+        "Agent证据记录五字段",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "Agent证据记录五字段",
+      "learning_outcome": "会保存输入、工具、输出、时间和摘要。"
+    },
+    {
+      "id": "2026081919",
+      "title": "本地Codex替代品为什么还要订阅？评论区问到了重点",
+      "original_title": "Show HN: ChatOSS – A Codex alternative for Open Source AI built on Ollama",
+      "summary": "ChatOSS定位为基于Ollama的开源AI Codex替代品。评论质疑本地桌面应用为何需要订阅，并认为可创建本地AI应用可能才是更强卖点。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "产品定位问题有启发，但使用数据和商业模式不清，留候选。",
+      "angle": "本地AI产品付费必须说清云服务、同步、更新和支持分别买什么。",
+      "human_check": "核开源许可证、订阅内容、离线能力、数据外发、模型和退款。",
+      "sources": [
+        {
+          "url": "https://chatoss.ai",
+          "author": "ChatOSS / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49352394",
+          "source_type": "本地AI产品 + 讨论",
+          "captured_at": "2026-08-19T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 5 points · 5 comments（8月19日08:30采集）；用户数、订阅转化未公开"
+          },
+          "engagement_label": "Hacker News 5 points · 5 comments（8月19日08:30采集）；用户数、订阅转化未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 30,
+        "domestic_scarcity": 55,
+        "account_fit": 94,
+        "actionability": 83,
+        "evidence_confidence": 64,
+        "final": 64
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "本地Codex替代品为什么还要订阅？评论区问到了重点",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：ChatOSS——基于Ollama、面向开源AI的Codex替代品。",
+      "discussion_focus": [
+        "评论者不理解本地应用为什么需要订阅。",
+        "有人认为创建本地AI应用的能力应该成为主卖点。",
+        "市场定位仍不清楚。"
+      ],
+      "comment_samples": [
+        "评论者问：既然是本地桌面应用，订阅费具体买什么。",
+        "他认为创建AI应用的能力更值得放在首页。"
+      ],
+      "reuse_ideas": [
+        "本地AI产品付费必须说清云服务、同步、更新和支持分别买什么。",
+        "本地AI订阅价值四栏",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "本地AI订阅价值四栏",
+      "learning_outcome": "会分云服务、同步、更新和支持。"
+    },
+    {
+      "id": "2026081920",
+      "title": "AI生成3D模型越来越多，为什么卖不动",
+      "original_title": "3D Model Markets Are Being Flooded with AI Sellers, but No One's Buying",
+      "summary": "Kotaku报道称3D模型市场被AI卖家大量涌入，但购买需求不足。公开评论极少，市场规模和销量数据需核；可能的问题包括质量、拓扑、授权、信任和同质化。",
+      "category": "接单变现",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "变现方向有吸引力但证据不足，留候选。",
+      "angle": "卖3D资产要展示拓扑、绑定、格式、授权和真实项目截图。",
+      "human_check": "核平台数据、样本、版权、训练来源、退款和真实销量；不要写‘没人买’为绝对事实。",
+      "sources": [
+        {
+          "url": "https://kotaku.com/3d-model-markets-are-being-flooded-with-ai-sellers-but-no-ones-buying-2000724790",
+          "author": "Kotaku / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49349802",
+          "source_type": "媒体报道 + 创作者市场讨论",
+          "captured_at": "2026-08-19T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 4 points · 1 comment（8月19日08:30采集）；市场销量、卖家数量需核"
+          },
+          "engagement_label": "Hacker News 4 points · 1 comment（8月19日08:30采集）；市场销量、卖家数量需核"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 29,
+        "domestic_scarcity": 55,
+        "account_fit": 93,
+        "actionability": 76,
+        "evidence_confidence": 62,
+        "final": 62
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI生成3D模型越来越多，为什么卖不动",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：3D模型市场正被AI卖家淹没，但没人购买。标题是概括性表达，不代表零成交。",
+      "discussion_focus": [
+        "唯一评论讨论数字资产托管和商业激励，未直接验证销量。",
+        "没有足够评论样本形成市场共识。"
+      ],
+      "comment_samples": [
+        "唯一评论谈到若无法售卖，托管平台缺少商业激励；未提供销量证据。"
+      ],
+      "reuse_ideas": [
+        "卖3D资产要展示拓扑、绑定、格式、授权和真实项目截图。",
+        "3D资产成交五项证明",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "3D资产成交五项证明",
+      "learning_outcome": "会展示拓扑、绑定、格式、授权和案例。"
+    }
+  ],
+  "drafts": [
+    {
+      "content_id": "5026081701",
+      "hotspot_id": "2026081901",
+      "platform": "小红书",
+      "title": "数据中心会让周边更热吗？这次有人做了现场测量",
+      "body": "数据中心废热是否会让周边社区更热，这次有论文做了现场测量。HN讨论很高，但发之前必须核地点、对照、季节、散热方式和测量距离，不能把一个地区的结果写成所有数据中心的统一结论。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "数据中心会让附近更热吗？看研究先核五项：地点、基线、季节、散热方式、测量距离。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081702",
+      "hotspot_id": "2026081902",
+      "platform": "小红书",
+      "title": "Claude Code临时额度要到期了：先把重度任务的真实消耗记下来",
+      "body": "如果你最近觉得Claude Code额度特别耐用，先别把它当成永久体验。Anthropic有一项5月至8月的每周额度促销，HN采集时255分、223条评论。很多人也是看到讨论才想起这件事。\n\n活动结束前，我建议连续记一周：做了什么任务、用了哪个模型、跑了多久、失败重试几次、最后用了多少额度。\n\n这样恢复正常限额后，你会知道哪些任务值得继续用高配模型，哪些可以换轻量模型，哪些干脆先本地完成。\n\n评论区有人把近期拥堵和大家赶在到期前集中使用联系起来，但这只是推测，不能当官方结论。具体结束日期和适用套餐，发布前以Anthropic帮助页为准。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "Claude Code最近额度很宽松，可能是5月至8月的临时促销，不是永久套餐。活动结束前连续记一周：任务、模型、耗时、重试、额度。恢复正常限额后，再决定哪些任务留高配、哪些降级。拥堵是否由集中使用造成没有官方证据。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081703",
+      "hotspot_id": "2026081903",
+      "platform": "小红书",
+      "title": "一个很小的编码Agent火了：先别装，比较这5件事",
+      "body": "一个叫fx的轻量编码Agent今天冲到HN前排，71分、48条评论。卖点很简单：小、原生、开放。\n\n但“轻量”不能只看启动画面。我会拿它和现有工具做同一张表：冷启动多久、空闲内存多少、默认能碰哪些文件和命令、扩展怎么装、项目有没有清楚的维护计划。\n\n评论区有人想拿它和Pi比，也有人直接担心：这会不会又是一个做完演示就放着的实验项目。\n\n第一次测试只给一个临时仓库和最小权限，完成一项小修复，再看日志、残留文件和卸载是否干净。轻量不是功能少，而是你能清楚知道它带来了什么。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "轻量编码Agent fx今天很火。别只看启动快，比较五件事：冷启动、内存、权限、扩展、维护计划。第一次只给临时仓库和最小权限，做一个小修复，再看日志和卸载是否干净。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081704",
+      "hotspot_id": "2026081904",
+      "platform": "小红书",
+      "title": "GLM‑5.3跑分不错，但评论最关心的是“值不值得切换”",
+      "body": "GLM‑5.3跑分不错，但评论区真正纠结的是：已有Claude Code订阅，还值得换吗？模型选择不只算API价，还要加Token消耗、提示词迁移、工具兼容和人工适应。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "看模型别只看分数。切换成本至少包括API价、Token、提示词迁移、工具兼容和人工适应。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081705",
+      "hotspot_id": "2026081905",
+      "platform": "小红书",
+      "title": "Amazon订单邮件越来越没信息，可能不是为了省字",
+      "body": "Amazon订单邮件为什么越来越像一句“你买了东西”，却不告诉你买了什么？The Verge把它和邮箱数据、第三方服务、AI Agent联系起来，HN有62分、29条评论。\n\n但评论区有人真的翻了旧邮件：2019年就已经不显示商品，更早几年反而会显示。所以不能简单写成“Amazon为了防AI刚刚删掉信息”。\n\n对普通用户更实用的是另一件事：如果你让AI读邮箱查订单，别直接开放整个收件箱。单独建订单标签，只给只读权限，设置最短保留期，并确保随时能撤销。\n\n邮箱里不只有订单，还有验证码、合同、客户和私人对话。省下几次搜索，不值得换来无限读取。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "Amazon订单邮件越来越没信息，但变化早于现在的AI热潮，原因不能只怪AI。真正要注意的是邮箱Agent权限：只开放订单标签、默认只读、设最短保留期、随时可撤销。别为了查快递，把整个收件箱交出去。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081706",
+      "hotspot_id": "2026081906",
+      "platform": "小红书",
+      "title": "GPU机器暂停后不收费？先问清“磁盘还在不在”",
+      "body": "租GPU最容易被“每小时多少钱”带着走。machine0这次的卖点是：机器可以暂停，环境还在，需要时再继续。HN有59分、36条评论。\n\n评论区问得很实在：暂停期间真的不收计算费吗？磁盘按什么价格保留？平台出问题怎么恢复？以后想换服务，数据能不能完整搬走？\n\n所以我会把费用拆成六列：运行计算、暂停状态、磁盘存储、快照备份、网络出口、迁移成本。\n\n做客户项目时，再加一条：服务商停止运营时，我多久能恢复环境。小时价便宜，只要一次下载和迁移很贵，总账就可能翻倍。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "租GPU别只看小时价。把费用拆成六列：运行、暂停、存储、快照、网络出口、迁移。machine0主打暂停后保留环境，但磁盘、备份和搬家成本仍要核。便宜的计算费，不一定等于便宜的总账。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081707",
+      "hotspot_id": "2026081907",
+      "platform": "小红书",
+      "title": "Electron应用存密钥，系统钥匙串也要分“谁能读”",
+      "body": "密钥放进系统钥匙串不代表所有本机进程都不能读。Electron应用还要看访问组和代码签名边界，尤其当本机跑着很多Agent时。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "桌面应用存密钥要查三层：存在哪里、哪些访问组能读、是否限制签名应用。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081708",
+      "hotspot_id": "2026081908",
+      "platform": "小红书",
+      "title": "新闻数据交给AI公司，编辑部为什么反对",
+      "body": "媒体把内容数据交给AI合作方时，至少应公开数据范围、用途、编辑控制和退出机制。这条涉及Palantir与USA Today，争议还牵涉政治与劳动关系，发布前必须补原始协议和员工声明。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "媒体AI合作先看数据范围、用途、编辑控制、退出机制四项。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081709",
+      "hotspot_id": "2026081909",
+      "platform": "小红书",
+      "title": "OpenAI放慢训练？一篇报道不足以判断技术见顶",
+      "body": "OpenAI放慢训练不等于AI技术见顶。至少要区分算力、数据、研究、安全和产品节奏五种原因。当前公开评论很少，先等官方细节。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "看到训练放慢，先分算力、数据、研究、安全、产品节奏五种原因，别直接写技术见顶。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081710",
+      "hotspot_id": "2026081910",
+      "platform": "小红书",
+      "title": "买二手GPU跑AI，先做健康检查再跑模型",
+      "body": "买二手GPU跑AI，别只看能点亮。至少测显存错误、温度、功耗、持续负载和一项真实模型任务。PantheonGPU刚发布，检测准确率未公开。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "二手GPU验机看五项：显存、温度、功耗、持续负载、真实模型任务。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081711",
+      "hotspot_id": "2026081911",
+      "platform": "小红书",
+      "title": "Devin里的GPT‑5.6 Sol打三折，不是全网统一价",
+      "body": "Devin里的GPT‑5.6 Sol优惠70%，主语是Devin活动，不是全网统一降价。记录平台、期限、套餐、额度和恢复原价，避免把促销当长期成本。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "模型打折先看平台、期限、套餐、额度、恢复原价五项。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081712",
+      "hotspot_id": "2026081912",
+      "platform": "小红书",
+      "title": "400多家企业客户，客服却只靠几位工程师：他们没有让AI直接回复",
+      "body": "Windmill说自己有400多家企业客户，但客服支持只靠几位工程师。这个数字很吸睛，不过真正值得抄的不是“少招客服”，而是他们把AI放在哪。\n\n一个稳妥流程可以拆四段：AI先判断问题类型；从文档和历史工单找证据；起草回复并标出不确定项；涉及退款、安全、合同和客户情绪时交给人。\n\nAI不直接拥有最终发送权，人也不用从空白页开始。\n\n做客服自动化时，至少记录解决率、人工改动比例、升级率和客户满意度。原文没有完整公开这些数据，所以“400家客户、几位工程师”不能直接等于效率提升。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "400多家企业客户，只靠几位工程师做支持。可抄的不是少招人，而是四段分工：AI分类、找证据、起草并标不确定，高风险交给人。再记录解决率、人工改动、升级率和满意度，别只看团队人数。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081713",
+      "hotspot_id": "2026081913",
+      "platform": "小红书",
+      "title": "代码Agent写得比QA测得快，先别再加一个Agent糊上去",
+      "body": "代码Agent写得越来越快，QA跟不上时，最危险的做法是再加一个Agent，然后两个一起自信。\n\nArgus想用Agent做界面QA。HN评论区问了三个关键问题：比普通Playwright贵多少；所谓“看屏幕”是不是还是依赖DOM；测试本身谁来维护。\n\n我更建议三层验收：登录、支付、保存这些核心路径用确定性E2E；Agent负责探索不同输入和边缘流程；最后人只看视觉、文案和真实操作感。\n\n每层负责不同问题，失败时也知道该查哪里。工具的用户数和缺陷检出率还没公开，先拿一个非核心流程对比成本。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "代码Agent比QA快时，别只再加一个Agent。做三层验收：核心流程用确定性E2E，Agent探索边缘场景，人检查视觉和真实体验。先拿一个非核心流程比较成本、误报和漏报，再决定是否扩大。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081714",
+      "hotspot_id": "2026081914",
+      "platform": "小红书",
+      "title": "让Agent连续干一个月、烧掉2000亿Token，真正难的不是写代码",
+      "body": "有人让AI Agent连续一个月反编译一款游戏，累计用了约2000亿Token。这个数字很夸张，但项目真正难的不是“能不能一直生成代码”，而是一个月后还能不能知道它做到哪、哪里错、下一步该换模型还是换方法。\n\n评论区一直在问：如果换Codex、5.6 Sol或Qwen会怎样？这正说明长期任务不能只记模型名，harness、上下文、测试和升级策略都在影响结果。\n\n我会在每个里程碑留四样：可运行产物、已知失败、明确下一步、什么情况必须升级给更强模型或人工。\n\n没有这四样，Token越多，历史债越大。具体费用、人工工时和完成比例还要核原文，也要注意反编译项目的版权边界。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "一个Agent项目跑了一个月，用掉约2000亿Token。长期任务最重要的不是持续生成，而是每个里程碑留四样：可运行产物、已知失败、明确下一步、升级条件。没有交接证据，Token越多，历史债越大。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081715",
+      "hotspot_id": "2026081915",
+      "platform": "小红书",
+      "title": "Google Meet要默认开AI纪要了：会前先看这4个开关",
+      "body": "Google Workspace准备为部分客户默认打开Meet的AI会议纪要。不是所有账号马上统一开启，但团队最好别等第一次敏感会议结束才发现。\n\n会前检查四件事：是谁开的；纪要会发给谁；保存多久；哪些会议必须关闭。\n\n客户合同、绩效沟通、法务、医疗和未公开产品讨论，最好明确主持人负责关闭或征得同意。会后再抽两处和录音核对，AI纪要能省时间，也会很流畅地漏掉限定条件。\n\n具体适用版本、推出时间和管理员开关，发布前按Google官方公告核。当天HN没有评论，不能推断用户接受度。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "Google Meet将为部分客户默认开启AI纪要。会前先问四件事：谁开启、谁能看、保存多久、哪些会议必须关闭。敏感会议先征得同意，会后抽两处和录音核对。具体账号范围以Google官方公告为准。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081716",
+      "hotspot_id": "2026081916",
+      "platform": "小红书",
+      "title": "网站放了llms.txt，主流AI平台可能根本没用",
+      "body": "llms.txt目前更像提议，不是主流AI平台确认采用的标准。部署前先查谁实现、日志里谁读取、带来什么结果、维护成本多少。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "新标准别只看名字。查实现方、读取日志、实际结果和维护成本四项。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081717",
+      "hotspot_id": "2026081917",
+      "platform": "小红书",
+      "title": "每月1美元跑Agent，先问满负载和数据搬家",
+      "body": "每月1美元跑Agent很诱人，但先问CPU、内存、最长运行、存储、网络出口和平台退出。最低月费不是完整成本。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "低价Agent托管先查资源、时长、存储、出口和退出五项。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081718",
+      "hotspot_id": "2026081918",
+      "platform": "小红书",
+      "title": "Agent交付结果时，最好附一份不能偷偷改的证据记录",
+      "body": "Agent交付不能只给最终答案。证据记录至少保存输入、工具调用、输出、时间和不可篡改摘要。这个项目公开承认被攻破两次，透明值得肯定，但安全性仍需独立审计。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "Agent证据记录留五项：输入、工具、输出、时间、不可篡改摘要。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081719",
+      "hotspot_id": "2026081919",
+      "platform": "小红书",
+      "title": "本地Codex替代品为什么还要订阅？评论区问到了重点",
+      "body": "本地AI产品收订阅不是不行，但要说清用户买的是云服务、跨端同步、持续更新还是人工支持。ChatOSS评论区正是在问这个。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "本地AI产品收订阅，先说清云服务、同步、更新、支持分别占什么。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026081720",
+      "hotspot_id": "2026081920",
+      "platform": "小红书",
+      "title": "AI生成3D模型越来越多，为什么卖不动",
+      "body": "AI能批量生成3D模型，不等于有人愿意买。真正成交前，买家会看拓扑、绑定、格式、授权和真实项目截图。报道标题很绝对，销量数据还要核。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "卖3D资产要证明五件事：拓扑、绑定、格式、授权、真实项目案例。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    }
+  ],
+  "gaps": [
+    "生产工作台预读取失败：本机缺少tide-ai-content-operator凭据，无法确认8月18日之后新增的reviewNote。",
+    "X、Instagram、TikTok、LinkedIn未取得可同时复核原文、发布时间和公开互动的完整新增样本；本批不伪造社媒数据。",
+    "Reddit与国内平台未取得稳定合规搜索链；国内稀缺度统一封顶55并创建人工搜索任务。",
+    "部分独立产品只有极少公开讨论；已降低热度和证据置信度，没有拿内部评分冒充流量。"
+  ],
+  "generated_at": "2026-08-19T08:30:00+08:00"
+}

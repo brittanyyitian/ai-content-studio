@@ -1,0 +1,556 @@
+[
+  {
+    "id": "49428882",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49428882",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49428882",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:05:53.116Z",
+        "contentHash": "3fe4cb6a4fa99bad02974a8ebf72cbe52fd5e8998c33ab309f098d330e6d2dee",
+        "rawSnapshotRef": "evidence/2026-08-26/49428882-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://www.laude.org/updates/headlong-a-microharness-for-persistent-agents",
+        "finalUrl": "https://www.laude.org/updates/headlong-a-microharness-for-persistent-agents",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:05:54.600Z",
+        "contentHash": "f0cb758a13f268635e213063d82792de3a2fa14f650e784dc19f1a442d5968e5",
+        "rawSnapshotRef": "evidence/2026-08-26/49428882-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49433292",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49433292",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49433292",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:05:53.092Z",
+        "contentHash": "4e8cf4551ad2e27c60fb515fc5f116d1aa1be480a41fdef0131c060c80f7df66",
+        "rawSnapshotRef": "evidence/2026-08-26/49433292-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
+        "finalUrl": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:05:56.140Z",
+        "contentHash": "282bf596e262050abb9677b1ed1880c24ee1ccdb080f91e704f6c488790f0a22",
+        "rawSnapshotRef": "evidence/2026-08-26/49433292-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49435728",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49435728",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49435728",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:05:53.115Z",
+        "contentHash": "7d7a97e1d77b710e8d7f551be7f433273b74dad5ce088fc45295488c2de45fd5",
+        "rawSnapshotRef": "evidence/2026-08-26/49435728-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://blog.coredump.cx/p/how-much-of-hn-is-ai",
+        "finalUrl": "https://blog.coredump.cx/p/how-much-of-hn-is-ai",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:05:56.923Z",
+        "contentHash": "a1a65e7c62f9fac8cbe4ff36a32fd161dc6b5bec7a94e917bbecf1d0ea4d0888",
+        "rawSnapshotRef": "evidence/2026-08-26/49435728-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49429095",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49429095",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49429095",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:05:53.117Z",
+        "contentHash": "ad172b8b547ac6ad6caecf845ca08774131b90650845bbfabde5df8dc2f1b2f5",
+        "rawSnapshotRef": "evidence/2026-08-26/49429095-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://github.com/dragthelake/ambient-context",
+        "capturedAt": "2026-08-26T01:05:54.348Z",
+        "error": "The operation was aborted due to timeout"
+      }
+    ]
+  },
+  {
+    "id": "49433095",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49433095",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49433095",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:06:14.354Z",
+        "contentHash": "80b0d7ae9acb5f8f4ae0836e92a71122a1744ecdb31d0f5262c16fd562841845",
+        "rawSnapshotRef": "evidence/2026-08-26/49433095-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://readplusone.com/",
+        "finalUrl": "https://readplusone.com/",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:06:15.445Z",
+        "contentHash": "2f16085f5c3b24044bb1ae663e1a7c2276b53c3b0a986ce9ff2435edca924c48",
+        "rawSnapshotRef": "evidence/2026-08-26/49433095-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49438492",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49438492",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49438492",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:06:14.351Z",
+        "contentHash": "c37a6d18de6ec5a947ad8cfa023f374e9fbb5ac744c63b6d3e70af2667af9e3a",
+        "rawSnapshotRef": "evidence/2026-08-26/49438492-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://pgbot.dev/",
+        "finalUrl": "https://pgbot.dev/",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:06:15.887Z",
+        "contentHash": "d73fbd0908767124e5b72dbd585f264d76188151eec250058dc0f6c6624c8358",
+        "rawSnapshotRef": "evidence/2026-08-26/49438492-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49439535",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49439535",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49439535",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:06:14.352Z",
+        "contentHash": "b31e00d6cf672e001e20407be1937c51d3a787f161b5756c2dc1d73b884bd376",
+        "rawSnapshotRef": "evidence/2026-08-26/49439535-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://www.perplexity.ai/hub/blog/introducing-portable-computer-for-local-first-ai",
+        "capturedAt": "2026-08-26T01:06:15.357Z",
+        "error": "fetch failed"
+      }
+    ]
+  },
+  {
+    "id": "49431866",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49431866",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49431866",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:06:14.353Z",
+        "contentHash": "9e67631ac0420c15d06708e471f57a6cc3ce39f547ab245fc4a5572035adad31",
+        "rawSnapshotRef": "evidence/2026-08-26/49431866-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://claude.ai/directory/coffeetable",
+        "capturedAt": "2026-08-26T01:06:15.426Z",
+        "error": "fetch failed"
+      }
+    ]
+  },
+  {
+    "id": "49432642",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49432642",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49432642",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:06:27.114Z",
+        "contentHash": "e7f21386b0fc67f0f9a99723091a91d8818a518e03e0f6ce254f393d1f7dc272",
+        "rawSnapshotRef": "evidence/2026-08-26/49432642-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://www.vidscio.com",
+        "finalUrl": "https://www.vidscio.com/",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:06:28.041Z",
+        "contentHash": "663840772815b1f7fb72ae0867d95f9dba35cabb0100503aa320450ce5570631",
+        "rawSnapshotRef": "evidence/2026-08-26/49432642-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49430567",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49430567",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49430567",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:06:27.116Z",
+        "contentHash": "6e2f772066a25d272b7e63972d10e4660ddd62a1a37914bd2fab2727d633a1b8",
+        "rawSnapshotRef": "evidence/2026-08-26/49430567-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
+        "finalUrl": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:06:28.279Z",
+        "contentHash": "93e5ef3f706913acebab7b10757229953184c7069438135cb561812f291e7712",
+        "rawSnapshotRef": "evidence/2026-08-26/49430567-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49438466",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49438466",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49438466",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:06:27.116Z",
+        "contentHash": "4c2ec1dffc557810f6ed193e312b9958477f80371e21ad32715e651ac13464d4",
+        "rawSnapshotRef": "evidence/2026-08-26/49438466-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://aiandeducation.mit.edu/",
+        "finalUrl": "https://aiandeducation.mit.edu/",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:06:28.048Z",
+        "contentHash": "6edf22e4d22cfc98f94e91b1aefa69576c591957d6e0c1939f08d7720e67c415",
+        "rawSnapshotRef": "evidence/2026-08-26/49438466-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49439218",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49439218",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49439218",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:06:27.115Z",
+        "contentHash": "de8cf58e0ddb8d26bba3eab74b76ecfa37779f1963b0688c8d02655109fc9d50",
+        "rawSnapshotRef": "evidence/2026-08-26/49439218-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://github.com/receptron/mulmoterminal",
+        "capturedAt": "2026-08-26T01:06:28.678Z",
+        "error": "fetch failed"
+      }
+    ]
+  },
+  {
+    "id": "49436400",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49436400",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49436400",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:06:39.114Z",
+        "contentHash": "fbdbe65ad3ee6313937720f8f5023f21f67b4a66f89ea28b53973c8aec343c4a",
+        "rawSnapshotRef": "evidence/2026-08-26/49436400-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://cua.ai/docs/how-to-guides/sandbox/minecraft",
+        "finalUrl": "https://cua.ai/docs/how-to-guides/sandbox/minecraft",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:06:40.342Z",
+        "contentHash": "43206f19170cf769671a1b873c1191c39af42badeb08494caa050f4b64ff91d3",
+        "rawSnapshotRef": "evidence/2026-08-26/49436400-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49435555",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49435555",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49435555",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:06:39.113Z",
+        "contentHash": "3ab11e5310bfae4d00bd32216c2d4d891d2eebb91b5a03f99ba20a79789356d9",
+        "rawSnapshotRef": "evidence/2026-08-26/49435555-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://keenable.ai/",
+        "finalUrl": "https://keenable.ai/",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:06:40.496Z",
+        "contentHash": "3fd365288a8d31ab00e4647847efd3736be2c3888a90c74414f3a5d36a8d6c95",
+        "rawSnapshotRef": "evidence/2026-08-26/49435555-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49434996",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49434996",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49434996",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:06:39.113Z",
+        "contentHash": "dffbc758d921d3c3ca3507d0be1c6ae8f4e0557f6e3450de7b8591e925f84760",
+        "rawSnapshotRef": "evidence/2026-08-26/49434996-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://lanes.sh/use-cases/scoped-account-access-for-agents",
+        "finalUrl": "https://lanes.sh/use-cases/scoped-account-access-for-agents",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:06:40.342Z",
+        "contentHash": "12f7d5d776b7de8741e70dbbd670b1ebe4700317f4c2ce6604a7ab4d63c4ad77",
+        "rawSnapshotRef": "evidence/2026-08-26/49434996-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49427825",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49427825",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49427825",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:06:39.113Z",
+        "contentHash": "207b69f7c83e7fdea2d7f7c9404a72a0e6556a3a1596f8df7f1859029f5750b1",
+        "rawSnapshotRef": "evidence/2026-08-26/49427825-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://plicara.ai/research/agent-skill-languages/",
+        "capturedAt": "2026-08-26T01:06:40.226Z",
+        "error": "The operation was aborted due to timeout"
+      }
+    ]
+  },
+  {
+    "id": "49435641",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49435641",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49435641",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:07:00.228Z",
+        "contentHash": "35bacfac82f514363f1bcfa1c006115925771f3ea79f2d2603057cfe0dd408af",
+        "rawSnapshotRef": "evidence/2026-08-26/49435641-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://www.ctgt.ai/research/behaviorally-fingerprinting-ox-alphas-provenance",
+        "finalUrl": "https://www.ctgt.ai/research/behaviorally-fingerprinting-ox-alphas-provenance",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:07:01.392Z",
+        "contentHash": "76dd13b913e9ea87aaf832d00fa07c8a40cad3bf8a212411b611ebe804dfc4b4",
+        "rawSnapshotRef": "evidence/2026-08-26/49435641-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49433759",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49433759",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49433759",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:07:00.229Z",
+        "contentHash": "8e07d59562c79b6a7b5bca44115860b8c041a3e25bef6846c48c57016a0d5de2",
+        "rawSnapshotRef": "evidence/2026-08-26/49433759-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+        "finalUrl": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+        "status": 403,
+        "capturedAt": "2026-08-26T01:07:01.832Z",
+        "contentHash": "21466de7350041c37f90cdb5822c53270607b11b5f480bc9bec16e4e636ce191",
+        "rawSnapshotRef": "evidence/2026-08-26/49433759-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49441375",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49441375",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49441375",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:07:00.229Z",
+        "contentHash": "5d43e9066b4a606e3bc55e836562c6fcda6ee528537ec8f905b6dc63574310e9",
+        "rawSnapshotRef": "evidence/2026-08-26/49441375-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://github.com/swimmingbrain/texbrain",
+        "capturedAt": "2026-08-26T01:07:01.831Z",
+        "error": "fetch failed"
+      }
+    ]
+  },
+  {
+    "id": "49435675",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49435675",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49435675",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:07:00.229Z",
+        "contentHash": "ab44fa4c2da7b9ab369e98cbd810b6025f05d31f57c19047afb80c0155bf7781",
+        "rawSnapshotRef": "evidence/2026-08-26/49435675-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://github.com/ThinkOffApp/CarWatch",
+        "capturedAt": "2026-08-26T01:07:01.832Z",
+        "error": "fetch failed"
+      }
+    ]
+  },
+  {
+    "id": "49436034",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49436034",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49436034",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:10:42.465Z",
+        "contentHash": "1bd0202d86f23897a437fecd28c8763b495185ef316686b8edf8271b0169f6d1",
+        "rawSnapshotRef": "evidence/2026-08-26/49436034-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://github.com/cathrynlavery/diagram-design",
+        "finalUrl": "https://github.com/cathrynlavery/diagram-design",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:10:43.603Z",
+        "contentHash": "c5a2fc91fba94046a338e8a2c176ce4eb115080633315f5bb546dac652491fbf",
+        "rawSnapshotRef": "evidence/2026-08-26/49436034-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49436219",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49436219",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49436219",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:10:42.429Z",
+        "contentHash": "f0d2d043c7eb7e2b42f3dedb635e8e66ad171a5877f02cc8824319843a814fa9",
+        "rawSnapshotRef": "evidence/2026-08-26/49436219-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://agentgrid.sh/",
+        "finalUrl": "https://agentgrid.sh/",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:10:43.495Z",
+        "contentHash": "2d914264ffa932092290b3133b183c374039b48e05718e63c9658e519813fe68",
+        "rawSnapshotRef": "evidence/2026-08-26/49436219-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49441363",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49441363",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49441363",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:10:42.465Z",
+        "contentHash": "37e1296d54bcd0f7d810969a3e398e5289a56050638e0399bcebb76b52352171",
+        "rawSnapshotRef": "evidence/2026-08-26/49441363-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://www.loopwerk.io/articles/2026/how-i-use-claude-code/",
+        "finalUrl": "https://www.loopwerk.io/articles/2026/how-i-use-claude-code/",
+        "status": 403,
+        "capturedAt": "2026-08-26T01:10:43.603Z",
+        "contentHash": "af0b1cb9015639812c817514f237015b4491f91c54a330f9db44316ab4ce7696",
+        "rawSnapshotRef": "evidence/2026-08-26/49441363-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49438805",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49438805",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49438805",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:10:42.464Z",
+        "contentHash": "93bf6f1c6e2dd123d9399677605870eab663b4baf907103142883483f621e45e",
+        "rawSnapshotRef": "evidence/2026-08-26/49438805-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://segar.me/blog/posts/anki_cards_claude_code.html",
+        "finalUrl": "https://segar.me/blog/posts/anki_cards_claude_code.html",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:10:45.419Z",
+        "contentHash": "5fbd5563338ce46c68d212ee18bf73422bee8f925cce9b3dfbf6493c8c475f5b",
+        "rawSnapshotRef": "evidence/2026-08-26/49438805-primary.html"
+      }
+    ]
+  },
+  {
+    "id": "49432729",
+    "sources": [
+      {
+        "type": "discussion",
+        "url": "https://hn.algolia.com/api/v1/items/49432729",
+        "finalUrl": "https://hn.algolia.com/api/v1/items/49432729",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:10:46.612Z",
+        "contentHash": "208dae5074c5d1de6f8506093eba1d69d8831685680a7ecf828f29dad0db2724",
+        "rawSnapshotRef": "evidence/2026-08-26/49432729-discussion.json"
+      },
+      {
+        "type": "primary",
+        "url": "https://lukasvonkunhardt.com/obsidian-claude-code-setup/",
+        "finalUrl": "https://lukasvonkunhardt.com/obsidian-claude-code-setup/",
+        "status": 200,
+        "capturedAt": "2026-08-26T01:10:47.448Z",
+        "contentHash": "a9c8c2102c957fa1d05a553b5db762676a0122feb5b9c26e38da89a01156ef12",
+        "rawSnapshotRef": "evidence/2026-08-26/49432729-primary.html"
+      }
+    ]
+  }
+]

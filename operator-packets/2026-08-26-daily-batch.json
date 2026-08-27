@@ -1,0 +1,2805 @@
+{
+  "schemaVersion": 2,
+  "mode": "merge",
+  "detail": "8月26日增量初稿：20条候选、8条推荐。保留线上旧内容与人工审核；没有自动审核、排期或发布。线上reviewNote尚未读取。",
+  "state": {
+    "schemaVersion": 2,
+    "hotspots": [
+      {
+        "id": 2026082601,
+        "rank": 1,
+        "source": "Apple",
+        "sourceType": "一手资料与社区讨论",
+        "sourceUrl": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49433292",
+        "originalTitle": "Apple introduces M6 and M5 Ultra",
+        "title": "新 Mac 两个内存上限，差得有点大",
+        "summary": "Apple 发布 M6 与 M5 Ultra：M6 支持最高32GB统一内存，M5 Ultra最高512GB；这些是不同芯片的上限，不是每台机器标配。",
+        "heat": 87,
+        "scarcity": 55,
+        "fit": 85,
+        "finalScore": 78,
+        "scoreDisclaimer": "内部选题排序分，非公开流量；国内稀缺度未测定。",
+        "reason": "本批公开讨论最强的一条；32GB与512GB是容易被混淆、又可直接核对的具体数字，适合一页短资讯。",
+        "angle": "把“AI性能升级”压缩成两行配置区别，帮已有本地模型需求的人看懂参数；不推荐普通用户为聊天工具换电脑。",
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "category": "产业观察",
+        "status": "待选题",
+        "selected": false,
+        "live": true,
+        "assignee": "待分配",
+        "sourceCapturedAt": "2026-08-26T01:04:02.523Z",
+        "sourcePublishedAt": "2026-08-25",
+        "discussionPublishedAt": "2026-08-25T13:01:22Z",
+        "age": "8月25日发布",
+        "evidenceConfidence": 94,
+        "actionability": 76,
+        "domesticCoverage": "未取得小红书/抖音平台内语义检索证据；稀缺度仅用55的保守占位上限，不代表国内覆盖率。发布前人工搜索产品名、中文场景及同义表达。",
+        "humanCheck": "核对中国大陆配置页和销售日期；不引用评论中的价格；大内存上限不代表基础款配置，也不保证某个模型速度。",
+        "evidenceId": "2026-08-26-49433292",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49433292",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49433292",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:05:53.092Z",
+            "contentHash": "4e8cf4551ad2e27c60fb515fc5f116d1aa1be480a41fdef0131c060c80f7df66",
+            "rawSnapshotRef": "evidence/2026-08-26/49433292-discussion.json"
+          },
+          {
+            "type": "primary",
+            "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
+            "finalUrl": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:05:56.140Z",
+            "contentHash": "282bf596e262050abb9677b1ed1880c24ee1ccdb080f91e704f6c488790f0a22",
+            "rawSnapshotRef": "evidence/2026-08-26/49433292-primary.html"
+          }
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 891,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 936,
+          "capturedAt": "2026-08-26T01:04:02.523Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49433292",
+          "metricKind": "Hacker News讨论积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "不等同HN积分",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 936积分 · 891条评论 · 原文浏览/点赞未取得，HN浏览量未公开",
+        "discussionFocus": [
+          "部分评论关注大内存能装下哪些本地模型；另一些追问软件支持、内存升级费用和供货时间。评论里的价格和上市日未作为本文事实。"
+        ],
+        "commentSamples": [
+          "rvz · “> M5 Ultra features a massive amount of high-bandwidth unified memory, up to 512GB, and delivers a staggering 1.2TB/s of…” · https://news.ycombinator.com/item?id=49433353（节选，评论点赞未公开）",
+          "delduca · “I know they are a phone company, but I think they should focus on local models software, not only hardware.…” · https://news.ycombinator.com/item?id=49433439（节选，评论点赞未公开）",
+          "SXX · “96GB -> 256GB upgrade costs 4000 GBP in UK or $5460. $34 for GB. In US its $4000 upgade so…” · https://news.ycombinator.com/item?id=49433514（节选，评论点赞未公开）"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49433353",
+            "author": "rvz",
+            "url": "https://news.ycombinator.com/item?id=49433353",
+            "publishedAt": "2026-08-25T13:07:03.000Z",
+            "capturedAt": "2026-08-26T01:05:53.092Z",
+            "quote": "> M5 Ultra features a massive amount of high-bandwidth unified memory, up to 512GB, and delivers a staggering 1.2TB/s of",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          },
+          {
+            "id": "49433439",
+            "author": "delduca",
+            "url": "https://news.ycombinator.com/item?id=49433439",
+            "publishedAt": "2026-08-25T13:12:20.000Z",
+            "capturedAt": "2026-08-26T01:05:53.092Z",
+            "quote": "I know they are a phone company, but I think they should focus on local models software, not only hardware.",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          },
+          {
+            "id": "49433514",
+            "author": "SXX",
+            "url": "https://news.ycombinator.com/item?id=49433514",
+            "publishedAt": "2026-08-25T13:17:09.000Z",
+            "capturedAt": "2026-08-26T01:05:53.092Z",
+            "quote": "96GB -> 256GB upgrade costs 4000 GBP in UK or $5460. $34 for GB. In US its $4000 upgade so",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          }
+        ],
+        "reuseIdeas": [
+          "把“AI性能升级”压缩成两行配置区别，帮已有本地模型需求的人看懂参数；不推荐普通用户为聊天工具换电脑。",
+          "M6与M5 Ultra内存上限、带宽对照卡"
+        ],
+        "localizedTranslation": "中文要点：M6 随新 Mac mini 推出；M5 Ultra 用于新 Mac Studio，面向更重的专业计算和本地模型。官方列出的内存带宽分别最高170GB/s和1.2TB/s。性能比较来自苹果测试，不是本次实测。此处为摘要，不是新闻稿全文翻译。",
+        "translationScope": "中文释义摘要，非完整逐字译文",
+        "analysisState": "已分析",
+        "saveObject": "M6与M5 Ultra内存上限、带宽对照卡",
+        "learningOutcome": "分清芯片最高支持、所购配置和模型实际运行需求。",
+        "recommended": true,
+        "editorialGate": {
+          "saveObject": "M6与M5 Ultra内存上限、带宽对照卡",
+          "learningOutcome": "分清芯片最高支持、所购配置和模型实际运行需求。",
+          "passed": true,
+          "blockers": [
+            "工具与图片未实测，需人工核验"
+          ]
+        }
+      },
+      {
+        "id": 2026082602,
+        "rank": 2,
+        "source": "brandonc7",
+        "sourceType": "作者项目发布",
+        "sourceUrl": "https://readplusone.com/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49433095",
+        "originalTitle": "Show HN: ReadPlusOne – Spanish stories built around the words you're learning",
+        "title": "西语生词老忘？让它换个故事再出现",
+        "summary": "ReadPlusOne 围绕用户的生词生成西语故事，并把点选的生词排进后续阅读。官网明确目前仅支持西语、建议A2及以上，需要账户。",
+        "heat": 40,
+        "scarcity": 55,
+        "fit": 94,
+        "finalScore": 70,
+        "scoreDisclaimer": "内部选题排序分，非公开流量；国内稀缺度未测定。",
+        "reason": "解决“背过却在句子里认不出”的具体困扰，读者能带走当天就能使用的练习方式。互动小，不是热门认证。",
+        "angle": "用一个西语生词给出可复制的短故事练习指令，明确提示词版需要自己保留复习记录，不冒充应用的自动复习系统。",
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "category": "AI 技巧",
+        "status": "待选题",
+        "selected": false,
+        "live": true,
+        "assignee": "待分配",
+        "sourceCapturedAt": "2026-08-26T01:04:02.523Z",
+        "sourcePublishedAt": "2026-08-25",
+        "discussionPublishedAt": "2026-08-25T12:47:20Z",
+        "age": "8月25日发布",
+        "evidenceConfidence": 86,
+        "actionability": 95,
+        "domesticCoverage": "未取得小红书/抖音平台内语义检索证据；稀缺度仅用55的保守占位上限，不代表国内覆盖率。发布前人工搜索产品名、中文场景及同义表达。",
+        "humanCheck": "实际走一遍注册与阅读；检查西语句子自然程度、免费额度及地区可用性；不把官网引用的研究说成本产品疗效或背词提速。",
+        "evidenceId": "2026-08-26-49433095",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49433095",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49433095",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:06:14.354Z",
+            "contentHash": "80b0d7ae9acb5f8f4ae0836e92a71122a1744ecdb31d0f5262c16fd562841845",
+            "rawSnapshotRef": "evidence/2026-08-26/49433095-discussion.json"
+          },
+          {
+            "type": "primary",
+            "url": "https://readplusone.com/",
+            "finalUrl": "https://readplusone.com/",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:06:15.445Z",
+            "contentHash": "2f16085f5c3b24044bb1ae663e1a7c2276b53c3b0a986ce9ff2435edca924c48",
+            "rawSnapshotRef": "evidence/2026-08-26/49433095-primary.html"
+          }
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 7,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 5,
+          "capturedAt": "2026-08-26T01:04:02.523Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49433095",
+          "metricKind": "Hacker News讨论积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "不等同HN积分",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 5积分 · 7条评论 · 原文浏览/点赞未取得，HN浏览量未公开",
+        "discussionFocus": [
+          "一位试用者喜欢故事中的重复复习，但希望能整组选词翻译；另一位觉得注册出现在测试之前，影响尝试意愿。"
+        ],
+        "commentSamples": [
+          "darraghmckay · “This is great, I just went through the first lesson. As someone trying to learn Spanish I have been putting…” · https://news.ycombinator.com/item?id=49434031（节选，评论点赞未公开）",
+          "LuminousWzrd · “Might be nice to make the quiz easier to find on the main page. It took me some scrolling and…” · https://news.ycombinator.com/item?id=49433545（节选，评论点赞未公开）"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49434031",
+            "author": "darraghmckay",
+            "url": "https://news.ycombinator.com/item?id=49434031",
+            "publishedAt": "2026-08-25T13:46:43.000Z",
+            "capturedAt": "2026-08-26T01:06:14.354Z",
+            "quote": "This is great, I just went through the first lesson. As someone trying to learn Spanish I have been putting",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          },
+          {
+            "id": "49433545",
+            "author": "LuminousWzrd",
+            "url": "https://news.ycombinator.com/item?id=49433545",
+            "publishedAt": "2026-08-25T13:19:01.000Z",
+            "capturedAt": "2026-08-26T01:06:14.354Z",
+            "quote": "Might be nice to make the quiz easier to find on the main page. It took me some scrolling and",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          }
+        ],
+        "reuseIdeas": [
+          "用一个西语生词给出可复制的短故事练习指令，明确提示词版需要自己保留复习记录，不冒充应用的自动复习系统。",
+          "西语生词短故事提示词"
+        ],
+        "localizedTranslation": "中文要点：作者因分级读物词汇难度不合适而开发这个应用。系统估计已知词汇，选择到期复习的词，再检查生成文本是否过难。作者的个人体验不是学习效果试验。原帖长文仅作摘要，不提供未授权全文译文。",
+        "translationScope": "中文释义摘要，非完整逐字译文",
+        "analysisState": "已分析",
+        "saveObject": "西语生词短故事提示词",
+        "learningOutcome": "把遗忘词放回语境，同时区分词义与固定搭配。",
+        "recommended": true,
+        "editorialGate": {
+          "saveObject": "西语生词短故事提示词",
+          "learningOutcome": "把遗忘词放回语境，同时区分词义与固定搭配。",
+          "passed": true,
+          "blockers": [
+            "工具与图片未实测，需人工核验"
+          ]
+        }
+      },
+      {
+        "id": 2026082603,
+        "rank": 3,
+        "source": "aldrin_v",
+        "sourceType": "作者项目发布",
+        "sourceUrl": "https://www.vidscio.com",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49432642",
+        "originalTitle": "Show HN: VidScio – Identify movie/series from a URL, image or description",
+        "title": "刷到片段没片名？可以这样找",
+        "summary": "VidScio 根据截图、公开视频链接或场景描述返回电影/剧集候选。官网写明测试期免费、首页识别不要求注册；社媒受限链接需要补截图。",
+        "heat": 30,
+        "scarcity": 55,
+        "fit": 95,
+        "finalScore": 68,
+        "scoreDisclaimer": "内部选题排序分，非公开流量；国内稀缺度未测定。",
+        "reason": "场景具体、门槛低，可收藏的是找片方法；仅4个HN积分，不能称海外高赞工具。",
+        "angle": "以“没有片名的短视频”切入，直接给输入线索的写法和识别失败时该补什么。",
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "category": "AI 技巧",
+        "status": "待选题",
+        "selected": false,
+        "live": true,
+        "assignee": "待分配",
+        "sourceCapturedAt": "2026-08-26T01:04:02.523Z",
+        "sourcePublishedAt": "2026-08-25",
+        "discussionPublishedAt": "2026-08-25T12:15:30Z",
+        "age": "8月25日发布",
+        "evidenceConfidence": 87,
+        "actionability": 92,
+        "domesticCoverage": "未取得小红书/抖音平台内语义检索证据；稀缺度仅用55的保守占位上限，不代表国内覆盖率。发布前人工搜索产品名、中文场景及同义表达。",
+        "humanCheck": "用有使用权的截图实测，核对免费状态；不上传私聊截图；找到片名不代表获得下载或转载影视素材的授权。",
+        "evidenceId": "2026-08-26-49432642",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49432642",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49432642",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:06:27.114Z",
+            "contentHash": "e7f21386b0fc67f0f9a99723091a91d8818a518e03e0f6ce254f393d1f7dc272",
+            "rawSnapshotRef": "evidence/2026-08-26/49432642-discussion.json"
+          },
+          {
+            "type": "primary",
+            "url": "https://www.vidscio.com",
+            "finalUrl": "https://www.vidscio.com/",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:06:28.041Z",
+            "contentHash": "663840772815b1f7fb72ae0867d95f9dba35cabb0100503aa320450ce5570631",
+            "rawSnapshotRef": "evidence/2026-08-26/49432642-primary.html"
+          }
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 0,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 4,
+          "capturedAt": "2026-08-26T01:04:02.523Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49432642",
+          "metricKind": "Hacker News讨论积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "不等同HN积分",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 4积分 · 0条评论 · 原文浏览/点赞未取得，HN浏览量未公开",
+        "discussionFocus": [
+          "采集时HN没有可验证评论样本。识别可靠性与受限链接问题来自作者和官网说明，不是评论共识。"
+        ],
+        "commentSamples": [
+          "无可验证评论样本"
+        ],
+        "verifiedComments": [],
+        "reuseIdeas": [
+          "以“没有片名的短视频”切入，直接给输入线索的写法和识别失败时该补什么。",
+          "找片线索填写句"
+        ],
+        "localizedTranslation": "中文要点：作者从浏览器扩展开始，后来加入网站、片单和补充线索对话。多模型结果一致是它的一种筛选办法，但不能证明片名正确。作者承认TikTok与X链接表现较差，聊天功能仍有不稳定问题。此为概述，非原帖全文译文。",
+        "translationScope": "中文释义摘要，非完整逐字译文",
+        "analysisState": "已分析",
+        "saveObject": "找片线索填写句",
+        "learningOutcome": "用可观察的画面细节缩小候选，不让猜测演员姓名带偏搜索。",
+        "recommended": true,
+        "editorialGate": {
+          "saveObject": "找片线索填写句",
+          "learningOutcome": "用可观察的画面细节缩小候选，不让猜测演员姓名带偏搜索。",
+          "passed": true,
+          "blockers": [
+            "工具与图片未实测，需人工核验"
+          ]
+        }
+      },
+      {
+        "id": 2026082604,
+        "rank": 4,
+        "source": "Yuvraj Sharma / Abubakar Abid",
+        "sourceType": "一手教程",
+        "sourceUrl": "https://huggingface.co/blog/gradio-workflow-guide",
+        "discussionUrl": "https://huggingface.co/blog/gradio-workflow-guide",
+        "originalTitle": "Wire It, Run It, Deploy It: AI Workflows in Gradio",
+        "title": "生成贴纸的两步，可以放在同一页",
+        "summary": "Gradio 团队发布 gr.Workflow 教程，把生图、去背景等步骤放在可查看中间结果的画布里；提供可打开和复制的演示。",
+        "heat": 40,
+        "scarcity": 55,
+        "fit": 94,
+        "finalScore": 69,
+        "scoreDisclaimer": "内部选题排序分，非公开流量；国内稀缺度未测定。",
+        "reason": "创作结果可视化，读者知道输入什么、得到什么，也知道它不是一个永久免费生图网站。",
+        "angle": "只讲“先生成再去底色”的贴纸小场景，放教程里的 Media Studio 入口；少讲节点类型、部署和API。",
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "category": "AI 技巧",
+        "status": "待选题",
+        "selected": false,
+        "live": true,
+        "assignee": "待分配",
+        "sourceCapturedAt": "2026-08-26T01:13:48.206Z",
+        "sourcePublishedAt": "2026-08-25",
+        "discussionPublishedAt": "2026-08-25",
+        "age": "8月25日发布",
+        "evidenceConfidence": 88,
+        "actionability": 84,
+        "domesticCoverage": "未取得小红书/抖音平台内语义检索证据；稀缺度仅用55的保守占位上限，不代表国内覆盖率。发布前人工搜索产品名、中文场景及同义表达。",
+        "humanCheck": "运行官方 Media Studio 演示并录制结果；核查登录、令牌、额度与模型素材商用条件；不把示例说成亲测免费。",
+        "evidenceId": "2026-08-26-gradio",
+        "evidence": [
+          {
+            "url": "https://huggingface.co/blog/gradio-workflow-guide",
+            "provider": "web-search-open",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:13:48.206Z",
+            "contentHash": "aae72199195da5264602f051f40c00d32d2e1cfbbfa01fd2f1bc2483bf49c58e",
+            "rawSnapshotRef": "evidence/2026-08-26/gradio-web-evidence.json"
+          }
+        ],
+        "engagement": {
+          "views": null,
+          "likes": 12,
+          "replies": null,
+          "reposts": null,
+          "bookmarks": null,
+          "capturedAt": "2026-08-26T01:13:48.206Z",
+          "metricSourceUrl": "https://huggingface.co/blog/gradio-workflow-guide",
+          "metricKind": "Hugging Face文章Upvote",
+          "availability": {
+            "views": "未公开",
+            "replies": "无可验证样本",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "Hugging Face文章12次Upvote · 浏览量未公开 · 无可验证评论样本",
+        "discussionFocus": [
+          "未取得可验证评论样本。后续详情页快照显示12次Upvote；搜索摘要较旧，采用已保存的详情快照，不混用不同采集时点。"
+        ],
+        "commentSamples": [
+          "无可验证评论样本"
+        ],
+        "verifiedComments": [],
+        "reuseIdeas": [
+          "只讲“先生成再去底色”的贴纸小场景，放教程里的 Media Studio 入口；少讲节点类型、部署和API。",
+          "贴纸生成的两步输入说明与教程入口"
+        ],
+        "localizedTranslation": "中文要点：教程展示图片编辑、生图后去背景、配音、平行生成和数据分析。流程既有可视化界面，也可被程序调用；模型或Space端点可能需要Hugging Face令牌和计算额度。本文是教程摘要，不是全文翻译，也未实际运行演示。",
+        "translationScope": "中文释义摘要，非完整逐字译文",
+        "analysisState": "已分析",
+        "saveObject": "贴纸生成的两步输入说明与教程入口",
+        "learningOutcome": "把生图和去背景分开检查，失败时知道该调整哪一步。",
+        "recommended": true,
+        "editorialGate": {
+          "saveObject": "贴纸生成的两步输入说明与教程入口",
+          "learningOutcome": "把生图和去背景分开检查，失败时知道该调整哪一步。",
+          "passed": true,
+          "blockers": [
+            "工具与图片未实测，需人工核验"
+          ]
+        }
+      },
+      {
+        "id": 2026082605,
+        "rank": 5,
+        "source": "Dramatize",
+        "sourceType": "作者项目发布",
+        "sourceUrl": "https://github.com/dragthelake/ambient-context",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49429095",
+        "originalTitle": "Show HN: Screen memory without screenshots, just text to Markdown",
+        "title": "周报想不起来？这个工具只记屏幕文字",
+        "summary": "ambient-context 作者发布macOS菜单栏工具，按间隔读取当前窗口可访问的文字，每天存一个Markdown文件。不截图、不录像不等于不含敏感内容。",
+        "heat": 58,
+        "scarcity": 55,
+        "fit": 92,
+        "finalScore": 72,
+        "scoreDisclaimer": "内部选题排序分，非公开流量；国内稀缺度未测定。",
+        "reason": "有25条讨论及明确限制，能给出真实可用的文件整理指令；不鼓励把全天所有内容交给云端。",
+        "angle": "拿“写周报时找不到工作线索”做使用场景，给限定日志范围、只按证据整理的提示词；强调先用非敏感窗口测试。",
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "category": "AI 技巧",
+        "status": "待选题",
+        "selected": false,
+        "live": true,
+        "assignee": "待分配",
+        "sourceCapturedAt": "2026-08-26T01:04:02.523Z",
+        "sourcePublishedAt": "2026-08-25",
+        "discussionPublishedAt": "2026-08-25T04:33:24Z",
+        "age": "8月25日发布",
+        "evidenceConfidence": 78,
+        "actionability": 84,
+        "domesticCoverage": "未取得小红书/抖音平台内语义检索证据；稀缺度仅用55的保守占位上限，不代表国内覆盖率。发布前人工搜索产品名、中文场景及同义表达。",
+        "humanCheck": "Mac实际测试常用应用采集效果、排除机制和日志删除方式；项目页此次超时，功能依据作者公开原帖，安装前检查源码和权限。",
+        "evidenceId": "2026-08-26-49429095",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49429095",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49429095",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:05:53.117Z",
+            "contentHash": "ad172b8b547ac6ad6caecf845ca08774131b90650845bbfabde5df8dc2f1b2f5",
+            "rawSnapshotRef": "evidence/2026-08-26/49429095-discussion.json"
+          }
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 25,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 61,
+          "capturedAt": "2026-08-26T01:04:02.523Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49429095",
+          "metricKind": "Hacker News讨论积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "不等同HN积分",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 61积分 · 25条评论 · 原文浏览/点赞未取得，HN浏览量未公开",
+        "discussionFocus": [
+          "文字采集相比截图的取舍；不同应用的辅助功能支持不一致；记录工作上下文是否会带来额外隐私风险。"
+        ],
+        "commentSamples": [
+          "purplecats · “neat. why not screenshot and tesseract (videos/images/viewport/etc)…” · https://news.ycombinator.com/item?id=49429458（节选，评论点赞未公开）",
+          "etchalon · “I experimented with this exact same approach earlier this year. It's barely sufficient, because, bluntly, most apps just aren't wired…” · https://news.ycombinator.com/item?id=49429549（节选，评论点赞未公开）",
+          "jwr · “Hmm. What would be really helpful for me would be an enhancement of the TypeWhisper app for dictation that would…” · https://news.ycombinator.com/item?id=49430739（节选，评论点赞未公开）"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49429458",
+            "author": "purplecats",
+            "url": "https://news.ycombinator.com/item?id=49429458",
+            "publishedAt": "2026-08-25T05:30:37.000Z",
+            "capturedAt": "2026-08-26T01:05:53.117Z",
+            "quote": "neat. why not screenshot and tesseract (videos/images/viewport/etc)",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          },
+          {
+            "id": "49429549",
+            "author": "etchalon",
+            "url": "https://news.ycombinator.com/item?id=49429549",
+            "publishedAt": "2026-08-25T05:45:31.000Z",
+            "capturedAt": "2026-08-26T01:05:53.117Z",
+            "quote": "I experimented with this exact same approach earlier this year. It's barely sufficient, because, bluntly, most apps just aren't wired",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          },
+          {
+            "id": "49430739",
+            "author": "jwr",
+            "url": "https://news.ycombinator.com/item?id=49430739",
+            "publishedAt": "2026-08-25T08:43:08.000Z",
+            "capturedAt": "2026-08-26T01:05:53.117Z",
+            "quote": "Hmm. What would be really helpful for me would be an enhancement of the TypeWhisper app for dictation that would",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          }
+        ],
+        "reuseIdeas": [
+          "拿“写周报时找不到工作线索”做使用场景，给限定日志范围、只按证据整理的提示词；强调先用非敏感窗口测试。",
+          "从本地记录整理周报的提示词"
+        ],
+        "localizedTranslation": "中文要点：作者介绍它通过系统辅助功能接口读当前窗口文字，并写入自选文件夹；可让有文件读取权限的助手查询这些日志。原帖没有承诺所有软件都兼容，评论中有人反映同类方案需要逐应用适配。",
+        "translationScope": "中文释义摘要，非完整逐字译文",
+        "analysisState": "已分析",
+        "saveObject": "从本地记录整理周报的提示词",
+        "learningOutcome": "让助手列出工作证据与待补信息，不编造工作成果。",
+        "recommended": true,
+        "editorialGate": {
+          "saveObject": "从本地记录整理周报的提示词",
+          "learningOutcome": "让助手列出工作证据与待补信息，不编造工作成果。",
+          "passed": true,
+          "blockers": [
+            "工具与图片未实测，需人工核验"
+          ]
+        }
+      },
+      {
+        "id": 2026082606,
+        "rank": 6,
+        "source": "Matt Segar",
+        "sourceType": "一手资料与社区讨论",
+        "sourceUrl": "https://segar.me/blog/posts/anki_cards_claude_code.html",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49438805",
+        "originalTitle": "Building Anki Cards with Claude Code",
+        "title": "AI 做背诵卡，先检查这一种假会了",
+        "summary": "作者分享用Claude Code制作Anki卡片时的验证方法，发现有些填空能从句子推断出答案；还发现小于号在HTML字段里造成显示丢失。文章发表于8月23日，今日新检索到。",
+        "heat": 22,
+        "scarcity": 55,
+        "fit": 95,
+        "finalScore": 66,
+        "scoreDisclaimer": "内部选题排序分，非公开流量；国内稀缺度未测定。",
+        "reason": "读者能马上检查已经做好的卡片，有明确错例和改法，不要求重新学一套工具。低互动实用候选，不是高赞。",
+        "angle": "用自己编写的非专业例句展示“看句子就能猜答案”，给一段卡片检查指令。",
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "category": "AI 技巧",
+        "status": "待选题",
+        "selected": false,
+        "live": true,
+        "assignee": "待分配",
+        "sourceCapturedAt": "2026-08-26T01:04:02.523Z",
+        "sourcePublishedAt": "2026-08-23",
+        "discussionPublishedAt": "2026-08-25T18:54:01Z",
+        "age": "原文2026-08-23 · 今日采集",
+        "evidenceConfidence": 87,
+        "actionability": 96,
+        "domesticCoverage": "未取得小红书/抖音平台内语义检索证据；稀缺度仅用55的保守占位上限，不代表国内覆盖率。发布前人工搜索产品名、中文场景及同义表达。",
+        "humanCheck": "检查示例是否能在Anki真实导入与渲染；本文不提供医疗复习内容，不宣传提分或记忆效率；原文为8月23日。",
+        "evidenceId": "2026-08-26-49438805",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49438805",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49438805",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:10:42.464Z",
+            "contentHash": "93bf6f1c6e2dd123d9399677605870eab663b4baf907103142883483f621e45e",
+            "rawSnapshotRef": "evidence/2026-08-26/49438805-discussion.json"
+          },
+          {
+            "type": "primary",
+            "url": "https://segar.me/blog/posts/anki_cards_claude_code.html",
+            "finalUrl": "https://segar.me/blog/posts/anki_cards_claude_code.html",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:10:45.419Z",
+            "contentHash": "5fbd5563338ce46c68d212ee18bf73422bee8f925cce9b3dfbf6493c8c475f5b",
+            "rawSnapshotRef": "evidence/2026-08-26/49438805-primary.html"
+          }
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 0,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 1,
+          "capturedAt": "2026-08-26T01:04:02.523Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49438805",
+          "metricKind": "Hacker News讨论积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "不等同HN积分",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 1积分 · 0条评论 · 原文浏览/点赞未取得，HN浏览量未公开",
+        "discussionFocus": [
+          "采集时没有可验证HN评论。文中列出的问题来自作者自查，不描述为用户普遍反馈。"
+        ],
+        "commentSamples": [
+          "无可验证评论样本"
+        ],
+        "verifiedComments": [],
+        "reuseIdeas": [
+          "用自己编写的非专业例句展示“看句子就能猜答案”，给一段卡片检查指令。",
+          "背诵卡提问质量检查指令"
+        ],
+        "localizedTranslation": "中文要点：这是一份学习卡片制作复盘，而非记忆效果研究。作者按知识点归并来源、保留出处，并分别检查知识覆盖与卡片提问质量；明确尚无考试成绩或长期记忆数据。仅提取通用学习方法，不复用文中的医学判断。",
+        "translationScope": "中文释义摘要，非完整逐字译文",
+        "analysisState": "已分析",
+        "saveObject": "背诵卡提问质量检查指令",
+        "learningOutcome": "区分真的需要回忆与单靠上下文就能猜对的填空。",
+        "recommended": true,
+        "editorialGate": {
+          "saveObject": "背诵卡提问质量检查指令",
+          "learningOutcome": "区分真的需要回忆与单靠上下文就能猜对的填空。",
+          "passed": true,
+          "blockers": [
+            "工具与图片未实测，需人工核验"
+          ]
+        }
+      },
+      {
+        "id": 2026082607,
+        "rank": 7,
+        "source": "Cathryn Lavery",
+        "sourceType": "一手资料与社区讨论",
+        "sourceUrl": "https://github.com/cathrynlavery/diagram-design",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49436034",
+        "originalTitle": "Editorial diagram types for Claude Code",
+        "title": "做流程图，先把谁来确认画清楚",
+        "summary": "Diagram Design 是输出独立HTML和SVG的图表技能，提供流程、泳道、时间线等类型及浅深色示例。代码仓库可见约26.9k Stars，这是累计关注，不是今天帖子点赞。",
+        "heat": 22,
+        "scarcity": 55,
+        "fit": 96,
+        "finalScore": 66,
+        "scoreDisclaimer": "内部选题排序分，非公开流量；国内稀缺度未测定。",
+        "reason": "与账号运营及接单场景直接相关，可交付的是一段画图要求，且符合用户偏好的黑白少线条。",
+        "angle": "用接单流程画一张黑白泳道图，读者可以复制自己的业务流程；不展开技术架构。",
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "category": "AI 技巧",
+        "status": "待选题",
+        "selected": false,
+        "live": true,
+        "assignee": "待分配",
+        "sourceCapturedAt": "2026-08-26T01:04:02.523Z",
+        "sourcePublishedAt": null,
+        "discussionPublishedAt": "2026-08-25T15:43:13Z",
+        "age": "今日采集 · 原文日期未核实",
+        "evidenceConfidence": 88,
+        "actionability": 94,
+        "domesticCoverage": "未取得小红书/抖音平台内语义检索证据；稀缺度仅用55的保守占位上限，不代表国内覆盖率。发布前人工搜索产品名、中文场景及同义表达。",
+        "humanCheck": "安装第三方技能前审阅内容；实际生成后确认文字溢出、箭头方向、移动端字号；模板数量和Stars快照不能冒充日增。",
+        "evidenceId": "2026-08-26-49436034",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49436034",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49436034",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:10:42.465Z",
+            "contentHash": "1bd0202d86f23897a437fecd28c8763b495185ef316686b8edf8271b0169f6d1",
+            "rawSnapshotRef": "evidence/2026-08-26/49436034-discussion.json"
+          },
+          {
+            "type": "primary",
+            "url": "https://github.com/cathrynlavery/diagram-design",
+            "finalUrl": "https://github.com/cathrynlavery/diagram-design",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:10:43.603Z",
+            "contentHash": "c5a2fc91fba94046a338e8a2c176ce4eb115080633315f5bb546dac652491fbf",
+            "rawSnapshotRef": "evidence/2026-08-26/49436034-primary.html"
+          }
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 0,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 1,
+          "capturedAt": "2026-08-26T01:04:02.523Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49436034",
+          "metricKind": "Hacker News讨论积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "不等同HN积分",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 1积分 · 0条评论 · 原文浏览/点赞未取得，HN浏览量未公开",
+        "discussionFocus": [
+          "HN帖子没有可验证评论样本；GitHub Stars只作项目关注度补充，不能证明图表质量或今日传播。"
+        ],
+        "commentSamples": [
+          "无可验证评论样本"
+        ],
+        "verifiedComments": [],
+        "reuseIdeas": [
+          "用接单流程画一张黑白泳道图，读者可以复制自己的业务流程；不展开技术架构。",
+          "接单流程泳道图提示词"
+        ],
+        "localizedTranslation": "中文要点：作者把图表类型与视觉风格规则分开，默认静态输出，也有可选动态说明。文档允许按目标尺寸选择细节量。仓库描述与README类型计数不一致，因此本文不写具体模板数量。",
+        "translationScope": "中文释义摘要，非完整逐字译文",
+        "analysisState": "已分析",
+        "saveObject": "接单流程泳道图提示词",
+        "learningOutcome": "把执行步骤与客户确认步骤分开，让合作双方知道下一步等谁。",
+        "recommended": true,
+        "editorialGate": {
+          "saveObject": "接单流程泳道图提示词",
+          "learningOutcome": "把执行步骤与客户确认步骤分开，让合作双方知道下一步等谁。",
+          "passed": true,
+          "blockers": [
+            "工具与图片未实测，需人工核验"
+          ]
+        }
+      },
+      {
+        "id": 2026082608,
+        "rank": 8,
+        "source": "Perplexity / NVIDIA",
+        "sourceType": "一手资料与社区讨论",
+        "sourceUrl": "https://www.perplexity.ai/hub/blog/introducing-portable-computer-for-local-first-ai",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49439535",
+        "originalTitle": "Perplexity Portable Computer",
+        "title": "Portable Computer 不是新电脑",
+        "summary": "NVIDIA 8月25日更新介绍 Perplexity Portable Computer：面向DGX Spark的本地优先Agent应用，可在本地和云端模型间选择；RTX和Windows等支持仍在计划中。",
+        "heat": 49,
+        "scarcity": 55,
+        "fit": 84,
+        "finalScore": 67,
+        "scoreDisclaimer": "内部选题排序分，非公开流量；国内稀缺度未测定。",
+        "reason": "名字本身有误解空间，读者能迅速知道这条产品更新与自己的电脑是否有关。",
+        "angle": "给“刷到名字以为出新硬件”的读者一张已支持/还没支持的短资讯卡。",
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "category": "产业观察",
+        "status": "待选题",
+        "selected": false,
+        "live": true,
+        "assignee": "待分配",
+        "sourceCapturedAt": "2026-08-26T01:04:02.523Z",
+        "sourcePublishedAt": "2026-08-25",
+        "discussionPublishedAt": "2026-08-25T19:41:48Z",
+        "age": "8月25日发布",
+        "evidenceConfidence": 82,
+        "actionability": 76,
+        "domesticCoverage": "未取得小红书/抖音平台内语义检索证据；稀缺度仅用55的保守占位上限，不代表国内覆盖率。发布前人工搜索产品名、中文场景及同义表达。",
+        "humanCheck": "再次打开Perplexity官方页确认订阅和下载条件；不把路线图写成已上线；不要把本地推理等同所有联网应用数据不外传。",
+        "evidenceId": "2026-08-26-49439535",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49439535",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49439535",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:06:14.352Z",
+            "contentHash": "b31e00d6cf672e001e20407be1937c51d3a787f161b5756c2dc1d73b884bd376",
+            "rawSnapshotRef": "evidence/2026-08-26/49439535-discussion.json"
+          },
+          {
+            "url": "https://blogs.nvidia.com/blog/local-ai-open-source-models-agents-nemotron/",
+            "provider": "NVIDIA",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:09:06.878Z",
+            "contentHash": "3309024c0d33ea67fee2239968fa4c5787301a7512576ade61435b7b9a07062b",
+            "rawSnapshotRef": "evidence/2026-08-26/nvidia-local-ai.html",
+            "section": "Tuesday, Aug.25,6:00a.m.PT"
+          }
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 15,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 20,
+          "capturedAt": "2026-08-26T01:04:02.523Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49439535",
+          "metricKind": "Hacker News讨论积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "不等同HN积分",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 20积分 · 15条评论 · 原文浏览/点赞未取得，HN浏览量未公开",
+        "discussionFocus": [
+          "评论主要质疑“Portable”命名是否让人误以为是硬件，以及云端升级和订阅边界。评论的推断没有作为产品正式条款。"
+        ],
+        "commentSamples": [
+          "delduca · “My definition of portable is something else :-)…” · https://news.ycombinator.com/item?id=49440113（节选，评论点赞未公开）",
+          "kin · “This got a huge eyeroll from me. Very misleading product name. I kept skimming to find what the \"device\" would…” · https://news.ycombinator.com/item?id=49440221（节选，评论点赞未公开）"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49440113",
+            "author": "delduca",
+            "url": "https://news.ycombinator.com/item?id=49440113",
+            "publishedAt": "2026-08-25T20:25:41.000Z",
+            "capturedAt": "2026-08-26T01:06:14.352Z",
+            "quote": "My definition of portable is something else :-)",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          },
+          {
+            "id": "49440221",
+            "author": "kin",
+            "url": "https://news.ycombinator.com/item?id=49440221",
+            "publishedAt": "2026-08-25T20:33:50.000Z",
+            "capturedAt": "2026-08-26T01:06:14.352Z",
+            "quote": "This got a huge eyeroll from me. Very misleading product name. I kept skimming to find what the \"device\" would",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          }
+        ],
+        "reuseIdeas": [
+          "给“刷到名字以为出新硬件”的读者一张已支持/还没支持的短资讯卡。",
+          "当前支持与计划支持对照"
+        ],
+        "localizedTranslation": "中文要点：这是在已有硬件上运行的应用，不是一台新推出的便携电脑。官方说本地推理不占token额度，当前优化针对DGX Spark及特定Qwen模型；这不代表硬件、订阅、云端调用和所有连接都免费或完全离线。Perplexity原页未读取成功，事实交叉来自合作方NVIDIA更新。",
+        "translationScope": "中文释义摘要，非完整逐字译文",
+        "analysisState": "已分析",
+        "saveObject": "当前支持与计划支持对照",
+        "learningOutcome": "识别应用、硬件和云端服务三个不同层次。",
+        "recommended": true,
+        "editorialGate": {
+          "saveObject": "当前支持与计划支持对照",
+          "learningOutcome": "识别应用、硬件和云端服务三个不同层次。",
+          "passed": true,
+          "blockers": [
+            "工具与图片未实测，需人工核验"
+          ]
+        }
+      },
+      {
+        "id": 2026082609,
+        "rank": 9,
+        "source": "Laude Institute / MIT",
+        "sourceType": "一手资料与社区讨论",
+        "sourceUrl": "https://www.laude.org/updates/headlong-a-microharness-for-persistent-agents",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49428882",
+        "originalTitle": "Headlong: A microharness for persistent agents",
+        "title": "一直思考的AI，闲着也要花钱",
+        "summary": "Headlong 是持续运行的研究型Agent框架。作者公开其持续思考机制，也披露团队对话不隔离、运行费用及自行停机等问题；8月24日原文，25日进入HN讨论。",
+        "heat": 64,
+        "scarcity": 55,
+        "fit": 64,
+        "finalScore": 60,
+        "scoreDisclaimer": "内部选题排序分，非公开流量；国内稀缺度未测定。",
+        "reason": "118积分、53条讨论可作为行业讨论候选，但隔离风险与安装门槛使其不适合普通用户直接跟做。",
+        "angle": "做一则能说清成本与限制的AI小资讯，不写无人公司或自动赚钱。",
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "category": "产业观察",
+        "status": "待选题",
+        "selected": false,
+        "live": true,
+        "assignee": "待分配",
+        "sourceCapturedAt": "2026-08-26T01:04:02.523Z",
+        "sourcePublishedAt": "2026-08-24",
+        "discussionPublishedAt": "2026-08-25T03:54:19Z",
+        "age": "原文2026-08-24 · 今日采集",
+        "evidenceConfidence": 91,
+        "actionability": 35,
+        "domesticCoverage": "未取得小红书/抖音平台内语义检索证据；稀缺度仅用55的保守占位上限，不代表国内覆盖率。发布前人工搜索产品名、中文场景及同义表达。",
+        "humanCheck": "原文发布日是8月24日；不能把作者费用泛化为所有模型；不在工作电脑安装运行，也不提供凭据。",
+        "evidenceId": "2026-08-26-49428882",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49428882",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49428882",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:05:53.116Z",
+            "contentHash": "3fe4cb6a4fa99bad02974a8ebf72cbe52fd5e8998c33ab309f098d330e6d2dee",
+            "rawSnapshotRef": "evidence/2026-08-26/49428882-discussion.json"
+          },
+          {
+            "type": "primary",
+            "url": "https://www.laude.org/updates/headlong-a-microharness-for-persistent-agents",
+            "finalUrl": "https://www.laude.org/updates/headlong-a-microharness-for-persistent-agents",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:05:54.600Z",
+            "contentHash": "f0cb758a13f268635e213063d82792de3a2fa14f650e784dc19f1a442d5968e5",
+            "rawSnapshotRef": "evidence/2026-08-26/49428882-primary.html"
+          }
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 53,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 118,
+          "capturedAt": "2026-08-26T01:04:02.523Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49428882",
+          "metricKind": "Hacker News讨论积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "不等同HN积分",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 118积分 · 53条评论 · 原文浏览/点赞未取得，HN浏览量未公开",
+        "discussionFocus": [
+          "是否存在可比较的长期效果基准；共享记忆的隐私隔离不足；长期运行成本是否值得。"
+        ],
+        "commentSamples": [
+          "yewenjie · “Are there any objective metrics/ benchmarks that people test harnesses by? There are just so many now that it's hard…” · https://news.ycombinator.com/item?id=49429024（节选，评论点赞未公开）",
+          "MikhailTal · “Very fascinating, super interesting engineering. Although i do find it very funny how they just bypass a massive vulnerability, basically…” · https://news.ycombinator.com/item?id=49429096（节选，评论点赞未公开）"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49429024",
+            "author": "yewenjie",
+            "url": "https://news.ycombinator.com/item?id=49429024",
+            "publishedAt": "2026-08-25T04:19:44.000Z",
+            "capturedAt": "2026-08-26T01:05:53.116Z",
+            "quote": "Are there any objective metrics/ benchmarks that people test harnesses by? There are just so many now that it's hard",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          },
+          {
+            "id": "49429096",
+            "author": "MikhailTal",
+            "url": "https://news.ycombinator.com/item?id=49429096",
+            "publishedAt": "2026-08-25T04:33:37.000Z",
+            "capturedAt": "2026-08-26T01:05:53.116Z",
+            "quote": "Very fascinating, super interesting engineering. Although i do find it very funny how they just bypass a massive vulnerability, basically",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          }
+        ],
+        "reuseIdeas": [
+          "做一则能说清成本与限制的AI小资讯，不写无人公司或自动赚钱。",
+          "持续型Agent与按任务运行的区别卡"
+        ],
+        "localizedTranslation": "中文要点：它不会只等人提问才启动，会在间隔中继续处理自己的任务。作者称其设置下后台费用约每小时1—2美元，并强调沙箱、独立限额凭据与不要共享秘密。这个费用仅代表作者配置。",
+        "translationScope": "中文释义摘要，非完整逐字译文",
+        "analysisState": "已分析",
+        "saveObject": "持续型Agent与按任务运行的区别卡",
+        "learningOutcome": "“持续运行”同时意味着持续成本与权限管理责任。",
+        "recommended": false,
+        "editorialGate": {
+          "saveObject": "持续型Agent与按任务运行的区别卡",
+          "learningOutcome": "“持续运行”同时意味着持续成本与权限管理责任。",
+          "passed": false,
+          "blockers": [
+            "未进入今日推荐，原因见reason与humanCheck"
+          ]
+        }
+      },
+      {
+        "id": 2026082610,
+        "rank": 10,
+        "source": "Alex / pgbot",
+        "sourceType": "一手资料与社区讨论",
+        "sourceUrl": "https://pgbot.dev/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49438492",
+        "originalTitle": "Pgbot: A 5.9 MB read-only Postgres tool for humans and agents",
+        "title": "网站变慢，先让AI看检查结果",
+        "summary": "pgbot 提供PostgreSQL只读诊断，检查连接、查询、索引等；诊断项由代码计算，再让助手解释，而不是靠模型编造指标。",
+        "heat": 54,
+        "scarcity": 55,
+        "fit": 63,
+        "finalScore": 61,
+        "scoreDisclaimer": "内部选题排序分，非公开流量；国内稀缺度未测定。",
+        "reason": "有具体工具和9条讨论，但需数据库知识，放技术候选。",
+        "angle": "面向有自建网站的小团队讲“先拿到真实诊断，再让AI解释”，不教运营直接连接生产库。",
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "category": "实操案例",
+        "status": "待选题",
+        "selected": false,
+        "live": true,
+        "assignee": "待分配",
+        "sourceCapturedAt": "2026-08-26T01:04:02.523Z",
+        "sourcePublishedAt": "2026-08-25",
+        "discussionPublishedAt": "2026-08-25T18:30:57Z",
+        "age": "8月25日发布",
+        "evidenceConfidence": 87,
+        "actionability": 65,
+        "domesticCoverage": "未取得小红书/抖音平台内语义检索证据；稀缺度仅用55的保守占位上限，不代表国内覆盖率。发布前人工搜索产品名、中文场景及同义表达。",
+        "humanCheck": "开发人员核对只读账号权限、网络访问和遥测行为；仅在测试库试用，不使用生产管理员账号。",
+        "evidenceId": "2026-08-26-49438492",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49438492",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49438492",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:06:14.351Z",
+            "contentHash": "c37a6d18de6ec5a947ad8cfa023f374e9fbb5ac744c63b6d3e70af2667af9e3a",
+            "rawSnapshotRef": "evidence/2026-08-26/49438492-discussion.json"
+          },
+          {
+            "type": "primary",
+            "url": "https://pgbot.dev/",
+            "finalUrl": "https://pgbot.dev/",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:06:15.887Z",
+            "contentHash": "d73fbd0908767124e5b72dbd585f264d76188151eec250058dc0f6c6624c8358",
+            "rawSnapshotRef": "evidence/2026-08-26/49438492-primary.html"
+          }
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 9,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 47,
+          "capturedAt": "2026-08-26T01:04:02.523Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49438492",
+          "metricKind": "Hacker News讨论积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "不等同HN积分",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 47积分 · 9条评论 · 原文浏览/点赞未取得，HN浏览量未公开",
+        "discussionFocus": [
+          "有用户问相较直接读数据库日志多了什么；也有人关心遥测。作者解释诊断计算与模型解读的分工。"
+        ],
+        "commentSamples": [
+          "sashash · “Hi HN, I’m Alex, a longtime PostgreSQL and Rails/Go/Rust engineer. I built pgbot because I often needed a quick explanation…” · https://news.ycombinator.com/item?id=49438493（节选，评论点赞未公开）",
+          "znnajdla · “I don't understand what this tool offers over simply querying pg directly and reading pg logs?…” · https://news.ycombinator.com/item?id=49439374（节选，评论点赞未公开）",
+          "michael-sumner · “Be careful as it might be telemetrying the database. How do we know that it is not?…” · https://news.ycombinator.com/item?id=49439429（节选，评论点赞未公开）"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49438493",
+            "author": "sashash",
+            "url": "https://news.ycombinator.com/item?id=49438493",
+            "publishedAt": "2026-08-25T18:30:57.000Z",
+            "capturedAt": "2026-08-26T01:06:14.351Z",
+            "quote": "Hi HN, I’m Alex, a longtime PostgreSQL and Rails/Go/Rust engineer. I built pgbot because I often needed a quick explanation",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          },
+          {
+            "id": "49439374",
+            "author": "znnajdla",
+            "url": "https://news.ycombinator.com/item?id=49439374",
+            "publishedAt": "2026-08-25T19:30:25.000Z",
+            "capturedAt": "2026-08-26T01:06:14.351Z",
+            "quote": "I don't understand what this tool offers over simply querying pg directly and reading pg logs?",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          },
+          {
+            "id": "49439429",
+            "author": "michael-sumner",
+            "url": "https://news.ycombinator.com/item?id=49439429",
+            "publishedAt": "2026-08-25T19:34:16.000Z",
+            "capturedAt": "2026-08-26T01:06:14.351Z",
+            "quote": "Be careful as it might be telemetrying the database. How do we know that it is not?",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          }
+        ],
+        "reuseIdeas": [
+          "面向有自建网站的小团队讲“先拿到真实诊断，再让AI解释”，不教运营直接连接生产库。",
+          "诊断数据与AI解释分层示意"
+        ],
+        "localizedTranslation": "中文要点：作者想减少排查前搭监控的准备工作。官网把直接连接与私有环境部署分开，并提供MCP只读工具。只读说明是产品设计声明，不是本次安全审计。",
+        "translationScope": "中文释义摘要，非完整逐字译文",
+        "analysisState": "已分析",
+        "saveObject": "诊断数据与AI解释分层示意",
+        "learningOutcome": "AI解释不能替代实际采集的数据库指标。",
+        "recommended": false,
+        "editorialGate": {
+          "saveObject": "诊断数据与AI解释分层示意",
+          "learningOutcome": "AI解释不能替代实际采集的数据库指标。",
+          "passed": false,
+          "blockers": [
+            "未进入今日推荐，原因见reason与humanCheck"
+          ]
+        }
+      },
+      {
+        "id": 2026082611,
+        "rank": 11,
+        "source": "isamu / receptron",
+        "sourceType": "作者项目发布",
+        "sourceUrl": "https://github.com/receptron/mulmoterminal",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49439218",
+        "originalTitle": "Show HN: MulmoTerminal – Run many Claude Code sessions, see which needs you",
+        "title": "开了几个AI窗口，哪个还在等你？",
+        "summary": "MulmoTerminal 作者介绍多终端集中显示、状态标记和声音提醒。评论追问“模型回合结束”和“后台CI完成”是否被混为一谈。",
+        "heat": 37,
+        "scarcity": 55,
+        "fit": 74,
+        "finalScore": 60,
+        "scoreDisclaimer": "内部选题排序分，非公开流量；国内稀缺度未测定。",
+        "reason": "场景明确但只有4积分、5评论，需实际安装验证，暂不作为普通用户推荐。",
+        "angle": "做多窗口用户的小工具介绍，同时教看CI单独状态。",
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "category": "AI 技巧",
+        "status": "待选题",
+        "selected": false,
+        "live": true,
+        "assignee": "待分配",
+        "sourceCapturedAt": "2026-08-26T01:04:02.523Z",
+        "sourcePublishedAt": "2026-08-25",
+        "discussionPublishedAt": "2026-08-25T19:20:48Z",
+        "age": "8月25日发布",
+        "evidenceConfidence": 78,
+        "actionability": 72,
+        "domesticCoverage": "未取得小红书/抖音平台内语义检索证据；稀缺度仅用55的保守占位上限，不代表国内覆盖率。发布前人工搜索产品名、中文场景及同义表达。",
+        "humanCheck": "核对仓库与安装包，测试状态是否准确；不把done写成测试全部通过。",
+        "evidenceId": "2026-08-26-49439218",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49439218",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49439218",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:06:27.115Z",
+            "contentHash": "de8cf58e0ddb8d26bba3eab74b76ecfa37779f1963b0688c8d02655109fc9d50",
+            "rawSnapshotRef": "evidence/2026-08-26/49439218-discussion.json"
+          }
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 5,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 4,
+          "capturedAt": "2026-08-26T01:04:02.523Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49439218",
+          "metricKind": "Hacker News讨论积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "不等同HN积分",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 4积分 · 5条评论 · 原文浏览/点赞未取得，HN浏览量未公开",
+        "discussionFocus": [
+          "状态能否区分需要人处理、模型已回复、后台任务还在跑。"
+        ],
+        "commentSamples": [
+          "isamu138 · “Hi, I'm isamu. I often run multiple Claude Code in parallel, making it difficult to keep track of when they…” · https://news.ycombinator.com/item?id=49439704（节选，评论点赞未公开）",
+          "aywu · “My agent often kicks off CI and waits for the result. It ends its turn right after the kick-off, while…” · https://news.ycombinator.com/item?id=49440611（节选，评论点赞未公开）",
+          "isamu138 · “Typically, once a task is complete and awaiting CI, the status changes to \"done.\" Separately, there is a feature that…” · https://news.ycombinator.com/item?id=49441430（节选，评论点赞未公开）"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49439704",
+            "author": "isamu138",
+            "url": "https://news.ycombinator.com/item?id=49439704",
+            "publishedAt": "2026-08-25T19:54:11.000Z",
+            "capturedAt": "2026-08-26T01:06:27.115Z",
+            "quote": "Hi, I'm isamu. I often run multiple Claude Code in parallel, making it difficult to keep track of when they",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          },
+          {
+            "id": "49440611",
+            "author": "aywu",
+            "url": "https://news.ycombinator.com/item?id=49440611",
+            "publishedAt": "2026-08-25T21:04:33.000Z",
+            "capturedAt": "2026-08-26T01:06:27.115Z",
+            "quote": "My agent often kicks off CI and waits for the result. It ends its turn right after the kick-off, while",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          },
+          {
+            "id": "49441430",
+            "author": "isamu138",
+            "url": "https://news.ycombinator.com/item?id=49441430",
+            "publishedAt": "2026-08-25T22:16:05.000Z",
+            "capturedAt": "2026-08-26T01:06:27.115Z",
+            "quote": "Typically, once a task is complete and awaiting CI, the status changes to \"done.\" Separately, there is a feature that",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          }
+        ],
+        "reuseIdeas": [
+          "做多窗口用户的小工具介绍，同时教看CI单独状态。",
+          "多会话等待状态对照"
+        ],
+        "localizedTranslation": "中文要点：作者把并行Claude Code/Codex会话放在一屏观察。维护者回复：回合结束可能显示done，同时还有CI running状态。因此界面完成标记不等于整个交付完成。项目页抓取失败，本条依据维护者公开讨论。",
+        "translationScope": "中文释义摘要，非完整逐字译文",
+        "analysisState": "已分析",
+        "saveObject": "多会话等待状态对照",
+        "learningOutcome": "分清聊天回合完成与外部任务完成。",
+        "recommended": false,
+        "editorialGate": {
+          "saveObject": "多会话等待状态对照",
+          "learningOutcome": "分清聊天回合完成与外部任务完成。",
+          "passed": false,
+          "blockers": [
+            "未进入今日推荐，原因见reason与humanCheck"
+          ]
+        }
+      },
+      {
+        "id": 2026082612,
+        "rank": 12,
+        "source": "swimmingbrain",
+        "sourceType": "作者项目发布",
+        "sourceUrl": "https://github.com/swimmingbrain/texbrain",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49441375",
+        "originalTitle": "Show HN: TeXbrain, a LaTeX editor that runs pdfTeX in the browser via WASM",
+        "title": "AI改LaTeX，文件能留在同一文件夹",
+        "summary": "TeXbrain 作者介绍浏览器内pdfTeX编辑器，Chromium下可访问本地项目文件夹，便于与本地编辑器和Agent共用文件；仅pdfTeX，缺少XeTeX/LuaTeX等支持。",
+        "heat": 52,
+        "scarcity": 55,
+        "fit": 62,
+        "finalScore": 60,
+        "scoreDisclaimer": "内部选题排序分，非公开流量；国内稀缺度未测定。",
+        "reason": "有明确用途和8条讨论，但中文字体与文献流程可能受限制。",
+        "angle": "面向已有LaTeX需求的人讲文件协作，不推荐中文论文用户直接替换现有环境。",
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "category": "AI 技巧",
+        "status": "待选题",
+        "selected": false,
+        "live": true,
+        "assignee": "待分配",
+        "sourceCapturedAt": "2026-08-26T01:04:02.523Z",
+        "sourcePublishedAt": "2026-08-25",
+        "discussionPublishedAt": "2026-08-25T22:08:50Z",
+        "age": "8月25日发布",
+        "evidenceConfidence": 81,
+        "actionability": 63,
+        "domesticCoverage": "未取得小红书/抖音平台内语义检索证据；稀缺度仅用55的保守占位上限，不代表国内覆盖率。发布前人工搜索产品名、中文场景及同义表达。",
+        "humanCheck": "先用副本编译学校或期刊的模板；确认中文字体、引用、浏览器兼容性，不自动覆盖论文原件。",
+        "evidenceId": "2026-08-26-49441375",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49441375",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49441375",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:07:00.229Z",
+            "contentHash": "5d43e9066b4a606e3bc55e836562c6fcda6ee528537ec8f905b6dc63574310e9",
+            "rawSnapshotRef": "evidence/2026-08-26/49441375-discussion.json"
+          }
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 8,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 38,
+          "capturedAt": "2026-08-26T01:04:02.523Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49441375",
+          "metricKind": "Hacker News讨论积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "不等同HN积分",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 38积分 · 8条评论 · 原文浏览/点赞未取得，HN浏览量未公开",
+        "discussionFocus": [
+          "Firefox/Safari回退能否正常使用；对其他排版引擎的需求。"
+        ],
+        "commentSamples": [
+          "Gualdrapo · “This is super cool. I wish there was something like this for ConTeXt too.…” · https://news.ycombinator.com/item?id=49441758（节选，评论点赞未公开）",
+          "kccqzy · “Does this work on Firefox or Safari? You say “Firefox or Safari fall back to a virtual filesystem” but somehow…” · https://news.ycombinator.com/item?id=49442109（节选，评论点赞未公开）"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49441758",
+            "author": "Gualdrapo",
+            "url": "https://news.ycombinator.com/item?id=49441758",
+            "publishedAt": "2026-08-25T22:51:26.000Z",
+            "capturedAt": "2026-08-26T01:07:00.229Z",
+            "quote": "This is super cool. I wish there was something like this for ConTeXt too.",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          },
+          {
+            "id": "49442109",
+            "author": "kccqzy",
+            "url": "https://news.ycombinator.com/item?id=49442109",
+            "publishedAt": "2026-08-25T23:26:38.000Z",
+            "capturedAt": "2026-08-26T01:07:00.229Z",
+            "quote": "Does this work on Firefox or Safari? You say “Firefox or Safari fall back to a virtual filesystem” but somehow",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          }
+        ],
+        "reuseIdeas": [
+          "面向已有LaTeX需求的人讲文件协作，不推荐中文论文用户直接替换现有环境。",
+          "排版环境兼容性检查项"
+        ],
+        "localizedTranslation": "中文要点：这个工具不是AI模型，而是与本地AI协作的编辑环境。作者说明首次加载与依赖缓存后可离线，但部分字体包、文献工具不支持。Firefox/Safari的虚拟文件系统回退在评论里有人反馈不工作。",
+        "translationScope": "中文释义摘要，非完整逐字译文",
+        "analysisState": "已分析",
+        "saveObject": "排版环境兼容性检查项",
+        "learningOutcome": "区分AI能改源文件与排版引擎能正确编译。",
+        "recommended": false,
+        "editorialGate": {
+          "saveObject": "排版环境兼容性检查项",
+          "learningOutcome": "区分AI能改源文件与排版引擎能正确编译。",
+          "passed": false,
+          "blockers": [
+            "未进入今日推荐，原因见reason与humanCheck"
+          ]
+        }
+      },
+      {
+        "id": 2026082613,
+        "rank": 13,
+        "source": "Lanes",
+        "sourceType": "一手资料与社区讨论",
+        "sourceUrl": "https://lanes.sh/use-cases/scoped-account-access-for-agents",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49434996",
+        "originalTitle": "One portable foundation for your accounts, memory, skills and permissions",
+        "title": "只让AI查邮件，能不能不让它发？",
+        "summary": "Lanes Link 将每个能力分开授权，并记录被拒绝的调用。官方用gmail.search允许、gmail.send拒绝举例；不是仅靠提示词提醒。",
+        "heat": 35,
+        "scarcity": 55,
+        "fit": 78,
+        "finalScore": 59,
+        "scoreDisclaimer": "内部选题排序分，非公开流量；国内稀缺度未测定。",
+        "reason": "设计有参考价值，但权限代理涉及敏感账户，不能当一键安全方案推荐。",
+        "angle": "把抽象权限解释成查邮件与发邮件分开的业务动作，适合有助理自动化计划的小团队。",
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "category": "实操案例",
+        "status": "待选题",
+        "selected": false,
+        "live": true,
+        "assignee": "待分配",
+        "sourceCapturedAt": "2026-08-26T01:04:02.523Z",
+        "sourcePublishedAt": null,
+        "discussionPublishedAt": "2026-08-25T14:40:30Z",
+        "age": "今日采集 · 原文日期未核实",
+        "evidenceConfidence": 83,
+        "actionability": 61,
+        "domesticCoverage": "未取得小红书/抖音平台内语义检索证据；稀缺度仅用55的保守占位上限，不代表国内覆盖率。发布前人工搜索产品名、中文场景及同义表达。",
+        "humanCheck": "审核OAuth和工具级权限，测试拒绝行为，不连接主邮箱，不把日志哈希当作数据不泄露证明。",
+        "evidenceId": "2026-08-26-49434996",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49434996",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49434996",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:06:39.113Z",
+            "contentHash": "dffbc758d921d3c3ca3507d0be1c6ae8f4e0557f6e3450de7b8591e925f84760",
+            "rawSnapshotRef": "evidence/2026-08-26/49434996-discussion.json"
+          },
+          {
+            "type": "primary",
+            "url": "https://lanes.sh/use-cases/scoped-account-access-for-agents",
+            "finalUrl": "https://lanes.sh/use-cases/scoped-account-access-for-agents",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:06:40.342Z",
+            "contentHash": "12f7d5d776b7de8741e70dbbd670b1ebe4700317f4c2ce6604a7ab4d63c4ad77",
+            "rawSnapshotRef": "evidence/2026-08-26/49434996-primary.html"
+          }
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 2,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 5,
+          "capturedAt": "2026-08-26T01:04:02.523Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49434996",
+          "metricKind": "Hacker News讨论积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "不等同HN积分",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 5积分 · 2条评论 · 原文浏览/点赞未取得，HN浏览量未公开",
+        "discussionFocus": [
+          "仅取得一条用户追问：是否把所有连接汇成一个入口。无充分独立安全评测。"
+        ],
+        "commentSamples": [
+          "qave · “Like a single endpoint for all your connections?…” · https://news.ycombinator.com/item?id=49435153（节选，评论点赞未公开）"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49435153",
+            "author": "qave",
+            "url": "https://news.ycombinator.com/item?id=49435153",
+            "publishedAt": "2026-08-25T14:49:15.000Z",
+            "capturedAt": "2026-08-26T01:06:39.113Z",
+            "quote": "Like a single endpoint for all your connections?",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          }
+        ],
+        "reuseIdeas": [
+          "把抽象权限解释成查邮件与发邮件分开的业务动作，适合有助理自动化计划的小团队。",
+          "账户操作权限清单"
+        ],
+        "localizedTranslation": "中文要点：产品把拒绝默认、权限不向内放宽、逐调用审计作为设计原则；日志可做完整性核查。实际隔离效果和供应商授权范围仍需技术核验。",
+        "translationScope": "中文释义摘要，非完整逐字译文",
+        "analysisState": "已分析",
+        "saveObject": "账户操作权限清单",
+        "learningOutcome": "连接一个账号不代表应该允许它的所有操作。",
+        "recommended": false,
+        "editorialGate": {
+          "saveObject": "账户操作权限清单",
+          "learningOutcome": "连接一个账号不代表应该允许它的所有操作。",
+          "passed": false,
+          "blockers": [
+            "未进入今日推荐，原因见reason与humanCheck"
+          ]
+        }
+      },
+      {
+        "id": 2026082614,
+        "rank": 14,
+        "source": "Keenable team",
+        "sourceType": "作者项目发布",
+        "sourceUrl": "https://keenable.ai/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49435555",
+        "originalTitle": "Show HN: Keenable – A different web search API for AI agents",
+        "title": "AI搜索API，别只看“最低价”",
+        "summary": "Keenable公开独立网页索引、实时搜索比较基准和免费额度。官网区分普通构建者与高并发方案，首页最低单价有规模条件。",
+        "heat": 40,
+        "scarcity": 55,
+        "fit": 65,
+        "finalScore": 58,
+        "scoreDisclaimer": "内部选题排序分，非公开流量；国内稀缺度未测定。",
+        "reason": "对做AI产品的人有用，但偏开发者且与前几日搜索API主题相近，留候选不推荐。",
+        "angle": "把普通方案、规模条件与自测题集放在一起，不复读“最低1美元”广告。",
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "category": "产业观察",
+        "status": "待选题",
+        "selected": false,
+        "live": true,
+        "assignee": "待分配",
+        "sourceCapturedAt": "2026-08-26T01:04:02.523Z",
+        "sourcePublishedAt": "2026-08-25",
+        "discussionPublishedAt": "2026-08-25T15:12:52Z",
+        "age": "8月25日发布",
+        "evidenceConfidence": 84,
+        "actionability": 66,
+        "domesticCoverage": "未取得小红书/抖音平台内语义检索证据；稀缺度仅用55的保守占位上限，不代表国内覆盖率。发布前人工搜索产品名、中文场景及同义表达。",
+        "humanCheck": "确认免费额度周期、地区、账单和商用限制；每项价格注明时间；不声称比搜索竞品更准。",
+        "evidenceId": "2026-08-26-49435555",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49435555",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49435555",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:06:39.113Z",
+            "contentHash": "3ab11e5310bfae4d00bd32216c2d4d891d2eebb91b5a03f99ba20a79789356d9",
+            "rawSnapshotRef": "evidence/2026-08-26/49435555-discussion.json"
+          },
+          {
+            "type": "primary",
+            "url": "https://keenable.ai/",
+            "finalUrl": "https://keenable.ai/",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:06:40.496Z",
+            "contentHash": "3fd365288a8d31ab00e4647847efd3736be2c3888a90c74414f3a5d36a8d6c95",
+            "rawSnapshotRef": "evidence/2026-08-26/49435555-primary.html"
+          }
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 4,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 9,
+          "capturedAt": "2026-08-26T01:04:02.523Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49435555",
+          "metricKind": "Hacker News讨论积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "不等同HN积分",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 9积分 · 4条评论 · 原文浏览/点赞未取得，HN浏览量未公开",
+        "discussionFocus": [
+          "用户追问与Exa、Parallel、Perplexity有何不同；未取得独立速度测试。"
+        ],
+        "commentSamples": [
+          "styskin · “How is it different from Exa or Parallel?…” · https://news.ycombinator.com/item?id=49436083（节选，评论点赞未公开）",
+          "ic1018 · “I read your 2 axis chart of quality vs cost where there's a direct comparison vs Google and perplexity. But…” · https://news.ycombinator.com/item?id=49436471（节选，评论点赞未公开）"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49436083",
+            "author": "styskin",
+            "url": "https://news.ycombinator.com/item?id=49436083",
+            "publishedAt": "2026-08-25T15:46:23.000Z",
+            "capturedAt": "2026-08-26T01:06:39.113Z",
+            "quote": "How is it different from Exa or Parallel?",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          },
+          {
+            "id": "49436471",
+            "author": "ic1018",
+            "url": "https://news.ycombinator.com/item?id=49436471",
+            "publishedAt": "2026-08-25T16:14:29.000Z",
+            "capturedAt": "2026-08-26T01:06:39.113Z",
+            "quote": "I read your 2 axis chart of quality vs cost where there's a direct comparison vs Google and perplexity. But",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          }
+        ],
+        "reuseIdeas": [
+          "把普通方案、规模条件与自测题集放在一起，不复读“最低1美元”广告。",
+          "搜索API比价时要问的四个字段"
+        ],
+        "localizedTranslation": "中文要点：作者在HN称每月有10万次免费请求；官网显示Get Free 100K requests，同时列出普通构建者每千次4美元、高并发档每千次1美元。是否按月重置、限流与超额规则需控制台确认；基准由厂商自己提供。",
+        "translationScope": "中文释义摘要，非完整逐字译文",
+        "analysisState": "已分析",
+        "saveObject": "搜索API比价时要问的四个字段",
+        "learningOutcome": "区分最低宣传单价和当前团队实际可获得的单价。",
+        "recommended": false,
+        "editorialGate": {
+          "saveObject": "搜索API比价时要问的四个字段",
+          "learningOutcome": "区分最低宣传单价和当前团队实际可获得的单价。",
+          "passed": false,
+          "blockers": [
+            "未进入今日推荐，原因见reason与humanCheck"
+          ]
+        }
+      },
+      {
+        "id": 2026082615,
+        "rank": 15,
+        "source": "MIT",
+        "sourceType": "一手资料与社区讨论",
+        "sourceUrl": "https://aiandeducation.mit.edu/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49438466",
+        "originalTitle": "Report of MIT's Committee on AI Use in Teaching, Learning, and Research Training",
+        "title": "MIT开了一个AI教学报告入口",
+        "summary": "MIT公开教学、学习与研究训练中的AI使用委员会报告网站，可进入报告、附录、FAQ和下载页。本次核到入口介绍，未阅读全文。",
+        "heat": 28,
+        "scarcity": 55,
+        "fit": 64,
+        "finalScore": 49,
+        "scoreDisclaimer": "内部选题排序分，非公开流量；国内稀缺度未测定。",
+        "reason": "来源权威但当前只核到报告入口，正文证据深度不足，保留候选供人工读报告。",
+        "angle": "面向老师或教培运营提供原始报告入口；没有细读前不输出“MIT教你用AI”的结论。",
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "category": "产业观察",
+        "status": "待选题",
+        "selected": false,
+        "live": true,
+        "assignee": "待分配",
+        "sourceCapturedAt": "2026-08-26T01:04:02.523Z",
+        "sourcePublishedAt": null,
+        "discussionPublishedAt": "2026-08-25T18:29:18Z",
+        "age": "今日采集 · 原文日期未核实",
+        "evidenceConfidence": 65,
+        "actionability": 40,
+        "domesticCoverage": "未取得小红书/抖音平台内语义检索证据；稀缺度仅用55的保守占位上限，不代表国内覆盖率。发布前人工搜索产品名、中文场景及同义表达。",
+        "humanCheck": "完整阅读报告与附录，区分委员会建议和学校正式政策，确认发布日期与适用对象。",
+        "evidenceId": "2026-08-26-49438466",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49438466",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49438466",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:06:27.116Z",
+            "contentHash": "4c2ec1dffc557810f6ed193e312b9958477f80371e21ad32715e651ac13464d4",
+            "rawSnapshotRef": "evidence/2026-08-26/49438466-discussion.json"
+          },
+          {
+            "type": "primary",
+            "url": "https://aiandeducation.mit.edu/",
+            "finalUrl": "https://aiandeducation.mit.edu/",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:06:28.048Z",
+            "contentHash": "6edf22e4d22cfc98f94e91b1aefa69576c591957d6e0c1939f08d7720e67c415",
+            "rawSnapshotRef": "evidence/2026-08-26/49438466-primary.html"
+          }
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 0,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 3,
+          "capturedAt": "2026-08-26T01:04:02.523Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49438466",
+          "metricKind": "Hacker News讨论积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "不等同HN积分",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 3积分 · 0条评论 · 原文浏览/点赞未取得，HN浏览量未公开",
+        "discussionFocus": [
+          "无可验证评论样本，不能把报告存在解读成师生赞成某项政策。"
+        ],
+        "commentSamples": [
+          "无可验证评论样本"
+        ],
+        "verifiedComments": [],
+        "reuseIdeas": [
+          "面向老师或教培运营提供原始报告入口；没有细读前不输出“MIT教你用AI”的结论。",
+          "MIT原始报告与附录入口"
+        ],
+        "localizedTranslation": "中文要点：委员会在2026年1月受命了解师生如何使用生成式AI，评估教学与考核的机会和难题，并提出使用政策建议。入口页不足以证明具体政策已经被学校采纳。",
+        "translationScope": "中文释义摘要，非完整逐字译文",
+        "analysisState": "已分析",
+        "saveObject": "MIT原始报告与附录入口",
+        "learningOutcome": "找AI教学观点时先追到报告本身，而非二手标题。",
+        "recommended": false,
+        "editorialGate": {
+          "saveObject": "MIT原始报告与附录入口",
+          "learningOutcome": "找AI教学观点时先追到报告本身，而非二手标题。",
+          "passed": false,
+          "blockers": [
+            "未进入今日推荐，原因见reason与humanCheck"
+          ]
+        }
+      },
+      {
+        "id": 2026082616,
+        "rank": 16,
+        "source": "Google DeepMind",
+        "sourceType": "一手资料与社区讨论",
+        "sourceUrl": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49430567",
+        "originalTitle": "Games as the Engine of AI Research",
+        "title": "AI进游戏，先在不影响玩家的地方试",
+        "summary": "Google DeepMind 8月21日文章回顾游戏研究并介绍与Fenris Creations的合作；长期研究从离线EVE实例开始，不等于已把通用AI玩家投进正式服。",
+        "heat": 30,
+        "scarcity": 55,
+        "fit": 73,
+        "finalScore": 54,
+        "scoreDisclaimer": "内部选题排序分，非公开流量；国内稀缺度未测定。",
+        "reason": "画面感好，但8月21日文章且不能直接使用，不进入今日推荐。",
+        "angle": "一则让普通玩家理解“研究演示”和“可用产品”的AI小资讯，避免吹成自动代练。",
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "category": "产业观察",
+        "status": "待选题",
+        "selected": false,
+        "live": true,
+        "assignee": "待分配",
+        "sourceCapturedAt": "2026-08-26T01:04:02.523Z",
+        "sourcePublishedAt": "2026-08-21",
+        "discussionPublishedAt": "2026-08-25T08:16:04Z",
+        "age": "原文2026-08-21 · 今日采集",
+        "evidenceConfidence": 89,
+        "actionability": 34,
+        "domesticCoverage": "未取得小红书/抖音平台内语义检索证据；稀缺度仅用55的保守占位上限，不代表国内覆盖率。发布前人工搜索产品名、中文场景及同义表达。",
+        "humanCheck": "确认演示素材使用权与项目实际开放情况，不涉及游戏外挂、账号自动化或代练承诺。",
+        "evidenceId": "2026-08-26-49430567",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49430567",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49430567",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:06:27.116Z",
+            "contentHash": "6e2f772066a25d272b7e63972d10e4660ddd62a1a37914bd2fab2727d633a1b8",
+            "rawSnapshotRef": "evidence/2026-08-26/49430567-discussion.json"
+          },
+          {
+            "type": "primary",
+            "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
+            "finalUrl": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:06:28.279Z",
+            "contentHash": "93e5ef3f706913acebab7b10757229953184c7069438135cb561812f291e7712",
+            "rawSnapshotRef": "evidence/2026-08-26/49430567-primary.html"
+          }
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 0,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 4,
+          "capturedAt": "2026-08-26T01:04:02.523Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49430567",
+          "metricKind": "Hacker News讨论积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "不等同HN积分",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 4积分 · 0条评论 · 原文浏览/点赞未取得，HN浏览量未公开",
+        "discussionFocus": [
+          "无可验证评论样本；不能把厂商愿景归纳为玩家反馈。"
+        ],
+        "commentSamples": [
+          "无可验证评论样本"
+        ],
+        "verifiedComments": [],
+        "reuseIdeas": [
+          "一则让普通玩家理解“研究演示”和“可用产品”的AI小资讯，避免吹成自动代练。",
+          "研究原型与正式产品的区别"
+        ],
+        "localizedTranslation": "中文要点：研究关注持续学习、记忆、长期计划与多方互动；SIMA通过画面和键鼠学习操作。厂商描述的是研究方向及合作原型，不是今天可下载的游戏陪玩产品。",
+        "translationScope": "中文释义摘要，非完整逐字译文",
+        "analysisState": "已分析",
+        "saveObject": "研究原型与正式产品的区别",
+        "learningOutcome": "识别离线实验、合作原型和面向玩家发布的差别。",
+        "recommended": false,
+        "editorialGate": {
+          "saveObject": "研究原型与正式产品的区别",
+          "learningOutcome": "识别离线实验、合作原型和面向玩家发布的差别。",
+          "passed": false,
+          "blockers": [
+            "未进入今日推荐，原因见reason与humanCheck"
+          ]
+        }
+      },
+      {
+        "id": 2026082617,
+        "rank": 17,
+        "source": "Michael / Souren, AgentGrid",
+        "sourceType": "作者项目发布",
+        "sourceUrl": "https://agentgrid.sh/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49436219",
+        "originalTitle": "Show HN: Save Claude, codex, Grok and OpenCode sessions to an infinite canvas",
+        "title": "AI项目开太多窗口，可以放到一张画布",
+        "summary": "AgentGrid将终端会话、笔记和图片放在项目画布，官网介绍会话持久化、用量显示及多种编程助手支持。作者在HN讲述避免重启丢会话的动机。",
+        "heat": 22,
+        "scarcity": 55,
+        "fit": 75,
+        "finalScore": 56,
+        "scoreDisclaimer": "内部选题排序分，非公开流量；国内稀缺度未测定。",
+        "reason": "与个人项目有关，但只取得1积分且重启恢复需验证，保留候选。",
+        "angle": "给多项目创作者看“一个项目一块画布”，不要把画布和任务自动可靠完成画等号。",
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "category": "实操案例",
+        "status": "待选题",
+        "selected": false,
+        "live": true,
+        "assignee": "待分配",
+        "sourceCapturedAt": "2026-08-26T01:04:02.523Z",
+        "sourcePublishedAt": "2026-08-25",
+        "discussionPublishedAt": "2026-08-25T15:54:53Z",
+        "age": "8月25日发布",
+        "evidenceConfidence": 81,
+        "actionability": 65,
+        "domesticCoverage": "未取得小红书/抖音平台内语义检索证据；稀缺度仅用55的保守占位上限，不代表国内覆盖率。发布前人工搜索产品名、中文场景及同义表达。",
+        "humanCheck": "用不含客户资料的项目验证保存与恢复、收费和操作系统支持；不把官网人数当活跃使用人数。",
+        "evidenceId": "2026-08-26-49436219",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49436219",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49436219",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:10:42.429Z",
+            "contentHash": "f0d2d043c7eb7e2b42f3dedb635e8e66ad171a5877f02cc8824319843a814fa9",
+            "rawSnapshotRef": "evidence/2026-08-26/49436219-discussion.json"
+          },
+          {
+            "type": "primary",
+            "url": "https://agentgrid.sh/",
+            "finalUrl": "https://agentgrid.sh/",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:10:43.495Z",
+            "contentHash": "2d914264ffa932092290b3133b183c374039b48e05718e63c9658e519813fe68",
+            "rawSnapshotRef": "evidence/2026-08-26/49436219-primary.html"
+          }
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 0,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 1,
+          "capturedAt": "2026-08-26T01:04:02.523Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49436219",
+          "metricKind": "Hacker News讨论积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "不等同HN积分",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 1积分 · 0条评论 · 原文浏览/点赞未取得，HN浏览量未公开",
+        "discussionFocus": [
+          "HN无可验证评论样本；“界面更好用”仅是作者主张，没有用户对比结论。"
+        ],
+        "commentSamples": [
+          "无可验证评论样本"
+        ],
+        "verifiedComments": [],
+        "reuseIdeas": [
+          "给多项目创作者看“一个项目一块画布”，不要把画布和任务自动可靠完成画等号。",
+          "多项目工作区组织示例"
+        ],
+        "localizedTranslation": "中文要点：它是工作空间，不是新的基础模型。官网称可继续使用既有订阅，并把会话保存到本地项目目录；重启恢复能力与不同助手兼容情况尚未实测。",
+        "translationScope": "中文释义摘要，非完整逐字译文",
+        "analysisState": "已分析",
+        "saveObject": "多项目工作区组织示例",
+        "learningOutcome": "把项目上下文收拢，不让窗口数量代替工作完成度。",
+        "recommended": false,
+        "editorialGate": {
+          "saveObject": "多项目工作区组织示例",
+          "learningOutcome": "把项目上下文收拢，不让窗口数量代替工作完成度。",
+          "passed": false,
+          "blockers": [
+            "未进入今日推荐，原因见reason与humanCheck"
+          ]
+        }
+      },
+      {
+        "id": 2026082618,
+        "rank": 18,
+        "source": "Lukas von Kunhardt",
+        "sourceType": "一手资料与社区讨论",
+        "sourceUrl": "https://lukasvonkunhardt.com/obsidian-claude-code-setup/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49432729",
+        "originalTitle": "Obsidian and Claude Code: The Setup I Use Every Day",
+        "title": "让AI读项目笔记，不用搬整个笔记库",
+        "summary": "作者分享Obsidian与Claude Code共用本地Markdown文件的方式，按项目打开文件夹，并说明项目文件夹只是起点，不是权限隔离。原文8月19日。",
+        "heat": 25,
+        "scarcity": 55,
+        "fit": 86,
+        "finalScore": 63,
+        "scoreDisclaimer": "内部选题排序分，非公开流量；国内稀缺度未测定。",
+        "reason": "方法有实用性，但原文一周前且与既有记忆管理主题近，保留备选。",
+        "angle": "给写内容的人一条具体边界：拿一个项目文件夹试，不要先搭全库知识系统。",
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "category": "AI 技巧",
+        "status": "待选题",
+        "selected": false,
+        "live": true,
+        "assignee": "待分配",
+        "sourceCapturedAt": "2026-08-26T01:04:02.523Z",
+        "sourcePublishedAt": "2026-08-19",
+        "discussionPublishedAt": "2026-08-25T12:22:40Z",
+        "age": "原文2026-08-19 · 今日采集",
+        "evidenceConfidence": 86,
+        "actionability": 83,
+        "domesticCoverage": "未取得小红书/抖音平台内语义检索证据；稀缺度仅用55的保守占位上限，不代表国内覆盖率。发布前人工搜索产品名、中文场景及同义表达。",
+        "humanCheck": "先备份副本；检查助手权限与数据发送范围；目录起点不是安全沙箱，不能宣传“只读这个文件夹绝不会越界”。",
+        "evidenceId": "2026-08-26-49432729",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49432729",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49432729",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:10:46.612Z",
+            "contentHash": "208dae5074c5d1de6f8506093eba1d69d8831685680a7ecf828f29dad0db2724",
+            "rawSnapshotRef": "evidence/2026-08-26/49432729-discussion.json"
+          },
+          {
+            "type": "primary",
+            "url": "https://lukasvonkunhardt.com/obsidian-claude-code-setup/",
+            "finalUrl": "https://lukasvonkunhardt.com/obsidian-claude-code-setup/",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:10:47.448Z",
+            "contentHash": "a9c8c2102c957fa1d05a553b5db762676a0122feb5b9c26e38da89a01156ef12",
+            "rawSnapshotRef": "evidence/2026-08-26/49432729-primary.html"
+          }
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 0,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 2,
+          "capturedAt": "2026-08-26T01:04:02.523Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49432729",
+          "metricKind": "Hacker News讨论积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "不等同HN积分",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 2积分 · 0条评论 · 原文浏览/点赞未取得，HN浏览量未公开",
+        "discussionFocus": [
+          "未取得可验证评论样本，具体体验来自作者个人工作方式。"
+        ],
+        "commentSamples": [
+          "无可验证评论样本"
+        ],
+        "verifiedComments": [],
+        "reuseIdeas": [
+          "给写内容的人一条具体边界：拿一个项目文件夹试，不要先搭全库知识系统。",
+          "单项目笔记结构"
+        ],
+        "localizedTranslation": "中文要点：Obsidian负责查看和编辑文件，助手在同一项目目录工作。作者用版本管理保留旧稿；图片密集PDF和Excel工作不适合照搬这个设置。这个方法不保证文件不会被覆盖，仍需备份与审核修改。",
+        "translationScope": "中文释义摘要，非完整逐字译文",
+        "analysisState": "已分析",
+        "saveObject": "单项目笔记结构",
+        "learningOutcome": "用可查看、可回退的文件保留决定，不把全部知识锁在聊天记录。",
+        "recommended": false,
+        "editorialGate": {
+          "saveObject": "单项目笔记结构",
+          "learningOutcome": "用可查看、可回退的文件保留决定，不把全部知识锁在聊天记录。",
+          "passed": false,
+          "blockers": [
+            "未进入今日推荐，原因见reason与humanCheck"
+          ]
+        }
+      },
+      {
+        "id": 2026082619,
+        "rank": 19,
+        "source": "Coffeetable开发者",
+        "sourceType": "作者项目发布",
+        "sourceUrl": "https://claude.ai/directory/coffeetable",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49431866",
+        "originalTitle": "Show HN: Coffeetable, A new UX to discover books inside Claude",
+        "title": "AI推荐的书，能不能先读两页？",
+        "summary": "Coffeetable开发者称其Claude连接器可在聊天里展示书页预览，帮助决定是否继续阅读。目录页未成功读取，评论集中质疑授权与普通推荐的区别。",
+        "heat": 46,
+        "scarcity": 55,
+        "fit": 88,
+        "finalScore": 60,
+        "scoreDisclaimer": "内部选题排序分，非公开流量；国内稀缺度未测定。",
+        "reason": "普通读者好理解，但不能把尚未核清的试读授权当卖点，暂缓推荐。",
+        "angle": "先保留“先试读再决定”的读书场景，授权和可用性明确后再做工具操作稿。",
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "category": "AI 技巧",
+        "status": "待选题",
+        "selected": false,
+        "live": true,
+        "assignee": "待分配",
+        "sourceCapturedAt": "2026-08-26T01:04:02.523Z",
+        "sourcePublishedAt": "2026-08-25",
+        "discussionPublishedAt": "2026-08-25T11:07:22Z",
+        "age": "8月25日发布",
+        "evidenceConfidence": 64,
+        "actionability": 45,
+        "domesticCoverage": "未取得小红书/抖音平台内语义检索证据；稀缺度仅用55的保守占位上限，不代表国内覆盖率。发布前人工搜索产品名、中文场景及同义表达。",
+        "humanCheck": "核对官方连接器目录、试读来源与权利条款；不索取或搬运付费书全文，不声称可绕过版权。",
+        "evidenceId": "2026-08-26-49431866",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49431866",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49431866",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:06:14.353Z",
+            "contentHash": "9e67631ac0420c15d06708e471f57a6cc3ce39f547ab245fc4a5572035adad31",
+            "rawSnapshotRef": "evidence/2026-08-26/49431866-discussion.json"
+          }
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 10,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 14,
+          "capturedAt": "2026-08-26T01:04:02.523Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49431866",
+          "metricKind": "Hacker News讨论积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "不等同HN积分",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 14积分 · 10条评论 · 原文浏览/点赞未取得，HN浏览量未公开",
+        "discussionFocus": [
+          "它与直接问Claude推荐书有何差异；预览页的版权授权如何处理。"
+        ],
+        "commentSamples": [
+          "iamAnakin · “bro how is this different from just asking Claude? Isn't it the same thing?…” · https://news.ycombinator.com/item?id=49432211（节选，评论点赞未公开）",
+          "devel12 · “so this is essentially a workaround for copyright guardrails?…” · https://news.ycombinator.com/item?id=49432775（节选，评论点赞未公开）",
+          "steve_aldrin · “very cool, how do you bypass copyright? and what happens if it’s a recently released book?…” · https://news.ycombinator.com/item?id=49437486（节选，评论点赞未公开）"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49432211",
+            "author": "iamAnakin",
+            "url": "https://news.ycombinator.com/item?id=49432211",
+            "publishedAt": "2026-08-25T11:38:16.000Z",
+            "capturedAt": "2026-08-26T01:06:14.353Z",
+            "quote": "bro how is this different from just asking Claude? Isn't it the same thing?",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          },
+          {
+            "id": "49432775",
+            "author": "devel12",
+            "url": "https://news.ycombinator.com/item?id=49432775",
+            "publishedAt": "2026-08-25T12:25:54.000Z",
+            "capturedAt": "2026-08-26T01:06:14.353Z",
+            "quote": "so this is essentially a workaround for copyright guardrails?",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          },
+          {
+            "id": "49437486",
+            "author": "steve_aldrin",
+            "url": "https://news.ycombinator.com/item?id=49437486",
+            "publishedAt": "2026-08-25T17:23:24.000Z",
+            "capturedAt": "2026-08-26T01:06:14.353Z",
+            "quote": "very cool, how do you bypass copyright? and what happens if it’s a recently released book?",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          }
+        ],
+        "reuseIdeas": [
+          "先保留“先试读再决定”的读书场景，授权和可用性明确后再做工具操作稿。",
+          "选书前的试读核对清单"
+        ],
+        "localizedTranslation": "中文要点：作者希望把推荐与书页试读放在一起。原帖提出按用户偏好推荐书，但未在正文充分说明授权范围；本次不能确认试读书目、地区或具体连接器可用性。",
+        "translationScope": "中文释义摘要，非完整逐字译文",
+        "analysisState": "已分析",
+        "saveObject": "选书前的试读核对清单",
+        "learningOutcome": "推荐理由和真实阅读感受不同，试读必须来自有权提供的渠道。",
+        "recommended": false,
+        "editorialGate": {
+          "saveObject": "选书前的试读核对清单",
+          "learningOutcome": "推荐理由和真实阅读感受不同，试读必须来自有权提供的渠道。",
+          "passed": false,
+          "blockers": [
+            "未进入今日推荐，原因见reason与humanCheck"
+          ]
+        }
+      },
+      {
+        "id": 2026082620,
+        "rank": 20,
+        "source": "petruspennanen / ThinkOffApp",
+        "sourceType": "作者项目发布",
+        "sourceUrl": "https://github.com/ThinkOffApp/CarWatch",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49435675",
+        "originalTitle": "Show HN: I made a Raspberry with Qwen my local car AI",
+        "title": "树莓派车载AI，这个案例先别跟装",
+        "summary": "作者称在树莓派上运行Qwen并接入车辆诊断和厂商云端控制。评论追问具体硬件、模型选择及实际运行证据；代码页本次未取得。",
+        "heat": 60,
+        "scarcity": 55,
+        "fit": 56,
+        "finalScore": 40,
+        "scoreDisclaimer": "内部选题排序分，非公开流量；国内稀缺度未测定。",
+        "reason": "91积分、20条讨论在本批较高，但车辆控制安全与证据不足让它不适合推荐。",
+        "angle": "只作为“AI结合实体设备”的观察案例，等待只读演示和技术验证，不给普通车主操作教程。",
+        "platforms": [
+          "小红书",
+          "抖音",
+          "视频号"
+        ],
+        "category": "实操案例",
+        "status": "待选题",
+        "selected": false,
+        "live": true,
+        "assignee": "待分配",
+        "sourceCapturedAt": "2026-08-26T01:04:02.523Z",
+        "sourcePublishedAt": "2026-08-25",
+        "discussionPublishedAt": "2026-08-25T15:20:20Z",
+        "age": "8月25日发布",
+        "evidenceConfidence": 50,
+        "actionability": 20,
+        "domesticCoverage": "未取得小红书/抖音平台内语义检索证据；稀缺度仅用55的保守占位上限，不代表国内覆盖率。发布前人工搜索产品名、中文场景及同义表达。",
+        "humanCheck": "需要专业人员核对硬件、模型、合法授权和车辆安全；不连接真实车辆、不修改控制系统、不传播维修结论。",
+        "evidenceId": "2026-08-26-49435675",
+        "evidence": [
+          {
+            "type": "discussion",
+            "url": "https://hn.algolia.com/api/v1/items/49435675",
+            "finalUrl": "https://hn.algolia.com/api/v1/items/49435675",
+            "status": 200,
+            "capturedAt": "2026-08-26T01:07:00.229Z",
+            "contentHash": "ab44fa4c2da7b9ab369e98cbd810b6025f05d31f57c19047afb80c0155bf7781",
+            "rawSnapshotRef": "evidence/2026-08-26/49435675-discussion.json"
+          }
+        ],
+        "engagement": {
+          "views": null,
+          "likes": null,
+          "replies": 20,
+          "reposts": null,
+          "bookmarks": null,
+          "points": 91,
+          "capturedAt": "2026-08-26T01:04:02.523Z",
+          "metricSourceUrl": "https://news.ycombinator.com/item?id=49435675",
+          "metricKind": "Hacker News讨论积分与评论数",
+          "availability": {
+            "views": "未公开",
+            "likes": "不等同HN积分",
+            "reposts": "未公开",
+            "bookmarks": "未公开"
+          }
+        },
+        "engagementLabel": "HN 91积分 · 20条评论 · 原文浏览/点赞未取得，HN浏览量未公开",
+        "discussionFocus": [
+          "树莓派与模型的实际性能；诊断硬件如何接入；云端控制权限及演示可信度。"
+        ],
+        "commentSamples": [
+          "dofm · “Cool — but is that model really the right choice for the task? I guess it is only 3B active…” · https://news.ycombinator.com/item?id=49439307（节选，评论点赞未公开）",
+          "yjftsjthsd-h · “What's the hardware situation to get OBD data?…” · https://news.ycombinator.com/item?id=49439639（节选，评论点赞未公开）",
+          "Reubachi · “I'm currently integrating one for simple diagnostic readouts to integrated small touchscreen. The main goal being a retro looking display…” · https://news.ycombinator.com/item?id=49439897（节选，评论点赞未公开）"
+        ],
+        "verifiedComments": [
+          {
+            "id": "49439307",
+            "author": "dofm",
+            "url": "https://news.ycombinator.com/item?id=49439307",
+            "publishedAt": "2026-08-25T19:26:06.000Z",
+            "capturedAt": "2026-08-26T01:07:00.229Z",
+            "quote": "Cool — but is that model really the right choice for the task? I guess it is only 3B active",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          },
+          {
+            "id": "49439639",
+            "author": "yjftsjthsd-h",
+            "url": "https://news.ycombinator.com/item?id=49439639",
+            "publishedAt": "2026-08-25T19:49:59.000Z",
+            "capturedAt": "2026-08-26T01:07:00.229Z",
+            "quote": "What's the hardware situation to get OBD data?",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          },
+          {
+            "id": "49439897",
+            "author": "Reubachi",
+            "url": "https://news.ycombinator.com/item?id=49439897",
+            "publishedAt": "2026-08-25T20:08:42.000Z",
+            "capturedAt": "2026-08-26T01:07:00.229Z",
+            "quote": "I'm currently integrating one for simple diagnostic readouts to integrated small touchscreen. The main goal being a retro looking display",
+            "excerpt": true,
+            "score": null,
+            "scoreAvailability": "该接口未公开评论点赞"
+          }
+        ],
+        "reuseIdeas": [
+          "只作为“AI结合实体设备”的观察案例，等待只读演示和技术验证，不给普通车主操作教程。",
+          "案例证据核验项"
+        ],
+        "localizedTranslation": "中文要点：作者描述读取车辆手册、回答车辆问题，以及通过其他Agent处理后续事项。所述稳定性与控制能力均是作者陈述，不是本次验证结果，不能给车主提供安装或维修建议。",
+        "translationScope": "中文释义摘要，非完整逐字译文",
+        "analysisState": "已分析",
+        "saveObject": "案例证据核验项",
+        "learningOutcome": "演示声称能控制实体设备不等于可以安全照做。",
+        "recommended": false,
+        "editorialGate": {
+          "saveObject": "案例证据核验项",
+          "learningOutcome": "演示声称能控制实体设备不等于可以安全照做。",
+          "passed": false,
+          "blockers": [
+            "未进入今日推荐，原因见reason与humanCheck"
+          ]
+        }
+      }
+    ],
+    "drafts": [
+      {
+        "id": 5026082601,
+        "hotspotId": 2026082601,
+        "platform": "小红书",
+        "title": "新 Mac 两个内存上限，差得有点大",
+        "body": "苹果这次的新 Mac，有两个数字很容易看串：\n\nM6：统一内存最高 32GB。\nM5 Ultra：统一内存最高 512GB。\n\n同一场发布，但不是同一档机器。前者上了新 Mac mini，后者在 Mac Studio 上。512GB 也不是买台 Studio 就直接给你配满。\n\n如果你正准备在电脑上跑模型，先把这一行记下来就够了：\n「模型名称｜文件大小｜运行时需要的内存｜你选的机器配置」\n\n不要只存一张“最高支持512GB”的海报。等你真的选好模型，再去看对应配置的运行演示，才知道自己要买的是哪一台。\n\n平时只在网页里用 AI？这条当个新品消息看就行，不用因为“AI算力”四个字着急换机。\n\n资料：Apple 8月25日发布说明。这里整理的是官方规格，没做新机实测。",
+        "visual": "两页黑白大字卡：第一页用两个电脑小线稿分别标 M6 / 32GB 与 M5 Ultra / 512GB，醒目标“最高支持，非标配”；第二页放四栏空白配置核对表。带宽写在小注，不用夸张性能箭头。",
+        "videoScript": "苹果新 Mac 的消息里，先看清这两个数字：M6 最高支持三十二 GB 内存，M5 Ultra 最高五百一十二 GB。一个在新 Mac mini 上，一个在 Mac Studio 上，别把后者的配置想成所有新 Mac 都有。如果你想在电脑上跑 AI，先确定模型名字，再查文件大小和运行内存，最后对应到你要买的配置。能装下，也还要看跑得多快。只是打开网页聊 AI 的话，先不用为这次发布换电脑。这是官方规格整理，不是新机实测。",
+        "videoPlatforms": [
+          "抖音",
+          "视频号"
+        ],
+        "videoDurationEstimateSeconds": 32,
+        "videoDurationBasis": "按每秒4.3个汉字估算，待真人试读",
+        "version": "V1 · 2026-08-26 来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "本次重新筛选并逐条撰写；仅候选及初稿，未审核未发布。",
+        "revisedAt": "2026-08-26T01:56:31.996Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "Apple",
+        "sourceUrl": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49433292"
+      },
+      {
+        "id": 5026082602,
+        "hotspotId": 2026082602,
+        "platform": "小红书",
+        "title": "西语生词老忘？让它换个故事再出现",
+        "body": "背得出 cesta 是“篮子”，到了文章里又卡住了。可以让 AI 把它放进一段你能读懂的小故事里。\n\n这段直接改词就能用：\n「我在学 A2 西语。请围绕 cesta、madrugada、estante 写一段120词以内的日常小故事，其他词尽量简单。先别给翻译。读完我会发不懂的词，请结合原句解释；遇到固定搭配，要一起解释。」\n\n今天看懂了，下一次让这几个词换个场景出现：这次是买菜，下次是赶火车。比起反复看同一条例句，至少没那么容易靠记住句子混过去。\n\n有个新工具 ReadPlusOne 就在做这件事：点一下不认识的词，它会把这些词带进后面的故事。现在只做西语，建议 A2 以上，需要注册。\n\n提示词是轻量练习版，不会自动替你记复习时间；不想手动整理，可以再去看工具版。西语句子不确定的地方，还是要查词典。",
+        "visual": "三页：生词 cesta 配一个小篮子简笔画；完整可复制提示词；同一词在两个不同场景的空白例句位。例句须由西语熟练者核对后补入，不伪装真实产品结果。",
+        "videoScript": "西语单词背过了，放回文章还是不认识，可以试试让 AI 把生词写进小故事。比如你今天卡在三个词，就告诉它：我在学 A 二西语，用这几个词写一段一百二十词以内的日常故事，其他词简单一点，先不要翻译。读完再问原句是什么意思，固定搭配一起解释。下次换个场景再读这几个词。ReadPlusOne 把这个过程做成了工具，还会安排词汇重新出现。现在只支持西语，需要注册。提示词版则要自己记下哪些词需要复习，别指望开个新聊天它就全记得。",
+        "videoPlatforms": [
+          "抖音",
+          "视频号"
+        ],
+        "videoDurationEstimateSeconds": 40,
+        "videoDurationBasis": "按每秒4.3个汉字估算，待真人试读",
+        "version": "V1 · 2026-08-26 来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "本次重新筛选并逐条撰写；仅候选及初稿，未审核未发布。",
+        "revisedAt": "2026-08-26T01:56:31.996Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "brandonc7",
+        "sourceUrl": "https://readplusone.com/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49433095"
+      },
+      {
+        "id": 5026082603,
+        "hotspotId": 2026082603,
+        "platform": "小红书",
+        "title": "刷到片段没片名？可以这样找",
+        "body": "短视频剪得正好看，评论区就是没人说片名。\n\n可以存个找片网站：VidScio。它能吃截图、剧情描述和公开 YouTube 链接，给你几个可能的片名。测试期首页识别不用注册。\n\n描述时别只写“一个男的在逃跑”。把能确定的细节给它：\n「画面里是___；角色正在___；我记得有个___道具；大概是___年代看的。演员名字不确定，先不要按演员搜。」\n\n从 X、TikTok 这类地方刷到的片段，直接扔链接可能不行，补一张有辨识度的截图更合适。\n\n出了结果也别马上认定。拿年份、角色关系、那件特别的道具对一遍；对不上，就删掉最不确定的线索再找。\n\n它找的是候选片名，不是百发百中的识别器。公开功能整理，具体效果还没替你实测。",
+        "visual": "首图用“截图 → 片名？”的极简手绘；第二页是四个线索填空；第三页放年份/角色/道具核验栏。正式发布前补自己有权使用的实际截图与识别结果，不用虚构命中示例。",
+        "videoScript": "刷到电影片段，偏偏没片名，可以存一下 VidScio。它支持截图、剧情描述和公开 YouTube 链接，返回可能的电影或剧集。怎么描述更容易找？别只说一个人在逃跑，写画面地点、人物在做什么、特别的道具，还有你大概哪年看过。记不清演员，就明确说不确定。X 或 TikTok 的链接可能读不到，补截图。出了片名，再对一下年份和角色，别把 AI 的候选当成答案。现在官网写的是测试期免费，首页不用注册；这次我核了说明，还没做识别实测。",
+        "videoPlatforms": [
+          "抖音",
+          "视频号"
+        ],
+        "videoDurationEstimateSeconds": 37,
+        "videoDurationBasis": "按每秒4.3个汉字估算，待真人试读",
+        "version": "V1 · 2026-08-26 来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "本次重新筛选并逐条撰写；仅候选及初稿，未审核未发布。",
+        "revisedAt": "2026-08-26T01:56:31.996Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "aldrin_v",
+        "sourceUrl": "https://www.vidscio.com",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49432642"
+      },
+      {
+        "id": 5026082604,
+        "hotspotId": 2026082604,
+        "platform": "小红书",
+        "title": "生成贴纸的两步，可以放在同一页",
+        "body": "做一张透明底贴纸，通常得先生成图片，再去另一个地方抠背景。\n\nGradio 新教程里有个 AI Media Studio 示例，把这两步接在同一张画布上：先出图，再去背景。哪一步没做好，可以直接看那一步的结果。\n\n想试的话，打开教程找到「Try the AI Media Studio」。先用简单物件，比如：\n「一只拿着小花的黑白小猫，单个角色，轮廓完整，四周留白，没有文字。」\n\n先检查耳朵和尾巴有没有被裁掉，再看去背景后的边缘。复杂头发、半透明物件可以后面再挑战。\n\n教程还有图片编辑、配音等例子，先跑通贴纸这一个就够了。注意：模型调用可能要登录、令牌或计算额度，别把“有演示”理解成无限免费。\n\n入口：huggingface.co/blog/gradio-workflow-guide\n以上是官方示例整理，成图效果需要实际跑一次再发。",
+        "visual": "三页黑白卡：单个小猫轮廓概念示意（标注示意非生成结果）；“生图/去背景”两个步骤；真实演示结果的待拍摄位置。发布前替换为自己的运行截图，并记录模型与授权。",
+        "videoScript": "做透明底贴纸，生图和去背景可以放在同一个页面了。Gradio 新教程里的 AI Media Studio 就有这个示例：先生成一张图，再接去背景，每一步的结果都能看到。第一次别上复杂海报，先试一只拿花的小猫，要求轮廓完整、四周留白、没有文字。先看耳朵尾巴有没有缺，再看抠图边缘，问题会好找很多。入口在这篇教程的 AI Media Studio 链接。提醒一下，模型运行可能需要账号、令牌或者额度；这条是入口整理，实际效果要自己运行确认。",
+        "videoPlatforms": [
+          "抖音",
+          "视频号"
+        ],
+        "videoDurationEstimateSeconds": 37,
+        "videoDurationBasis": "按每秒4.3个汉字估算，待真人试读",
+        "version": "V1 · 2026-08-26 来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "本次重新筛选并逐条撰写；仅候选及初稿，未审核未发布。",
+        "revisedAt": "2026-08-26T01:56:31.996Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "Yuvraj Sharma / Abubakar Abid",
+        "sourceUrl": "https://huggingface.co/blog/gradio-workflow-guide",
+        "discussionUrl": "https://huggingface.co/blog/gradio-workflow-guide"
+      },
+      {
+        "id": 5026082605,
+        "hotspotId": 2026082605,
+        "platform": "小红书",
+        "title": "周报想不起来？这个工具只记屏幕文字",
+        "body": "周五写周报，记得自己忙了一周，偏偏想不起周二做了什么。\n\n有个 Mac 小工具叫 ambient-context：不录像、不截图，按间隔读当前窗口里的文字，每天存成一份 Markdown。之后可以让能读文件的 AI 帮你查。\n\n日志准备好后，可以这样问：\n「只看本周这个文件夹，按项目整理做过的事。每项附日期和对应记录。分清完成、进行中、待确认；没有结果的，不要帮我写成已完成。」\n\n它的短板也很具体：软件没有把文字开放给辅助功能接口，就可能记不全。评论区有人做过类似方案，反馈兼容性需要逐个处理。\n\n先在非敏感窗口试一小段，不要上来就录客户聊天。文字日志一样可能包含隐私；发给云端 AI 之前再筛一遍。这个项目我核对了作者说明，还没做安装实测。",
+        "visual": "首图是小日历和一张文字纸条；第二页完整周报提示词；第三页“非敏感窗口试录→检查日志→只给指定文件夹”的步骤。无实际安装截图前不制作伪界面。",
+        "videoScript": "写周报时想不起这一周干了什么，可以关注一个 Mac 工具，ambient-context。它不录屏，而是读当前窗口能获取的文字，每天存一个本地文件。有了记录，问 AI 时加一句：每项附日期和对应记录，分清完成、进行中、待确认，别把聊过的事写成做完了。先提醒两个限制：有些软件的文字可能采不到；不截图也不代表没隐私，客户聊天照样会变成文字。先用非敏感窗口短时间测试，确认记录内容，再决定要不要给 AI 读。",
+        "videoPlatforms": [
+          "抖音",
+          "视频号"
+        ],
+        "videoDurationEstimateSeconds": 36,
+        "videoDurationBasis": "按每秒4.3个汉字估算，待真人试读",
+        "version": "V1 · 2026-08-26 来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "本次重新筛选并逐条撰写；仅候选及初稿，未审核未发布。",
+        "revisedAt": "2026-08-26T01:56:31.996Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "Dramatize",
+        "sourceUrl": "https://github.com/dragthelake/ambient-context",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49429095"
+      },
+      {
+        "id": 5026082606,
+        "hotspotId": 2026082606,
+        "platform": "小红书",
+        "title": "AI 做背诵卡，先检查这一种假会了",
+        "body": "「气温下降了，所以天气更____。」\n\n答案写“冷”。这张卡你每次都能答对，但它其实没考你记住任何东西。\n\nAI 批量做填空卡，很容易混进这种题：答案藏在句子逻辑里，或者卡片另一行已经写了一遍。复习时一路点“简单”，也可能只是一路在猜。\n\n把已经做好的卡片丢给 AI 检查，可以用这段：\n「逐张看卡片。标出没学过也能猜对、答案在正面重复出现、一次要求背太多件事的题。保留知识点和出处，只改问法。先给我5张修改前后对照，我确认后再继续。」\n\n还有个容易漏的小地方：卡片里带 < 或 > 时，打开真实预览看一眼，别只看导入成功。\n\n这两个坑来自 Matt Segar 的制卡复盘。这里只借通用方法，不搬他的专业题库，也没有提分保证。",
+        "visual": "三页：自编“天气更____”反例；一个具体词义题的改前改后示意（标注自编）；完整检查提示词。示例不含原文医学数字，不写“提分神器”。",
+        "videoScript": "有一种背诵卡，你没学过也能答对。比如，气温下降，所以天气更空格。填个冷，是回忆还是猜出来的？AI 批量制卡时，这类题很容易混进去。可以让它逐张检查：没学过也能猜对的，答案在正面出现过的，一次要背太多件事的，全部标出来。别直接改整个题库，先看五张前后对照。导入 Anki 后，还要打开真实预览，特别是带小于号和大于号的卡。这些检查来自一份制卡复盘，不是提分结论；我们要确认的是卡片真的在考知识。",
+        "videoPlatforms": [
+          "抖音",
+          "视频号"
+        ],
+        "videoDurationEstimateSeconds": 38,
+        "videoDurationBasis": "按每秒4.3个汉字估算，待真人试读",
+        "version": "V1 · 2026-08-26 来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "本次重新筛选并逐条撰写；仅候选及初稿，未审核未发布。",
+        "revisedAt": "2026-08-26T01:56:31.996Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "Matt Segar",
+        "sourceUrl": "https://segar.me/blog/posts/anki_cards_claude_code.html",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49438805"
+      },
+      {
+        "id": 5026082607,
+        "hotspotId": 2026082607,
+        "platform": "小红书",
+        "title": "做流程图，先把谁来确认画清楚",
+        "body": "接单流程发一大段文字，对方还是会问：现在是等我，还是等你？\n\n可以直接做一张两行的泳道图。上面一行写客户要做的事，下面一行写你要做的事。\n\n这段画图要求可以存：\n「把接单过程画成两条泳道：客户、我。步骤是确认需求→报价→确认报价→初稿→反馈→修改→交付。每一步放进负责人的泳道；需要客户确认的节点留一个小圆点。黑白，字大，少线条，不加装饰。输出能在浏览器打开的HTML，并检查有没有文字挤在一起。」\n\n想试现成风格，可以看 Cathryn Lavery 的 Diagram Design 项目。它有流程、泳道、时间线等图表样式，输出的是 HTML 和 SVG。\n\n别一口气把合同条款全塞进去。这张图只负责一件事：把“下一步等谁”讲清楚。第三方技能先看说明再安装，生成后也要自己检查。",
+        "visual": "直接以本文自编接单流程为主图：两条横向泳道、七个简短节点、客户确认处小圆点。小红书拆两页保证字大；配图样式是方案，不冒充已经生成的成品。",
+        "videoScript": "客户老问现在等谁，可以把接单流程画成两条泳道：一条客户，一条你。确认需求、报价、确认报价、初稿、反馈、修改、交付，每一步放进负责人的那一行。需要对方拍板的地方，留一个小圆点。这样发给对方，不用再从聊天记录里翻下一步。想要现成的黑白图表风格，可以看 Diagram Design，它输出能在浏览器打开的 HTML 和 SVG。把这段流程交给 AI 后，要求字大、少线条，再检查箭头和文字有没有挤在一起。别把整份合同塞进图里。",
+        "videoPlatforms": [
+          "抖音",
+          "视频号"
+        ],
+        "videoDurationEstimateSeconds": 37,
+        "videoDurationBasis": "按每秒4.3个汉字估算，待真人试读",
+        "version": "V1 · 2026-08-26 来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "本次重新筛选并逐条撰写；仅候选及初稿，未审核未发布。",
+        "revisedAt": "2026-08-26T01:56:31.996Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "Cathryn Lavery",
+        "sourceUrl": "https://github.com/cathrynlavery/diagram-design",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49436034"
+      },
+      {
+        "id": 5026082608,
+        "hotspotId": 2026082608,
+        "platform": "小红书",
+        "title": "Portable Computer 不是新电脑",
+        "body": "看到 Portable Computer，还以为 Perplexity 要卖小电脑了。它这次发布的是应用。\n\n按 NVIDIA 8月25日的说明，现在重点适配的是 DGX Spark：本地跑个人 AI 助手，也能选择云端模型。\n\n几个容易看错的地方，直接记这版：\n• 现在适配：DGX Spark。\n• 还在计划里：GeForce RTX、RTX PRO、Windows 等支持。\n• “不占token额度”：说的是本地推理，不是整套使用零成本。\n\n已经有这类硬件的人，可以去看下载和订阅条件；普通 Windows 笔记本用户先收藏消息，别按标题理解成今天就能一键装。\n\n还有，模型在本机跑，和它连接的网盘、邮件都不联网，是两回事。真正处理私密文件前，需要看清用了哪个模型、接了哪些应用。\n\n资料来自 NVIDIA 的产品更新；Perplexity 的具体订阅条件仍需核对。",
+        "visual": "两栏黑白卡：“现在/DGX Spark”“计划/RTX、Windows等”；顶部一个应用窗口线稿，明确写“应用，不是新硬件”。页脚保留8月25日来源日期，不放虚构免费价格。",
+        "videoScript": "Perplexity 的 Portable Computer，不是一台新电脑，是运行在已有硬件上的 AI 助手应用。按 NVIDIA 八月二十五日的说明，目前重点适配 DGX Spark，可以用本地模型，也可以选择云端。RTX 和 Windows 等支持还在计划里，所以别看到名字就以为普通笔记本今天能直接装。还有一个重点：本地推理不占 token 额度，不等于硬件、订阅、云端调用全部免费。模型在本机，连网盘和邮件也仍然可能联网。先看自己有没有对应设备，再核下载和订阅条件。",
+        "videoPlatforms": [
+          "抖音",
+          "视频号"
+        ],
+        "videoDurationEstimateSeconds": 35,
+        "videoDurationBasis": "按每秒4.3个汉字估算，待真人试读",
+        "version": "V1 · 2026-08-26 来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "本次重新筛选并逐条撰写；仅候选及初稿，未审核未发布。",
+        "revisedAt": "2026-08-26T01:56:31.996Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "Perplexity / NVIDIA",
+        "sourceUrl": "https://www.perplexity.ai/hub/blog/introducing-portable-computer-for-local-first-ai",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49439535"
+      },
+      {
+        "id": 5026082609,
+        "hotspotId": 2026082609,
+        "platform": "小红书",
+        "title": "一直思考的AI，闲着也要花钱",
+        "body": "AI 不等你问，也会自己继续想事情，Headlong 在实验这个方向。\n\n有意思的部分之外，作者把代价也写了出来：后台也花钱；团队共享的记忆并没有按人隔开；还出现过自己把服务停掉的情况。\n\n这更像一个研究实验，不是装上就能替你管理工作的成熟助理。看它的演示时，也把“它看得到什么、没人用时花多少钱、怎么停止”一起看。",
+        "visual": "一张“等人给任务/持续自行运行”对照卡，旁边标成本、权限和停止开关。",
+        "version": "V1 · 2026-08-26 来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "本次重新筛选并逐条撰写；仅候选及初稿，未审核未发布。",
+        "revisedAt": "2026-08-26T01:56:31.996Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "Laude Institute / MIT",
+        "sourceUrl": "https://www.laude.org/updates/headlong-a-microharness-for-persistent-agents",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49428882"
+      },
+      {
+        "id": 5026082610,
+        "hotspotId": 2026082610,
+        "platform": "小红书",
+        "title": "网站变慢，先让AI看检查结果",
+        "body": "网站慢的时候，先别让 AI 凭感觉猜“可能是数据库”。pgbot 的做法是先读 PostgreSQL 的实际状态，列出诊断结果，再让助手解释优先看哪里。\n\n这个顺序值得保留：先证据，后解释。它面向开发人员，不是运营同学输入生产库密码就该试的工具。先配只读账号，在测试环境里看清它会读取什么。",
+        "visual": "“数据库状态→诊断结果→AI解释→人工决定”四步小图，最后一步不连接自动修改。",
+        "version": "V1 · 2026-08-26 来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "本次重新筛选并逐条撰写；仅候选及初稿，未审核未发布。",
+        "revisedAt": "2026-08-26T01:56:31.996Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "Alex / pgbot",
+        "sourceUrl": "https://pgbot.dev/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49438492"
+      },
+      {
+        "id": 5026082611,
+        "hotspotId": 2026082611,
+        "platform": "小红书",
+        "title": "开了几个AI窗口，哪个还在等你？",
+        "body": "同时开几个 AI 写代码，最烦的是它在等你确认，你却以为它还在工作。MulmoTerminal 想把这些窗口放进同一屏，用状态和声音提醒。\n\n看这个工具时记住一个小区别：AI 那一轮说完了，后台测试可能还在跑。维护者也专门解释了 done 和 CI running 的区别，别只看一个完成标记就交付。",
+        "visual": "三个窗口示意，分别标“等你确认/正在回复/后台测试”；明确是状态示意。",
+        "version": "V1 · 2026-08-26 来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "本次重新筛选并逐条撰写；仅候选及初稿，未审核未发布。",
+        "revisedAt": "2026-08-26T01:56:31.996Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "isamu / receptron",
+        "sourceUrl": "https://github.com/receptron/mulmoterminal",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49439218"
+      },
+      {
+        "id": 5026082612,
+        "hotspotId": 2026082612,
+        "platform": "小红书",
+        "title": "AI改LaTeX，文件能留在同一文件夹",
+        "body": "AI 改完 LaTeX，还要把文件搬回编辑器？TeXbrain 尝试把浏览器编辑器直接连到本地文件夹，其他编辑工具也能用同一批文件。\n\n但别急着拿毕业论文切换：作者写明目前只有 pdfTeX，部分字体和文献工具不支持，其他浏览器也有人反馈问题。先拿项目副本试一次完整编译，比试一个“你好世界”更有用。",
+        "visual": "本地文件夹连接编辑器与AI两端的小图；右下列pdfTeX、中文字体、引用三项检查。",
+        "version": "V1 · 2026-08-26 来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "本次重新筛选并逐条撰写；仅候选及初稿，未审核未发布。",
+        "revisedAt": "2026-08-26T01:56:31.996Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "swimmingbrain",
+        "sourceUrl": "https://github.com/swimmingbrain/texbrain",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49441375"
+      },
+      {
+        "id": 5026082613,
+        "hotspotId": 2026082613,
+        "platform": "小红书",
+        "title": "只让AI查邮件，能不能不让它发？",
+        "body": "“帮我查一下邮件”不等于“允许你替我发邮件”。Lanes Link 的一个设计就是把这两个动作分开，没放行的操作默认拒绝，拒绝记录也留下。\n\n如果你在准备自己的 AI 助理，先写一张表：能看什么、能改什么、哪一步必须问人。先用测试账号验证，别把一句“不要乱发”当成权限设置。",
+        "visual": "邮件图标旁两个独立开关：查找允许、发送拒绝；下方一条拒绝日志示意。",
+        "version": "V1 · 2026-08-26 来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "本次重新筛选并逐条撰写；仅候选及初稿，未审核未发布。",
+        "revisedAt": "2026-08-26T01:56:31.996Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "Lanes",
+        "sourceUrl": "https://lanes.sh/use-cases/scoped-account-access-for-agents",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49434996"
+      },
+      {
+        "id": 5026082614,
+        "hotspotId": 2026082614,
+        "platform": "小红书",
+        "title": "AI搜索API，别只看“最低价”",
+        "body": "Keenable 新的搜索 API 看起来便宜，但首页那个最低单价有使用规模条件。普通构建者用哪一档，得分开看。\n\n真要接进产品，拿自己每天会问的十个问题测试：有没有原文、是不是最新、失败算不算请求、超额怎么收费。免费额度适合验证这几件事，别只拿一张厂商排行图决定换服务。",
+        "visual": "价格字段留为“适用档位/请求量/免费周期/超额计费”，不做无条件价格大字海报。",
+        "version": "V1 · 2026-08-26 来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "本次重新筛选并逐条撰写；仅候选及初稿，未审核未发布。",
+        "revisedAt": "2026-08-26T01:56:31.996Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "Keenable team",
+        "sourceUrl": "https://keenable.ai/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49435555"
+      },
+      {
+        "id": 5026082615,
+        "hotspotId": 2026082615,
+        "platform": "小红书",
+        "title": "MIT开了一个AI教学报告入口",
+        "body": "做 AI 教学内容，可以先存 MIT 这个原始入口：aiandeducation.mit.edu。报告、附录和FAQ放在同一个站点。\n\n它讨论的是AI进入教学、学习和研究训练后的问题。这里只核对了入口，没有替你读完整份报告，所以现在不能延伸成“MIT已经要求所有学生这样用AI”。要引用某条建议，先找到报告里的具体段落。",
+        "visual": "报告入口导航小卡，只列Report / Appendices / FAQ，不伪造报告结论。",
+        "version": "V1 · 2026-08-26 来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "本次重新筛选并逐条撰写；仅候选及初稿，未审核未发布。",
+        "revisedAt": "2026-08-26T01:56:31.996Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "MIT",
+        "sourceUrl": "https://aiandeducation.mit.edu/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49438466"
+      },
+      {
+        "id": 5026082616,
+        "hotspotId": 2026082616,
+        "platform": "小红书",
+        "title": "AI进游戏，先在不影响玩家的地方试",
+        "body": "DeepMind 正在和游戏开发者研究：AI 能不能看懂游戏世界，记住发生过的事，再去完成更长的任务。\n\n这里有个重要细节：EVE 的长期研究先从离线环境开始，与真实玩家分开。不是今天就多了一款能替你玩所有游戏的助手。\n\n适合关注的是新玩法会怎么做，暂时别按通用代练软件去找下载。原文是8月21日发布，今天进入了社区讨论。",
+        "visual": "“离线研究→合作原型→未来产品”的三段线，最后一段用虚线并标未承诺发布。",
+        "version": "V1 · 2026-08-26 来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "本次重新筛选并逐条撰写；仅候选及初稿，未审核未发布。",
+        "revisedAt": "2026-08-26T01:56:31.996Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "Google DeepMind",
+        "sourceUrl": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49430567"
+      },
+      {
+        "id": 5026082617,
+        "hotspotId": 2026082617,
+        "platform": "小红书",
+        "title": "AI项目开太多窗口，可以放到一张画布",
+        "body": "一个窗口写页面，一个窗口改文案，再加截图和临时笔记，项目很快散得到处都是。AgentGrid 把这些放到一张可以拖动的画布里，官网还介绍了重启后的会话恢复。\n\n可以把它当新的工作台试试，不是新的AI模型。先拿一个小项目验证保存、重启、恢复都正常，再迁移重要任务；不要第一次就把几十个进行中的窗口全搬过去。",
+        "visual": "一张画布里放终端、笔记、参考图三块，标注概念布局，不复刻未验证的运行界面。",
+        "version": "V1 · 2026-08-26 来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "本次重新筛选并逐条撰写；仅候选及初稿，未审核未发布。",
+        "revisedAt": "2026-08-26T01:56:31.996Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "Michael / Souren, AgentGrid",
+        "sourceUrl": "https://agentgrid.sh/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49436219"
+      },
+      {
+        "id": 5026082618,
+        "hotspotId": 2026082618,
+        "platform": "小红书",
+        "title": "让AI读项目笔记，不用搬整个笔记库",
+        "body": "想让 AI 接着上次的项目写，不一定先做整个知识库。把一个项目的需求、已经决定的事、还没确认的问题，放到一个文件夹里就能先试。\n\nLukas 的做法是用 Obsidian 看这些 Markdown 笔记，让 Claude Code 在对应项目目录里工作。先读，再提修改，确认后再写。\n\n留好副本或版本记录。打开某个目录只是工作起点，不自动等于只能访问这里。原文是8月19日的经验分享，不是今天的新功能。",
+        "visual": "项目目录三份文件：需求、已确认、待确认；旁边一个备份符号，不做“永久记忆”海报。",
+        "version": "V1 · 2026-08-26 来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "本次重新筛选并逐条撰写；仅候选及初稿，未审核未发布。",
+        "revisedAt": "2026-08-26T01:56:31.996Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "Lukas von Kunhardt",
+        "sourceUrl": "https://lukasvonkunhardt.com/obsidian-claude-code-setup/",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49432729"
+      },
+      {
+        "id": 5026082619,
+        "hotspotId": 2026082619,
+        "platform": "小红书",
+        "title": "AI推荐的书，能不能先读两页？",
+        "body": "AI 推荐一本书，理由能写得很好，但你可能读两页就发现不合口味。Coffeetable 想把试读预览直接放进 Claude 的推荐对话。\n\n这个方向好理解，现阶段还需要确认它能展示哪些书、预览来自哪里、是否有授权。评论里也有人在问这些问题。\n\n在这些信息清楚之前，选书还是先用出版社、作者或正规书店提供的样章，不把聊天里生成的一段文字当成原书。",
+        "visual": "书封轮廓与“推荐理由/授权样章”两栏；不复制未授权书页。",
+        "version": "V1 · 2026-08-26 来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "本次重新筛选并逐条撰写；仅候选及初稿，未审核未发布。",
+        "revisedAt": "2026-08-26T01:56:31.996Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "Coffeetable开发者",
+        "sourceUrl": "https://claude.ai/directory/coffeetable",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49431866"
+      },
+      {
+        "id": 5026082620,
+        "hotspotId": 2026082620,
+        "platform": "小红书",
+        "title": "树莓派车载AI，这个案例先别跟装",
+        "body": "有人把树莓派、Qwen 和车辆信息接到一起，想让 AI 回答用车问题。这个案例讨论不少，但最关键的几个问题还没核实：具体配置是什么、实际响应多快、控制权限怎么处理。\n\n所以先看创意，别照着接自己的车。等有完整演示与安全验证，再判断值不值得关注；现在不能把“作者说能用”写成普通车主能安全安装。",
+        "visual": "车与问号的小线稿，旁边只列配置、运行证据、授权三项，不画接线图。",
+        "version": "V1 · 2026-08-26 来源写作稿",
+        "parentVersion": null,
+        "revisionMode": "operator-daily",
+        "revisionReason": "本次重新筛选并逐条撰写；仅候选及初稿，未审核未发布。",
+        "revisedAt": "2026-08-26T01:56:31.996Z",
+        "updatedBy": "Codex AI Content Operator",
+        "status": "待审核",
+        "reviewNote": "",
+        "sourceAttribution": "petruspennanen / ThinkOffApp",
+        "sourceUrl": "https://github.com/ThinkOffApp/CarWatch",
+        "discussionUrl": "https://news.ycombinator.com/item?id=49435675"
+      }
+    ],
+    "discoveryMeta": {
+      "runId": "daily-2026-08-26-real-sources",
+      "capturedAt": "2026-08-26T01:56:31.996Z",
+      "batchDate": "2026-08-26",
+      "discoveryCount": 349,
+      "coverageLabel": "本地20条候选、8条推荐，20条中文文案、8条独立口播稿。写入命令失败，生产站尚未验证更新。",
+      "editorialBrief": "面向普通读者整理找片、背词、贴纸、周报、学习卡片、流程图及产品更新。低互动不冒充爆款，旧文注明日期。",
+      "sourceSuccess": [
+        "HN Algolia：5组关键词、8次分页检索，349条去重结果，另取25个讨论详情；19条进入本批。",
+        "取得Apple、Laude、VidScio、ReadPlusOne、pgbot、Lanes、Keenable、MIT报告入口、DeepMind、AgentGrid、Matt Segar、Lukas及Diagram Design项目页；已区分原文与项目发布帖。",
+        "Hugging Face：详情页由网络检索工具成功读取，12次Upvote；直接HTTP下载超时。",
+        "NVIDIA：成功读取8月25日Portable Computer更新段落，作为Perplexity原页失败时的官方交叉来源。"
+      ],
+      "sourceFailure": [
+        "线上读取：授权环境可取得已有运营凭据，但接口返回403，页面标题为Attention Required! | Cloudflare。",
+        "备用数据库读取因workspace_states单行过大失败；浏览器私有导入页导航超时，未读取到生产reviewNote。",
+        "X近一天高赞AI检索页面导航超时；Instagram、TikTok、LinkedIn、Reddit没有本次可验证新增样本，不能声称这些渠道已采集成功。",
+        "国内语义查重未完成，不能标“国内没人发”。",
+        "本批保留20条候选，其中包含今日重新发现的近期文章、低互动新工具及需进一步验证的案例；并非20条当天新发的高赞社媒帖。",
+        "部分项目页超时或失败，作者的Show HN正文仍可验证；已经逐条标出证据范围。",
+        "中文字段是基于来源的释义摘要，不是受版权保护长文的全文翻译；完整译文需取得授权或用户提供原文。",
+        "配图目前是逐条方案，未生成成品图；推荐工具均未安装实测，口播时长按文字估算而非录音实测。"
+      ],
+      "recommendationCount": 8,
+      "domesticSearchState": "未取得小红书/抖音平台内语义检索证据；稀缺度仅用55的保守占位上限，不代表国内覆盖率。发布前人工搜索产品名、中文场景及同义表达。",
+      "reviewNoteAudit": {
+        "productionRead": "未成功",
+        "localBaselineDate": "2026-08-25",
+        "localBaselineNotes": 0,
+        "handled": 0,
+        "productionUnprocessedCount": null,
+        "action": "未读取线上意见，不能声称无需修改；本批只增量添加新ID，不对已有稿做修订，现有reviewNote和版本由服务端merge保留。"
+      },
+      "verification": {
+        "primaryPagesRead": {
+          "primaryHttpSuccess": 16,
+          "primaryHttpFailure": 9,
+          "scope": "部分原文成功，部分仅有作者发布帖或官方交叉来源；MIT仅核验报告入口，未阅读全文。每条记录标明限制。"
+        },
+        "toolsInstalledOrTested": false,
+        "imagesGenerated": false,
+        "fullTranslations": false,
+        "onlineReadBack": false
+      },
+      "productionWrite": {
+        "attemptDate": "2026-08-26",
+        "command": "npm run operator:push -- operator-packets/2026-08-26-daily-batch.json",
+        "mode": "merge",
+        "exitCode": 1,
+        "response": "HTML document instead of JSON; response.json failed with Unexpected token '<'",
+        "postHttpStatus": null,
+        "priorReadProbe": {
+          "httpStatus": 403,
+          "contentType": "text/html; charset=UTF-8",
+          "title": "Attention Required! | Cloudflare"
+        },
+        "browserFallback": {
+          "url": "https://tide-ai-content-studio.brittanyyitian.chatgpt.site/operator-import",
+          "result": "Private import navigation timed out in in-app browser and Chrome; form not reachable, no import submitted."
+        },
+        "productionReadBack": false,
+        "credentials": "Existing credentials used; no values logged or changed",
+        "status": "未取得成功写入证据，未确认生产更新"
+      }
+    }
+  }
+}

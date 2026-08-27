@@ -1,0 +1,1479 @@
+{
+  "schema_version": 2,
+  "batch_id": "daily-2026-08-25-real-sources",
+  "batch_date": "2026-08-25",
+  "editorial_brief": "优先保留编程判断力、OCR文档入模、陌生模型隔离、多Agent围栏、Agent调优基准、AI任务分级、无API原型和本地模型显存预算；芯片跑分、情绪立场、公共政策与模型传闻只留候选。",
+  "hotspots": [
+    {
+      "id": "2026082501",
+      "title": "AI写代码越快，越要留一小段自己硬写",
+      "original_title": "Coding expertise is going to collapse from AI reliance",
+      "summary": "作者担心依赖AI会削弱编程专业能力。HN讨论极大且分歧明显：有人认为旧技能本就会淘汰，但逻辑思维和工程品味仍需练；也有人类比计算器和编译器，质疑悲观结论。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "当天AI相关讨论最高，能改造成不会制造焦虑的刻意练习方法。",
+      "angle": "每个AI项目保留一段无AI实现、一次口头解释和一次故障推演。",
+      "human_check": "核作者论证与评论分歧；不要声称已有研究证明能力必然退化。",
+      "sources": [
+        {
+          "url": "https://larsfaye.com/articles/ai-coding-will-prevent-expertise",
+          "author": "Lars Faye / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49421554",
+          "source_type": "AI编程能力观点 + 超高讨论",
+          "captured_at": "2026-08-25T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 442 points · 444 comments（8月25日08:32采集）；原文浏览、收藏未公开"
+          },
+          "engagement_label": "Hacker News 442 points · 444 comments（8月25日08:32采集）；原文浏览、收藏未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 100,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 89,
+        "final": 88
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI写代码越快，越要留一小段自己硬写",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：依赖AI将导致编程专业能力崩塌。该标题是预测，不是已证实事实。",
+      "discussion_focus": [
+        "有人认为学旧语言的意义在于形成逻辑和工程品味，而非记语法。",
+        "反方把担忧类比为计算器或编译器导致技能下降。",
+        "多人担心人会接受不透明答案而停止核对其他来源。"
+      ],
+      "comment_samples": [
+        "一位开发者说自己早年学过BASIC、Pascal和汇编，虽然忘了语法，却保留了逻辑与工程品味。",
+        "有人反讽‘计算器会让数学能力崩塌’，质疑技术替代论。",
+        "另一位评论者担心人们向不透明机器求答案后就停止验证。"
+      ],
+      "reuse_ideas": [
+        "每个AI项目保留一段无AI实现、一次口头解释和一次故障推演。",
+        "AI编程三次刻意练习",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "AI编程三次刻意练习",
+      "learning_outcome": "会独立实现、解释代码和推演故障。"
+    },
+    {
+      "id": "2026082502",
+      "title": "PDF根本复制不了？先把这一块变成干净文本再喂AI",
+      "original_title": "OCR It – pull text out of un-copyable documents for your LLM",
+      "summary": "OCR It通过固定捕获区域和快捷键，从无法复制的扫描书、幻灯片、课程查看器中提取文本。评论关心低质量扫描、手写数学和Tesseract准确率。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "高互动且普通用户立即可用，适合做隐私与校对并重的OCR流程。",
+      "angle": "先抽样十页测准确率，再分段OCR、校对页码、最后给AI。",
+      "human_check": "核扩展权限、本地/云端处理、语言、手写识别、许可证和版权。",
+      "sources": [
+        {
+          "url": "https://github.com/thiagotigaz/ocr-it",
+          "author": "OCR It / GitHub / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49415852",
+          "source_type": "本地OCR工具 + 高讨论",
+          "captured_at": "2026-08-25T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 117 points · 27 comments（8月25日08:32采集）；GitHub采用量、OCR准确率未公开"
+          },
+          "engagement_label": "Hacker News 117 points · 27 comments（8月25日08:32采集）；GitHub采用量、OCR准确率未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 82,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 92,
+        "final": 83
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "PDF根本复制不了？先把这一块变成干净文本再喂AI",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：OCR It——从无法复制的文档中提取文本，供你的LLM使用。",
+      "discussion_focus": [
+        "作者场景包括扫描书、幻灯片、课程页面和图片型PDF。",
+        "用户追问低质量扫描准确率。",
+        "有人寻找手写数学与图表的批量OCR方案。"
+      ],
+      "comment_samples": [
+        "作者说固定一次区域后，可逐页按快捷键提取整本书文本。",
+        "用户询问低质量扫描的识别准确率。",
+        "另一位读者想批量识别包含公式和图表的手写笔记。"
+      ],
+      "reuse_ideas": [
+        "先抽样十页测准确率，再分段OCR、校对页码、最后给AI。",
+        "OCR进AI四步校对流程",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "OCR进AI四步校对流程",
+      "learning_outcome": "会抽样、分段、保留页码和校对关键数字。"
+    },
+    {
+      "id": "2026082503",
+      "title": "下载本地模型时，你信的不只是模型文件，还有推理引擎",
+      "original_title": "LLMs could control their host machines by exploiting inference engines",
+      "summary": "文章提出恶意模型可能利用推理引擎漏洞控制宿主机。评论分歧很大：有人主张必须用VM/容器隔离，也有人质疑文章对模型加载位置的表述。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "高讨论、风险具体，可转成普通用户跑陌生模型的隔离清单。",
+      "angle": "陌生权重只在非管理员账户、隔离目录、断网环境和可删除虚拟机中测试。",
+      "human_check": "核威胁模型、CVE/PoC、模型格式、运行器版本和独立安全复现；不可写成已大规模发生。",
+      "sources": [
+        {
+          "url": "https://boydkane.com/essays/llms-could-control-their-host-machines-by-exploiting-inference-engines",
+          "author": "Boyd Kane / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49424387",
+          "source_type": "推理引擎安全分析 + 高讨论",
+          "captured_at": "2026-08-25T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 83 points · 44 comments（8月25日08:32采集）；公开利用链和独立复现需核"
+          },
+          "engagement_label": "Hacker News 83 points · 44 comments（8月25日08:32采集）；公开利用链和独立复现需核"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 76,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 96,
+        "evidence_confidence": 74,
+        "final": 80
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "下载本地模型时，你信的不只是模型文件，还有推理引擎",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：LLM可能通过利用推理引擎来控制其宿主机。‘可能’和威胁条件不能省略。",
+      "discussion_focus": [
+        "高赞评论认为安全边界不应依赖harness，而应使用VM或容器。",
+        "有人指出常见本地运行器在macOS上并未沙箱化。",
+        "反方质疑文章对远端模型与宿主权重加载的描述。"
+      ],
+      "comment_samples": [
+        "评论者主张让Agent在独立VM或容器里拥有完全权限，而不是依赖提示词约束。",
+        "有人提醒LM Studio、Ollama等常见工具并不一定受macOS沙箱保护。",
+        "另一位评论者认为文章部分威胁描述需要更严谨。"
+      ],
+      "reuse_ideas": [
+        "陌生权重只在非管理员账户、隔离目录、断网环境和可删除虚拟机中测试。",
+        "陌生模型四层隔离卡",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "陌生模型四层隔离卡",
+      "learning_outcome": "会限制账户、目录、网络和虚拟机。"
+    },
+    {
+      "id": "2026082504",
+      "title": "管几十个Agent，光有沙箱不够：还要限制它能找谁、做多久",
+      "original_title": "Fences, Not Sandboxes",
+      "summary": "作者讨论用‘围栏’管理大规模Agent组织，而非只用沙箱。评论质疑50–60个Agent的协调开销、订阅监控和代码规模是否真正产生价值。",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "高讨论且能纠正只关注文件权限的Agent治理。",
+      "angle": "除文件网络隔离外，再限制联系人、任务时长、预算和升级路径。",
+      "human_check": "核作者架构、实际项目规模、成本和事故；不要照搬50–60个Agent作为最佳实践。",
+      "sources": [
+        {
+          "url": "https://yegge.ai/essays/fences-not-sandboxes/",
+          "author": "Steve Yegge / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49423146",
+          "source_type": "多Agent架构实践 + 高讨论",
+          "captured_at": "2026-08-25T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 50 points · 41 comments（8月25日08:32采集）；项目生产率、成本未公开"
+          },
+          "engagement_label": "Hacker News 50 points · 41 comments（8月25日08:32采集）；项目生产率、成本未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 68,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 98,
+        "evidence_confidence": 79,
+        "final": 78
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "管几十个Agent，光有沙箱不够：还要限制它能找谁、做多久",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：要围栏，不要沙箱。这里的‘围栏’是限制交互、责任和范围的架构比喻。",
+      "discussion_focus": [
+        "评论追问多Agent协调开销和结果可预测性。",
+        "有人质疑如何在大量订阅和任务中发现坏决定。",
+        "作者称只有少数Agent被允许与外部人类沟通，引发对沟通质量的讨论。"
+      ],
+      "comment_samples": [
+        "评论者问几十个Agent互相协调是否只是昂贵且不可预测的复杂性。",
+        "有人问如何从大量活跃订阅中定位错误决定。",
+        "另一位质疑代码量扩大是否真的等于生产率。"
+      ],
+      "reuse_ideas": [
+        "除文件网络隔离外，再限制联系人、任务时长、预算和升级路径。",
+        "多Agent四道围栏",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "多Agent四道围栏",
+      "learning_outcome": "会限制联系人、时长、预算和升级。"
+    },
+    {
+      "id": "2026082505",
+      "title": "让一个Agent优化另一个Agent，先给它一套不会变的考试题",
+      "original_title": "Agent Lightning v1.0",
+      "summary": "Microsoft发布Agent Lightning v1.0.1 Skill，用基准系统化优化提示词、工具、流程、模型和推理设置，并平衡准确率、成本、延迟和可靠性。唯一评论为项目说明。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "一手发布且方法可复用，适合把Agent调优从凭感觉变成测量。",
+      "angle": "冻结20个真实任务，每次只改一个变量，同时记录质量、成本、延迟和失败率。",
+      "human_check": "核许可证、支持Agent、基准泄漏、费用、遥测和复现结果。",
+      "sources": [
+        {
+          "url": "https://github.com/microsoft/agent-lightning/releases/tag/v1.0.1",
+          "author": "Microsoft Agent Lightning / GitHub / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49423077",
+          "source_type": "Agent优化开源Skill发布",
+          "captured_at": "2026-08-25T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 35 points · 1 comment（8月25日08:32采集）；GitHub采用量、真实提升未公开"
+          },
+          "engagement_label": "Hacker News 35 points · 1 comment（8月25日08:32采集）；GitHub采用量、真实提升未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 59,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 91,
+        "final": 78
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "让一个Agent优化另一个Agent，先给它一套不会变的考试题",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：Agent Lightning 1.0。它是帮助编码Agent优化其他AI Agent的Skill。",
+      "discussion_focus": [
+        "唯一评论说明Skill需要一个可编辑Agent和一套基准。",
+        "暂无独立用户评论。"
+      ],
+      "comment_samples": [
+        "项目说明称它会迭代提示词、工具、流程、模型和推理设置，同时权衡准确率、成本、延迟和可靠性。"
+      ],
+      "reuse_ideas": [
+        "冻结20个真实任务，每次只改一个变量，同时记录质量、成本、延迟和失败率。",
+        "Agent调优四指标实验表",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "Agent调优四指标实验表",
+      "learning_outcome": "会冻结任务并记录质量、成本、延迟和失败率。"
+    },
+    {
+      "id": "2026082506",
+      "title": "不是每个AI任务都要秒回：分成3档，成本会好看很多",
+      "original_title": "Most AI Work Can Wait",
+      "summary": "作者主张多数AI工作无需即时执行，可按紧急度路由到不同处理方式。当天无评论，具体节省效果需人工验证。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "直接关联成本和体验，适合普通团队建立任务分级。",
+      "angle": "秒级交互、分钟级后台、夜间批处理三档路由。",
+      "human_check": "核作者案例和成本假设；涉及客服承诺与安全告警的任务不能擅自延迟。",
+      "sources": [
+        {
+          "url": "https://tomtunguz.com/ai-execution-routing/",
+          "author": "Tom Tunguz / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49416553",
+          "source_type": "AI任务优先级观点",
+          "captured_at": "2026-08-25T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 28 points · 0 comments（8月25日08:32采集）；文章阅读、节省比例未公开"
+          },
+          "engagement_label": "Hacker News 28 points · 0 comments（8月25日08:32采集）；文章阅读、节省比例未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 52,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 81,
+        "final": 75
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "不是每个AI任务都要秒回：分成3档，成本会好看很多",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：大多数AI工作都可以等。",
+      "discussion_focus": [
+        "当天HN无可验证评论。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "秒级交互、分钟级后台、夜间批处理三档路由。",
+        "AI任务三档路由表",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "AI任务三档路由表",
+      "learning_outcome": "会区分即时、后台和夜间任务。"
+    },
+    {
+      "id": "2026082507",
+      "title": "不用另买API额度，也能把ChatGPT里的想法做成小应用？",
+      "original_title": "Deno team releases Dactyl, an AI app builder that runs on your ChatGPT plan",
+      "summary": "Deno团队发布Dactyl，称可使用ChatGPT订阅构建AI应用。当天HN无评论，权限、托管、费用和商业使用边界需核。",
+      "category": "接单变现",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "对个人项目和接单读者有吸引力，但用小原型而非产品宣传角度。",
+      "angle": "先做单输入、单输出、无敏感数据的客户演示，核导出与部署。",
+      "human_check": "核官方文档、ChatGPT计划要求、数据流、托管、收费、导出和商业条款。",
+      "sources": [
+        {
+          "url": "https://dactyl.dev/",
+          "author": "Deno Dactyl / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49425599",
+          "source_type": "AI应用生成器发布",
+          "captured_at": "2026-08-25T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 14 points · 0 comments（8月25日08:32采集）；产品限制、公开用户反馈未公开"
+          },
+          "engagement_label": "Hacker News 14 points · 0 comments（8月25日08:32采集）；产品限制、公开用户反馈未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 46,
+        "domestic_scarcity": 55,
+        "account_fit": 98,
+        "actionability": 94,
+        "evidence_confidence": 86,
+        "final": 72
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "不用另买API额度，也能把ChatGPT里的想法做成小应用？",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：Deno团队发布Dactyl——一个运行在你的ChatGPT方案上的AI应用构建器。",
+      "discussion_focus": [
+        "当天HN无评论，不能判断实际易用性。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "先做单输入、单输出、无敏感数据的客户演示，核导出与部署。",
+        "AI应用原型五项验收",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "AI应用原型五项验收",
+      "learning_outcome": "会核输入、数据、部署、导出和费用。"
+    },
+    {
+      "id": "2026082508",
+      "title": "下载几十GB模型前，先算清你的显卡到底装不装得下",
+      "original_title": "Open-source calculator for 'will my GPU run this LLM?'",
+      "summary": "开源计算器估算GPU能否运行指定LLM。评论量少；估算必须考虑量化、上下文、KV缓存、运行器和额外显存，而非只看权重大小。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": true,
+      "reason": "非常具体、收藏价值高，适合做下载前检查。",
+      "angle": "权重+KV缓存+运行器开销+安全余量四项估算。",
+      "human_check": "核支持模型、GPU、量化、上下文长度、并发和多卡规则；实际运行需留余量。",
+      "sources": [
+        {
+          "url": "https://jaeseok614.github.io/llm-gpu-checker-ko/",
+          "author": "LLM GPU Checker / GitHub / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49415348",
+          "source_type": "本地模型显存计算器",
+          "captured_at": "2026-08-25T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 5 points · 3 comments（8月25日08:32采集）；计算器准确率、硬件覆盖未公开"
+          },
+          "engagement_label": "Hacker News 5 points · 3 comments（8月25日08:32采集）；计算器准确率、硬件覆盖未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 40,
+        "domestic_scarcity": 55,
+        "account_fit": 100,
+        "actionability": 100,
+        "evidence_confidence": 80,
+        "final": 72
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "下载几十GB模型前，先算清你的显卡到底装不装得下",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：开源计算器——‘我的GPU能运行这个LLM吗？’",
+      "discussion_focus": [
+        "公开讨论样本很少，尚无足够准确率反馈。"
+      ],
+      "comment_samples": [
+        "HN共有3条评论，未形成可验证的准确率共识。"
+      ],
+      "reuse_ideas": [
+        "权重+KV缓存+运行器开销+安全余量四项估算。",
+        "本地模型四项显存预算",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "本地模型四项显存预算",
+      "learning_outcome": "会算权重、KV缓存、运行器和余量。"
+    },
+    {
+      "id": "2026082509",
+      "title": "小米新CPU单核追平Apple？跑分还缺功耗和测试条件",
+      "original_title": "Xiaomi: New CPU matches Apple cores single threaded, much faster multithreaded",
+      "summary": "X帖称小米新CPU单线程匹配Apple核心、多线程更快。HN讨论极高，评论追问每瓦性能、内存带宽和具体芯片/设备对比。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "总体互动最高但不是核心AI内容，且跑分条件不全，只留候选。",
+      "angle": "芯片跑分同时核单核、多核、功耗、内存和设备散热。",
+      "human_check": "核原始测试、型号、编译器、功耗、散热、内存和可购买产品。",
+      "sources": [
+        {
+          "url": "https://twitter.com/lemire/status/2091894299289874926",
+          "author": "Daniel Lemire / X / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49420873",
+          "source_type": "芯片跑分帖 + 超高讨论",
+          "captured_at": "2026-08-25T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "X公开互动本轮未稳定取得；Hacker News 707 points · 476 comments（8月25日08:32采集）"
+          },
+          "engagement_label": "X公开互动本轮未稳定取得；Hacker News 707 points · 476 comments（8月25日08:32采集）"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 97,
+        "domestic_scarcity": 55,
+        "account_fit": 55,
+        "actionability": 25,
+        "evidence_confidence": 54,
+        "final": 61
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "小米新CPU单核追平Apple？跑分还缺功耗和测试条件",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：小米——新CPU单线程匹配Apple核心，多线程快得多。",
+      "discussion_focus": [
+        "评论追问每瓦性能。",
+        "有人指出内存带宽可能不够本地AI推理。",
+        "读者贴出不同Apple与XRing跑分，提醒不是同类设备直接比较。"
+      ],
+      "comment_samples": [
+        "评论者说性能没有免费的午餐，想看每瓦表现。",
+        "有人指出LPDDR6带宽对高速推理仍可能不足。",
+        "另一位列出多款芯片分数提醒对比口径。"
+      ],
+      "reuse_ideas": [
+        "芯片跑分同时核单核、多核、功耗、内存和设备散热。",
+        "芯片跑分五项核验",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "芯片跑分五项核验",
+      "learning_outcome": "会核单核、多核、功耗、内存和散热。"
+    },
+    {
+      "id": "2026082510",
+      "title": "AI让人又兴奋又焦虑，这两种感受可以同时存在",
+      "original_title": "Anger, Anxiety and Agency",
+      "summary": "文章讨论AI浪潮中的愤怒、焦虑与行动感。评论呈现强烈分歧：有人因效率提升兴奋，也有人失眠、恐惧或担心收益只归公司。",
+      "category": "个人 IP",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "讨论高但涉及心理和阶层立场，不推荐。",
+      "angle": "区分工作效率、职业安全、社会分配与个人健康。",
+      "human_check": "核作者立场；涉及持续失眠或严重焦虑应提示寻求专业帮助，不作医疗建议。",
+      "sources": [
+        {
+          "url": "https://lucumr.pocoo.org/2026/8/24/anger-anxiety-agency/",
+          "author": "Armin Ronacher / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49424082",
+          "source_type": "AI时代心理与职业文章 + 高讨论",
+          "captured_at": "2026-08-25T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 89 points · 96 comments（8月25日08:32采集）；个人体验，无心理健康效果数据"
+          },
+          "engagement_label": "Hacker News 89 points · 96 comments（8月25日08:32采集）；个人体验，无心理健康效果数据"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 72,
+        "domestic_scarcity": 55,
+        "account_fit": 72,
+        "actionability": 46,
+        "evidence_confidence": 82,
+        "final": 65
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI让人又兴奋又焦虑，这两种感受可以同时存在",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：愤怒、焦虑与行动感。",
+      "discussion_focus": [
+        "有人享受效率和副项目进展，却同时失眠并害怕落后。",
+        "评论担心生产率收益归公司而非员工。",
+        "部分读者认为对AI感到恐惧是合理反应。"
+      ],
+      "comment_samples": [
+        "一位用户说工作快了五倍、项目都能推进，却从未如此焦虑。",
+        "有人担心效率红利主要归企业。",
+        "另一位读者明确说自己对未来感到恐惧。"
+      ],
+      "reuse_ideas": [
+        "区分工作效率、职业安全、社会分配与个人健康。",
+        "AI焦虑四层问题卡",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "AI焦虑四层问题卡",
+      "learning_outcome": "会区分效率、岗位、分配和健康。"
+    },
+    {
+      "id": "2026082511",
+      "title": "一家软件公司宣布完全不用AI，评论区在争什么",
+      "original_title": "We never use AI. For anything",
+      "summary": "CorkMac公开声明从不使用AI。评论一部分认为立场过时或营销化，另一部分认为手工软件会像其他手工产品形成小众市场。",
+      "category": "个人 IP",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "高讨论但立场营销成分强，不推荐。",
+      "angle": "品牌AI政策应具体披露使用范围、数据、人工责任和变化通知。",
+      "human_check": "核公司实际流程与隐私政策，不替其宣称绝对合规。",
+      "sources": [
+        {
+          "url": "https://corkmac.app/our-ai-stance/",
+          "author": "CorkMac / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49417313",
+          "source_type": "产品团队AI立场声明 + 高讨论",
+          "captured_at": "2026-08-25T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 81 points · 95 comments（8月25日08:32采集）；公司销售与用户影响未公开"
+          },
+          "engagement_label": "Hacker News 81 points · 95 comments（8月25日08:32采集）；公司销售与用户影响未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 69,
+        "domestic_scarcity": 55,
+        "account_fit": 64,
+        "actionability": 40,
+        "evidence_confidence": 87,
+        "final": 62
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "一家软件公司宣布完全不用AI，评论区在争什么",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：我们从不使用AI，任何事情都不用。",
+      "discussion_focus": [
+        "反方将全面拒绝AI类比为拒绝IDE和静态检查。",
+        "有人认为手工软件会形成更贵、更小的市场。",
+        "评论也认可对监控和数据滥用的部分担忧。"
+      ],
+      "comment_samples": [
+        "有人说这是奇怪的立场，像拒绝IDE或linter。",
+        "另一位认为手工软件会像手工家具一样保留市场。",
+        "有人觉得产品速度已因AI辅助明显提高。"
+      ],
+      "reuse_ideas": [
+        "品牌AI政策应具体披露使用范围、数据、人工责任和变化通知。",
+        "品牌AI政策四项披露",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "品牌AI政策四项披露",
+      "learning_outcome": "会写范围、数据、责任和通知。"
+    },
+    {
+      "id": "2026082512",
+      "title": "换了同一个模型，Agent为什么像换了个人",
+      "original_title": "Agent Is Not the Model",
+      "summary": "文章区分模型、Agent与harness。评论有人认为概念无需强调，也有人把Agent简化为带工具调用的LLM循环，并纠正产品分类细节。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "与8月22日harness主题接近，不重复推荐。",
+      "angle": "比较Agent要固定模型，再看工具、上下文、循环和权限。",
+      "human_check": "核术语与产品版本，不把行业定义写成唯一标准。",
+      "sources": [
+        {
+          "url": "https://code.joejag.com/2026/your-agent-is-not-the-model.html",
+          "author": "Joe Jaguar / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49418163",
+          "source_type": "Agent概念解释 + 讨论",
+          "captured_at": "2026-08-25T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 63 points · 34 comments（8月25日08:32采集）；文章浏览未公开"
+          },
+          "engagement_label": "Hacker News 63 points · 34 comments（8月25日08:32采集）；文章浏览未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 63,
+        "domestic_scarcity": 55,
+        "account_fit": 88,
+        "actionability": 70,
+        "evidence_confidence": 81,
+        "final": 70
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "换了同一个模型，Agent为什么像换了个人",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：Agent不是模型。",
+      "discussion_focus": [
+        "有人认为Agent就是代表他者执行任务的系统。",
+        "有人用带工具调用的聊天循环解释Agent。",
+        "评论纠正文中Claude产品分类。"
+      ],
+      "comment_samples": [
+        "评论者称Agent是代表其他人或系统执行任务的东西。",
+        "另一位说Agent行为可从LLM聊天循环加工具调用中产生。"
+      ],
+      "reuse_ideas": [
+        "比较Agent要固定模型，再看工具、上下文、循环和权限。",
+        "Agent四层对照",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "Agent四层对照",
+      "learning_outcome": "会分模型、上下文、工具和循环。"
+    },
+    {
+      "id": "2026082513",
+      "title": "AI让公共申请暴增，是“滥用”还是终于降低了门槛",
+      "original_title": "Characterizing Agentic Flooding of Government Services",
+      "summary": "论文研究Agent导致公共服务请求洪水。评论质疑‘flooding’的价值判断和因果证据，也有人认为AI让过去没时间、资源的人更容易申请。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "公共政策敏感，不推荐。",
+      "angle": "同时看请求量、有效率、处理能力和公平可及性。",
+      "human_check": "核论文数据、因果、地区、申请类型、误用率和机构回应。",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2608.16603",
+          "author": "arXiv / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49422227",
+          "source_type": "公共服务Agent研究 + 高讨论",
+          "captured_at": "2026-08-25T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 62 points · 74 comments（8月25日08:32采集）；论文因果证据与同行评审需核"
+          },
+          "engagement_label": "Hacker News 62 points · 74 comments（8月25日08:32采集）；论文因果证据与同行评审需核"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 62,
+        "domestic_scarcity": 55,
+        "account_fit": 50,
+        "actionability": 30,
+        "evidence_confidence": 79,
+        "final": 54
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI让公共申请暴增，是“滥用”还是终于降低了门槛",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：刻画Agent对政府服务的涌入。‘flooding’带有负面框架。",
+      "discussion_focus": [
+        "评论认为问题可能源于公共服务长期资金不足。",
+        "有人说AI让普通人更容易申诉和申请。",
+        "多位读者质疑论文没有证据证明增长由LLM造成。"
+      ],
+      "comment_samples": [
+        "评论者说AI可能只是暴露了系统依赖繁琐流程抑制申请。",
+        "有人认为过去只有有钱有时间者能争取权益。",
+        "另一位质疑‘flooding’一词暗示恶意但论文证据不足。"
+      ],
+      "reuse_ideas": [
+        "同时看请求量、有效率、处理能力和公平可及性。",
+        "公共服务AI四项指标",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "公共服务AI四项指标",
+      "learning_outcome": "会看数量、有效、能力和公平。"
+    },
+    {
+      "id": "2026082514",
+      "title": "CUDA开始瞄准RISC-V，真正变化可能是服务器标准",
+      "original_title": "Hot Chips 2026: CUDA Targets RISC-V",
+      "summary": "Hot Chips内容讨论CUDA目标转向RISC-V。评论认为重点可能不是简单‘CUDA能跑’，而是Nvidia定义可支持CUDA的RISC-V服务器轮廓。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "纯硬件产业内容，不推荐。",
+      "angle": "区分指令集支持、服务器规范、产品落地和性能。",
+      "human_check": "核会议材料、Nvidia公告、硬件时间表、兼容范围和基准。",
+      "sources": [
+        {
+          "url": "https://chipsandcheese.com/p/hot-chips-2026-cuda-targets-risc",
+          "author": "Hot Chips / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49422548",
+          "source_type": "CUDA与RISC-V芯片报道 + 讨论",
+          "captured_at": "2026-08-25T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 69 points · 9 comments（8月25日08:32采集）；产品时间表、性能未公开"
+          },
+          "engagement_label": "Hacker News 69 points · 9 comments（8月25日08:32采集）；产品时间表、性能未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 60,
+        "domestic_scarcity": 55,
+        "account_fit": 53,
+        "actionability": 26,
+        "evidence_confidence": 86,
+        "final": 55
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "CUDA开始瞄准RISC-V，真正变化可能是服务器标准",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：Hot Chips 2026——CUDA瞄准RISC-V。",
+      "discussion_focus": [
+        "评论认为Nvidia可能形成有影响力的事实服务器规范。",
+        "有人提醒内存容量/带宽仍是关键。"
+      ],
+      "comment_samples": [
+        "评论者说重点更像是Nvidia在定义CUDA兼容RISC-V服务器应有的样子。",
+        "另一条评论直接要求更多内存。"
+      ],
+      "reuse_ideas": [
+        "区分指令集支持、服务器规范、产品落地和性能。",
+        "芯片发布四层判断",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "芯片发布四层判断",
+      "learning_outcome": "会分支持、规范、产品和性能。"
+    },
+    {
+      "id": "2026082515",
+      "title": "长任务Agent别把规则全塞提示词：把控制状态搬到外面",
+      "original_title": "StateM: Stateful Control for Long-Horizon Agents",
+      "summary": "StateM把长任务Agent的部分控制从提示词/上下文移到显式外部状态。评论由分享者和作者构成，没有独立使用反馈。",
+      "category": "实操案例",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "方法有用但证据弱，只留候选。",
+      "angle": "把阶段、允许动作、完成条件和回退点写成外部状态。",
+      "human_check": "核许可证、状态一致性、恢复、并发和独立案例。",
+      "sources": [
+        {
+          "url": "https://github.com/henryqin1997/statem",
+          "author": "StateM / GitHub / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49423887",
+          "source_type": "长任务Agent控制层 + 讨论",
+          "captured_at": "2026-08-25T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 11 points · 2 comments（8月25日08:32采集）；评论含分享者与作者，缺少独立反馈"
+          },
+          "engagement_label": "Hacker News 11 points · 2 comments（8月25日08:32采集）；评论含分享者与作者，缺少独立反馈"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 42,
+        "domestic_scarcity": 55,
+        "account_fit": 95,
+        "actionability": 90,
+        "evidence_confidence": 74,
+        "final": 69
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "长任务Agent别把规则全塞提示词：把控制状态搬到外面",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：StateM——面向长时程Agent的有状态控制。",
+      "discussion_focus": [
+        "分享者称外部状态让控制显式且可强制。",
+        "作者邀请提问，暂无独立体验。"
+      ],
+      "comment_samples": [
+        "分享者说工具把部分Agent控制从提示词移到外部层。",
+        "另一条评论来自作者。"
+      ],
+      "reuse_ideas": [
+        "把阶段、允许动作、完成条件和回退点写成外部状态。",
+        "长任务四项状态表",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "长任务四项状态表",
+      "learning_outcome": "会写阶段、动作、完成和回退。"
+    },
+    {
+      "id": "2026082516",
+      "title": "你的AI到底记住了多少？先别主动把更多隐私交给测试网站",
+      "original_title": "Show HN: See how much your AI knows about you",
+      "summary": "网站尝试显示AI了解用户多少。评论有人得到受系统设置限制的结果，也有人质疑为何要登录并主动提交身份。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "隐私测试本身可能收集隐私，不推荐。",
+      "angle": "优先在AI账户内检查记忆、历史、连接器和删除设置。",
+      "human_check": "核网站隐私政策、数据留存、登录方式和删除；不要上传敏感信息。",
+      "sources": [
+        {
+          "url": "https://www.withcorpus.com/knows",
+          "author": "WithCorpus / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49423371",
+          "source_type": "AI隐私自查工具 + 讨论",
+          "captured_at": "2026-08-25T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 9 points · 4 comments（8月25日08:32采集）；测试网站数据处理未核"
+          },
+          "engagement_label": "Hacker News 9 points · 4 comments（8月25日08:32采集）；测试网站数据处理未核"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 40,
+        "domestic_scarcity": 55,
+        "account_fit": 86,
+        "actionability": 74,
+        "evidence_confidence": 60,
+        "final": 62
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "你的AI到底记住了多少？先别主动把更多隐私交给测试网站",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：看看你的AI对你了解多少。",
+      "discussion_focus": [
+        "用户称Claude只显示因设置无法看到的信息。",
+        "有人认为AI知道得少反而体验更好，并质疑登录测试。"
+      ],
+      "comment_samples": [
+        "一位用户说结果主要说明系统设置限制了Claude可见范围。",
+        "另一位质疑为什么要向测试主动提供身份。"
+      ],
+      "reuse_ideas": [
+        "优先在AI账户内检查记忆、历史、连接器和删除设置。",
+        "AI账户四项隐私自查",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "AI账户四项隐私自查",
+      "learning_outcome": "会查记忆、历史、连接器和删除。"
+    },
+    {
+      "id": "2026082517",
+      "title": "Agent替人办事，授权必须能证明“谁让它做的”",
+      "original_title": "Grip: An open protocol for authorised, bounded and attributable agent execution",
+      "summary": "GRIP提出授权、有边界、可归因的Agent执行协议。讨论数高于points，但需核协议版本、参与方与标准状态。",
+      "category": "产业观察",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "与前期账号治理主题相邻，留候选。",
+      "angle": "每次执行带授权人、任务、权限、期限和证据。",
+      "human_check": "核规范、作者、加密、撤销、实现和互操作性。",
+      "sources": [
+        {
+          "url": "https://zenodo.org/records/22078457",
+          "author": "GRIP / Zenodo / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49418198",
+          "source_type": "Agent授权协议草案 + 讨论",
+          "captured_at": "2026-08-25T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 5 points · 13 comments（8月25日08:32采集）；协议采用量、标准状态未公开"
+          },
+          "engagement_label": "Hacker News 5 points · 13 comments（8月25日08:32采集）；协议采用量、标准状态未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 39,
+        "domestic_scarcity": 55,
+        "account_fit": 88,
+        "actionability": 80,
+        "evidence_confidence": 76,
+        "final": 65
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "Agent替人办事，授权必须能证明“谁让它做的”",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：GRIP——用于经授权、有边界且可归因的Agent执行的开放协议。",
+      "discussion_focus": [
+        "公开讨论存在，但样本未形成可验证标准共识。"
+      ],
+      "comment_samples": [
+        "讨论围绕授权边界和执行归因，需回原线程逐条人工核。"
+      ],
+      "reuse_ideas": [
+        "每次执行带授权人、任务、权限、期限和证据。",
+        "Agent授权五字段",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "Agent授权五字段",
+      "learning_outcome": "会记授权人、任务、权限、期限和证据。"
+    },
+    {
+      "id": "2026082518",
+      "title": "换编码Agent不用从头解释：先迁移事实，不要整段搬聊天",
+      "original_title": "Session-migrate: Migrate coding agent sessions across Claude Code, Codex, Pi",
+      "summary": "开源工具尝试在Claude Code、Codex和Pi间迁移编码会话。当天无评论；迁移需要区分事实、决策、未决问题与各工具私有状态。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "实用但互动很低，只留候选。",
+      "angle": "迁移目标、已改文件、决策、失败尝试和下一步，不搬完整噪声。",
+      "human_check": "核许可证、支持版本、密钥、隐私、附件和回滚。",
+      "sources": [
+        {
+          "url": "https://github.com/xhluca/session-migrate",
+          "author": "Session Migrate / GitHub / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49425594",
+          "source_type": "编码Agent会话迁移工具",
+          "captured_at": "2026-08-25T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 2 points · 0 comments（8月25日08:32采集）；GitHub采用量、兼容性未公开"
+          },
+          "engagement_label": "Hacker News 2 points · 0 comments（8月25日08:32采集）；GitHub采用量、兼容性未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 34,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "actionability": 92,
+        "evidence_confidence": 73,
+        "final": 67
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "换编码Agent不用从头解释：先迁移事实，不要整段搬聊天",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：Session-migrate——在Claude Code、Codex和Pi之间迁移编码Agent会话。",
+      "discussion_focus": [
+        "当天HN无评论。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "迁移目标、已改文件、决策、失败尝试和下一步，不搬完整噪声。",
+        "会话迁移五项交接",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "会话迁移五项交接",
+      "learning_outcome": "会迁目标、文件、决策、失败和下一步。"
+    },
+    {
+      "id": "2026082519",
+      "title": "别把API Key放在编码Agent能随手读到的地方",
+      "original_title": "Never put an API key in a place your coding agent can read",
+      "summary": "页面提醒不要把API Key置于编码Agent可读位置。原则合理，但安全方案、产品立场和威胁模型需核。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "与安全主题相关但来源证据弱，留候选。",
+      "angle": "用短期令牌、最小权限、代理调用和泄露轮换。",
+      "human_check": "核产品、密钥代理、日志和撤销；不同平台支持能力不同。",
+      "sources": [
+        {
+          "url": "https://zipbox.ai",
+          "author": "Zipbox AI / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49424483",
+          "source_type": "编码Agent密钥安全提醒",
+          "captured_at": "2026-08-25T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 2 points · 0 comments（8月25日08:32采集）；页面商业立场与方案需核"
+          },
+          "engagement_label": "Hacker News 2 points · 0 comments（8月25日08:32采集）；页面商业立场与方案需核"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 33,
+        "domestic_scarcity": 55,
+        "account_fit": 96,
+        "actionability": 96,
+        "evidence_confidence": 65,
+        "final": 67
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "别把API Key放在编码Agent能随手读到的地方",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：永远不要把API Key放在编码Agent能读取的位置。",
+      "discussion_focus": [
+        "当天HN无评论。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "用短期令牌、最小权限、代理调用和泄露轮换。",
+        "Agent密钥四项保护",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "Agent密钥四项保护",
+      "learning_outcome": "会用短期、最小、代理和轮换。"
+    },
+    {
+      "id": "2026082520",
+      "title": "AI还没说完就拦截幻觉？先问它怎么判断错",
+      "original_title": "A real-time LLM stream guard that catches LLM hallucinations mid generation",
+      "summary": "SIMURG宣称能在LLM流式生成中实时发现幻觉。当天无评论，关键误报、漏报、事实源、延迟和适用任务未公开。",
+      "category": "AI 技巧",
+      "status": "待审核",
+      "recommended": false,
+      "reason": "主张强而证据弱，不推荐。",
+      "angle": "幻觉检测工具必须测误报、漏报、延迟和证据链接。",
+      "human_check": "核代码、基准、定义、数据、延迟、隐私和独立复现。",
+      "sources": [
+        {
+          "url": "https://github.com/doofzoff/SIMURG",
+          "author": "SIMURG / GitHub / Hacker News",
+          "discussion_url": "https://news.ycombinator.com/item?id=49425784",
+          "source_type": "LLM实时幻觉守卫工具",
+          "captured_at": "2026-08-25T08:30:00+08:00",
+          "engagement": {
+            "views": null,
+            "likes": null,
+            "replies": null,
+            "reposts": null,
+            "bookmarks": null,
+            "label": "Hacker News 2 points · 0 comments（8月25日08:32采集）；误报、漏报和延迟未公开"
+          },
+          "engagement_label": "Hacker News 2 points · 0 comments（8月25日08:32采集）；误报、漏报和延迟未公开"
+        }
+      ],
+      "scores": {
+        "foreign_heat": 32,
+        "domestic_scarcity": 55,
+        "account_fit": 90,
+        "actionability": 78,
+        "evidence_confidence": 55,
+        "final": 61
+      },
+      "domestic_checks": [
+        {
+          "platform": "小红书/抖音",
+          "query": "AI还没说完就拦截幻觉？先问它怎么判断错",
+          "finding": "未接入小红书、抖音平台内全量语义检索；国内稀缺度封顶55。发布前人工搜索产品名、核心主张、本文角度和目标人群，不得声称‘国内没人发’。"
+        }
+      ],
+      "localized_translation": "原题完整翻译：一个在生成过程中实时捕获LLM幻觉的流式守卫。",
+      "discussion_focus": [
+        "当天HN无可验证评论。"
+      ],
+      "comment_samples": [
+        "无可验证评论样本。"
+      ],
+      "reuse_ideas": [
+        "幻觉检测工具必须测误报、漏报、延迟和证据链接。",
+        "幻觉守卫四项基准",
+        "只复用事实、检查方法和验证路径，不复制原作者句子与叙事结构。"
+      ],
+      "save_object": "幻觉守卫四项基准",
+      "learning_outcome": "会测误报、漏报、延迟和证据。"
+    }
+  ],
+  "drafts": [
+    {
+      "content_id": "5026082501",
+      "hotspot_id": "2026082501",
+      "platform": "小红书",
+      "title": "AI写代码越快，越要留一小段自己硬写",
+      "body": "AI写代码越来越快，我反而会故意留一小段不让它碰。不是为了证明自己更厉害，而是确认我还有能力判断它写得对不对。\n\n每个项目做三次练习就够：挑一个小函数自己从空白写；关掉代码后，用口头解释数据怎么走；再假设线上突然慢十倍，写出你先查哪三处。\n\nAI可以继续负责样板、查文档和第一版实现，但这三次练习不要外包。否则项目跑得越快，你越容易只认识结果，不认识原因。\n\n这篇文章在HN采集时442分、444条评论。评论并没有一致认为AI一定让人退化，有人还拿计算器和编译器反驳。更稳妥的结论是：工具会替你做什么，由你决定；判断力只能靠刻意留下的练习来保住。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "AI写代码越快，越要故意留一小段自己做。每个项目做三次：一个小函数从空白写；关掉代码口头解释数据怎么走；假设线上慢十倍，列出先查的三处。AI可以做样板和第一版，但这三次别外包。工具替你做什么由你决定，判断力要靠练习保住。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082502",
+      "hotspot_id": "2026082502",
+      "platform": "小红书",
+      "title": "PDF根本复制不了？先把这一块变成干净文本再喂AI",
+      "body": "PDF看得到却复制不了，最差的处理方式是连续截200张图塞给AI。上下文又贵，页码还会乱。\n\n先拿十页做样本。用OCR提取后，重点对四类内容：标题层级、页码、数字、表格列。准确率能接受，再按章节分段处理，每段开头保留原文件名和页码。\n\n公式、手写字和低清扫描单独放进“需人工核”列表，不要让AI根据上下文补齐。全部完成后，再让AI做摘要或问答。\n\nOCR It在HN采集时117分、27条评论。大家最关心的正是低质量扫描和手写数学。工具是否本地处理、扩展能看哪些页面，也要安装前核清楚。\n\n先把文字拿准，再谈AI理解；顺序反了，后面写得再漂亮也可能基于错字。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "PDF复制不了，别连续截图喂AI。先抽十页做OCR样本，核标题、页码、数字和表格列。能接受再按章节分段，每段保留文件名和页码。公式、手写字、低清页单独人工核。先把文字拿准，再让AI总结。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082503",
+      "hotspot_id": "2026082503",
+      "platform": "小红书",
+      "title": "下载本地模型时，你信的不只是模型文件，还有推理引擎",
+      "body": "下载一个陌生本地模型，很多人只检查权重文件来自哪里，却忘了真正执行它的是推理引擎。模型文件、解析器、插件和运行器，只要其中一层有漏洞，都可能碰到宿主机。\n\n第一次跑陌生权重，我会做四层隔离：不用管理员账号；只挂载一个空测试目录；默认断网；放进随时能删除的虚拟机或容器。不要把照片库、SSH密钥、云盘和工作仓库一起挂进去。\n\n运行器也要固定版本并看安全更新。测试结束，直接销毁环境，不把它升级成日常工作机。\n\n原文在HN采集时83分、44条评论，但评论对威胁表述有争议，公开利用链和独立复现仍需核。这里不能写成“模型已经能普遍接管电脑”，但隔离陌生权重的成本很低，值得默认做。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "跑陌生本地模型，你信的不只是权重，还有推理引擎。第一次测试做四层隔离：非管理员账号、只挂空目录、默认断网、放进可删除虚拟机或容器。照片、SSH密钥、云盘和工作仓库都别挂进去。当前威胁范围仍需复核，但隔离成本很低。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082504",
+      "hotspot_id": "2026082504",
+      "platform": "小红书",
+      "title": "管几十个Agent，光有沙箱不够：还要限制它能找谁、做多久",
+      "body": "给Agent放进沙箱，只能保证它不随便碰文件。团队一旦同时跑很多Agent，更容易失控的是：它找了不该找的人、任务跑了一整夜、费用没上限、失败后还继续层层转交。\n\n所以我会再加四道围栏：允许联系哪些人或系统；单次任务最长多久；最多花多少钱；遇到什么错误必须交回人。\n\n每个Agent只拿当前任务需要的联系人和工具。发邮件、改生产数据、产生费用，都必须走单独审批。\n\n作者在文中描述了几十个Agent的组织，HN采集时50分、41条评论。评论区最大质疑是协调成本和代码膨胀是否真的创造价值。这个规模不值得照抄，但四道围栏适用于从第二个Agent开始的团队。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "Agent进沙箱还不够。多Agent流程再加四道围栏：能联系谁、任务跑多久、最多花多少钱、什么错误必须交回人。发邮件、改生产、产生费用单独审批。几十个Agent的规模未必值得照抄，但从第二个Agent开始，这四条就该写清。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082505",
+      "hotspot_id": "2026082505",
+      "platform": "小红书",
+      "title": "让一个Agent优化另一个Agent，先给它一套不会变的考试题",
+      "body": "调Agent最容易变成“我觉得这版好像聪明一点”。换了提示词、模型和工具，却说不清是哪一步真的有用。\n\n先冻结20个真实任务，最好包含5个历史失败案例。每轮只改一个变量：提示词、工具、模型或推理设置。然后同时记四个数：完成质量、单次成本、总延迟、失败率。\n\n只看质量会把费用和速度越调越差；只看平均分又会藏住高风险失败。每次实验保存版本，没提升就能回滚。\n\nMicrosoft的Agent Lightning v1.0.1在HN采集时35分、1条项目说明，独立采用效果未公开。工具可以等等，这套“冻结任务、一次一改、四项同时看”的调优方法现在就能用。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "调Agent别靠感觉。先冻结20个真实任务，包含历史失败；每轮只改提示词、工具、模型或推理设置中的一项。记录质量、成本、延迟和失败率。没有提升就回滚。一个Agent优化另一个Agent之前，必须先有一套不会跟着变的考试题。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082506",
+      "hotspot_id": "2026082506",
+      "platform": "小红书",
+      "title": "不是每个AI任务都要秒回：分成3档，成本会好看很多",
+      "body": "很多AI成本不是模型太贵，而是所有任务都按“现在立刻给我”来跑。\n\n我会先分三档。用户正在等的问答、支付前检查，走秒级；文档整理、批量改格式，放后台几分钟；日报、标签、历史数据补全，放夜间批处理。\n\n后台任务显示进度和完成通知，夜间任务允许合并请求、选更便宜的模型。涉及安全告警、客服时限和业务承诺的任务不能自行延迟。\n\n这篇文章在HN采集时28分、0评论，节省比例未公开。最简单的试法是把过去一周任务按三档标一次，看看有多少真的需要人盯着等。通常答案比想象中少。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "不是每个AI任务都要秒回。分三档：用户正在等的走秒级；文档整理放后台几分钟；日报和历史补全放夜间批处理。后台显示进度，夜间可合并请求、用便宜模型。先把过去一周任务标一遍，看看真正必须即时的有多少。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082507",
+      "hotspot_id": "2026082507",
+      "platform": "小红书",
+      "title": "不用另买API额度，也能把ChatGPT里的想法做成小应用？",
+      "body": "有些AI应用生成器还没开始做，就先让你配置API Key和账单。Deno的新工具Dactyl主打直接用ChatGPT计划构建应用。\n\n真要试，不要先做完整产品。选一个单输入、单输出的小场景，比如把一段会议记录整理成待办。不要放客户隐私或公司文件。\n\n做完核五件事：输入数据去了哪里；应用部署在哪；代码或数据能不能导出；别人访问是否需要同样订阅；超出套餐后怎么收费。\n\nHN采集时14分、0评论，还没有可验证用户口碑。这适合验证“客户是否需要这个流程”，不适合直接承诺生产级交付。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "不用另配API Key，也能把ChatGPT里的想法做成应用？先做单输入单输出的小原型，别放敏感数据。完成后核五项：数据去哪、部署在哪、能否导出、访客需不需要订阅、超额怎么收费。先验证需求，再谈生产交付。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082508",
+      "hotspot_id": "2026082508",
+      "platform": "小红书",
+      "title": "下载几十GB模型前，先算清你的显卡到底装不装得下",
+      "body": "准备下载本地模型时，别只看“模型文件30GB，我显卡32GB，稳了”。真正运行还要给上下文缓存和运行器留位置。\n\n先算四块：量化后的权重；你常用上下文长度对应的KV缓存；运行器与图形界面开销；至少10%到20%的安全余量。还要确认是否有部分层会落到电脑内存，速度会不会因此明显下降。\n\n这个开源计算器在HN采集时5分、3条评论，准确率和硬件覆盖未公开。把它当预估，不当保证。最保险是先下小一档量化，跑短问答和长上下文各一次，再决定是否追更大版本。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "下载几十GB模型前，显存别只算权重。还要加KV缓存、运行器开销和10%到20%余量。再看有没有层会落到电脑内存。计算器只能做预估，先下小一档量化，短问答和长上下文各跑一次，再决定要不要更大。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082509",
+      "hotspot_id": "2026082509",
+      "platform": "小红书",
+      "title": "小米新CPU单核追平Apple？跑分还缺功耗和测试条件",
+      "body": "芯片跑分标题不能只转单核和多核。功耗、内存带宽、散热条件和设备类别不对齐，‘追平’没有完整意义。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "芯片跑分核单核、多核、功耗、内存和散热五项。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082510",
+      "hotspot_id": "2026082510",
+      "platform": "小红书",
+      "title": "AI让人又兴奋又焦虑，这两种感受可以同时存在",
+      "body": "AI带来的兴奋与焦虑可以同时存在。先分工作效率、岗位安全、收益分配和个人健康四层，不要用一句‘拥抱变化’盖过去。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "AI焦虑先分效率、岗位、收益分配和健康四层。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082511",
+      "hotspot_id": "2026082511",
+      "platform": "小红书",
+      "title": "一家软件公司宣布完全不用AI，评论区在争什么",
+      "body": "品牌说‘完全不用AI’或‘全面拥抱AI’都太粗。真正可检查的是使用范围、数据去向、人工责任和政策变化通知。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "品牌AI政策写清范围、数据、责任和变化通知。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082512",
+      "hotspot_id": "2026082512",
+      "platform": "小红书",
+      "title": "换了同一个模型，Agent为什么像换了个人",
+      "body": "比较Agent不能只看模型名。固定同一模型，再看上下文、工具、执行循环和权限，差别通常在这四层。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "Agent效果分模型、上下文、工具和执行循环四层。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082513",
+      "hotspot_id": "2026082513",
+      "platform": "小红书",
+      "title": "AI让公共申请暴增，是“滥用”还是终于降低了门槛",
+      "body": "公共服务申请增加不能直接叫滥用。至少同时看请求量、有效率、机构处理能力和公平可及性。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "公共服务AI影响看数量、有效率、处理能力和公平四项。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082514",
+      "hotspot_id": "2026082514",
+      "platform": "小红书",
+      "title": "CUDA开始瞄准RISC-V，真正变化可能是服务器标准",
+      "body": "CUDA与RISC-V的新闻先分四层：指令集支持、服务器规范、可购买产品、真实性能。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "芯片新闻分支持、规范、产品和性能四层。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082515",
+      "hotspot_id": "2026082515",
+      "platform": "小红书",
+      "title": "长任务Agent别把规则全塞提示词：把控制状态搬到外面",
+      "body": "长任务规则不要全塞聊天上下文。把当前阶段、允许动作、完成条件和回退点写到外部状态表。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "长任务Agent用阶段、动作、完成条件和回退点四项外部状态。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082516",
+      "hotspot_id": "2026082516",
+      "platform": "小红书",
+      "title": "你的AI到底记住了多少？先别主动把更多隐私交给测试网站",
+      "body": "查AI知道多少，先在原账户里看记忆、历史、连接器和删除设置。不要为了测隐私，把更多隐私交给陌生网站。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "AI隐私先查记忆、历史、连接器和删除四项。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082517",
+      "hotspot_id": "2026082517",
+      "platform": "小红书",
+      "title": "Agent替人办事，授权必须能证明“谁让它做的”",
+      "body": "Agent执行记录至少带授权人、任务、权限、期限和结果证据，不能只记一个机器人账号。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "Agent授权写授权人、任务、权限、期限和证据五项。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082518",
+      "hotspot_id": "2026082518",
+      "platform": "小红书",
+      "title": "换编码Agent不用从头解释：先迁移事实，不要整段搬聊天",
+      "body": "换编码Agent，别整段复制聊天。迁移目标、已改文件、关键决策、失败尝试和下一步五项即可。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "编码会话迁移目标、文件、决策、失败和下一步五项。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082519",
+      "hotspot_id": "2026082519",
+      "platform": "小红书",
+      "title": "别把API Key放在编码Agent能随手读到的地方",
+      "body": "编码Agent密钥用短期令牌、最小权限、代理调用和泄露即轮换四条，不要明文放项目文件。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "Agent密钥用短期、最小权限、代理调用和轮换四条。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    },
+    {
+      "content_id": "5026082520",
+      "hotspot_id": "2026082520",
+      "platform": "小红书",
+      "title": "AI还没说完就拦截幻觉？先问它怎么判断错",
+      "body": "实时幻觉守卫不能只看演示。必须同时给误报、漏报、额外延迟和证据链接。",
+      "visual_brief": "4:5黑白极简信息卡，轻微手绘圆点或弧线；首图只放自然口语标题和一个核心物件，内页优先真实页面、设置或终端截图。不要机器人头像、蓝紫渐变、虚构收益、无来源数字和装饰性大段文字。",
+      "video_script": "幻觉守卫测误报、漏报、延迟和证据四项。",
+      "version": 1,
+      "parent_version": null,
+      "status": "待审核"
+    }
+  ],
+  "gaps": [
+    "生产工作台预读取失败：本机缺少tide-ai-content-operator凭据，无法确认8月24日之后新增的reviewNote。",
+    "X、Instagram、TikTok、LinkedIn未取得可同时复核原文、发布时间和公开互动的完整新增样本；本批不伪造社媒数据。",
+    "Reddit与国内平台未取得稳定合规搜索链；国内稀缺度统一封顶55并创建人工搜索任务。",
+    "部分独立产品只有极少公开讨论；已降低热度和证据置信度，没有拿内部评分冒充流量。"
+  ],
+  "generated_at": "2026-08-25T08:30:00+08:00"
+}

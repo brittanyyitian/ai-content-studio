@@ -1,0 +1,10 @@
+{
+  "attemptDate": "2026-08-27",
+  "mode": "merge",
+  "commandLine": "operator:push returned an HTML document instead of JSON",
+  "browserFallback": "Private operator-import navigation timed out before the form was available",
+  "formSubmitted": false,
+  "productionReadBack": false,
+  "credentialsChanged": false,
+  "status": "未取得成功写入证据，生产站尚未确认更新"
+}

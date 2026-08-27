@@ -1,0 +1,282 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Obsidian + Claude Code: The Setup I Use Every Day — Lukas von Kunhardt</title><meta name="description" content="How I use Obsidian as the markdown editor and project organizer next to Claude Code. No plugin, no MCP server, one folder per project."><link rel="canonical" href="https://lukasvonkunhardt.com/obsidian-claude-code-setup/"><meta property="og:type" content="article"><meta property="og:site_name" content="Lukas von Kunhardt"><meta property="og:title" content="Obsidian + Claude Code: The Setup I Use Every Day"><meta property="og:description" content="How I use Obsidian as the markdown editor and project organizer next to Claude Code. No plugin, no MCP server, one folder per project."><meta property="og:url" content="https://lukasvonkunhardt.com/obsidian-claude-code-setup/"><meta property="og:image" content="https://lukasvonkunhardt.com/og/obsidian-claude-code-setup.png"><meta property="og:image:width" content="2400"><meta property="og:image:height" content="1260"><meta property="og:image:alt" content="Obsidian + Claude Code: The Setup I Use Every Day"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Obsidian + Claude Code: The Setup I Use Every Day"><meta name="twitter:description" content="How I use Obsidian as the markdown editor and project organizer next to Claude Code. No plugin, no MCP server, one folder per project."><meta name="twitter:image" content="https://lukasvonkunhardt.com/og/obsidian-claude-code-setup.png"><link rel="alternate" type="text/markdown" href="https://lukasvonkunhardt.com/obsidian-claude-code-setup/index.md" title="Markdown"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" title="Lukas von Kunhardt" href="/rss.xml"><link rel="stylesheet" href="/styles.css"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Obsidian + Claude Code: The Setup I Use Every Day","description":"How I use Obsidian as the markdown editor and project organizer next to Claude Code. No plugin, no MCP server, one folder per project.","datePublished":"2026-08-19","dateModified":"2026-08-25","url":"https://lukasvonkunhardt.com/obsidian-claude-code-setup/","author":{"@type":"Person","@id":"https://lukasvonkunhardt.com/about/#person","name":"Lukas von Kunhardt","description":"Lukas von Kunhardt studied medicine, now builds with large language models full time from Berlin, and writes here about doing it in practice.","jobTitle":"AI engineer and writer","knowsAbout":["Large language models","AI coding agents","Claude Code","Retrieval and knowledge management","Building software with LLMs"],"email":"mailto:hello@lukasvonkunhardt.com","homeLocation":{"@type":"Place","name":"Berlin, Germany"},"url":"https://lukasvonkunhardt.com/about/","mainEntityOfPage":{"@type":"WebPage","@id":"https://lukasvonkunhardt.com/about/"},"sameAs":["https://www.wikidata.org/wiki/Q140248082","https://orcid.org/0000-0001-5135-6427","https://www.linkedin.com/in/lukas-von-kunhardt/","https://twitter.com/lukasvkunhardt","https://github.com/lukaskunhardt"]},"publisher":{"@id":"https://lukasvonkunhardt.com/about/#person"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://lukasvonkunhardt.com/obsidian-claude-code-setup/"}}</script><script>
+      (function () {
+        var q = new URLSearchParams(location.search);
+        var r = q.get("r");
+        if (!r) return;
+        var post = q.get("utm_campaign") || "";
+        try {
+          document.cookie =
+            "newsletter_ref=" +
+            encodeURIComponent(r) +
+            "; path=/; max-age=604800; samesite=lax";
+        } catch (e) {}
+        var ping =
+          "/ref?c=" +
+          encodeURIComponent(r) +
+          (post ? "&p=" + encodeURIComponent(post) : "");
+        if (navigator.sendBeacon) navigator.sendBeacon(ping);
+        else fetch(ping, { keepalive: true });
+      })();
+    </script><script>
+      document.addEventListener("click", function (e) {
+        var label = e.target && e.target.closest && e.target.closest(".img-peek-label");
+        document.querySelectorAll(".img-peek.open").forEach(function (peek) {
+          if (label && peek === label.parentElement) return; // the toggle below owns this one
+          peek.classList.remove("open");
+          var l = peek.querySelector(".img-peek-label");
+          if (l) l.setAttribute("aria-expanded", "false");
+        });
+        if (!label) return;
+        var open = label.parentElement.classList.toggle("open");
+        label.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    </script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;5bcc0f35c97f46a38409a6163f0ca5a8&quot;}"></script><script>
+      !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group identify setPersonProperties setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags resetGroups onFeatureFlags addFeatureFlagsHandler onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+      posthog.init('phc_uAcoDztdmxkXnT7DXk7nLURZyuKoPz6EmzbNa2ngi2U7', {
+        api_host: 'https://what.lukasvonkunhardt.com',
+        ui_host: 'https://eu.posthog.com',
+        defaults: '2026-01-30',
+        person_profiles: 'identified_only',
+        disable_session_recording: true,
+        autocapture: false,
+        capture_pageleave: true,
+        loaded: function (ph) {
+          var q = new URLSearchParams(location.search);
+          var r = q.get("r");
+          if (!r) return;
+          var post = q.get("utm_campaign") || "";
+          ph.register_once({
+            newsletter_ref: r,
+            newsletter_ref_post: post || undefined,
+          });
+          ph.capture("newsletter_referral_landing", {
+            newsletter_ref: r,
+            newsletter_ref_post: post || undefined,
+          });
+        },
+      })
+    </script></head> <body> <header> <a class="site-name" href="/">Lukas von Kunhardt</a> <nav><a href="/about/">About</a></nav> </header> <main> <article> <h1>Obsidian + Claude Code: The Setup I Use Every Day</h1> <time datetime="2026-08-19">2026-08-19</time>  <nav class="toc" aria-label="Contents"> <p class="toc-label">Contents</p> <ul> <li> <a href="#what-does-the-setup-actually-look-like">What does the setup actually look like?</a> </li><li> <a href="#how-does-claude-code-see-my-notes">How does Claude Code see my notes?</a> </li><li> <a href="#do-you-need-the-obsidian-claude-code-plugin-or-an-mcp-server">Do you need the Obsidian Claude Code plugin or an MCP server?</a> </li><li> <a href="#why-markdown-and-not-notion-or-word">Why markdown, and not Notion or Word?</a> </li><li> <a href="#what-is-the-actual-benefit-over-a-normal-claude-chat">What is the actual benefit over a normal Claude chat?</a> </li><li> <a href="#doesnt-this-lock-you-into-claude">Doesn’t this lock you into Claude?</a> </li><li> <a href="#wouldnt-a-database-be-better-than-markdown-files">Wouldn’t a database be better than markdown files?</a> </li><li> <a href="#how-do-i-organize-the-vault">How do I organize the vault?</a> </li><li> <a href="#which-folder-do-you-open-claude-code-in">Which folder do you open Claude Code in?</a> </li><li> <a href="#do-you-need-a-claudemd-in-your-vault">Do you need a CLAUDE.md in your vault?</a> </li><li> <a href="#how-do-you-and-claude-edit-the-same-note-without-overwriting-each-other">How do you and Claude edit the same note without overwriting each other?</a> </li><li> <a href="#which-obsidian-plugins-do-i-actually-use">Which Obsidian plugins do I actually use?</a> </li><li> <a href="#what-does-this-look-like-on-the-phone">What does this look like on the phone?</a> </li><li> <a href="#what-does-not-work">What does not work?</a> </li><li> <a href="#do-you-have-to-be-a-developer">Do you have to be a developer?</a> </li><li> <a href="#how-do-you-start">How do you start?</a> </li> </ul> </nav>  <script>
+  (function () {
+    var toc = document.querySelector('.toc');
+    if (!toc) return;
+    var list = toc.querySelector('ul');
+    // Claiming the scrollbar the moment the script parses (the nav markup
+    // precedes it, so the element is already there): styles.css only hides the
+    // native bar under .toc-live, because the fades that replace it need this
+    // script. Setting it here rather than in init() means it never flashes.
+    toc.classList.add('toc-live');
+    var links = [].slice.call(toc.querySelectorAll('a[href^="#"]'));
+    var heads = [];
+    var ticking = false;
+    var lastTop, lastBottom;
+    var jump = -1; // index the reader clicked; -1 = the page is in charge
+    var settle;
+
+    // The script sits BEFORE <Content /> in the DOM, so the heading targets
+    // don't exist yet at parse time — resolve them once parsing is done.
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+    function init() {
+      heads = links.map(function (a) {
+        return document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)));
+      });
+      links.forEach(function (a, i) {
+        a.addEventListener('click', function () {
+          jumpTo(i, a);
+        });
+      });
+      addEventListener('scroll', schedule, { passive: true });
+      addEventListener('resize', schedule, { passive: true });
+      // A trackpad scroll of the list itself doesn't move the page, so the
+      // fades would otherwise go stale.
+      list.addEventListener('scroll', fade, { passive: true });
+      paint();
+    }
+    // Clicking an entry glides the page across every section in between. Left
+    // alone the scrollspy would mark each one active in turn and drag the list
+    // down and then back up — one click, a dozen little movements. So a click
+    // hands the list to its destination and holds it there until the page
+    // stops moving.
+    function jumpTo(i, a) {
+      jump = i;
+      center(a);
+      arm();
+      paint();
+    }
+    // The jump is over once the page has been still for a moment. `scrollend`
+    // would say so outright, but it's too new to rely on. Armed at click time
+    // as well, since a jump to something already on screen may not scroll at
+    // all and would otherwise leave the list frozen.
+    function arm() {
+      clearTimeout(settle);
+      settle = setTimeout(function () {
+        jump = -1;
+        paint();
+      }, 120);
+    }
+    function paint() {
+      ticking = false;
+      var active = -1;
+      for (var i = 0; i < heads.length; i++) {
+        if (heads[i] && heads[i].getBoundingClientRect().top <= 130) active = i;
+      }
+      // Pinned to the page bottom: the last section may be too short to
+      // ever cross the reading line, so force it active.
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2)
+        active = heads.length - 1;
+      // Mid-jump the destination owns the list, so the mark doesn't flicker
+      // down the list either.
+      if (jump >= 0) active = jump;
+      links.forEach(function (a, i) {
+        if (i === active) a.setAttribute('aria-current', 'true');
+        else a.removeAttribute('aria-current');
+      });
+      if (active >= 0 && jump < 0) center(links[active]);
+      fade();
+    }
+    // Scroll the list so the active entry sits in its middle. Measured from
+    // rects rather than offsetTop: the absolute target comes out the same
+    // whether or not a smooth scroll is already in flight, so repeated calls
+    // converge instead of chasing themselves.
+    function center(a) {
+      var u = list.getBoundingClientRect();
+      var r = a.getBoundingClientRect();
+      var delta = r.top - u.top - (u.height - r.height) / 2;
+      if (Math.abs(delta) > 1) list.scrollTop += delta;
+    }
+    function fade() {
+      var top = px(list.scrollTop);
+      var bottom = px(list.scrollHeight - list.clientHeight - list.scrollTop);
+      // Most frames hide the same amount as the last one, and center()'s own
+      // scroll event lands here right after paint() already did. Re-writing
+      // the properties would re-dirty the mask for nothing.
+      if (top === lastTop && bottom === lastBottom) return;
+      lastTop = top;
+      lastBottom = bottom;
+      list.style.setProperty('--toc-fade-top', top);
+      list.style.setProperty('--toc-fade-bottom', bottom);
+    }
+    // 32px is a full fade; below that the length tracks the hidden amount, so
+    // a list with three pixels left to go doesn't dissolve a whole line.
+    function px(hidden) {
+      return Math.round(Math.min(32, Math.max(0, hidden))) + 'px';
+    }
+    function schedule() {
+      if (jump >= 0) arm();
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(paint);
+      }
+    }
+  })();
+</script> <p>When I started working with LLMs i kept running into an issue many people will be familiar with: The longer you keep a chat going, the less productive it becomes, at some point you are forced to migrate to a new chat and you have to start from zero with the model. Point Claude Code at your Obsidian vault instead, and the same work lands in plain files on your own computer, where it can stay and <strong>compound</strong>.</p>
+<p>This works because relevant information can be externalized to files which both of you can easily access. You can read it, and so can Claude. What accumulates is a shared memory. Neither of you needs an abstraction layer in between, and that matters more than it sounds (more on this later).</p>
+<p>I’m going to walk you through how it works: what it looks like on screen, how I organize the vault, and where it works well and where it doesn’t. You do not need special plugins, no MCP server, and you don’t have to be a developer. You don’t need to pay for anything other than a subscription to Claude, or to any other language model provider.</p>
+<h2 id="what-does-the-setup-actually-look-like">What does the setup actually look like?</h2>
+<p>My day to day setup looks like this: I have Obsidian open, and Claude Code. If I have a big enough screen, I like to view them at the same time. I have Claude open on the left. I mostly use a dictation tool to talk to Claude (<a href="/tool-recommendation-best-dictation-for-mac/">read my best dictation tool for Mac article</a> if you want to know more), or just use wisprflow or something like that. And on the right side I have my vault.</p>
+<p><img alt="Screenshot splitscreen left Claude right Obsidian.png" loading="lazy" decoding="async" sizes="(min-width: 2940px) 2940px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="2940" height="1846" src="/_astro/Screenshot%20splitscreen%20left%20Claude%20right%20Obsidian.BrNrcGdB_Z1RTthi.webp" srcset="/_astro/Screenshot%20splitscreen%20left%20Claude%20right%20Obsidian.BrNrcGdB_ZiXb2b.webp 640w, /_astro/Screenshot%20splitscreen%20left%20Claude%20right%20Obsidian.BrNrcGdB_ZQ6cDg.webp 750w, /_astro/Screenshot%20splitscreen%20left%20Claude%20right%20Obsidian.BrNrcGdB_1hziKV.webp 828w, /_astro/Screenshot%20splitscreen%20left%20Claude%20right%20Obsidian.BrNrcGdB_1RxRnW.webp 1080w, /_astro/Screenshot%20splitscreen%20left%20Claude%20right%20Obsidian.BrNrcGdB_G0eCW.webp 1280w, /_astro/Screenshot%20splitscreen%20left%20Claude%20right%20Obsidian.BrNrcGdB_1L3hVH.webp 1668w, /_astro/Screenshot%20splitscreen%20left%20Claude%20right%20Obsidian.BrNrcGdB_1bS6fJ.webp 2048w, /_astro/Screenshot%20splitscreen%20left%20Claude%20right%20Obsidian.BrNrcGdB_pwR73.webp 2560w, /_astro/Screenshot%20splitscreen%20left%20Claude%20right%20Obsidian.BrNrcGdB_Z1RTthi.webp 2940w"></p>
+<p>I use Obsidian for viewing the outputs of whatever Claude is writing. The idea is that Obsidian is a markdown viewer and editor. It allows me to have a sort of collaboration with Claude, where I can worka in it like in Google Docs.</p>
+<p>I use this for all kinds of projects: work, personal, anything, writing. The project itself doesn’t have to be text-based. Your thinking about it is, and so is your conversation with Claude. So the habit is simple: every time I work something out about a project, it goes into some note in that project’s folder, and every time Claude works something out worth keeping, it goes into the same folder. That is what gives Claude the <strong>same picture</strong> of the project that I have. And the folder of markdown notes is better at retaining information than either of us. I tend to forget what I decided last March, and Claude remembers nothing outside the current chat context.</p>
+<h2 id="how-does-claude-code-see-my-notes">How does Claude Code see my notes?</h2>
+<p>First of all, you have to understand the concept of Claude Code and how it’s different from the Claude chat. In Claude Code, you start by opening a folder. No matter where you use Claude Code, whether it’s the terminal version or the app version, it’s going to ask you to point it to some <strong>file location</strong>, and this is the starting point.</p>
+<p>If you were starting from scratch and had never used this before, you would open Obsidian first, and then you would create a “vault”, which is the parent folder all of your files will be collected in. In Obsidian you have a sidebar, and in the sidebar you see notes and nested folders. If you open your vault with a file explorer, you can see this mirrors exactly the file structure that exists on your computer. What you see in Obsidian as folders and nicely written and rendered notes is just folders on your computer with markdown files in them. This is the core of the magic. If you point Claude Code at some folder on your computer, it’s going to have access to, and see, the exact same files you’re seeing.</p>
+<p>Say you wanted to start some project, and it’s going to be a more complicated one: some research project, some new project for work, whatever. You would create a new folder in your vault, and in this folder you might collect notes for anything relevant to this project. And the nice thing is: if you now switch to Claude Code, you can point it at the same folder location, and then it’s going to see everything you’re writing. And it can also edit and suggest changes to your own writing.</p>
+<p>Depending on what mode you select in Claude Code, you can either approve each change manually, so you are in full control of what Claude does to your notes, or you can give it full control if it’s a more hands-off thing.</p>
+<p><img alt="Diff viewer in claude code showing changes its suggesting.png" loading="lazy" decoding="async" sizes="(min-width: 1466px) 1466px, 100vw" data-astro-image="constrained" data-astro-image-pos="center" width="1466" height="1850" src="/_astro/Diff%20viewer%20in%20claude%20code%20showing%20changes%20its%20suggesting.WPOyXzbc_Z1QhaTz.webp" srcset="/_astro/Diff%20viewer%20in%20claude%20code%20showing%20changes%20its%20suggesting.WPOyXzbc_Zgh46S.webp 640w, /_astro/Diff%20viewer%20in%20claude%20code%20showing%20changes%20its%20suggesting.WPOyXzbc_Z1FCTJs.webp 750w, /_astro/Diff%20viewer%20in%20claude%20code%20showing%20changes%20its%20suggesting.WPOyXzbc_WJOD7.webp 828w, /_astro/Diff%20viewer%20in%20claude%20code%20showing%20changes%20its%20suggesting.WPOyXzbc_Z1K36dA.webp 1080w, /_astro/Diff%20viewer%20in%20claude%20code%20showing%20changes%20its%20suggesting.WPOyXzbc_1FTuKO.webp 1280w, /_astro/Diff%20viewer%20in%20claude%20code%20showing%20changes%20its%20suggesting.WPOyXzbc_Z1QhaTz.webp 1466w"></p>
+<h2 id="do-you-need-the-obsidian-claude-code-plugin-or-an-mcp-server">Do you need the Obsidian Claude Code plugin or an MCP server?</h2>
+<p>Short answer: No.</p>
+<p>If you work on your computer and you have Claude there and you have Obsidian there, then there’s nothing else you need to do. Because Obsidian just looks at files on your machine, and Claude Code natively, by design, is supposed to work with files on your machine. They are a match made in heaven. They are directly complementary to each other.</p>
+<p>What is on offer falls into three groups, and it helps to know which one you are looking at.</p>
+<p>The first group runs Claude Code inside an <strong>Obsidian sidebar</strong>. I don’t see the point. Having two windows open is not something you need a special app for.</p>
+<p>The second group are editor context bridges, which tell Claude which note you have open and what text you have selected. That is at least a real gap, but it is easy enough to just tell Claude which file you mean, and if you follow the convention of working in one project folder it stops mattering much. If the files you need are scattered across your whole vault, it is worth more.</p>
+<p>The third group are MCP servers that expose your vault to other apps, and this is the one worth being clear about. Claude Code can read your files. The Claude desktop app in chat mode cannot, so people connect an MCP server to Obsidian to fix that. But that is the long way around to somewhere worse. Just use Claude <strong>Code</strong> instead of Claude <strong>Chat</strong> so that it natively has access to your files without requiring an MCP middle layer. Else you give up most of the advantage this whole setup is built on.</p>
+<p>There is one case where I do use one. I have the Local REST API plugin enabled because I had Claude Code running on a server, posting updates into a note in one of my projects about how a website was performing. If you have a site on a server somewhere and you want a weekly report to land in that project’s folder, that is genuine: something outside your computer needs to write into your vault. Editing your vault from your phone is the same shape of problem. It is a different problem from the one this article is about.</p>
+<h2 id="why-markdown-and-not-notion-or-word">Why markdown, and not Notion or Word?</h2>
+<p>Take a comparison. If you were to use Notion with a Notion MCP server, you would have a similar looking setup, at least on your side. You already know how to navigate Notion and how to write there, so your half of the interaction would not change much. But for Claude it changes a lot, because Claude does not see Notion documents as files in a folder. Instead it must go through an MCP server or an API to interact with Notion, and the same is true of any note taking tool that does not store your notes in an easily legible format on your own device.</p>
+<p>That has several disadvantages. The model spends far more tokens and thinking on the question of how to reach the files at all, which is unnecessarily difficult. Every abstraction layer you introduce makes it harder.</p>
+<p>If a model wants to find text somewhere on your computer, it can use something like “grep”. grep is a search tool that has been sitting on every Mac and Linux machine for about fifty years. It looks inside your files, not just at their names, and it goes through thousands of them in well under a second.</p>
+<p>That opens up a lot. Claude can find every note in a client folder that mentions one supplier, across hundreds of subfolders, without you remembering which note it was in. It can list every note you have not touched since March. It can find the notes that mention two things at once, which is the question you can never answer with a search box. It can ask for every file longer than a certain length, or rename fifty notes to match a convention.</p>
+<p>None of that needs a plugin, an installation, or any special tool. These are basic command line commands, from the same generation as grep, and the model has seen them used more times in its training data than almost anything else. It is fluent in them the way it is fluent in English. The Notion MCP server, by comparison, did not exist two years ago, and it is complicated to use, so the model has to work out how to drive the tool at the same time as it does your actual work. The files are just there, in the same folder Claude Code runs in.</p>
+<p>Here is the proof that this is the model’s own preference and not just mine. Ask Claude Code to write something down, store it for later, keep it as a reference document. What kind of file do you think it creates? Markdown. You don’t have to change its ways at all.</p>
+<p>You could also work with Word. But Word files are in a proprietary format. In order for Claude to read one, it has to run a Python script to unzip the contents of a .docx file. That makes every read and every edit more complicated, and Claude spends tokens and thinking on that layer instead of on your work. If you have been trying to get Claude to edit your Word files, you will have noticed the difference.</p>
+<p>Here is what that looks like. Finding every note that mentions one supplier, in markdown:</p>
+<pre class="astro-code astro-code-themes flexoki-light flexoki-dark" style="background-color:#f2f0e5;--shiki-dark-bg:#1c1b1a;color:#100f0f;--shiki-dark:#cecdc3; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#205EA6;--shiki-dark:#4385BE">grep</span><span style="color:#24837B;--shiki-dark:#3AA99F"> -ril</span><span style="color:#66800B;--shiki-dark:#879A39"> "acme"</span><span style="color:#24837B;--shiki-dark:#3AA99F"> .</span></span></code></pre>
+<p>The same search, on Word files:</p>
+<pre class="astro-code astro-code-themes flexoki-light flexoki-dark" style="background-color:#f2f0e5;--shiki-dark-bg:#1c1b1a;color:#100f0f;--shiki-dark:#cecdc3; overflow-x: auto;" tabindex="0" data-language="python"><code><span class="line"><span style="color:#5E409D;--shiki-dark:#8B7EC8">import</span><span style="color:#100F0F;--shiki-dark:#CECDC3"> zipfile</span><span style="color:#6F6E69;--shiki-dark:#878580">,</span><span style="color:#100F0F;--shiki-dark:#CECDC3"> re</span><span style="color:#6F6E69;--shiki-dark:#878580">,</span><span style="color:#100F0F;--shiki-dark:#CECDC3"> pathlib</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#5E409D;--shiki-dark:#8B7EC8">def</span><span style="color:#205EA6;--shiki-dark:#4385BE"> docx_text</span><span style="color:#6F6E69;--shiki-dark:#878580">(</span><span style="color:#100F0F;--shiki-dark:#CECDC3">path</span><span style="color:#6F6E69;--shiki-dark:#878580">):</span></span>
+<span class="line"><span style="color:#5E409D;--shiki-dark:#8B7EC8">    with</span><span style="color:#100F0F;--shiki-dark:#CECDC3"> zipfile</span><span style="color:#6F6E69;--shiki-dark:#878580">.</span><span style="color:#205EA6;--shiki-dark:#4385BE">ZipFile</span><span style="color:#6F6E69;--shiki-dark:#878580">(</span><span style="color:#100F0F;--shiki-dark:#CECDC3">path</span><span style="color:#6F6E69;--shiki-dark:#878580">)</span><span style="color:#5E409D;--shiki-dark:#8B7EC8"> as</span><span style="color:#100F0F;--shiki-dark:#CECDC3"> z</span><span style="color:#6F6E69;--shiki-dark:#878580">:</span></span>
+<span class="line"><span style="color:#100F0F;--shiki-dark:#CECDC3">        xml </span><span style="color:#6F6E69;--shiki-dark:#878580">=</span><span style="color:#100F0F;--shiki-dark:#CECDC3"> z</span><span style="color:#6F6E69;--shiki-dark:#878580">.</span><span style="color:#205EA6;--shiki-dark:#4385BE">read</span><span style="color:#6F6E69;--shiki-dark:#878580">(</span><span style="color:#66800B;--shiki-dark:#879A39">"word/document.xml"</span><span style="color:#6F6E69;--shiki-dark:#878580">).</span><span style="color:#205EA6;--shiki-dark:#4385BE">decode</span><span style="color:#6F6E69;--shiki-dark:#878580">()</span></span>
+<span class="line"><span style="color:#5E409D;--shiki-dark:#8B7EC8">    return</span><span style="color:#100F0F;--shiki-dark:#CECDC3"> re</span><span style="color:#6F6E69;--shiki-dark:#878580">.</span><span style="color:#205EA6;--shiki-dark:#4385BE">sub</span><span style="color:#6F6E69;--shiki-dark:#878580">(</span><span style="color:#5E409D;--shiki-dark:#8B7EC8">r</span><span style="color:#66800B;--shiki-dark:#879A39">"&#x3C;[^>]+>"</span><span style="color:#6F6E69;--shiki-dark:#878580">,</span><span style="color:#66800B;--shiki-dark:#879A39"> " "</span><span style="color:#6F6E69;--shiki-dark:#878580">,</span><span style="color:#100F0F;--shiki-dark:#CECDC3"> xml</span><span style="color:#6F6E69;--shiki-dark:#878580">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#5E409D;--shiki-dark:#8B7EC8">for</span><span style="color:#100F0F;--shiki-dark:#CECDC3"> path </span><span style="color:#5E409D;--shiki-dark:#8B7EC8">in</span><span style="color:#100F0F;--shiki-dark:#CECDC3"> pathlib</span><span style="color:#6F6E69;--shiki-dark:#878580">.</span><span style="color:#205EA6;--shiki-dark:#4385BE">Path</span><span style="color:#6F6E69;--shiki-dark:#878580">(</span><span style="color:#66800B;--shiki-dark:#879A39">"."</span><span style="color:#6F6E69;--shiki-dark:#878580">).</span><span style="color:#205EA6;--shiki-dark:#4385BE">rglob</span><span style="color:#6F6E69;--shiki-dark:#878580">(</span><span style="color:#66800B;--shiki-dark:#879A39">"*.docx"</span><span style="color:#6F6E69;--shiki-dark:#878580">):</span></span>
+<span class="line"><span style="color:#5E409D;--shiki-dark:#8B7EC8">    if</span><span style="color:#100F0F;--shiki-dark:#CECDC3"> path</span><span style="color:#6F6E69;--shiki-dark:#878580">.</span><span style="color:#100F0F;--shiki-dark:#CECDC3">name</span><span style="color:#6F6E69;--shiki-dark:#878580">.</span><span style="color:#205EA6;--shiki-dark:#4385BE">startswith</span><span style="color:#6F6E69;--shiki-dark:#878580">(</span><span style="color:#66800B;--shiki-dark:#879A39">"~$"</span><span style="color:#6F6E69;--shiki-dark:#878580">):</span><span style="color:#6F6E69;--shiki-dark:#878580">   # Word lock files</span></span>
+<span class="line"><span style="color:#5E409D;--shiki-dark:#8B7EC8">        continue</span></span>
+<span class="line"><span style="color:#5E409D;--shiki-dark:#8B7EC8">    if</span><span style="color:#66800B;--shiki-dark:#879A39"> "acme"</span><span style="color:#5E409D;--shiki-dark:#8B7EC8"> in</span><span style="color:#205EA6;--shiki-dark:#4385BE"> docx_text</span><span style="color:#6F6E69;--shiki-dark:#878580">(</span><span style="color:#100F0F;--shiki-dark:#CECDC3">path</span><span style="color:#6F6E69;--shiki-dark:#878580">).</span><span style="color:#205EA6;--shiki-dark:#4385BE">lower</span><span style="color:#6F6E69;--shiki-dark:#878580">():</span></span>
+<span class="line"><span style="color:#205EA6;--shiki-dark:#4385BE">        print</span><span style="color:#6F6E69;--shiki-dark:#878580">(</span><span style="color:#100F0F;--shiki-dark:#CECDC3">path</span><span style="color:#6F6E69;--shiki-dark:#878580">)</span></span></code></pre>
+<p>That version still misses anything in a header, a footer or a comment, because Word keeps those in separate files inside the zip.</p>
+<p>And for you it is also quite convenient, because Obsidian is genuinely fun to use. It looks nice and it has most of the functionality you need. A little less than Notion, a little less than Word, but it is the lowest common denominator in the good sense: for both of you it is just really good to work in. It is a very fleshed out notes app with high customizability. PDFs it displays out of the box, with nothing to install. For most other file types there is a plugin:</p>
+<ul>
+<li>“CSV Editor” for comma separated tables</li>
+<li>“Sheet Plus” or Excel for spreadsheets</li>
+<li>“ePub Reader” for books</li>
+<li>“Annotator” if you want to highlight a PDF rather than just read it.</li>
+</ul>
+<h2 id="what-is-the-actual-benefit-over-a-normal-claude-chat">What is the actual benefit over a normal Claude chat?</h2>
+<p>Where do the fruits of your labor, the results of the interaction with Claude, actually get stored? If you’re using Claude as basically a pimped-up version of Google to answer singular questions, you aren’t getting half of what you can out of it. That’s really the advantage that Claude plus Obsidian has: it allows you to work on long-term projects and to build up a <strong>shared knowledge</strong> base that you and Claude can interact with, which for any complicated task is going to be necessary.</p>
+<p>Here is an example: Some time ago I came onto a large enterprise project in a field I knew very little about. In the first weeks I was sent an enormous amount of material, and there were so many new people to memorize. In the meetings I did not get most of what was being explained to me. They would mention fifteen people I did not know yet, sometimes the same ones from a meeting two hours earlier, and I still did not remember them. a couple of weeks in, that one folder holds a hundred transcripts and about three hundred wiki pages.</p>
+<p>Claude organized all of it into a wiki inside that folder, and it started to make sense so much sooner. I could ask my questions there instead of being the guy who asks stupid questions all the time. I could spend a day on “explain back to me what all these files were, and what did they mean by this term I keep hearing”, and the answer came back with its receipts: you discussed it in that meeting, and the document they sent five days ago describes it on page 90. They gave me the feedback that they found it amazing how quickly I started to get things, in a field everyone knew was hard to get into.</p>
+<p>I also got into the habit of transcribing the meetings and storing them, so I can query backwards. What did I discuss with this person at the start, what was their opinion then, and what is it now? When was the first time we talked about this? Those are easy to answer now and close to impossible otherwise.</p>
+<p>None of that needs a special feature. You point the model at a section of your project folder and let it build its own interlinked wiki, which it updates every time a new transcript or document arrives. I described that system in <a href="/my-favorite-memory-system-for-llms/">My favorite memory system for LLMs</a>, and it ships as <a href="https://github.com/lukaskunhardt/skills">skills you can install</a>.</p>
+<p>One thing on confidentiality, since I said enterprise. Nothing in this setup depends on Claude. The notes are plain text in a folder on your own machine, so if your client has not approved Anthropic, you swap the model and keep everything else exactly as it is. Use whatever they have whitelisted, or a provider hosted in the region they require. Claude Code itself also runs through Amazon Bedrock, Google Cloud or Microsoft Foundry, which is often what a corporate security review has already signed off on.</p>
+<h2 id="doesnt-this-lock-you-into-claude">Doesn’t this lock you into Claude?</h2>
+<p>It does the opposite, and this is a major advantage for me. I don’t want to lock myself in with one provider.</p>
+<p>That is the other disadvantage of having most of your knowledge hidden away in some chat. Even if you work with Claude Cowork and Claude Projects, or with Codex and ChatGPT Projects, they all share the same problem: if they get expensive, or there is a better deal somewhere, or a better model you would rather be using, the migration becomes difficult. Unless nothing interesting is actually stored in the model provider’s app, and everything is in files on your computer anyway. Then it is easy. You can migrate in a blink.</p>
+<p>I can swap out my provider tomorrow. It doesn’t actually matter to me. I use Claude right now only as the inference provider for the model: not to organize my projects, not to store knowledge somewhere, not to keep some sort of memory on me. All of that sits in files that I own, on my personal computer, that I have full control over. I wrote more about that in <a href="/how-to-avoid-locking-yourself-into-one-ai-provider/">How to avoid locking yourself into one AI provider</a>.</p>
+<h2 id="wouldnt-a-database-be-better-than-markdown-files">Wouldn’t a database be better than markdown files?</h2>
+<p>I don’t think so. I don’t think vector search is that useful unless you have massive amounts of text data. And the database comes with a massive disadvantage: you not being able to quickly interact with it. The main advantage is that markdown and the file system convention is something that you and Claude can both work in really well. If Claude is down and you’re offline, you still have all of your notes, you have all of your insights, to easily work with. And when Claude becomes better and maybe you do much less of the editing yourself, nothing about that changes. It will still be great at reading and working with markdown, and so will you.</p>
+<h2 id="how-do-i-organize-the-vault">How do I organize the vault?</h2>
+<p>I organize the vault by the PARA principle. It’s a principle designed by Tiago Forte for organizing basically anything in your life: all your notes and all writing and all files. I find it really useful. He describes it in his book Building a Second Brain. It splits things into four categories, sorted by actionability: Projects, Areas, Resources, and an Archive.</p>
+<p>Projects are the things you are working on now, the ones that have an end. Areas are ongoing responsibilities that never finish: your health, your finances, each client relationship. Resources are topics you keep for reference, like reading notes and snippets. The Archive is where anything finished or gone quiet from the other three ends up.</p>
+<p>I organize every project that I start, a project being anything that involves more than one step. There are large projects that I have with clients, with hundreds of subfolders, and there are also small folders, like planning a weekend or something. Everything gets its own folder.</p>
+<p>Obsidian is open on the whole vault, so I see all of it at once: the four categories at the top, and every note inside them.</p>
+<h2 id="which-folder-do-you-open-claude-code-in">Which folder do you open Claude Code in?</h2>
+<p>Not at the vault. This is the one part worth being precise about, because the two windows do not look at the same thing: Obsidian sees the whole vault, Claude Code sees one folder.</p>
+<p>I never point it at my entire vault, I always point it at the one specific folder I am working on. That is usually a project, but it can just as well be one area or one resource. And this only works if you actually have a folder for each project you work on, or for every resource, or for every area. That’s why I think the whole PARA sorting mechanism works especially well: sorting the folders by actionability makes them especially well suited, because there is basically always a folder for any given topic that I would want to discuss with Claude. Actionability is the perfect thing to sort by if you want folders to directly match your working sessions. So the shared memory is not one big pile. Every folder builds its own, across as many sessions as the work takes, and Claude starts each session already inside the only context it needs.</p>
+<p>None of this locks Claude into that one folder. The folder you open is a starting point, not a fence, and Claude Code can still reach anything else on your machine when you tell it to. Say the project is finishing this year’s tax declaration, and half of what I need is in a resources folder called finances. I mention that folder once and it uses both for the rest of the session.</p>
+<h2 id="do-you-need-a-claudemd-in-your-vault">Do you need a CLAUDE.md in your vault?</h2>
+<p>You could, of course. You could explain conventions or something like that, but I think you mostly don’t need to, because the vault has a pretty simple structure. Projects, areas, resources and the archive are so different in nature that I didn’t have any sort of things that would apply to everything. And I think the models have gotten smart enough that you don’t need to explain their environment to them. They figure it out best on their own. So no.</p>
+<p>But then again, you could: you could specify for example a tone or writing style, or conventions to be used, or what type of notes are read-only to the model, all kinds of things. Just like in a coding repo, you could have these sorts of conventions in your writing vault.</p>
+<h2 id="how-do-you-and-claude-edit-the-same-note-without-overwriting-each-other">How do you and Claude edit the same note without overwriting each other?</h2>
+<p>With markdown files, there is a built-in protection in Claude Code that stops it from overwriting changes. When you edit a markdown file and the model wants to make changes to it, it gets notified that the file has changed and is forced to read it first before editing it. This allows you to work in the same document as the LLM without having to worry about the model deleting your work.</p>
+<p>Claude is no longer allowed to overwrite files that have changed since it last looked at them. This problem basically solves itself. I think it’s basically become a default.</p>
+<p>And there is the Obsidian Git plugin, which automatically syncs my entire vault to git. Because Claude is great at using git, if I tell it to restore some previous version, it does so reliably.</p>
+<h2 id="which-obsidian-plugins-do-i-actually-use">Which Obsidian plugins do I actually use?</h2>
+<p>Fifteen, but only a few of them matter for this setup. Obsidian Git is the important one: it versions the whole vault automatically, which is what makes “Claude, restore the previous version” work at all. After that it is CSV Editor for tables, Excalidraw for sketches, Tasks and Kanban for task lines and boards, Templater and QuickAdd for note templates and capture shortcuts, Dataview for queries across notes, and Marp Slides when I need a deck out of markdown. The rest are theme and interface tweaks that have nothing to do with Claude.</p>
+<h2 id="what-does-this-look-like-on-the-phone">What does this look like on the phone?</h2>
+<p>I can sync Obsidian to my phone automatically (this is Obsidian Sync, and it does cost money, about 4 dollars a month, which is quite cheap), so that I have all the notes on each project on my phone and can edit them on the go. If I want to jot something down on my phone while I’m on the train or on the run, I can do so, and it will appear later on my desktop. I don’t really work from my phone when I’m traveling. Mostly I use my computer for working. But you could do this on your phone, probably.</p>
+<h2 id="what-does-not-work">What does not work?</h2>
+<p>I just want to be honest about what doesn’t work so well. What this is not good at is working with projects that are mostly not text, or that just don’t support markdown. You are kind of bound by file type. Just think about what your primary mode of working is. If you work 90% of your day in Excel, this setup is going to be less useful than if you mostly work with text and PDFs.</p>
+<p>Obsidian is great at having even thousands of markdown documents for you to quickly navigate and read. But other file formats it is not so optimized for. Obsidian displays PDFs out of the box, and there are plugins for annotating them. But if your primary mode is working in PDFs, highlighting them because you need to send them back in PDF format, or if they are image heavy, I don’t know if this would be the best solution for you. And if you have a lot of them, Obsidian Sync doesn’t support large vault sizes, and Obsidian becomes noticeably slow. Also tables, Excel files, don’t really work. If that happens, you can hide the heavy folders from Obsidian with a community plugin called <a href="https://github.com/devxoul/obsidian-ignore">Ignore</a>. It gives you a <code>.obsidianignore</code> file that works like a gitignore for non-coders.</p>
+<p>Obviously there are also workarounds, because if you’re working with text-based PDFs, for the most part you can just extract them to markdown files, and that has the advantage of you being able to edit them. For example, if you were to prepare a research paper or thesis statements or something like that, I would probably just use some tool to extract the text from the PDFs, then store the resulting markdown files in my vault, and then Claude would be very good at quickly finding information even in thousands of different source documents you collected.</p>
+<h2 id="do-you-have-to-be-a-developer">Do you have to be a developer?</h2>
+<p>No. On your side, Claude Code barely looks different from the Claude chat. You type, it answers. The whole difference is hidden in what the model can reach: instead of a constrained chat window where it has the internet and not much else, it has your file system.</p>
+<p>There is nothing to set up for that and no commands to learn. You can learn them, and people have a lot of tricks for getting more out of it, but none of that is the entry price. It works out of the box.</p>
+<p>Developers use Claude Code more because it drops straight into a workflow they already have. Knowledge workers underuse it, and I think that is the wrong way round, because the ability to persist what you find, and to run a bit of code on the side when you need a result, is worth more outside of engineering, not less.</p>
+<h2 id="how-do-you-start">How do you start?</h2>
+<p>What I would suggest: do not worry about doing some tutorial. Hand over most of the work to Claude. Just open Claude Code and tell it that you want to start using Obsidian and Claude Code together, and that it should walk you through it. Claude has no shortage of patience and is great at researching how people are using this online currently. You don’t really have to figure it all out before you can start using it. You can start using it and use Claude to teach you how it works.</p> </article> <nav class="related" aria-labelledby="related-heading"> <p class="label" id="related-heading">Related</p> <ul> <li> <a href="/my-favorite-memory-system-for-llms/">Karpathy&#39;s LLM Wiki: A Markdown Memory System for Claude Code</a> </li><li> <a href="/how-to-avoid-locking-yourself-into-one-ai-provider/">How to Avoid AI Vendor Lock-In: Keep Your Work in Files, Not Chats</a> </li><li> <a href="/claude-code-vs-cursor/">Claude Code vs Cursor: Speed, Pricing and Use Case Comparison (2026)</a> </li> </ul> </nav> <form id="subscribe" class="subscribe" method="post" action="/subscribe"> <label class="label" for="subscribe-email">Newsletter</label>  <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;width:1px;height:1px;opacity:0;pointer-events:none"> <div class="row"> <input id="subscribe-email" type="email" name="email" autocomplete="email" required placeholder="Enter your email"> <input type="hidden" name="r" id="subscribe-ref" value=""> <input type="hidden" name="source" value="obsidian-claude-code-setup"> <button type="submit">Subscribe</button> </div> <p class="subscribe-note">New posts by email. Unsubscribe anytime.</p> </form>  <script>
+  (function () {
+    var m = document.cookie.match(/(?:^|; )newsletter_ref=([^;]*)/);
+    var ref = m ? decodeURIComponent(m[1]) : new URLSearchParams(location.search).get("r");
+    if (ref) {
+      var el = document.getElementById("subscribe-ref");
+      if (el) el.value = ref;
+    }
+    document.getElementById("subscribe")?.addEventListener("submit", () => {
+      window.posthog?.capture("newsletter_subscribe_submitted");
+    });
+  })();
+</script></main>  <footer> <nav aria-label="Site"> <a href="/about/">About</a> <a href="/contact/">Contact</a> <a href="/privacy/">Privacy</a> <a href="/impressum/">Impressum</a> <a href="/rss.xml">RSS</a> </nav> </footer> </body> </html>

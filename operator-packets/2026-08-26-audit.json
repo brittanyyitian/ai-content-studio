@@ -1,0 +1,89 @@
+{
+  "generatedAt": "2026-08-26T01:56:31.996Z",
+  "counts": {
+    "discovered": 349,
+    "candidates": 20,
+    "recommended": 8,
+    "drafts": 20,
+    "videoScripts": 8,
+    "verifiedCommentSamples": 29
+  },
+  "templateScan": {
+    "checked": "当前标题/摘要/本地化/角度/文案/口播/配图建议，不扫描旧历史",
+    "hits": []
+  },
+  "prior7DayExactUrlDuplicates": 0,
+  "metricsTop3": [
+    {
+      "title": "新 Mac 两个内存上限，差得有点大",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49433292",
+      "points": 936,
+      "comments": 891,
+      "capturedAt": "2026-08-26T01:04:02.523Z"
+    },
+    {
+      "title": "一直思考的AI，闲着也要花钱",
+      "sourceUrl": "https://www.laude.org/updates/headlong-a-microharness-for-persistent-agents",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49428882",
+      "points": 118,
+      "comments": 53,
+      "capturedAt": "2026-08-26T01:04:02.523Z"
+    },
+    {
+      "title": "树莓派车载AI，这个案例先别跟装",
+      "sourceUrl": "https://github.com/ThinkOffApp/CarWatch",
+      "discussionUrl": "https://news.ycombinator.com/item?id=49435675",
+      "points": 91,
+      "comments": 20,
+      "capturedAt": "2026-08-26T01:04:02.523Z"
+    }
+  ],
+  "reviewNotes": {
+    "productionRead": "未成功",
+    "localBaselineDate": "2026-08-25",
+    "localBaselineNotes": 0,
+    "handled": 0,
+    "productionUnprocessedCount": null,
+    "action": "未读取线上意见，不能声称无需修改；本批只增量添加新ID，不对已有稿做修订，现有reviewNote和版本由服务端merge保留。"
+  },
+  "productionWrite": {
+    "verified": false,
+    "attemptDate": "2026-08-26",
+    "command": "npm run operator:push -- operator-packets/2026-08-26-daily-batch.json",
+    "mode": "merge",
+    "exitCode": 1,
+    "response": "HTML document instead of JSON; response.json failed with Unexpected token '<'",
+    "postHttpStatus": null,
+    "priorReadProbe": {
+      "httpStatus": 403,
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Attention Required! | Cloudflare"
+    },
+    "browserFallback": {
+      "url": "https://tide-ai-content-studio.brittanyyitian.chatgpt.site/operator-import",
+      "result": "Private import navigation timed out in in-app browser and Chrome; form not reachable, no import submitted."
+    },
+    "productionReadBack": false,
+    "credentials": "Existing credentials used; no values logged or changed",
+    "status": "未取得成功写入证据，未确认生产更新"
+  },
+  "gaps": [
+    "线上读取：授权环境可取得已有运营凭据，但接口返回403，页面标题为Attention Required! | Cloudflare。",
+    "备用数据库读取因workspace_states单行过大失败；浏览器私有导入页导航超时，未读取到生产reviewNote。",
+    "X近一天高赞AI检索页面导航超时；Instagram、TikTok、LinkedIn、Reddit没有本次可验证新增样本，不能声称这些渠道已采集成功。",
+    "国内语义查重未完成，不能标“国内没人发”。",
+    "本批保留20条候选，其中包含今日重新发现的近期文章、低互动新工具及需进一步验证的案例；并非20条当天新发的高赞社媒帖。",
+    "部分项目页超时或失败，作者的Show HN正文仍可验证；已经逐条标出证据范围。",
+    "中文字段是基于来源的释义摘要，不是受版权保护长文的全文翻译；完整译文需取得授权或用户提供原文。",
+    "配图目前是逐条方案，未生成成品图；推荐工具均未安装实测，口播时长按文字估算而非录音实测。"
+  ],
+  "localMergeTest": {
+    "passed": true,
+    "existingDraftsPreserved": 20,
+    "existingHistoryVersionsPreserved": 520,
+    "reviewNotesPreserved": true,
+    "auditEventsPreserved": true,
+    "scope": "本地8月25日基线与人工意见测试夹具；非线上回读"
+  }
+}

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+		<meta name="theme-color" media="(prefers-color-scheme: light)" content="#fafaf8" />
+		<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#111114" />
+		<!-- Preconnect to the two data hosts so the seed fetch starts sooner.
+		     Neither sets a cookie; neither is an analytics endpoint. -->
+		<link rel="preconnect" href="https://hn.algolia.com" crossorigin />
+		<link rel="preconnect" href="https://hacker-news.firebaseio.com" crossorigin />
+		<meta http-equiv="content-security-policy" content="default-src 'none'; connect-src 'self' https://hn.algolia.com https://hacker-news.firebaseio.com https://cloudflareinsights.com; font-src 'self'; img-src 'self' data:; manifest-src 'self'; script-src 'self' https://static.cloudflareinsights.com 'sha256-4IgBYVaY5r4P1gzqwMPRWU1wzCAljlLtuMd9HIzNh0A='; style-src 'self' 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+		<link href="./_app/immutable/entry/start.Dv1QPG5X.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BAZ43JNP.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BmJtdkOV.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/CVkXujMD.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/app.NwFOfWDu.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/CdUABDz5.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/DpoU36l8.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/Bi8sSIZ8.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/CXuxIIQ1.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/0.Cmvve93S.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/2.Bz0NF7Aw.js" rel="modulepreload">
+		<!--1uha8ag--><meta name="description" content="Live count of how many new Hacker News headlines mention AI today. Updates as stories are posted. Timer resets on each new AI headline."/> <link rel="canonical" href="https://hnstats.com"/> <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/> <meta property="og:type" content="website"/> <meta property="og:site_name" content="HN Stats"/> <meta property="og:url" content="https://hnstats.com"/> <meta property="og:locale" content="en_US"/> <meta property="og:title" content="Days Since AI: live AI headline counter for Hacker News"/> <meta property="og:description" content="Live count of how many new Hacker News headlines mention AI today. Updates as stories are posted. Timer resets on each new AI headline."/> <meta property="og:image" content="https://hnstats.com/og.png"/> <meta property="og:image:secure_url" content="https://hnstats.com/og.png"/> <meta property="og:image:type" content="image/png"/> <meta property="og:image:width" content="1200"/> <meta property="og:image:height" content="630"/> <meta property="og:image:alt" content="Days Since AI. A live counter of the share of new Hacker News headlines that mention AI."/> <meta name="twitter:card" content="summary_large_image"/> <meta name="twitter:title" content="Days Since AI: live AI headline counter for Hacker News"/> <meta name="twitter:description" content="Live count of how many new Hacker News headlines mention AI today. Updates as stories are posted. Timer resets on each new AI headline."/> <meta name="twitter:image" content="https://hnstats.com/og.png"/> <meta name="twitter:image:alt" content="Days Since AI. A live counter of the share of new Hacker News headlines that mention AI."/> <!----><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"HN Stats","url":"https://hnstats.com","description":"Live count of how many new Hacker News headlines mention AI today. Updates as stories are posted. Timer resets on each new AI headline.","applicationCategory":"UtilityApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"image":"https://hnstats.com/og.png","inLanguage":"en"}</script><!----><!----><title>Days Since AI: live AI headline counter for Hacker News</title>
+		<link href="./_app/immutable/assets/0.D4VI6elQ.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/2.BWIA5DEN.css" rel="stylesheet">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[0--><!--[--><!--[--><noscript><div class="noscript svelte-1uha8ag"><strong>This page needs JavaScript.</strong> The counter reads the Hacker News APIs
+		directly from your browser, so there is no server rendering a number to show you here.</div></noscript> <!--[-1--><!--]--><!----> <div class="page svelte-1uha8ag"><main class="svelte-1uha8ag"><header class="masthead svelte-1uha8ag"><p class="wordmark svelte-1uha8ag">Days Since AI</p> <h1 class="svelte-1uha8ag">How much of today’s Hacker News is AI?</h1> <p class="standfirst svelte-1uha8ag">Every new story submitted since midnight UTC. The clock resets each time one
+				mentions AI.</p></header> <section class="hero svelte-1q37ri0" aria-live="polite"><p class="figure num svelte-1q37ri0 placeholder"><span class="value svelte-1q37ri0">–</span><span class="unit svelte-1q37ri0">%</span></p> <p class="gloss svelte-1q37ri0"><!--[-1-->of today’s <strong class="svelte-1q37ri0">new story submissions</strong> have “AI” in the headline <span class="mode-tag svelte-1q37ri0">strict</span><!--]--></p> <p class="visually-hidden">Loading today’s Hacker News headlines.</p></section><!----> <dl class="stats card svelte-1furk8y"><div class="stat svelte-1furk8y"><dd class="value num svelte-1furk8y">–</dd> <dt class="label svelte-1furk8y">AI headlines today</dt></div> <div class="stat svelte-1furk8y"><dd class="value num svelte-1furk8y">–</dd> <dt class="label svelte-1furk8y">Total headlines today</dt></div> <div class="stat svelte-1furk8y"><dd class="value num svelte-1furk8y">–</dd> <dt class="label svelte-1furk8y">Avg min between AI posts</dt></div></dl><!----> <section class="timer svelte-g44st7" aria-labelledby="timer-label"><div class="timer-flash svelte-g44st7" aria-hidden="true"></div> <header class="head svelte-g44st7"><h2 class="label svelte-g44st7" id="timer-label">Time since last AI headline</h2> <span class="status svelte-g44st7"><span class="dot svelte-g44st7" aria-hidden="true"></span> live · polling</span></header> <div class="clock num svelte-g44st7" role="timer" aria-live="off"><div class="seg svelte-g44st7"><span class="digits days svelte-g44st7">0</span> <span class="cap svelte-g44st7">days</span></div> <span class="colon svelte-g44st7" aria-hidden="true">:</span> <div class="seg svelte-g44st7"><span class="digits svelte-g44st7">00</span> <span class="cap svelte-g44st7">hrs</span></div> <span class="colon svelte-g44st7" aria-hidden="true">:</span> <div class="seg svelte-g44st7"><span class="digits svelte-g44st7">00</span> <span class="cap svelte-g44st7">min</span></div> <span class="colon svelte-g44st7" aria-hidden="true">:</span> <div class="seg svelte-g44st7"><span class="digits svelte-g44st7">00</span> <span class="cap svelte-g44st7">sec</span></div></div> <p class="visually-hidden svelte-g44st7" aria-live="polite"></p></section> <p class="caption svelte-g44st7"><!--[-1-->Resets when the next AI headline lands.<!--]--></p><!----> <section class="headline-card card svelte-1a8nvlt"><h2 class="label">Latest AI headline</h2> <!--[-1--><p class="title muted svelte-1a8nvlt">Listening for the next one…</p><!--]--></section><!----> <section class="history svelte-1oj12n0"><header class="head svelte-1oj12n0"><h2 class="label">AI share of new headlines</h2> <fieldset class="ranges svelte-1oj12n0"><legend class="visually-hidden">Time range</legend> <!--[--><label class="range svelte-1oj12n0 selected" title="Last 7 days"><input type="radio" name="history-range" value="7D" checked="" class="svelte-1oj12n0"/> <span>7D</span></label><label class="range svelte-1oj12n0" title="Last 30 days"><input type="radio" name="history-range" value="30D" class="svelte-1oj12n0"/> <span>30D</span></label><label class="range svelte-1oj12n0" title="This calendar year so far, daily"><input type="radio" name="history-range" value="YTD" class="svelte-1oj12n0"/> <span>YTD</span></label><label class="range svelte-1oj12n0" title="Last 12 months, daily"><input type="radio" name="history-range" value="1Y" class="svelte-1oj12n0"/> <span>1Y</span></label><label class="range svelte-1oj12n0" title="Last 5 years, monthly"><input type="radio" name="history-range" value="5Y" class="svelte-1oj12n0"/> <span>5Y</span></label><label class="range svelte-1oj12n0" title="Since 2007, monthly"><input type="radio" name="history-range" value="ALL" class="svelte-1oj12n0"/> <span>ALL</span></label><!--]--></fieldset></header> <fieldset class="types svelte-1oj12n0"><legend class="visually-hidden">Post type</legend> <!--[--><label class="type svelte-1oj12n0 selected" title="Every new story submission"><input type="radio" name="history-type" value="all" checked="" class="svelte-1oj12n0"/> <span>All</span></label><label class="type svelte-1oj12n0" title="Show HN posts"><input type="radio" name="history-type" value="show" class="svelte-1oj12n0"/> <span>Show HN</span></label><label class="type svelte-1oj12n0" title="HN’s ask category: text posts with no link"><input type="radio" name="history-type" value="ask" class="svelte-1oj12n0"/> <span>Ask HN</span></label><label class="type svelte-1oj12n0" title="Ordinary link submissions: everything that is not Show or Ask"><input type="radio" name="history-type" value="other" class="svelte-1oj12n0"/> <span>Links</span></label><!--]--></fieldset> <p class="readout svelte-1oj12n0" aria-live="off"><!--[-1--><!--]--></p> <p class="window svelte-1oj12n0"><!--[-1--><!--]--></p> <div class="plot svelte-1oj12n0"><!--[0--><div class="skeleton svelte-1oj12n0" aria-hidden="true" style="height: 190px;"></div><!--]--></div> <!--[-1--><!--]--> <p class="note svelte-1oj12n0"><!--[-1-->Algolia title match with prefix matching off, counted the same way for every point
+			except today, which is counted from the titles themselves. Algolia matches tokens
+			case-insensitively, so it tracks strict
+			closely rather than exactly.<!--]--></p></section><!----> <div class="controls svelte-1uha8ag"><div class="row svelte-y07pbh"><button type="button" class="copy svelte-y07pbh"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="5.25" y="5.25" width="8.5" height="8.5" rx="2" stroke="currentColor" stroke-width="1.5"></rect><path d="M10.75 2.75H4.25a1.5 1.5 0 0 0-1.5 1.5v6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg> Copy the stat</button> <p class="toast svelte-y07pbh" role="status" aria-live="polite"></p></div><!----> <div class="wrap svelte-pkhzb5"><fieldset class="segmented svelte-pkhzb5"><legend class="visually-hidden">Which headlines count as AI</legend> <!--[--><label class="option svelte-pkhzb5 selected"><input type="radio" name="ai-mode" value="strict" checked="" class="svelte-pkhzb5"/> <span>Strict</span></label><label class="option svelte-pkhzb5"><input type="radio" name="ai-mode" value="extended" class="svelte-pkhzb5"/> <span>Extended</span></label><!--]--></fieldset> <p class="note svelte-pkhzb5">Counts the standalone word “AI”. “OpenAI” does not count. “AI-powered” does.</p></div><!----></div> <footer class="svelte-4jwo3w"><section class="method svelte-4jwo3w"><h2 class="label">Method</h2> <p class="svelte-4jwo3w"><strong class="svelte-4jwo3w">Strict</strong> counts the standalone word <code class="svelte-4jwo3w">AI</code> in the titles of new Hacker
+			News story submissions posted since midnight UTC. The match is case-sensitive and
+			word-bounded, so “OpenAI” does not count but “AI-powered” does. <strong class="svelte-4jwo3w">Extended</strong> adds the spelled-out phrase “artificial intelligence” plus a list of
+			model and vendor names, case-insensitively.</p> <p class="svelte-4jwo3w">Today’s figures are seeded from <a href="https://hn.algolia.com/api" rel="noopener noreferrer" class="svelte-4jwo3w">Algolia HN Search</a>, then kept current
+			by the <a href="https://github.com/HackerNews/API" rel="noopener noreferrer" class="svelte-4jwo3w">HN Firebase API</a>, which streams new
+			stories as they are posted rather than being polled. The timer therefore resets within a
+			second or two of a story landing. A reconciliation check runs every 5
+			minutes in case the stream stalls, and if it will not open at all the page falls back to
+			polling every 45 seconds.</p> <p class="svelte-4jwo3w">The range chart counts title matches per UTC day and month through Algolia, with prefix
+			matching turned off. Left on, it counts “Airport” and “Airbus” as AI, which overstated
+			every figure by about 5%. Turned off, a spot check of one full day matched the strict
+			count exactly, 67 of 574. Both vocabularies are counted, so the chart follows the
+			toggle above, but Algolia matches tokens rather than applying the regexes: strict
+			lands on the same count, extended lands close to it. Today’s point is the exception
+			and is classified from the titles themselves. History back to 2007 is prebuilt at
+			deploy time, so opening this page does not sweep the API.</p> <p class="svelte-4jwo3w">The post-type split uses HN’s own categories, not title prefixes. <strong class="svelte-4jwo3w">Show HN</strong> is
+			the <code class="svelte-4jwo3w">show_hn</code> tag, which is almost always a literal “Show HN:” title. <strong class="svelte-4jwo3w">Ask HN</strong> is the <code class="svelte-4jwo3w">ask_hn</code> tag, meaning HN’s ask category: text posts
+			with no link, only about half of which start with “Ask HN:”. <strong class="svelte-4jwo3w">Links</strong> is everything else.</p> <p class="svelte-4jwo3w">This measures the <a href="https://news.ycombinator.com/newest" rel="noopener noreferrer" class="svelte-4jwo3w">firehose</a>, not the front
+			page. Front-page share is a different, higher number. That is the one <a href="https://blog.coredump.cx/p/how-much-of-hn-is-ai" rel="noopener noreferrer" class="svelte-4jwo3w">lcamtuf surveyed</a>.</p> <p class="svelte-4jwo3w">Everything runs in your browser. There is no server and no database, nothing about you
+			is stored, and no cookies are set. Page views are counted by Cloudflare Web Analytics,
+			which is cookieless and cannot follow you to other sites. Beyond that, the only
+			requests this page makes are to the two public APIs above.</p></section> <p class="colophon svelte-4jwo3w"><strong class="svelte-4jwo3w">HN Stats</strong> <span class="sep svelte-4jwo3w" aria-hidden="true">·</span> Unofficial. Not affiliated with Y Combinator or Hacker News. <span class="sep svelte-4jwo3w" aria-hidden="true">·</span> <a href="mailto:pathos@duck.com" class="svelte-4jwo3w">pathos@duck.com</a></p></footer><!----></main></div><!--]--><!----><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1dhqxpt = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.Dv1QPG5X.js"),
+						import("./_app/immutable/entry/app.NwFOfWDu.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
